@@ -1,0 +1,126 @@
+[
+  { "hue": 265, "tag": "Platformer", "title": "Nintendo Platforming Foundations", "blurb": "Nintendo's own console-defining run, joined by Rare's technically dazzling Donkey Kong Country trilogy.", "games": [
+    ["Super Mario World","1992","Nintendo EAD","The SNES pack-in that redefined the platformer with Yoshi, the world map, and secret exits — Europe waited about two years after Japan's 1990 launch title release."],
+    ["Super Mario World 2: Yoshi's Island","1995","Nintendo EAD","A hand-drawn, crayon-and-watercolor art style wrapped around one of the most inventive platformers Nintendo ever built, released the same year worldwide."],
+    ["Super Mario All-Stars","1993","Nintendo EAD","16-bit remakes of all four NES Mario games in one cartridge, released simultaneously across Japan, North America, and Europe."],
+    ["Donkey Kong Country","1994","Rare","Pre-rendered CGI models pushed the SNES's graphics further than almost anything else on the system, reviving the Donkey Kong brand from scratch."],
+    ["Donkey Kong Country 2: Diddy's Kong Quest","1995","Rare","A darker pirate-themed sequel widely considered the series' peak, released the same year in all three regions."],
+    ["Donkey Kong Country 3: Dixie Kong's Double Trouble!","1996","Rare","The trilogy's closer, trading some of the pirate theming for a swampy, inventive final adventure."],
+    ["Kirby Super Star","1996","HAL Laboratory","Eight compact sub-games in one cartridge, including the two-player Helper system that let a friend control a captured enemy ability."],
+    ["Kirby's Dream Land 3","1997","HAL Laboratory","One of the SNES's final first-party releases, arriving so late in the console's life that a European release never materialized."],
+    ["Kirby's Dream Course","1995","HAL Laboratory","A golf-meets-pinball hybrid where Kirby himself is the ball, an unusually experimental format for the character."]
+  ]},
+  { "hue": 300, "tag": "Adventure", "title": "Action-Adventure & Metroidvania", "blurb": "A Link to the Past and Super Metroid anchor a chapter full of Quintet's atmospheric action-RPGs, one of which never left Japan under its English name until a year after release.", "games": [
+    ["The Legend of Zelda: A Link to the Past","1992","Nintendo EAD","The template for nearly every top-down Zelda that followed, including the Dark World mechanic that doubled the game's map."],
+    ["Super Metroid","1994","Nintendo R&D1","Widely considered the high point of 2D Metroid, released the same year worldwide and still cited as a genre-defining Metroidvania."],
+    ["Illusion of Gaia","1994","Quintet","An atmospheric action-RPG following a boy's journey around a fictionalized real-world map, released in Japan as Gaia Gensouki the year before."],
+    ["Terranigma","1996","Quintet","Released in Japan as Tenchi Sōzō the year before — this one never received a North American release at all, one of the most requested unlocalized SNES RPGs ever."],
+    ["Secret of Evermore","1995","Square (North America)","An unusual reversal: this action-RPG was developed entirely by Square's North American studio and never released in Japan at all."],
+    ["ActRaiser","1991","Quintet","A genre hybrid alternating side-scrolling action with light city-building sim sections, released in Europe the same year as North America."],
+    ["Soul Blazer","1992","Quintet","Quintet's earlier action-RPG about resurrecting a ruined world town by town, with Europe's release following about a year later."],
+    ["Demon's Crest","1995","Capcom","A moody, atmospheric spin-off starring Ghosts 'n Goblins' gargoyle antihero Firebrand, released in Europe the year after North America."],
+    ["The Legend of the Mystical Ninja","1991","Konami","A Ganbare Goemon spin-off with Goemon and Ebisumaru renamed Kid Ying and Dr. Yang outside Japan, released the same year in all three regions."]
+  ]},
+  { "hue": 20, "tag": "RPG", "title": "Role-Playing Adventures", "blurb": "Square and Enix's golden age, and the platform where the console RPG genre truly matured — several of these never received any European release at all.", "games": [
+    ["Chrono Trigger","1995","Square","Widely regarded as one of the best RPGs ever made, pairing time travel with a New Game+ structure years ahead of its time — never released in Europe on SNES."],
+    ["Final Fantasy VI","1994","Square","Released in North America as Final Fantasy III, since only two earlier entries had reached the West at the time — no European SNES release ever happened."],
+    ["Super Mario RPG: Legend of the Seven Stars","1996","Square","Square and Nintendo's first collaboration, blending Mario's world with turn-based, timed-hit combat — never released in Europe."],
+    ["EarthBound","1995","Ape Inc. / HAL Laboratory","Released in Japan as Mother 2 a year earlier, with a deliberately mundane, present-day setting that stood out against typical fantasy RPGs — never released in Europe."],
+    ["Secret of Mana","1994","Square","A real-time action-RPG built around a cooperative three-player mode, released in Europe the year after North America."],
+    ["Breath of Fire","1995","Capcom","Capcom's own entry into the console RPG genre, released in Europe about a year after its North American debut."],
+    ["Breath of Fire II","1995","Capcom","A direct sequel deepening the original's dragon-transformation mechanics — never released in Europe."],
+    ["Tales of Phantasia","1995","Wolf Team","The first entry in the long-running Tales series — a Japan-only SNES release that never reached the West on this platform at all."],
+    ["Live A Live","1994","Square","An anthology RPG spanning wildly different historical eras and playable characters — Japan-only until an official Western localization finally arrived in 2022, 28 years later."]
+  ]},
+  { "hue": 205, "tag": "Shooter", "title": "Run-and-Gun & Shooters", "blurb": "Konami's Contra and Gradius sequels anchor a chapter full of genuinely difficult SNES shoot-em-ups, several carrying real regional title changes.", "games": [
+    ["Contra III: The Alien Wars","1992","Konami","Renamed Super Probotector: Alien Rebels in Europe, continuing the same robot-reskin censorship pattern the series carried on NES."],
+    ["Super R-Type","1991","Irem","A launch-window SNES port of the brutally difficult arcade shoot-em-up, released the same year across all three regions."],
+    ["Axelay","1992","Konami","A vertical shooter alternating between two visual styles stage to stage, showing off the SNES's Mode 7 scaling technique."],
+    ["Gradius III","1992","Konami","A home port of the arcade sequel, arriving in the West about two years after its original Japanese release."],
+    ["Super Aleste","1992","Compile","Renamed Space Megaforce for its North American release, while Europe kept the original Japanese title, Super Aleste — a rare case of only one Western region getting a new name."],
+    ["Cybernator","1993","NCS Corporation","Released in Japan the year before as Assault Suits Valken, with some story content trimmed for the Western Cybernator release."],
+    ["Hagane: The Final Conflict","1995","CAProduction","An obscure but well-regarded ninja run-and-gun-platformer hybrid, reaching the West about a year after its Japanese release."],
+    ["Sunset Riders","1993","Konami","A home conversion of Konami's cowboy-themed arcade run-and-gun, released the same year across regions."]
+  ]},
+  { "hue": 335, "tag": "Fighting", "title": "Beat-em-ups, Wrestling & Fighting", "blurb": "Capcom's Final Fight trilogy and Street Fighter II's SNES ports anchor a chapter that also includes one game with three genuinely different regional titles.", "games": [
+    ["Street Fighter II Turbo","1993","Capcom","An enhanced SNES-exclusive revision adding faster gameplay and the four boss characters as playable fighters."],
+    ["Super Street Fighter II","1994","Capcom","Adds four new challengers to the roster, released the same year across all three regions."],
+    ["Mortal Kombat II","1994","Sculptured Software","A home port of the arcade sequel, restoring blood via a code — unlike the heavily censored first game's SNES port."],
+    ["Final Fight","1991","Capcom","A home conversion of Capcom's arcade beat-em-up landmark, released in Europe the year after Japan."],
+    ["Final Fight 2","1993","Capcom","A SNES-original sequel skipping arcades entirely, released the same year across regions."],
+    ["Final Fight 3","1995","Capcom","The trilogy's closer, adding selectable special moves and a genuinely large character roster for the genre."],
+    ["Teenage Mutant Ninja Turtles IV: Turtles in Time","1992","Konami","Released in Europe as Teenage Mutant Hero Turtles IV, continuing the same UK broadcast-driven rename the franchise carried on other platforms."],
+    ["Brawl Brothers","1992","Jaleco","Released in Japan as Rushing Beat Ran and in Europe as Rival Turf! 2, tying it to an earlier Jaleco beat-em-up despite no such numbering in Japan or North America."],
+    ["The Ninja Warriors","1994","Natsume","An unusually scattered regional rollout: Japan's The Ninja Warriors Again, North America's plain The Ninja Warriors, and Europe's Ninja Warriors: The New Generation are all the same game."]
+  ]},
+  { "hue": 155, "tag": "Puzzle", "title": "Puzzle & Party", "blurb": "A Japan-only Panel de Pon became Tetris Attack for a Western audience that had no idea it wasn't really a Tetris game at all.", "games": [
+    ["Tetris Attack","1996","Intelligent Systems","Originally Japan's character-driven puzzler Panel de Pon a year earlier — the Western version swapped in Yoshi's Island characters and was branded around Tetris despite having no real connection to it."],
+    ["Kirby's Avalanche","1995","Compile / HAL Laboratory","A Western-exclusive reskin of Super Puyo Puyo with Kirby's cast replacing the original characters — the only Kirby game never released in Japan."],
+    ["Yoshi's Cookie","1993","Bullet-Proof Software","An unusual case where the North American release actually preceded the Japanese one by about a month."],
+    ["Super Bomberman","1993","Hudson Soft","A four-player-capable entry that helped define the series' multiplayer battle format for the 16-bit era."],
+    ["Super Bomberman 2","1995","Hudson Soft","Adds new power-ups and battle stages, released in the West about a year after Japan."],
+    ["Plok","1993","Software Creations","A British-developed platformer-puzzler hybrid about a detachable-limbed hero, released the same year in all three regions."],
+    ["Uniracers","1994","DMA Design","A unicycle racer built entirely around chained stunt tricks, released in Europe the following year as Unirally — never released in Japan."],
+    ["Wario's Woods","1995","Nintendo / Intelligent Systems","This SNES version is distinct from the earlier NES release — Japan only ever got it via the Satellaview satellite service, never a retail cartridge."]
+  ]},
+  { "hue": 88, "tag": "Sports", "title": "Sports & Racing", "blurb": "F-Zero and Super Mario Kart's Mode 7 tracks anchor a chapter that also holds a surprising number of American-sports titles that made it to Europe anyway.", "games": [
+    ["F-Zero","1992","Nintendo EAD","A launch-window showcase for the SNES's Mode 7 pseudo-3D scaling, and one of the earliest anti-gravity racers."],
+    ["Super Mario Kart","1992","Nintendo EAD","The kart-racing genre's true origin point, released the same year across all three regions."],
+    ["Pilotwings","1992","Nintendo EAD / Paradigm","A flight-sim-adjacent launch title built to show off Mode 7's scaling and rotation effects, Europe following about a year after Japan."],
+    ["Top Gear","1992","Gremlin Interactive","Released in Japan as Top Racer, a Mode 7 racer built by a British studio, published the same year across regions."],
+    ["Rock n' Roll Racing","1993","Silicon & Synapse","An overhead combat racer from the studio that would later become Blizzard Entertainment, released only in the West."],
+    ["NBA Jam","1994","Iguana Entertainment","A home conversion of the arcade basketball hit, released across Japan, North America, and Europe the same year — despite being an American sport."],
+    ["Ken Griffey Jr. Presents Major League Baseball","1994","Software Creations","A North America-exclusive baseball title, never released in Japan or Europe."],
+    ["Madden NFL '94","1993","Visual Concepts","Released in Japan under different NFL-free branding, this American-football sim still found its way to a genuine European PAL release."],
+    ["International Superstar Soccer","1995","Konami","A soccer sim released in the West about a year after its Japanese debut, notably getting a real North American release despite the sport's smaller US audience."]
+  ]},
+  { "hue": 42, "tag": "Simulation", "title": "Simulation & Strategy", "blurb": "SimCity's SNES port anchors a small chapter that includes three tactical RPGs that stayed in Japan for years, or forever.", "games": [
+    ["SimCity","1991","Nintendo EAD / Maxis","A console-exclusive redesign of the PC city-builder with a Mario-themed bonus mode, released the same year across all three regions."],
+    ["Harvest Moon","1997","Pack-in-Video","One of the SNES's last major releases anywhere, launching the farming-sim genre with a full day-and-season cycle."],
+    ["Ogre Battle: The March of the Black Queen","1995","Quest Corporation","A tactics-RPG hybrid built around real-time troop movement across a war map, reaching North America two years after Japan — never released in Europe."],
+    ["Front Mission","1995","G-Craft","A mecha tactical RPG that launched a long-running series — Japan-only on SNES; the West wouldn't see the franchise until later entries on other platforms."],
+    ["Tactics Ogre: Let Us Cling Together","1995","Quest Corporation","A landmark tactical RPG, Japan-only on SNES — its first Western release came three years later on PlayStation, deliberately timed to avoid clashing with Final Fantasy Tactics."],
+    ["Uncharted Waters: New Horizons","1994","Koei","An Age-of-Exploration trading and naval-combat sim, released in North America the same year as Japan — never released in Europe."],
+    ["Populous","1991","Bullfrog Productions","A British-developed god-game classic, ported to SNES the same year across all three regions."]
+  ]},
+  { "hue": 285, "tag": "Licensed", "title": "Licensed, Movie & TV Tie-ins", "blurb": "Capcom and Konami's Disney and superhero tie-ins remain some of the best-regarded licensed games of the 16-bit era.", "games": [
+    ["Disney's Aladdin","1994","Capcom","Widely considered one of the best licensed platformers ever made, released in North America the year before its European and Japanese debuts."],
+    ["The Lion King","1994","Westwood Studios","A famously difficult platformer built around the film's key scenes, released across Europe and North America the same year."],
+    ["Batman Returns","1993","Konami","A beat-em-up/platformer hybrid tied to the Tim Burton sequel, released the same year across all three regions."],
+    ["Goof Troop","1993","Capcom","A cooperative puzzle-adventure directed by a young Shinji Mikami, years before he created Resident Evil."],
+    ["The Addams Family","1992","Ocean Software","A British-developed platformer that reached North America about eight months before its own European release."],
+    ["Tiny Toon Adventures: Buster Busts Loose!","1993","Konami","A well-regarded platformer starring the Tiny Toons cast, released in Europe about six months after Japan."],
+    ["X-Men: Mutant Apocalypse","1994","Capcom","A licensed beat-em-up/platformer letting players swap between five X-Men, released in Europe the year after North America."],
+    ["Jurassic Park","1993","Ocean Software","A licensed tie-in blending on-foot action with first-person raptor-hunting sections, released the same year worldwide."],
+    ["The Great Circus Mystery Starring Mickey & Minnie","1994","Capcom","Released in Japan as Magical Adventure 2 — unusually, Europe's release actually preceded North America's by a few months."]
+  ]},
+  { "hue": 168, "tag": "Curios", "title": "Cult Classics & Deep Cuts", "blurb": "Earthworm Jim's absurdist run-and-gun sits alongside a run of Japan-only Square and Human Entertainment titles that stayed unlocalized for decades.", "games": [
+    ["Earthworm Jim","1994","Shiny Entertainment","A surreal run-and-gun starring a sentient earthworm in a robotic supersuit, released the same year across Europe and North America."],
+    ["Earthworm Jim 2","1996","Shiny Entertainment","A stranger, more level-design-experimental sequel, released in Europe the year after North America."],
+    ["Zombies Ate My Neighbors","1993","LucasArts","A cooperative horror-comedy shooter parodying B-movie monster tropes, released the same year across Europe and North America."],
+    ["ActRaiser 2","1993","Quintet","Drops the original's city-building sections entirely in favor of pure action, released in Europe the year after North America."],
+    ["Clock Tower","1995","Human Entertainment","A pioneering point-and-click survival horror game, Japan-only on SNES — its own sequel wouldn't reach the West until PlayStation, years later."],
+    ["Bahamut Lagoon","1996","Square","A tactical RPG with dragon-riding mechanics, never officially localized anywhere — only reachable through a long-standing fan translation."],
+    ["Star Ocean","1996","tri-Ace","The series' Japan-only SNES debut — the West's first taste of it came 12 years later via a PSP remake."],
+    ["Umihara Kawase","1994","TNN","A cult physics-platformer built entirely around a stretchy fishing line, Japan-only on SNES and largely unknown in the West for decades."],
+    ["Robotrek","1994","Quintet","Released in Japan as Slapstick, this robot-building RPG reached North America the same year — but never Europe."]
+  ]},
+  { "hue": 235, "tag": "RPG", "title": "More RPGs & Genre Hybrids", "blurb": "A second helping of console RPGs and genre-blending curios, several of which stopped at North America and never crossed to Europe.", "games": [
+    ["The 7th Saga","1993","Produce!","Released in Japan as Elnard, this six-hero RPG reached North America the same year — but never Europe."],
+    ["Lufia & the Fortress of Doom","1993","Neverland","Released in Japan as Estpolis Denki, launching a series that would return with a well-regarded prequel two years later — never released in Europe."],
+    ["Lufia II: Rise of the Sinistrals","1996","Neverland","A prequel widely considered a major leap over the original, reaching North America the year after its Japanese release."],
+    ["E.V.O.: Search for Eden","1993","Almanic Corporation","An evolution-themed action-RPG letting players guide a creature from fish to dinosaur to mammal — never released in Europe."],
+    ["Prince of Persia","1992","Tose","A home port of the rotoscoped PC platformer classic, released the same year across all three regions."],
+    ["Shadowrun","1993","Beam Software","A cyberpunk-fantasy RPG based on the tabletop game — a completely separate, unrelated adaptation from the same-year Sega Genesis game sharing its name and license."]
+  ]},
+  { "hue": 15, "tag": "Novelty", "title": "Multiplayer, Novelty & Peripheral Games", "blurb": "Argonaut's Super FX chip games anchor a chapter closing on Star Fox 2, a finished game that didn't officially ship until 2017.", "games": [
+    ["Mario Paint","1992","Nintendo EAD","A mouse-and-pad peripheral bundle turning the SNES into a drawing and music-composition tool, released the same year worldwide."],
+    ["Super Scope 6","1992","Nintendo","A light-gun peripheral bundle of six mini-games, with North America getting the Super Scope itself before Japan or Europe."],
+    ["Stunt Race FX","1994","Nintendo EAD / Argonaut Software","Released in Japan as Wild Trax, this Super FX chip-powered racer used chunky 3D polygon models years before it was common on consoles."],
+    ["Star Fox","1993","Nintendo EAD / Argonaut Software","The Super FX chip's flagship showcase, turning the SNES into a passable 3D rail-shooter machine, released the same year worldwide."],
+    ["Star Fox 2","2017","Nintendo EAD / Argonaut Software","Completed and ready to ship in 1995, then shelved when Nintendo judged its visuals would look dated next to the incoming PlayStation and Saturn — it finally released 22 years later, bundled with the SNES Classic Edition."],
+    ["Wolfenstein 3D","1994","id Software","A heavily censored SNES port removing Nazi imagery and blood entirely to meet Nintendo's content policy — a striking contrast to the uncensored PC original, which was itself restricted in Germany for decades."],
+    ["DOOM","1995","Sculptured Software","A technically ambitious port of id Software's FPS landmark, built to run on hardware never designed for it — a genuine engineering feat even with the compromises required."],
+    ["Mortal Kombat","1993","Sculptured Software","The infamous SNES port that removed blood entirely under Nintendo's content policy — the Sega Genesis version's now-legendary blood code had no SNES equivalent."]
+  ]}
+]

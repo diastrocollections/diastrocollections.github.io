@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diastro Gaming Collections</title>
+<style>
+  :root {
+    --bg: #F2EFE7;
+    --surface: #FFFFFF;
+    --surface-2: #E9E2D2;
+    --ink: #211C15;
+    --ink-soft: #5C5546;
+    --ink-faint: #8D8472;
+    --accent: #B0702A;
+    --accent-soft: #F1E2CB;
+    --accent-ink: #FFFFFF;
+    --line: #DDD5C0;
+    --line-strong: #C6BB9E;
+    --shadow: 0 1px 2px rgba(33,28,21,0.06), 0 14px 32px -18px rgba(33,28,21,0.28);
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #131110;
+      --surface: #1C1916;
+      --surface-2: #24201B;
+      --ink: #F1ECE2;
+      --ink-soft: #C0B7A6;
+      --ink-faint: #857C6C;
+      --accent: #E3A55A;
+      --accent-soft: #3A2C18;
+      --accent-ink: #1B1005;
+      --line: #2E2921;
+      --line-strong: #40392D;
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 18px 36px -18px rgba(0,0,0,0.7);
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #131110;
+    --surface: #1C1916;
+    --surface-2: #24201B;
+    --ink: #F1ECE2;
+    --ink-soft: #C0B7A6;
+    --ink-faint: #857C6C;
+    --accent: #E3A55A;
+    --accent-soft: #3A2C18;
+    --accent-ink: #1B1005;
+    --line: #2E2921;
+    --line-strong: #40392D;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 18px 36px -18px rgba(0,0,0,0.7);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Archivo", "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+  a { color: inherit; }
+
+  h1, h2, h3 {
+    font-family: "Fraunces", Georgia, serif;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .mono {
+    font-family: "Spline Sans Mono", ui-monospace, "SFMono-Regular", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 56px);
+  }
+
+  /* ---------- Top bar ---------- */
+
+  .topbar {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+  }
+
+  .brand .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: inline-block;
+  }
+
+  .theme-toggle {
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink-soft);
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .theme-toggle:hover { border-color: var(--accent); color: var(--ink); }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    padding: clamp(52px, 9vw, 92px) 0 clamp(36px, 6vw, 56px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -220px;
+    right: -180px;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, var(--accent-soft) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Spline Sans Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 22px;
+  }
+
+  .eyebrow .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4.4rem);
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: -0.015em;
+    max-width: 16ch;
+    position: relative;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  .hero-lede {
+    max-width: 62ch;
+    margin-top: 24px;
+    font-size: 1.14rem;
+    color: var(--ink-soft);
+  }
+
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+
+  .hero-stats .stat { display: flex; flex-direction: column; gap: 4px; }
+
+  .hero-stats .num {
+    font-family: "Fraunces", serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .hero-stats .label {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ---------- Shelf section ---------- */
+
+  .shelf {
+    padding: clamp(20px, 4vw, 32px) 0 clamp(64px, 9vw, 100px);
+  }
+
+  .shelf-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .shelf-head h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .shelf-head p {
+    margin: 0;
+    color: var(--ink-faint);
+    font-size: 0.92rem;
+    font-family: "Spline Sans Mono", monospace;
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .tile {
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(10px);
+    animation: rise 0.5s ease forwards;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .tile:hover { transform: translateY(-4px); border-color: var(--tile-accent, var(--line-strong)); }
+
+  @keyframes rise {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .tile-spine {
+    height: 8px;
+    background: var(--tile-accent, var(--accent));
+  }
+
+  .tile-body {
+    padding: 22px 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+  }
+
+  .tile-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .tile-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    background: color-mix(in srgb, var(--tile-accent, var(--accent)) 16%, var(--surface));
+    flex-shrink: 0;
+  }
+
+  .tile-years {
+    font-family: "Spline Sans Mono", monospace;
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    padding-top: 4px;
+    white-space: nowrap;
+  }
+
+  .tile h3 {
+    font-size: 1.18rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .tile .tagline {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .tile-meta {
+    display: flex;
+    gap: 18px;
+    font-family: "Spline Sans Mono", monospace;
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+
+  .tile-meta strong {
+    color: var(--tile-accent, var(--accent));
+    font-weight: 600;
+  }
+
+  .tile-region {
+    margin-left: auto;
+    color: var(--tile-accent, var(--accent));
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.7rem;
+  }
+
+  .tile-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--tile-accent, var(--accent));
+    margin-top: 2px;
+  }
+
+  .tile-cta svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.15s ease;
+  }
+
+  .tile:hover .tile-cta svg { transform: translateX(3px); }
+
+  /* ---------- Footer ---------- */
+
+  footer {
+    padding: 32px 0 56px;
+    border-top: 1px solid var(--line);
+  }
+
+  footer p {
+    max-width: 74ch;
+    color: var(--ink-faint);
+    font-size: 0.86rem;
+    margin: 0 0 8px;
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand"><span class="dot"></span> Diastro Gaming</div>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> A field guide to twelve classic platforms</div>
+    <h1>Diastro Gaming <em>Collections</em></h1>
+    <p class="hero-lede">Pick a console. Each one opens onto its own Explorer's Collection &mdash; a hundred games spanning every genre the hardware ever touched, not just the titles that top a review-score spreadsheet. Twelve chapters apiece, fact-checked, searchable, built to be browsed rather than ranked. Five of the twelve &mdash; Mega Drive, NES, SNES, N64, and PS1 &mdash; are catalogued the European way, PAL names and years leading; the rest lead with North America.</p>
+    <div class="hero-stats" id="heroStats"></div>
+  </div>
+</section>
+
+<section class="shelf">
+  <div class="wrap">
+    <div class="shelf-head">
+      <h2>The shelf</h2>
+      <p id="shelfCount">12 collections</p>
+    </div>
+    <div class="tiles" id="tiles"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Every collection here follows the same method: genre-by-genre research across enthusiast and critic sources (never just a Metacritic top-N), a curator's rationale per chapter, and an independent fact-check pass on every title's platform, release year, and developer before publishing.</p>
+    <p>Twelve platforms deep &mdash; a solid start, not a hard stop. More consoles may join the shelf later.</p>
+  </div>
+</footer>
+
+<script src="assets/hub.js"></script>
+</body>
+</html>

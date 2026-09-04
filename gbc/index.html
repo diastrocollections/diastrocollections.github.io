@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Spectrum Explorer's Collection — 100 Best Game Boy Color Games</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Sora:wght@400;500;600;700&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F8F3FC;
+    --bg-elevated: #FFFFFF;
+    --text: #241B36;
+    --text-soft: #5B4B78;
+    --text-faint: #8B7BA8;
+    --accent: #7B2FBE;
+    --accent-contrast: #FFFFFF;
+    --highlight: #FF3D7F;
+    --border: #E3D6F5;
+    --card-bg: #FFFFFF;
+    --mono-bg: #EEE4FA;
+    --shadow: 0 3px 0 rgba(123,47,190,0.10);
+    --hue: 280;
+    --sat: 68%;
+    --lig: 46%;
+    --sat-soft: 78%;
+    --lig-soft: 94%;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #140B22;
+      --bg-elevated: #1E1233;
+      --text: #F1E7FF;
+      --text-soft: #C3A9E8;
+      --text-faint: #8C71AD;
+      --accent: #C77DFF;
+      --accent-contrast: #140B22;
+      --highlight: #FF7FB0;
+      --border: #35204F;
+      --card-bg: #1A0F2E;
+      --mono-bg: #241539;
+      --shadow: 0 3px 0 rgba(0,0,0,0.45);
+      --sat: 80%;
+      --lig: 68%;
+      --sat-soft: 55%;
+      --lig-soft: 20%;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #140B22;
+    --bg-elevated: #1E1233;
+    --text: #F1E7FF;
+    --text-soft: #C3A9E8;
+    --text-faint: #8C71AD;
+    --accent: #C77DFF;
+    --accent-contrast: #140B22;
+    --highlight: #FF7FB0;
+    --border: #35204F;
+    --card-bg: #1A0F2E;
+    --mono-bg: #241539;
+    --shadow: 0 3px 0 rgba(0,0,0,0.45);
+    --sat: 80%;
+    --lig: 68%;
+    --sat-soft: 55%;
+    --lig-soft: 20%;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Sora', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .mono { font-family: 'Martian Mono', monospace; letter-spacing: 0.02em; }
+  .display { font-family: 'Fredoka', sans-serif; }
+  a { color: inherit; }
+  img { max-width: 100%; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    padding: 5rem 1.5rem 3.5rem;
+    overflow: hidden;
+    background: var(--bg);
+    border-bottom: 3px solid var(--border);
+  }
+
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(0px);
+    opacity: 0.5;
+    mix-blend-mode: normal;
+  }
+  :root[data-theme="dark"] .bubble, @media (prefers-color-scheme: dark) { }
+
+  .b1 { width: 340px; height: 340px; background: radial-gradient(circle at 32% 28%, rgba(199,125,255,0.55), rgba(199,125,255,0.05) 70%); top: -120px; left: -80px; }
+  .b2 { width: 260px; height: 260px; background: radial-gradient(circle at 32% 28%, rgba(255,61,127,0.42), rgba(255,61,127,0.04) 70%); top: -40px; right: 4%; }
+  .b3 { width: 220px; height: 220px; background: radial-gradient(circle at 32% 28%, rgba(60,200,180,0.4), rgba(60,200,180,0.04) 70%); bottom: -100px; left: 12%; }
+  .b4 { width: 180px; height: 180px; background: radial-gradient(circle at 32% 28%, rgba(255,196,30,0.4), rgba(255,196,30,0.04) 70%); bottom: -60px; right: 18%; }
+
+  .hero-inner {
+    position: relative;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-pill {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    background: var(--mono-bg);
+    border: 2px solid var(--border);
+    color: var(--text-soft);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+  }
+
+  .hero h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5.6vw, 3.6rem);
+    line-height: 1.15;
+    margin: 0 0 1.3rem;
+    color: var(--text);
+  }
+
+  .hero p.lede {
+    max-width: 620px;
+    margin: 0 auto;
+    color: var(--text-soft);
+    font-size: 1.08rem;
+  }
+
+  .hero-meta {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    font-family: 'Martian Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-faint);
+  }
+
+  .hero-meta strong { color: var(--accent); }
+
+  /* ---------- TOOLBAR ---------- */
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg-elevated);
+    border-bottom: 3px solid var(--border);
+    padding: 0.85rem 1.5rem;
+  }
+
+  .toolbar-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .search-row { display: flex; gap: 0.6rem; align-items: center; }
+
+  #searchInput {
+    flex: 1;
+    padding: 0.68rem 1rem;
+    border-radius: 999px;
+    border: 2px solid var(--border);
+    background: var(--mono-bg);
+    color: var(--text);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+  }
+  #searchInput:focus { border-color: var(--accent); }
+  #searchInput::placeholder { color: var(--text-faint); }
+
+  #resultCount { font-family: 'Martian Mono', monospace; font-size: 0.78rem; color: var(--text-faint); white-space: nowrap; }
+
+  .theme-toggle {
+    border: 2px solid var(--border);
+    background: var(--mono-bg);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+
+  .chips { display: flex; gap: 0.45rem; overflow-x: auto; padding-bottom: 0.2rem; scrollbar-width: thin; }
+
+  .chip {
+    flex: none;
+    border: 2px solid var(--border);
+    background: var(--bg);
+    color: var(--text-soft);
+    border-radius: 999px;
+    padding: 0.35rem 0.8rem;
+    font-family: 'Martian Mono', monospace;
+    font-size: 0.75rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- MAIN / CHAPTERS ---------- */
+  main { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem 1rem; }
+
+  .chapter { scroll-margin-top: 132px; margin-bottom: 4rem; }
+
+  .chapter-head { display: flex; align-items: baseline; gap: 0.9rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+
+  .chapter-num { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.1rem; color: hsl(var(--hue) var(--sat) var(--lig)); }
+
+  .chapter-title { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: clamp(1.1rem, 2.6vw, 1.5rem); margin: 0; }
+
+  .chapter-tag {
+    font-family: 'Martian Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.6rem;
+    border-radius: 999px;
+    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+    color: hsl(var(--hue) var(--sat) var(--lig));
+  }
+
+  .chapter-blurb { color: var(--text-soft); max-width: 760px; margin: 0.6rem 0 1.6rem; font-size: 0.98rem; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+
+  .card {
+    background:
+      linear-gradient(160deg, hsl(var(--hue) var(--sat-soft) var(--lig-soft)) 0%, var(--card-bg) 38%);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    padding: 1rem 1.1rem 1.1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    right: -25%;
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, hsl(var(--hue) var(--sat) var(--lig) / 0.28), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .card-idx {
+    font-family: 'Martian Mono', monospace;
+    font-size: 0.68rem;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    position: absolute;
+    top: 0.85rem;
+    right: 0.95rem;
+  }
+
+  .card-title { font-weight: 600; font-size: 1rem; padding-right: 3.4rem; margin: 0; position: relative; }
+
+  .card-meta { font-family: 'Martian Mono', monospace; font-size: 0.75rem; color: hsl(var(--hue) var(--sat) var(--lig)); position: relative; }
+
+  .card-blurb { font-size: 0.87rem; color: var(--text-soft); margin: 0.15rem 0 0; position: relative; }
+
+  .card.hidden, .chapter.hidden { display: none; }
+
+  #emptyState { display: none; text-align: center; padding: 3rem 1rem; color: var(--text-faint); font-family: 'Martian Mono', monospace; }
+
+  /* ---------- CURATOR NOTE ---------- */
+  .curator-note {
+    max-width: 780px;
+    margin: 1rem auto 4rem;
+    padding: 1.7rem 1.9rem;
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-left: 6px solid var(--accent);
+    border-radius: 20px;
+  }
+  .curator-note h2 { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 1.08rem; margin: 0 0 0.8rem; }
+  .curator-note p { color: var(--text-soft); font-size: 0.92rem; margin: 0 0 0.8rem; }
+  .curator-note p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  footer { border-top: 3px solid var(--border); padding: 2.5rem 1.5rem 3.5rem; background: var(--bg-elevated); }
+  .footer-inner { max-width: 780px; margin: 0 auto; font-size: 0.85rem; color: var(--text-faint); }
+  .footer-inner h3 { font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 0.88rem; color: var(--text-soft); margin: 0 0 0.7rem; }
+  .footer-inner ul { padding-left: 1.1rem; margin: 0 0 1.4rem; }
+  .footer-inner li { margin-bottom: 0.3rem; }
+  .footer-inner a { color: var(--accent); text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="bubble b1"></span>
+  <span class="bubble b2"></span>
+  <span class="bubble b3"></span>
+  <span class="bubble b4"></span>
+  <div class="hero-inner">
+    <span class="hero-pill mono">CGB-001 · 1998–2003</span>
+    <h1>The Spectrum Explorer's Collection</h1>
+    <p class="lede">One hundred games built for the console that put "Color" in its own name — a genre-spanning tour of the Game Boy Color's own library, separate from and never repeating its monochrome predecessor's list.</p>
+    <div class="hero-meta">
+      <span><strong id="totalCount">100</strong> games</span>
+      <span><strong>12</strong> chapters</span>
+      <span><strong>1998–2003</strong> Game Boy Color releases</span>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar-inner">
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="Search by title, developer, or genre…">
+      <span id="resultCount" class="mono">100 / 100</span>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+<main>
+  <div id="chapters"></div>
+  <div id="emptyState">No cartridges match that search.</div>
+
+  <div class="curator-note">
+    <h2 class="display">A note from the curator</h2>
+    <p>The Game Boy Color gets treated by a lot of "best of" lists as an afterthought to the monochrome Game Boy or a warm-up act for the GBA — but it had a genuine identity of its own: a huge Pokémon-driven monster-collecting boom, Nintendo's first color Zelda duology, an unlikely run of real-time strategy experiments, and a deep well of Japan-only curios that never made it past import shops. This collection deliberately avoids re-listing anything already covered in the original monochrome Game Boy collection — everything here either requires color hardware outright or was built specifically to take advantage of it.</p>
+    <p>Release years follow the North American release date where one exists. For games that never left Japan or Europe, the original regional release year is used instead and the game is marked accordingly in its chapter — this collection leans on more of those than most, since a real chunk of the GBC's most interesting library never crossed the Pacific.</p>
+    <p>Every title below was individually fact-checked for release-platform accuracy — several were caught mid-draft as Game Boy Advance mix-ups or publisher/developer mix-ups and corrected before publication.</p>
+    <p>A short follow-up pass added further European context to this page after it first published. Where a PAL release carries a different box title, a real content difference, or a release gap of many months, that's folded directly into the relevant description below — Metal Gear: Ghost Babel's Japan-and-Europe-only bonus radio broadcast that North America's cartridge cut, Resident Evil Gaiden actually reaching Europe before it reached Japan or North America, or Pokémon Pinball's fifteen-month wait for a European release. It also turned up this platform's other, less-told story: a long list of games North America got that Europe simply never did, from Crystalis and Shantae to the English-language Dragon Warrior I & II and III remakes — now listed in their own section in the footer below, alongside the existing list of Japan/Europe-only titles that Europe (or Japan) got and North America didn't. Years above still generally mark the North American release; this is a targeted pass adding context, not a rebuild of the page's existing regional handling, which was already unusually thorough for a "best of" list.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <h3 class="mono">Japan/Europe-only titles (no North American release)</h3>
+    <ul>
+      <li>Game Boy Wars 2 (1998, Japan)</li>
+      <li>Game Boy Wars 3 (2001, Japan)</li>
+      <li>Supercross Freestyle (2000, Europe)</li>
+      <li>Tales of Phantasia: Narikiri Dungeon (2000, Japan)</li>
+      <li>Shin Megami Tensei: Devil Children — Black/Red/White Book (2000–2001, Japan)</li>
+      <li>Grandia: Parallel Trippers (2000, Japan)</li>
+      <li>Konami GB Collection Vol. 4 (2000, Japan/Europe)</li>
+      <li>Magical Chase GB (2000, Japan)</li>
+      <li>Koto Battle: Tengai no Moribito (2001, Japan)</li>
+      <li>Kettō Transformers Beast Wars (1999, Japan)</li>
+      <li>From TV Animation One Piece: Maboroshi no Grand Line Boukenhen! (2002, Japan)</li>
+      <li>Daiku no Gen-san: Kachikachi no Tonkachi ga Kachi (2000, Japan)</li>
+      <li>Meitantei Conan: Karakuri Jiin Satsujin Jiken (2000, Japan)</li>
+      <li>John Romero's Daikatana (2000, Europe/Japan — North American release was cancelled)</li>
+      <li>Puchi Carat (1999, Japan/Europe — North American release was cancelled)</li>
+    </ul>
+    <h3 class="mono">Released in North America, never in Europe</h3>
+    <ul>
+      <li>Dragon Warrior Monsters 2 (2001)</li>
+      <li>Robopon: Sun Version (2000)</li>
+      <li>Kirby Tilt 'n' Tumble (2001)</li>
+      <li>Crystalis (2000)</li>
+      <li>Shantae (2002 — its first European release came 11 years later, via 2013 Virtual Console)</li>
+      <li>Bionic Commando: Elite Forces (2000)</li>
+      <li>NBA 3 on 3 featuring Kobe Bryant (1999)</li>
+      <li>Pocket Bowling (1999)</li>
+      <li>Warlocked (2000)</li>
+      <li>Dragon Warrior I &amp; II (2000)</li>
+      <li>Dragon Warrior III (2001)</li>
+      <li>Revelations: The Demon Slayer (1999)</li>
+      <li>Project S-11 (2001)</li>
+      <li>Hexcite: The Shapes of Victory (1999)</li>
+      <li>Monster Rancher Explorer (2000)</li>
+    </ul>
+    <h3 class="mono">Sources &amp; further reading</h3>
+    <ul>
+      <li><a href="https://www.nintendolife.com/guides/50-best-game-boy-color-gbc-games-of-all-time" target="_blank" rel="noopener">Nintendo Life — 50 Best Game Boy Color Games of All Time</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Video_games_listed_among_the_best_of_the_Game_Boy_and_Game_Boy_Color" target="_blank" rel="noopener">Wikipedia — Video games listed among the best of the Game Boy and Game Boy Color</a></li>
+      <li><a href="https://www.dualshockers.com/game-boy-color-hidden-gems/" target="_blank" rel="noopener">DualShockers — 10 Game Boy Color Hidden Gems</a></li>
+      <li><a href="https://infinityretro.com/best-game-boy-color-hidden-gems/" target="_blank" rel="noopener">Infinity Retro — Top 15 Best Game Boy Color Hidden Gems</a></li>
+      <li><a href="https://screenrant.com/game-boy-color-gbc-hidden-gems-undiscovered-nintendo/" target="_blank" rel="noopener">ScreenRant — Game Boy Color Hidden Gems That Were Ahead Of Their Time</a></li>
+      <li><a href="https://gamerant.com/best-game-boy-color-gbc-strategy-games/" target="_blank" rel="noopener">Game Rant — 9 Best Game Boy Color Strategy Games, Ranked</a></li>
+      <li><a href="https://www.thegamer.com/game-boy-color-games-stuck-japan/" target="_blank" rel="noopener">TheGamer — 10 Classic Game Boy Color Games Still Stuck In Japan</a></li>
+    </ul>
+    <p>All 100 titles were individually fact-checked for title accuracy, release year, developer, and Game Boy Color platform compatibility before publication.</p>
+  </div>
+</footer>
+
+<script src="../assets/collection.js" data-src="../data/gbc.json"></script>
+</body>
+</html>

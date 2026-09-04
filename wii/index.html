@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Channel Explorer's Collection</title>
+<style>
+  :root {
+    --bg: #F7FAFC;
+    --surface: #FFFFFF;
+    --surface-2: #E9F3F9;
+    --ink: #16232B;
+    --ink-soft: #4A5F6B;
+    --ink-faint: #7C8F99;
+    --accent: #0099D8;
+    --accent-ink: #FFFFFF;
+    --line: #D6E7EF;
+    --line-strong: #B9D6E3;
+    --shadow: 0 2px 4px rgba(16,45,58,0.06), 0 14px 30px -16px rgba(16,45,58,0.24);
+    --sat: 70%;
+    --lig: 42%;
+    --sat-soft: 68%;
+    --lig-soft: 94%;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0B1418;
+      --surface: #121D22;
+      --surface-2: #17242A;
+      --ink: #EAF4F8;
+      --ink-soft: #A9C0C9;
+      --ink-faint: #63808A;
+      --accent: #3FC3F0;
+      --accent-ink: #06181D;
+      --line: #1E2E35;
+      --line-strong: #2A3D45;
+      --shadow: 0 2px 4px rgba(0,0,0,0.3), 0 16px 32px -18px rgba(0,0,0,0.7);
+      --sat: 76%;
+      --lig: 64%;
+      --sat-soft: 46%;
+      --lig-soft: 18%;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0B1418;
+    --surface: #121D22;
+    --surface-2: #17242A;
+    --ink: #EAF4F8;
+    --ink-soft: #A9C0C9;
+    --ink-faint: #63808A;
+    --accent: #3FC3F0;
+    --accent-ink: #06181D;
+    --line: #1E2E35;
+    --line-strong: #2A3D45;
+    --shadow: 0 2px 4px rgba(0,0,0,0.3), 0 16px 32px -18px rgba(0,0,0,0.7);
+    --sat: 76%;
+    --lig: 64%;
+    --sat-soft: 46%;
+    --lig-soft: 18%;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+
+  a { color: inherit; }
+
+  h1, h2, h3 {
+    font-family: "Quicksand", "Segoe UI", system-ui, sans-serif;
+    font-weight: 700;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .mono {
+    font-family: "Roboto Mono", ui-monospace, "SFMono-Regular", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 48px);
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    padding: clamp(56px, 10vw, 96px) 0 clamp(40px, 6vw, 64px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-tiles {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 480px;
+    height: 480px;
+    pointer-events: none;
+  }
+
+  .hero-tiles span {
+    position: absolute;
+    border-radius: 22px;
+    background: hsl(198 var(--sat-soft) var(--lig-soft));
+  }
+
+  .hero-tiles span:nth-child(1) { width: 160px; height: 160px; top: 20px; left: 260px; transform: rotate(8deg); }
+  .hero-tiles span:nth-child(2) { width: 120px; height: 120px; top: 190px; left: 60px; transform: rotate(-6deg); }
+  .hero-tiles span:nth-child(3) { width: 100px; height: 100px; top: 300px; left: 300px; transform: rotate(14deg); }
+  .hero-tiles span:nth-child(4) { width: 80px; height: 80px; top: 80px; left: 420px; transform: rotate(-12deg); }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+
+  .eyebrow .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 4px;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 5.2vw, 3.8rem);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    max-width: 18ch;
+    position: relative;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .hero-lede {
+    max-width: 62ch;
+    margin-top: 22px;
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+
+  .hero-meta .stat { display: flex; flex-direction: column; gap: 4px; }
+
+  .hero-meta .num {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .hero-meta .label {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ---------- Curator's note ---------- */
+
+  .note { padding: clamp(28px, 5vw, 40px) 0; }
+
+  .note-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: clamp(24px, 4vw, 40px);
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 16px;
+  }
+
+  .note-card h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+  }
+
+  .note-card p { max-width: 74ch; color: var(--ink-soft); margin: 0; }
+
+  .note-card p strong { color: var(--ink); font-weight: 800; }
+
+  /* ---------- Toolbar ---------- */
+
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+  }
+
+  .toolbar-inner { display: flex; align-items: center; gap: 16px; }
+
+  .search { position: relative; flex: 0 0 260px; }
+
+  .search input {
+    width: 100%;
+    padding: 10px 14px 10px 36px;
+    border-radius: 14px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.92rem;
+  }
+
+  .search input::placeholder { color: var(--ink-faint); }
+
+  .search svg {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: var(--ink-faint);
+    pointer-events: none;
+  }
+
+  .chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding-bottom: 2px;
+  }
+
+  .chips::-webkit-scrollbar { height: 5px; }
+  .chips::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 4px; }
+
+  .chip {
+    flex-shrink: 0;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.76rem;
+    letter-spacing: 0.02em;
+    padding: 7px 13px;
+    border-radius: 12px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink-soft);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+  }
+
+  .chip:hover { border-color: var(--accent); color: var(--ink); transform: translateY(-1px); }
+
+  .result-count {
+    flex-shrink: 0;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+    margin-left: auto;
+    padding-left: 8px;
+    white-space: nowrap;
+  }
+
+  /* ---------- Chapters ---------- */
+
+  .chapter {
+    padding: clamp(48px, 7vw, 76px) 0 8px;
+    scroll-margin-top: 84px;
+    --hue: 198;
+  }
+
+  .chapter-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  .chapter-num {
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+    font-weight: 700;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    line-height: 1;
+  }
+
+  .chapter-title { font-size: clamp(1.3rem, 2.6vw, 1.8rem); flex: 1 1 auto; min-width: 200px; }
+
+  .chapter-blurb {
+    margin: 10px 0 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--line);
+    max-width: 68ch;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+  }
+
+  .chapter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+    padding: 4px 10px;
+    border-radius: 8px;
+  }
+
+  /* ---------- Cards ---------- */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 16px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    box-shadow: 0 1px 0 hsl(var(--hue) var(--sat) var(--lig) / 0.0);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    border: 2px solid hsl(var(--hue) var(--sat) var(--lig));
+    opacity: 0;
+    transition: opacity 0.18s ease;
+    pointer-events: none;
+  }
+
+  .card:hover { transform: translateY(-3px) scale(1.01); box-shadow: var(--shadow); }
+  .card:hover::before { opacity: 1; }
+
+  .card-idx {
+    align-self: flex-start;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.74rem;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    font-weight: 700;
+    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+    padding: 2px 8px;
+    border-radius: 6px;
+  }
+
+  .card-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1.03rem;
+    line-height: 1.25;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .card-meta { font-family: "Roboto Mono", monospace; font-size: 0.78rem; color: var(--ink-faint); }
+
+  .card-blurb { margin: 0; font-size: 0.9rem; color: var(--ink-soft); line-height: 1.48; }
+
+  .card.hidden { display: none; }
+  .chapter.hidden { display: none; }
+
+  .empty-state {
+    display: none;
+    padding: 60px 0;
+    text-align: center;
+    color: var(--ink-faint);
+    font-family: "Roboto Mono", monospace;
+  }
+
+  .empty-state.show { display: block; }
+
+  footer { margin-top: 60px; padding: 36px 0 60px; border-top: 1px solid var(--line); }
+
+  footer p { max-width: 72ch; color: var(--ink-faint); font-size: 0.86rem; margin: 0 0 10px; }
+
+  footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="hero">
+  <div class="hero-tiles" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> A curated field guide &middot; Nintendo Wii, 2006&ndash;2013</div>
+    <h1>The Channel<br>Explorer's <em>Collection</em></h1>
+    <p class="hero-lede">One hundred Wii games, chosen to give you a taste of the whole library &mdash; not just the highest scores. Twelve chapters, one per corner of the catalog, from the pack-in that redefined living rooms down to the Japan-only oddities that never got a Wii Menu channel outside Japan.</p>
+    <div class="hero-meta">
+      <div class="stat"><span class="num mono">100</span><span class="label">games catalogued</span></div>
+      <div class="stat"><span class="num mono">12</span><span class="label">chapters &amp; genres</span></div>
+      <div class="stat"><span class="num mono">2006&ndash;13</span><span class="label">release window</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="note">
+  <div class="wrap">
+    <div class="note-card">
+      <h2>How this collection was built</h2>
+      <p>Metacritic will hand you Galaxy, Twilight Princess, and Skyward Sword and call it a day &mdash; which skips most of what made the Wii the best-selling console of its generation: a motion-control experiment that briefly turned an entire industry sideways, a rail-shooter renaissance, and a JRPG trio (Xenoblade, The Last Story, Pandora's Tower) that Nintendo of America nearly refused to bring west at all &mdash; all three reached Europe first, sometimes by the better part of a year, and only crossed to North America after fans organized the "Operation Rainfall" campaign to demand it. This collection cross-references rankings and retrospectives from <strong>Nintendo Life, GamesRadar+, Den of Geek, Retrododo, TheGamer</strong> and Wikipedia's aggregated critics' consensus, then every single entry was independently fact-checked against primary sources (developer credits, regional release dates) before publishing &mdash; including catching several publisher/developer mix-ups and two games that never actually made it to North America at all.</p>
+      <p>The goal wasn't a scoreboard. It was breadth: the best <strong>waggle-powered beat-'em-up</strong>, the best <strong>bongo-free rhythm game</strong>, the best <strong>evasion-only horror game</strong>, the best <strong>mecha-battling curio that stayed in Japan</strong> &mdash; each earning its spot for what it shows you about the console, not just how it scored. Use the search box or genre chips below to explore by mood, or just scroll from the top and let the whole shelf go by.</p>
+      <p>A short follow-up pass added European context to this page after it first published: most of the Wii's library shipped within weeks of each other on both sides of the Atlantic, so this collection still dates most games by their North American release. A handful of entries below are the exception, where Europe's story was genuinely the more interesting one &mdash; those are dated by their PAL release instead, with the North American date folded into the description. Unlike the GameCube and PS2 before it, the Wii also mostly left the old PAL 50Hz slowdown problem behind: the overwhelming majority of retail Wii games ran natively at a proper 60Hz in Europe, a real improvement worth noting even without a full regional rebuild.</p>
+    </div>
+  </div>
+</section>
+
+<nav class="toolbar">
+  <div class="wrap toolbar-inner">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" type="text" placeholder="Search 100 games…" autocomplete="off">
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="result-count" id="resultCount"></div>
+  </div>
+</nav>
+
+<main class="wrap" id="chapters"></main>
+
+<div class="wrap"><p class="empty-state" id="emptyState">No games match that search. Try a shorter word, or clear the box.</p></div>
+
+<footer>
+  <div class="wrap">
+    <p>Curated as a browsing collection, not a strict ranking &mdash; position within a chapter is roughly chronological, not a scorecard. Years generally mark the North American Wii release; Japan-only and Japan/Europe-only titles (Fatal Frame: Mask of the Lunar Eclipse, Zangeki no Reginleiv, Earth Seeker, Disaster: Day of Crisis) are dated by their original regional release and noted as such, since they never crossed to North America on Wii. A small number of other entries (Xenoblade Chronicles, Pandora's Tower, Manhunt 2) are dated by their European release instead, with the North American date noted in the description, because Europe's release history there is the more notable part of the story.</p>
+    <p>Sources consulted include <a href="https://www.nintendolife.com/guides/50-best-wii-games-of-all-time" target="_blank" rel="noopener">Nintendo Life</a>, <a href="https://en.wikipedia.org/wiki/Video_games_listed_among_the_best_of_the_Wii" target="_blank" rel="noopener">Wikipedia's aggregated critics' list</a>, <a href="https://retrododo.com/best-nintendo-wii-games/" target="_blank" rel="noopener">Retrododo</a>, <a href="https://www.denofgeek.com" target="_blank" rel="noopener">Den of Geek</a>, <a href="https://www.thegamer.com/wii-best-japan-exclusive-games/" target="_blank" rel="noopener">TheGamer's import coverage</a>, and genre round-ups from GamesRadar+, GameSpot and HyperComboGamer, cross-checked against Wikipedia and publisher release records for accuracy.</p>
+  </div>
+</footer>
+
+<script src="../assets/collection.js" data-src="../data/wii.json"></script>
+</body>
+</html>

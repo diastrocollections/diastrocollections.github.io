@@ -1,0 +1,126 @@
+[
+  { "hue": 227, "tag": "Platformer", "title": "Nintendo Platforming Foundations", "blurb": "Nintendo EAD's own console-defining leap into 3D, joined by Rare's run of technically dazzling platformers built for the same hardware.", "games": [
+    ["Super Mario 64","1997","Nintendo EAD","The launch title that invented the 3D platformer template almost overnight, with Europe following about nine months after Japan and North America's 1996 debut."],
+    ["Banjo-Kazooie","1998","Rare","A collectathon that pushed the N64's texture and draw-distance limits further than almost anything before it, released the same year worldwide."],
+    ["Banjo-Tooie","2000","Rare","A larger, more interconnected sequel with sprawling worlds that load without a break, released across all three regions in 2000."],
+    ["Donkey Kong 64","1999","Rare","A five-character collectathon so item-dense it shipped with its own Expansion Pak requirement, released the same year worldwide."],
+    ["Yoshi's Story","1998","Nintendo EAD","A storybook-styled platformer built around Yoshi's fruit-eating and melody collecting, with a distinctly gentler difficulty curve than its SNES predecessor."],
+    ["Mischief Makers","1997","Treasure","A frantic side-scrolling shake-em-up from Treasure — one of the platform's more unusual releases, and one that never received a European release at all."],
+    ["Rocket: Robot on Wheels","1999","Sucker Punch Productions","An inventive, underappreciated platformer from the studio that would later create the Infamous series, built around a robot juggling amusement-park guests."],
+    ["Conker's Bad Fur Day","2001","Rare","A crude-humor platformer arriving very late in the N64's life, released across all three regions in 2001 just before the system's twilight."],
+    ["Kirby 64: The Crystal Shards","2000","HAL Laboratory","Kirby's only N64 outing, introducing power-combining abilities — released in Japan and North America but never given a European cartridge release."]
+  ]},
+  { "hue": 260, "tag": "Adventure", "title": "Action & Adventure", "blurb": "Ocarina of Time redefined 3D action-adventure almost on arrival, in a chapter that also holds Rare's most structurally inventive N64 work.", "games": [
+    ["The Legend of Zelda: Ocarina of Time","1998","Nintendo EAD","Widely cited as one of the most influential games ever made, introducing Z-targeting and a day-night cycle — Europe's release followed Japan and North America by a matter of weeks."],
+    ["The Legend of Zelda: Majora's Mask","2000","Nintendo EAD","A darker, three-day-loop sequel reusing Ocarina's engine and character models, released across all three regions in 2000."],
+    ["Blast Corps","1997","Rare","A demolition-puzzle game about clearing a path for a runaway nuclear missile transport, released the same year worldwide."],
+    ["Body Harvest","1998","DMA Design","An open-world alien-invasion adventure from the studio that would soon become Rockstar North, released in North America and Europe with no Japanese release."],
+    ["Jet Force Gemini","1999","Rare","A run-and-gun/adventure hybrid with a squad of three playable characters, released across all three regions in 1999."],
+    ["Glover","1998","Interactive Studios","A physics-driven platformer where the player controls an animated glove rolling a ball through each level, released the same year worldwide."],
+    ["Mystical Ninja Starring Goemon","1998","Konami Computer Entertainment Osaka","Released in Japan the year before under its long-running Ganbare Goemon branding, this action-adventure kept its Japanese-culture setting largely intact for its Western release."],
+    ["Space Station Silicon Valley","1998","DMA Design","A body-swapping action-adventure where a robotic hamster possesses the mechanical animals of an abandoned space station, released the same year worldwide."]
+  ]},
+  { "hue": 5, "tag": "Shooter", "title": "Shooters & FPS", "blurb": "GoldenEye 007 proved consoles could do first-person shooters on their own terms, in a chapter carrying two of the N64's most-played multiplayer games.", "games": [
+    ["GoldenEye 007","1997","Rare","The console FPS's true breakout moment, built around a four-player split-screen mode that came together almost as an afterthought — released the same year worldwide."],
+    ["Perfect Dark","2000","Rare","GoldenEye's spiritual successor, requiring the Expansion Pak for its full experience and pushing the engine further with bots and a Combat Simulator mode."],
+    ["Star Fox 64","1997","Nintendo EAD","Released across Europe as Lylat Wars rather than Star Fox 64, reportedly to avoid a trademark conflict — the same rail-shooter under a different regional name."],
+    ["Doom 64","1997","Midway Games","A ground-up reimagining of the original Doom with new levels and a moodier atmosphere, rather than a straight port — released in North America and Europe with no Japanese release."],
+    ["Star Wars: Rogue Squadron","1998","Factor 5","An arcade-style Star Wars flight combat game showing off real-time lighting effects, released in North America in late 1998 with Europe and Japan following into early 1999."],
+    ["Quake II","1999","Raster Productions","A console conversion of id Software's PC shooter sequel, released across North America and Europe in 1999 with no Japanese release."],
+    ["Duke Nukem 64","1997","Eurocom","A heavily censored N64 port of the PC shooter, stripping out blood, nudity and other content to meet Nintendo's policy — released in North America and Europe with no Japanese release."],
+    ["Turok: Dinosaur Hunter","1997","Iguana Entertainment","One of the N64's earliest FPS releases, built around fog-heavy draw-distance limitations that became part of its distinct look, released the same year worldwide."],
+    ["Turok 2: Seeds of Evil","1998","Iguana Entertainment","A more ambitious sequel requiring the Expansion Pak for its highest visual settings, released the same year worldwide."]
+  ]},
+  { "hue": 330, "tag": "RPG", "title": "Role-Playing Adventures", "blurb": "The N64's cartridge storage kept this the smallest chapter in the collection — a genuine reflection of how much thinner the console's RPG output was next to its disc-based rivals.", "games": [
+    ["Paper Mario","2001","Intelligent Systems","A flat-paper art style wrapped around turn-based RPG combat, released in Japan in 2000 with North America and Europe following into 2001."],
+    ["Quest 64","1998","Imagineer / Copya System","Released across Europe as Holy Magic Century rather than Quest 64 — one of the platform's clearer EU-exclusive title changes — with all regions releasing in 1998."],
+    ["Ogre Battle 64: Person of Lordly Caliber","2000","Quest Corporation","A tactics-RPG hybrid built around real-time troop movement, released in Japan in 1999 and North America in 2000 — it never received a PAL cartridge release at all, with Europe's first legitimate access coming via a 2010 Wii Virtual Console release."],
+    ["Harvest Moon 64","1999","Victor Interactive Software","A farming-sim RPG hybrid continuing the series' day-and-season cycle, released in Japan and North America in 1999 with no European release."],
+    ["Aidyn Chronicles: The First Mage","2001","H2O Entertainment","One of the last major N64 RPGs, arriving very late in the console's life in North America in early 2001 with Europe following that August — no Japanese release."],
+    ["Hybrid Heaven","1999","KCET","A genre-blending RPG mixing turn-based wrestling-style combat with exploration, released across all three regions in 1999."]
+  ]},
+  { "hue": 150, "tag": "Racing", "title": "Racing", "blurb": "Mario Kart 64 and F-Zero X anchor a chapter that also holds an oddity: a Namco-published racer that, unlike almost everything else the company made, never reached Japan at all.", "games": [
+    ["Mario Kart 64","1997","Nintendo EAD","The series' 3D debut, translating Super Mario Kart's Mode 7 tracks into fully polygonal circuits — Europe followed Japan and North America's 1996 launch by several months."],
+    ["Diddy Kong Racing","1997","Rare","A kart racer with an adventure-mode overworld and vehicle-switching between car, plane and hovercraft, released the same year worldwide."],
+    ["F-Zero X","1998","Nintendo EAD","A high-speed sequel trading Mode 7 scaling for a genuinely 3D track engine running at an unusually high frame rate, released the same year worldwide."],
+    ["Wave Race 64","1997","Nintendo EAD","A jet-ski racer praised for water physics well ahead of its time, released in Japan and North America in 1996 with Europe following into 1997."],
+    ["San Francisco Rush","1997","Atari Games","An arcade port built around exaggerated jumps and shortcuts, released in North America and Europe with no Japanese release."],
+    ["Top Gear Rally","1998","Boss Game Studios","A rally racer emphasizing car damage modeling, released in North America in 1997 with Europe following into 1998."],
+    ["Ridge Racer 64","2000","Nintendo Software Technology / Namco","An unusual case for a Namco arcade franchise: this N64 entry released only in North America and Europe, with no release in Namco's home market of Japan at all."]
+  ]},
+  { "hue": 40, "tag": "Sports", "title": "Sports & Extreme", "blurb": "1080° Snowboarding and Camelot's Mario sports spin-offs anchor a chapter built around late-90s extreme-sports style as much as competition.", "games": [
+    ["1080° Snowboarding","1998","Nintendo EAD","A technically striking snowboarding game praised for its physics and terrain deformation, released the same year worldwide."],
+    ["Mario Golf","1999","Camelot Software Planning","A full 18-hole golf sim wrapped in Mushroom Kingdom characters, released the same year worldwide."],
+    ["Mario Tennis","2000","Camelot Software Planning","A tennis game notable for introducing Waluigi to the Mario cast, released the same year worldwide."],
+    ["NFL Blitz","1998","Midway Games","An exaggerated, rules-light arcade football conversion, released across North America and Europe the same year despite its distinctly American sport."],
+    ["Beetle Adventure Racing","1999","Paradigm Entertainment","A Volkswagen Beetle-themed arcade racer built around wide, secret-filled tracks, released across all three regions in 1999."],
+    ["Cruis'n Exotica","2000","Eurocom","An arcade racer conversion that, unusually, reached Europe nearly three months before its North American release — no Japanese release."],
+    ["Snowboard Kids","1998","Racdym","A cartoonish snowboarding-kart hybrid that reached the West in 1998 before its Japanese release the following year, an unusual reversal of the platform's typical regional order."]
+  ]},
+  { "hue": 90, "tag": "Fighting", "title": "Fighting", "blurb": "Super Smash Bros. debuted here almost as a side project before becoming one of Nintendo's biggest franchises, alongside a chapter full of wrestling and licensed brawlers.", "games": [
+    ["Super Smash Bros.","1999","HAL Laboratory","The series' debut, built around percentage-based knockback rather than traditional health bars, released in Japan in January 1999 with the West following later that year."],
+    ["Killer Instinct Gold","1997","Rare","An enhanced N64 port of the arcade fighter adding new characters and combo-training tools, released in North America in 1996 with Europe following into 1997."],
+    ["Mortal Kombat Trilogy","1997","Midway Games","A compilation port gathering nearly every character from the series' first three arcade entries onto one cartridge, released in North America in 1996 with Europe following into 1997."],
+    ["Fighters Destiny","1998","Genki","Released in Japan as Fighting Cup, this point-scoring fighter rewarded ring-outs and style over simple knockouts — an unusual case where the Japanese release reportedly followed the West rather than leading it."],
+    ["Clay Fighter 63⅓","1997","Interplay Productions","A claymation-styled parody fighter released only in North America, with no European or Japanese release."],
+    ["WWF No Mercy","2000","AKI Corporation","Widely regarded as one of the best wrestling games ever made, released across North America and Europe in 2000."],
+    ["WWF WrestleMania 2000","1999","AKI Corporation","A predecessor to No Mercy sharing its acclaimed grapple-based engine, released in Europe in October 1999, days ahead of its North American release, with Japan following nearly a year later."],
+    ["Ready 2 Rumble Boxing","1999","Midway Studios San Diego","An exaggerated arcade boxing game built around cartoonish character designs, released in North America and Europe in 1999 with Japan following into 2000."],
+    ["WCW/nWo Revenge","1998","AKI Corporation","A wrestling game sharing its engine with the WWF titles under a rival promotion's license, released in North America in October 1998 with Europe following about a month later."]
+  ]},
+  { "hue": 200, "tag": "Puzzle", "title": "Puzzle & Party", "blurb": "Hudson Soft's Mario Party trilogy anchors a chapter of four-player-focused puzzle and board-game hybrids built around the N64's four controller ports.", "games": [
+    ["Mario Party","1999","Hudson Soft","The series debut built entirely around its four controller ports, released in Japan and North America in 1998 with Europe following into 1999."],
+    ["Mario Party 2","2000","Hudson Soft","A sequel adding costumed characters and more varied minigame boards, released in Japan and North America in 1999 with Europe following into 2000."],
+    ["Mario Party 3","2001","Hudson Soft","The trilogy's closer, adding a story mode and duel-format minigames, released in Japan and North America in 2000 with Europe following into 2001."],
+    ["Bomberman 64","1998","Hudson Soft","A 3D reinvention of the series mixing platforming stages with the traditional multiplayer arena battles, released in North America and Japan in 1997 with Europe following into 1998."],
+    ["Bomberman Hero","1999","Hudson Soft","A more action-adventure-focused spin-off dropping the traditional battle-arena multiplayer in favor of a linear campaign, released across all three regions around 1998–1999."],
+    ["Pokémon Puzzle League","2000","Nintendo / Intelligent Systems","A Pokémon-themed reskin of Tetris Attack's puzzle engine, released the same year worldwide."],
+    ["Tetrisphere","1998","H2O Entertainment","An unusual spherical take on Tetris built around clearing tiles from a rotating 3D globe, released in North America in 1997 with Europe following into 1998."],
+    ["Wetrix","1998","Zed Two","A physics-driven puzzle game about managing rising water on a deforming 3D landscape, released across all three regions in 1998."]
+  ]},
+  { "hue": 285, "tag": "Simulation", "title": "Simulation & Strategy", "blurb": "Pokémon Snap and Pokémon Stadium anchor a chapter that also holds SimCity's own sequel — a title that, unusually, never left Japan on this platform at all.", "games": [
+    ["Pokémon Snap","2000","HAL Laboratory","A rail-shooter-styled photography game built around capturing wild Pokémon on camera, released in Japan and North America in 1999 with Europe following into 2000."],
+    ["Pokémon Stadium","2000","Nintendo / HAL Laboratory","A 3D battle simulator letting players import their Game Boy Pokémon into fully rendered arena fights, released the same year across North America and Europe."],
+    ["Pokémon Stadium 2","2001","Nintendo / HAL Laboratory","A sequel adding support for the Gold and Silver generation, released in Japan in 2000 with North America and Europe following into 2001."],
+    ["SimCity 2000","1998","Imagineer","A city-building sequel adding mini-games and disaster events on top of the original's simulation — a Japan-exclusive N64 release that never reached the West on this platform at all."],
+    ["Command & Conquer","1999","Westwood Studios","A console conversion of the PC real-time strategy landmark, released across North America and Europe in 1999 with no Japanese release."],
+    ["Worms Armageddon","1999","Team17","A turn-based artillery-strategy hit ported to N64, released in Europe in December 1999 with North America following into early 2000 — no Japanese release."],
+    ["Army Men: Sarge's Heroes","1999","Panorama / The 3DO Company","A third-person shooter starring green plastic toy soldiers, released across North America and Europe in 1999 with no Japanese release."]
+  ]},
+  { "hue": 15, "tag": "Licensed", "title": "Licensed, Movie & TV Tie-ins", "blurb": "LucasArts' pair of Star Wars N64 exclusives anchor a chapter of largely well-regarded licensed titles, including two spy-franchise shooters riding GoldenEye's success.", "games": [
+    ["Star Wars: Shadows of the Empire","1996","LucasArts","An original Star Wars story filling the gap between The Empire Strikes Back and Return of the Jedi, released the same year worldwide."],
+    ["Star Wars Episode I: Racer","1999","LucasArts","A podracing game built to show off the N64's speed-sensation rendering, released the same year worldwide alongside the film it was based on."],
+    ["Spider-Man","2001","Neversoft","A well-regarded web-slinging action game, released in North America and Europe in 2001 with no Japanese release."],
+    ["South Park","1999","Iguana Entertainment","A crude-humor first-person shooter based on the animated series, released in North America in 1998 with Europe following into 1999."],
+    ["007: The World Is Not Enough","2000","Eurocom","A GoldenEye-styled Bond FPS built by the same genre lineage rather than the same studio, released in North America in October 2000 with Europe following that December — no Japanese release, as with the platform's other Bond titles."],
+    ["Batman Beyond: Return of the Joker","2001","Kemco","An animated-series tie-in platformer, released in North America in late 2000 with Europe following in January 2001 — no Japanese release."],
+    ["Toy Story 2: Buzz Lightyear to the Rescue","1999","Traveller's Tales","A well-received platformer built around the film's cast, released the same year worldwide."],
+    ["Mission: Impossible","1998","Infogrames","A stealth-action title based on the 1996 film, released across North America and Europe in 1998 with no Japanese release."],
+    ["Rampage World Tour","1997","Saffire","An N64-specific port of the giant-monster arcade brawler, built by a different studio than the PlayStation version, released in North America in September 1997 with Europe following that December — no Japanese release."]
+  ]},
+  { "hue": 55, "tag": "Curios", "title": "Cult Classics & Deep Cuts", "blurb": "A trio of celebrated Japan-exclusive titles anchors this chapter — games the West only ever got to experience through much later re-releases on entirely different hardware.", "games": [
+    ["Sin and Punishment","2000","Treasure","A rail-shooter/action hybrid from Treasure, released only in Japan — its first official Western release came seven years later via Wii Virtual Console."],
+    ["Custom Robo","1999","Noise / Nintendo","A robot-battling RPG hybrid that launched a small franchise, Japan-exclusive on N64; the series wouldn't reach the West until later Game Boy Advance and GameCube entries."],
+    ["Dōbutsu no Mori (Animal Forest)","2001","Nintendo EAD","The original life-sim that would become Animal Crossing, Japan-exclusive on N64 — its Western debut came via an enhanced GameCube port in 2002 (NA) and 2004 (EU)."],
+    ["Excitebike 64","2000","Left Field Productions","A 3D revival of the NES original blending motocross racing with a track-editor mode, released in North America and Japan in 2000 with Europe following into 2001."],
+    ["Chameleon Twist","1998","Japan System Supply","An offbeat platformer starring a tongue-grappling chameleon, released in Japan and North America in 1997 with Europe following into 1998."],
+    ["Iggy's Reckin' Balls","1998","Bonsai Entertainment","A rolling-ball arena platformer released in North America in 1998 with Europe following into 1999 — no Japanese release."],
+    ["Bomberman 64: The Second Attack","2000","Hudson Soft","A story-driven sequel with a notably darker tone than the original, released in Japan and North America in 1999–2000 with no European release."],
+    ["Vigilante 8","1999","Luxoflux","A vehicular-combat game with a 1970s setting, released in North America and Europe in 1999 with no Japanese release."],
+    ["Buck Bumble","1998","Argonaut Software","An unusual bee-themed flight-combat shooter, released across all three regions in late 1998."]
+  ]},
+  { "hue": 178, "tag": "Novelty", "title": "Arcade Ports & Multiplayer Curios", "blurb": "The largest chapter in the collection, gathering Midway's arcade conversions alongside a run of licensed and original multiplayer-focused racers and shooters.", "games": [
+    ["Cruis'n USA","1996","Williams Entertainment","An early arcade racing port and one of the N64's launch-window titles, released in North America in 1996 with Europe following into 1997 — no Japanese release."],
+    ["Rush 2: Extreme Racing USA","1998","Atari Games","A stunt-jump-heavy arcade racing sequel, released across North America and Europe in 1998 with no Japanese release."],
+    ["Extreme-G","1997","Probe Entertainment","A high-speed anti-gravity racer from a British studio, released across all three regions in 1997."],
+    ["NBA Courtside 2 Featuring Kobe Bryant","1999","Left Field Productions","A basketball sim built exclusively for the North American market, with no European or Japanese release."],
+    ["Wayne Gretzky's 3D Hockey","1997","Atari Games","An arcade-style hockey game released in North America in late 1996 with Europe following into 1997 — Japan's release trailed by over a year."],
+    ["Micro Machines 64 Turbo","1999","Supersonic Software","A British-developed miniature-vehicle racer released across all three regions in 1999."],
+    ["GEX 64: Enter the Gecko","1998","Crystal Dynamics","A wisecracking platformer starring a gecko television addict, released across North America and Europe in 1998 with no Japanese release."],
+    ["Bust-A-Move '99","1999","Taito","Released in Europe the year before as Bust-A-Move 3 DX, this puzzle game reached Europe well ahead of its own Japanese (as Puzzle Bobble 64) and North American releases."],
+    ["NBA Hangtime","1997","Midway Games","An exaggerated arcade basketball conversion, released in North America in early 1997 with Europe following that September — no Japanese release."],
+    ["Automobili Lamborghini","1997","Titus Software","Released in Japan as Super Speed Race 64 through a different publisher, this supercar racer reached North America and Europe first, with Japan following about six months later."],
+    ["San Francisco Rush 2049","2000","Midway Games West","A futuristic sequel to the Rush arcade series, released across North America and Europe in 2000 with no Japanese release."],
+    ["Rampage 2: Universal Tour","1999","Game Refuge","A sequel continuing the giant-monster arcade brawler formula, released across North America and Europe in 1999 with no Japanese release."]
+  ]}
+]

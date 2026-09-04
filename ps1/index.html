@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The CD Explorer's Collection — 100 Best PlayStation Games</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&family=Inter:wght@400;500;600;700&family=Azeret+Mono&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #EAEAEC;
+    --bg-elevated: #FFFFFF;
+    --text: #1C1C21;
+    --text-soft: #53545F;
+    --text-faint: #8B8C97;
+    --accent: #1E5FBF;
+    --accent-contrast: #FFFFFF;
+    --highlight: #E23E96;
+    --border: #D6D6DC;
+    --card-bg: #FFFFFF;
+    --mono-bg: #DFDFE6;
+    --shadow: 0 2px 0 rgba(30,95,191,0.16);
+    --hue: 213;
+    --sat: 65%;
+    --lig: 46%;
+    --sat-soft: 50%;
+    --lig-soft: 91%;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16171B;
+      --bg-elevated: #1D1E24;
+      --text: #ECEDF2;
+      --text-soft: #A5A7B5;
+      --text-faint: #6D6F7E;
+      --accent: #6FA8FF;
+      --accent-contrast: #16171B;
+      --highlight: #FF7AC6;
+      --border: #2B2C36;
+      --card-bg: #1B1C22;
+      --mono-bg: #24252E;
+      --shadow: 0 2px 0 rgba(0,0,0,0.5);
+      --sat: 75%;
+      --lig: 74%;
+      --sat-soft: 40%;
+      --lig-soft: 18%;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #16171B;
+    --bg-elevated: #1D1E24;
+    --text: #ECEDF2;
+    --text-soft: #A5A7B5;
+    --text-faint: #6D6F7E;
+    --accent: #6FA8FF;
+    --accent-contrast: #16171B;
+    --highlight: #FF7AC6;
+    --border: #2B2C36;
+    --card-bg: #1B1C22;
+    --mono-bg: #24252E;
+    --shadow: 0 2px 0 rgba(0,0,0,0.5);
+    --sat: 75%;
+    --lig: 74%;
+    --sat-soft: 40%;
+    --lig-soft: 18%;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .mono { font-family: 'Azeret Mono', monospace; letter-spacing: 0.01em; }
+  .display { font-family: 'Zen Dots', sans-serif; font-weight: 400; letter-spacing: 0em; }
+  a { color: inherit; }
+  img { max-width: 100%; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    padding: 5rem 1.5rem 3.5rem;
+    overflow: hidden;
+    background: var(--bg);
+    border-bottom: 3px solid var(--border);
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, hsl(var(--hue) 30% 60% / 0.12), transparent 65%);
+    pointer-events: none;
+  }
+
+  .hero-glyphs { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+  .hero-glyphs span {
+    position: absolute;
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.16;
+  }
+  :root[data-theme="dark"] .hero-glyphs span { opacity: 0.22; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hero-glyphs span { opacity: 0.22; } }
+  .g-tri { color: #2FA84F; }
+  .g-cir { color: #D64545; }
+  .g-cross { color: #1E5FBF; }
+  .g-sq { color: #E23E96; }
+
+  .hero-inner {
+    position: relative;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    background: var(--mono-bg);
+    border: 2px solid var(--border);
+    color: var(--text-soft);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+  }
+
+  .hero h1 {
+    font-family: 'Zen Dots', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.6rem, 4.4vw, 2.75rem);
+    line-height: 1.35;
+    margin: 0 0 1.5rem;
+    color: var(--text);
+    letter-spacing: 0.01em;
+    display: inline-block;
+    transform: skewX(-4deg);
+  }
+
+  .hero p.lede {
+    max-width: 620px;
+    margin: 0 auto;
+    color: var(--text-soft);
+    font-size: 1.06rem;
+  }
+
+  .hero-meta {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-faint);
+  }
+
+  .hero-meta strong { color: var(--accent); }
+
+  /* ---------- TOOLBAR ---------- */
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg-elevated);
+    border-bottom: 3px solid var(--border);
+    padding: 0.85rem 1.5rem;
+  }
+
+  .toolbar-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .search-row { display: flex; gap: 0.6rem; align-items: center; }
+
+  #searchInput {
+    flex: 1;
+    padding: 0.65rem 0.95rem;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    background: var(--mono-bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+  }
+  #searchInput:focus { border-color: var(--accent); }
+  #searchInput::placeholder { color: var(--text-faint); }
+
+  #resultCount { font-family: 'Azeret Mono', monospace; font-size: 0.78rem; color: var(--text-faint); white-space: nowrap; }
+
+  .theme-toggle {
+    border: 2px solid var(--border);
+    background: var(--mono-bg);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 0.6rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+
+  .chips { display: flex; gap: 0.45rem; overflow-x: auto; padding-bottom: 0.2rem; scrollbar-width: thin; }
+
+  .chip {
+    flex: none;
+    border: 2px solid var(--border);
+    background: var(--bg);
+    color: var(--text-soft);
+    border-radius: 999px;
+    padding: 0.35rem 0.8rem;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.75rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- MAIN / CHAPTERS ---------- */
+  main { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem 1rem; }
+
+  .chapter { scroll-margin-top: 132px; margin-bottom: 4rem; }
+
+  .chapter-head { display: flex; align-items: baseline; gap: 0.9rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+
+  .chapter-num { font-family: 'Azeret Mono', monospace; font-weight: 700; font-size: 1rem; color: hsl(var(--hue) var(--sat) var(--lig)); letter-spacing: 0.02em; display: inline-flex; align-items: center; gap: 0.35rem; }
+
+  .chapter-glyph { font-size: 1.05rem; }
+
+  .chapter-title { font-family: 'Zen Dots', sans-serif; font-weight: 400; font-size: clamp(1rem, 2.2vw, 1.3rem); margin: 0; letter-spacing: 0em; line-height: 1.4; }
+
+  .chapter-tag {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.6rem;
+    border-radius: 999px;
+    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+    color: hsl(var(--hue) var(--sat) var(--lig));
+  }
+
+  .chapter-blurb { color: var(--text-soft); max-width: 760px; margin: 0.6rem 0 1.6rem; font-size: 0.98rem; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+
+  .card {
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem 1.1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    box-shadow: var(--shadow);
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 12px 12px 0 0;
+    background: hsl(var(--hue) var(--sat) var(--lig));
+  }
+
+  .card-idx {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.68rem;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    position: absolute;
+    top: 0.85rem;
+    right: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .card-glyph { font-size: 0.95rem; font-weight: 700; line-height: 1; }
+
+  .card-title { font-weight: 700; font-size: 1rem; padding-right: 3.6rem; margin: 0.3rem 0 0; }
+
+  .card-meta { font-family: 'Azeret Mono', monospace; font-size: 0.75rem; color: hsl(var(--hue) var(--sat) var(--lig)); }
+
+  .card-blurb { font-size: 0.87rem; color: var(--text-soft); margin: 0.15rem 0 0; }
+
+  .card.hidden, .chapter.hidden { display: none; }
+
+  #emptyState { display: none; text-align: center; padding: 3rem 1rem; color: var(--text-faint); font-family: 'Azeret Mono', monospace; }
+
+  /* ---------- CURATOR NOTE ---------- */
+  .curator-note {
+    max-width: 780px;
+    margin: 1rem auto 4rem;
+    padding: 1.7rem 1.9rem;
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-left: 6px solid var(--accent);
+    border-radius: 12px;
+  }
+  .curator-note h2 { font-family: 'Zen Dots', sans-serif; font-weight: 400; font-size: 1rem; margin: 0 0 0.9rem; letter-spacing: 0em; line-height: 1.5; }
+  .curator-note p { color: var(--text-soft); font-size: 0.92rem; margin: 0 0 0.8rem; }
+  .curator-note p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  footer { border-top: 3px solid var(--border); padding: 2.5rem 1.5rem 3.5rem; background: var(--bg-elevated); }
+  .footer-inner { max-width: 780px; margin: 0 auto; font-size: 0.85rem; color: var(--text-faint); }
+  .footer-inner h3 { font-family: 'Zen Dots', sans-serif; font-weight: 400; font-size: 0.8rem; color: var(--text-soft); margin: 0 0 0.8rem; letter-spacing: 0em; line-height: 1.6; }
+  .footer-inner ul { padding-left: 1.1rem; margin: 0 0 1.4rem; }
+  .footer-inner li { margin-bottom: 0.3rem; }
+  .footer-inner a { color: var(--accent); text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-glyphs" aria-hidden="true">
+    <span class="g-tri" style="top:8%; left:6%; font-size:2.6rem; transform:rotate(-12deg);">△</span>
+    <span class="g-cir" style="top:14%; left:88%; font-size:2.1rem; transform:rotate(8deg);">○</span>
+    <span class="g-cross" style="top:70%; left:4%; font-size:2.4rem; transform:rotate(15deg);">✕</span>
+    <span class="g-sq" style="top:76%; left:91%; font-size:2rem; transform:rotate(-10deg);">□</span>
+    <span class="g-cir" style="top:4%; left:38%; font-size:1.6rem; transform:rotate(-6deg);">○</span>
+    <span class="g-sq" style="top:10%; left:66%; font-size:1.8rem; transform:rotate(20deg);">□</span>
+    <span class="g-tri" style="top:80%; left:52%; font-size:1.7rem; transform:rotate(6deg);">△</span>
+    <span class="g-cross" style="top:60%; left:20%; font-size:1.5rem; transform:rotate(-18deg);">✕</span>
+    <span class="g-tri" style="top:34%; left:95%; font-size:1.4rem; transform:rotate(30deg);">△</span>
+    <span class="g-cross" style="top:40%; left:2%; font-size:1.6rem; transform:rotate(10deg);">✕</span>
+    <span class="g-sq" style="top:88%; left:26%; font-size:1.5rem; transform:rotate(-22deg);">□</span>
+    <span class="g-cir" style="top:90%; left:70%; font-size:1.8rem; transform:rotate(4deg);">○</span>
+  </div>
+  <div class="hero-inner">
+    <span class="hero-pill mono">PS1-001 · 1994–2006</span>
+    <h1>The CD Explorer's Collection</h1>
+    <p class="lede">One hundred games from the console that moved the industry onto CD-ROM and made the console RPG a mainstream genre — from Sony and Square's genre-defining classics to the British-developed flagships and Europe-skipping curios that came with the format's cheaper, faster-to-produce discs.</p>
+    <div class="hero-meta">
+      <span><strong id="totalCount">100</strong> games</span>
+      <span><strong>12</strong> chapters</span>
+      <span><strong>1994–2006</strong> PS1 releases</span>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar-inner">
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="Search by title, developer, or genre…">
+      <span id="resultCount" class="mono">100 / 100</span>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+<main>
+  <div id="chapters"></div>
+  <div id="emptyState">No discs match that search.</div>
+
+  <div class="curator-note">
+    <h2 class="display">A note from the curator</h2>
+    <p>The original PlayStation closes out this project's four-platform expansion, and it's the collection where the games themselves finally get to lead every card. Earlier builds in this project treated regional release history as a running thread worth surfacing constantly; here, that's been dialled back on purpose. What makes a game worth including is what it actually did — a mechanic, a tone, a technical trick, a place in the console's history — and that comes first in every blurb. Regional detail only shows up where there's a real story attached to it: an actual title change, a genuine exclusivity, an unusual release order. A game that came out the same year everywhere, unremarkably, just doesn't get a regional mention at all.</p>
+    <p>That said, PS1's disc-based format did produce a real, striking pattern worth naming plainly: several Squaresoft RPGs from this era — Xenogears, Einhänder, Brave Fencer Musashi, and Threads of Fate among them — never received any European release at all, a gap that wouldn't repeat at the same scale on later Square platforms. A couple of games assumed to share that fate going in, Suikoden and Suikoden II, actually turned out to have released across all three regions just fine — a good reminder that an exclusivity assumption needs checking as carefully in either direction as anything else.</p>
+    <p>This build continues the tiered-research process from the previous three collections: well-established, unambiguous titles were drawn straight from existing knowledge, and dedicated research went specifically toward the roughly thirty games carrying a real regional-exclusivity claim, an unfamiliar credit, or a title that might differ by region.</p>
+    <p>With this collection, the project reaches its stated 12-platform goal.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <h3 class="mono">Never released in Europe on PS1</h3>
+    <ul>
+      <li>Xenogears (1998)</li>
+      <li>Einhänder (1997)</li>
+      <li>Brave Fencer Musashi (1998)</li>
+      <li>Threads of Fate (1999)</li>
+    </ul>
+    <h3 class="mono">Vib-Ribbon — the reverse case</h3>
+    <ul>
+      <li>Released in Japan and Europe in 1999, Vib-Ribbon never got a North American PS1 release at all — Sony reportedly passed on localizing it. North America finally got an official release 15 years later, via PS3 and PSN in 2014.</li>
+    </ul>
+    <h3 class="mono">Sources &amp; further reading</h3>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/List_of_PlayStation_games_(A%E2%80%93L)" target="_blank" rel="noopener">Wikipedia — List of PlayStation games</a></li>
+      <li><a href="https://www.nintendolife.com/guides/best-ps1-games" target="_blank" rel="noopener">Push Square / retro press — Best PS1 Games Of All Time round-ups</a></li>
+      <li><a href="https://retrododo.com/best-ps1-games/" target="_blank" rel="noopener">RetroDodo — The Best PS1 Games Of All Time</a></li>
+      <li><a href="https://www.denofgeek.com/games/best-ps1-playstation-games/" target="_blank" rel="noopener">Den of Geek — The Best PS1 Games</a></li>
+    </ul>
+    <p>All 100 titles were checked for title accuracy, release year and region, developer, and PS1 platform compatibility before publication.</p>
+  </div>
+</footer>
+
+<script src="../assets/collection.js" data-src="../data/ps1.json" data-glyphs='[{"ch":"△","color":"#2FA84F"},{"ch":"○","color":"#D64545"},{"ch":"✕","color":"#1E5FBF"},{"ch":"□","color":"#E23E96"}]'></script>
+</body>
+</html>

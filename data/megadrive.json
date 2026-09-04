@@ -1,0 +1,698 @@
+[
+  {
+    "hue": 10,
+    "tag": "Platformer",
+    "title": "Sonic & Mascot Platformers",
+    "blurb": "The blue blur and the roster of speed-obsessed rivals Sega built around him, defining the Mega Drive's whole personality.",
+    "games": [
+      [
+        "Sonic the Hedgehog",
+        "1991",
+        "Sega",
+        "The pack-in that reinvented Sega overnight: loop-de-loops, spin-dashes, and a level of speed the NES generation had never felt."
+      ],
+      [
+        "Sonic the Hedgehog 2",
+        "1992",
+        "Sega",
+        "Tails joins in, the Spin Dash arrives, and Emerald Hill Zone becomes the platform's signature opening act."
+      ],
+      [
+        "Sonic the Hedgehog 3",
+        "1994",
+        "Sega",
+        "A darker, denser Sonic with save files, elemental shields, and Knuckles crashing in as a genuine rival."
+      ],
+      [
+        "Sonic & Knuckles",
+        "1994",
+        "Sega",
+        "The lock-on cartridge that let the console physically merge two games into one sprawling adventure."
+      ],
+      [
+        "Ristar",
+        "1995",
+        "Sega",
+        "A late-era gem built around a stretchy-armed star-child who grabs and headbutts his way through gorgeous, painterly worlds."
+      ],
+      [
+        "Dynamite Headdy",
+        "1994",
+        "Treasure",
+        "A puppet-theatre platformer overflowing with ideas, where the hero's detachable head becomes the whole toolkit."
+      ],
+      [
+        "Alex Kidd in the Enchanted Castle",
+        "1990",
+        "Sega",
+        "Sega's original mascot before Sonic, swapping punches and rock-paper-scissors duels through a fairy-tale kingdom."
+      ],
+      [
+        "Rocket Knight Adventures",
+        "1993",
+        "Konami",
+        "A jetpack-propelled opossum knight in armor, charging and boosting through some of the era's most kinetic level design."
+      ],
+      [
+        "Vectorman",
+        "1995",
+        "BlueSky Software",
+        "A shape-shifting robot soldier rendered with pre-rendered 3D sprites, wringing striking visuals out of the aging hardware."
+      ],
+      [
+        "Kid Chameleon",
+        "1992",
+        "Sega",
+        "A sprawling, mask-swapping platformer that hands the player dozens of power-up forms across a genuinely huge map."
+      ]
+    ]
+  },
+  {
+    "hue": 40,
+    "tag": "Licensed",
+    "title": "Licensed & Platforming Icons",
+    "blurb": "Disney deals and Western studio talent turned cartoon licenses into some of the console's most polished platforming.",
+    "games": [
+      [
+        "Earthworm Jim",
+        "1994",
+        "Shiny Entertainment",
+        "A super-suited earthworm swinging his own detached head as a whip, animated with a cartoon lunacy few games matched."
+      ],
+      [
+        "Earthworm Jim 2",
+        "1996",
+        "Shiny Entertainment",
+        "Stranger, funnier, and more inventive than the original, trading straight platforming for a string of bizarre mini-concepts."
+      ],
+      [
+        "QuackShot starring Donald Duck",
+        "1991",
+        "Sega",
+        "An Indiana Jones pastiche starring Donald on a globe-trotting treasure hunt, built on genuine exploration and backtracking."
+      ],
+      [
+        "Disney's Aladdin",
+        "1993",
+        "Virgin Games",
+        "Hand-animated by former Disney artists, with a sword-slashing, apple-throwing Aladdin that still looks remarkable today."
+      ],
+      [
+        "Castle of Illusion Starring Mickey Mouse",
+        "1990",
+        "Sega",
+        "A launch-era showcase of what the hardware could do with a storybook world and a bounce-happy Mickey."
+      ],
+      [
+        "World of Illusion Starring Mickey Mouse and Donald Duck",
+        "1992",
+        "Sega",
+        "A two-player follow-up pairing Mickey and Donald through a shared magical adventure, co-op done early and well."
+      ],
+      [
+        "Cool Spot",
+        "1994",
+        "Virgin Games",
+        "The 7-Up mascot's own outing, built by the Aladdin team into a tight, atmospheric beach-side platformer."
+      ],
+      [
+        "James Pond II: Codename RoboCod",
+        "1991",
+        "Millennium Interactive",
+        "A British spy-fish comedy platformer whose stretching, telescoping body became its signature puzzle mechanic."
+      ],
+      [
+        "Taz-Mania",
+        "1992",
+        "Recreational Brainware",
+        "The whirlwind-spinning Looney Tunes devil chews, spins, and rampages through an unusually chaotic platformer."
+      ],
+      [
+        "Puggsy",
+        "1993",
+        "Traveller's Tales",
+        "An underappreciated British puzzle-platformer where a stranded alien solves rooms by picking up and hurling nearly everything."
+      ]
+    ]
+  },
+  {
+    "hue": 70,
+    "tag": "Beat-'em-up",
+    "title": "Beat-'Em-Ups & Brawlers",
+    "blurb": "The genre the Mega Drive made its own: street gangs, ancient armies, and rubber-suited turtles, all cleared out fist by fist.",
+    "games": [
+      [
+        "Streets of Rage",
+        "1991",
+        "Sega",
+        "A synth-heavy debut that set the template for the console's signature brawler series."
+      ],
+      [
+        "Streets of Rage 2",
+        "1993",
+        "Sega",
+        "Widely considered the genre's high point, with Yuzo Koshiro's soundtrack and a roster everyone remembers."
+      ],
+      [
+        "Streets of Rage 3",
+        "1994",
+        "Sega",
+        "A faster, stranger, more experimental close to the trilogy, leaning into dashes, blitz attacks, and a darker plot."
+      ],
+      [
+        "Golden Axe",
+        "1990",
+        "Sega",
+        "Sword-and-sorcery brawling with rideable beasts and a magic meter, translating the arcade hit onto cartridge."
+      ],
+      [
+        "Golden Axe II",
+        "1991",
+        "Sega",
+        "A cartridge-exclusive sequel that leaned harder into spectacle, with bigger magic effects and a longer campaign."
+      ],
+      [
+        "Altered Beast",
+        "1990",
+        "Sega",
+        "The console's original pack-in, where a resurrected warrior transforms into werewolves and dragons to rescue Athena."
+      ],
+      [
+        "Comix Zone",
+        "1995",
+        "Sega Technical Institute",
+        "A brawler drawn as a living comic book, where the hero punches his way panel to panel through his own pages."
+      ],
+      [
+        "Mazin Saga: Mutant Fighter",
+        "1993",
+        "Almanic Corporation",
+        "A giant-robot brawler built on the Mazinger anime license, mixing beat-'em-up combat with fighting-game specials."
+      ],
+      [
+        "Teenage Mutant Hero Turtles: The Hyperstone Heist",
+        "1993",
+        "Konami",
+        "Europe's censor-friendly Turtles rename for a tight, arcade-faithful four-turtle brawl through familiar city streets."
+      ]
+    ]
+  },
+  {
+    "hue": 100,
+    "tag": "Run-and-Gun",
+    "title": "Run-and-Gun & Action",
+    "blurb": "Fast, loud, and frequently punishing — the console's answer to the arcade's most trigger-happy genre.",
+    "games": [
+      [
+        "Gunstar Heroes",
+        "1993",
+        "Treasure",
+        "Treasure's debut and a genre landmark, stacking weapon combinations and boss gauntlets at a relentless pace."
+      ],
+      [
+        "Alien Soldier",
+        "1995",
+        "Treasure",
+        "Nearly wall-to-wall boss fights, built around a rapid weapon-switching system that rewards mastery over memorization."
+      ],
+      [
+        "Ranger X",
+        "1993",
+        "GAU Entertainment",
+        "A mech-riding shooter that lets the player leap on and off a giant hover-bike mid-battle."
+      ],
+      [
+        "Target Earth",
+        "1990",
+        "NCS Corporation",
+        "An early mech-combat game with a deliberate, tactical pace closer to a simulation than a shooter."
+      ],
+      [
+        "Probotector",
+        "1994",
+        "Konami",
+        "Europe's robot-reskinned edition of the run-and-gun classic, swapping human soldiers for droids to sidestep content rules."
+      ],
+      [
+        "Shinobi III: Return of the Ninja Master",
+        "1993",
+        "Sega",
+        "A ninja action game built on pure momentum, with a run button that turns every stage into a sprint."
+      ],
+      [
+        "Mercs",
+        "1991",
+        "Sega",
+        "A top-down commando shoot-'em-up ported from the arcade, playable solo or with a friend."
+      ],
+      [
+        "Cyborg Justice",
+        "1993",
+        "Novotrade",
+        "A part-brawler, part-shooter where the hero rebuilds himself from scavenged robot parts as he fights."
+      ]
+    ]
+  },
+  {
+    "hue": 130,
+    "tag": "Shooter",
+    "title": "Shoot-'Em-Ups",
+    "blurb": "Technosoft, Toaplan, and Compile brought arcade-grade bullet-dodging home, several of these titles collector's-market legends.",
+    "games": [
+      [
+        "Thunder Force III",
+        "1990",
+        "Technosoft",
+        "Never officially released in Europe, but a defining side-scrolling shooter with selectable stage order and a beloved soundtrack."
+      ],
+      [
+        "Thunder Force IV",
+        "1993",
+        "Technosoft",
+        "Kept its Thunder Force name in Europe while North America renamed it Lightening Force: Quest for the Darkstar."
+      ],
+      [
+        "M.U.S.H.A.",
+        "1991",
+        "Compile",
+        "A vertical shooter with no European release, but treasured by shooter fans for its density and difficulty curve."
+      ],
+      [
+        "Gleylancer",
+        "1992",
+        "NCS Corporation",
+        "A Japan-only vertical shooter with a rotating multi-directional shot system that outclassed much of its competition."
+      ],
+      [
+        "Truxton",
+        "1990",
+        "Toaplan",
+        "A tightly-designed vertical shooter from Toaplan's arcade pedigree, ported faithfully to cartridge."
+      ],
+      [
+        "Elemental Master",
+        "1993",
+        "Technosoft",
+        "Never released in Europe, this fantasy-themed shooter pairs elemental magic spells with traditional bullet patterns."
+      ],
+      [
+        "Zero Wing",
+        "1991",
+        "Toaplan",
+        "A side-scrolling shooter better known today for its garbled opening cutscene than for its genuinely solid combat."
+      ],
+      [
+        "Bio-Hazard Battle",
+        "1992",
+        "Sega",
+        "An organic, creature-piloted shooter with a distinctly biological art style rare among its peers."
+      ],
+      [
+        "Sub-Terrania",
+        "1994",
+        "Zyrinx",
+        "A gravity-driven cavern shooter demanding precise thrust control as much as trigger reflexes."
+      ],
+      [
+        "Steel Empire",
+        "1992",
+        "Hot-B",
+        "A steampunk shooter of airships and biplanes, later remembered as one of the more visually distinctive entries in the genre."
+      ]
+    ]
+  },
+  {
+    "hue": 160,
+    "tag": "RPG",
+    "title": "Role-Playing Adventures",
+    "blurb": "From Sega's own Phantasy Star lineage to cult European favorites, the Mega Drive's RPG library rewards patient exploring.",
+    "games": [
+      [
+        "Phantasy Star II",
+        "1990",
+        "Sega",
+        "A dramatic leap from its 8-bit predecessor, with a grim story and a science-fantasy setting years ahead of its time."
+      ],
+      [
+        "Phantasy Star III: Generations of Doom",
+        "1991",
+        "Sega",
+        "A generational saga where marriage choices ripple forward across three playable eras of the same family line."
+      ],
+      [
+        "Phantasy Star IV: The End of the Millennium",
+        "1995",
+        "Sega",
+        "A late-cycle showcase for the series, pairing comic-panel cutscenes with some of the deepest combat on the console."
+      ],
+      [
+        "Shining Force",
+        "1993",
+        "Climax Entertainment",
+        "A tactical RPG that made grid-based army building approachable, with a huge cast to recruit and train."
+      ],
+      [
+        "Shining Force II",
+        "1994",
+        "Sonic! Software Planning",
+        "A bigger, more polished sequel that many still consider the high point of Mega Drive tactics games."
+      ],
+      [
+        "Shining in the Darkness",
+        "1991",
+        "Climax Entertainment",
+        "A first-person dungeon crawler from the same team, trading army tactics for corridor-by-corridor exploration."
+      ],
+      [
+        "Landstalker: The Treasures of King Nole",
+        "1993",
+        "Climax Entertainment",
+        "An isometric action-RPG built on precise jumping puzzles as much as combat, with a wry sense of humor throughout."
+      ],
+      [
+        "The Story of Thor",
+        "1995",
+        "Ancient",
+        "Europe's title for the action-RPG North America knew as Beyond Oasis, built around elemental spirit companions."
+      ],
+      [
+        "Soleil",
+        "1995",
+        "Nextech",
+        "Europe's name for the game North America called Crusader of Centy, an animal-transforming action-RPG in a Zelda-adjacent mold."
+      ],
+      [
+        "Shadowrun",
+        "1994",
+        "BlueSky Software",
+        "Never released in Europe, this cyberpunk-fantasy RPG adapts the tabletop setting into a genuinely ambitious action-RPG."
+      ]
+    ]
+  },
+  {
+    "hue": 190,
+    "tag": "Strategy",
+    "title": "Strategy & Simulation",
+    "blurb": "War games, god games, and everything in between, several imported by British studios who understood the genre best.",
+    "games": [
+      [
+        "Herzog Zwei",
+        "1990",
+        "Technosoft",
+        "Widely credited as a genuine ancestor of the real-time strategy genre, commanding units from a transforming mech."
+      ],
+      [
+        "General Chaos",
+        "1994",
+        "Game Refuge",
+        "A squad-based tactics game played for slapstick comedy as much as strategy, with cartoonish soldier chaos."
+      ],
+      [
+        "Populous",
+        "1991",
+        "Bullfrog Productions",
+        "The original god game, terraforming land and guiding followers in a genre Peter Molyneux's team effectively invented."
+      ],
+      [
+        "Dune II: The Battle for Arrakis",
+        "1994",
+        "Westwood Studios",
+        "Europe's cartridge title for the console adaptation of the game that helped define modern real-time strategy, distinct from the PC original."
+      ],
+      [
+        "Warsong",
+        "1991",
+        "NCS Corporation",
+        "Never released in Europe, this is the North American localization of Japan's Langrisser, a foundational tactical RPG."
+      ],
+      [
+        "Gain Ground",
+        "1991",
+        "Sanritsu",
+        "An overhead action-strategy hybrid where rescued units carry forward, forcing careful squad management across eras."
+      ],
+      [
+        "Master of Monsters",
+        "1991",
+        "SystemSoft",
+        "Never released in Europe, this turn-based fantasy strategy game pits summoned monster armies against rival lords."
+      ]
+    ]
+  },
+  {
+    "hue": 220,
+    "tag": "Puzzle",
+    "title": "Puzzle",
+    "blurb": "Falling blocks and quick-thinking arcade puzzles, several of them Sega's own answer to the Tetris craze.",
+    "games": [
+      [
+        "Columns",
+        "1990",
+        "Sega",
+        "Sega's own falling-gem answer to Tetris, simple enough to become an unofficial pack-in classic."
+      ],
+      [
+        "Dr. Robotnik's Mean Bean Machine",
+        "1994",
+        "Compile",
+        "A reskinned Puyo Puyo starring Sonic's villain, and one of the sharpest competitive puzzlers on the console."
+      ],
+      [
+        "Klax",
+        "1991",
+        "Atari Games",
+        "An arcade conveyor-belt puzzler about catching and sorting colored tiles before they hit the floor."
+      ],
+      [
+        "Pac-Panic",
+        "1993",
+        "Namco",
+        "Europe's name for the falling-block puzzler North America released a year later as Pac-Attack."
+      ],
+      [
+        "Zoop",
+        "1995",
+        "Hookstone",
+        "A frantic shape-matching puzzler where colored shapes creep in from the edges and must be cleared before they reach center."
+      ],
+      [
+        "Mega Bomberman",
+        "1994",
+        "Hudson Soft",
+        "A console-exclusive Bomberman built around a sprawling single-player quest alongside the usual multiplayer mayhem."
+      ]
+    ]
+  },
+  {
+    "hue": 250,
+    "tag": "Sports",
+    "title": "Sports",
+    "blurb": "EA's Mega Drive sports run built the template modern sports games still follow, alongside a few gleefully strange detours.",
+    "games": [
+      [
+        "Mutant League Football",
+        "1993",
+        "Electronic Arts",
+        "American football with land mines, skeleton linemen, and a sense of humor sports games rarely allow themselves."
+      ],
+      [
+        "Mutant League Hockey",
+        "1994",
+        "Electronic Arts",
+        "The gridiron formula reapplied to the rink, keeping the chaos and adding blood-soaked ice."
+      ],
+      [
+        "Super Baseball 2020",
+        "1993",
+        "NuFX",
+        "A future-set baseball game with robots on the roster, an odd but memorable arcade conversion."
+      ],
+      [
+        "Zany Golf",
+        "1990",
+        "Will Harvey",
+        "Miniature golf reimagined as a physics playground, full of windmills, ramps, and genuinely clever course design."
+      ],
+      [
+        "NHL '94",
+        "1993",
+        "High Score Productions",
+        "Still cited by hockey fans as one of the tightest, most responsive sports games ever made on any hardware."
+      ],
+      [
+        "John Madden Football '93",
+        "1992",
+        "LookingGlass Technologies",
+        "A key early entry in the Madden lineage, refining the formula that would define EA Sports for decades."
+      ],
+      [
+        "WWF Royal Rumble",
+        "1993",
+        "Sculptured Software",
+        "A wrestling game built around the chaotic multi-man Royal Rumble format rather than one-on-one bouts."
+      ]
+    ]
+  },
+  {
+    "hue": 280,
+    "tag": "Racing",
+    "title": "Racing",
+    "blurb": "British studios Codemasters and Bitmap-adjacent teams gave the Mega Drive a distinctly European flavor of speed.",
+    "games": [
+      [
+        "Micro Machines",
+        "1993",
+        "Codemasters",
+        "Toy-car racing across kitchen tables and garden hoses, from a British studio that made the license genuinely great."
+      ],
+      [
+        "Micro Machines 2: Turbo Tournament",
+        "1994",
+        "Codemasters",
+        "A refined sequel adding new toy-scale locations and one of the console's best multiplayer split-screen setups."
+      ],
+      [
+        "Super Monaco GP",
+        "1991",
+        "Sega",
+        "An arcade-accurate Formula One conversion with a surprisingly deep season mode for the era."
+      ],
+      [
+        "Road Rash",
+        "1991",
+        "Electronic Arts",
+        "Motorcycle racing where punching and kicking rivals off their bikes is just as important as the finish line."
+      ],
+      [
+        "Rock N' Roll Racing",
+        "1994",
+        "Silicon & Synapse",
+        "An isometric combat-racer from the future Blizzard team, packed with rock riffs and weaponized vehicles."
+      ],
+      [
+        "OutRun",
+        "1991",
+        "Sega",
+        "The arcade's breezy coastal cruiser brought home, trading route forks and a stereo soundtrack for pure driving feel."
+      ],
+      [
+        "Combat Cars",
+        "1994",
+        "Scangames",
+        "A vehicular-combat racer built for split-screen mayhem well before that became a genre unto itself."
+      ]
+    ]
+  },
+  {
+    "hue": 310,
+    "tag": "Fighting",
+    "title": "Fighting",
+    "blurb": "The console's fighting-game answer to the arcade boom, from home-grown brawlers to divisive ports of the era's biggest hits.",
+    "games": [
+      [
+        "Eternal Champions",
+        "1993",
+        "Sega",
+        "Sega's own attempt at a flagship fighter, with a cast of time-displaced warriors and gruesome finishing moves."
+      ],
+      [
+        "Mortal Kombat",
+        "1993",
+        "Probe Software",
+        "The uncensored, blood-intact home port that made the Mega Drive the system fighting fans reached for first."
+      ],
+      [
+        "Mortal Kombat II",
+        "1994",
+        "Probe Software",
+        "A stronger, more complete conversion of the arcade sequel, again keeping the violence the SNES version cut."
+      ],
+      [
+        "WeaponLord",
+        "1995",
+        "Visual Concepts",
+        "Never released in Europe, this deep, technical fighter arrived late but earned a small, devoted following."
+      ],
+      [
+        "Teenage Mutant Hero Turtles: Tournament Fighters",
+        "1993",
+        "Konami",
+        "Europe's Turtles-branded one-on-one fighter, distinct from and often preferred over its SNES and NES counterparts."
+      ],
+      [
+        "King of the Monsters",
+        "1993",
+        "SPS Co., Ltd.",
+        "A giant-monster wrestling game translating SNK's arcade kaiju brawl onto cartridge."
+      ]
+    ]
+  },
+  {
+    "hue": 340,
+    "tag": "Curios",
+    "title": "Cult Classics & European Curios",
+    "blurb": "The console's British and French developer scene left a distinct fingerprint here, in games this collection's European framing was built to celebrate.",
+    "games": [
+      [
+        "ToeJam & Earl",
+        "1992",
+        "Johnson Voorsanger Productions",
+        "Two funky aliens exploring a randomly generated Earth, blending roguelike structure with a laid-back groove."
+      ],
+      [
+        "ToeJam & Earl in Panic on Funkotron",
+        "1994",
+        "Johnson Voorsanger Productions",
+        "A more conventional platforming sequel, trading procedural exploration for tighter, level-based design."
+      ],
+      [
+        "Flashback: The Quest for Identity",
+        "1993",
+        "Delphine Software",
+        "A French rotoscoped sci-fi adventure of cinematic platforming and amnesia-driven mystery."
+      ],
+      [
+        "Cannon Fodder",
+        "1994",
+        "Sensible Software",
+        "A darkly comic overhead war game where each fallen soldier gets a cross on the title-screen hillside."
+      ],
+      [
+        "Zombies Ate My Neighbors",
+        "1994",
+        "LucasArts",
+        "A horror-comedy shooter rescuing hapless neighbors from a checklist of B-movie monsters."
+      ],
+      [
+        "Alisia Dragoon",
+        "1992",
+        "Game Arts",
+        "A lightning-whip action game with a striking pixel-art style and a roster of dragon familiars to summon."
+      ],
+      [
+        "Speedball 2: Brutal Deluxe",
+        "1992",
+        "The Bitmap Brothers",
+        "A violent, futuristic sport blending handball and hockey, still cited as one of the genre's finest."
+      ],
+      [
+        "Xenon 2: Megablast",
+        "1992",
+        "The Bitmap Brothers",
+        "A vertical shooter built around a shop system for upgrading the ship between runs, with a Bomb the Bass soundtrack."
+      ],
+      [
+        "The Chaos Engine",
+        "1994",
+        "The Bitmap Brothers",
+        "Known in North America as Soldiers of Fortune, a steampunk co-op shooter through a Victorian nightmare landscape."
+      ],
+      [
+        "Lemmings",
+        "1992",
+        "Sunsoft",
+        "The console conversion of DMA Design's puzzle phenomenon, guiding waves of doomed little walkers to safety."
+      ]
+    ]
+  }
+]

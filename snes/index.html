@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Console Explorer's Collection — 100 Best SNES Games</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Karla:wght@400;500;600;700&family=Overpass+Mono&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #EFEBF5;
+    --bg-elevated: #FFFFFF;
+    --text: #241F33;
+    --text-soft: #564C74;
+    --text-faint: #948AAE;
+    --accent: #5C3FA3;
+    --accent-contrast: #FFFFFF;
+    --highlight: #EB5757;
+    --border: #D9D2EA;
+    --card-bg: #FFFFFF;
+    --mono-bg: #E3DCF2;
+    --shadow: 0 2px 0 rgba(92,63,163,0.14);
+    --hue: 265;
+    --sat: 55%;
+    --lig: 46%;
+    --sat-soft: 55%;
+    --lig-soft: 92%;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #191426;
+      --bg-elevated: #221B33;
+      --text: #EDE8F7;
+      --text-soft: #B6A9D6;
+      --text-faint: #7A6C9C;
+      --accent: #A78BFA;
+      --accent-contrast: #191426;
+      --highlight: #FF7A7A;
+      --border: #37294F;
+      --card-bg: #1F1830;
+      --mono-bg: #2A2140;
+      --shadow: 0 2px 0 rgba(0,0,0,0.5);
+      --sat: 70%;
+      --lig: 72%;
+      --sat-soft: 42%;
+      --lig-soft: 18%;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #191426;
+    --bg-elevated: #221B33;
+    --text: #EDE8F7;
+    --text-soft: #B6A9D6;
+    --text-faint: #7A6C9C;
+    --accent: #A78BFA;
+    --accent-contrast: #191426;
+    --highlight: #FF7A7A;
+    --border: #37294F;
+    --card-bg: #1F1830;
+    --mono-bg: #2A2140;
+    --shadow: 0 2px 0 rgba(0,0,0,0.5);
+    --sat: 70%;
+    --lig: 72%;
+    --sat-soft: 42%;
+    --lig-soft: 18%;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Karla', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .mono { font-family: 'Overpass Mono', monospace; letter-spacing: 0.02em; }
+  .display { font-family: 'Titan One', cursive; font-weight: 400; }
+  a { color: inherit; }
+  img { max-width: 100%; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    padding: 5rem 1.5rem 3.5rem;
+    overflow: hidden;
+    background: var(--bg);
+    border-bottom: 3px solid var(--border);
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #5C3FA3 0 25%, #EB5757 25% 50%, #F2C94C 50% 75%, #56CCF2 75% 100%);
+    opacity: 0.08;
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    background: var(--mono-bg);
+    border: 2px solid var(--border);
+    color: var(--text-soft);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+  }
+
+  .hero h1 {
+    font-family: 'Titan One', cursive;
+    font-weight: 400;
+    font-size: clamp(1.9rem, 5.4vw, 3.3rem);
+    line-height: 1.15;
+    margin: 0 0 1.3rem;
+    color: var(--text);
+  }
+
+  .hero p.lede {
+    max-width: 620px;
+    margin: 0 auto;
+    color: var(--text-soft);
+    font-size: 1.06rem;
+  }
+
+  .hero-meta {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-faint);
+  }
+
+  .hero-meta strong { color: var(--accent); }
+
+  /* ---------- TOOLBAR ---------- */
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg-elevated);
+    border-bottom: 3px solid var(--border);
+    padding: 0.85rem 1.5rem;
+  }
+
+  .toolbar-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .search-row { display: flex; gap: 0.6rem; align-items: center; }
+
+  #searchInput {
+    flex: 1;
+    padding: 0.65rem 0.95rem;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    background: var(--mono-bg);
+    color: var(--text);
+    font-family: 'Karla', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+  }
+  #searchInput:focus { border-color: var(--accent); }
+  #searchInput::placeholder { color: var(--text-faint); }
+
+  #resultCount { font-family: 'Overpass Mono', monospace; font-size: 0.78rem; color: var(--text-faint); white-space: nowrap; }
+
+  .theme-toggle {
+    border: 2px solid var(--border);
+    background: var(--mono-bg);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 0.6rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+
+  .chips { display: flex; gap: 0.45rem; overflow-x: auto; padding-bottom: 0.2rem; scrollbar-width: thin; }
+
+  .chip {
+    flex: none;
+    border: 2px solid var(--border);
+    background: var(--bg);
+    color: var(--text-soft);
+    border-radius: 999px;
+    padding: 0.35rem 0.8rem;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 0.75rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- MAIN / CHAPTERS ---------- */
+  main { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem 1rem; }
+
+  .chapter { scroll-margin-top: 132px; margin-bottom: 4rem; }
+
+  .chapter-head { display: flex; align-items: baseline; gap: 0.9rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+
+  .chapter-num { font-family: 'Titan One', cursive; font-size: 1.05rem; color: hsl(var(--hue) var(--sat) var(--lig)); }
+
+  .chapter-title { font-family: 'Titan One', cursive; font-weight: 400; font-size: clamp(1.05rem, 2.4vw, 1.4rem); margin: 0; }
+
+  .chapter-tag {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.6rem;
+    border-radius: 999px;
+    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+    color: hsl(var(--hue) var(--sat) var(--lig));
+  }
+
+  .chapter-blurb { color: var(--text-soft); max-width: 760px; margin: 0.6rem 0 1.6rem; font-size: 0.98rem; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+
+  .card {
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem 1.1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    box-shadow: var(--shadow);
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 12px 12px 0 0;
+    background: hsl(var(--hue) var(--sat) var(--lig));
+  }
+
+  .card-idx {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 0.68rem;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    position: absolute;
+    top: 0.85rem;
+    right: 1.1rem;
+  }
+
+  .card-title { font-weight: 700; font-size: 1rem; padding-right: 3.4rem; margin: 0.3rem 0 0; }
+
+  .card-meta { font-family: 'Overpass Mono', monospace; font-size: 0.75rem; color: hsl(var(--hue) var(--sat) var(--lig)); }
+
+  .card-blurb { font-size: 0.87rem; color: var(--text-soft); margin: 0.15rem 0 0; }
+
+  .card.hidden, .chapter.hidden { display: none; }
+
+  #emptyState { display: none; text-align: center; padding: 3rem 1rem; color: var(--text-faint); font-family: 'Overpass Mono', monospace; }
+
+  /* ---------- CURATOR NOTE ---------- */
+  .curator-note {
+    max-width: 780px;
+    margin: 1rem auto 4rem;
+    padding: 1.7rem 1.9rem;
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-left: 6px solid var(--accent);
+    border-radius: 12px;
+  }
+  .curator-note h2 { font-family: 'Titan One', cursive; font-weight: 400; font-size: 1.02rem; margin: 0 0 0.8rem; }
+  .curator-note p { color: var(--text-soft); font-size: 0.92rem; margin: 0 0 0.8rem; }
+  .curator-note p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  footer { border-top: 3px solid var(--border); padding: 2.5rem 1.5rem 3.5rem; background: var(--bg-elevated); }
+  .footer-inner { max-width: 780px; margin: 0 auto; font-size: 0.85rem; color: var(--text-faint); }
+  .footer-inner h3 { font-family: 'Titan One', cursive; font-weight: 400; font-size: 0.85rem; color: var(--text-soft); margin: 0 0 0.7rem; }
+  .footer-inner ul { padding-left: 1.1rem; margin: 0 0 1.4rem; }
+  .footer-inner li { margin-bottom: 0.3rem; }
+  .footer-inner a { color: var(--accent); text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="hero-pill mono">SNES-001 · 1990–1997</span>
+    <h1>The Console Explorer's Collection</h1>
+    <p class="lede">One hundred games for the 16-bit generation's defining console — from Nintendo's own genre-redefining classics to the Japan-only RPGs, cancelled cartridges, and PAL-exclusive rarities that never crossed every border.</p>
+    <div class="hero-meta">
+      <span><strong id="totalCount">100</strong> games</span>
+      <span><strong>12</strong> chapters</span>
+      <span><strong>1990–1997</strong> SNES releases</span>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar-inner">
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="Search by title, developer, or genre…">
+      <span id="resultCount" class="mono">100 / 100</span>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+<main>
+  <div id="chapters"></div>
+  <div id="emptyState">No cartridges match that search.</div>
+
+  <div class="curator-note">
+    <h2 class="display">A note from the curator</h2>
+    <p>The SNES might be the hardest platform yet to cut down to 100 — it's the console most people mean when they say "16-bit classic," and its library is deep in every genre at once. This collection spreads across Nintendo's own foundational run (Mario, Zelda, Metroid, Kirby, Donkey Kong Country), Square and Enix's golden age of console RPGs, and an unusually large tail of Japan-only RPGs that stayed there for a decade or more before anyone in the West could play them officially.</p>
+    <p>Release years follow this project's standing convention: European release year first where one exists, Japanese and/or North American year noted secondarily. Where a game never received a European cartridge release at all — which turns out to be true for a striking number of the RPG chapter's Japan-built titles, and for several of the deepest cult-classic RPGs that never left Japan in any region — the North American or Japanese year is shown instead with an explicit note.</p>
+    <p>This build also introduces a leaner research process: well-established, unambiguous titles were drawn straight from existing knowledge rather than independently re-verified, and dedicated research went specifically toward the games carrying a real regional-exclusivity claim, an unfamiliar credit, or a title that differs by region — the same discipline a print encyclopedia would use, spending its fact-checking budget where the risk of being wrong is actually concentrated.</p>
+    <p>Every researched title was checked for release-platform accuracy, developer attribution, and actual regional availability — the recurring error pattern from every prior platform held true here too: a publisher credited as developer when a different studio built the specific SNES version.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <h3 class="mono">Japan-only titles (never officially released in the West)</h3>
+    <ul>
+      <li>Tales of Phantasia (1995)</li>
+      <li>Live A Live (1994)</li>
+      <li>Front Mission (1995)</li>
+      <li>Tactics Ogre: Let Us Cling Together (1995)</li>
+      <li>Clock Tower (1995)</li>
+      <li>Bahamut Lagoon (1996)</li>
+      <li>Star Ocean (1996)</li>
+      <li>Umihara Kawase (1994)</li>
+    </ul>
+    <h3 class="mono">Star Fox 2 — a cancelled game that shipped 22 years late</h3>
+    <ul>
+      <li>Completed to roughly 95% and ready for an August 1995 release, Star Fox 2 was shelved when Nintendo judged its 16-bit visuals would look dated next to the incoming PlayStation and Saturn. It finally released commercially in September 2017, bundled exclusively with the SNES Classic Edition — one of the longest gaps between "finished" and "released" in game history.</li>
+    </ul>
+    <h3 class="mono">Sources &amp; further reading</h3>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/List_of_Super_Nintendo_Entertainment_System_games" target="_blank" rel="noopener">Wikipedia — List of Super Nintendo Entertainment System games</a></li>
+      <li><a href="https://www.nintendolife.com/guides/best-snes-games" target="_blank" rel="noopener">Nintendo Life — Best SNES Games Of All Time</a></li>
+      <li><a href="https://retrododo.com/best-snes-games/" target="_blank" rel="noopener">RetroDodo — The Best SNES Games Of All Time</a></li>
+      <li><a href="https://www.denofgeek.com/games/best-snes-games/" target="_blank" rel="noopener">Den of Geek — The Best SNES Games</a></li>
+    </ul>
+    <p>All 100 titles were checked for title accuracy, release year and region, developer, and SNES platform compatibility before publication.</p>
+  </div>
+</footer>
+
+<script src="../assets/collection.js" data-src="../data/snes.json"></script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Disc Explorer's Collection</title>
+<style>
+  :root {
+    --bg: #EEF3F5;
+    --surface: #FFFFFF;
+    --surface-2: #E1EAEE;
+    --ink: #12181B;
+    --ink-soft: #4B5A61;
+    --ink-faint: #7C8B92;
+    --accent: #0089A8;
+    --accent-ink: #FFFFFF;
+    --line: #CFDBE0;
+    --line-strong: #B0C1C8;
+    --shadow: 0 1px 2px rgba(10,20,23,0.06), 0 10px 26px -14px rgba(10,20,23,0.22);
+    --sat: 62%;
+    --lig: 38%;
+    --sat-soft: 60%;
+    --lig-soft: 92%;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0A1113;
+      --surface: #131C1F;
+      --surface-2: #1A262A;
+      --ink: #E8F1F3;
+      --ink-soft: #A7B9BE;
+      --ink-faint: #62757B;
+      --accent: #38C6E8;
+      --accent-ink: #06181C;
+      --line: #223034;
+      --line-strong: #2E4046;
+      --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 14px 30px -16px rgba(0,0,0,0.65);
+      --sat: 72%;
+      --lig: 62%;
+      --sat-soft: 42%;
+      --lig-soft: 17%;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0A1113;
+    --surface: #131C1F;
+    --surface-2: #1A262A;
+    --ink: #E8F1F3;
+    --ink-soft: #A7B9BE;
+    --ink-faint: #62757B;
+    --accent: #38C6E8;
+    --accent-ink: #06181C;
+    --line: #223034;
+    --line-strong: #2E4046;
+    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 14px 30px -16px rgba(0,0,0,0.65);
+    --sat: 72%;
+    --lig: 62%;
+    --sat-soft: 42%;
+    --lig-soft: 17%;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Public Sans", "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+
+  a { color: inherit; }
+
+  h1, h2, h3 {
+    font-family: "Audiowide", "Segoe UI", system-ui, sans-serif;
+    font-weight: 400;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .mono {
+    font-family: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 48px);
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    padding: clamp(56px, 10vw, 96px) 0 clamp(40px, 6vw, 64px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before,
+  .hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid hsl(195 var(--sat-soft) var(--lig-soft));
+    pointer-events: none;
+  }
+
+  .hero::before {
+    width: 620px;
+    height: 620px;
+    top: -280px;
+    right: -220px;
+  }
+
+  .hero::after {
+    width: 420px;
+    height: 420px;
+    top: -180px;
+    right: -120px;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+
+  .eyebrow .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+    box-shadow: 0 0 0 3px hsl(195 var(--sat-soft) var(--lig-soft));
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 4.8vw, 3.4rem);
+    line-height: 1.14;
+    letter-spacing: -0.01em;
+    max-width: 18ch;
+    position: relative;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .hero-lede {
+    max-width: 62ch;
+    margin-top: 22px;
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+
+  .hero-meta .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hero-meta .num {
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--accent);
+  }
+
+  .hero-meta .label {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ---------- Curator's note ---------- */
+
+  .note { padding: clamp(28px, 5vw, 40px) 0; }
+
+  .note-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: clamp(24px, 4vw, 40px);
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 16px;
+    position: relative;
+  }
+
+  .note-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    bottom: 14px;
+    width: 3px;
+    border-radius: 3px;
+    background: var(--accent);
+  }
+
+  .note-card h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+  }
+
+  .note-card p { max-width: 74ch; color: var(--ink-soft); margin: 0; }
+
+  .note-card p strong { color: var(--ink); font-weight: 700; }
+
+  /* ---------- Toolbar ---------- */
+
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+  }
+
+  .toolbar-inner { display: flex; align-items: center; gap: 16px; }
+
+  .search { position: relative; flex: 0 0 260px; }
+
+  .search input {
+    width: 100%;
+    padding: 10px 14px 10px 36px;
+    border-radius: 8px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.92rem;
+  }
+
+  .search input::placeholder { color: var(--ink-faint); }
+
+  .search svg {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: var(--ink-faint);
+    pointer-events: none;
+  }
+
+  .chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding-bottom: 2px;
+  }
+
+  .chips::-webkit-scrollbar { height: 5px; }
+  .chips::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 3px; }
+
+  .chip {
+    flex-shrink: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.76rem;
+    letter-spacing: 0.02em;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink-soft);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .chip:hover { border-color: var(--accent); color: var(--ink); }
+
+  .result-count {
+    flex-shrink: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+    margin-left: auto;
+    padding-left: 8px;
+    white-space: nowrap;
+  }
+
+  /* ---------- Chapters ---------- */
+
+  .chapter {
+    padding: clamp(48px, 7vw, 76px) 0 8px;
+    scroll-margin-top: 84px;
+    --hue: 195;
+  }
+
+  .chapter-head {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    margin-bottom: 10px;
+  }
+
+  .chapter-num {
+    font-family: "Audiowide", sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    font-weight: 400;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    line-height: 1;
+  }
+
+  .chapter-title { font-size: clamp(1.2rem, 2.4vw, 1.6rem); margin: 0; }
+
+  .chapter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+    padding: 4px 9px;
+    border-radius: 5px;
+  }
+
+  .chapter-blurb {
+    margin: 0 0 28px;
+    max-width: 68ch;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* ---------- Cards ---------- */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-bottom: 3px solid hsl(var(--hue) var(--sat) var(--lig));
+    border-radius: 10px;
+    padding: 16px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+
+  .card-idx {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.74rem;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    font-weight: 700;
+  }
+
+  .card-title {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.03rem;
+    line-height: 1.25;
+    color: var(--ink);
+    margin: 2px 0 0;
+  }
+
+  .card-meta {
+    display: block;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.74rem;
+    color: var(--ink-faint);
+  }
+
+  .card-blurb { margin: 4px 0 0; font-size: 0.9rem; color: var(--ink-soft); line-height: 1.48; }
+
+  .card.hidden { display: none; }
+  .chapter.hidden { display: none; }
+
+  .empty-state {
+    display: none;
+    padding: 60px 0;
+    text-align: center;
+    color: var(--ink-faint);
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  footer { margin-top: 60px; padding: 36px 0 60px; border-top: 1px solid var(--line); }
+
+  footer p { max-width: 72ch; color: var(--ink-faint); font-size: 0.86rem; margin: 0 0 10px; }
+
+  footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> A curated field guide &middot; Sony PlayStation 2, 2000&ndash;2008</div>
+    <h1>The Disc<br>Explorer's <em>Collection</em></h1>
+    <p class="hero-lede">One hundred PS2 games, chosen to give you a taste of the biggest console library ever assembled &mdash; not just the highest scores. Twelve chapters, one per corner of the catalog, from era-defining blockbusters down to the Japan-only strategy sequels import collectors still hunt for.</p>
+    <div class="hero-meta">
+      <div class="stat"><span class="num mono">100</span><span class="label">games catalogued</span></div>
+      <div class="stat"><span class="num mono">12</span><span class="label">chapters &amp; genres</span></div>
+      <div class="stat"><span class="num mono">2000&ndash;08</span><span class="label">release window</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="note">
+  <div class="wrap">
+    <div class="note-card">
+      <h2>How this collection was built</h2>
+      <p>Metacritic will hand you Shadow of the Colossus, God of War, and San Andreas and call it a day &mdash; which barely scratches a library of nearly four thousand games. This collection cross-references rankings and retrospectives from <strong>GamesRadar+, Den of Geek, IGN, Rolling Stone, TheGamer</strong> and genre-specific round-ups from <strong>DualShockers, Retrododo, Infinity Retro, HyperComboGamer</strong> and import-scene write-ups, then every single entry was independently fact-checked against primary sources (release records, developer credits, regional release dates) before publishing &mdash; because a "best of" list is worthless if it gets the facts wrong.</p>
+      <p>The goal wasn't a scoreboard. It was breadth: the best <strong>mascot platformer</strong>, the best <strong>evasion-only horror game</strong>, the best <strong>mech tactics sequel that never left Japan</strong>, the best <strong>on-rails shooter synced to a soundtrack</strong> &mdash; each earning its spot for what it shows you about the console, not just how it scored. Use the search box or genre chips below to explore by mood, or just scroll from the top and let the whole shelf go by.</p>
+      <p>A short follow-up pass added European context to this page after it first published. Where a PAL release carries a different box title, a real gap in release dates, or a genuine content or censorship difference from its North American counterpart, that's folded directly into the description below &mdash; Europe's own name for a game like <strong>Sly Raccoon</strong> (Sly Cooper and the Thievius Raccoonus in the US) or <strong>Everybody's Golf</strong> (Hot Shots Golf Fore!), a straight-up exclusion like the original <strong>Katamari Damacy</strong>, which Europe never received at all, or a case like <strong>Metal Gear Solid 2</strong>, whose softened European build quietly became the basis for every rerelease since. This is a targeted pass, not a wholesale EU-first rebuild of the page &mdash; years still generally mark the North American release &mdash; just an honest accounting of where the two sides of the PS2's library genuinely diverge.</p>
+      <p>A very small number of entries also carry a note on PAL technical conversion quality, since this is the console generation where "PAL-60" modes &mdash; letting European players run a game at proper NTSC speed instead of a slowed-down 50Hz &mdash; started appearing, though support varied wildly by publisher. It's a footnote here, not a running theme: most of the PS2's library converted just fine, and a note only appears below where there's a specific, well-documented story attached to it.</p>
+    </div>
+  </div>
+</section>
+
+<nav class="toolbar">
+  <div class="wrap toolbar-inner">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" type="text" placeholder="Search 100 games…" autocomplete="off">
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="result-count" id="resultCount"></div>
+  </div>
+</nav>
+
+<main class="wrap" id="chapters"></main>
+
+<div class="wrap"><p class="empty-state" id="emptyState">No games match that search. Try a shorter word, or clear the box.</p></div>
+
+<footer>
+  <div class="wrap">
+    <p>Curated as a browsing collection, not a strict ranking &mdash; position within a chapter is roughly chronological, not a scorecard. Years generally mark the game's North American PS2 release; Japan-only titles (Front Mission 5, Gregory Horror Show's Japan/Europe release) are dated by their original regional release instead, and Metal Gear Solid 2: Sons of Liberty is dated by its European release for the reasons explained above. A number of other entries note their European title, release gap, or regional differences directly in the description, where Europe's side of a game's story turned out to be worth telling.</p>
+    <p>Sources consulted include <a href="https://www.gamesradar.com/best-ps2-games/" target="_blank" rel="noopener">GamesRadar+</a>, <a href="https://www.denofgeek.com/games/50-underrated-playstation-2-games/" target="_blank" rel="noopener">Den of Geek</a>, <a href="https://www.rollingstone.com/culture/rs-gaming-lists/best-ps2-games-1235451115/" target="_blank" rel="noopener">Rolling Stone</a>, <a href="https://infinityretro.com/best-ps2-rpgs/" target="_blank" rel="noopener">Infinity Retro</a>, and genre round-ups from Retrododo, DualShockers, HyperComboGamer and TheGamer, cross-checked against Wikipedia and publisher release records for accuracy.</p>
+  </div>
+</footer>
+
+<script src="../assets/collection.js" data-src="../data/ps2.json"></script>
+</body>
+</html>

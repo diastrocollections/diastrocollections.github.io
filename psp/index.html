@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Portable Explorer's Collection</title>
+<style>
+  :root {
+    --bg: #F2F4F7;
+    --surface: #FFFFFF;
+    --surface-2: #E7EBF0;
+    --ink: #14171C;
+    --ink-soft: #52596A;
+    --ink-faint: #8991A3;
+    --accent: #1E56E0;
+    --accent-ink: #FFFFFF;
+    --line: #D8DEE7;
+    --line-strong: #C1CADA;
+    --shadow: 0 1px 2px rgba(14,17,22,0.06), 0 10px 26px -14px rgba(14,17,22,0.22);
+    --sat: 50%;
+    --lig: 44%;
+    --sat-soft: 66%;
+    --lig-soft: 93%;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0D0F13;
+      --surface: #171A20;
+      --surface-2: #1F232B;
+      --ink: #EDEFF3;
+      --ink-soft: #AEB4C2;
+      --ink-faint: #6E7686;
+      --accent: #6E9FFF;
+      --accent-ink: #0B1220;
+      --line: #272C36;
+      --line-strong: #38404E;
+      --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 14px 30px -16px rgba(0,0,0,0.65);
+      --sat: 62%;
+      --lig: 70%;
+      --sat-soft: 38%;
+      --lig-soft: 19%;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0D0F13;
+    --surface: #171A20;
+    --surface-2: #1F232B;
+    --ink: #EDEFF3;
+    --ink-soft: #AEB4C2;
+    --ink-faint: #6E7686;
+    --accent: #6E9FFF;
+    --accent-ink: #0B1220;
+    --line: #272C36;
+    --line-strong: #38404E;
+    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 14px 30px -16px rgba(0,0,0,0.65);
+    --sat: 62%;
+    --lig: 70%;
+    --sat-soft: 38%;
+    --lig-soft: 19%;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Manrope", "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+
+  a { color: inherit; }
+
+  h1, h2, h3 {
+    font-family: "Chakra Petch", "Segoe UI", system-ui, sans-serif;
+    font-weight: 700;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .mono {
+    font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 48px);
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    padding: clamp(56px, 10vw, 96px) 0 clamp(40px, 6vw, 64px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: -20% -10% auto auto;
+    width: 62%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(115deg, hsl(217 var(--sat-soft) var(--lig-soft)) 0%, transparent 60%);
+    transform: rotate(-6deg);
+    pointer-events: none;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+
+  .eyebrow .dot {
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 5.2vw, 3.8rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    max-width: 18ch;
+    position: relative;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .hero-lede {
+    max-width: 62ch;
+    margin-top: 22px;
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+
+  .hero-meta .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hero-meta .num {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .hero-meta .label {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ---------- Curator's note ---------- */
+
+  .note { padding: clamp(28px, 5vw, 40px) 0; }
+
+  .note-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--accent);
+    border-radius: 4px;
+    padding: clamp(24px, 4vw, 40px);
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 16px;
+  }
+
+  .note-card h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+  }
+
+  .note-card p {
+    max-width: 74ch;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .note-card p strong { color: var(--ink); font-weight: 700; }
+
+  /* ---------- Toolbar ---------- */
+
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+  }
+
+  .toolbar-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .search { position: relative; flex: 0 0 260px; }
+
+  .search input {
+    width: 100%;
+    padding: 10px 14px 10px 36px;
+    border-radius: 4px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-family: "Manrope", sans-serif;
+    font-size: 0.92rem;
+  }
+
+  .search input::placeholder { color: var(--ink-faint); }
+
+  .search svg {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: var(--ink-faint);
+    pointer-events: none;
+  }
+
+  .theme-toggle {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink-soft);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .theme-toggle:hover { border-color: var(--accent); color: var(--ink); }
+
+  .chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding-bottom: 2px;
+  }
+
+  .chips::-webkit-scrollbar { height: 5px; }
+  .chips::-webkit-scrollbar-thumb { background: var(--line-strong); }
+
+  .chip {
+    flex-shrink: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.76rem;
+    letter-spacing: 0.02em;
+    padding: 7px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink-soft);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .chip:hover { border-color: var(--accent); color: var(--ink); }
+
+  .result-count {
+    flex-shrink: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+    margin-left: auto;
+    padding-left: 8px;
+    white-space: nowrap;
+  }
+
+  /* ---------- Chapters ---------- */
+
+  .chapter {
+    padding: clamp(48px, 7vw, 76px) 0 8px;
+    scroll-margin-top: 84px;
+    --hue: 217;
+  }
+
+  .chapter-head {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-bottom: 10px;
+  }
+
+  .chapter-num {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+    font-weight: 700;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    line-height: 1;
+  }
+
+  .chapter-title { font-size: clamp(1.3rem, 2.6vw, 1.8rem); }
+
+  .chapter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+    padding: 4px 9px;
+    border-radius: 3px;
+  }
+
+  .chapter-blurb {
+    margin: 0 0 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--line);
+    max-width: 68ch;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+  }
+
+  /* ---------- Cards ---------- */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 16px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    border-top: 3px solid hsl(var(--hue) var(--sat) var(--lig));
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+
+  .card-idx {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.74rem;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .card-idx::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: hsl(var(--hue) var(--sat) var(--lig));
+    display: inline-block;
+  }
+
+  .card-title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 1.03rem;
+    line-height: 1.25;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .card-meta {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+  }
+
+  .card-blurb { margin: 4px 0 0; font-size: 0.9rem; color: var(--ink-soft); line-height: 1.48; }
+
+  .card.hidden { display: none; }
+  .chapter.hidden { display: none; }
+
+  .empty-state {
+    display: none;
+    padding: 60px 0;
+    text-align: center;
+    color: var(--ink-faint);
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  footer { margin-top: 60px; padding: 36px 0 60px; border-top: 1px solid var(--line); }
+
+  footer p { max-width: 72ch; color: var(--ink-faint); font-size: 0.86rem; margin: 0 0 10px; }
+
+  footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> A curated field guide &middot; Sony PSP, 2004&ndash;2014</div>
+    <h1>The Portable<br>Explorer's <em>Collection</em></h1>
+    <p class="hero-lede">One hundred PSP games, chosen to give you a taste of the whole library &mdash; not just the highest scores. Twelve chapters, one per corner of the catalog, from Sony's own console-caliber showcases down to the Japan-only tactics RPGs import collectors still hunt for.</p>
+    <div class="hero-meta">
+      <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games catalogued</span></div>
+      <div class="stat"><span class="num mono">12</span><span class="label">chapters &amp; genres</span></div>
+      <div class="stat"><span class="num mono">2004&ndash;12</span><span class="label">release window</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="note">
+  <div class="wrap">
+    <div class="note-card">
+      <h2>How this collection was built</h2>
+      <p>Metacritic will hand you God of War and Peace Walker and call it a day &mdash; which misses most of what made the PSP the PSP: a tactics-RPG shelf deep enough to rival any home console, a Monster Hunter game that turned dorm rooms and train platforms into hunting parties, an entire genre Patapon invented on its own, and a wall of Japan-only RPGs that never made the trip West. This collection cross-references rankings and retrospectives from <strong>Push Square, GamesRadar+, RPGFan, TheGamer, Den of Geek, Cultured Vultures</strong> and genre-specific round-ups from <strong>Retrododo, FandomSpot, GameRant</strong> and import-scene write-ups covering the titles that stayed in Japan.</p>
+      <p>The goal wasn't a scoreboard. It was breadth: the best <strong>rhythm-strategy hybrid</strong>, the best <strong>drill-wielding action-RPG</strong>, the best <strong>card-based stealth spin-off</strong>, the best <strong>murder-mystery visual novel that started a franchise</strong> &mdash; each earning its spot for what it shows you about the handheld, not just how it scored. Use the search box or genre chips below to explore by mood, or just scroll from the top and let the whole shelf go by.</p>
+      <p>This page has since had a full accuracy re-pass: PSP release years corrected where an entry had drifted to a Japanese or 360/PS3 launch date instead, a handful of developer credits corrected where a publisher (Sega, Square Enix, EA) had been listed in place of the studio that actually built the game, and several entries that were quietly Japan-only on PSP &mdash; Valkyria Chronicles III, Tales of VS., Nayuta no Kiseki, Umihara Kawase Portable among them &mdash; now say so plainly rather than reading like a normal Western release.</p>
+      <p>Years here still track the North American PSP release by convention. Where Europe's release genuinely diverged &mdash; a different box title, a real censorship story, a gap of six months or more, or no release in one region at all &mdash; that's noted in the entry itself rather than silently smoothed over. A few early titles (Wipeout Pure, Lumines, Darkstalkers Chronicle) show a roughly five-month North America&ndash;to&ndash;Europe gap that's really just the PSP hardware's own staggered European launch, not a title-specific delay, so those were left without individual callouts.</p>
+    </div>
+  </div>
+</section>
+
+<nav class="toolbar">
+  <div class="wrap toolbar-inner">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" type="text" placeholder="Search 100 games…" autocomplete="off">
+    </div>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+    <div class="chips" id="chips"></div>
+    <div class="result-count" id="resultCount"></div>
+  </div>
+</nav>
+
+<main class="wrap" id="chapters"></main>
+
+<div class="wrap"><p class="empty-state" id="emptyState">No games match that search. Try a shorter word, or clear the box.</p></div>
+
+<footer>
+  <div class="wrap">
+    <p>Curated as a browsing collection, not a strict ranking &mdash; position within a chapter is roughly chronological, not a scorecard. Years mark original PSP release (North America by convention, except where a title never released there &mdash; Tales of Eternia is dated to its Japanese launch, being Europe-only in the West); several titles (Tales of Eternia, Valkyrie Profile: Lenneth, Lunar: Silver Star Harmony, Star Ocean: Second Evolution) are enhanced ports or remakes of earlier games, included because the PSP version is the definitive one.</p>
+    <p>Following an accuracy re-pass, a number of entries also carry a note on real North America/Europe divergence &mdash; a different European box title (R-Type Tactics/R-Type Command), a release gap of six months or more (Persona 3 Portable, Valkyrie Profile: Lenneth, Riviera, The Legend of Heroes: Trails in the Sky, Fate/Extra), a censorship story (Manhunt 2's UK release landing exactly a year after North America's), or a release that only happened in one region (Jeanne d'Arc never reached Europe; Class of Heroes never reached Europe; Tales of Eternia never reached North America).</p>
+    <p>Sources consulted include <a href="https://www.pushsquare.com/guides/best-psp-games" target="_blank" rel="noopener">Push Square</a>, <a href="https://www.gamesradar.com/best-psp-games/" target="_blank" rel="noopener">GamesRadar+</a>, <a href="https://www.rpgfan.com/feature/top-20-psp-rpgs/" target="_blank" rel="noopener">RPGFan</a>, <a href="https://www.thegamer.com/psp-games-never-left-japan/" target="_blank" rel="noopener">TheGamer's import coverage</a>, <a href="https://www.denofgeek.com/games/25-underrated-sony-psp-games/" target="_blank" rel="noopener">Den of Geek</a>, and genre round-ups from Retrododo, FandomSpot, Cultured Vultures and GameRant.</p>
+  </div>
+</footer>
+
+<script src="../assets/collection.js" data-src="../data/psp.json"></script>
+</body>
+</html>

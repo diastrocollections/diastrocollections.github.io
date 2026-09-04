@@ -1,0 +1,698 @@
+[
+  {
+    "hue": 198,
+    "tag": "Signature Library",
+    "title": "The Essentials — Wii's Signature Library",
+    "blurb": "The system-sellers. Every one of these helped turn the Wii into the best-selling console of its generation, and most still headline any conversation about the platform's best games.",
+    "games": [
+      [
+        "Wii Sports",
+        "2006",
+        "Nintendo EAD",
+        "The pack-in game that put a motion controller in tens of millions of living rooms and briefly made bowling a family sport again."
+      ],
+      [
+        "Wii Sports Resort",
+        "2009",
+        "Nintendo EAD",
+        "MotionPlus-powered precision turned a simple sequel into one of the clearest showcases of what Wii motion control could actually do."
+      ],
+      [
+        "Wii Play",
+        "2007",
+        "Nintendo EAD",
+        "Nine simple minigames bundled with a second Remote, quietly one of the best-selling games in history almost by accident."
+      ],
+      [
+        "Mario Kart Wii",
+        "2008",
+        "Nintendo EAD",
+        "Bikes, a steering-wheel peripheral, and online racing made this the best-selling entry in the entire Mario Kart series."
+      ],
+      [
+        "Super Mario Galaxy",
+        "2007",
+        "Nintendo EAD",
+        "Gravity-bending planetoid platforming that's still regularly named among the best 3D platformers ever made."
+      ],
+      [
+        "Super Mario Galaxy 2",
+        "2010",
+        "Nintendo EAD",
+        "A denser, more inventive sequel that many fans and critics consider an improvement on an already-perfect original."
+      ],
+      [
+        "Super Smash Bros. Brawl",
+        "2008",
+        "Sora Ltd. / HAL Laboratory",
+        "Adds a story mode, Subspace Emissary, and a much bigger roster to Nintendo's crossover fighter, played competitively for years after release."
+      ],
+      [
+        "The Legend of Zelda: Twilight Princess",
+        "2006",
+        "Nintendo EAD",
+        "A darker, more mature Zelda launched alongside the console itself, with motion-controlled swordplay built right into the pack-in launch window."
+      ],
+      [
+        "The Legend of Zelda: Skyward Sword",
+        "2011",
+        "Nintendo EAD",
+        "MotionPlus-driven one-to-one sword combat and a sky-island structure that closes out the Wii's Zelda output on an ambitious note."
+      ],
+      [
+        "Metroid Prime 3: Corruption",
+        "2007",
+        "Retro Studios",
+        "Pointer-based aiming brought Samus's first-person adventures to Wii with some of the series' most precise, responsive controls yet."
+      ],
+      [
+        "Metroid Prime Trilogy",
+        "2009",
+        "Retro Studios",
+        "All three Prime games rebuilt with Wii controls in one collection, widely considered the definitive way to play the series."
+      ],
+      [
+        "Donkey Kong Country Returns",
+        "2010",
+        "Retro Studios",
+        "A brutally difficult, gorgeously animated revival of the SNES series from the studio that had just finished reinventing Metroid."
+      ],
+      [
+        "New Super Mario Bros. Wii",
+        "2009",
+        "Nintendo EAD",
+        "Four-player simultaneous co-op turned 2D Mario into a chaotic, screen-clearing party game overnight."
+      ],
+      [
+        "Wii Fit",
+        "2008",
+        "Nintendo EAD",
+        "The Balance Board peripheral and daily weigh-ins turned exercise gaming into a genuine cultural phenomenon."
+      ]
+    ]
+  },
+  {
+    "hue": 227,
+    "tag": "Motion-Control Action",
+    "title": "Motion-Control Action & Third-Party Standouts",
+    "blurb": "The games that took the Wii Remote seriously as a combat tool — waggle-powered swordplay, katana-slicing, and a boxing revival that used motion control better than almost anything else on the system.",
+    "games": [
+      [
+        "Resident Evil 4: Wii Edition",
+        "2007",
+        "Capcom",
+        "The GameCube classic remapped around Wii Remote aiming, with many longtime fans calling this the best way to play it."
+      ],
+      [
+        "No More Heroes",
+        "2008",
+        "Grasshopper Manufacture",
+        "Suda51's beam-katana assassin comedy turned Wii Remote slashing into a stylish, self-aware send-up of open-world game design."
+      ],
+      [
+        "No More Heroes 2: Desperate Struggle",
+        "2010",
+        "Grasshopper Manufacture",
+        "A faster, funnier sequel that trims the original's open-world padding in favor of pure boss-rush momentum."
+      ],
+      [
+        "MadWorld",
+        "2009",
+        "PlatinumGames",
+        "Black-and-white, blood-red ultraviolence rendered in a comic-book art style, with motion-controlled executions built for maximum spectacle."
+      ],
+      [
+        "Red Steel 2",
+        "2010",
+        "Ubisoft Paris",
+        "MotionPlus sword combat and gunplay in a spaghetti-western-meets-samurai setting, widely regarded as proof the tech could finally deliver."
+      ],
+      [
+        "Punch-Out!!",
+        "2009",
+        "Next Level Games",
+        "A loving revival of the NES boxing classic with motion-controlled jabs, dodges, and uppercuts that never feel like a gimmick."
+      ],
+      [
+        "Zack & Wiki: Quest for Barbaros' Treasure",
+        "2007",
+        "Capcom",
+        "A pointer-driven puzzle-adventure about turning cursed pirates' enemies into tools, endearing and cruelly clever in equal measure."
+      ],
+      [
+        "Sin and Punishment: Star Successor",
+        "2010",
+        "Treasure",
+        "A blistering on-rails shooter from cult favorite developer Treasure, praised for some of the tightest bullet-dodging action on the system."
+      ],
+      [
+        "Tatsunoko vs. Capcom: Ultimate All-Stars",
+        "2010",
+        "Eighting",
+        "A crossover fighter pairing Capcom characters with classic Tatsunoko anime heroes most Western players had never heard of before."
+      ],
+      [
+        "Okami",
+        "2008",
+        "Ready at Dawn / Capcom",
+        "The PS2 original's sumi-e brush mechanics translated naturally onto Wii's pointer controls, giving the celestial-brush adventure a fitting second home."
+      ]
+    ]
+  },
+  {
+    "hue": 256,
+    "tag": "JRPGs & Long Adventures",
+    "title": "JRPGs & Long Adventures",
+    "blurb": "A smaller shelf than other consoles, but a fiercely beloved one — Operation Rainfall's fan campaign to localize this chapter's first three games became gaming folklore in its own right.",
+    "games": [
+      [
+        "Xenoblade Chronicles",
+        "2011",
+        "Monolith Soft",
+        "A sprawling open-world JRPG fought on the backs of two frozen titans, released in Europe in August 2011 — Nintendo of America held off for another eight months, reaching North America only in April 2012 after the fan-driven Operation Rainfall campaign forced its hand."
+      ],
+      [
+        "The Last Story",
+        "2012",
+        "Mistwalker / AQ Interactive",
+        "Hironobu Sakaguchi's real-time tactical RPG reached Europe in February 2012, months ahead of a North American release that didn't arrive until that August — one of the three Operation Rainfall imports fans had to campaign to see localized."
+      ],
+      [
+        "Pandora's Tower",
+        "2012",
+        "Ganbarion",
+        "A dark, romance-driven action-RPG about feeding monster flesh to a cursed heroine, published by Nintendo in Europe in April 2012 — North America didn't get it at all until Xseed stepped in a full year later."
+      ],
+      [
+        "Fragile Dreams: Farewell Ruins of the Moon",
+        "2010",
+        "tri-Crescendo",
+        "A quiet, melancholy adventure through a post-apocalyptic Japan where loneliness is as much the antagonist as anything else."
+      ],
+      [
+        "Monster Hunter Tri",
+        "2010",
+        "Capcom",
+        "Underwater combat and a fresh set of monsters gave the series a proper Western console debut, complete with a Classic Controller Pro bundle."
+      ],
+      [
+        "Tales of Symphonia: Dawn of the New World",
+        "2008",
+        "Namco Tales Studio",
+        "A direct sequel to the GameCube original, following a new protagonist through the world Lloyd and company left behind."
+      ],
+      [
+        "Arc Rise Fantasia",
+        "2012",
+        "imageepoch",
+        "A traditional turn-based JRPG with an idol-pop theme song and a small but devoted following among Wii RPG fans."
+      ],
+      [
+        "Baroque",
+        "2008",
+        "Sting",
+        "A surreal, punishing roguelike remake of a Saturn-era cult classic, as disorienting narratively as it is mechanically."
+      ]
+    ]
+  },
+  {
+    "hue": 285,
+    "tag": "Platformers",
+    "title": "Platformers",
+    "blurb": "From Nintendo's own yarn-textured reinvention of Kirby to a hand-painted samurai epic and a PC indie darling making its console debut, Wii's platforming shelf ran wonderfully wide.",
+    "games": [
+      [
+        "Kirby's Epic Yarn",
+        "2010",
+        "Good-Feel",
+        "Kirby loses his signature copy ability but gains an entire world made of fabric, yarn, and buttons — one of the most purely charming games on the system."
+      ],
+      [
+        "Kirby's Return to Dream Land",
+        "2011",
+        "HAL Laboratory",
+        "A return to classic Kirby platforming with copy abilities restored and four-player co-op layered on top — released the same year in Europe under a different title, Kirby's Adventure Wii."
+      ],
+      [
+        "Super Paper Mario",
+        "2007",
+        "Intelligent Systems",
+        "A dimension-flipping hybrid of platforming and RPG systems that swapped turn-based battles for real-time jumping and dashing."
+      ],
+      [
+        "Rayman Origins",
+        "2011",
+        "Ubisoft Montpellier",
+        "Gorgeous hand-drawn animation and tight platforming marked a full-scale revival for a series that had drifted from its roots."
+      ],
+      [
+        "Muramasa: The Demon Blade",
+        "2009",
+        "Vanillaware",
+        "Hand-painted 2D samurai action across two interwoven stories, one of the most visually striking games the Wii ever received."
+      ],
+      [
+        "A Boy and His Blob",
+        "2009",
+        "WayForward",
+        "A reimagining of the NES classic where feeding a shapeshifting blob different jellybeans solves the game's puzzles."
+      ],
+      [
+        "LostWinds",
+        "2008",
+        "Frontier Developments",
+        "A wind-manipulation platformer controlled entirely with the Wii Remote pointer, one of WiiWare's earliest and best original games."
+      ],
+      [
+        "de Blob",
+        "2008",
+        "Blue Tongue Entertainment",
+        "Roll a paint-absorbing blob through a monochrome city to restore its color, a colorful, upbeat spin on collect-a-thon platforming."
+      ],
+      [
+        "Klonoa",
+        "2009",
+        "Paon",
+        "A remake of the beloved PS1 platformer with redrawn visuals, reintroducing the series' dream-world charm to a new generation."
+      ],
+      [
+        "Cave Story",
+        "2010",
+        "Nicalis",
+        "The beloved PC indie classic's console debut, bringing its Metroidvania exploration and surprisingly deep story to Wii for the first time."
+      ]
+    ]
+  },
+  {
+    "hue": 314,
+    "tag": "Rhythm, Music & Party",
+    "title": "Rhythm, Music & Party",
+    "blurb": "Plastic instruments took over living rooms this generation, and Wii got its own versions of almost all of them, alongside Nintendo's own thoroughly weird music and minigame experiments.",
+    "games": [
+      [
+        "Rhythm Heaven Fever",
+        "2012",
+        "Nintendo SPD",
+        "A collection of bizarre, deceptively simple rhythm minigames that built a small but fiercely devoted cult following."
+      ],
+      [
+        "Rock Band 2",
+        "2008",
+        "Pi Studios",
+        "The band-simulation phenomenon's Wii port, bringing four-instrument co-op rock stardom to the console a year after launch."
+      ],
+      [
+        "Guitar Hero III: Legends of Rock",
+        "2007",
+        "Vicarious Visions",
+        "The Wii port of the series' commercial peak, with wireless guitar peripherals and a setlist stacked with genuine rock classics."
+      ],
+      [
+        "Guitar Hero: World Tour",
+        "2008",
+        "Vicarious Visions",
+        "Adds drums and vocals to the guitar formula, turning the series into a full-band experience on Wii."
+      ],
+      [
+        "DJ Hero",
+        "2009",
+        "FreeStyleGames",
+        "A turntable peripheral and scratch-based rhythm mechanics gave the genre a genuinely fresh spin after years of guitar-shaped clones."
+      ],
+      [
+        "WarioWare: Smooth Moves",
+        "2007",
+        "Nintendo SPD / Intelligent Systems",
+        "Hundreds of five-second microgames built entirely around goofy Wii Remote poses, one of the purest expressions of the console's whole philosophy."
+      ],
+      [
+        "Wii Music",
+        "2008",
+        "Nintendo EAD",
+        "A famously divisive experiment in gesture-based musical performance rather than rhythm-accuracy scoring, more toy than game by design."
+      ],
+      [
+        "Mario Party 8",
+        "2007",
+        "Hudson Soft",
+        "Motion-controlled minigames layered onto the classic board-game formula — the UK release was pulled from shelves and quietly patched within weeks of launch after one minigame's script used a word that reads as a slur in British English but not American."
+      ],
+      [
+        "Wii Party",
+        "2010",
+        "Nd Cube",
+        "A minigame collection built specifically around the Wii Remote and Balance Board rather than retrofitting an existing Mario Party formula."
+      ]
+    ]
+  },
+  {
+    "hue": 343,
+    "tag": "On-Rails & Light-Gun Shooters",
+    "title": "On-Rails & Light-Gun Shooters",
+    "blurb": "The Wii Remote's pointer made it the best home light-gun controller ever built, and this genre enjoyed a small renaissance here that it hasn't really had since.",
+    "games": [
+      [
+        "Resident Evil: The Umbrella Chronicles",
+        "2007",
+        "Capcom / Cavia",
+        "Retells the events of the first three Resident Evil games as an on-rails shooter, built specifically around Wii pointer aiming."
+      ],
+      [
+        "Resident Evil: The Darkside Chronicles",
+        "2009",
+        "Capcom / Cavia",
+        "A follow-up covering Resident Evil 2 and Code: Veronica, with reworked pacing that leans harder into cinematic set pieces."
+      ],
+      [
+        "The House of the Dead: Overkill",
+        "2009",
+        "Headstrong Games",
+        "A gleefully trashy grindhouse throwback packed with profanity and gore, one of the most purely fun light-gun games on the system."
+      ],
+      [
+        "The House of the Dead 2 & 3 Return",
+        "2008",
+        "Sega",
+        "A double-pack remaster of two arcade classics, rebuilt around Wii Zapper aiming for the home light-gun crowd."
+      ],
+      [
+        "Ghost Squad",
+        "2007",
+        "Polygon Magic",
+        "An arcade counter-terrorism shooter ported to Wii with Zapper support, prized for its multiple branching mission routes."
+      ],
+      [
+        "Dead Space: Extraction",
+        "2009",
+        "Eurocom",
+        "A prequel telling the story behind the original Dead Space through on-rails horror-shooter sequences, better regarded than its sales suggested."
+      ],
+      [
+        "Link's Crossbow Training",
+        "2007",
+        "Nintendo EAD",
+        "A Zelda-themed light-gun game bundled with the Wii Zapper peripheral, built to show off pointer precision more than tell a story."
+      ]
+    ]
+  },
+  {
+    "hue": 12,
+    "tag": "Horror & Mystery",
+    "title": "Horror & Mystery",
+    "blurb": "From a reimagined psychological Silent Hill built specifically for Wii to two courtroom dramas that found an unlikely home here, this chapter shows a quieter, stranger side of the console.",
+    "games": [
+      [
+        "Silent Hill: Shattered Memories",
+        "2009",
+        "Climax Studios",
+        "A ground-up reimagining rather than a remake, restructuring the original game's story around psychological profiling that changes the game as you play."
+      ],
+      [
+        "Cursed Mountain",
+        "2009",
+        "Sproing Interactive Media",
+        "A Himalayan mountaineering horror game blending real-world survival tension with vengeful-spirit combat, an overlooked genre entry from an Austrian studio."
+      ],
+      [
+        "Fatal Frame: Mask of the Lunar Eclipse",
+        "2008",
+        "Tecmo / Grasshopper Manufacture",
+        "A camera-as-weapon horror game co-developed with Suda51's studio, released only in Japan on Wii and long sought after by import collectors."
+      ],
+      [
+        "Phoenix Wright: Ace Attorney",
+        "2010",
+        "Capcom",
+        "The courtroom-drama visual novel's WiiWare debut, bringing its objection-shouting mystery-solving to a new control scheme."
+      ],
+      [
+        "Phoenix Wright: Ace Attorney: Trials and Tribulations",
+        "2010",
+        "Capcom",
+        "The third mainline Ace Attorney case, arriving on WiiWare with its emotionally heavier storyline intact."
+      ],
+      [
+        "Trauma Center: New Blood",
+        "2007",
+        "Atlus",
+        "Motion-controlled surgery under time pressure, with two playable surgeons and co-op operations layered onto the series' tense formula."
+      ],
+      [
+        "Trauma Team",
+        "2010",
+        "Atlus",
+        "Expands the surgery formula into six different medical specialties, each with its own distinct motion-control mechanics."
+      ]
+    ]
+  },
+  {
+    "hue": 41,
+    "tag": "Racing & Sports",
+    "title": "Racing & Sports",
+    "blurb": "Beyond Mario Kart Wii already up top, the console's racing and sports shelf leaned hard into arcade spectacle — off-road demolition derbies, robot-animal races, and snowboarding gone genuinely strange.",
+    "games": [
+      [
+        "Excite Truck",
+        "2006",
+        "Monster Games",
+        "Launch-window off-road racing with wildly deformable terrain, built to show off what tilt-and-motion steering could feel like."
+      ],
+      [
+        "ExciteBots: Trick Racing",
+        "2009",
+        "Monster Games",
+        "A stranger, funnier sequel starring robot-animal racers, beloved by the small audience that actually found it."
+      ],
+      [
+        "Mario Strikers Charged",
+        "2007",
+        "Next Level Games",
+        "Arcade soccer with no rules, illegal tackles, and Mega Strikes capable of wiping out a goalkeeper entirely."
+      ],
+      [
+        "Mario Power Tennis (New Play Control!)",
+        "2009",
+        "Camelot",
+        "A Wii-controlled re-release of the GameCube tennis game, with swing-based motion controls replacing button timing."
+      ],
+      [
+        "Deca Sports",
+        "2008",
+        "Hudson Soft",
+        "Ten arcade sports crammed into one motion-controlled package, a launch-era party-sports favorite despite its scattershot ambitions."
+      ],
+      [
+        "We Ski",
+        "2008",
+        "Namco Bandai Games",
+        "Balance Board-controlled skiing and snowboarding down a mountain that also doubled as social hangout space for up to four players."
+      ],
+      [
+        "SSX Blur",
+        "2007",
+        "EA Canada",
+        "A Wii-exclusive entry in EA's snowboarding series, trading some of the series' speed for motion-controlled trick execution."
+      ]
+    ]
+  },
+  {
+    "hue": 70,
+    "tag": "Fitness & Simulation",
+    "title": "Fitness & Simulation",
+    "blurb": "The Balance Board and pointer controls turned out to be a natural fit for slower, gentler genres — deep-sea diving, home cooking, and full workout routines that outsold plenty of actual games.",
+    "games": [
+      [
+        "Wii Fit Plus",
+        "2009",
+        "Nintendo EAD",
+        "An expanded follow-up to Wii Fit adding custom workout routines and new Balance Board minigames."
+      ],
+      [
+        "EA Sports Active",
+        "2009",
+        "EA Canada",
+        "A structured 30-day workout program using the Wii Remote and Nunchuk as resistance-training feedback, competing directly with Wii Fit."
+      ],
+      [
+        "Endless Ocean",
+        "2007",
+        "Arika",
+        "A calm, violence-free diving sim about exploring the ocean, photographing sea life, and rescuing the occasional shipwreck survivor."
+      ],
+      [
+        "Endless Ocean: Blue World",
+        "2010",
+        "Arika",
+        "A larger sequel adding a proper story and deeper sea creatures to explore, still built around the original's unhurried pace."
+      ],
+      [
+        "Cooking Mama: World Kitchen",
+        "2008",
+        "Office Create",
+        "A motion-controlled cooking series entry that turns chopping, stirring, and plating into minigames, disarmingly popular with non-gamers."
+      ]
+    ]
+  },
+  {
+    "hue": 99,
+    "tag": "Puzzle & Strategy",
+    "title": "Puzzle & Strategy",
+    "blurb": "A smaller shelf than most genres here, but a sharp one — a tactical RPG many still call the series' best, and two very different games about knocking blocks over.",
+    "games": [
+      [
+        "Fire Emblem: Radiant Dawn",
+        "2007",
+        "Intelligent Systems",
+        "A sprawling, difficult tactical RPG spanning multiple armies and perspectives, still cited by longtime fans as a series high point."
+      ],
+      [
+        "Boom Blox",
+        "2008",
+        "EA Los Angeles",
+        "A Steven Spielberg-conceived physics-puzzle game about knocking down block towers, deceptively deep beneath its toy-box presentation."
+      ],
+      [
+        "Boom Blox Bash Party",
+        "2009",
+        "EA Los Angeles",
+        "A bigger sequel adding new block types and party modes, refining the original's throw-and-topple physics puzzles."
+      ],
+      [
+        "World of Goo",
+        "2008",
+        "2D Boy",
+        "An indie physics-puzzle darling about building precarious structures out of living, gooey balls, one of WiiWare's clear high points."
+      ],
+      [
+        "Elebits",
+        "2006",
+        "Konami",
+        "A launch-window puzzle-action game about vacuuming up tiny creatures hidden throughout increasingly chaotic, physics-driven rooms."
+      ]
+    ]
+  },
+  {
+    "hue": 152,
+    "tag": "Cult Classics & Curios",
+    "title": "Cult Classics, Curios & Japan-Only Gems",
+    "blurb": "This is where a 'best of' list earns the word explorer. A Norse mecha-battler, a farming-RPG hybrid, a mosquito-simulator's spiritual cousin in the form of a giant spider — the games that make the Wii library genuinely bottomless.",
+    "games": [
+      [
+        "Little King's Story",
+        "2009",
+        "Cing / Town Factory",
+        "A whimsical kingdom-building game with a surprisingly dark satirical streak underneath its storybook presentation."
+      ],
+      [
+        "Zangeki no Reginleiv",
+        "2010",
+        "Sandlot",
+        "A brutal, blood-soaked Norse mythology action game where giants are torn apart limb by limb — one of the darkest things Nintendo ever published, and Japan-only."
+      ],
+      [
+        "Earth Seeker",
+        "2011",
+        "Crafts & Meister",
+        "A monster-hunting action-RPG with striking hand-drawn art that never made it past Japan on Wii."
+      ],
+      [
+        "Disaster: Day of Crisis",
+        "2008",
+        "Monolith Soft",
+        "A disaster-survival action game bouncing between earthquakes, volcanoes, and hostage rescues, released only in Japan and Europe — never in North America."
+      ],
+      [
+        "Ju-on: The Grudge",
+        "2009",
+        "feelplus",
+        "A first-person horror game built around the cursed-house film series, using the Wii Remote as an in-game flashlight and phone."
+      ],
+      [
+        "Manhunt 2",
+        "2008",
+        "Rockstar London",
+        "A stealth-horror game about escaping an asylum by brutal means — the BBFC refused it a UK classification outright, and it took a court appeal and a re-edited build before it could legally reach British shelves in October 2008, a full year after its North American release."
+      ],
+      [
+        "Deadly Creatures",
+        "2009",
+        "Rainbow Studios",
+        "An unusual action-adventure told from the perspective of a tarantula and a scorpion, tensely atmospheric and unlike anything else on the system."
+      ],
+      [
+        "Wario Land: Shake It!",
+        "2008",
+        "Good-Feel",
+        "A hand-drawn 2D platformer bringing Wario back to his side-scrolling roots with motion-controlled shaking attacks."
+      ],
+      [
+        "Ready 2 Rumble Revolution",
+        "2009",
+        "AKI Corporation USA",
+        "A motion-controlled revival of the cartoonish boxing series, punchy and silly in equal measure."
+      ],
+      [
+        "Rune Factory Frontier",
+        "2009",
+        "Neverland",
+        "A farming-sim and action-RPG hybrid where tending crops and dungeon-diving carry equal weight."
+      ],
+      [
+        "The Conduit",
+        "2009",
+        "High Voltage Software",
+        "A Wii-exclusive FPS built to prove the console could handle serious shooter ambitions, with some of the sharpest aiming controls on the system."
+      ],
+      [
+        "Ivy the Kiwi?",
+        "2010",
+        "Prope",
+        "A gentle, minimalist platformer from Sonic co-creator Yuji Naka about guiding a flightless bird using stretchy vines."
+      ],
+      [
+        "Kororinpa: Marble Mania",
+        "2007",
+        "Hudson Soft",
+        "A tilt-controlled marble-maze game that turned the Wii Remote into a genuinely precise physical controller."
+      ],
+      [
+        "Sengoku Basara: Samurai Heroes",
+        "2010",
+        "Capcom",
+        "A hyper-stylized musou brawler reimagining Japan's Warring States period as a cast of anime warlords."
+      ]
+    ]
+  },
+  {
+    "hue": 181,
+    "tag": "Licensed Games Done Right",
+    "title": "Licensed Games Done Right",
+    "blurb": "Closing the collection with the genre most players write off entirely — proof that a licensed spy, superhero, or Star Wars game could still hold its own on this console.",
+    "games": [
+      [
+        "LEGO Star Wars: The Complete Saga",
+        "2007",
+        "Traveller's Tales",
+        "The template for every LEGO game that followed, rebuilding all six Star Wars films as slapstick brick-based co-op."
+      ],
+      [
+        "LEGO Batman: The Videogame",
+        "2008",
+        "Traveller's Tales",
+        "Applies the LEGO formula to Gotham City, splitting missions between heroes and the villains' own playable side of the story."
+      ],
+      [
+        "Star Wars: The Force Unleashed",
+        "2008",
+        "Krome Studios",
+        "A scaled-down but still spectacle-driven take on Starkiller's story, with a distinct Wii-specific build tuned around motion-controlled Force powers."
+      ],
+      [
+        "GoldenEye 007",
+        "2010",
+        "Eurocom",
+        "A ground-up reimagining rather than a straight remake of the N64 classic, with modernized stealth mechanics and Wii pointer aiming that won over longtime fans."
+      ]
+    ]
+  }
+]

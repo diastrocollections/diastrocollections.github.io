@@ -1,0 +1,186 @@
+[
+  {
+    "hue": 255, "tag": "Signature Works",
+    "title": "The Essentials — Nintendo's Own Adventures",
+    "blurb": "The console-sellers. Every one of these was built in-house by Nintendo (or its closest partners) to prove what the little indigo cube could do, and most still define their series today.",
+    "games": [
+      ["The Legend of Zelda: The Wind Waker","2002","Nintendo EAD","Cel-shaded ocean epic that traded Hyrule Field for open water and proved a stylistic gamble could still be a masterpiece."],
+      ["The Legend of Zelda: Twilight Princess","2006","Nintendo EAD","The darker, dungeon-dense Zelda closing out the GameCube era — best played in this version's original, un-mirrored control scheme."],
+      ["The Legend of Zelda: Four Swords Adventures","2004","Nintendo EAD / Capcom","A frantic four-player co-op Zelda that turns puzzle dungeons into a scramble of shoving, item-sharing chaos. Europe didn't see it until seven months later — Nintendo deliberately held the localization back so it wouldn't collide with another Zelda release that same holiday season."],
+      ["Metroid Prime","2002","Retro Studios","Retro reinvented Samus in first-person without losing an ounce of Metroid's isolation — still the gold standard for the jump to 3D. The European release, which followed four months later, quietly changed more than the calendar: tougher enemies, several patched-out sequence breaks, extra narration, and a proper on-boot choice between 50Hz and 60Hz that spared PAL players the slowdown other conversions suffered."],
+      ["Metroid Prime 2: Echoes","2004","Retro Studios","A bleaker, harder sequel built around light and dark dimensions of one planet, rewarding patience with the series' best atmosphere. An unusual case for the era: the European release dropped 50Hz altogether and shipped 60Hz-only, rather than offering it as an optional toggle."],
+      ["Super Mario Sunshine","2002","Nintendo EAD","FLUDD-powered platforming on a sun-drenched island resort — Mario's most experimental 3D outing, equal parts beloved and divisive."],
+      ["Luigi's Mansion","2001","Nintendo EAD","A launch-window showcase built entirely around vacuuming ghosts out of a haunted house — funnier and spookier than a spin-off had any right to be. The European and Australian release, five months later, added an entire bonus Hidden Mansion mode: a mirrored map with harder bosses and tougher ghost captures that North America never got."],
+      ["Mario Kart: Double Dash!!","2003","Nintendo EAD","Two racers per kart, swapping items on the fly — the series' most chaotic, most-missed multiplayer format."],
+      ["Super Smash Bros. Melee","2001","HAL Laboratory","Still argued over two decades later as the fastest, most technically deep entry in the series, and a fixture of competitive play."],
+      ["Pikmin","2001","Nintendo EAD","A stranded astronaut commands an army of plant-creatures against a 30-day clock — real-time strategy shrunk down to a back garden."],
+      ["Pikmin 2","2004","Nintendo EAD","Drops the timer and doubles the ideas, adding a second species and genuinely creepy cave-crawling to Nintendo's tiniest strategy series."],
+      ["Animal Crossing","2001","Nintendo EAD","A cartridge that runs on the real calendar — debt, decorating, and small talk with animal neighbors, decades before 'cozy games' had a name. Europe's wait for it was the longest of any game on this list: two full years after the North American release, and a year behind even Australia's own delayed launch."],
+      ["Paper Mario: The Thousand-Year Door","2004","Intelligent Systems","Turn-based RPG combat crossed with theatrical, fourth-wall-winking writing that's still held up as the series' comic high point. A curious localization footnote: the multi-language European disc removed the English text's hints that party member Vivian is transgender, and German did the same — but the French, Spanish, and Italian text sitting on that identical PAL disc kept it intact."],
+      ["F-Zero GX","2003","Amusement Vision / Sega","Blisteringly fast anti-gravity racing built with Sega's arcade team — punishing, gorgeous, and one of the best 60fps racers ever made. Its N64 predecessor was notorious for PAL slowdown; this one fixed it outright, with a proper 60Hz mode that ran European copies exactly as fast as the rest of the world's."]
+    ]
+  },
+  {
+    "hue": 284, "tag": "Third-Party Landmarks",
+    "title": "Third-Party Landmarks",
+    "blurb": "Games that didn't come from Nintendo but still defined what GameCube ownership felt like — several of them changed their entire genre far beyond this one console.",
+    "games": [
+      ["Resident Evil 4","2005","Capcom","Reworked the entire survival-horror genre around an over-the-shoulder camera and set-piece pacing — almost every third-person action game since owes it something."],
+      ["Resident Evil","2002","Capcom","A ground-up rebuild of the original mansion, with pre-rendered backgrounds still cited as some of the best-looking environments on the system."],
+      ["Eternal Darkness: Sanity's Requiem","2002","Silicon Knights","A Lovecraftian horror unique to GameCube that fakes save-file corruption and volume changes as your character's sanity fails."],
+      ["Beyond Good & Evil","2003","Ubisoft","Michel Ancel's photojournalist-adventure flopped commercially and became one of the most beloved cult classics of the generation."],
+      ["Star Wars Rogue Squadron II: Rogue Leader","2001","Factor 5","A launch title that recreated the Death Star trench run so well it became the system's go-to graphical showpiece."],
+      ["Star Wars Rogue Squadron III: Rebel Strike","2003","Factor 5","Adds on-foot combat to the flight formula for a more uneven but still spectacular close to Factor 5's trilogy."],
+      ["Prince of Persia: The Sands of Time","2003","Ubisoft Montreal","Time-rewind mechanics and acrobatic platforming that revived a dormant franchise and shaped a decade of action-adventure design."],
+      ["Metal Gear Solid: The Twin Snakes","2004","Silicon Knights / Konami","The PS1 classic rebuilt with MGS2's engine and cinematic new cutscenes — controversial among purists, gorgeous on GameCube."],
+      ["Viewtiful Joe","2003","Clover Studio","Hideki Kamiya's cel-shaded, film-reel-powered brawler turns slow-mo and fast-forward into core combat tools."],
+      ["Viewtiful Joe 2","2004","Clover Studio","A tighter, faster sequel with a second playable hero and even more inventive boss encounters."]
+    ]
+  },
+  {
+    "hue": 313, "tag": "RPGs & Long Adventures",
+    "title": "RPGs & Long Adventures",
+    "blurb": "GameCube's RPG shelf is smaller than its rivals', which makes it a great snapshot of the genre's mid-2000s range — card battlers, tactics games, and one very strange sky-pirate epic.",
+    "games": [
+      ["Tales of Symphonia","2004","Namco Tales Studio","The series' console breakout, with real-time 'Linear Motion Battle' combat that made turn order feel like a brawler."],
+      ["Skies of Arcadia Legends","2003","Overworks / Sega","A Dreamcast favorite reborn with new content — airship exploration and a swashbuckling story still ranked among the genre's best."],
+      ["Baten Kaitos: Eternal Wings and the Lost Ocean","2003","Monolith Soft / tri-Crescendo","A card-based battle system in a sky-world setting where the characters literally have no bodies below the shoulders."],
+      ["Baten Kaitos Origins","2006","Monolith Soft","A prequel refining the original's card combat into something faster and sharper — criminally overlooked as one of GameCube's last releases, and one Europe never got the chance to overlook at all: it never released there, Japan and North America only."],
+      ["Final Fantasy: Crystal Chronicles","2003","Square Enix","A GBA-linked, lantern-carrying co-op RPG that traded traditional Final Fantasy trappings for four-player couch adventuring."],
+      ["Fire Emblem: Path of Radiance","2005","Intelligent Systems","The series' first console outing in the West — grid-strategy RPG combat whose permadeath tension still defines the genre."],
+      ["Phantasy Star Online Episode I & II","2003","Sonic Team","Online action-RPG dungeon crawling, remarkable for offering broadband play on a Nintendo console years before that was standard."],
+      ["Pokémon Colosseum","2003","Genius Sonority","Double battles and a noir-tinted Orre region — the first mainline-adjacent Pokémon RPG built for a home console."],
+      ["Pokémon XD: Gale of Darkness","2005","Genius Sonority","A 'Shadow Pokémon' story that lets you purify corrupted creatures — the series' darkest home-console detour."],
+      ["Lost Kingdoms","2002","From Software","An unusual card-summoning RPG where the heroine never fights directly, only conjuring creatures pulled from a deck."]
+    ]
+  },
+  {
+    "hue": 342, "tag": "Fighting Games",
+    "title": "Fighting Games",
+    "blurb": "Smash Bros. gets its own chapter above, so this one is the rest of the roster — from arcade-perfect 3D weapon duels to a crossover so strange it never left Japan.",
+    "games": [
+      ["SoulCalibur II","2003","Namco","Weapon-based 3D fighting at its most refined, with a GameCube-exclusive guest fighter in Link."],
+      ["Capcom vs. SNK 2 EO","2002","Capcom","A deep crossover fighter with a beginner-friendly 'Easy Operation' mode layered over genuinely competitive systems."],
+      ["Bloody Roar: Primal Fury","2004","Eighting","Fighters who transform into beasts mid-combo — an overlooked series finding a natural home on GameCube."],
+      ["Naruto: Clash of Ninja 2","2004","Eighting / Tomy","Cel-shaded anime brawling that captures the show's ninja speed better than most licensed fighters manage. Nintendo published it in Europe two months later under a blunter title: simply Naruto: Clash of Ninja — European Version."],
+      ["Dragon Ball Z: Budokai 2","2004","Dimps","Story-mode battles built on a board-game overworld, bringing Z-Fighter spectacle to GameCube's smaller anime-fighter shelf."],
+      ["DreamMix TV World Fighters","2003","Hudson / Konami / Takara","A Smash-style crossover pitting Bomberman and Solid Snake against Optimus Prime — Japan-only, and every bit as odd as it sounds."],
+      ["Mortal Kombat: Deception","2004","Midway","Adds weapon combat and Death Traps to the fatality-famous series, with a create-a-fighter mode unique to this generation."],
+      ["Def Jam: Fight for NY","2004","EA / AKI","Hip-hop-roster wrestling-brawler hybrid from the WWF No Mercy team, with an over-the-top story mode and soundtrack to match."]
+    ]
+  },
+  {
+    "hue": 11, "tag": "Shooters & Space Combat",
+    "title": "Shooters & Space Combat",
+    "blurb": "First-person, third-person, top-down bullet hell — GameCube's shooter shelf punches well above its reputation, anchored by the ex-Rare team that built TimeSplitters.",
+    "games": [
+      ["TimeSplitters 2","2002","Free Radical Design","A GoldenEye spiritual successor from ex-Rare staff, packed with a level editor and some of the deepest bot AI of its era."],
+      ["TimeSplitters: Future Perfect","2005","Free Radical Design","Time-travel campaign structure and an even more generous Map Maker close out the trilogy on a high note."],
+      ["Ikaruga","2003","Treasure","A black-and-white polarity-switching bullet-hell shoot-'em-up that arcade purists still rank among the genre's absolute best."],
+      ["Star Fox Assault","2005","Namco","Splits time between Arwing dogfights and on-foot combat — less beloved than its predecessors but home to some great set pieces."],
+      ["007: Nightfire","2002","Eurocom","A GoldenEye-flavored Bond shooter with tight split-screen multiplayer that filled the void before its own sequels arrived."],
+      ["Geist","2005","n-Space","An FPS where you play a disembodied spirit possessing enemies, guards, and household objects to solve problems and fight back."],
+      ["Turok: Evolution","2002","Acclaim","A dinosaur-hunting FPS prequel, rougher around the edges than its N64 predecessors but still a solid campaign shooter."],
+      ["Medal of Honor: Frontline","2002","EA","A World War II shooter that helped define the genre's console template, ported with a strong four-player split-screen suite."]
+    ]
+  },
+  {
+    "hue": 40, "tag": "Racing & Speed",
+    "title": "Racing & Speed",
+    "blurb": "Beyond Mario Kart and F-Zero (already in the essentials above), the racing shelf ranges from arcade-perfect risk-reward driving to a cel-shaded street racer that renders cars like a comic panel.",
+    "games": [
+      ["Burnout 2: Point of Impact","2003","Criterion","Arcade racing built entirely around risk — the faster and more recklessly you drive, the more boost you earn."],
+      ["Crazy Taxi","2002","Sega / Hitmaker","Sega's fare-hunting arcade classic ported almost note-for-note, thrash-punk soundtrack and all."],
+      ["Wave Race: Blue Storm","2001","Nintendo Software Technology","Jet-ski racing with water physics still held up as some of the most convincing in any racing game."],
+      ["1080° Avalanche","2003","Nintendo","Snowboarding racing where the mountain itself is the obstacle — avalanche chases raise the stakes mid-run."],
+      ["Kirby Air Ride","2003","HAL Laboratory","Masahiro Sakurai's stripped-down racer, where steering is automatic and drafting, charging, and open-world scavenging are the game."],
+      ["Need for Speed: Underground 2","2004","EA Black Box","Tuner-car customization and an open city map brought the street-racing boom to GameCube."],
+      ["XGIII: Extreme-G Racing","2003","Acclaim Studios","Futuristic anti-gravity bike racing in the Wipeout mold, fast and brutal with weapons thrown into the mix."],
+      ["Auto Modellista","2003","Capcom","A cel-shaded street racer that renders cars like a moving comic book — unlike anything else on the system, at least in North America: a finished PAL GameCube version existed but was quietly cancelled, and Europe only ever got the game on PS2."]
+    ]
+  },
+  {
+    "hue": 69, "tag": "Sports",
+    "title": "Sports",
+    "blurb": "Nintendo's own sports spin-offs sit alongside the best of the era's arcade-sports boom — trick systems, Gamebreakers, and Mega Strikes over anything resembling a real rulebook.",
+    "games": [
+      ["Mario Golf: Toadstool Tour","2003","Camelot","Mushroom Kingdom courses and character-specific special shots make this the series' most purely fun entry. Europe waited eleven months for it, and the PAL disc — unusually for a first-party Mario sports title — never got a 60Hz option, staying locked to 50Hz throughout."],
+      ["Mario Power Tennis","2004","Camelot","Gimmick courts and over-the-top Power Shots turn a straightforward tennis sim into pure Mario chaos."],
+      ["Mario Superstar Baseball","2005","Namco","Chemistry-based team-building and Star Swings give Mario's take on baseball real strategic depth."],
+      ["Super Mario Strikers","2005","Next Level Games","Arcade soccer with no rules, illegal tackles, and Mega Strikes that can wipe out a goalkeeper entirely. Released in Europe about two weeks earlier than North America, and under a different name: Mario Smash Football."],
+      ["NBA Street Vol. 2","2003","EA Big","Trick-heavy streetball with a Gamebreaker system, widely considered the high point of the whole Street series."],
+      ["SSX 3","2003","EA Canada","One continuous mountain instead of separate courses, turning snowboarding into a seamless, trick-chaining descent."],
+      ["Tony Hawk's Pro Skater 3","2001","Neversoft","The series' peak, introducing the revert and online-style goals that shaped skateboarding games for a decade."],
+      ["Sega Soccer Slam","2002","Black Box Games","Fast three-on-three arcade soccer with Showtime moves and a personality-driven roster far removed from any real league."]
+    ]
+  },
+  {
+    "hue": 98, "tag": "Puzzle, Party & Rhythm",
+    "title": "Puzzle, Party & Rhythm",
+    "blurb": "The couch-multiplayer heart of the console — rolling-ball mazes, board-game chaos, and two bongo drums that turned a curious rhythm spin-off into one of the system's best-remembered peripherals.",
+    "games": [
+      ["Super Monkey Ball","2001","Amusement Vision","A launch-window arcade port that turns rolling a ball through a maze into one of the tightest, most replayable puzzle-platformers around."],
+      ["Super Monkey Ball 2","2002","Amusement Vision","More stages, more party-game modes — Bowling, Golf, Boat Race — refining an already-perfect formula."],
+      ["Mario Party 4","2002","Hudson Soft","The board-and-minigames formula at its most polished, before the series started leaning on gimmicks."],
+      ["Mario Party 5","2003","Hudson Soft","Swaps items for a capsule system and introduces Super Duel Mode, a full board built from minigame parts."],
+      ["WarioWare, Inc.: Mega Party Game$!","2003","Nintendo","Hundreds of absurd five-second microgames compiled into a party game unlike anything else in Nintendo's library."],
+      ["Donkey Konga","2003","Namco","Rhythm game played on bongo peripherals, thumping and clapping along to a genuinely eclectic setlist — one that's genuinely different depending where you bought it, since music licensing meant Japan, North America, and Europe each got their own distinct regional tracklist."],
+      ["Donkey Konga 2","2004","Namco","A second helping of bongo rhythm action with a fresh tracklist and expanded four-player support — Europe's version swapped in its own regional song selection, same as the original game did."],
+      ["Kururin Squash!","2004","Eighth Wonder / Nintendo","A spinning-stick puzzle-action sequel that never made it West, prized by import collectors for its tight, tricky level design."]
+    ]
+  },
+  {
+    "hue": 127, "tag": "Strategy & Simulation",
+    "title": "Strategy & Simulation",
+    "blurb": "The console's smallest genre shelf is also its strangest — a god-game about raising mountains, a pinball-tactics hybrid, and a creature-evolution sim that has no real peer anywhere else.",
+    "games": [
+      ["Battalion Wars","2005","Kuju Entertainment","Real-time strategy reimagined as direct squad-commanding action, closer to a cartoon war movie than a spreadsheet."],
+      ["Custom Robo","2004","Noise","Build a fighting robot from swappable parts, then duel it out in arena battles with real build-crafting depth underneath. Never released in Europe — Japan and North America only."],
+      ["Cubivore: Survival of the Fittest","2002","Saru Brunei / Atlus","Eat, evolve, and mutate your creature across generations — one of the strangest, most memorable simulation concepts ever shipped. Like Custom Robo, it stayed a Japan-and-North-America game; Europe never got an official release."],
+      ["Doshin the Giant","2002","Nintendo","A god-game where you raise and lower an island's terrain to guide its tiny inhabitants, from the makers of SimTower. One of this collection's rare reversals: it released in Japan and Europe both in 2002, but never in North America at all."],
+      ["Odama","2006","Vanillaware / Nintendo","Pinball crossed with real-time squad tactics and voice commands — one of the last and strangest games GameCube ever received."],
+      ["Giftpia","2003","Skip Ltd. / Nintendo","An Animal Crossing-adjacent life-sim about paying off debt and helping townsfolk, never localized outside Japan."]
+    ]
+  },
+  {
+    "hue": 156, "tag": "Survival Horror",
+    "title": "Survival Horror",
+    "blurb": "Beyond the two genre-defining Resident Evil entries already in earlier chapters, GameCube quietly built out a full horror shelf — vampires, psychics, and one relentless pursuer named Nemesis.",
+    "games": [
+      ["Resident Evil Zero","2002","Capcom","A prequel built around swapping between two characters in real time — one of the series' most puzzle-forward entries."],
+      ["Resident Evil 3: Nemesis","2003","Capcom","Jill Valentine hunted through Raccoon City by an unkillable pursuer that can show up almost anywhere."],
+      ["Resident Evil Code: Veronica X","2003","Capcom","The Dreamcast's fully-3D horror epic, expanded and polished for its GameCube release."],
+      ["Second Sight","2004","Free Radical Design","A psychic-powered stealth thriller overshadowed by its own studio's TimeSplitters games — worth revisiting for its telekinesis mechanics."],
+      ["BloodRayne","2002","Terminal Reality","A half-vampire dhampir slices through Nazi occultists with blade and blood-drain powers, gleefully over the top."],
+      ["Legacy of Kain: Blood Omen 2","2002","Crystal Dynamics","Vampire revenge action steeped in the series' gothic mythology, action-first rather than puzzle-first."]
+    ]
+  },
+  {
+    "hue": 185, "tag": "Cult Classics & Curios",
+    "title": "Cult Classics, Curios & Japan-Only Gems",
+    "blurb": "This is where a 'best of' list earns the word explorer. Suda51's fever dreams, a bongo-controlled platformer, a household robot cleaning a family's floors — the games that make the GameCube library genuinely one of a kind.",
+    "games": [
+      ["Killer7","2005","Grasshopper Manufacture","Suda51's rail-shooter fever dream, following seven personalities of one assassin through a story as confusing as it is unforgettable."],
+      ["P.N.03","2003","Capcom","A stylish, balletic third-person shooter starring a laser-dodging heroine in a skintight suit — divisive on release, reassessed as ahead of its time."],
+      ["Chibi-Robo!","2005","Skip Ltd.","A tiny household robot cleans up a family's problems (and floors), turning chores into one of GameCube's most quietly charming games. Europe didn't get its own release until nearly a year later, in 2006."],
+      ["Wario World","2003","Treasure","A short, punchy beat-'em-up platformer from the studio behind Gunstar Heroes, with Wario smashing everything in sight for cash."],
+      ["Gotcha Force","2003","Capcom","Toy-robot collect-and-battle action that plays like a cross between Custom Robo and a tokusatsu cartoon — a cult favorite among import fans."],
+      ["Donkey Kong Jungle Beat","2004","Nintendo EAD","A platformer controlled entirely with bongo drums, clapping Donkey Kong through 16 fruit-strewn stages."],
+      ["Star Fox Adventures","2002","Rare","Originally a standalone Rare adventure retrofitted with Star Fox characters — plays like a Zelda-flavored detour for the series."],
+      ["Nintendo Puzzle Collection","2003","Nintendo","A remastered trio of Panel de Pon, Dr. Mario 64, and Yoshi's Cookie that never crossed the Pacific."],
+      ["Homeland","2003","Chunsoft","A top-down online RPG from the Mystery Dungeon studio, one of the system's rarer curiosities — and, like most of this chapter's imports, a Japan-only release with nothing resembling a Western version."],
+      ["SD Gundam Gashapon Wars","2003","Bec / Bandai","Turn-based strategy and robot-battling action in one Gundam-flavored package, unreleased outside Japan."]
+    ]
+  },
+  {
+    "hue": 214, "tag": "Licensed Games Done Right",
+    "title": "Licensed & Movie Tie-Ins Done Right",
+    "blurb": "The genre most players write off entirely, closing the collection with proof that a licensed game could still be a genuinely great one on this console.",
+    "games": [
+      ["The Simpsons: Hit & Run","2003","Radical Entertainment","A GTA-style open-world romp through Springfield that's aged into a stone-cold classic in its own right."],
+      ["LEGO Star Wars II: The Original Trilogy","2006","Traveller's Tales","The template for every LEGO game that followed, rebuilding Episodes IV-VI as slapstick, brick-based co-op."],
+      ["Spider-Man 2","2004","Treyarch","The web-swinging physics that defined superhero open-world games for a decade, years before its own sequels caught up."],
+      ["The Lord of the Rings: The Two Towers","2002","Stormfront Studios / EA","A hack-and-slash retelling of the film's battles, gory and stylish enough to outclass most movie tie-ins of its day."]
+    ]
+  }
+]

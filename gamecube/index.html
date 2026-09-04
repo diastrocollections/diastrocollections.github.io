@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Platform Explorer's Collection</title>
+<style>
+  :root {
+    --bg: #F5F3FA;
+    --surface: #FFFFFF;
+    --surface-2: #ECE8F7;
+    --ink: #1C1830;
+    --ink-soft: #5C5470;
+    --ink-faint: #8C84A0;
+    --accent: #4B3B87;
+    --accent-ink: #FFFFFF;
+    --line: #DCD5EC;
+    --line-strong: #C7BEE2;
+    --shadow: 0 1px 2px rgba(28,24,48,0.06), 0 8px 24px -12px rgba(28,24,48,0.18);
+    --sat: 46%;
+    --lig: 40%;
+    --sat-soft: 62%;
+    --lig-soft: 93%;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #131022;
+      --surface: #1C1732;
+      --surface-2: #241E3D;
+      --ink: #F1EDFA;
+      --ink-soft: #B7AECF;
+      --ink-faint: #837AA0;
+      --accent: #B6A6EE;
+      --accent-ink: #1A1530;
+      --line: #322A50;
+      --line-strong: #433A66;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
+      --sat: 58%;
+      --lig: 72%;
+      --sat-soft: 34%;
+      --lig-soft: 22%;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #131022;
+    --surface: #1C1732;
+    --surface-2: #241E3D;
+    --ink: #F1EDFA;
+    --ink-soft: #B7AECF;
+    --ink-faint: #837AA0;
+    --accent: #B6A6EE;
+    --accent-ink: #1A1530;
+    --line: #322A50;
+    --line-strong: #433A66;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
+    --sat: 58%;
+    --lig: 72%;
+    --sat-soft: 34%;
+    --lig-soft: 22%;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Work Sans", "Segoe UI", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+
+  a { color: inherit; }
+
+  h1, h2, h3 {
+    font-family: "Unbounded", "Segoe UI", system-ui, sans-serif;
+    font-weight: 700;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .mono {
+    font-family: "Space Mono", ui-monospace, "SFMono-Regular", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  /* ---------- Shell ---------- */
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 48px);
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    padding: clamp(56px, 10vw, 96px) 0 clamp(40px, 6vw, 64px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -140px;
+    right: -160px;
+    width: 460px;
+    height: 460px;
+    background: radial-gradient(circle at 50% 50%, hsl(255 var(--sat-soft) var(--lig-soft)) 0%, transparent 72%);
+    pointer-events: none;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Space Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+
+  .eyebrow .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.3rem, 5.4vw, 4rem);
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    max-width: 16ch;
+    position: relative;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .hero-lede {
+    max-width: 62ch;
+    margin-top: 22px;
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+
+  .hero-meta .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hero-meta .num {
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .hero-meta .label {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ---------- Curator's note ---------- */
+
+  .note {
+    padding: clamp(28px, 5vw, 40px) 0;
+  }
+
+  .note-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: clamp(24px, 4vw, 40px);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .note-card h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+  }
+
+  .note-card p {
+    max-width: 74ch;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .note-card p strong { color: var(--ink); font-weight: 600; }
+
+  /* ---------- Toolbar ---------- */
+
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+  }
+
+  .toolbar-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .search {
+    position: relative;
+    flex: 0 0 260px;
+  }
+
+  .search input {
+    width: 100%;
+    padding: 10px 14px 10px 36px;
+    border-radius: 10px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.92rem;
+  }
+
+  .search input::placeholder { color: var(--ink-faint); }
+
+  .search svg {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: var(--ink-faint);
+    pointer-events: none;
+  }
+
+  .chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding-bottom: 2px;
+  }
+
+  .chips::-webkit-scrollbar { height: 5px; }
+  .chips::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 3px; }
+
+  .chip {
+    flex-shrink: 0;
+    font-family: "Space Mono", monospace;
+    font-size: 0.76rem;
+    letter-spacing: 0.02em;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink-soft);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .chip:hover { border-color: var(--accent); color: var(--ink); }
+
+  .result-count {
+    flex-shrink: 0;
+    font-family: "Space Mono", monospace;
+    font-size: 0.76rem;
+    color: var(--ink-faint);
+    margin-left: auto;
+    padding-left: 8px;
+    white-space: nowrap;
+  }
+
+  /* ---------- Chapters ---------- */
+
+  .chapter {
+    padding: clamp(48px, 7vw, 76px) 0 8px;
+    scroll-margin-top: 84px;
+    --hue: 255;
+  }
+
+  .chapter-head {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+
+  .chapter-num {
+    font-family: "Unbounded", sans-serif;
+    font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+    font-weight: 700;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    line-height: 1;
+  }
+
+  .chapter-title {
+    font-family: "Unbounded", sans-serif;
+    font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .chapter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Space Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+    padding: 4px 9px;
+    border-radius: 6px;
+  }
+
+  .chapter-blurb {
+    margin: 0 0 26px;
+    max-width: 68ch;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* ---------- Cards ---------- */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    border-left: 3px solid hsl(var(--hue) var(--sat) var(--lig));
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+
+  .card-idx {
+    display: block;
+    font-family: "Space Mono", monospace;
+    font-size: 0.74rem;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    font-weight: 700;
+  }
+
+  .card-title {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.03rem;
+    line-height: 1.25;
+    color: var(--ink);
+    margin: 2px 0 0;
+  }
+
+  .card-meta {
+    display: block;
+    font-family: "Space Mono", monospace;
+    font-size: 0.75rem;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+  }
+
+  .card-blurb {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    line-height: 1.48;
+  }
+
+  .card.hidden { display: none; }
+  .chapter.hidden { display: none; }
+
+  .empty-state {
+    display: none;
+    padding: 60px 0;
+    text-align: center;
+    color: var(--ink-faint);
+    font-family: "Space Mono", monospace;
+  }
+
+  /* ---------- Footer ---------- */
+
+  footer {
+    margin-top: 60px;
+    padding: 36px 0 60px;
+    border-top: 1px solid var(--line);
+  }
+
+  footer p {
+    max-width: 72ch;
+    color: var(--ink-faint);
+    font-size: 0.86rem;
+    margin: 0 0 10px;
+  }
+
+  footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> A curated field guide &middot; Nintendo GameCube, 2001&ndash;2007</div>
+    <h1>The Platform<br>Explorer's <em>Collection</em></h1>
+    <p class="hero-lede">One hundred GameCube games, chosen to give you a taste of the whole library &mdash; not just the highest scores. Twelve chapters, one per corner of the catalog, from Nintendo's own landmark adventures down to the Japan-only oddities import collectors still chase.</p>
+    <div class="hero-meta">
+      <div class="stat"><span class="num mono">100</span><span class="label">games catalogued</span></div>
+      <div class="stat"><span class="num mono">12</span><span class="label">chapters &amp; genres</span></div>
+      <div class="stat"><span class="num mono">2001&ndash;06</span><span class="label">release window</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="note">
+  <div class="wrap">
+    <div class="note-card">
+      <h2>How this collection was built</h2>
+      <p>Metacritic will tell you the ten highest-rated GameCube games and stop there &mdash; which flattens a library that ran from Suda51's fever dreams to Japan-only pinball-strategy hybrids to Mushroom Kingdom tennis. This collection cross-references rankings and retrospectives from <strong>Nintendo Life, GamesRadar+, IGN, Eurogamer/VGC, Digital Trends, TechRadar</strong> and long-running enthusiast archives like <strong>Racketboy</strong>, alongside genre-specific expert lists and import-scene write-ups covering the games that never left Japan.</p>
+      <p>The goal wasn't a scoreboard. It was breadth: the best <strong>platformer</strong>, the best <strong>card-battle RPG</strong>, the best <strong>bongo-controlled rhythm game</strong>, the best <strong>god-sim</strong> &mdash; each earning its spot for what it shows you about the console, not just how it scored. Use the search box or genre chips below to explore by mood, or just scroll from the top and let the whole shelf go by.</p>
+      <p>A short follow-up pass added European context to this page after it first published. Where a PAL release carries a different box title, a real gap in release dates, a genuine content difference, or a straight-up exclusion, that's folded directly into the description below &mdash; Europe's own name for a game like <strong>Mario Smash Football</strong> (Super Mario Strikers in the US), a two-year wait for <strong>Animal Crossing</strong>, the longest gap on this whole list, or a case like <strong>Custom Robo</strong> and <strong>Cubivore</strong>, both of which stayed Japan-and-North-America exclusives that Europe never received. It also caught one outright error along the way: <strong>Doshin the Giant</strong> was previously dated and framed as if it had a North American release &mdash; it never did, and is corrected here to its actual Japan/Europe release year. This is a targeted pass, not a wholesale EU-first rebuild of the page &mdash; years still generally mark the North American release &mdash; just an honest accounting of where the two sides of the GameCube's library genuinely diverge.</p>
+      <p>A very small number of entries also carry a note on PAL technical conversion quality, since GameCube is the generation where a 60Hz "PAL-60" option &mdash; avoiding the old slowed-down 50Hz picture &mdash; started appearing more consistently, though far from universally. It's a footnote here, not a running theme: most of the GameCube's library converted just fine, and a note only appears below where there's a specific, well-documented story attached to it.</p>
+    </div>
+  </div>
+</section>
+
+<nav class="toolbar">
+  <div class="wrap toolbar-inner">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" type="text" placeholder="Search 100 games…" autocomplete="off">
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="result-count" id="resultCount"></div>
+  </div>
+</nav>
+
+<main class="wrap" id="chapters"></main>
+
+<div class="wrap"><p class="empty-state" id="emptyState">No games match that search. Try a shorter word, or clear the box.</p></div>
+
+<footer>
+  <div class="wrap">
+    <p>Curated as a browsing collection, not a strict ranking &mdash; position within a chapter is roughly chronological, not a scorecard. Years generally mark the North American GameCube release; a few titles (Skies of Arcadia, Resident Evil, Metal Gear Solid) are enhanced ports or remakes of earlier games, included because the GameCube version is the definitive one, and Doshin the Giant, which never released in North America, is dated by its Japan/Europe release instead. A number of other entries note their European title, release gap, or regional differences directly in the description, where Europe's side of a game's story turned out to be worth telling.</p>
+    <p>Sources consulted include <a href="https://www.nintendolife.com/guides/50-best-gamecube-games-of-all-time" target="_blank" rel="noopener">Nintendo Life</a>, <a href="https://www.gamesradar.com/best-gamecube-games/" target="_blank" rel="noopener">GamesRadar+</a>, <a href="https://www.videogameschronicle.com/guide/the-25-best-gamecube-games/" target="_blank" rel="noopener">Video Games Chronicle</a>, <a href="https://en.wikipedia.org/wiki/Video_games_listed_among_the_best_of_the_GameCube" target="_blank" rel="noopener">Wikipedia's aggregated critics' list</a>, <a href="https://michibiku.colorninja.com/nintendo-gamecube-imports-guide-best-japan-games-play/" target="_blank" rel="noopener">Michibiku's import guide</a>, and genre round-ups from Retrododo, Infinity Retro, GameRant, Cheat Code Central and DualShockers.</p>
+  </div>
+</footer>
+
+<script src="../assets/collection.js" data-src="../data/gamecube.json"></script>
+</body>
+</html>

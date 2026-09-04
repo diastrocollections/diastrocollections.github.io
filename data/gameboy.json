@@ -1,0 +1,126 @@
+[
+  { "hue": 71, "tag": "Puzzle", "title": "Falling-Block & Puzzle", "blurb": "The genre the Game Boy is remembered for — a run of falling-block and grid-logic puzzlers so strong the hardware and Tetris are practically synonymous.", "games": [
+    ["Tetris","1989","Nintendo R&D1","The pack-in cartridge that convinced the world falling blocks belonged in your pocket, its Game Boy build often cited as the definitive version."],
+    ["Dr. Mario","1990","Nintendo R&D1","Miyamoto's viruses-and-capsules puzzler trades Tetris's abstraction for color-matching chaos that plays just as well on six-hour batteries."],
+    ["Yoshi","1992","Game Freak","Game Freak's pre-Pokémon puzzler stacks falling enemies between two Marios, rewarding patient column-building over panic. Released in Europe as Mario & Yoshi."],
+    ["Yoshi's Cookie","1993","Tose","A gentler row-and-column matching game wrapped in kitchen-themed sprites, proof the puzzle boom went well past Tetris clones."],
+    ["Qix","1990","Minakuchi Engineering","The claim-the-territory arcade classic shrinks perfectly to a handheld screen, its slow-burn tension suited to short bursts."],
+    ["Catrap","1990","ASK Kodansha","Known as Pitman in Japan, this push-block puzzler demands total-recall planning across more than a hundred single-screen levels."],
+    ["Kwirk","1990","Atlus","Localized from Puzzle Boy, this sokoban-style block-pusher stars a googly-eyed blob and a level list that never stops escalating."],
+    ["Tetris Attack","1996","Intelligent Systems","Panel de Pon's cute cast repackaged around Yoshi, swapping tiles instead of dropping them for one of the sharpest puzzlers on the system."],
+    ["Mole Mania","1997","Nintendo EAD","A late-era Miyamoto oddity that turns puzzle-box logic into an overworld adventure about a mole rescuing his family."],
+    ["Boxxle","1990","Atelier Double","The original Game Boy Sokoban port, unglamorous but foundational to every crate-pushing puzzler that followed on the system."],
+    ["Kirby's Star Stacker","1997","HAL Laboratory","Kirby swaps platforming for a falling-star matching game with a surprisingly deep chain-combo system."]
+  ]},
+  { "hue": 100, "tag": "Platformer", "title": "Mario, Kirby & Wario Platforming Icons", "blurb": "Nintendo's own mascots headline the Game Boy's platforming core, from Mario's cramped launch-window debut to Wario and Kirby's genre-bending spin-offs.", "games": [
+    ["Super Mario Land","1989","Nintendo R&D1","The launch-window platformer that proved Mario could work at handheld scale, complete with a submarine level and an alien final boss."],
+    ["Super Mario Land 2: 6 Golden Coins","1992","Nintendo R&D1","A sprawling, six-world successor that introduces Wario and looks almost unrecognizable next to its predecessor's stiffness."],
+    ["Wario Land: Super Mario Land 3","1994","Nintendo R&D1","Wario's solo debut turns Mario's formula greedy, rewarding treasure-hoarding over flag-pole speedrunning."],
+    ["Wario Land II","1998","Nintendo R&D1","An unkillable Wario game where getting hit changes his form instead of costing a life, one of the series' cleverest twists."],
+    ["Kirby's Dream Land","1992","HAL Laboratory","The pink puffball's debut is short, breezy, and unmistakably confident about what makes Kirby fun."],
+    ["Kirby's Dream Land 2","1995","HAL Laboratory","Adds animal buddies and copy abilities together for the first time, doubling the original's scope without losing its charm."],
+    ["Kirby's Pinball Land","1993","HAL Laboratory","Three interconnected pinball tables turn Kirby himself into the ball, a genre swap that works better than it should."],
+    ["Kirby's Block Ball","1996","HAL Laboratory","Breakout by way of Kirby, with copy-ability power-ups that keep the paddle-and-brick loop from ever going stale."],
+    ["Donkey Kong","1994","Nintendo R&D1 / Pax Softnica","A four-stage arcade remake that explodes into a hundred-plus-level puzzle-platformer once the original game ends."],
+    ["Donkey Kong Land","1995","Rare","Rare compresses the SNES Donkey Kong Country's silhouette-and-shading style into monochrome without losing the series' momentum."],
+    ["Donkey Kong Land 2","1996","Rare","Widely considered the trilogy's high point, pairing Diddy and Dixie across levels built around real platforming ideas, not downscaled ports."]
+  ]},
+  { "hue": 129, "tag": "Action", "title": "Action-Platformers & Run-and-Gun", "blurb": "Faster, meaner platforming from Capcom, Konami, and Sunsoft, built around precise jumps and one-hit-punishing enemy patterns.", "games": [
+    ["Kid Dracula","1993","Konami","Castlevania's mascot spin-off plays it for laughs, a candy-colored shooter-platformer that didn't reach the West for decades."],
+    ["Trip World","1992","Sunsoft","A fever dream of a platformer starring a rabbit named Sonic, prized today for sprite work that pushes the hardware harder than almost anything else on it — released in Japan and Europe, but never in North America."],
+    ["Gargoyle's Quest","1990","Capcom","Firebrand from Ghosts 'n Goblins gets his own overworld-and-dungeon adventure, laying groundwork for the Metroidvania genre before the term existed."],
+    ["Kid Icarus: Of Myths and Monsters","1991","Nintendo R&D1","Pit's only Game Boy outing pairs vertical platforming with shop-based upgrades, a sequel Japan didn't see until the 3DS era."],
+    ["Bionic Commando","1992","Minakuchi Engineering","The grapple-hook-only action game translates surprisingly well to a smaller screen, forcing precise swings through tight corridors."],
+    ["Mega Man: Dr. Wily's Revenge","1991","Minakuchi Engineering","The Blue Bomber's handheld debut remixes bosses from the first two NES games into new stages."],
+    ["Mega Man V","1994","Minakuchi Engineering","The best-regarded of the Game Boy Mega Man quartet, built around new Stardroid bosses instead of NES retreads."],
+    ["Batman: The Video Game","1990","Sunsoft","Sunsoft's take on the Tim Burton film swaps the NES version's grapple gun for tighter, punchier combat."],
+    ["DuckTales 2","1993","Capcom","Scrooge McDuck's pogo-cane platforming returns for a sequel that never lost the NES original's precision."]
+  ]},
+  { "hue": 158, "tag": "Adventure", "title": "Action-Adventure & Metroidvania", "blurb": "A small but foundational chapter — overworld exploration and item-gated progression, including the two games that quietly invented the Metroidvania.", "games": [
+    ["Metroid II: Return of Samus","1991","Nintendo R&D1","Samus hunts every Metroid on SR388 in a claustrophobic, score-tracking sequel that quietly reshaped the series' DNA."],
+    ["The Legend of Zelda: Link's Awakening","1993","Nintendo R&D1","A full console-caliber Zelda squeezed onto a cartridge, with a surreal dream-island story unlike anything else in the series."],
+    ["Blaster Master Boy","1992","Sunsoft Osaka","Known as Bomber King in Japan, this loosely-related spinoff swaps the NES original's tank for on-foot dungeon crawling."],
+    ["The Sword of Hope","1991","Kemco","A point-and-click-style RPG-adventure hybrid that leans on menu-driven exploration instead of a directional overworld."],
+    ["The Sword of Hope II","1996","Kemco","A sequel that expands the original's text-adventure structure — Kemco released it in Japan in 1992 but held the English version back until 1996, a four-year wait for the West."],
+    ["Solomon's Club","1991","Graphic Research","A Game Boy port of the puzzle-platformer Solomon's Key, trading keys and blocks for wits over reflexes."]
+  ]},
+  { "hue": 187, "tag": "RPG", "title": "Role-Playing Adventures", "blurb": "Square's SaGa-era experiments and the launch of Pokémon anchor a genre most people don't associate with the original Game Boy at all.", "games": [
+    ["The Final Fantasy Legend","1990","Square","Known in Japan as Makai Toushi SaGa, this is the game that started the SaGa series and brought its brutal, mutation-driven design West under the Final Fantasy name — though 'West' meant North America only; none of the three Game Boy SaGa games got a European release until a 2020 Switch collection."],
+    ["Final Fantasy Legend II","1991","Square","A stronger, more ambitious SaGa sequel with a multi-generational quest across parallel worlds — another entry Europe wouldn't officially see until decades later."],
+    ["Final Fantasy Legend III","1993","Square","The trilogy's closer adds time travel and its deepest customization yet, a fitting send-off for a Game Boy SaGa era that Europe never got to play on original hardware."],
+    ["Final Fantasy Adventure","1991","Square","The first Mana game, blending real-time action combat with RPG progression years before Secret of Mana existed. Europe got it two years later, in 1993, retitled Mystic Quest — not to be confused with the later SNES game of the same name."],
+    ["Pokémon Red and Blue","1998","Game Freak","The monster-collecting phenomenon that redefined what a Game Boy cartridge could sell, built around a link cable most owners already had. Europe waited a full year longer than North America, arriving in October 1999."],
+    ["Pokémon Yellow","1999","Game Freak","An anime-inspired remix of Red and Blue with a permanently-following Pikachu, runs on the original grey brick just fine."],
+    ["Rolan's Curse","1990","NMK","An overhead action-RPG about rescuing a princess that's tougher and stranger than its cute sprites suggest."],
+    ["Rolan's Curse II","1992","NMK","A direct sequel that widens the original's action-RPG loop with more weapons and a larger map."]
+  ]},
+  { "hue": 216, "tag": "Shooter", "title": "Shoot-'Em-Ups", "blurb": "Arcade precision shrunk to four inches of screen — side-scrolling and vertical shooters that trade nothing for the smaller display.", "games": [
+    ["R-Type","1991","Bits Studios","Irem's punishing arcade shooter loses none of its bite in the downsize, memorization and the Force pod intact."],
+    ["R-Type II","1992","Bits Studios","A worthy sequel that keeps the original's precision-or-death philosophy while introducing new enemy patterns."],
+    ["Gradius: The Interstellar Assault","1992","Konami","Released in Europe as Nemesis II: The Return of the Hero, this side-scroller lets you carry power-up loadouts between stages for the first time in the series."],
+    ["Operation C","1991","Konami","A Game Boy-original Contra spinoff with alternating top-down and side-scrolling stages, not a port of any NES or arcade Contra. Europe got it over a year later, in 1992, retitled Probotector — with the soldiers redesigned as robots, the same reskin Contra got on other Konami platforms."],
+    ["Solar Striker","1990","Nintendo R&D1","Nintendo's own vertical shooter is basic by design, a clean genre entry from the system's launch year."],
+    ["Sagaia","1991","Taito","The Game Boy port of Darius II strips the arcade's triple-monitor spectacle down to one screen without losing its fish-shaped bosses."],
+    ["Trax","1991","HAL Laboratory","An overhead tank shooter with maze-like stages, one of HAL's odder handheld contributions."],
+    ["Parodius","1991","Konami","Konami's Gradius parody swaps spaceships for penguins and octopuses, released only in Japan and Europe."],
+    ["Battle Unit Zeoth","1991","Jaleco","A four-directional mecha shooter that trades scrolling momentum for stationary, bullet-hell-style survival."]
+  ]},
+  { "hue": 245, "tag": "Sports", "title": "Sports", "blurb": "A modest but earnest lineup — the Game Boy was never a sports-sim machine, but Konami and Nintendo both gave it a fair try.", "games": [
+    ["Track & Field","1992","Konami","The button-mashing arcade original translates awkwardly well to the Game Boy's cramped D-pad, sprint events and all."],
+    ["Tennis","1989","Nintendo R&D1","A launch-era Nintendo sports title, simple enough to explain in one sentence and still satisfying to rally in."],
+    ["Golf","1990","Nintendo R&D1","Eighteen holes of stripped-down, meter-based golf that later resurfaced as a mini-game inside other Nintendo titles."],
+    ["Blades of Steel","1991","Konami","Konami's arcade hockey game keeps its fighting mini-game intact even at handheld scale."],
+    ["Double Dribble: 5 on 5","1991","Konami","Released in Europe, a full three years later, as Hyper Dunk, this overhead basketball game is one of the system's few genuine team-sports entries."],
+    ["International Superstar Soccer","1998","Konami Computer Entertainment Nagoya","A late-era soccer game (Japan's World Soccer GB) that packs surprisingly readable player sprites into a top-down pitch."]
+  ]},
+  { "hue": 274, "tag": "Racing", "title": "Racing", "blurb": "Six ways to go fast on a screen that refreshes slower than most — from Formula One to dirt bikes to jet skis.", "games": [
+    ["F-1 Race","1991","Nintendo R&D1","Nintendo's own Formula One game supports the four-player link cable adapter, a rare multiplayer racing option on original hardware. Europe followed about eight months after North America."],
+    ["Motocross Maniacs","1990","Konami","A physics-driven dirt-bike racer where momentum and wheelies matter more than raw speed. Japan had it a few months earlier in 1989; Europe waited about a year longer than North America."],
+    ["Super R.C. Pro-Am","1991","Rare","Rare's top-down racer keeps the NES original's weapon pickups and split-screen tension in a portable package. Europe followed about ten months after North America."],
+    ["Wave Race","1992","Nintendo EAD / Pax Softnica","A top-down jet-ski racer entirely unrelated to the later N64 game of the same name, built around slalom gates and wake management. Europe's release lagged an extraordinary five years behind North America's, not arriving until 1997."],
+    ["Chase H.Q.","1990","Bits Corporation","Taito's pursuit-driving arcade game becomes a countdown-timer chase across a scrolling highway."],
+    ["F-1 Spirit","1991","Konami","Released in North America as World Circuit Series and in Europe as The Spirit of F-1, this overhead Formula One racer rewards careful cornering over brute acceleration."]
+  ]},
+  { "hue": 303, "tag": "Fighting", "title": "Fighting & Beat-'Em-Up", "blurb": "Console-fighter ports that trimmed frames and colors but rarely trimmed ambition — including two Mortal Kombat games that kept their fatalities.", "games": [
+    ["Mortal Kombat","1993","Probe Software","A scaled-down but shockingly complete port of the fighting game that triggered a ratings-board panic, fatalities included."],
+    ["Mortal Kombat II","1994","Probe Software","Doubles the roster and adds Babalities and Friendships to a handheld fighter that still finds room for blood."],
+    ["Samurai Shodown","1994","Takara","SNK's weapon-based fighter loses some frames but keeps its slower, weightier combat intact."],
+    ["The King of Fighters '95","1997","Takara","A team-based SNK fighter port that did get a North American release after all, published by Nintendo in 1997, a year after Takara's original Japanese version."],
+    ["Killer Instinct","1995","Rare","Rare's combo-heavy arcade fighter arrives with its announcer voice clips intact, an audio flex for 1995 handheld hardware."],
+    ["Battletoads","1991","Rare","Half beat-em-up, half punishing platformer, this Game Boy-exclusive Battletoads keeps the series' reputation for brutal difficulty intact."]
+  ]},
+  { "hue": 332, "tag": "Licensed", "title": "Licensed & Arcade Ports", "blurb": "Cartoons, movies, and arcade cabinets squeezed into a cartridge — the chapter that best shows how much shovelware the system had to rise above.", "games": [
+    ["Teenage Mutant Ninja Turtles: Fall of the Foot Clan","1990","Konami","A single-Turtle beat-em-up that trades the arcade game's chaos for tighter, more deliberate combat. Released in Europe as Teenage Mutant Hero Turtles: Fall of the Foot Clan, following the same 'Hero Turtles' rebrand the franchise carried across Europe throughout this console generation."],
+    ["Double Dragon II","1990","Technōs Japan","A handheld original rather than a straight port, built around the same co-op-brawler DNA as the NES classics."],
+    ["Bubble Bobble","1991","Taito","Bub and Bob's bubble-trapping platformer loses none of its cooperative charm in single-screen handheld form."],
+    ["Pac-Man","1990","Namco","The definitive arcade maze-chase, unchanged and unbothered by four decades of imitators."],
+    ["Elevator Action","1991","Taito","A spy-thriller shooting game about riding elevators between floors, shooting out lights, and not getting shot in the back."],
+    ["Battle City","1991","Nova Games","A tank-battle port of the Famicom classic, base-defense strategy layered under simple twin-directional shooting."],
+    ["Spy vs Spy: Operation Boobytrap","1992","First Star Software","Mad Magazine's black-and-white spies get a trap-laying handheld adaptation of the split-screen classic."],
+    ["Darkwing Duck","1993","Capcom","Capcom's Disney Afternoon platforming expertise extends to the masked mallard, gas-gun and all."],
+    ["The Bugs Bunny Crazy Castle","1990","Kemco","A maze-puzzle platformer that reskins a Japan-only engine with Looney Tunes characters."],
+    ["McDonaldland","1992","Visual Concepts","A European licensed platformer starring Ronald McDonald, built on the same engine as Spot: The Cool Adventure."],
+    ["Alien 3","1993","Bits Studios","A grim, atmospheric side-scroller that leans into the film's prison-planet dread more than most licensed movie games bother to."],
+    ["Home Alone","1991","Imagineering","Kevin McCallister booby-traps his house across a top-down platformer built for the holiday movie tie-in market."]
+  ]},
+  { "hue": 21, "tag": "Party", "title": "Party, Compilations & Toys", "blurb": "Not quite games in the traditional sense — a picross obsession, a Bomberman detour, and a cartridge that was also a working camera.", "games": [
+    ["Game & Watch Gallery","1997","Nintendo R&D1","Classic Game & Watch toys get modern and classic versions side by side, a handheld museum piece that still plays great."],
+    ["Bomberman GB","1998","Hudson Soft","A single-player-focused Bomberman entry that trades the series' multiplayer chaos for puzzle-like stage design. Confusingly, this is a different game from 1994's Japanese Bomberman GB (which the West got that same year as Wario Blast: Featuring Bomberman!, below) — this one is the West's rename of Japan's 1998 sequel, Bomberman GB 2."],
+    ["Wario Blast: Featuring Bomberman!","1994","Hudson Soft","Wario crashes Bomberman's world for a link-cable multiplayer bout wrapped around the classic bombing formula."],
+    ["Mario's Picross","1995","Jupiter","Nonogram puzzles hosted by Mario, the game that quietly built the West's first real audience for picross."],
+    ["Picross 2","1996","Jupiter","A Japan-only sequel that never left the region despite the original's Western release, more of the same razor-sharp grid logic."],
+    ["Game Boy Camera","1998","Nintendo R&D1 / Jupiter","Part cartridge, part digital camera, this held the Guinness World Record for smallest digital camera at launch."]
+  ]},
+  { "hue": 50, "tag": "Curios", "title": "Cult Classics & Japan-Only Curios", "blurb": "The deep cuts — games that never got a major marketing push, several that never left Japan at all, kept alive today by import collectors and fan translators.", "games": [
+    ["Heiankyo Alien","1990","Hyperware","A pit-digging maze game with roots stretching back to a 1979 Japanese mainframe game, ported here almost unchanged."],
+    ["Faceball 2000","1991","Xanth Software","An early first-person multiplayer shooter with a smiley-face aesthetic that hid genuinely ambitious link-cable deathmatches."],
+    ["Amazing Penguin","1990","Natsume","A maze-clearing puzzle-platformer about a penguin boxing in enemies with painted walls, an unsung Natsume original."],
+    ["Mercenary Force","1990","Lenar","A side-scrolling action game about recruiting and managing a squad of hired soldiers, unusually tactical for its genre."],
+    ["Great Greed","1992","Namco","A Namco RPG about a treasure-hungry protagonist, overlooked at release and still under-discussed today."],
+    ["Kaeru no Tame ni Kane wa Naru","1992","Nintendo / Intelligent Systems","Japan-only precursor to Link's Awakening, sharing its engine and even some sound effects with Nintendo's later Zelda game."],
+    ["Bubble Ghost","1990","Opera House","A ghost blows a bubble through obstacle-filled rooms in this delicate physics puzzler, composer Hitoshi Sakimoto's first video game score. Europe didn't get it until 1992, well over a year after North America."],
+    ["Chalvo 55","1997","Japan System Supply","A Japan-only puzzle-platformer starring a ball-shaped hero who rolls and bounces through physics-driven stages."],
+    ["Ninja Gaiden Shadow","1991","Natsume","A loose handheld reinterpretation of the NES trilogy, built as a fast side-scrolling action game rather than a direct port."],
+    ["Boomer's Adventure in ASMIK World","1990","Asmik","An obscure top-down action-adventure with RPG-lite elements, one of the system's truest deep-cut curios."]
+  ]}
+]

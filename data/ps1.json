@@ -1,0 +1,698 @@
+[
+  {
+    "hue": 350,
+    "tag": "Platformer",
+    "title": "Platformers",
+    "blurb": "Crash and Spyro anchor a chapter of mascot platformers that helped define the PS1's identity, alongside a scrappy British entry that beat its own Japanese release to market.",
+    "games": [
+      [
+        "Crash Bandicoot",
+        "1996",
+        "Naughty Dog",
+        "The spin-attacking marsupial that became Sony's first mascot, built by Naughty Dog around aggressively tight level design and a signature save-crystal structure."
+      ],
+      [
+        "Crash Bandicoot 2: Cortex Strikes Back",
+        "1997",
+        "Naughty Dog",
+        "A sequel that added the jet pack and a wider toolkit of moves, widely seen as tightening everything the original got right."
+      ],
+      [
+        "Crash Bandicoot 3: Warped",
+        "1998",
+        "Naughty Dog",
+        "The trilogy's high point, breaking up its platforming with motorbike, jet-ski, and biplane stages for real variety between levels."
+      ],
+      [
+        "Spyro the Dragon",
+        "1998",
+        "Insomniac Games",
+        "A fully explorable, seamless 3D hub-world structure was rare for its time, wrapped around Spyro's charm, gliding, and gem-collecting loop."
+      ],
+      [
+        "Spyro 2: Ripto's Rage",
+        "1999",
+        "Insomniac Games",
+        "Released across Europe as Spyro 2: Gateway to Glimmer rather than Ripto's Rage — one of this collection's clearest title swaps — while adding swimming and new powered abilities to the original's formula."
+      ],
+      [
+        "Spyro: Year of the Dragon",
+        "2000",
+        "Insomniac Games",
+        "The trilogy's closer, adding four extra playable characters alongside Spyro and pushing the series' draw distance and world size further than before."
+      ],
+      [
+        "Rayman",
+        "1995",
+        "Ubi Soft",
+        "A hand-animated, limbless hero from French studio Ubi Soft, built around some of the most punishing platforming difficulty of the era."
+      ],
+      [
+        "Croc: Legend of the Gobbos",
+        "1997",
+        "Argonaut Software",
+        "Released in the West months before its own Japanese release (where it carried the different title Croc! Pau Pau Island) — an unusually reversed rollout for the era — this British-developed mascot platformer was originally conceived as a Yoshi game before becoming its own IP."
+      ],
+      [
+        "Klonoa: Door to Phantomile",
+        "1997",
+        "Namco",
+        "A 2.5D platformer blending flat side-scrolling movement with a fully 3D dreamlike world, built around a signature double-jump-off-enemies mechanic."
+      ]
+    ]
+  },
+  {
+    "hue": 10,
+    "tag": "Adventure",
+    "title": "Action-Adventure",
+    "blurb": "Lara Croft and Solid Snake anchor a chapter of genre-defining 3D action-adventure, including two titles built by British studios that became global landmarks in their own right.",
+    "games": [
+      [
+        "Tomb Raider",
+        "1996",
+        "Core Design",
+        "A British-developed 3D adventure that made Lara Croft one of gaming's first true global icons, built around tank-control platforming and tomb-puzzle exploration."
+      ],
+      [
+        "Tomb Raider II",
+        "1997",
+        "Core Design",
+        "A more combat-focused, faster-paced sequel adding vehicles and a wider arsenal to the original's exploration formula."
+      ],
+      [
+        "Tomb Raider III",
+        "1998",
+        "Core Design",
+        "Lets players tackle its globe-spanning levels in almost any order, trading the earlier games' linear structure for open-ended choice."
+      ],
+      [
+        "Metal Gear Solid",
+        "1998",
+        "Konami",
+        "Hideo Kojima's cinematic reinvention of stealth action, built around avoiding detection rather than confrontation and a script unusually invested in film-style pacing."
+      ],
+      [
+        "Oddworld: Abe's Oddysee",
+        "1997",
+        "Oddworld Inhabitants",
+        "A puzzle-platformer with a genuinely strange tone, built around Abe's ability to possess enemies and a GameSpeak system for directing fellow slaves."
+      ],
+      [
+        "Oddworld: Abe's Exoddus",
+        "1998",
+        "Oddworld Inhabitants",
+        "A direct sequel expanding the original's mechanics with new powers and a much larger, more varied set of environments."
+      ],
+      [
+        "MediEvil",
+        "1998",
+        "SCE Cambridge Studio",
+        "A British-made gothic-horror-comedy platformer starring a resurrected, famously incompetent knight, with a tone unlike almost anything else on the console."
+      ],
+      [
+        "Alundra",
+        "1997",
+        "Matrix Software",
+        "A top-down action-adventure often compared to Zelda, built around genuinely difficult, physics-based puzzle design that outpaced its own commercial success."
+      ]
+    ]
+  },
+  {
+    "hue": 270,
+    "tag": "Horror",
+    "title": "Survival Horror",
+    "blurb": "Resident Evil effectively invented the genre's console template here, in a chapter that also holds its most atmospheric psychological successor.",
+    "games": [
+      [
+        "Resident Evil",
+        "1996",
+        "Capcom",
+        "Defined the survival-horror template almost single-handedly, pairing fixed camera angles and tank controls with deliberately scarce ammunition."
+      ],
+      [
+        "Resident Evil 2",
+        "1998",
+        "Capcom",
+        "Widely regarded as the series' peak on PS1, running two interlocking scenarios (Leon and Claire) through the same zombie-overrun police station."
+      ],
+      [
+        "Resident Evil 3: Nemesis",
+        "1999",
+        "Capcom",
+        "Introduces the Nemesis, a pursuing enemy that can appear almost anywhere in the game rather than staying confined to scripted encounters."
+      ],
+      [
+        "Silent Hill",
+        "1999",
+        "Konami",
+        "Traded Resident Evil's B-movie zombies for genuine psychological dread, with the town's famous fog originally a technical workaround that became a defining artistic choice."
+      ],
+      [
+        "Dino Crisis",
+        "1999",
+        "Capcom",
+        "Essentially 'Resident Evil with dinosaurs,' built by much of the same team and swapping the undead for genuinely unpredictable predators."
+      ],
+      [
+        "Clock Tower",
+        "1997",
+        "Human Entertainment",
+        "A point-and-click survival horror game built around evasion rather than combat, chased throughout by the unkillable Scissorman."
+      ],
+      [
+        "Parasite Eve",
+        "1998",
+        "Square",
+        "An unusual hybrid of turn-based RPG combat and survival horror, based on a Japanese novel about spontaneous human combustion and mitochondrial rebellion."
+      ]
+    ]
+  },
+  {
+    "hue": 40,
+    "tag": "RPG",
+    "title": "Role-Playing Adventures",
+    "blurb": "The genre PS1 is remembered for above all else — Square and Konami's golden age, including several celebrated RPGs that, unusually, never made it to Europe at all.",
+    "games": [
+      [
+        "Final Fantasy VII",
+        "1997",
+        "Square",
+        "The game most responsible for bringing console RPGs into the mainstream West, built around pre-rendered backgrounds and then-unprecedented CGI cutscenes."
+      ],
+      [
+        "Final Fantasy VIII",
+        "1999",
+        "Square",
+        "Trades the series' traditional leveling system for the Junction mechanic, tying stat growth directly to a much deeper magic system."
+      ],
+      [
+        "Final Fantasy IX",
+        "2000",
+        "Square",
+        "A deliberate return to the series' classic fantasy aesthetic after two increasingly futuristic entries, built as a love letter to its own earlier games."
+      ],
+      [
+        "Final Fantasy Tactics",
+        "1997",
+        "Square",
+        "A tactical-RPG spin-off with a surprisingly dense political plot, built on an isometric grid battle system that spawned its own sub-genre of imitators."
+      ],
+      [
+        "Xenogears",
+        "1998",
+        "Square",
+        "An ambitious blend of philosophical, Gnostic-influenced storytelling with giant-mech combat — one of the few major Squaresoft RPGs of the era that never received any European PS1 release at all."
+      ],
+      [
+        "Chrono Cross",
+        "1999",
+        "Square",
+        "A spiritual successor to Chrono Trigger with a completely different cast and setting, notable for a soundtrack widely considered one of the format's best."
+      ],
+      [
+        "Vagrant Story",
+        "2000",
+        "Square",
+        "A dense, mechanically deep action-RPG set entirely within one abandoned city, built around a weapon-crafting and armor-break system rarely attempted since."
+      ],
+      [
+        "Suikoden",
+        "1996",
+        "Konami",
+        "Built around recruiting all 108 of the 'Stars of Destiny' into a growing castle headquarters, a collection hook the series became known for."
+      ],
+      [
+        "Suikoden II",
+        "1999",
+        "Konami",
+        "A direct sequel widely regarded as one of the best RPGs of its generation — and, thanks to a small print run, now one of the most expensive PS1 discs to collect."
+      ],
+      [
+        "The Legend of Dragoon",
+        "2000",
+        "Sony Computer Entertainment Japan",
+        "A four-disc epic built around the Dragoon transformations its title characters can call on mid-battle, timed-hit combat layered on top of traditional turn-based structure."
+      ],
+      [
+        "Breath of Fire III",
+        "1997",
+        "Capcom",
+        "Follows a dragon-blooded protagonist who ages in real time across the story, with combat built around his ability to transform into different dragon forms."
+      ],
+      [
+        "Grandia",
+        "1999",
+        "Game Arts",
+        "An early example of blending real-time movement with turn-based combat on the same battlefield, letting positioning interrupt enemy attacks directly."
+      ]
+    ]
+  },
+  {
+    "hue": 150,
+    "tag": "Fighting",
+    "title": "Fighting",
+    "blurb": "Tekken's rise to the genre's top tier happened here, alongside a one-hit-kill sword duelist that rejected nearly every convention of the genre around it.",
+    "games": [
+      [
+        "Tekken",
+        "1995",
+        "Namco",
+        "A launch-era 3D fighter built on genuinely fluid character movement, establishing the series' signature four-limb-independent control scheme."
+      ],
+      [
+        "Tekken 2",
+        "1996",
+        "Namco",
+        "Expands the roster substantially and refines the original's combo system, widely seen as tightening everything the first game established."
+      ],
+      [
+        "Tekken 3",
+        "1998",
+        "Namco",
+        "Often cited as the high point of the PS1 fighting genre, adding sidestepping and a noticeably faster, more fluid combat rhythm."
+      ],
+      [
+        "Street Fighter Alpha 3",
+        "1998",
+        "Capcom",
+        "Brings the arcade original's huge character roster and three selectable fighting styles (Ism system) to console with minimal compromise."
+      ],
+      [
+        "Bushido Blade",
+        "1997",
+        "Light Weight",
+        "Rejects health bars entirely in favor of realistic sword combat where a single well-placed hit can end the match outright."
+      ],
+      [
+        "Soul Blade",
+        "1996",
+        "Namco",
+        "Released in the West as Soul Blade rather than its Japanese title, Soul Edge, reportedly to avoid a trademark conflict — the European version also swapped one character's nunchaku for a censor-friendly staff."
+      ],
+      [
+        "Rival Schools: United by Fate",
+        "1998",
+        "Capcom",
+        "Sets its fighting-game roster inside rival Japanese high schools, with two-character tag teams and story-driven presentation unusual for the genre."
+      ],
+      [
+        "Bloody Roar",
+        "1997",
+        "Eighting/Raizing",
+        "Lets fighters transform mid-match into beast forms with entirely different movesets, a gimmick that gave the series its own identity in a crowded genre."
+      ]
+    ]
+  },
+  {
+    "hue": 195,
+    "tag": "Racing",
+    "title": "Racing",
+    "blurb": "Gran Turismo's arrival redefined what a racing sim could be on console, in a chapter also carrying two moody, electronic-music-scored British flagship titles.",
+    "games": [
+      [
+        "Gran Turismo",
+        "1997",
+        "Polyphony Digital",
+        "Marketed as 'the real driving simulator,' its enormous, meticulously modeled car roster reset expectations for what a console racer could be."
+      ],
+      [
+        "Gran Turismo 2",
+        "1999",
+        "Polyphony Digital",
+        "Roughly doubles the original's car count and adds rally courses, becoming one of the best-selling PS1 games in the process."
+      ],
+      [
+        "Ridge Racer Type 4",
+        "1998",
+        "Namco",
+        "An arcade racer built entirely around drift technique, wrapped in one of the console era's most distinctive anime-style intro sequences."
+      ],
+      [
+        "Wipeout",
+        "1995",
+        "Psygnosis",
+        "A British-developed anti-gravity racer whose licensed electronic soundtrack (Chemical Brothers, Orbital) helped define PS1's early cool-factor image in Europe."
+      ],
+      [
+        "Wipeout 2097",
+        "1996",
+        "Psygnosis",
+        "Released in North America as Wipeout XL rather than keeping the European title — one of the platform's clearer NA-side renames, running the opposite direction from most of this collection's title swaps."
+      ],
+      [
+        "Crash Team Racing",
+        "1999",
+        "Naughty Dog",
+        "A mascot kart racer built to compete directly with Mario Kart, adding a full adventure mode with boss battles on top of standard cup racing."
+      ],
+      [
+        "Colin McRae Rally",
+        "1998",
+        "Codemasters",
+        "A British-developed rally sim built around genuine surface-grip physics, launching a long-running franchise named for the real-world Scottish rally driver."
+      ],
+      [
+        "Destruction Derby",
+        "1995",
+        "Reflections Interactive",
+        "An early PS1 title built almost entirely around vehicle-damage physics, turning car-crushing itself into the actual objective rather than a side effect."
+      ]
+    ]
+  },
+  {
+    "hue": 90,
+    "tag": "Sports",
+    "title": "Sports",
+    "blurb": "A chapter of arcade-leaning sports titles anchored by the direct ancestor of the Pro Evolution Soccer series, sold under two different names on either side of the Atlantic.",
+    "games": [
+      [
+        "ISS Pro Evolution",
+        "1999",
+        "Konami Computer Entertainment Tokyo",
+        "Released across Europe under the fuller International Superstar Soccer Pro Evolution branding roughly a year before reaching North America at all under the shortened ISS name — the direct predecessor to the entire Pro Evolution Soccer series."
+      ],
+      [
+        "Actua Soccer",
+        "1995",
+        "Gremlin Interactive",
+        "A British-developed early entry in 3D football sims, built to compete directly with FIFA's arcade-leaning presentation."
+      ],
+      [
+        "FIFA 98: Road to World Cup",
+        "1997",
+        "EA Canada",
+        "Timed to that year's World Cup, adding every qualifying national team alongside the usual club rosters."
+      ],
+      [
+        "Hot Shots Golf",
+        "1997",
+        "Clap Hanzo",
+        "An arcade-accessible golf game built around a simple three-click swing meter, launching a long-running series sold in Europe as Everybody's Golf."
+      ],
+      [
+        "Tony Hawk's Pro Skater",
+        "1999",
+        "Neversoft",
+        "Turned skateboarding into a combo-scoring arcade genre almost overnight, its soundtrack becoming as iconic as the gameplay itself."
+      ],
+      [
+        "NBA Jam Extreme",
+        "1996",
+        "Sculptured Software",
+        "Leans fully into arcade excess — no fouls, exaggerated dunks, and an 'on fire' streak mechanic — over basketball simulation."
+      ],
+      [
+        "International Track & Field",
+        "1996",
+        "Konami",
+        "A button-mashing multi-event Olympic compilation, known in Japan under the Hyper Olympic name its earlier arcade entries used."
+      ]
+    ]
+  },
+  {
+    "hue": 320,
+    "tag": "Puzzle",
+    "title": "Puzzle & Party",
+    "blurb": "Point Blank's light-gun mini-games anchor a chapter that also holds one of the PS1's strangest rhythm curios — a game that took fifteen years to reach North America.",
+    "games": [
+      [
+        "Tetris Plus",
+        "1996",
+        "Jaleco",
+        "Adds a dedicated Puzzle mode with block-clearing objectives on top of the standard endless mode, aimed at Tetris veterans wanting a new challenge structure."
+      ],
+      [
+        "Bust-A-Move 2: Arcade Edition",
+        "1996",
+        "Taito",
+        "A bubble-shooting puzzle sequel best known for its two-player versus mode, built on the same core aim-and-match mechanic as the arcade original."
+      ],
+      [
+        "Point Blank",
+        "1994",
+        "Namco",
+        "A light-gun mini-game collection with an enormous arcade pedigree, built around dozens of short, escalating shooting-gallery challenges."
+      ],
+      [
+        "Intelligent Qube",
+        "1997",
+        "G-Artists",
+        "Released across Europe as Kurushi, actually reaching PAL shelves ahead of its own North American release — a minimalist puzzle game about stopping advancing cube formations before they crush the player."
+      ],
+      [
+        "Devil Dice",
+        "1998",
+        "Shift",
+        "A dice-matching puzzle-strategy hybrid that would later return, retooled, as the PS2's Bombastic — one of the more unusual puzzle concepts on the platform."
+      ],
+      [
+        "Vib-Ribbon",
+        "1999",
+        "NanaOn-Sha",
+        "A minimalist wireframe rhythm game that generates its courses from whatever music CD is in the player's own console — and, unusually, never received a North American PS1 release at all, only reaching the region 15 years later via PS3."
+      ]
+    ]
+  },
+  {
+    "hue": 60,
+    "tag": "Simulation",
+    "title": "Simulation & Strategy",
+    "blurb": "British studios anchor this chapter almost entirely — Bullfrog and Team17's genre-founding console ports sit alongside a serious-toned tactical RPG.",
+    "games": [
+      [
+        "Populous: The Beginning",
+        "1998",
+        "Bullfrog Productions",
+        "A British-made reinvention of the god-game genre Bullfrog itself founded, moving from 2D terrain manipulation to a fully 3D world."
+      ],
+      [
+        "Command & Conquer: Red Alert",
+        "1997",
+        "Westwood Studios",
+        "A console port of the PC real-time strategy hit, built around an alternate-history setting where Einstein erases Hitler from time entirely."
+      ],
+      [
+        "Worms Armageddon",
+        "1999",
+        "Team17",
+        "A turn-based artillery-strategy classic from another British studio, built around an enormous, joke-filled arsenal of increasingly absurd weapons."
+      ],
+      [
+        "Harvest Moon: Back to Nature",
+        "1999",
+        "Victor Interactive Software",
+        "A fully 3D take on the farming-sim formula, deepening the original series' day-and-season cycle with more detailed town and relationship systems."
+      ],
+      [
+        "Theme Hospital",
+        "1997",
+        "Bullfrog Productions",
+        "A British hospital-management sim laced with dry humor, tasking players with treating patients suffering from deliberately absurd fictional illnesses."
+      ],
+      [
+        "Front Mission 3",
+        "1999",
+        "Square",
+        "The first Front Mission to reach the West at all, built around deep mecha customization and a story that branches based on an early player choice."
+      ],
+      [
+        "Vandal Hearts",
+        "1996",
+        "Konami",
+        "A tactical RPG with a noticeably grimmer, war-drama tone than most of its genre peers, built on a hex-grid battle system."
+      ]
+    ]
+  },
+  {
+    "hue": 230,
+    "tag": "Licensed",
+    "title": "Licensed & Movie Tie-ins",
+    "blurb": "Die Hard Trilogy's three genres on one disc anchors a chapter of largely well-regarded licensed titles from an era before movie tie-ins had a reputation for being rushed.",
+    "games": [
+      [
+        "South Park",
+        "1998",
+        "Iguana Entertainment",
+        "A first-person shooter built entirely around the animated show's crude humor, using clay-animation-style character models to match the show's look."
+      ],
+      [
+        "Die Hard Trilogy",
+        "1996",
+        "Probe Entertainment",
+        "A British-developed anthology squeezing three separate genres — rail shooter, third-person action, and driving — onto one disc, each tied to a different film in the series."
+      ],
+      [
+        "Disney's Hercules Action Game",
+        "1997",
+        "Eurocom",
+        "A British-developed licensed platformer tracking the film's story beats, mixing on-foot combat with several distinct minigame styles."
+      ],
+      [
+        "Small Soldiers",
+        "1998",
+        "DreamWorks Interactive",
+        "A licensed action game built around the film's toy-soldiers-come-to-life premise, letting players command a squad through household-scale battlefields."
+      ],
+      [
+        "Austin Powers: Oh, Behave!",
+        "2000",
+        "Tarantula Studios",
+        "A trivia-and-minigame party title built around the film's catchphrases and characters rather than a traditional action adaptation."
+      ],
+      [
+        "Spider-Man",
+        "2000",
+        "Neversoft",
+        "A well-regarded web-slinging action game built with a genuine sense of verticality, later credited as one of the better licensed superhero games of its era."
+      ]
+    ]
+  },
+  {
+    "hue": 15,
+    "tag": "Curios",
+    "title": "Cult Classics & Deep Cuts",
+    "blurb": "PaRappa the Rapper invented an entire genre here, in a chapter carrying the deepest run of confirmed Europe-skipping Square RPGs found in this project yet.",
+    "games": [
+      [
+        "Jumping Flash!",
+        "1995",
+        "Exact",
+        "One of the earliest true 3D platformers on any console, played from a first-person perspective as a robotic rabbit bouncing through vertically-stacked levels."
+      ],
+      [
+        "Einhänder",
+        "1997",
+        "Square",
+        "An unusually dark, mechanically demanding side-scrolling shooter from a studio mostly known for RPGs — one of several Square titles from this era that never received any European PS1 release."
+      ],
+      [
+        "PaRappa the Rapper",
+        "1996",
+        "NanaOn-Sha",
+        "Effectively invented the modern rhythm-action genre, built around a flat, paper-cutout art style and call-and-response rap battles."
+      ],
+      [
+        "Um Jammer Lammy",
+        "1999",
+        "NanaOn-Sha",
+        "A stylistic sequel to PaRappa swapping rapping for guitar riffs, starring a guitarist whose skill is inversely tied to how panicked she becomes."
+      ],
+      [
+        "Tail Concerto",
+        "1998",
+        "CyberConnect",
+        "An anthropomorphic-animal action-adventure that, unusually, reached a France-exclusive European release nearly a year before its own North American debut."
+      ],
+      [
+        "Azure Dreams",
+        "1997",
+        "Konami",
+        "A hybrid of randomized dungeon-crawling and town-building, letting players raise monster allies that carry over between runs."
+      ],
+      [
+        "Brave Fencer Musashi",
+        "1998",
+        "Square",
+        "An action-RPG starring a sword-wielding hero summoned to save a kingdom on a strict in-game deadline — another Square RPG of this era that never made it to Europe on PS1."
+      ],
+      [
+        "Threads of Fate",
+        "1999",
+        "Square",
+        "Released in Japan as Dewprism, this action-RPG lets players replay its entire story from either of two different protagonists' perspectives — and, like several Square RPGs of the era, never received a European PS1 release."
+      ],
+      [
+        "Legend of Legaia",
+        "1998",
+        "Contrail",
+        "A turn-based RPG whose combat runs on a unique directional-input combo system, closer to a fighting game's move list than typical menu-driven battles."
+      ]
+    ]
+  },
+  {
+    "hue": 300,
+    "tag": "Novelty",
+    "title": "Arcade Ports & Multiplayer Curios",
+    "blurb": "The largest chapter in the collection, gathering vehicular-combat launch titles, British sci-fi flight sims, and party-focused multiplayer curios built around the console's four-player adapter.",
+    "games": [
+      [
+        "Twisted Metal",
+        "1995",
+        "SingleTrac",
+        "A launch-era vehicular combat game pitting armed cars against each other in a demolition-derby-meets-deathmatch format."
+      ],
+      [
+        "Twisted Metal 2",
+        "1996",
+        "SingleTrac",
+        "A sequel expanding the roster and arenas considerably, widely considered the series' high point on PS1."
+      ],
+      [
+        "Ape Escape",
+        "1999",
+        "SCE Japan Studio",
+        "The first game built specifically around the DualShock's analog sticks, tasking players with net-capturing escaped monkeys across time-travel-themed levels."
+      ],
+      [
+        "Bomberman",
+        "1996",
+        "Hudson Soft",
+        "Brings the series' classic grid-based, four-player bomb-battle format to PS1 largely unchanged from its earlier console outings."
+      ],
+      [
+        "Bomberman Fantasy Race",
+        "1997",
+        "Hudson Soft",
+        "A kart-racing spin-off starring the Bomberman cast, trading grid-based battles for lap-based races with bomb-throwing power-ups."
+      ],
+      [
+        "Micro Machines V3",
+        "1997",
+        "Codemasters",
+        "A British-developed miniature-vehicle racer fitting up to eight players onto household-scale tracks — kitchen counters, garden hoses, and pool tables among them."
+      ],
+      [
+        "Rampage World Tour",
+        "1998",
+        "Midway",
+        "A port of the giant-monster arcade brawler, letting up to three players smash city skylines as an oversized ape, lizard, or werewolf."
+      ],
+      [
+        "G-Police",
+        "1997",
+        "Psygnosis",
+        "A British-developed atmospheric flight-combat game set in a rain-soaked, cyberpunk-styled off-world colony, built around genuinely moody sci-fi world-building."
+      ],
+      [
+        "Colony Wars",
+        "1997",
+        "Psygnosis",
+        "A cinematic space-combat sim from the same British studio behind G-Police, built around branching missions that respond to whether the player wins or loses."
+      ],
+      [
+        "Jet Moto",
+        "1996",
+        "SingleTrac",
+        "A futuristic hover-bike racer built around aggressive, physics-heavy track design full of shortcuts and vertical drops."
+      ],
+      [
+        "Crash Bash",
+        "2000",
+        "Eurocom",
+        "A Mario Party-style multiplayer spin-off built entirely around the Crash Bandicoot cast, trading platforming for competitive minigames."
+      ],
+      [
+        "WWF SmackDown!",
+        "2000",
+        "Yuke's",
+        "Launched what would become a long-running wrestling series, moving beyond the earlier WWF console games toward a fuller, more simulation-leaning in-ring engine."
+      ],
+      [
+        "Duke Nukem: Time to Kill",
+        "1998",
+        "n-Space",
+        "Swaps the mainline series' first-person perspective for third-person, time-travel-themed levels — a deliberate departure from the main FPS games."
+      ]
+    ]
+  }
+]

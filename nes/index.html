@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cartridge Explorer's Collection — 100 Best NES Games</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Figtree:wght@400;500;600;700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #EDEAE2;
+    --bg-elevated: #FFFFFF;
+    --text: #201C1A;
+    --text-soft: #55504A;
+    --text-faint: #918A80;
+    --accent: #C8102E;
+    --accent-contrast: #FFFFFF;
+    --highlight: #2B2B2B;
+    --border: #D8D2C6;
+    --card-bg: #FFFFFF;
+    --mono-bg: #E2DDD1;
+    --shadow: 0 2px 0 rgba(32,28,26,0.12);
+    --hue: 350;
+    --sat: 68%;
+    --lig: 45%;
+    --sat-soft: 55%;
+    --lig-soft: 92%;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17140F;
+      --bg-elevated: #211C16;
+      --text: #F1EBDF;
+      --text-soft: #B8AF9F;
+      --text-faint: #79706260;
+      --text-faint: #7E7566;
+      --accent: #FF4D5E;
+      --accent-contrast: #17140F;
+      --highlight: #E8E2D4;
+      --border: #35302A;
+      --card-bg: #1E1913;
+      --mono-bg: #2A241D;
+      --shadow: 0 2px 0 rgba(0,0,0,0.5);
+      --sat: 80%;
+      --lig: 65%;
+      --sat-soft: 40%;
+      --lig-soft: 16%;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #17140F;
+    --bg-elevated: #211C16;
+    --text: #F1EBDF;
+    --text-soft: #B8AF9F;
+    --text-faint: #7E7566;
+    --accent: #FF4D5E;
+    --accent-contrast: #17140F;
+    --highlight: #E8E2D4;
+    --border: #35302A;
+    --card-bg: #1E1913;
+    --mono-bg: #2A241D;
+    --shadow: 0 2px 0 rgba(0,0,0,0.5);
+    --sat: 80%;
+    --lig: 65%;
+    --sat-soft: 40%;
+    --lig-soft: 16%;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .mono { font-family: 'Ubuntu Mono', monospace; letter-spacing: 0.02em; }
+  .display { font-family: 'Press Start 2P', monospace; line-height: 1.6; }
+  a { color: inherit; }
+  img { max-width: 100%; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    padding: 5rem 1.5rem 3.5rem;
+    overflow: hidden;
+    background: var(--bg);
+    border-bottom: 6px solid var(--accent);
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(90deg, var(--border) 0 3px, transparent 3px 24px);
+    opacity: 0.5;
+    mask-image: radial-gradient(ellipse 70% 55% at 50% 15%, black 30%, transparent 85%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-pill {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    background: var(--highlight);
+    color: var(--bg);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+  }
+
+  .hero h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-weight: 400;
+    font-size: clamp(1.35rem, 4.4vw, 2.5rem);
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+    color: var(--text);
+  }
+
+  .hero p.lede {
+    max-width: 620px;
+    margin: 0 auto;
+    color: var(--text-soft);
+    font-size: 1.06rem;
+  }
+
+  .hero-meta {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-faint);
+  }
+
+  .hero-meta strong { color: var(--accent); }
+
+  /* ---------- TOOLBAR ---------- */
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg-elevated);
+    border-bottom: 3px solid var(--border);
+    padding: 0.85rem 1.5rem;
+  }
+
+  .toolbar-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .search-row { display: flex; gap: 0.6rem; align-items: center; }
+
+  #searchInput {
+    flex: 1;
+    padding: 0.65rem 0.95rem;
+    border-radius: 2px;
+    border: 2px solid var(--border);
+    background: var(--mono-bg);
+    color: var(--text);
+    font-family: 'Figtree', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+  }
+  #searchInput:focus { border-color: var(--accent); }
+  #searchInput::placeholder { color: var(--text-faint); }
+
+  #resultCount { font-family: 'Ubuntu Mono', monospace; font-size: 0.78rem; color: var(--text-faint); white-space: nowrap; }
+
+  .theme-toggle {
+    border: 2px solid var(--border);
+    background: var(--mono-bg);
+    color: var(--text);
+    border-radius: 2px;
+    padding: 0.6rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+
+  .chips { display: flex; gap: 0.45rem; overflow-x: auto; padding-bottom: 0.2rem; scrollbar-width: thin; }
+
+  .chip {
+    flex: none;
+    border: 2px solid var(--border);
+    background: var(--bg);
+    color: var(--text-soft);
+    border-radius: 2px;
+    padding: 0.35rem 0.7rem;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.75rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- MAIN / CHAPTERS ---------- */
+  main { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem 1rem; }
+
+  .chapter { scroll-margin-top: 132px; margin-bottom: 4rem; }
+
+  .chapter-head { display: flex; align-items: baseline; gap: 0.9rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
+
+  .chapter-num { font-family: 'Press Start 2P', monospace; font-size: 0.85rem; color: hsl(var(--hue) var(--sat) var(--lig)); }
+
+  .chapter-title { font-family: 'Press Start 2P', monospace; font-weight: 400; font-size: clamp(0.85rem, 1.9vw, 1.1rem); margin: 0; line-height: 1.6; }
+
+  .chapter-tag {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.6rem;
+    border-radius: 2px;
+    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+    color: hsl(var(--hue) var(--sat) var(--lig));
+  }
+
+  .chapter-blurb { color: var(--text-soft); max-width: 760px; margin: 0.6rem 0 1.6rem; font-size: 0.98rem; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+
+  .card {
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-radius: 2px;
+    padding: 1rem 1.1rem 1.1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    box-shadow: var(--shadow);
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: hsl(var(--hue) var(--sat) var(--lig));
+  }
+
+  .card-idx {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.68rem;
+    color: hsl(var(--hue) var(--sat) var(--lig));
+    position: absolute;
+    top: 0.9rem;
+    right: 1.1rem;
+  }
+
+  .card-title { font-weight: 700; font-size: 1rem; padding-right: 3.4rem; margin: 0.4rem 0 0; }
+
+  .card-meta { font-family: 'Ubuntu Mono', monospace; font-size: 0.75rem; color: hsl(var(--hue) var(--sat) var(--lig)); }
+
+  .card-blurb { font-size: 0.87rem; color: var(--text-soft); margin: 0.15rem 0 0; }
+
+  .card.hidden, .chapter.hidden { display: none; }
+
+  #emptyState { display: none; text-align: center; padding: 3rem 1rem; color: var(--text-faint); font-family: 'Ubuntu Mono', monospace; }
+
+  /* ---------- CURATOR NOTE ---------- */
+  .curator-note {
+    max-width: 780px;
+    margin: 1rem auto 4rem;
+    padding: 1.7rem 1.9rem;
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    border-left: 6px solid var(--accent);
+    border-radius: 2px;
+  }
+  .curator-note h2 { font-family: 'Press Start 2P', monospace; font-weight: 400; font-size: 0.85rem; margin: 0 0 1.1rem; line-height: 1.6; }
+  .curator-note p { color: var(--text-soft); font-size: 0.92rem; margin: 0 0 0.8rem; }
+  .curator-note p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  footer { border-top: 3px solid var(--border); padding: 2.5rem 1.5rem 3.5rem; background: var(--bg-elevated); }
+  .footer-inner { max-width: 780px; margin: 0 auto; font-size: 0.85rem; color: var(--text-faint); }
+  .footer-inner h3 { font-family: 'Press Start 2P', monospace; font-weight: 400; font-size: 0.7rem; color: var(--text-soft); margin: 0 0 0.9rem; line-height: 1.6; }
+  .footer-inner ul { padding-left: 1.1rem; margin: 0 0 1.4rem; }
+  .footer-inner li { margin-bottom: 0.3rem; }
+  .footer-inner a { color: var(--accent); text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="hero-pill mono">NES-001 · 1985–1994</span>
+    <h1>The Cartridge<br>Explorer's Collection</h1>
+    <p class="lede">One hundred games for the console that saved the industry — an 8-bit tour from Nintendo's own foundational classics to the import RPGs, banned tie-ins, and PAL-exclusive curios that never crossed every border.</p>
+    <div class="hero-meta">
+      <span><strong id="totalCount">100</strong> games</span>
+      <span><strong>12</strong> chapters</span>
+      <span><strong>1985–1994</strong> NES releases</span>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar-inner">
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="Search by title, developer, or genre…">
+      <span id="resultCount" class="mono">100 / 100</span>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+<main>
+  <div id="chapters"></div>
+  <div id="emptyState">No cartridges match that search.</div>
+
+  <div class="curator-note">
+    <h2 class="display">A note from the curator</h2>
+    <p>The NES has the largest, messiest library in this whole series — nearly 700 licensed games in North America alone — which makes curating exactly 100 the hardest editorial job yet. This collection spreads across Nintendo's own foundational classics, Capcom and Konami's golden run of licensed platformers, an unusually deep run of Japan-built RPGs (several of which, it turns out, never crossed the Atlantic at all), graphic adventures nobody remembers were on a Nintendo console, and a handful of genuine PAL- or NA-exclusive curios.</p>
+    <p>Following this project's standing convention, release years lead with the European release where one exists, with the Japanese and/or North American year noted secondarily. Where a game never received a European cartridge release at all — which turned out to be true for a striking number of NES titles, especially Japan-built RPGs — the North American (or, rarely, Japanese-only) year is shown instead with an explicit note, rather than defaulting silently to a EU year that never happened.</p>
+    <p>One thing this page deliberately does <em>not</em> do is flag PAL 50Hz slowdown on a per-game basis: virtually every early NES game shipped on European hardware locked to 50Hz with letterboxed borders and a real, audible speed reduction, since almost nothing on this console got a dedicated PAL-optimized build the way some later platforms occasionally did. Rather than repeat that footnote a hundred times, treat it as true by default for anything below with a European release — it isn't a story worth telling game by game.</p>
+    <p>Every title below was individually fact-checked for release-platform accuracy, developer attribution, and actual regional availability — the most common error caught was, again, a publisher (Taito, Irem, SNK, Jaleco, Sir-Tech) credited as the developer when a different studio actually built the specific NES version.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <h3 class="mono">Regional-exclusivity curios worth knowing</h3>
+    <ul>
+      <li><strong>Elite</strong> (1991) — released only in Europe. No North American or Japanese NES release ever happened, a rare full reversal of this collection's usual pattern.</li>
+      <li><strong>Gimmick!</strong> (1992 Japan, 1993 as "Mr. Gimmick" in Scandinavia only) — Sunsoft of America rejected it for North America outright; it never released there.</li>
+      <li><strong>StarTropics</strong> (1990) — never released in Japan at all, one of the few Nintendo-published NES games built exclusively for the West.</li>
+      <li><strong>R.C. Pro-Am</strong> (1988) — also never released in Japan, day-and-date in North America and Europe instead.</li>
+    </ul>
+    <h3 class="mono">Sources &amp; further reading</h3>
+    <ul>
+      <li><a href="https://www.nintendolife.com/guides/50-best-nes-games-of-all-time" target="_blank" rel="noopener">Nintendo Life — 50 Best NES Games Of All Time</a></li>
+      <li><a href="https://www.denofgeek.com/games/underrated-nes-games/" target="_blank" rel="noopener">Den of Geek — 25 Underrated NES Games</a></li>
+      <li><a href="https://retrododo.com/best-nes-games/" target="_blank" rel="noopener">RetroDodo — The 25 Greatest NES Games Of All Time</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/List_of_Nintendo_Entertainment_System_games" target="_blank" rel="noopener">Wikipedia — List of Nintendo Entertainment System games</a></li>
+      <li><a href="https://tcrf.net/Category:NES_games" target="_blank" rel="noopener">The Cutting Room Floor — NES games</a></li>
+    </ul>
+    <p>All 100 titles were individually fact-checked for title accuracy, release year and region, developer, and NES platform compatibility before publication.</p>
+  </div>
+</footer>
+
+<script src="../assets/collection.js" data-src="../data/nes.json"></script>
+</body>
+</html>

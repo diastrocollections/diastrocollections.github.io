@@ -1,0 +1,698 @@
+[
+  {
+    "hue": 217,
+    "tag": "Signature Library",
+    "title": "The Essentials — PSP's Signature Library",
+    "blurb": "The system-sellers. Every one of these was built (or rebuilt) to prove a handheld could carry console-scale ambition, and most still define what people mean when they say 'PSP classic.'",
+    "games": [
+      [
+        "God of War: Chains of Olympus",
+        "2008",
+        "Ready at Dawn",
+        "Kratos's PSP debut compresses full console-scale spectacle into a handheld, still cited as proof the format could do blockbuster action."
+      ],
+      [
+        "God of War: Ghost of Sparta",
+        "2010",
+        "Ready at Dawn",
+        "An even more ambitious sequel, widely considered the best-looking game ever squeezed onto PSP hardware."
+      ],
+      [
+        "Metal Gear Solid: Peace Walker",
+        "2010",
+        "Kojima Productions",
+        "A full mainline entry built for portable play, introducing the base-building and co-op systems that would later define Metal Gear Solid V."
+      ],
+      [
+        "Grand Theft Auto: Liberty City Stories",
+        "2005",
+        "Rockstar Leeds",
+        "The launch-window killer app that proved an open GTA city could fit in your pocket without losing the chaos."
+      ],
+      [
+        "Grand Theft Auto: Vice City Stories",
+        "2006",
+        "Rockstar Leeds",
+        "A sun-soaked prequel with a private-army subplot, widely regarded as Rockstar's most polished portable entry."
+      ],
+      [
+        "Patapon",
+        "2008",
+        "Pyramid / Japan Studio",
+        "Command a tribe of eyeball-warriors by drumming commands in rhythm — a genre unto itself and one of PSP's most original ideas."
+      ],
+      [
+        "LocoRoco",
+        "2006",
+        "Japan Studio",
+        "Tilt the whole world to roll a blob of singing jelly through hand-drawn levels; disarmingly simple and endlessly charming."
+      ],
+      [
+        "Lumines: Puzzle Fusion",
+        "2005",
+        "Q Entertainment",
+        "Tetsuya Mizuguchi's block-matching puzzler synced to a pulsing electronic soundtrack — the launch title that defined what PSP could feel like."
+      ],
+      [
+        "Monster Hunter Freedom Unite",
+        "2009",
+        "Capcom",
+        "The game that made PSP a cultural phenomenon in Japan, built entirely around planning, hunting, and crafting gear with friends over ad-hoc Wi-Fi."
+      ],
+      [
+        "Wipeout Pure",
+        "2005",
+        "Studio Liverpool",
+        "Anti-gravity racing with a techno soundtrack and downloadable track packs, still one of the sharpest-looking racers the system ever produced."
+      ],
+      [
+        "Daxter",
+        "2006",
+        "Ready at Dawn",
+        "A spin-off starring Jak's wisecracking sidekick that plays like a full Jak & Daxter game in its own right."
+      ],
+      [
+        "Crisis Core: Final Fantasy VII",
+        "2008",
+        "Square Enix",
+        "Zack Fair's tragic backstory to Final Fantasy VII, with real-time combat and a slot-machine-driven Limit Break system all its own."
+      ],
+      [
+        "Kingdom Hearts: Birth by Sleep",
+        "2010",
+        "Square Enix",
+        "Three playable heroes and a decade of series lore packed into one of the best-reviewed action-RPGs on the system."
+      ],
+      [
+        "Persona 3 Portable",
+        "2010",
+        "Atlus",
+        "A leaner reworking of the PS2 classic that added a playable female protagonist and reshaped how the series would be remembered. Europe didn't get an official release, via Ghostlight, until nearly ten months after North America."
+      ]
+    ]
+  },
+  {
+    "hue": 246,
+    "tag": "Tactics & Strategy RPGs",
+    "title": "Tactics & Strategy RPGs",
+    "blurb": "No platform's tactics shelf runs this deep. Grid-based war stories, bullet-hell strategy, and one entry the West never officially got to play.",
+    "games": [
+      [
+        "Final Fantasy Tactics: The War of the Lions",
+        "2007",
+        "Square Enix",
+        "A definitive remake of the PS1 classic with a sharper translation, new jobs, and anime cutscenes bridging the story's gaps."
+      ],
+      [
+        "Tactics Ogre: Let Us Cling Together",
+        "2011",
+        "Square Enix",
+        "Yasumi Matsuno's morally tangled war epic, rebuilt from the ground up with redrawn art and a reworked class system."
+      ],
+      [
+        "Jeanne d'Arc",
+        "2007",
+        "Level-5",
+        "A tactical RPG reimagining Joan of Arc's war as a fight against demonic invaders, praised for tight, generous mission design. Released in Japan and North America, but Europe never got a PSP release at all — a 2024 PS4/PS5 remaster was its first European release."
+      ],
+      [
+        "Valkyria Chronicles II",
+        "2010",
+        "Sega",
+        "Trades the original's warfront for a military academy, keeping the series' hybrid of turn-based tactics and real-time movement intact."
+      ],
+      [
+        "Valkyria Chronicles III",
+        "2011",
+        "Sega / Media.Vision",
+        "The only mainline entry never localized in the West — Japan-only, following a disgraced penal unit through a story that's only been playable in English since a 2014 fan translation."
+      ],
+      [
+        "Disgaea: Afternoon of Darkness",
+        "2007",
+        "Nippon Ichi",
+        "Absurdly deep level-scaling and gag-heavy writing, the portable entry point to one of strategy-RPG's most obsessive fanbases."
+      ],
+      [
+        "Z.H.P.: Unlosing Ranger vs Darkdeath Evilman",
+        "2011",
+        "Nippon Ichi",
+        "A roguelike-tactics hybrid parodying sentai shows, as mechanically deep as it is deliberately ridiculous."
+      ],
+      [
+        "Knights in the Nightmare",
+        "2009",
+        "Sting",
+        "A bullet-hell strategy RPG where you dodge enemy fire while directing an army of the dead — steep, strange, and like nothing else on the system."
+      ],
+      [
+        "Field Commander",
+        "2006",
+        "Sony Online Entertainment",
+        "A straightforward Advance Wars-style turn-based wargame, one of the few Western takes on the genre PSP received."
+      ],
+      [
+        "R-Type Tactics",
+        "2008",
+        "Irem",
+        "The classic side-scrolling shoot-'em-up reimagined as grid strategy, with the series' bio-mechanical Bydo forces as the enemy army — released in North America under the title 'R-Type Command.'"
+      ]
+    ]
+  },
+  {
+    "hue": 275,
+    "tag": "JRPGs & Long Adventures",
+    "title": "JRPGs & Long Adventures",
+    "blurb": "Between fresh remakes of PS1-era favorites and Falcom's action-RPG mainstays, this is where the PSP quietly became one of the best JRPG machines ever built.",
+    "games": [
+      [
+        "Tales of Eternia",
+        "2005",
+        "Namco",
+        "A PS1 favorite ported and polished — though its only Western release was in Europe; it never reached North America at all, one of the collection's rare EU-exclusive entries."
+      ],
+      [
+        "Ys: The Oath in Felghana",
+        "2010",
+        "Falcom / Xseed",
+        "Fast, skill-based action-RPG combat that longtime fans still call the high point of the entire Ys series."
+      ],
+      [
+        "Ys Seven",
+        "2010",
+        "Falcom / Xseed",
+        "The first mainline Ys built for a party system, trading solo swordplay for coordinated three-character combat across a much larger world."
+      ],
+      [
+        "The Legend of Heroes: Trails in the Sky",
+        "2011",
+        "Falcom / Xseed",
+        "A slow-burn, richly detailed fantasy epic that launched one of the most beloved long-running JRPG sagas in the West, though Europe had to wait about seven months longer than North America to get it."
+      ],
+      [
+        "Valkyrie Profile: Lenneth",
+        "2006",
+        "tri-Ace",
+        "A Norse-mythology RPG with platforming-based dungeon exploration and a battle system unlike anything else in the genre. Europe waited about nine months longer than North America for its release."
+      ],
+      [
+        "Star Ocean: Second Evolution",
+        "2009",
+        "tri-Ace",
+        "A remake of the PS1 fan favorite with a reworked battle system and an enormous private-action character web."
+      ],
+      [
+        "Lunar: Silver Star Harmony",
+        "2010",
+        "GungHo",
+        "A fresh remake of the beloved Sega CD classic, with new art, music, and a script rewritten for modern audiences."
+      ],
+      [
+        "Half-Minute Hero",
+        "2009",
+        "Marvelous",
+        "A parody RPG where you must save the world in 30-second bursts before time resets, cramming an entire genre's tropes into bite-size missions."
+      ],
+      [
+        "Riviera: The Promised Land",
+        "2006",
+        "Sting / Atlus",
+        "A limited-inventory, side-scrolling RPG with a battle system built around weapon durability and split-second decisions. Its European release lagged North America's by about nine months."
+      ],
+      [
+        "Phantasy Star Portable",
+        "2009",
+        "Sega",
+        "A single-player-friendly cut of the Phantasy Star Online formula, built for solo hunting between online sessions."
+      ]
+    ]
+  },
+  {
+    "hue": 304,
+    "tag": "Action & Platformers",
+    "title": "Action & Platformers",
+    "blurb": "Console mascots shrunk down without losing their identity — plus a couple of oddballs, like a drill-wielding heroine, that never got the audience they deserved.",
+    "games": [
+      [
+        "Ratchet & Clank: Size Matters",
+        "2007",
+        "High Impact",
+        "A console-quality entry in the series built from scratch for PSP, with new weapons and puzzle-driven Clank sequences."
+      ],
+      [
+        "Secret Agent Clank",
+        "2008",
+        "High Impact",
+        "A spy-themed spin-off putting Clank front and center, blending stealth, platforming, and gadget-based combat."
+      ],
+      [
+        "Castlevania: The Dracula X Chronicles",
+        "2007",
+        "Konami",
+        "A gorgeous remake of Rondo of Blood that also unlocks the original PC Engine game and a port of Symphony of the Night."
+      ],
+      [
+        "Mega Man Powered Up",
+        "2006",
+        "Capcom",
+        "A chibi-styled remake of the original Mega Man with a level editor and extra playable Robot Masters."
+      ],
+      [
+        "Mega Man Maverick Hunter X",
+        "2006",
+        "Capcom",
+        "Mega Man X rebuilt in 2.5D with a new playable character route through Sigma's fortress."
+      ],
+      [
+        "Ultimate Ghosts 'n Goblins",
+        "2006",
+        "Capcom",
+        "A brutally difficult new entry in the series, softened only slightly by adjustable difficulty and RPG-lite gear upgrades."
+      ],
+      [
+        "LittleBigPlanet",
+        "2009",
+        "Sony Cambridge / Media Molecule",
+        "A full-featured portable take on the create-and-share platformer, with a surprisingly deep level editor for a handheld."
+      ],
+      [
+        "Prinny: Can I Really Be the Hero?",
+        "2009",
+        "Nippon Ichi",
+        "A punishing side-scrolling spin-off of Disgaea starring an army of exploding penguin demons."
+      ],
+      [
+        "Gurumin: A Monstrous Adventure",
+        "2007",
+        "Falcom / Mastiff",
+        "A colorful action-RPG about a drill-wielding girl clearing monsters out of a mining town, warmly remembered as an overlooked Falcom gem."
+      ]
+    ]
+  },
+  {
+    "hue": 333,
+    "tag": "Fighting Games",
+    "title": "Fighting Games",
+    "blurb": "From arcade-perfect ports to a Final Fantasy crossover that became its own franchise, PSP's single analog nub turned out to be no obstacle at all.",
+    "games": [
+      [
+        "Tekken: Dark Resurrection",
+        "2006",
+        "Namco",
+        "An arcade-perfect Tekken running at a smooth framerate, long considered the best fighting game the system ever received."
+      ],
+      [
+        "Street Fighter Alpha 3 Max",
+        "2006",
+        "Capcom",
+        "The full 29-character Alpha 3 roster plus extras exclusive to this version, one of the most complete fighting-game packages on PSP."
+      ],
+      [
+        "Dissidia Final Fantasy",
+        "2009",
+        "Square Enix",
+        "Final Fantasy heroes and villains across a dozen games clash in real-time arena battles wrapped in RPG progression systems."
+      ],
+      [
+        "Dissidia 012 Final Fantasy",
+        "2011",
+        "Square Enix",
+        "A bigger, better-balanced sequel with a deeper roster and an actual explorable world map between fights."
+      ],
+      [
+        "Darkstalkers Chronicle: The Chaos Tower",
+        "2005",
+        "Capcom",
+        "A compilation of Capcom's gothic monster-fighter series with a new challenge tower mode layered on top."
+      ],
+      [
+        "SoulCalibur: Broken Destiny",
+        "2009",
+        "Namco",
+        "Weapon-based 3D fighting brought to handheld with real depth, plus a guest appearance from Kratos of God of War."
+      ],
+      [
+        "Bleach: Heat the Soul 7",
+        "2010",
+        "Eighting",
+        "The final and most refined entry in the long-running Bleach fighter series, never localized outside Japan."
+      ]
+    ]
+  },
+  {
+    "hue": 2,
+    "tag": "Shooters & Stealth Action",
+    "title": "Shooters & Stealth Action",
+    "blurb": "PSP quietly built a real third-person shooter identity of its own, anchored by Sony Bend's Syphon Filter games and console-caliber online multiplayer.",
+    "games": [
+      [
+        "Syphon Filter: Dark Mirror",
+        "2006",
+        "Sony Bend",
+        "A stealth-action series returning to form on PSP, with mission design built specifically around handheld play sessions."
+      ],
+      [
+        "Syphon Filter: Logan's Shadow",
+        "2007",
+        "Sony Bend",
+        "A tighter, more cinematic sequel with expanded multiplayer and some of the best AI on the system."
+      ],
+      [
+        "Killzone: Liberation",
+        "2006",
+        "Guerrilla Cambridge",
+        "Switches the console series' first-person view for isometric squad combat, and is often called PSP's best ad-hoc multiplayer shooter."
+      ],
+      [
+        "Resistance: Retribution",
+        "2009",
+        "Sony Bend",
+        "A console-caliber third-person shooter set during the Chimeran invasion of Europe, built exclusively for the handheld."
+      ],
+      [
+        "SOCOM U.S. Navy SEALs: Fireteam Bravo 2",
+        "2006",
+        "Sony Bend",
+        "Tactical squad shooting with a strong online component that made PSP a legitimate multiplayer FPS platform."
+      ],
+      [
+        "Metal Gear Acid 2",
+        "2006",
+        "Kojima Productions",
+        "A turn-based, card-driven spin-off of Metal Gear that trades stealth action for tactical deck-building."
+      ],
+      [
+        "Coded Arms",
+        "2005",
+        "Konami",
+        "A procedurally generated first-person shooter set inside cyberspace, one of the system's earliest attempts at an FPS built for its hardware."
+      ],
+      [
+        "Medal of Honor: Heroes 2",
+        "2007",
+        "EA",
+        "A WWII shooter with a surprisingly robust ad-hoc and infrastructure multiplayer suite for its time."
+      ]
+    ]
+  },
+  {
+    "hue": 31,
+    "tag": "Racing & Speed",
+    "title": "Racing & Speed",
+    "blurb": "From Ridge Racer's launch-day drift handling to a kart racer with its own track editor, PSP's racing shelf lost surprisingly little in the trip from console to handheld.",
+    "games": [
+      [
+        "Ridge Racer",
+        "2005",
+        "Namco",
+        "A launch-day arcade racer with drift-heavy handling that showed off the PSP screen's colors from day one."
+      ],
+      [
+        "Burnout Legends",
+        "2005",
+        "Criterion Games",
+        "A greatest-hits compilation of the series' best tracks and crash modes, tuned specifically for shorter handheld sessions."
+      ],
+      [
+        "Midnight Club 3: Dub Edition",
+        "2005",
+        "Rockstar Leeds",
+        "Open-city street racing with deep car customization, ported down from consoles without losing its personality."
+      ],
+      [
+        "MotorStorm: Arctic Edge",
+        "2009",
+        "Bigbig Studios",
+        "Off-road racing across icy terrain with genuinely dangerous environmental hazards like avalanches and cracking ice."
+      ],
+      [
+        "OutRun 2006: Coast 2 Coast",
+        "2006",
+        "Sumo Digital",
+        "Breezy, arcade-perfect Ferrari racing across sun-drenched coastal routes, built for pure pick-up-and-play fun."
+      ],
+      [
+        "Split/Second",
+        "2010",
+        "Black Rock Studio / Sumo",
+        "Racing where triggering environmental explosions can reroute the entire track mid-race, translated onto PSP without losing its spectacle."
+      ],
+      [
+        "Twisted Metal: Head-On",
+        "2005",
+        "Incognito",
+        "Vehicular combat mayhem that many longtime fans consider the true sequel the series deserved after its console entries stumbled."
+      ],
+      [
+        "ModNation Racers",
+        "2011",
+        "United Front Games",
+        "Kart racing with a deep track and character creator, letting players build and share their own courses."
+      ]
+    ]
+  },
+  {
+    "hue": 60,
+    "tag": "Puzzle, Party & Rhythm",
+    "title": "Puzzle, Party & Rhythm",
+    "blurb": "PSP's short-session soul comes through clearest here — block-matching, drum-command armies, and a shoot-'em-up where the goal is to blow yourself up.",
+    "games": [
+      [
+        "Lumines II",
+        "2006",
+        "Q Entertainment",
+        "A sequel swapping in licensed pop and rock tracks, with a sequencer mode letting players remix the game's own music."
+      ],
+      [
+        "Patapon 2",
+        "2009",
+        "Pyramid",
+        "Expands the original's rhythm-command formula with new unit types and a much bigger evolution tree for your tribe."
+      ],
+      [
+        "Patapon 3",
+        "2011",
+        "Pyramid",
+        "A faster-paced, hero-focused entry closing out the trilogy with tighter drum-command combat."
+      ],
+      [
+        "LocoRoco 2",
+        "2008",
+        "Japan Studio",
+        "More tilting, more singing blobs, and trickier secrets layered onto an already-perfected formula."
+      ],
+      [
+        "Every Extend Extra",
+        "2006",
+        "Q Entertainment",
+        "A chain-reaction shoot-'em-up-puzzle hybrid where dying in a big enough explosion is the actual goal."
+      ],
+      [
+        "Me & My Katamari",
+        "2006",
+        "Namco",
+        "The roll-everything-into-a-ball series shrunk down for handheld play without losing its surreal, joyful chaos."
+      ],
+      [
+        "Rock Band Unplugged",
+        "2009",
+        "Harmonix",
+        "A clever solo reinvention of the band-rhythm formula where you control all instruments by switching between them on the fly."
+      ],
+      [
+        "Space Invaders Extreme",
+        "2008",
+        "Taito",
+        "A trance-and-techno remix of the arcade classic, layering chain reactions and power-ups onto its familiar alien grid."
+      ]
+    ]
+  },
+  {
+    "hue": 89,
+    "tag": "Sports & Simulation",
+    "title": "Sports & Simulation",
+    "blurb": "A smaller shelf than most genres here, but a varied one — skateboarding, boxing, high-seas piracy, and a full baseball season all fit in a UMD case.",
+    "games": [
+      [
+        "Tony Hawk's Underground 2 Remix",
+        "2005",
+        "Vicarious Visions",
+        "Story-mode skateboarding chaos and classic THPS goals, tuned well for the handheld's shorter play sessions."
+      ],
+      [
+        "Fight Night Round 3",
+        "2006",
+        "EA Chicago",
+        "A boxing sim built around its Total Punch Control system, stripped of its HUD for a more immersive feel."
+      ],
+      [
+        "SSX On Tour",
+        "2005",
+        "EA Canada",
+        "Arcade snowboarding with rock-star showmanship and guest cameo courses, ported down without losing its trick-chaining flow."
+      ],
+      [
+        "Sid Meier's Pirates!",
+        "2007",
+        "Firaxis / Full Fat",
+        "Swashbuckling sim-adventure blending ship combat, treasure hunting, and empire-building into one endlessly replayable sandbox."
+      ],
+      [
+        "ATV Offroad Fury: Blazin' Trails",
+        "2006",
+        "Climax",
+        "Off-road quad-bike racing across muddy, trick-friendly tracks, a launch-era favorite for the system's arcade-sports crowd."
+      ],
+      [
+        "MLB 08: The Show",
+        "2008",
+        "SCE San Diego",
+        "A surprisingly deep baseball simulation that proved a full season-length sports sim could work on the go."
+      ]
+    ]
+  },
+  {
+    "hue": 118,
+    "tag": "Horror & Visual Novels",
+    "title": "Horror & Visual Novels",
+    "blurb": "PSP's UMD format turned out to be a perfect fit for slow-burn dread and heavy text — including the games that quietly started two of horror gaming's biggest cult franchises.",
+    "games": [
+      [
+        "Silent Hill: Origins",
+        "2007",
+        "Climax",
+        "A prequel exploring how Alessa's cult came to be, with a weapon-degradation system that keeps combat as unnerving as the fog."
+      ],
+      [
+        "Corpse Party",
+        "2011",
+        "Team GrisGris",
+        "A remake of a cult PC-98 horror visual novel about students trapped in a cursed, blood-soaked school; grim, tense, and unusually personal."
+      ],
+      [
+        "The 3rd Birthday",
+        "2011",
+        "HexaDrive / Square Enix",
+        "A Parasite Eve spin-off blending body-swapping action-RPG combat with survival-horror atmosphere."
+      ],
+      [
+        "Manhunt 2",
+        "2007",
+        "Rockstar London",
+        "A censorship-magnet stealth-horror game about a man escaping an asylum by any brutal means necessary. Its UK release, after the BBFC's ban and forced re-edit, landed exactly one year after North America's — October 31st both years."
+      ],
+      [
+        "Obscure: The Aftermath",
+        "2009",
+        "Hydravision",
+        "Co-op survival horror about student friends fighting spore-mutated monsters, a lesser-known but genuinely tense B-movie throwback."
+      ],
+      [
+        "Steins;Gate",
+        "2011",
+        "5pb.",
+        "A time-travel visual novel now considered one of the medium's best, though its PSP original never left Japan — English speakers first got the game in 2014 via a PC release, with PS3 and Vita versions following in 2015."
+      ]
+    ]
+  },
+  {
+    "hue": 147,
+    "tag": "Cult Classics & Curios",
+    "title": "Cult Classics, Curios & Japan-Only Gems",
+    "blurb": "This is where a 'best of' list earns the word explorer. A murder-mystery visual novel that became a phenomenon, a hand-drawn tactics game that never left Japan, a fishing-rod platformer with a cult following all its own.",
+    "games": [
+      [
+        "Gods Eater Burst",
+        "2011",
+        "Shift / Namco Bandai",
+        "A monster-hunting action-RPG with a faster, blade-swapping combat style that built its own passionate following alongside Monster Hunter."
+      ],
+      [
+        "Metal Slug XX",
+        "2010",
+        "SNK Playmore",
+        "Run-and-gun arcade action with new vehicles and a boss rush mode, a pure shot of old-school SNK spectacle."
+      ],
+      [
+        "Taiko no Tatsujin Portable DX",
+        "2011",
+        "Namco Bandai",
+        "Over 70 tracks of taiko-drumming rhythm action, Japan-only and never localized, but a favorite among import collectors."
+      ],
+      [
+        "Danganronpa: Trigger Happy Havoc",
+        "2010",
+        "Spike",
+        "The murder-mystery visual novel that launched a cult phenomenon, originally released only in Japan on PSP by developer Spike (which wouldn't merge into Spike Chunsoft until 2012), years before its 2014 English localization on Vita."
+      ],
+      [
+        "Fate/Extra",
+        "2010",
+        "Type-Moon / Imageepoch",
+        "A tactical-action RPG spin on the Fate universe, localized against the odds and beloved by the franchise's Western fanbase — North America (Aksys Games, 2011) and Europe (Ghostlight, 2012) got it from two different publishers, about half a year apart."
+      ],
+      [
+        "Grand Knights History",
+        "2011",
+        "Vanillaware",
+        "A gorgeous, hand-drawn strategy-RPG hybrid from the Odin Sphere team, never released outside Japan — XSEED had an English translation essentially finished before cancelling the localization in 2012."
+      ],
+      [
+        "Nayuta no Kiseki",
+        "2012",
+        "Falcom",
+        "An open-area action-RPG in the Ys mold and one of the last major PSP RPGs Falcom ever made — Japan-only on PSP; English speakers had to wait until 2023's Switch/PS4/PC remaster, The Legend of Nayuta: Boundless Trails, to play it at all."
+      ],
+      [
+        "Tales of VS.",
+        "2009",
+        "Namco Bandai",
+        "A Smash Bros.-style crossover brawler starring heroes from across the entire Tales series — never localized, Japan-only, played outside Japan almost exclusively via fan translation."
+      ],
+      [
+        "Class of Heroes",
+        "2009",
+        "Zerodiv",
+        "An old-school, grid-based first-person dungeon crawler that scratched a nostalgic itch for Wizardry-style RPG fans. Released in North America, but never in Europe."
+      ],
+      [
+        "Umihara Kawase Portable",
+        "2008",
+        "Studio Saizensen",
+        "A physics-driven platformer about swinging from a fishing line, cultishly adored for its elastic, momentum-based movement. Japan-only on PSP — a planned U.S. localization, Yumi's Odd Odyssey, was announced and then quietly cancelled."
+      ]
+    ]
+  },
+  {
+    "hue": 176,
+    "tag": "Licensed Games Done Right",
+    "title": "Licensed, Ports & Movie Tie-Ins Done Right",
+    "blurb": "Closing the collection with the genre most players write off entirely — proof that a licensed superhero or movie game could still hold its own on this handheld.",
+    "games": [
+      [
+        "Star Wars: The Force Unleashed",
+        "2008",
+        "LucasArts / Full Fat",
+        "A scaled-down but still spectacle-driven take on Starkiller's story, with lightsaber combat built around the handheld's controls."
+      ],
+      [
+        "Dante's Inferno",
+        "2010",
+        "Visceral / Artificial Mind",
+        "A God of War-inspired hack-and-slash through the nine circles of Hell, condensed without losing its over-the-top brutality."
+      ],
+      [
+        "X-Men Legends II: Rise of Apocalypse",
+        "2005",
+        "Vicarious Visions",
+        "Squad-based superhero action RPG with nearly two dozen playable mutants and drop-in co-op."
+      ],
+      [
+        "Marvel: Ultimate Alliance",
+        "2007",
+        "Vicarious Visions",
+        "A roster of Marvel heroes team up across a sprawling action-RPG campaign, console-scale ambition packed onto a UMD."
+      ]
+    ]
+  }
+]

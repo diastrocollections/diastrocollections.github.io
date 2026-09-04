@@ -1,0 +1,126 @@
+[
+  { "hue": 280, "tag": "Pokémon", "title": "Pokémon & Monster-Collecting", "blurb": "The genre that defined the Game Boy Color commercially — Pokémon's second generation, plus the wave of monster-collecting imitators it inspired.", "games": [
+    ["Pokémon Gold and Silver","1999","Game Freak","The sequel that added a whole new region, a day/night cycle, and breeding, still argued by many longtime fans to be the series' peak."],
+    ["Pokémon Crystal","2000","Game Freak","Adds an animated player sprite and a Suicune-chasing storyline to Gold and Silver's Johto, the definitive way to play the generation."],
+    ["Pokémon Trading Card Game","1998","Hudson Soft & Creatures","An entire card game engine translated faithfully into software, complete with AI duelists modeled after in-game gym leaders."],
+    ["Pokémon Pinball","1999","Jupiter Corp. / HAL Laboratory","Built on Kirby's Pinball Land's engine, with a built-in Rumble Pak and all 151 original Pokémon to catch mid-flipper-run. Europe's release lagged more than a year behind North America's — the widest gap of any Pokémon title on this list."],
+    ["Pokémon Puzzle Challenge","2000","Intelligent Systems","A Panel de Pon-engine puzzler reskinned with Pokémon, sharper and faster than its N64 cousin."],
+    ["Dragon Warrior Monsters","1998","Tose","Enix's answer to Pokémon, breeding and battling monsters years before “monster tamer” became its own crowded genre."],
+    ["Dragon Warrior Monsters 2","2001","Tose","Splits into two versions like its inspiration, with a deeper breeding system and a much larger monster roster."],
+    ["Hamtaro: Ham-Hams Unite!","2002","Pax Softnica","The last Game Boy Color game Nintendo ever published, an anime tie-in adventure far more charming than it has any right to be."],
+    ["Robopon: Sun Version","2000","Hudson Soft","A robot-collecting RPG with a battle-and-trade hook nearly identical to Pokémon's, split across Sun and Star versions."]
+  ]},
+  { "hue": 309, "tag": "Zelda", "title": "Zelda & Nintendo Action-Adventure", "blurb": "Nintendo's first color Zelda outing anchors a small but essential chapter of first-party handheld adventure design.", "games": [
+    ["The Legend of Zelda: Oracle of Seasons","2001","Flagship","A dungeon-focused Zelda built around season-shifting puzzles, designed to be played as a linked pair with Oracle of Ages."],
+    ["The Legend of Zelda: Oracle of Ages","2001","Flagship","The time-travel half of the linked Oracle duology, leaning harder into puzzle logic than combat."],
+    ["Wario Land 3","2000","Nintendo R&D1","A structurally strange Wario game with no game-over state, where treasure and time-of-day mechanics reshape levels you've already cleared."],
+    ["Kirby Tilt 'n' Tumble","2001","HAL Laboratory / Nintendo R&D2","A cartridge with a built-in tilt sensor, years before motion controls were a mainstream pitch."],
+    ["Crystalis","2000","Nintendo Software Technology","A color remake of the beloved 1990 NES action-RPG, brighter and more legible than the original ever could be."]
+  ]},
+  { "hue": 338, "tag": "Platformer", "title": "Platformers", "blurb": "From Rare's prolific Nintendo-published run to WayForward's earliest work, the GBC's platforming chapter is stacked with talent that would define handheld games for a decade after.", "games": [
+    ["Shantae","2002","WayForward Technologies","Released so late in the system's life almost nobody saw it at the time, now considered one of the best-looking games ever squeezed onto the hardware."],
+    ["Super Mario Bros. Deluxe","1999","Nintendo","The NES original plus Lost Levels, save states, and new challenge modes, built specifically to show off what color added to a classic."],
+    ["Donkey Kong Country","2000","Rare","Rare's SNES benchmark compressed into a handheld cart, its pre-rendered look holding up far better than it should on this screen."],
+    ["Rayman","2000","Ubisoft","The limbless platforming icon's only Game Boy Color outing, built from the ground up rather than ported down."],
+    ["Toki Tori","2001","Two Tribes","A methodical puzzle-platformer about a chick collecting eggs with a toolkit of one-use gadgets, years before its celebrated Wii revival."],
+    ["Mega Man Xtreme","2001","Capcom","Remixes stages and bosses from the SNES X games into new handheld-sized levels."],
+    ["Mega Man Xtreme 2","2001","Capcom","A sequel pulling from X4 and X5, with tighter pacing than the original Xtreme."],
+    ["Bionic Commando: Elite Forces","2000","Nintendo Software Technology","A grapple-swinging platformer built by Nintendo's own North American studio under license from Capcom."],
+    ["Wendy: Every Witch Way","2001","WayForward Technologies","A gravity-flipping platformer starring a teenage witch, an early sign of the studio talent that would later make Shantae."],
+    ["Conker's Pocket Tales","1999","Rare","A cutesy, family-friendly prequel to the notoriously crude N64 game, unrecognizable in tone from what Conker would become."],
+    ["Disney's Tarzan","1999","Digital Eclipse","Digital Eclipse's first wholly original game rather than a port, built in a famously tight three-month turnaround."]
+  ]},
+  { "hue": 7, "tag": "Sports", "title": "Sports", "blurb": "Nintendo's own handheld-companion sports duo headlines a chapter of games built as their own thing, not console ports squeezed down.", "games": [
+    ["Mario Golf","1999","Camelot Software Planning","A companion to the N64 game with its own characters and courses, not a stripped-down port."],
+    ["Mario Tennis","2001","Camelot Software Planning","Same handheld-companion approach as Mario Golf, deep enough that its RPG-lite training mode became a fan favorite in its own right."],
+    ["NBA 3 on 3 featuring Kobe Bryant","1999","Left Field Productions","A streetball-style three-on-three game built specifically for the handheld rather than downsized from a console original."],
+    ["All-Star Baseball 2000","1999","Realtime Associates","A separately-built handheld entry in Acclaim's baseball series, developed apart from its console namesake."],
+    ["NBA Jam 2001","2000","Digital Creations","Arcade two-on-two basketball with the series' signature exaggerated dunks, shrunk down without losing its over-the-top energy."],
+    ["Pocket Bowling","1999","Jaleco","A GBC launch-window title that keeps ten-pin bowling's rhythm intact despite the tiny screen."]
+  ]},
+  { "hue": 36, "tag": "Racing", "title": "Racing", "blurb": "Five ways to go fast, from a Disney-branded kart racer to a rally sim ported down from PC and PS1.", "games": [
+    ["V-Rally: Edition '99","1999","Bit Managers","A rally racer built around Infogrames' PC/console series, released in Europe as V-Rally: Championship Edition."],
+    ["Mickey's Racing Adventure","1999","Rare","A kart racer starring Mickey Mouse, built by Rare during their prolific late-90s Nintendo-published handheld run."],
+    ["Test Drive: Off-Road 3","1999","Infogrames","A handheld entry in the off-road racing series, developed in-house alongside its PC and PS1 versions. Rebranded entirely for its European release the following spring, as 4x4 World Trophy."],
+    ["Xtreme Wheels","2001","Spike Co.","A stunt-driving racer with looping, ramp-heavy tracks built for one-more-run replay value."],
+    ["Supercross Freestyle","2000","Fernando Velez and Guillaume Dubail","A Europe-only motocross racer that never crossed the Atlantic."]
+  ]},
+  { "hue": 65, "tag": "Action", "title": "Fighting & Action", "blurb": "Stealth, survival horror, and one very famous case of a handheld game trading on a name that wasn't quite its own.", "games": [
+    ["Street Fighter Alpha: Warriors' Dreams","1999","Crawfish Interactive","A single-player-only conversion of the arcade fighter, without link-cable versus but with the full roster and move sets intact."],
+    ["Metal Gear: Ghost Babel","2000","Konami Computer Entertainment Japan","Released in the West simply as “Metal Gear Solid” to trade on the PS1 game's name, this is actually a wholly separate, original stealth game built for the handheld. The Japanese and European cartridges also included a bonus in-game radio broadcast that Konami quietly cut from the North American release."],
+    ["Perfect Dark","2000","Rare","A top-down action game bearing the N64 shooter's name and characters but built as its own distinct handheld experience."],
+    ["Duke Nukem","1999","Torus Games","A side-scrolling action game starring the one-liner-spouting mercenary, trading first-person shooting for run-and-gun platforming."],
+    ["Resident Evil Gaiden","2002","M4","An overhead survival-horror hybrid with first-person shooting segments, developed under story input from series creator Shinji Mikami. An unusual release order for the era: Europe actually got it first, months ahead of both Japan and North America."],
+    ["Alone in the Dark: The New Nightmare","2001","Pocket Studios","A from-scratch handheld build of the survival-horror series, developed separately from the console/PC version by the same publisher."],
+    ["John Romero's Daikatana","2000","Will","The infamously troubled PC shooter's handheld spinoff plays it as a straightforward action game, and quietly outshines its console namesake's reputation. Europe got the only proper retail release anywhere in the world; Japan's release came a year later only through a Nintendo Power download kiosk, and North America's version was cancelled outright."]
+  ]},
+  { "hue": 94, "tag": "Puzzle", "title": "Puzzle", "blurb": "Falling blocks, popping bubbles, and one very literal exercise in digging straight down.", "games": [
+    ["Tetris DX","1998","Nintendo R&D1","The GBC launch-window Tetris, adding color-coded pieces and a genuinely useful multiplayer mode."],
+    ["Mr. Driller","2000","Namco","Dig straight down through color-coded blocks without getting crushed, a perfect one-handed handheld translation of the arcade original."],
+    ["Bomberman Quest","1999","Hudson Soft","An action-RPG spin on Bomberman rather than the usual multiplayer bomb-em-up, closer to a Zelda-style dungeon crawl."],
+    ["Pocket Bomberman","1998","Hudson Soft","A GBC-launch color re-release of a 1997 monochrome Bomberman puzzle-platformer built by the series' own developer."],
+    ["Puchi Carat","1999","Taito","An obscure falling-jewel puzzler from Taito's deep catalog, rarely mentioned outside dedicated puzzle-genre roundups. A planned North American release was cancelled outright; Europe got it anyway, over a year later in December 2000."],
+    ["Bust-A-Move Millennium","2000","Altron","A bubble-popping puzzler entry that adds new modes on top of the core Puzzle Bobble formula."],
+    ["Hexcite: The Shapes of Victory","1999","Landwarf","A hexagonal tile-matching puzzler developed differently for its Japanese and North American releases."]
+  ]},
+  { "hue": 123, "tag": "Strategy", "title": "Strategy & Simulation", "blurb": "An unlikely run of real-time and turn-based strategy experiments, anchored by three generations of a beloved farming sim.", "games": [
+    ["Warlocked","2000","Bits Studios","A real-time strategy game in the Warcraft mold, widely considered proof the genre could actually work on a D-pad."],
+    ["Force 21","2000","The Code Monkeys","A modern military RTS ported down from PC, commanding armored units across a simplified but genuine strategy layer."],
+    ["Game Boy Wars 2","1998","Hudson Soft","A Japan-only turn-based wargame in the Famicom Wars lineage, the same design DNA that would become Advance Wars."],
+    ["Game Boy Wars 3","2001","Hudson Soft","A late Japan-only sequel refining the series' turn-based unit combat."],
+    ["Worms Armageddon","2000","Infogrames Lyon House","A from-scratch handheld build of the artillery-combat series, developed separately from Team17's console and PC versions."],
+    ["Yu-Gi-Oh! Dark Duel Stories","2002","Konami","A card-battle RPG hybrid built around the anime's dueling rules, deep enough to satisfy players who skipped the trading cards entirely. Europe didn't get its own release until a full year later, in 2003."],
+    ["Heroes of Might and Magic II","2000","New World Computing","A surprisingly faithful handheld adaptation of the PC turn-based strategy classic."],
+    ["Harvest Moon GBC","1999","Victor Interactive Software","A distinct, from-scratch color entry in the farming-sim series, not a port of the earlier monochrome Harvest Moon."],
+    ["Harvest Moon 2 GBC","2000","Victor Interactive Software","Expands the farm-sim formula with new crops, animals, and a bigger town to build relationships in."],
+    ["Harvest Moon 3 GBC","2001","Victor Interactive Software","The trilogy's close, refining pacing and social systems built up over the two previous entries."]
+  ]},
+  { "hue": 152, "tag": "RPG", "title": "Role-Playing Adventures", "blurb": "Square's absence is filled by Enix, Atlus, and Namco — a deep RPG chapter that leans heavily on Japan-only side stories that never made the trip West.", "games": [
+    ["Dragon Warrior I & II","2000","Tose","Faithful color remakes of the two Famicom games that started the entire JRPG genre in Japan."],
+    ["Dragon Warrior III","2001","Tose","A remake of the NES-era game many consider the series' best pre-SNES entry, now with a party-swapping class system intact."],
+    ["Lufia: The Legend Returns","2001","Neverland","A prequel built around randomized dungeons and a heavier strategy layer than the SNES originals it follows."],
+    ["Harry Potter and the Sorcerer's Stone","2001","Griptonite Games","A turn-based RPG adaptation of the first book, wandering Hogwarts and casting spells in a distinctly Final Fantasy-influenced structure. Released the same day in Europe under the book's original title there: Harry Potter and the Philosopher's Stone."],
+    ["Harry Potter and the Chamber of Secrets","2002","Griptonite Games","A direct sequel expanding the first game's spellcasting and exploration systems."],
+    ["Legend of the River King","1999","Victor Interactive Software","A fishing RPG that plays it surprisingly straight, with real tackle strategy layered under its cute exterior. Europe waited over a year for its own release, arriving in December 2000."],
+    ["Legend of the River King 2","2001","Victor Interactive Software","A sequel with multiple playable characters and an expanded fishing-and-story loop."],
+    ["Azure Dreams","2000","Konami Computer Entertainment Nagoya","A roguelike dungeon-crawler with monster-taming and tower-building layered on top, adapted from the PS1 original."],
+    ["Revelations: The Demon Slayer","1999","Multimedia Intelligence Transfer","A Western localization of a 1992 Japanese Megami Tensei spin-off, effectively the first color RPG Atlus brought to North America."],
+    ["Tales of Phantasia: Narikiri Dungeon","2000","Namco","A Japan-only spin-off letting players cosplay as any recruited character, spun off from Namco's original Tales RPG."],
+    ["Shin Megami Tensei: Devil Children — Black/Red/White Book","2000","Multimedia Intelligence Transfer","A Japan-only monster-fusion RPG trilogy that predates the Devil Children franchise's later GBA and anime expansion."],
+    ["Grandia: Parallel Trippers","2000","Game Arts","A Japan-only side story spun off from the acclaimed PS1 RPG, built as an original handheld adventure rather than a port."]
+  ]},
+  { "hue": 181, "tag": "Shooter", "title": "Shooters & Arcade Classics", "blurb": "Arcade history in color — three of Namco and Taito's oldest hits, plus a shooter compilation and two late-system deep cuts.", "games": [
+    ["R-Type DX","1999","Bits Studios","A two-in-one color compilation of R-Type and R-Type II, the definitive way to play either on original hardware."],
+    ["Space Invaders","1999","Crawfish Interactive","A single-player-only color conversion of the arcade original, stripped of its multiplayer but faithful to the core invasion loop."],
+    ["Frogger","1998","Morning Star Multimedia","A GBC-launch-era conversion of the arcade classic that reintroduced an entire generation to hopping across traffic."],
+    ["Ms. Pac-Man: Special Color Edition","1999","Namco","A color-enhanced handheld port that keeps the harder, more randomized ghost AI that made the arcade sequel tougher than the original."],
+    ["Pac-Man: Special Color Edition","1999","Namco","The arcade original in color, maze layout and ghost patterns untouched by four decades of imitators."],
+    ["Project S-11","2001","Paragon 5","A vertical shooter with smooth scrolling and multiple weapon loadouts, released late and quietly in the system's final year."],
+    ["Rampage 2: Universal Tour","1999","Digital Eclipse Software","Play a giant monster smashing city blocks, with the series' co-op destruction intact even at handheld scale."]
+  ]},
+  { "hue": 210, "tag": "Licensed", "title": "Licensed & Movie Tie-Ins", "blurb": "The GBC's shovelware reputation came from somewhere — but a handful of licensed tie-ins here are genuinely well-built, not just cash-grabs.", "games": [
+    ["Tomb Raider","2000","Core Design","A top-down reimagining of Lara Croft's exploration-and-puzzle formula, built to work without a 3D camera. Titled simply Tomb Raider in Europe, where North America's box added Starring Lara Croft."],
+    ["Rugrats: Totally Angelica","2000","Art Co., Ltd.","An unusually well-regarded licensed platformer that lets the show's spoiled antagonist headline her own adventure."],
+    ["Austin Powers: Oh, Behave! and Welcome to My Underground Lair!","2000","Tarantula Studios","A two-cartridge tie-in split between hero and villain campaigns, published in North America by an unlikely source: Rockstar Games."],
+    ["Dragon Ball Z: Legendary Super Warriors","2002","Flight-Plan","A one-on-one fighter with a huge roster spanning the anime's Saiyan through Buu arcs."],
+    ["Action Man: Search for Base X","2001","Natsume Co., Ltd.","A toy-line tie-in action-adventure with more genuine level design than most licensed platformers of its era."],
+    ["Matchbox: Emergency Patrol","2001","Lucky Chicken Games","A top-down rescue-vehicle action game built around the toy brand rather than a racing game, despite the name."],
+    ["Croc 2","2001","Natsume Co., Ltd.","A handheld reimagining of the 3D platformer's sequel, rebuilt from the ground up for two dimensions."]
+  ]},
+  { "hue": 239, "tag": "Curios", "title": "Cult Classics & Japan-Only Curios", "blurb": "The deepest cuts in the whole collection — including a near-unbroken run of games that never left Japan at all.", "games": [
+    ["Game & Watch Gallery 2","1998","Tose","Classic Game & Watch toys reimagined with both their original look and a “modern” reskinned mode, now finally in color."],
+    ["Game & Watch Gallery 3","1999","Tose","A third helping of remastered Game & Watch classics, including Donkey Kong Jr. and Mario's Cement Factory."],
+    ["Quest: Brian's Journey","2000","Atelier Double","Known in Japan as Elemental Tale, an overlooked action-RPG about a boy solving elemental puzzles across a fantasy world."],
+    ["Bomberman Max: Blue Champion / Red Challenger","2000","Hudson Soft","A pair of connectable Bomberman versions blending the series' puzzle-action with light RPG progression — titled Hero of Light and Warrior of Darkness in Japan, entirely different names again from their North American release."],
+    ["Konami GB Collection Vol. 4","2000","Tose","A Japan-and-Europe-only compilation cartridge that finally brought Game Boy Color support to a set of Konami's earlier monochrome classics — never released in North America. The European cut also quietly reshuffled the Japanese lineup and swapped one Japan-specific mascot on the menu for the more internationally familiar Penta from Antarctic Adventure."],
+    ["Survival Kids","1999","Konami Computer Entertainment Sapporo","A desert-island survival game about foraging, crafting, and staying alive with almost no combat at all. Released in Europe several months later under a different name: Stranded Kids."],
+    ["Magical Chase GB","2000","Microcabin","A Japan-only port of a beloved 1991 TurboGrafx-16 shooter, a genuine deep-cut for import shoot-em-up collectors."],
+    ["Monster Rancher Explorer","2000","Graphic Research","An action-puzzle spin-off of Tecmo's monster-raising series, built more like a puzzle-platformer than its console cousins."],
+    ["Return of the Ninja","2001","Act Japan","A side-scrolling ninja action game with a heavier emphasis on stealth than most genre peers of its era."],
+    ["Koto Battle: Tengai no Moribito","2001","AlphaDream","A Japan-only tactical RPG from the developer who would go on to make Mario & Luigi: Superstar Saga."],
+    ["Kettō Transformers Beast Wars: Beast Senshi Saikyō Kettei-sen","1999","Gaibrain","A Japan-only Transformers fighting game tied to the Beast Wars toy and cartoon line."],
+    ["From TV Animation One Piece: Maboroshi no Grand Line Boukenhen!","2002","Alpha Unit","A Japan-only One Piece adventure game from early in the anime's handheld-game history."],
+    ["Daiku no Gen-san: Kachikachi no Tonkachi ga Kachi","2000","Biox","A Japan-only spin-off of Irem's carpenter-hero Hammerin' Harry series, built as an action-puzzle game."],
+    ["Meitantei Conan: Karakuri Jiin Satsujin Jiken","2000","Alpha Unit","A Japan-only Detective Conan mystery-adventure, investigating a murder in a trap-filled temple."]
+  ]}
+]
