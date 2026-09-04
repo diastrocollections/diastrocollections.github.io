@@ -1,92 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Mega Drive Explorer's Collection</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Red+Hat+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/base.css">
-<link rel="stylesheet" href="../assets/css/theme-megadrive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mega Drive Explorer's Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Red+Hat+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/theme-megadrive.css">
+  <script data-goatcounter="https://diastro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
+
 <body>
-<header class="hero">
-  <div class="wrap">
-    <div class="badge-row">
-      <span class="chrome-badge">16-BIT</span>
-      <span class="pill-line"></span>
-      <span class="chrome-badge">EU · PAL</span>
-    </div>
-    <div class="eyebrow"><span class="dot"></span> Diastro Gaming — Platform Explorer's Collection</div>
-    <h1>The Mega <em>Drive</em> Explorer's Collection</h1>
-    <p class="hero-lede">One hundred cartridges across twelve genres, catalogued the way Europe knew them: Mega Drive branding, PAL release years, and the regional titles printed on the boxes this side of the Atlantic.</p>
-    <div class="hero-meta">
-      <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
-      <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
-      <div class="stat"><span class="num mono">1990&ndash;1996</span><span class="label">PAL span</span></div>
-      <div class="stat"><span class="num mono">EU</span><span class="label">title &amp; year primary</span></div>
-    </div>
-  </div>
-</header>
-
-<section class="note">
-  <div class="wrap">
-    <div class="note-card">
-      <h2>A note from the curator</h2>
-      <p>Every prior collection in this series used North American branding and release years as the default. This one flips that convention on purpose: it was called Mega Drive everywhere outside the United States, and this list uses the European name, the PAL box titles, and PAL release dates as the primary record — with the North American equivalent noted wherever a game actually shipped under a different name across the Atlantic.</p>
-      <p>That regional-naming quirk runs deeper on this platform than on most. A handful of games arrived in Europe with new titles entirely — a Contra game recast as Probotector with robot combatants standing in for its soldiers, a Turtles game rebranded Teenage Mutant Hero Turtles for the same censor-driven reasons, the action-RPG called Crusader of Centy in North America known here as Soleil. Where the PAL release never happened at all, that's flagged explicitly below rather than quietly defaulting back to an American date.</p>
-      <p>Scope is the base cartridge library only — Mega-CD and 32X add-on titles belong to a separate future collection. Twelve genre chapters sample the platform's full range, from Sega's own arcade pedigree to the distinctly British and French developer scene — Bitmap Brothers, Codemasters, Sensible Software, Delphine — that gave this console a flavor its American library never quite had.</p>
-    </div>
-  </div>
-</section>
-
-<nav class="toolbar">
-  <div class="wrap toolbar-inner">
-    <div class="search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input id="searchInput" type="text" placeholder="Search 100 games, developers, genres…" autocomplete="off">
-    </div>
-    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-    <div class="chips" id="chips"></div>
-    <div class="result-count" id="resultCount"></div>
-  </div>
-</nav>
-
-<main class="wrap" id="chapters"></main>
-
-<div class="wrap"><p class="empty-state" id="emptyState">No cartridges match that search. Try a different title, developer, or genre.</p></div>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-cols">
-      <div>
-        <h3>About this collection</h3>
-        <ul>
-          <li>Part of the Diastro Gaming Explorer's Collections series.</li>
-          <li>Curated from expert retrospectives and genre round-ups, not aggregator top-N scores.</li>
-          <li>Every entry fact-checked for title, platform, release year, and developer before publication.</li>
-        </ul>
+  <header class="hero">
+    <div class="wrap">
+      <div class="badge-row">
+        <span class="chrome-badge">16-BIT</span>
+        <span class="pill-line"></span>
+        <span class="chrome-badge">EU · PAL</span>
       </div>
-      <div>
-        <h3>Further reading</h3>
-        <ul>
-          <li><a href="https://en.wikipedia.org/wiki/List_of_Mega_Drive_games" target="_blank" rel="noopener">List of Mega Drive games — Wikipedia</a></li>
-          <li><a href="https://segaretro.org/Mega_Drive" target="_blank" rel="noopener">Sega Mega Drive — Sega Retro</a></li>
-          <li><a href="https://www.mobygames.com/platform/genesis/" target="_blank" rel="noopener">Genesis / Mega Drive platform — MobyGames</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>No European PAL release exists for</h3>
-        <ul>
-          <li>Target Earth, Thunder Force III, M.U.S.H.A., Elemental Master, Gleylancer (Japan-only), Warsong, Master of Monsters, Shadowrun, WeaponLord — listed with their North American or Japanese release year instead.</li>
-        </ul>
+      <div class="eyebrow"><span class="dot"></span> Diastro Gaming — Platform Explorer's Collection</div>
+      <h1>The Mega <em>Drive</em> Explorer's Collection</h1>
+      <p class="hero-lede">One hundred cartridges across twelve genres, catalogued the way Europe knew them: Mega Drive
+        branding, PAL release years, and the regional titles printed on the boxes this side of the Atlantic.</p>
+      <div class="hero-meta">
+        <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
+        <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
+        <div class="stat"><span class="num mono">1990&ndash;1996</span><span class="label">PAL span</span></div>
+        <div class="stat"><span class="num mono">EU</span><span class="label">title &amp; year primary</span></div>
       </div>
     </div>
-    <p class="footer-fine">The Mega Drive Explorer's Collection — a Diastro Gaming reference. Titles, years, and developer credits verified against contemporary sources at time of writing; corrections welcome.</p>
-  </div>
-</footer>
+  </header>
 
-<script src="../assets/collection.js" data-src="../data/megadrive.json"></script>
+  <section class="note">
+    <div class="wrap">
+      <div class="note-card">
+        <h2>A note from the curator</h2>
+        <p>Every prior collection in this series used North American branding and release years as the default. This one
+          flips that convention on purpose: it was called Mega Drive everywhere outside the United States, and this list
+          uses the European name, the PAL box titles, and PAL release dates as the primary record — with the North
+          American equivalent noted wherever a game actually shipped under a different name across the Atlantic.</p>
+        <p>That regional-naming quirk runs deeper on this platform than on most. A handful of games arrived in Europe
+          with new titles entirely — a Contra game recast as Probotector with robot combatants standing in for its
+          soldiers, a Turtles game rebranded Teenage Mutant Hero Turtles for the same censor-driven reasons, the
+          action-RPG called Crusader of Centy in North America known here as Soleil. Where the PAL release never
+          happened at all, that's flagged explicitly below rather than quietly defaulting back to an American date.</p>
+        <p>Scope is the base cartridge library only — Mega-CD and 32X add-on titles belong to a separate future
+          collection. Twelve genre chapters sample the platform's full range, from Sega's own arcade pedigree to the
+          distinctly British and French developer scene — Bitmap Brothers, Codemasters, Sensible Software, Delphine —
+          that gave this console a flavor its American library never quite had.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="toolbar">
+    <div class="wrap toolbar-inner">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input id="searchInput" type="text" placeholder="Search 100 games, developers, genres…" autocomplete="off">
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      <div class="chips" id="chips"></div>
+      <div class="result-count" id="resultCount"></div>
+    </div>
+  </nav>
+
+  <main class="wrap" id="chapters"></main>
+
+  <div class="wrap">
+    <p class="empty-state" id="emptyState">No cartridges match that search. Try a different title, developer, or genre.
+    </p>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-cols">
+        <div>
+          <h3>About this collection</h3>
+          <ul>
+            <li>Part of the Diastro Gaming Explorer's Collections series.</li>
+            <li>Curated from expert retrospectives and genre round-ups, not aggregator top-N scores.</li>
+            <li>Every entry fact-checked for title, platform, release year, and developer before publication.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Further reading</h3>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/List_of_Mega_Drive_games" target="_blank" rel="noopener">List of
+                Mega Drive games — Wikipedia</a></li>
+            <li><a href="https://segaretro.org/Mega_Drive" target="_blank" rel="noopener">Sega Mega Drive — Sega
+                Retro</a></li>
+            <li><a href="https://www.mobygames.com/platform/genesis/" target="_blank" rel="noopener">Genesis / Mega
+                Drive platform — MobyGames</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>No European PAL release exists for</h3>
+          <ul>
+            <li>Target Earth, Thunder Force III, M.U.S.H.A., Elemental Master, Gleylancer (Japan-only), Warsong, Master
+              of Monsters, Shadowrun, WeaponLord — listed with their North American or Japanese release year instead.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-fine">The Mega Drive Explorer's Collection — a Diastro Gaming reference. Titles, years, and
+        developer credits verified against contemporary sources at time of writing; corrections welcome.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/collection.js" data-src="../data/megadrive.json"></script>
 </body>
+
 </html>

@@ -1,87 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Handheld Explorer's Collection — 100 Best Original Game Boy Games</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&family=DotGothic16&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/base.css">
-<link rel="stylesheet" href="../assets/css/theme-gameboy.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Handheld Explorer's Collection — 100 Best Original Game Boy Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&family=DotGothic16&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/theme-gameboy.css">
+  <script data-goatcounter="https://diastro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
+
 <body>
-<header class="hero">
-  <div class="wrap">
-    <div class="eyebrow"><span class="dot"></span> DMG-01 &middot; 1989&ndash;1998</div>
-    <h1>The Handheld Explorer's <em>Collection</em></h1>
-    <p class="hero-lede">One hundred games for the original grey-brick Game Boy — sampled from every corner of its library, not just the top of a review-score spreadsheet. Puzzle boxes, RPG oddities, licensed curios, and the platformers that defined a decade in your pocket.</p>
-    <div class="hero-meta">
-      <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
-      <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
-      <div class="stat"><span class="num mono">1989&ndash;1998</span><span class="label">original hardware only</span></div>
-    </div>
-  </div>
-</header>
-
-<section class="note">
-  <div class="wrap">
-    <div class="note-card">
-      <h2>A note from the curator</h2>
-      <p>This isn't a top-100-by-Metacritic list — the original Game Boy predates aggregate scores almost entirely, and a pure sales or review ranking would bury the system's real personality under six Mega Man ports and a dozen movie tie-ins. Instead, this collection samples every genre the DMG actually supported: the falling-block puzzlers it's remembered for, but also the SaGa-era Square RPGs, the Rare-built Donkey Kong Land trilogy, the Konami shooter output, and the Japan-only curios that never got a Western release at all.</p>
-      <p>Only games confirmed to run on <strong>original monochrome Game Boy hardware</strong> made the cut — Game Boy Color-exclusive titles (Pokémon Gold/Silver, Wario Land 3, Shantae, and similar) are deliberately excluded, even where they're beloved, because they simply won't boot on a stock grey brick.</p>
-      <p>Release years follow the North American release date where one exists. For games that never left Japan or only reached Japan and Europe, the original regional release year is used instead and the game is marked accordingly in its chapter.</p>
-      <p>A follow-up accuracy and regional-divergence pass corrected a few entries that had drifted from that convention or were mislabeled outright. Two games long assumed Japan-only — <strong>The Sword of Hope II</strong> and <strong>The King of Fighters '95</strong> — actually did get delayed North American releases (1996 and 1997 respectively) and have been corrected accordingly; <strong>Trip World</strong>, previously listed as Japan-only, in fact reached Europe as well, just never North America. About a dozen entries also picked up a brief note on real European divergence — a different box title (Yoshi as Mario &amp; Yoshi, Operation C as Probotector, Gradius: The Interstellar Assault as Nemesis II), or a release gap of many months to, in Wave Race's case, an extraordinary five years.</p>
-    </div>
-  </div>
-</section>
-
-<nav class="toolbar">
-  <div class="wrap toolbar-inner">
-    <div class="search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
-    </div>
-    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-    <div class="chips" id="chips"></div>
-    <div class="result-count mono" id="resultCount"></div>
-  </div>
-</nav>
-
-<main class="wrap" id="chapters"></main>
-
-<div class="wrap"><p class="empty-state" id="emptyState">No cartridges match that search.</p></div>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-cols">
-      <div>
-        <h3>Japan/Europe-only titles (no North American release)</h3>
-        <ul>
-          <li>Trip World (1992, Japan/Europe)</li>
-          <li>Parodius (1991, Japan/Europe)</li>
-          <li>Picross 2 (1996, Japan)</li>
-          <li>Kaeru no Tame ni Kane wa Naru — For the Frog the Bell Tolls (1992, Japan)</li>
-          <li>Chalvo 55 (1997, Japan)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Sources &amp; further reading</h3>
-        <ul>
-          <li><a href="https://www.nintendolife.com/guides/50-best-game-boy-games-of-all-time" target="_blank" rel="noopener">Nintendo Life — 50 Best Game Boy Games of All Time</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Video_games_listed_among_the_best_of_the_Game_Boy_and_Game_Boy_Color" target="_blank" rel="noopener">Wikipedia — Video games listed among the best of the Game Boy and Game Boy Color</a></li>
-          <li><a href="https://infinityretro.com/top-100-best-game-boy-games/" target="_blank" rel="noopener">Infinity Retro — Top 100 Best Game Boy Games</a></li>
-          <li><a href="https://retrododo.com/underrated-game-boy-games/" target="_blank" rel="noopener">RetroDodo — The Most Underrated Game Boy Games</a></li>
-          <li><a href="https://racketboy.com/retro/best-undiscovered-gameboy-game-boy-color-games" target="_blank" rel="noopener">Racketboy — The Best Undiscovered Game Boy &amp; GBC Games</a></li>
-          <li><a href="https://www.denofgeek.com/games/25-underrated-game-boy-games/" target="_blank" rel="noopener">Den of Geek — 25 Underrated Game Boy Games</a></li>
-          <li><a href="https://www.bitmapbooks.com/blogs/news/the-gr-eight-est-game-boy-puzzle-games" target="_blank" rel="noopener">Bitmap Books — The Gr-Eight-est Game Boy Puzzle Games</a></li>
-        </ul>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> DMG-01 &middot; 1989&ndash;1998</div>
+      <h1>The Handheld Explorer's <em>Collection</em></h1>
+      <p class="hero-lede">One hundred games for the original grey-brick Game Boy — sampled from every corner of its
+        library, not just the top of a review-score spreadsheet. Puzzle boxes, RPG oddities, licensed curios, and the
+        platformers that defined a decade in your pocket.</p>
+      <div class="hero-meta">
+        <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
+        <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
+        <div class="stat"><span class="num mono">1989&ndash;1998</span><span class="label">original hardware only</span>
+        </div>
       </div>
     </div>
-    <p class="footer-fine">All 100 titles were individually fact-checked for title accuracy, release year, developer, and original-hardware compatibility before publication.</p>
-  </div>
-</footer>
+  </header>
 
-<script src="../assets/collection.js" data-src="../data/gameboy.json"></script>
+  <section class="note">
+    <div class="wrap">
+      <div class="note-card">
+        <h2>A note from the curator</h2>
+        <p>This isn't a top-100-by-Metacritic list — the original Game Boy predates aggregate scores almost entirely,
+          and a pure sales or review ranking would bury the system's real personality under six Mega Man ports and a
+          dozen movie tie-ins. Instead, this collection samples every genre the DMG actually supported: the
+          falling-block puzzlers it's remembered for, but also the SaGa-era Square RPGs, the Rare-built Donkey Kong Land
+          trilogy, the Konami shooter output, and the Japan-only curios that never got a Western release at all.</p>
+        <p>Only games confirmed to run on <strong>original monochrome Game Boy hardware</strong> made the cut — Game Boy
+          Color-exclusive titles (Pokémon Gold/Silver, Wario Land 3, Shantae, and similar) are deliberately excluded,
+          even where they're beloved, because they simply won't boot on a stock grey brick.</p>
+        <p>Release years follow the North American release date where one exists. For games that never left Japan or
+          only reached Japan and Europe, the original regional release year is used instead and the game is marked
+          accordingly in its chapter.</p>
+        <p>A follow-up accuracy and regional-divergence pass corrected a few entries that had drifted from that
+          convention or were mislabeled outright. Two games long assumed Japan-only — <strong>The Sword of Hope
+            II</strong> and <strong>The King of Fighters '95</strong> — actually did get delayed North American releases
+          (1996 and 1997 respectively) and have been corrected accordingly; <strong>Trip World</strong>, previously
+          listed as Japan-only, in fact reached Europe as well, just never North America. About a dozen entries also
+          picked up a brief note on real European divergence — a different box title (Yoshi as Mario &amp; Yoshi,
+          Operation C as Probotector, Gradius: The Interstellar Assault as Nemesis II), or a release gap of many months
+          to, in Wave Race's case, an extraordinary five years.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="toolbar">
+    <div class="wrap toolbar-inner">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      <div class="chips" id="chips"></div>
+      <div class="result-count mono" id="resultCount"></div>
+    </div>
+  </nav>
+
+  <main class="wrap" id="chapters"></main>
+
+  <div class="wrap">
+    <p class="empty-state" id="emptyState">No cartridges match that search.</p>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-cols">
+        <div>
+          <h3>Japan/Europe-only titles (no North American release)</h3>
+          <ul>
+            <li>Trip World (1992, Japan/Europe)</li>
+            <li>Parodius (1991, Japan/Europe)</li>
+            <li>Picross 2 (1996, Japan)</li>
+            <li>Kaeru no Tame ni Kane wa Naru — For the Frog the Bell Tolls (1992, Japan)</li>
+            <li>Chalvo 55 (1997, Japan)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sources &amp; further reading</h3>
+          <ul>
+            <li><a href="https://www.nintendolife.com/guides/50-best-game-boy-games-of-all-time" target="_blank"
+                rel="noopener">Nintendo Life — 50 Best Game Boy Games of All Time</a></li>
+            <li><a
+                href="https://en.wikipedia.org/wiki/Video_games_listed_among_the_best_of_the_Game_Boy_and_Game_Boy_Color"
+                target="_blank" rel="noopener">Wikipedia — Video games listed among the best of the Game Boy and Game
+                Boy Color</a></li>
+            <li><a href="https://infinityretro.com/top-100-best-game-boy-games/" target="_blank" rel="noopener">Infinity
+                Retro — Top 100 Best Game Boy Games</a></li>
+            <li><a href="https://retrododo.com/underrated-game-boy-games/" target="_blank" rel="noopener">RetroDodo —
+                The Most Underrated Game Boy Games</a></li>
+            <li><a href="https://racketboy.com/retro/best-undiscovered-gameboy-game-boy-color-games" target="_blank"
+                rel="noopener">Racketboy — The Best Undiscovered Game Boy &amp; GBC Games</a></li>
+            <li><a href="https://www.denofgeek.com/games/25-underrated-game-boy-games/" target="_blank"
+                rel="noopener">Den of Geek — 25 Underrated Game Boy Games</a></li>
+            <li><a href="https://www.bitmapbooks.com/blogs/news/the-gr-eight-est-game-boy-puzzle-games" target="_blank"
+                rel="noopener">Bitmap Books — The Gr-Eight-est Game Boy Puzzle Games</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-fine">All 100 titles were individually fact-checked for title accuracy, release year, developer,
+        and original-hardware compatibility before publication.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/collection.js" data-src="../data/gameboy.json"></script>
 </body>
+
 </html>

@@ -1,84 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Cartridge Explorer's Collection — 100 Best NES Games</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Figtree:wght@400;500;600;700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/base.css">
-<link rel="stylesheet" href="../assets/css/theme-nes.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cartridge Explorer's Collection — 100 Best NES Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Figtree:wght@400;500;600;700&family=Ubuntu+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/theme-nes.css">
+  <script data-goatcounter="https://diastro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
+
 <body>
-<header class="hero">
-  <div class="wrap">
-    <div class="eyebrow"><span class="dot"></span> NES-PAL-001 &middot; 1985&ndash;1994</div>
-    <h1>The Cartridge<br>Explorer's <em>Collection</em></h1>
-    <p class="hero-lede">One hundred games for the console that saved the industry — an 8-bit tour from Nintendo's own foundational classics to the import RPGs, banned tie-ins, and PAL-exclusive curios that never crossed every border.</p>
-    <div class="hero-meta">
-      <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
-      <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
-      <div class="stat"><span class="num mono">1985&ndash;1994</span><span class="label">NES releases</span></div>
-    </div>
-  </div>
-</header>
-
-<section class="note">
-  <div class="wrap">
-    <div class="note-card">
-      <h2>A note from the curator</h2>
-      <p>The NES has the largest, messiest library in this whole series — nearly 700 licensed games in North America alone — which makes curating exactly 100 the hardest editorial job yet. This collection spreads across Nintendo's own foundational classics, Capcom and Konami's golden run of licensed platformers, an unusually deep run of Japan-built RPGs (several of which, it turns out, never crossed the Atlantic at all), graphic adventures nobody remembers were on a Nintendo console, and a handful of genuine PAL- or NA-exclusive curios.</p>
-      <p>Following this project's standing convention, release years lead with the European release where one exists, with the Japanese and/or North American year noted secondarily. Where a game never received a European cartridge release at all — which turned out to be true for a striking number of NES titles, especially Japan-built RPGs — the North American (or, rarely, Japanese-only) year is shown instead with an explicit note, rather than defaulting silently to a EU year that never happened.</p>
-      <p>One thing this page deliberately does <em>not</em> do is flag PAL 50Hz slowdown on a per-game basis: virtually every early NES game shipped on European hardware locked to 50Hz with letterboxed borders and a real, audible speed reduction, since almost nothing on this console got a dedicated PAL-optimized build the way some later platforms occasionally did. Rather than repeat that footnote a hundred times, treat it as true by default for anything below with a European release — it isn't a story worth telling game by game.</p>
-      <p>Every title below was individually fact-checked for release-platform accuracy, developer attribution, and actual regional availability — the most common error caught was, again, a publisher (Taito, Irem, SNK, Jaleco, Sir-Tech) credited as the developer when a different studio actually built the specific NES version.</p>
-    </div>
-  </div>
-</section>
-
-<nav class="toolbar">
-  <div class="wrap toolbar-inner">
-    <div class="search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
-    </div>
-    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-    <div class="chips" id="chips"></div>
-    <div class="result-count mono" id="resultCount"></div>
-  </div>
-</nav>
-
-<main class="wrap" id="chapters"></main>
-
-<div class="wrap"><p class="empty-state" id="emptyState">No cartridges match that search.</p></div>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-cols">
-      <div>
-        <h3>Regional-exclusivity curios worth knowing</h3>
-        <ul>
-          <li><strong>Elite</strong> (1991) — released only in Europe. No North American or Japanese NES release ever happened, a rare full reversal of this collection's usual pattern.</li>
-          <li><strong>Gimmick!</strong> (1992 Japan, 1993 as "Mr. Gimmick" in Scandinavia only) — Sunsoft of America rejected it for North America outright; it never released there.</li>
-          <li><strong>StarTropics</strong> (1990) — never released in Japan at all, one of the few Nintendo-published NES games built exclusively for the West.</li>
-          <li><strong>R.C. Pro-Am</strong> (1988) — also never released in Japan, day-and-date in North America and Europe instead.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Sources &amp; further reading</h3>
-        <ul>
-          <li><a href="https://www.nintendolife.com/guides/50-best-nes-games-of-all-time" target="_blank" rel="noopener">Nintendo Life — 50 Best NES Games Of All Time</a></li>
-          <li><a href="https://www.denofgeek.com/games/underrated-nes-games/" target="_blank" rel="noopener">Den of Geek — 25 Underrated NES Games</a></li>
-          <li><a href="https://retrododo.com/best-nes-games/" target="_blank" rel="noopener">RetroDodo — The 25 Greatest NES Games Of All Time</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/List_of_Nintendo_Entertainment_System_games" target="_blank" rel="noopener">Wikipedia — List of Nintendo Entertainment System games</a></li>
-          <li><a href="https://tcrf.net/Category:NES_games" target="_blank" rel="noopener">The Cutting Room Floor — NES games</a></li>
-        </ul>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> NES-PAL-001 &middot; 1985&ndash;1994</div>
+      <h1>The Cartridge<br>Explorer's <em>Collection</em></h1>
+      <p class="hero-lede">One hundred games for the console that saved the industry — an 8-bit tour from Nintendo's own
+        foundational classics to the import RPGs, banned tie-ins, and PAL-exclusive curios that never crossed every
+        border.</p>
+      <div class="hero-meta">
+        <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
+        <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
+        <div class="stat"><span class="num mono">1985&ndash;1994</span><span class="label">NES releases</span></div>
       </div>
     </div>
-    <p class="footer-fine">All 100 titles were individually fact-checked for title accuracy, release year and region, developer, and NES platform compatibility before publication.</p>
-  </div>
-</footer>
+  </header>
 
-<script src="../assets/collection.js" data-src="../data/nes.json"></script>
+  <section class="note">
+    <div class="wrap">
+      <div class="note-card">
+        <h2>A note from the curator</h2>
+        <p>The NES has the largest, messiest library in this whole series — nearly 700 licensed games in North America
+          alone — which makes curating exactly 100 the hardest editorial job yet. This collection spreads across
+          Nintendo's own foundational classics, Capcom and Konami's golden run of licensed platformers, an unusually
+          deep run of Japan-built RPGs (several of which, it turns out, never crossed the Atlantic at all), graphic
+          adventures nobody remembers were on a Nintendo console, and a handful of genuine PAL- or NA-exclusive curios.
+        </p>
+        <p>Following this project's standing convention, release years lead with the European release where one exists,
+          with the Japanese and/or North American year noted secondarily. Where a game never received a European
+          cartridge release at all — which turned out to be true for a striking number of NES titles, especially
+          Japan-built RPGs — the North American (or, rarely, Japanese-only) year is shown instead with an explicit note,
+          rather than defaulting silently to a EU year that never happened.</p>
+        <p>One thing this page deliberately does <em>not</em> do is flag PAL 50Hz slowdown on a per-game basis:
+          virtually every early NES game shipped on European hardware locked to 50Hz with letterboxed borders and a
+          real, audible speed reduction, since almost nothing on this console got a dedicated PAL-optimized build the
+          way some later platforms occasionally did. Rather than repeat that footnote a hundred times, treat it as true
+          by default for anything below with a European release — it isn't a story worth telling game by game.</p>
+        <p>Every title below was individually fact-checked for release-platform accuracy, developer attribution, and
+          actual regional availability — the most common error caught was, again, a publisher (Taito, Irem, SNK, Jaleco,
+          Sir-Tech) credited as the developer when a different studio actually built the specific NES version.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="toolbar">
+    <div class="wrap toolbar-inner">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      <div class="chips" id="chips"></div>
+      <div class="result-count mono" id="resultCount"></div>
+    </div>
+  </nav>
+
+  <main class="wrap" id="chapters"></main>
+
+  <div class="wrap">
+    <p class="empty-state" id="emptyState">No cartridges match that search.</p>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-cols">
+        <div>
+          <h3>Regional-exclusivity curios worth knowing</h3>
+          <ul>
+            <li><strong>Elite</strong> (1991) — released only in Europe. No North American or Japanese NES release ever
+              happened, a rare full reversal of this collection's usual pattern.</li>
+            <li><strong>Gimmick!</strong> (1992 Japan, 1993 as "Mr. Gimmick" in Scandinavia only) — Sunsoft of America
+              rejected it for North America outright; it never released there.</li>
+            <li><strong>StarTropics</strong> (1990) — never released in Japan at all, one of the few Nintendo-published
+              NES games built exclusively for the West.</li>
+            <li><strong>R.C. Pro-Am</strong> (1988) — also never released in Japan, day-and-date in North America and
+              Europe instead.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sources &amp; further reading</h3>
+          <ul>
+            <li><a href="https://www.nintendolife.com/guides/50-best-nes-games-of-all-time" target="_blank"
+                rel="noopener">Nintendo Life — 50 Best NES Games Of All Time</a></li>
+            <li><a href="https://www.denofgeek.com/games/underrated-nes-games/" target="_blank" rel="noopener">Den of
+                Geek — 25 Underrated NES Games</a></li>
+            <li><a href="https://retrododo.com/best-nes-games/" target="_blank" rel="noopener">RetroDodo — The 25
+                Greatest NES Games Of All Time</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/List_of_Nintendo_Entertainment_System_games" target="_blank"
+                rel="noopener">Wikipedia — List of Nintendo Entertainment System games</a></li>
+            <li><a href="https://tcrf.net/Category:NES_games" target="_blank" rel="noopener">The Cutting Room Floor —
+                NES games</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-fine">All 100 titles were individually fact-checked for title accuracy, release year and region,
+        developer, and NES platform compatibility before publication.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/collection.js" data-src="../data/nes.json"></script>
 </body>
+
 </html>

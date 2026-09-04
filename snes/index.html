@@ -1,93 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Console Explorer's Collection — 100 Best SNES Games</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Karla:wght@400;500;600;700&family=Overpass+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/base.css">
-<link rel="stylesheet" href="../assets/css/theme-snes.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Console Explorer's Collection — 100 Best SNES Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titan+One&family=Karla:wght@400;500;600;700&family=Overpass+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/theme-snes.css">
+  <script data-goatcounter="https://diastro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
+
 <body>
-<header class="hero">
-  <div class="wrap">
-    <div class="eyebrow"><span class="dot"></span> SNES-001 &middot; 1990&ndash;1997</div>
-    <h1>The Console Explorer's <em>Collection</em></h1>
-    <p class="hero-lede">One hundred games for the 16-bit generation's defining console — from Nintendo's own genre-redefining classics to the Japan-only RPGs, cancelled cartridges, and PAL-exclusive rarities that never crossed every border.</p>
-    <div class="hero-meta">
-      <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
-      <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
-      <div class="stat"><span class="num mono">1990&ndash;1997</span><span class="label">SNES releases</span></div>
-    </div>
-  </div>
-</header>
-
-<section class="note">
-  <div class="wrap">
-    <div class="note-card">
-      <h2>A note from the curator</h2>
-      <p>The SNES might be the hardest platform yet to cut down to 100 — it's the console most people mean when they say "16-bit classic," and its library is deep in every genre at once. This collection spreads across Nintendo's own foundational run (Mario, Zelda, Metroid, Kirby, Donkey Kong Country), Square and Enix's golden age of console RPGs, and an unusually large tail of Japan-only RPGs that stayed there for a decade or more before anyone in the West could play them officially.</p>
-      <p>Release years follow this project's standing convention: European release year first where one exists, Japanese and/or North American year noted secondarily. Where a game never received a European cartridge release at all — which turns out to be true for a striking number of the RPG chapter's Japan-built titles, and for several of the deepest cult-classic RPGs that never left Japan in any region — the North American or Japanese year is shown instead with an explicit note.</p>
-      <p>This build also introduces a leaner research process: well-established, unambiguous titles were drawn straight from existing knowledge rather than independently re-verified, and dedicated research went specifically toward the games carrying a real regional-exclusivity claim, an unfamiliar credit, or a title that differs by region — the same discipline a print encyclopedia would use, spending its fact-checking budget where the risk of being wrong is actually concentrated.</p>
-      <p>Every researched title was checked for release-platform accuracy, developer attribution, and actual regional availability — the recurring error pattern from every prior platform held true here too: a publisher credited as developer when a different studio built the specific SNES version.</p>
-    </div>
-  </div>
-</section>
-
-<nav class="toolbar">
-  <div class="wrap toolbar-inner">
-    <div class="search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
-    </div>
-    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-    <div class="chips" id="chips"></div>
-    <div class="result-count mono" id="resultCount"></div>
-  </div>
-</nav>
-
-<main class="wrap" id="chapters"></main>
-
-<div class="wrap"><p class="empty-state" id="emptyState">No cartridges match that search.</p></div>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-cols">
-      <div>
-        <h3>Japan-only titles (never officially released in the West)</h3>
-        <ul>
-          <li>Tales of Phantasia (1995)</li>
-          <li>Live A Live (1994)</li>
-          <li>Front Mission (1995)</li>
-          <li>Tactics Ogre: Let Us Cling Together (1995)</li>
-          <li>Clock Tower (1995)</li>
-          <li>Bahamut Lagoon (1996)</li>
-          <li>Star Ocean (1996)</li>
-          <li>Umihara Kawase (1994)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Star Fox 2 — a cancelled game that shipped 22 years late</h3>
-        <ul>
-          <li>Completed to roughly 95% and ready for an August 1995 release, Star Fox 2 was shelved when Nintendo judged its 16-bit visuals would look dated next to the incoming PlayStation and Saturn. It finally released commercially in September 2017, bundled exclusively with the SNES Classic Edition — one of the longest gaps between "finished" and "released" in game history.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Sources &amp; further reading</h3>
-        <ul>
-          <li><a href="https://en.wikipedia.org/wiki/List_of_Super_Nintendo_Entertainment_System_games" target="_blank" rel="noopener">Wikipedia — List of Super Nintendo Entertainment System games</a></li>
-          <li><a href="https://www.nintendolife.com/guides/best-snes-games" target="_blank" rel="noopener">Nintendo Life — Best SNES Games Of All Time</a></li>
-          <li><a href="https://retrododo.com/best-snes-games/" target="_blank" rel="noopener">RetroDodo — The Best SNES Games Of All Time</a></li>
-          <li><a href="https://www.denofgeek.com/games/best-snes-games/" target="_blank" rel="noopener">Den of Geek — The Best SNES Games</a></li>
-        </ul>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> SNES-001 &middot; 1990&ndash;1997</div>
+      <h1>The Console Explorer's <em>Collection</em></h1>
+      <p class="hero-lede">One hundred games for the 16-bit generation's defining console — from Nintendo's own
+        genre-redefining classics to the Japan-only RPGs, cancelled cartridges, and PAL-exclusive rarities that never
+        crossed every border.</p>
+      <div class="hero-meta">
+        <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
+        <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
+        <div class="stat"><span class="num mono">1990&ndash;1997</span><span class="label">SNES releases</span></div>
       </div>
     </div>
-    <p class="footer-fine">All 100 titles were checked for title accuracy, release year and region, developer, and SNES platform compatibility before publication.</p>
-  </div>
-</footer>
+  </header>
 
-<script src="../assets/collection.js" data-src="../data/snes.json"></script>
+  <section class="note">
+    <div class="wrap">
+      <div class="note-card">
+        <h2>A note from the curator</h2>
+        <p>The SNES might be the hardest platform yet to cut down to 100 — it's the console most people mean when they
+          say "16-bit classic," and its library is deep in every genre at once. This collection spreads across
+          Nintendo's own foundational run (Mario, Zelda, Metroid, Kirby, Donkey Kong Country), Square and Enix's golden
+          age of console RPGs, and an unusually large tail of Japan-only RPGs that stayed there for a decade or more
+          before anyone in the West could play them officially.</p>
+        <p>Release years follow this project's standing convention: European release year first where one exists,
+          Japanese and/or North American year noted secondarily. Where a game never received a European cartridge
+          release at all — which turns out to be true for a striking number of the RPG chapter's Japan-built titles, and
+          for several of the deepest cult-classic RPGs that never left Japan in any region — the North American or
+          Japanese year is shown instead with an explicit note.</p>
+        <p>This build also introduces a leaner research process: well-established, unambiguous titles were drawn
+          straight from existing knowledge rather than independently re-verified, and dedicated research went
+          specifically toward the games carrying a real regional-exclusivity claim, an unfamiliar credit, or a title
+          that differs by region — the same discipline a print encyclopedia would use, spending its fact-checking budget
+          where the risk of being wrong is actually concentrated.</p>
+        <p>Every researched title was checked for release-platform accuracy, developer attribution, and actual regional
+          availability — the recurring error pattern from every prior platform held true here too: a publisher credited
+          as developer when a different studio built the specific SNES version.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="toolbar">
+    <div class="wrap toolbar-inner">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      <div class="chips" id="chips"></div>
+      <div class="result-count mono" id="resultCount"></div>
+    </div>
+  </nav>
+
+  <main class="wrap" id="chapters"></main>
+
+  <div class="wrap">
+    <p class="empty-state" id="emptyState">No cartridges match that search.</p>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-cols">
+        <div>
+          <h3>Japan-only titles (never officially released in the West)</h3>
+          <ul>
+            <li>Tales of Phantasia (1995)</li>
+            <li>Live A Live (1994)</li>
+            <li>Front Mission (1995)</li>
+            <li>Tactics Ogre: Let Us Cling Together (1995)</li>
+            <li>Clock Tower (1995)</li>
+            <li>Bahamut Lagoon (1996)</li>
+            <li>Star Ocean (1996)</li>
+            <li>Umihara Kawase (1994)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Star Fox 2 — a cancelled game that shipped 22 years late</h3>
+          <ul>
+            <li>Completed to roughly 95% and ready for an August 1995 release, Star Fox 2 was shelved when Nintendo
+              judged its 16-bit visuals would look dated next to the incoming PlayStation and Saturn. It finally
+              released commercially in September 2017, bundled exclusively with the SNES Classic Edition — one of the
+              longest gaps between "finished" and "released" in game history.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sources &amp; further reading</h3>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/List_of_Super_Nintendo_Entertainment_System_games"
+                target="_blank" rel="noopener">Wikipedia — List of Super Nintendo Entertainment System games</a></li>
+            <li><a href="https://www.nintendolife.com/guides/best-snes-games" target="_blank" rel="noopener">Nintendo
+                Life — Best SNES Games Of All Time</a></li>
+            <li><a href="https://retrododo.com/best-snes-games/" target="_blank" rel="noopener">RetroDodo — The Best
+                SNES Games Of All Time</a></li>
+            <li><a href="https://www.denofgeek.com/games/best-snes-games/" target="_blank" rel="noopener">Den of Geek —
+                The Best SNES Games</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-fine">All 100 titles were checked for title accuracy, release year and region, developer, and
+        SNES platform compatibility before publication.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/collection.js" data-src="../data/snes.json"></script>
 </body>
+
 </html>

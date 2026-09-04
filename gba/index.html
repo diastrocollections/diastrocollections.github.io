@@ -1,86 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Advance Explorer's Collection — 100 Best Game Boy Advance Games</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fragment+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/base.css">
-<link rel="stylesheet" href="../assets/css/theme-gba.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Advance Explorer's Collection — 100 Best Game Boy Advance Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fragment+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/theme-gba.css">
+  <script data-goatcounter="https://diastro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
+
 <body>
-<header class="hero">
-  <div class="wrap">
-    <div class="eyebrow"><span class="dot"></span> AGB-001 &middot; 2001&ndash;2006</div>
-    <h1>The Advance Explorer's <em>Collection</em></h1>
-    <p class="hero-lede">One hundred games for the console that made 32-bit portable — a genre-spanning tour of the Game Boy Advance's library, from launch-week Nintendo remasters to the Japan-only RPGs that never made the trip West.</p>
-    <div class="hero-meta">
-      <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
-      <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
-      <div class="stat"><span class="num mono">2001&ndash;2006</span><span class="label">Game Boy Advance releases</span></div>
-    </div>
-  </div>
-</header>
-
-<section class="note">
-  <div class="wrap">
-    <div class="note-card">
-      <h2>A note from the curator</h2>
-      <p>The Game Boy Advance has the deepest, most mainstream-friendly library of any platform in this series so far, which makes the temptation to just list a top-100-by-Metacritic even stronger — and even less interesting. This collection instead spreads across everything the GBA actually did well: Nintendo's own remasters and originals, four generations of Castlevania and Mega Man handheld spin-offs, an unusually strong run of Japan-only tactical and Summon-Night-style RPGs, several genuinely good movie and toy tie-ins, and a shooter chapter that punches well above the hardware's weight class.</p>
-      <p>Release years follow the North American release date where one exists. Several entries here have real gaps between their Japanese and North American release — sometimes by years, not months — and that gap is called out directly in the game's blurb or in the footer for anything that never left Japan at all.</p>
-      <p>Every title below was individually fact-checked for release-platform accuracy and developer attribution — the most common error caught and corrected was a publisher (Konami, Sega, Namco, Rockstar) being credited as the developer when a separate studio actually built the game.</p>
-      <p>A regional pass turned up its own quirks worth flagging: a run of Atlus-published RPGs (Riviera, the two Summon Night: Swordcraft Story games, Tactics Ogre: The Knight of Lodis) that reached Japan and North America but never got a European Game Boy Advance release at all; Yggdra Union, which only reached Europe in a limited print through select countries like Italy and France; Drill Dozer, which stayed Europe-less until a 2016 Wii U Virtual Console release; and Mr. Driller 2 and The Pinball of the Dead, both of which broke the usual Japan-first pattern — the former reached Europe over a year before North America, and the latter launched in North America a few weeks before Japan.</p>
-    </div>
-  </div>
-</section>
-
-<nav class="toolbar">
-  <div class="wrap toolbar-inner">
-    <div class="search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
-    </div>
-    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-    <div class="chips" id="chips"></div>
-    <div class="result-count mono" id="resultCount"></div>
-  </div>
-</nav>
-
-<main class="wrap" id="chapters"></main>
-
-<div class="wrap"><p class="empty-state" id="emptyState">No cartridges match that search.</p></div>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-cols">
-      <div>
-        <h3>Japan-only titles (no North American release)</h3>
-        <ul>
-          <li>Kuru Kuru Kururin (2001, Japan/Europe)</li>
-          <li>Rhythm Tengoku (2006, Japan)</li>
-          <li>Mother 3 (2006, Japan)</li>
-          <li>Densetsu no Starfy (2002, Japan)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Sources &amp; further reading</h3>
-        <ul>
-          <li><a href="https://en.wikipedia.org/wiki/Game_Boy_Advance_games_listed_among_the_best" target="_blank" rel="noopener">Wikipedia — Game Boy Advance games listed among the best</a></li>
-          <li><a href="https://racketboy.com/retro/best-undiscovered-nintendo-game-boy-advance-gba-games" target="_blank" rel="noopener">Racketboy — The Best Undiscovered Game Boy Advance Games</a></li>
-          <li><a href="https://www.gamesradar.com/best-gba-games/" target="_blank" rel="noopener">GamesRadar+ — The 25 Best Game Boy Advance Games of All Time</a></li>
-          <li><a href="https://www.denofgeek.com/games/underrated-game-boy-advance-games/" target="_blank" rel="noopener">Den of Geek — 15 Underrated Game Boy Advance Games</a></li>
-          <li><a href="https://profanboy.com/best-gba-fighting-games/" target="_blank" rel="noopener">ProFanboy — 10 Best GBA Fighting Games of All Time</a></li>
-          <li><a href="https://altarofgaming.com/best-game-boy-advance-shooter-games/" target="_blank" rel="noopener">Altar of Gaming — 13 Best Game Boy Advance Shooter Games</a></li>
-          <li><a href="https://infinityretro.com/best-gba-hidden-gems/" target="_blank" rel="noopener">Infinity Retro — Top 15 Best GBA Hidden Gems</a></li>
-        </ul>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> AGB-001 &middot; 2001&ndash;2006</div>
+      <h1>The Advance Explorer's <em>Collection</em></h1>
+      <p class="hero-lede">One hundred games for the console that made 32-bit portable — a genre-spanning tour of the
+        Game Boy Advance's library, from launch-week Nintendo remasters to the Japan-only RPGs that never made the trip
+        West.</p>
+      <div class="hero-meta">
+        <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
+        <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
+        <div class="stat"><span class="num mono">2001&ndash;2006</span><span class="label">Game Boy Advance
+            releases</span></div>
       </div>
     </div>
-    <p class="footer-fine">All 100 titles were individually fact-checked for title accuracy, release year, developer, and Game Boy Advance platform compatibility before publication.</p>
-  </div>
-</footer>
+  </header>
 
-<script src="../assets/collection.js" data-src="../data/gba.json"></script>
+  <section class="note">
+    <div class="wrap">
+      <div class="note-card">
+        <h2>A note from the curator</h2>
+        <p>The Game Boy Advance has the deepest, most mainstream-friendly library of any platform in this series so far,
+          which makes the temptation to just list a top-100-by-Metacritic even stronger — and even less interesting.
+          This collection instead spreads across everything the GBA actually did well: Nintendo's own remasters and
+          originals, four generations of Castlevania and Mega Man handheld spin-offs, an unusually strong run of
+          Japan-only tactical and Summon-Night-style RPGs, several genuinely good movie and toy tie-ins, and a shooter
+          chapter that punches well above the hardware's weight class.</p>
+        <p>Release years follow the North American release date where one exists. Several entries here have real gaps
+          between their Japanese and North American release — sometimes by years, not months — and that gap is called
+          out directly in the game's blurb or in the footer for anything that never left Japan at all.</p>
+        <p>Every title below was individually fact-checked for release-platform accuracy and developer attribution — the
+          most common error caught and corrected was a publisher (Konami, Sega, Namco, Rockstar) being credited as the
+          developer when a separate studio actually built the game.</p>
+        <p>A regional pass turned up its own quirks worth flagging: a run of Atlus-published RPGs (Riviera, the two
+          Summon Night: Swordcraft Story games, Tactics Ogre: The Knight of Lodis) that reached Japan and North America
+          but never got a European Game Boy Advance release at all; Yggdra Union, which only reached Europe in a limited
+          print through select countries like Italy and France; Drill Dozer, which stayed Europe-less until a 2016 Wii U
+          Virtual Console release; and Mr. Driller 2 and The Pinball of the Dead, both of which broke the usual
+          Japan-first pattern — the former reached Europe over a year before North America, and the latter launched in
+          North America a few weeks before Japan.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="toolbar">
+    <div class="wrap toolbar-inner">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      <div class="chips" id="chips"></div>
+      <div class="result-count mono" id="resultCount"></div>
+    </div>
+  </nav>
+
+  <main class="wrap" id="chapters"></main>
+
+  <div class="wrap">
+    <p class="empty-state" id="emptyState">No cartridges match that search.</p>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-cols">
+        <div>
+          <h3>Japan-only titles (no North American release)</h3>
+          <ul>
+            <li>Kuru Kuru Kururin (2001, Japan/Europe)</li>
+            <li>Rhythm Tengoku (2006, Japan)</li>
+            <li>Mother 3 (2006, Japan)</li>
+            <li>Densetsu no Starfy (2002, Japan)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sources &amp; further reading</h3>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Game_Boy_Advance_games_listed_among_the_best" target="_blank"
+                rel="noopener">Wikipedia — Game Boy Advance games listed among the best</a></li>
+            <li><a href="https://racketboy.com/retro/best-undiscovered-nintendo-game-boy-advance-gba-games"
+                target="_blank" rel="noopener">Racketboy — The Best Undiscovered Game Boy Advance Games</a></li>
+            <li><a href="https://www.gamesradar.com/best-gba-games/" target="_blank" rel="noopener">GamesRadar+ — The 25
+                Best Game Boy Advance Games of All Time</a></li>
+            <li><a href="https://www.denofgeek.com/games/underrated-game-boy-advance-games/" target="_blank"
+                rel="noopener">Den of Geek — 15 Underrated Game Boy Advance Games</a></li>
+            <li><a href="https://profanboy.com/best-gba-fighting-games/" target="_blank" rel="noopener">ProFanboy — 10
+                Best GBA Fighting Games of All Time</a></li>
+            <li><a href="https://altarofgaming.com/best-game-boy-advance-shooter-games/" target="_blank"
+                rel="noopener">Altar of Gaming — 13 Best Game Boy Advance Shooter Games</a></li>
+            <li><a href="https://infinityretro.com/best-gba-hidden-gems/" target="_blank" rel="noopener">Infinity Retro
+                — Top 15 Best GBA Hidden Gems</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-fine">All 100 titles were individually fact-checked for title accuracy, release year, developer,
+        and Game Boy Advance platform compatibility before publication.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/collection.js" data-src="../data/gba.json"></script>
 </body>
+
 </html>

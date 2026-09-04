@@ -1,121 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Spectrum Explorer's Collection — 100 Best Game Boy Color Games</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Sora:wght@400;500;600;700&family=Martian+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/base.css">
-<link rel="stylesheet" href="../assets/css/theme-gbc.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectrum Explorer's Collection — 100 Best Game Boy Color Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Sora:wght@400;500;600;700&family=Martian+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/theme-gbc.css">
+  <script data-goatcounter="https://diastro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
+
 <body>
-<header class="hero">
-  <span class="bubble b1"></span>
-  <span class="bubble b2"></span>
-  <span class="bubble b3"></span>
-  <span class="bubble b4"></span>
-  <div class="wrap">
-    <div class="eyebrow"><span class="dot"></span> CGB-001 &middot; 1998&ndash;2003</div>
-    <h1>The Spectrum Explorer's <em>Collection</em></h1>
-    <p class="hero-lede">One hundred games built for the console that put "Color" in its own name — a genre-spanning tour of the Game Boy Color's own library, separate from and never repeating its monochrome predecessor's list.</p>
-    <div class="hero-meta">
-      <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
-      <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
-      <div class="stat"><span class="num mono">1998&ndash;2003</span><span class="label">Game Boy Color releases</span></div>
-    </div>
-  </div>
-</header>
-
-<section class="note">
-  <div class="wrap">
-    <div class="note-card">
-      <h2>A note from the curator</h2>
-      <p>The Game Boy Color gets treated by a lot of "best of" lists as an afterthought to the monochrome Game Boy or a warm-up act for the GBA — but it had a genuine identity of its own: a huge Pokémon-driven monster-collecting boom, Nintendo's first color Zelda duology, an unlikely run of real-time strategy experiments, and a deep well of Japan-only curios that never made it past import shops. This collection deliberately avoids re-listing anything already covered in the original monochrome Game Boy collection — everything here either requires color hardware outright or was built specifically to take advantage of it.</p>
-      <p>Release years follow the North American release date where one exists. For games that never left Japan or Europe, the original regional release year is used instead and the game is marked accordingly in its chapter — this collection leans on more of those than most, since a real chunk of the GBC's most interesting library never crossed the Pacific.</p>
-      <p>Every title below was individually fact-checked for release-platform accuracy — several were caught mid-draft as Game Boy Advance mix-ups or publisher/developer mix-ups and corrected before publication.</p>
-      <p>A short follow-up pass added further European context to this page after it first published. Where a PAL release carries a different box title, a real content difference, or a release gap of many months, that's folded directly into the relevant description below — Metal Gear: Ghost Babel's Japan-and-Europe-only bonus radio broadcast that North America's cartridge cut, Resident Evil Gaiden actually reaching Europe before it reached Japan or North America, or Pokémon Pinball's fifteen-month wait for a European release. It also turned up this platform's other, less-told story: a long list of games North America got that Europe simply never did, from Crystalis and Shantae to the English-language Dragon Warrior I &amp; II and III remakes — now listed in their own section in the footer below, alongside the existing list of Japan/Europe-only titles that Europe (or Japan) got and North America didn't. Years above still generally mark the North American release; this is a targeted pass adding context, not a rebuild of the page's existing regional handling, which was already unusually thorough for a "best of" list.</p>
-    </div>
-  </div>
-</section>
-
-<nav class="toolbar">
-  <div class="wrap toolbar-inner">
-    <div class="search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-      <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
-    </div>
-    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
-    <div class="chips" id="chips"></div>
-    <div class="result-count mono" id="resultCount"></div>
-  </div>
-</nav>
-
-<main class="wrap" id="chapters"></main>
-
-<div class="wrap"><p class="empty-state" id="emptyState">No cartridges match that search.</p></div>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-cols">
-      <div>
-        <h3>Japan/Europe-only titles (no North American release)</h3>
-        <ul>
-          <li>Game Boy Wars 2 (1998, Japan)</li>
-          <li>Game Boy Wars 3 (2001, Japan)</li>
-          <li>Supercross Freestyle (2000, Europe)</li>
-          <li>Tales of Phantasia: Narikiri Dungeon (2000, Japan)</li>
-          <li>Shin Megami Tensei: Devil Children — Black/Red/White Book (2000–2001, Japan)</li>
-          <li>Grandia: Parallel Trippers (2000, Japan)</li>
-          <li>Konami GB Collection Vol. 4 (2000, Japan/Europe)</li>
-          <li>Magical Chase GB (2000, Japan)</li>
-          <li>Koto Battle: Tengai no Moribito (2001, Japan)</li>
-          <li>Kettō Transformers Beast Wars (1999, Japan)</li>
-          <li>From TV Animation One Piece: Maboroshi no Grand Line Boukenhen! (2002, Japan)</li>
-          <li>Daiku no Gen-san: Kachikachi no Tonkachi ga Kachi (2000, Japan)</li>
-          <li>Meitantei Conan: Karakuri Jiin Satsujin Jiken (2000, Japan)</li>
-          <li>John Romero's Daikatana (2000, Europe/Japan — North American release was cancelled)</li>
-          <li>Puchi Carat (1999, Japan/Europe — North American release was cancelled)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Released in North America, never in Europe</h3>
-        <ul>
-          <li>Dragon Warrior Monsters 2 (2001)</li>
-          <li>Robopon: Sun Version (2000)</li>
-          <li>Kirby Tilt 'n' Tumble (2001)</li>
-          <li>Crystalis (2000)</li>
-          <li>Shantae (2002 — its first European release came 11 years later, via 2013 Virtual Console)</li>
-          <li>Bionic Commando: Elite Forces (2000)</li>
-          <li>NBA 3 on 3 featuring Kobe Bryant (1999)</li>
-          <li>Pocket Bowling (1999)</li>
-          <li>Warlocked (2000)</li>
-          <li>Dragon Warrior I &amp; II (2000)</li>
-          <li>Dragon Warrior III (2001)</li>
-          <li>Revelations: The Demon Slayer (1999)</li>
-          <li>Project S-11 (2001)</li>
-          <li>Hexcite: The Shapes of Victory (1999)</li>
-          <li>Monster Rancher Explorer (2000)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Sources &amp; further reading</h3>
-        <ul>
-          <li><a href="https://www.nintendolife.com/guides/50-best-game-boy-color-gbc-games-of-all-time" target="_blank" rel="noopener">Nintendo Life — 50 Best Game Boy Color Games of All Time</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Video_games_listed_among_the_best_of_the_Game_Boy_and_Game_Boy_Color" target="_blank" rel="noopener">Wikipedia — Video games listed among the best of the Game Boy and Game Boy Color</a></li>
-          <li><a href="https://www.dualshockers.com/game-boy-color-hidden-gems/" target="_blank" rel="noopener">DualShockers — 10 Game Boy Color Hidden Gems</a></li>
-          <li><a href="https://infinityretro.com/best-game-boy-color-hidden-gems/" target="_blank" rel="noopener">Infinity Retro — Top 15 Best Game Boy Color Hidden Gems</a></li>
-          <li><a href="https://screenrant.com/game-boy-color-gbc-hidden-gems-undiscovered-nintendo/" target="_blank" rel="noopener">ScreenRant — Game Boy Color Hidden Gems That Were Ahead Of Their Time</a></li>
-          <li><a href="https://gamerant.com/best-game-boy-color-gbc-strategy-games/" target="_blank" rel="noopener">Game Rant — 9 Best Game Boy Color Strategy Games, Ranked</a></li>
-          <li><a href="https://www.thegamer.com/game-boy-color-games-stuck-japan/" target="_blank" rel="noopener">TheGamer — 10 Classic Game Boy Color Games Still Stuck In Japan</a></li>
-        </ul>
+  <header class="hero">
+    <span class="bubble b1"></span>
+    <span class="bubble b2"></span>
+    <span class="bubble b3"></span>
+    <span class="bubble b4"></span>
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> CGB-001 &middot; 1998&ndash;2003</div>
+      <h1>The Spectrum Explorer's <em>Collection</em></h1>
+      <p class="hero-lede">One hundred games built for the console that put "Color" in its own name — a genre-spanning
+        tour of the Game Boy Color's own library, separate from and never repeating its monochrome predecessor's list.
+      </p>
+      <div class="hero-meta">
+        <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
+        <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
+        <div class="stat"><span class="num mono">1998&ndash;2003</span><span class="label">Game Boy Color
+            releases</span></div>
       </div>
     </div>
-    <p class="footer-fine">All 100 titles were individually fact-checked for title accuracy, release year, developer, and Game Boy Color platform compatibility before publication.</p>
-  </div>
-</footer>
+  </header>
 
-<script src="../assets/collection.js" data-src="../data/gbc.json"></script>
+  <section class="note">
+    <div class="wrap">
+      <div class="note-card">
+        <h2>A note from the curator</h2>
+        <p>The Game Boy Color gets treated by a lot of "best of" lists as an afterthought to the monochrome Game Boy or
+          a warm-up act for the GBA — but it had a genuine identity of its own: a huge Pokémon-driven monster-collecting
+          boom, Nintendo's first color Zelda duology, an unlikely run of real-time strategy experiments, and a deep well
+          of Japan-only curios that never made it past import shops. This collection deliberately avoids re-listing
+          anything already covered in the original monochrome Game Boy collection — everything here either requires
+          color hardware outright or was built specifically to take advantage of it.</p>
+        <p>Release years follow the North American release date where one exists. For games that never left Japan or
+          Europe, the original regional release year is used instead and the game is marked accordingly in its chapter —
+          this collection leans on more of those than most, since a real chunk of the GBC's most interesting library
+          never crossed the Pacific.</p>
+        <p>Every title below was individually fact-checked for release-platform accuracy — several were caught mid-draft
+          as Game Boy Advance mix-ups or publisher/developer mix-ups and corrected before publication.</p>
+        <p>A short follow-up pass added further European context to this page after it first published. Where a PAL
+          release carries a different box title, a real content difference, or a release gap of many months, that's
+          folded directly into the relevant description below — Metal Gear: Ghost Babel's Japan-and-Europe-only bonus
+          radio broadcast that North America's cartridge cut, Resident Evil Gaiden actually reaching Europe before it
+          reached Japan or North America, or Pokémon Pinball's fifteen-month wait for a European release. It also turned
+          up this platform's other, less-told story: a long list of games North America got that Europe simply never
+          did, from Crystalis and Shantae to the English-language Dragon Warrior I &amp; II and III remakes — now listed
+          in their own section in the footer below, alongside the existing list of Japan/Europe-only titles that Europe
+          (or Japan) got and North America didn't. Years above still generally mark the North American release; this is
+          a targeted pass adding context, not a rebuild of the page's existing regional handling, which was already
+          unusually thorough for a "best of" list.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="toolbar">
+    <div class="wrap toolbar-inner">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      <div class="chips" id="chips"></div>
+      <div class="result-count mono" id="resultCount"></div>
+    </div>
+  </nav>
+
+  <main class="wrap" id="chapters"></main>
+
+  <div class="wrap">
+    <p class="empty-state" id="emptyState">No cartridges match that search.</p>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-cols">
+        <div>
+          <h3>Japan/Europe-only titles (no North American release)</h3>
+          <ul>
+            <li>Game Boy Wars 2 (1998, Japan)</li>
+            <li>Game Boy Wars 3 (2001, Japan)</li>
+            <li>Supercross Freestyle (2000, Europe)</li>
+            <li>Tales of Phantasia: Narikiri Dungeon (2000, Japan)</li>
+            <li>Shin Megami Tensei: Devil Children — Black/Red/White Book (2000–2001, Japan)</li>
+            <li>Grandia: Parallel Trippers (2000, Japan)</li>
+            <li>Konami GB Collection Vol. 4 (2000, Japan/Europe)</li>
+            <li>Magical Chase GB (2000, Japan)</li>
+            <li>Koto Battle: Tengai no Moribito (2001, Japan)</li>
+            <li>Kettō Transformers Beast Wars (1999, Japan)</li>
+            <li>From TV Animation One Piece: Maboroshi no Grand Line Boukenhen! (2002, Japan)</li>
+            <li>Daiku no Gen-san: Kachikachi no Tonkachi ga Kachi (2000, Japan)</li>
+            <li>Meitantei Conan: Karakuri Jiin Satsujin Jiken (2000, Japan)</li>
+            <li>John Romero's Daikatana (2000, Europe/Japan — North American release was cancelled)</li>
+            <li>Puchi Carat (1999, Japan/Europe — North American release was cancelled)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Released in North America, never in Europe</h3>
+          <ul>
+            <li>Dragon Warrior Monsters 2 (2001)</li>
+            <li>Robopon: Sun Version (2000)</li>
+            <li>Kirby Tilt 'n' Tumble (2001)</li>
+            <li>Crystalis (2000)</li>
+            <li>Shantae (2002 — its first European release came 11 years later, via 2013 Virtual Console)</li>
+            <li>Bionic Commando: Elite Forces (2000)</li>
+            <li>NBA 3 on 3 featuring Kobe Bryant (1999)</li>
+            <li>Pocket Bowling (1999)</li>
+            <li>Warlocked (2000)</li>
+            <li>Dragon Warrior I &amp; II (2000)</li>
+            <li>Dragon Warrior III (2001)</li>
+            <li>Revelations: The Demon Slayer (1999)</li>
+            <li>Project S-11 (2001)</li>
+            <li>Hexcite: The Shapes of Victory (1999)</li>
+            <li>Monster Rancher Explorer (2000)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sources &amp; further reading</h3>
+          <ul>
+            <li><a href="https://www.nintendolife.com/guides/50-best-game-boy-color-gbc-games-of-all-time"
+                target="_blank" rel="noopener">Nintendo Life — 50 Best Game Boy Color Games of All Time</a></li>
+            <li><a
+                href="https://en.wikipedia.org/wiki/Video_games_listed_among_the_best_of_the_Game_Boy_and_Game_Boy_Color"
+                target="_blank" rel="noopener">Wikipedia — Video games listed among the best of the Game Boy and Game
+                Boy Color</a></li>
+            <li><a href="https://www.dualshockers.com/game-boy-color-hidden-gems/" target="_blank"
+                rel="noopener">DualShockers — 10 Game Boy Color Hidden Gems</a></li>
+            <li><a href="https://infinityretro.com/best-game-boy-color-hidden-gems/" target="_blank"
+                rel="noopener">Infinity Retro — Top 15 Best Game Boy Color Hidden Gems</a></li>
+            <li><a href="https://screenrant.com/game-boy-color-gbc-hidden-gems-undiscovered-nintendo/" target="_blank"
+                rel="noopener">ScreenRant — Game Boy Color Hidden Gems That Were Ahead Of Their Time</a></li>
+            <li><a href="https://gamerant.com/best-game-boy-color-gbc-strategy-games/" target="_blank"
+                rel="noopener">Game Rant — 9 Best Game Boy Color Strategy Games, Ranked</a></li>
+            <li><a href="https://www.thegamer.com/game-boy-color-games-stuck-japan/" target="_blank"
+                rel="noopener">TheGamer — 10 Classic Game Boy Color Games Still Stuck In Japan</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-fine">All 100 titles were individually fact-checked for title accuracy, release year, developer,
+        and Game Boy Color platform compatibility before publication.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/collection.js" data-src="../data/gbc.json"></script>
 </body>
+
 </html>
