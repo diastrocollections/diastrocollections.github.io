@@ -11,8 +11,6 @@
   --accent-ink: #FFFFFF;
   --line: #DAD3C2;
   --line-strong: #C2BAA5;
-  --chrome-1: #F4F4F4;
-  --chrome-2: #C9C9C9;
   --shadow: 0 1px 2px rgba(24,20,15,0.06), 0 8px 20px -12px rgba(24,20,15,0.18);
   --sat: 72%;
   --lig: 42%;
@@ -43,10 +41,8 @@
     --ink-faint: #766F5F;
     --accent: #FF5A3C;
     --accent-ink: #16110C;
-    --line: #332F29;
-    --line-strong: #454037;
-    --chrome-1: #3a3a3a;
-    --chrome-2: #1a1a1a;
+    --line: #4f403f;
+    --line-strong: #544443;
     --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -14px rgba(0,0,0,0.6);
     --sat: 82%;
     --lig: 62%;
@@ -65,10 +61,8 @@
   --ink-faint: #766F5F;
   --accent: #FF5A3C;
   --accent-ink: #16110C;
-  --line: #332F29;
-  --line-strong: #454037;
-  --chrome-1: #3a3a3a;
-  --chrome-2: #1a1a1a;
+  --line: #4f403f;
+  --line-strong: #544443;
   --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -14px rgba(0,0,0,0.6);
   --sat: 82%;
   --lig: 62%;
@@ -83,11 +77,13 @@
 .hero {
   background: #14100C;
   color: #F2EEE5;
+  isolation: isolate;
 }
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: -1;
   background: repeating-linear-gradient(115deg, var(--accent) 0px, var(--accent) 3px, transparent 3px, transparent 46px);
   opacity: 0.16;
   pointer-events: none;
@@ -97,13 +93,16 @@
   position: absolute;
   left: 0; right: 0; bottom: 0;
   height: 10px;
+  z-index: -1;
   background: repeating-linear-gradient(90deg, rgba(242,238,229,0.09) 0 10px, transparent 10px 20px);
 }
 .hero .wrap { max-width: 920px; text-align: center; }
+.hero .eyebrow { color: var(--ink-faint); }
 .hero .hero-lede { margin-left: auto; margin-right: auto; color: #D8D2C4; }
 .hero .hero-meta { --hero-meta-justify: center; color: #B7B0A2; }
 .hero .hero-meta strong, .hero .num { color: #F2EEE5; }
-.hero h1 { text-transform: uppercase; font-style: italic; font-weight: 900; }
+.hero h1 { text-transform: uppercase; font-style: italic; font-weight: 900; margin-left: auto; margin-right: auto; }
+.hero h1 em { font-style: italic; }
 
 .badge-row {
   display: flex;
@@ -119,7 +118,7 @@
   letter-spacing: 0.08em;
   padding: 0.3rem 0.8rem;
   border-radius: 999px;
-  background: linear-gradient(160deg, var(--chrome-1), var(--chrome-2));
+  background: linear-gradient(160deg, #F4F4F4, #C9C9C9);
   color: #14100C;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 2px 6px rgba(0,0,0,0.35);
   text-transform: uppercase;
