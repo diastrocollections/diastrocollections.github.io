@@ -1,4 +1,4 @@
-# Diastro Gaming — Explorer's Collections
+# Diastro Gaming Collections
 
 A twelve-platform field guide to classic console and handheld games — NES, Game Boy, Mega Drive, SNES, PlayStation, Nintendo 64, Game Boy Color, PlayStation 2, GameCube, Game Boy Advance, PSP, and Wii. 1,200 games across 144 genre chapters.
 
@@ -8,18 +8,18 @@ This is a static site: no build step, no server-side code. Every page fetches it
 
 ```
 site/
-├── index.html              the hub page (the tile grid linking to all 12 collections)
+├── index.html                    the hub page (the tile grid linking to all 12 collections)
 ├── assets/
-│   ├── hub.js               renders the hub's tiles + stats from data/platforms.json
-│   ├── collection.js        shared renderer used by all 12 collection pages
+│   ├── hub.js                    renders the hub's tiles + stats from data/platforms.json
+│   ├── collection.js             shared renderer used by all 12 collection pages
 │   └── css/
 │       ├── base.css              shared layout for all 12 collection pages (hero,
 │       │                         curator note, toolbar/search, card grid, footer)
-│       ├── hub.css                the hub page's own styles
-│       ├── theme-nes.css          one small file per platform: just its colors,
-│       ├── theme-gameboy.css      fonts, and visual flourishes (loaded after
-│       ├── theme-megadrive.css    base.css, so it only needs to override what
-│       ├── theme-snes.css         makes that platform look different)
+│       ├── hub.css               the hub page's own styles
+│       ├── theme-nes.css         one small file per platform: just its colors,
+│       ├── theme-gameboy.css     fonts, and visual flourishes (loaded after
+│       ├── theme-megadrive.css   base.css, so it only needs to override what
+│       ├── theme-snes.css        makes that platform look different)
 │       ├── theme-ps1.css
 │       ├── theme-n64.css
 │       ├── theme-gbc.css
@@ -29,7 +29,7 @@ site/
 │       ├── theme-psp.css
 │       └── theme-wii.css
 ├── data/
-│   ├── platforms.json        one entry per platform, feeds the hub page
+│   ├── platforms.json            one entry per platform, feeds the hub page
 │   ├── nes.json
 │   ├── gameboy.json
 │   ├── megadrive.json
@@ -42,12 +42,12 @@ site/
 │   ├── gba.json
 │   ├── psp.json
 │   └── wii.json
-├── nes/index.html            each of these is a collection page. They all share
-├── gameboy/index.html        the same HTML skeleton and assets/css/base.css,
-├── megadrive/index.html      link their own assets/css/theme-<platform>.css for
-├── snes/index.html           look and feel, and render their games through the
-├── ps1/index.html             shared assets/collection.js script, reading their
-├── n64/index.html              own data/<platform>.json file.
+├── nes/index.html                each of these is a collection page. They all share
+├── gameboy/index.html            the same HTML skeleton and assets/css/base.css,
+├── megadrive/index.html          link their own assets/css/theme-<platform>.css for
+├── snes/index.html               look and feel, and render their games through the
+├── ps1/index.html                shared assets/collection.js script, reading their
+├── n64/index.html                own data/<platform>.json file.
 ├── gbc/index.html
 ├── ps2/index.html
 ├── gamecube/index.html
