@@ -83,30 +83,6 @@ To add a game, add another `[Title, Year, Developer, Blurb]` entry to a chapter'
 
 The hub page needs no code changes — it renders however many entries are in `platforms.json`.
 
-## Running it locally
-
-Because the pages fetch JSON with `fetch()`, opening `index.html` directly from disk (a `file://` URL) won't work — browsers block that fetch for local files. Serve the folder instead:
-
-```bash
-cd site
-python3 -m http.server 8000
-# then open http://localhost:8000 in your browser
-```
-
-Or, if you have Node installed:
-
-```bash
-npx serve site
-```
-
-## Deploying to GitHub Pages
-
-1. Create a new GitHub repository and push the contents of this `site/` folder to it (the repo root should be `index.html`, `assets/`, `data/`, and the 12 platform folders — not a `site/` subfolder, unless you configure Pages to serve from `/site`).
-2. In the repo, go to **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to "Deploy from a branch," pick your default branch (usually `main`) and the `/ (root)` folder.
-4. Save. GitHub will build and publish the site at `https://<your-username>.github.io/<repo-name>/` within a minute or two.
-5. Any time you push a change to the JSON or HTML files, GitHub Pages rebuilds automatically — no build step needed on your end.
-
 ## What's shared vs. per-page
 
 - **`assets/collection.js`** is the one script every collection page uses. It reads the game data, builds the chapter/card HTML, wires up search and the theme toggle, and is the same file for all 12 pages — editing it changes behavior everywhere at once.
