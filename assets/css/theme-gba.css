@@ -1,0 +1,99 @@
+/* Diastro Gaming Collections — GBA theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #F0F1F7;
+  --surface: #FFFFFF;
+  --surface-2: #E4E5F5;
+  --ink: #1A1B2E;
+  --ink-soft: #4B4D6B;
+  --ink-faint: #8587A8;
+  --accent: #4A3F8C;
+  --accent-ink: #FFFFFF;
+  --line: #DADCEE;
+  --line-strong: #DADCEE;
+  --shadow: 0 2px 0 rgba(74,63,140,0.10);
+  --hue: 245;
+  --sat: 62%;
+  --lig: 42%;
+  --sat-soft: 62%;
+  --lig-soft: 93%;
+
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Orbitron', sans-serif;
+  --font-display-weight: 800;
+  --font-mono: 'Fragment Mono', monospace;
+
+  --card-radius: 4px;
+  --note-radius: 4px;
+  --control-radius: 3px;
+  --chip-radius: 3px;
+  --hero-border: 3px solid var(--line);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0C0D1A;
+    --surface: #14152A;
+    --surface-2: #1A1B36;
+    --ink: #E6E7FA;
+    --ink-soft: #A6A8CC;
+    --ink-faint: #6C6E96;
+    --accent: #8B7FFF;
+    --accent-ink: #0C0D1A;
+    --line: #262842;
+    --line-strong: #262842;
+    --shadow: 0 2px 0 rgba(0,0,0,0.45);
+    --sat: 75%;
+    --lig: 68%;
+    --sat-soft: 45%;
+    --lig-soft: 18%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0C0D1A;
+  --surface: #14152A;
+  --surface-2: #1A1B36;
+  --ink: #E6E7FA;
+  --ink-soft: #A6A8CC;
+  --ink-faint: #6C6E96;
+  --accent: #8B7FFF;
+  --accent-ink: #0C0D1A;
+  --line: #262842;
+  --line-strong: #262842;
+  --shadow: 0 2px 0 rgba(0,0,0,0.45);
+  --sat: 75%;
+  --lig: 68%;
+  --sat-soft: 45%;
+  --lig-soft: 18%;
+  color-scheme: dark;
+}
+
+.search input, .chip { background: var(--surface-2); }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 42px 42px;
+  opacity: 0.35;
+  mask-image: radial-gradient(ellipse 70% 55% at 50% 15%, black 30%, transparent 85%);
+  pointer-events: none;
+}
+
+.card {
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+}

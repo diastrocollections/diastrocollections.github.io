@@ -1,0 +1,82 @@
+/* Diastro Gaming Collections — GameCube theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #F5F3FA;
+  --surface: #FFFFFF;
+  --surface-2: #ECE8F7;
+  --ink: #1C1830;
+  --ink-soft: #5C5470;
+  --ink-faint: #8C84A0;
+  --accent: #4B3B87;
+  --accent-ink: #FFFFFF;
+  --line: #DCD5EC;
+  --line-strong: #C7BEE2;
+  --shadow: 0 1px 2px rgba(28,24,48,0.06), 0 8px 24px -12px rgba(28,24,48,0.18);
+  --sat: 46%;
+  --lig: 40%;
+  --sat-soft: 62%;
+  --lig-soft: 93%;
+
+  --font-body: "Work Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Unbounded", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --card-radius: 14px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131022;
+    --surface: #1C1732;
+    --surface-2: #241E3D;
+    --ink: #F1EDFA;
+    --ink-soft: #B7AECF;
+    --ink-faint: #837AA0;
+    --accent: #B6A6EE;
+    --accent-ink: #1A1530;
+    --line: #322A50;
+    --line-strong: #433A66;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
+    --sat: 58%;
+    --lig: 72%;
+    --sat-soft: 34%;
+    --lig-soft: 22%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #131022;
+  --surface: #1C1732;
+  --surface-2: #241E3D;
+  --ink: #F1EDFA;
+  --ink-soft: #B7AECF;
+  --ink-faint: #837AA0;
+  --accent: #B6A6EE;
+  --accent-ink: #1A1530;
+  --line: #322A50;
+  --line-strong: #433A66;
+  --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 28px -14px rgba(0,0,0,0.6);
+  --sat: 58%;
+  --lig: 72%;
+  --sat-soft: 34%;
+  --lig-soft: 22%;
+  color-scheme: dark;
+}
+
+.chapter { --hue: 255; }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  right: -160px;
+  width: 460px;
+  height: 460px;
+  background: radial-gradient(circle at 50% 50%, hsl(255 var(--sat-soft) var(--lig-soft)) 0%, transparent 72%);
+  pointer-events: none;
+}
+
+.card { border-left: 3px solid hsl(var(--hue) var(--sat) var(--lig)); }

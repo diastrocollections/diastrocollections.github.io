@@ -1,0 +1,97 @@
+/* Diastro Gaming Collections — NES theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #EDEAE2;
+  --surface: #FFFFFF;
+  --surface-2: #E2DDD1;
+  --ink: #201C1A;
+  --ink-soft: #55504A;
+  --ink-faint: #918A80;
+  --accent: #C8102E;
+  --accent-ink: #FFFFFF;
+  --line: #D8D2C6;
+  --line-strong: #D8D2C6;
+  --shadow: 0 2px 0 rgba(32,28,26,0.12);
+  --hue: 350;
+  --sat: 68%;
+  --lig: 45%;
+  --sat-soft: 55%;
+  --lig-soft: 92%;
+
+  --font-body: 'Figtree', sans-serif;
+  --font-display: 'Press Start 2P', monospace;
+  --font-display-weight: 400;
+  --font-mono: 'Ubuntu Mono', monospace;
+
+  --card-radius: 2px;
+  --note-radius: 4px;
+  --control-radius: 4px;
+  --chip-radius: 4px;
+  --hero-border: 6px solid var(--accent);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17140F;
+    --surface: #211C16;
+    --surface-2: #2A241D;
+    --ink: #F1EBDF;
+    --ink-soft: #B8AF9F;
+    --ink-faint: #7E7566;
+    --accent: #FF4D5E;
+    --accent-ink: #17140F;
+    --line: #35302A;
+    --line-strong: #35302A;
+    --shadow: 0 2px 0 rgba(0,0,0,0.5);
+    --sat: 80%;
+    --lig: 65%;
+    --sat-soft: 40%;
+    --lig-soft: 16%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #17140F;
+  --surface: #211C16;
+  --surface-2: #2A241D;
+  --ink: #F1EBDF;
+  --ink-soft: #B8AF9F;
+  --ink-faint: #7E7566;
+  --accent: #FF4D5E;
+  --accent-ink: #17140F;
+  --line: #35302A;
+  --line-strong: #35302A;
+  --shadow: 0 2px 0 rgba(0,0,0,0.5);
+  --sat: 80%;
+  --lig: 65%;
+  --sat-soft: 40%;
+  --lig-soft: 16%;
+  color-scheme: dark;
+}
+
+.search input, .chip { background: var(--surface-2); }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(90deg, var(--line) 0 3px, transparent 3px 24px);
+  opacity: 0.5;
+  mask-image: radial-gradient(ellipse 70% 55% at 50% 15%, black 30%, transparent 85%);
+  pointer-events: none;
+}
+
+.card {
+  border-width: 2px;
+  padding-top: 1.1rem;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+}

@@ -1,0 +1,94 @@
+/* Diastro Gaming Collections — Game Boy theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #F1EEE1;
+  --surface: #FFFFFF;
+  --surface-2: #E5E0C9;
+  --ink: #1B2411;
+  --ink-soft: #52603E;
+  --ink-faint: #7C8768;
+  --accent: #4C6B1F;
+  --accent-ink: #FFFFFF;
+  --line: #D9D4BE;
+  --line-strong: #D9D4BE;
+  --shadow: 0 2px 0 rgba(27,36,17,0.08);
+  --hue: 90;
+  --sat: 52%;
+  --lig: 30%;
+  --sat-soft: 45%;
+  --lig-soft: 90%;
+
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-display: 'Silkscreen', monospace;
+  --font-display-weight: 700;
+  --font-mono: 'DotGothic16', monospace;
+
+  --card-radius: 6px;
+  --note-radius: 6px;
+  --control-radius: 4px;
+  --chip-radius: 4px;
+  --hero-border: 3px solid var(--line);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0A100A;
+    --surface: #121A0F;
+    --surface-2: #17230F;
+    --ink: #DCEAB8;
+    --ink-soft: #97AC79;
+    --ink-faint: #64764C;
+    --accent: #9BD645;
+    --accent-ink: #0A100A;
+    --line: #24311C;
+    --line-strong: #24311C;
+    --shadow: 0 2px 0 rgba(0,0,0,0.4);
+    --sat: 58%;
+    --lig: 62%;
+    --sat-soft: 38%;
+    --lig-soft: 16%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0A100A;
+  --surface: #121A0F;
+  --surface-2: #17230F;
+  --ink: #DCEAB8;
+  --ink-soft: #97AC79;
+  --ink-faint: #64764C;
+  --accent: #9BD645;
+  --accent-ink: #0A100A;
+  --line: #24311C;
+  --line-strong: #24311C;
+  --shadow: 0 2px 0 rgba(0,0,0,0.4);
+  --sat: 58%;
+  --lig: 62%;
+  --sat-soft: 38%;
+  --lig-soft: 16%;
+  color-scheme: dark;
+}
+
+.search input, .chip { background: var(--surface-2); }
+
+.hero {
+  background:
+    linear-gradient(180deg, rgba(155,214,69,0.06), transparent 60%),
+    var(--bg);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--line) 1.1px, transparent 1.1px);
+  background-size: 14px 14px;
+  opacity: 0.55;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black 40%, transparent 90%);
+  pointer-events: none;
+}
+.hero h1 { text-shadow: 3px 3px 0 rgba(155,214,69,0.18); }
+
+.card { border-top: 6px solid hsl(var(--hue) var(--sat) var(--lig)); }

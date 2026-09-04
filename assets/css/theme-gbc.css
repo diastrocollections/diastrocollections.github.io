@@ -1,0 +1,95 @@
+/* Diastro Gaming Collections — Game Boy Color theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #F8F3FC;
+  --surface: #FFFFFF;
+  --surface-2: #EEE4FA;
+  --ink: #241B36;
+  --ink-soft: #5B4B78;
+  --ink-faint: #8B7BA8;
+  --accent: #7B2FBE;
+  --accent-ink: #FFFFFF;
+  --line: #E3D6F5;
+  --line-strong: #E3D6F5;
+  --shadow: 0 3px 0 rgba(123,47,190,0.10);
+  --hue: 280;
+  --sat: 68%;
+  --lig: 46%;
+  --sat-soft: 78%;
+  --lig-soft: 94%;
+
+  --font-body: 'Sora', sans-serif;
+  --font-display: 'Fredoka', sans-serif;
+  --font-display-weight: 700;
+  --font-mono: 'Martian Mono', monospace;
+
+  --card-radius: 20px;
+  --note-radius: 20px;
+  --control-radius: 999px;
+  --hero-border: 3px solid var(--line);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #140B22;
+    --surface: #1E1233;
+    --surface-2: #241539;
+    --ink: #F1E7FF;
+    --ink-soft: #C3A9E8;
+    --ink-faint: #8C71AD;
+    --accent: #C77DFF;
+    --accent-ink: #140B22;
+    --line: #35204F;
+    --line-strong: #35204F;
+    --shadow: 0 3px 0 rgba(0,0,0,0.45);
+    --sat: 80%;
+    --lig: 68%;
+    --sat-soft: 55%;
+    --lig-soft: 20%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #140B22;
+  --surface: #1E1233;
+  --surface-2: #241539;
+  --ink: #F1E7FF;
+  --ink-soft: #C3A9E8;
+  --ink-faint: #8C71AD;
+  --accent: #C77DFF;
+  --accent-ink: #140B22;
+  --line: #35204F;
+  --line-strong: #35204F;
+  --shadow: 0 3px 0 rgba(0,0,0,0.45);
+  --sat: 80%;
+  --lig: 68%;
+  --sat-soft: 55%;
+  --lig-soft: 20%;
+  color-scheme: dark;
+}
+
+.search input, .chip { background: var(--surface-2); }
+
+.bubble { position: absolute; border-radius: 50%; opacity: 0.5; pointer-events: none; }
+.b1 { width: 340px; height: 340px; background: radial-gradient(circle at 32% 28%, rgba(199,125,255,0.55), rgba(199,125,255,0.05) 70%); top: -120px; left: -80px; }
+.b2 { width: 260px; height: 260px; background: radial-gradient(circle at 32% 28%, rgba(255,61,127,0.42), rgba(255,61,127,0.04) 70%); top: -40px; right: 4%; }
+.b3 { width: 220px; height: 220px; background: radial-gradient(circle at 32% 28%, rgba(60,200,180,0.4), rgba(60,200,180,0.04) 70%); bottom: -100px; left: 12%; }
+.b4 { width: 180px; height: 180px; background: radial-gradient(circle at 32% 28%, rgba(255,196,30,0.4), rgba(255,196,30,0.04) 70%); bottom: -60px; right: 18%; }
+
+.card {
+  background: linear-gradient(160deg, hsl(var(--hue) var(--sat-soft) var(--lig-soft)) 0%, var(--surface) 38%);
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: -30%; right: -25%;
+  width: 70%; height: 70%;
+  background: radial-gradient(circle, hsl(var(--hue) var(--sat) var(--lig) / 0.28), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.card-idx, .card-title, .card-meta, .card-blurb { position: relative; }

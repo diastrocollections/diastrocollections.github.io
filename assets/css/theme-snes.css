@@ -1,0 +1,92 @@
+/* Diastro Gaming Collections — SNES theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #EFEBF5;
+  --surface: #FFFFFF;
+  --surface-2: #E3DCF2;
+  --ink: #241F33;
+  --ink-soft: #564C74;
+  --ink-faint: #948AAE;
+  --accent: #5C3FA3;
+  --accent-ink: #FFFFFF;
+  --line: #D9D2EA;
+  --line-strong: #D9D2EA;
+  --shadow: 0 2px 0 rgba(92,63,163,0.14);
+  --hue: 265;
+  --sat: 55%;
+  --lig: 46%;
+  --sat-soft: 55%;
+  --lig-soft: 92%;
+
+  --font-body: 'Karla', sans-serif;
+  --font-display: 'Titan One', cursive;
+  --font-display-weight: 400;
+  --font-mono: 'Overpass Mono', monospace;
+
+  --card-radius: 12px;
+  --note-radius: 12px;
+  --control-radius: 10px;
+  --hero-border: 3px solid var(--line);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #191426;
+    --surface: #221B33;
+    --surface-2: #2A2140;
+    --ink: #EDE8F7;
+    --ink-soft: #B6A9D6;
+    --ink-faint: #7A6C9C;
+    --accent: #A78BFA;
+    --accent-ink: #191426;
+    --line: #37294F;
+    --line-strong: #37294F;
+    --shadow: 0 2px 0 rgba(0,0,0,0.5);
+    --sat: 70%;
+    --lig: 72%;
+    --sat-soft: 42%;
+    --lig-soft: 18%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #191426;
+  --surface: #221B33;
+  --surface-2: #2A2140;
+  --ink: #EDE8F7;
+  --ink-soft: #B6A9D6;
+  --ink-faint: #7A6C9C;
+  --accent: #A78BFA;
+  --accent-ink: #191426;
+  --line: #37294F;
+  --line-strong: #37294F;
+  --shadow: 0 2px 0 rgba(0,0,0,0.5);
+  --sat: 70%;
+  --lig: 72%;
+  --sat-soft: 42%;
+  --lig-soft: 18%;
+  color-scheme: dark;
+}
+
+.search input, .chip { background: var(--surface-2); }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #5C3FA3 0 25%, #EB5757 25% 50%, #F2C94C 50% 75%, #56CCF2 75% 100%);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  border-radius: 12px 12px 0 0;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+}

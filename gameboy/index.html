@@ -7,466 +7,78 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&family=DotGothic16&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #F1EEE1;
-    --bg-elevated: #FFFFFF;
-    --text: #1B2411;
-    --text-soft: #52603E;
-    --text-faint: #7C8768;
-    --accent: #4C6B1F;
-    --accent-contrast: #FFFFFF;
-    --highlight: #B0272B;
-    --border: #D9D4BE;
-    --card-bg: #FBFAF1;
-    --mono-bg: #E5E0C9;
-    --shadow: 0 2px 0 rgba(27,36,17,0.08);
-    --hue: 90;
-    --sat: 52%;
-    --lig: 30%;
-    --sat-soft: 45%;
-    --lig-soft: 90%;
-    color-scheme: light;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0A100A;
-      --bg-elevated: #121A0F;
-      --text: #DCEAB8;
-      --text-soft: #97AC79;
-      --text-faint: #64764C;
-      --accent: #9BD645;
-      --accent-contrast: #0A100A;
-      --highlight: #FF6A62;
-      --border: #24311C;
-      --card-bg: #101707;
-      --mono-bg: #17230F;
-      --shadow: 0 2px 0 rgba(0,0,0,0.4);
-      --sat: 58%;
-      --lig: 62%;
-      --sat-soft: 38%;
-      --lig-soft: 16%;
-      color-scheme: dark;
-    }
-  }
-
-  :root[data-theme="dark"] {
-    --bg: #0A100A;
-    --bg-elevated: #121A0F;
-    --text: #DCEAB8;
-    --text-soft: #97AC79;
-    --text-faint: #64764C;
-    --accent: #9BD645;
-    --accent-contrast: #0A100A;
-    --highlight: #FF6A62;
-    --border: #24311C;
-    --card-bg: #101707;
-    --mono-bg: #17230F;
-    --shadow: 0 2px 0 rgba(0,0,0,0.4);
-    --sat: 58%;
-    --lig: 62%;
-    --sat-soft: 38%;
-    --lig-soft: 16%;
-    color-scheme: dark;
-  }
-
-  * { box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Space Grotesk', sans-serif;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .mono { font-family: 'DotGothic16', monospace; letter-spacing: 0.03em; }
-  .display { font-family: 'Silkscreen', monospace; }
-
-  a { color: inherit; }
-
-  img { max-width: 100%; }
-
-  /* ---------- HERO ---------- */
-  .hero {
-    position: relative;
-    padding: 4.5rem 1.5rem 3.5rem;
-    overflow: hidden;
-    background:
-      linear-gradient(180deg, rgba(155,214,69,0.06), transparent 60%),
-      var(--bg);
-    border-bottom: 3px solid var(--border);
-  }
-
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(circle, var(--border) 1.1px, transparent 1.1px);
-    background-size: 14px 14px;
-    opacity: 0.55;
-    mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black 40%, transparent 90%);
-    pointer-events: none;
-  }
-
-  .hero-inner {
-    position: relative;
-    max-width: 880px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .hero-screen {
-    display: inline-block;
-    padding: 0.35rem 0.9rem;
-    border-radius: 6px;
-    background: var(--mono-bg);
-    border: 2px solid var(--border);
-    color: var(--text-soft);
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    margin-bottom: 1.6rem;
-  }
-
-  .hero h1 {
-    font-family: 'Silkscreen', monospace;
-    font-weight: 700;
-    font-size: clamp(1.9rem, 5.4vw, 3.4rem);
-    line-height: 1.28;
-    margin: 0 0 1.3rem;
-    color: var(--text);
-    text-shadow: 3px 3px 0 rgba(155,214,69,0.18);
-  }
-
-  .hero p.lede {
-    max-width: 620px;
-    margin: 0 auto;
-    color: var(--text-soft);
-    font-size: 1.05rem;
-  }
-
-  .hero-meta {
-    margin-top: 2.1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.6rem;
-    flex-wrap: wrap;
-    font-family: 'DotGothic16', monospace;
-    font-size: 0.85rem;
-    color: var(--text-faint);
-  }
-
-  .hero-meta strong { color: var(--accent); }
-
-  /* ---------- TOOLBAR ---------- */
-  .toolbar {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: var(--bg-elevated);
-    border-bottom: 3px solid var(--border);
-    padding: 0.85rem 1.5rem;
-  }
-
-  .toolbar-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .search-row {
-    display: flex;
-    gap: 0.6rem;
-    align-items: center;
-  }
-
-  #searchInput {
-    flex: 1;
-    padding: 0.65rem 0.9rem;
-    border-radius: 4px;
-    border: 2px solid var(--border);
-    background: var(--mono-bg);
-    color: var(--text);
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.95rem;
-    outline: none;
-  }
-
-  #searchInput:focus { border-color: var(--accent); }
-  #searchInput::placeholder { color: var(--text-faint); }
-
-  #resultCount {
-    font-family: 'DotGothic16', monospace;
-    font-size: 0.82rem;
-    color: var(--text-faint);
-    white-space: nowrap;
-  }
-
-  .theme-toggle {
-    border: 2px solid var(--border);
-    background: var(--mono-bg);
-    color: var(--text);
-    border-radius: 4px;
-    padding: 0.6rem 0.75rem;
-    cursor: pointer;
-    font-size: 0.95rem;
-    line-height: 1;
-  }
-
-  .chips {
-    display: flex;
-    gap: 0.45rem;
-    overflow-x: auto;
-    padding-bottom: 0.2rem;
-    scrollbar-width: thin;
-  }
-
-  .chip {
-    flex: none;
-    border: 2px solid var(--border);
-    background: var(--bg);
-    color: var(--text-soft);
-    border-radius: 4px;
-    padding: 0.35rem 0.7rem;
-    font-family: 'DotGothic16', monospace;
-    font-size: 0.78rem;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: border-color 0.15s, color 0.15s;
-  }
-
-  .chip:hover { border-color: var(--accent); color: var(--accent); }
-
-  /* ---------- MAIN / CHAPTERS ---------- */
-  main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem 1rem;
-  }
-
-  .chapter {
-    scroll-margin-top: 132px;
-    margin-bottom: 4rem;
-  }
-
-  .chapter-head {
-    display: flex;
-    align-items: baseline;
-    gap: 0.9rem;
-    margin-bottom: 0.6rem;
-    flex-wrap: wrap;
-  }
-
-  .chapter-num {
-    font-family: 'Silkscreen', monospace;
-    font-size: 1.1rem;
-    color: hsl(var(--hue) var(--sat) var(--lig));
-  }
-
-  .chapter-title {
-    font-family: 'Silkscreen', monospace;
-    font-size: clamp(1.1rem, 2.6vw, 1.5rem);
-    margin: 0;
-  }
-
-  .chapter-tag {
-    font-family: 'DotGothic16', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 0.2rem 0.55rem;
-    border-radius: 3px;
-    background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
-    color: hsl(var(--hue) var(--sat) var(--lig));
-  }
-
-  .chapter-blurb {
-    color: var(--text-soft);
-    max-width: 760px;
-    margin: 0.6rem 0 1.6rem;
-    font-size: 0.98rem;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1rem;
-  }
-
-  .card {
-    background: var(--card-bg);
-    border: 2px solid var(--border);
-    border-top: 6px solid hsl(var(--hue) var(--sat) var(--lig));
-    border-radius: 6px;
-    padding: 0.95rem 1rem 1.05rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    box-shadow: var(--shadow);
-  }
-
-  .card-idx {
-    font-family: 'DotGothic16', monospace;
-    font-size: 0.72rem;
-    color: var(--text-faint);
-    position: absolute;
-    top: 0.7rem;
-    right: 0.8rem;
-  }
-
-  .card-title {
-    font-weight: 600;
-    font-size: 1rem;
-    padding-right: 3.2rem;
-    margin: 0;
-  }
-
-  .card-meta {
-    font-family: 'DotGothic16', monospace;
-    font-size: 0.78rem;
-    color: hsl(var(--hue) var(--sat) var(--lig));
-  }
-
-  .card-blurb {
-    font-size: 0.87rem;
-    color: var(--text-soft);
-    margin: 0.15rem 0 0;
-  }
-
-  .card.hidden, .chapter.hidden { display: none; }
-
-  #emptyState {
-    display: none;
-    text-align: center;
-    padding: 3rem 1rem;
-    color: var(--text-faint);
-    font-family: 'DotGothic16', monospace;
-  }
-
-  /* ---------- CURATOR NOTE ---------- */
-  .curator-note {
-    max-width: 780px;
-    margin: 1rem auto 4rem;
-    padding: 1.6rem 1.8rem;
-    background: var(--card-bg);
-    border: 2px solid var(--border);
-    border-left: 6px solid var(--accent);
-    border-radius: 6px;
-  }
-
-  .curator-note h2 {
-    font-family: 'Silkscreen', monospace;
-    font-size: 1.05rem;
-    margin: 0 0 0.8rem;
-  }
-
-  .curator-note p {
-    color: var(--text-soft);
-    font-size: 0.92rem;
-    margin: 0 0 0.8rem;
-  }
-
-  .curator-note p:last-child { margin-bottom: 0; }
-
-  /* ---------- FOOTER ---------- */
-  footer {
-    border-top: 3px solid var(--border);
-    padding: 2.5rem 1.5rem 3.5rem;
-    background: var(--bg-elevated);
-  }
-
-  .footer-inner {
-    max-width: 780px;
-    margin: 0 auto;
-    font-size: 0.85rem;
-    color: var(--text-faint);
-  }
-
-  .footer-inner h3 {
-    font-family: 'Silkscreen', monospace;
-    font-size: 0.85rem;
-    color: var(--text-soft);
-    margin: 0 0 0.7rem;
-  }
-
-  .footer-inner ul {
-    padding-left: 1.1rem;
-    margin: 0 0 1.4rem;
-  }
-
-  .footer-inner li { margin-bottom: 0.3rem; }
-
-  .footer-inner a { color: var(--accent); text-decoration: underline; }
-</style>
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/theme-gameboy.css">
 </head>
 <body>
-
 <header class="hero">
-  <div class="hero-inner">
-    <span class="hero-screen mono">DMG-01 · 1989–1998</span>
-    <h1>The Handheld Explorer's Collection</h1>
-    <p class="lede">One hundred games for the original grey-brick Game Boy — sampled from every corner of its library, not just the top of a review-score spreadsheet. Puzzle boxes, RPG oddities, licensed curios, and the platformers that defined a decade in your pocket.</p>
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> DMG-01 &middot; 1989&ndash;1998</div>
+    <h1>The Handheld Explorer's <em>Collection</em></h1>
+    <p class="hero-lede">One hundred games for the original grey-brick Game Boy — sampled from every corner of its library, not just the top of a review-score spreadsheet. Puzzle boxes, RPG oddities, licensed curios, and the platformers that defined a decade in your pocket.</p>
     <div class="hero-meta">
-      <span><strong id="totalCount">100</strong> games</span>
-      <span><strong>12</strong> chapters</span>
-      <span><strong>1989–1998</strong> original hardware only</span>
+      <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
+      <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
+      <div class="stat"><span class="num mono">1989&ndash;1998</span><span class="label">original hardware only</span></div>
     </div>
   </div>
 </header>
 
-<div class="toolbar">
-  <div class="toolbar-inner">
-    <div class="search-row">
-      <input type="text" id="searchInput" placeholder="Search by title, developer, or genre…">
-      <span id="resultCount" class="mono">100 / 100</span>
-      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+<section class="note">
+  <div class="wrap">
+    <div class="note-card">
+      <h2>A note from the curator</h2>
+      <p>This isn't a top-100-by-Metacritic list — the original Game Boy predates aggregate scores almost entirely, and a pure sales or review ranking would bury the system's real personality under six Mega Man ports and a dozen movie tie-ins. Instead, this collection samples every genre the DMG actually supported: the falling-block puzzlers it's remembered for, but also the SaGa-era Square RPGs, the Rare-built Donkey Kong Land trilogy, the Konami shooter output, and the Japan-only curios that never got a Western release at all.</p>
+      <p>Only games confirmed to run on <strong>original monochrome Game Boy hardware</strong> made the cut — Game Boy Color-exclusive titles (Pokémon Gold/Silver, Wario Land 3, Shantae, and similar) are deliberately excluded, even where they're beloved, because they simply won't boot on a stock grey brick.</p>
+      <p>Release years follow the North American release date where one exists. For games that never left Japan or only reached Japan and Europe, the original regional release year is used instead and the game is marked accordingly in its chapter.</p>
+      <p>A follow-up accuracy and regional-divergence pass corrected a few entries that had drifted from that convention or were mislabeled outright. Two games long assumed Japan-only — <strong>The Sword of Hope II</strong> and <strong>The King of Fighters '95</strong> — actually did get delayed North American releases (1996 and 1997 respectively) and have been corrected accordingly; <strong>Trip World</strong>, previously listed as Japan-only, in fact reached Europe as well, just never North America. About a dozen entries also picked up a brief note on real European divergence — a different box title (Yoshi as Mario &amp; Yoshi, Operation C as Probotector, Gradius: The Interstellar Assault as Nemesis II), or a release gap of many months to, in Wave Race's case, an extraordinary five years.</p>
     </div>
+  </div>
+</section>
+
+<nav class="toolbar">
+  <div class="wrap toolbar-inner">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" type="text" placeholder="Search by title, developer, or genre…" autocomplete="off">
+    </div>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
     <div class="chips" id="chips"></div>
+    <div class="result-count mono" id="resultCount"></div>
   </div>
-</div>
+</nav>
 
-<main>
-  <div id="chapters"></div>
-  <div id="emptyState">No cartridges match that search.</div>
+<main class="wrap" id="chapters"></main>
 
-  <div class="curator-note">
-    <h2 class="display">A note from the curator</h2>
-    <p>This isn't a top-100-by-Metacritic list — the original Game Boy predates aggregate scores almost entirely, and a pure sales or review ranking would bury the system's real personality under six Mega Man ports and a dozen movie tie-ins. Instead, this collection samples every genre the DMG actually supported: the falling-block puzzlers it's remembered for, but also the SaGa-era Square RPGs, the Rare-built Donkey Kong Land trilogy, the Konami shooter output, and the Japan-only curios that never got a Western release at all.</p>
-    <p>Only games confirmed to run on <strong>original monochrome Game Boy hardware</strong> made the cut — Game Boy Color-exclusive titles (Pokémon Gold/Silver, Wario Land 3, Shantae, and similar) are deliberately excluded, even where they're beloved, because they simply won't boot on a stock grey brick.</p>
-    <p>Release years follow the North American release date where one exists. For games that never left Japan or only reached Japan and Europe, the original regional release year is used instead and the game is marked accordingly in its chapter.</p>
-    <p>A follow-up accuracy and regional-divergence pass corrected a few entries that had drifted from that convention or were mislabeled outright. Two games long assumed Japan-only — <strong>The Sword of Hope II</strong> and <strong>The King of Fighters '95</strong> — actually did get delayed North American releases (1996 and 1997 respectively) and have been corrected accordingly; <strong>Trip World</strong>, previously listed as Japan-only, in fact reached Europe as well, just never North America. About a dozen entries also picked up a brief note on real European divergence — a different box title (Yoshi as Mario &amp; Yoshi, Operation C as Probotector, Gradius: The Interstellar Assault as Nemesis II), or a release gap of many months to, in Wave Race's case, an extraordinary five years.</p>
-  </div>
-</main>
+<div class="wrap"><p class="empty-state" id="emptyState">No cartridges match that search.</p></div>
 
 <footer>
-  <div class="footer-inner">
-    <h3 class="mono">Japan/Europe-only titles (no North American release)</h3>
-    <ul>
-      <li>Trip World (1992, Japan/Europe)</li>
-      <li>Parodius (1991, Japan/Europe)</li>
-      <li>Picross 2 (1996, Japan)</li>
-      <li>Kaeru no Tame ni Kane wa Naru — For the Frog the Bell Tolls (1992, Japan)</li>
-      <li>Chalvo 55 (1997, Japan)</li>
-    </ul>
-    <h3 class="mono">Sources &amp; further reading</h3>
-    <ul>
-      <li><a href="https://www.nintendolife.com/guides/50-best-game-boy-games-of-all-time" target="_blank" rel="noopener">Nintendo Life — 50 Best Game Boy Games of All Time</a></li>
-      <li><a href="https://en.wikipedia.org/wiki/Video_games_listed_among_the_best_of_the_Game_Boy_and_Game_Boy_Color" target="_blank" rel="noopener">Wikipedia — Video games listed among the best of the Game Boy and Game Boy Color</a></li>
-      <li><a href="https://infinityretro.com/top-100-best-game-boy-games/" target="_blank" rel="noopener">Infinity Retro — Top 100 Best Game Boy Games</a></li>
-      <li><a href="https://retrododo.com/underrated-game-boy-games/" target="_blank" rel="noopener">RetroDodo — The Most Underrated Game Boy Games</a></li>
-      <li><a href="https://racketboy.com/retro/best-undiscovered-gameboy-game-boy-color-games" target="_blank" rel="noopener">Racketboy — The Best Undiscovered Game Boy &amp; GBC Games</a></li>
-      <li><a href="https://www.denofgeek.com/games/25-underrated-game-boy-games/" target="_blank" rel="noopener">Den of Geek — 25 Underrated Game Boy Games</a></li>
-      <li><a href="https://www.bitmapbooks.com/blogs/news/the-gr-eight-est-game-boy-puzzle-games" target="_blank" rel="noopener">Bitmap Books — The Gr-Eight-est Game Boy Puzzle Games</a></li>
-    </ul>
-    <p>All 100 titles were individually fact-checked for title accuracy, release year, developer, and original-hardware compatibility before publication.</p>
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <h3>Japan/Europe-only titles (no North American release)</h3>
+        <ul>
+          <li>Trip World (1992, Japan/Europe)</li>
+          <li>Parodius (1991, Japan/Europe)</li>
+          <li>Picross 2 (1996, Japan)</li>
+          <li>Kaeru no Tame ni Kane wa Naru — For the Frog the Bell Tolls (1992, Japan)</li>
+          <li>Chalvo 55 (1997, Japan)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sources &amp; further reading</h3>
+        <ul>
+          <li><a href="https://www.nintendolife.com/guides/50-best-game-boy-games-of-all-time" target="_blank" rel="noopener">Nintendo Life — 50 Best Game Boy Games of All Time</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Video_games_listed_among_the_best_of_the_Game_Boy_and_Game_Boy_Color" target="_blank" rel="noopener">Wikipedia — Video games listed among the best of the Game Boy and Game Boy Color</a></li>
+          <li><a href="https://infinityretro.com/top-100-best-game-boy-games/" target="_blank" rel="noopener">Infinity Retro — Top 100 Best Game Boy Games</a></li>
+          <li><a href="https://retrododo.com/underrated-game-boy-games/" target="_blank" rel="noopener">RetroDodo — The Most Underrated Game Boy Games</a></li>
+          <li><a href="https://racketboy.com/retro/best-undiscovered-gameboy-game-boy-color-games" target="_blank" rel="noopener">Racketboy — The Best Undiscovered Game Boy &amp; GBC Games</a></li>
+          <li><a href="https://www.denofgeek.com/games/25-underrated-game-boy-games/" target="_blank" rel="noopener">Den of Geek — 25 Underrated Game Boy Games</a></li>
+          <li><a href="https://www.bitmapbooks.com/blogs/news/the-gr-eight-est-game-boy-puzzle-games" target="_blank" rel="noopener">Bitmap Books — The Gr-Eight-est Game Boy Puzzle Games</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-fine">All 100 titles were individually fact-checked for title accuracy, release year, developer, and original-hardware compatibility before publication.</p>
   </div>
 </footer>
 

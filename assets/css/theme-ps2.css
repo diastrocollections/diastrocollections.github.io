@@ -1,0 +1,98 @@
+/* Diastro Gaming Collections — PS2 theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #EEF3F5;
+  --surface: #FFFFFF;
+  --surface-2: #E1EAEE;
+  --ink: #12181B;
+  --ink-soft: #4B5A61;
+  --ink-faint: #7C8B92;
+  --accent: #0089A8;
+  --accent-ink: #FFFFFF;
+  --line: #CFDBE0;
+  --line-strong: #B0C1C8;
+  --shadow: 0 1px 2px rgba(10,20,23,0.06), 0 10px 26px -14px rgba(10,20,23,0.22);
+  --sat: 62%;
+  --lig: 38%;
+  --sat-soft: 60%;
+  --lig-soft: 92%;
+
+  --font-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Audiowide", "Segoe UI", system-ui, sans-serif;
+  --font-display-weight: 400;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --card-radius: 10px;
+  --note-radius: 10px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0A1113;
+    --surface: #131C1F;
+    --surface-2: #1A262A;
+    --ink: #E8F1F3;
+    --ink-soft: #A7B9BE;
+    --ink-faint: #62757B;
+    --accent: #38C6E8;
+    --accent-ink: #06181C;
+    --line: #223034;
+    --line-strong: #2E4046;
+    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 14px 30px -16px rgba(0,0,0,0.65);
+    --sat: 72%;
+    --lig: 62%;
+    --sat-soft: 42%;
+    --lig-soft: 17%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0A1113;
+  --surface: #131C1F;
+  --surface-2: #1A262A;
+  --ink: #E8F1F3;
+  --ink-soft: #A7B9BE;
+  --ink-faint: #62757B;
+  --accent: #38C6E8;
+  --accent-ink: #06181C;
+  --line: #223034;
+  --line-strong: #2E4046;
+  --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 14px 30px -16px rgba(0,0,0,0.65);
+  --sat: 72%;
+  --lig: 62%;
+  --sat-soft: 42%;
+  --lig-soft: 17%;
+  color-scheme: dark;
+}
+
+.chapter { --hue: 195; }
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid hsl(195 var(--sat-soft) var(--lig-soft));
+  pointer-events: none;
+}
+.hero::before { width: 620px; height: 620px; top: -280px; right: -220px; }
+.hero::after { width: 420px; height: 420px; top: -180px; right: -120px; }
+
+.eyebrow .dot { box-shadow: 0 0 0 3px hsl(195 var(--sat-soft) var(--lig-soft)); }
+
+.note-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--accent);
+}
+
+.card { border-bottom: 3px solid hsl(var(--hue) var(--sat) var(--lig)); }
+.card:hover { transform: translateY(-2px); }

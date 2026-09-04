@@ -1,0 +1,106 @@
+/* Diastro Gaming Collections — PS1 theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #EAEAEC;
+  --surface: #FFFFFF;
+  --surface-2: #DFDFE6;
+  --ink: #1C1C21;
+  --ink-soft: #53545F;
+  --ink-faint: #8B8C97;
+  --accent: #1E5FBF;
+  --accent-ink: #FFFFFF;
+  --line: #D6D6DC;
+  --line-strong: #D6D6DC;
+  --shadow: 0 2px 0 rgba(30,95,191,0.16);
+  --hue: 213;
+  --sat: 65%;
+  --lig: 46%;
+  --sat-soft: 50%;
+  --lig-soft: 91%;
+
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Zen Dots', sans-serif;
+  --font-display-weight: 400;
+  --font-mono: 'Azeret Mono', monospace;
+
+  --card-radius: 12px;
+  --note-radius: 12px;
+  --control-radius: 10px;
+  --hero-border: 3px solid var(--line);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #16171B;
+    --surface: #1D1E24;
+    --surface-2: #24252E;
+    --ink: #ECEDF2;
+    --ink-soft: #A5A7B5;
+    --ink-faint: #6D6F7E;
+    --accent: #6FA8FF;
+    --accent-ink: #16171B;
+    --line: #2B2C36;
+    --line-strong: #2B2C36;
+    --shadow: 0 2px 0 rgba(0,0,0,0.5);
+    --sat: 75%;
+    --lig: 74%;
+    --sat-soft: 40%;
+    --lig-soft: 18%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #16171B;
+  --surface: #1D1E24;
+  --surface-2: #24252E;
+  --ink: #ECEDF2;
+  --ink-soft: #A5A7B5;
+  --ink-faint: #6D6F7E;
+  --accent: #6FA8FF;
+  --accent-ink: #16171B;
+  --line: #2B2C36;
+  --line-strong: #2B2C36;
+  --shadow: 0 2px 0 rgba(0,0,0,0.5);
+  --sat: 75%;
+  --lig: 74%;
+  --sat-soft: 40%;
+  --lig-soft: 18%;
+  color-scheme: dark;
+}
+
+.search input, .chip { background: var(--surface-2); }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, hsl(var(--hue) 30% 60% / 0.12), transparent 65%);
+  pointer-events: none;
+}
+
+.hero-glyphs { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.hero-glyphs span { position: absolute; font-family: var(--font-mono); font-weight: 700; line-height: 1; opacity: 0.16; }
+:root[data-theme="dark"] .hero-glyphs span { opacity: 0.22; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hero-glyphs span { opacity: 0.22; } }
+.g-tri { color: #2FA84F; }
+.g-cir { color: #D64545; }
+.g-cross { color: #1E5FBF; }
+.g-sq { color: #E23E96; }
+
+.hero h1 { display: inline-block; transform: skewX(-4deg); }
+
+.chapter-num { font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.02em; }
+.chapter-glyph { font-size: 1.05rem; }
+.card-glyph { font-size: 0.95rem; font-weight: 700; line-height: 1; }
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  border-radius: 12px 12px 0 0;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+}

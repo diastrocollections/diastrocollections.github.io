@@ -1,0 +1,110 @@
+/* Diastro Gaming Collections — Wii theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #F7FAFC;
+  --surface: #FFFFFF;
+  --surface-2: #E9F3F9;
+  --ink: #16232B;
+  --ink-soft: #4A5F6B;
+  --ink-faint: #7C8F99;
+  --accent: #0099D8;
+  --accent-ink: #FFFFFF;
+  --line: #D6E7EF;
+  --line-strong: #B9D6E3;
+  --shadow: 0 2px 4px rgba(16,45,58,0.06), 0 14px 30px -16px rgba(16,45,58,0.24);
+  --sat: 70%;
+  --lig: 42%;
+  --sat-soft: 68%;
+  --lig-soft: 94%;
+
+  --font-body: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Quicksand", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --card-radius: 18px;
+  --note-radius: 20px;
+  --eyebrow-dot-radius: 4px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0B1418;
+    --surface: #121D22;
+    --surface-2: #17242A;
+    --ink: #EAF4F8;
+    --ink-soft: #A9C0C9;
+    --ink-faint: #63808A;
+    --accent: #3FC3F0;
+    --accent-ink: #06181D;
+    --line: #1E2E35;
+    --line-strong: #2A3D45;
+    --shadow: 0 2px 4px rgba(0,0,0,0.3), 0 16px 32px -18px rgba(0,0,0,0.7);
+    --sat: 76%;
+    --lig: 64%;
+    --sat-soft: 46%;
+    --lig-soft: 18%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0B1418;
+  --surface: #121D22;
+  --surface-2: #17242A;
+  --ink: #EAF4F8;
+  --ink-soft: #A9C0C9;
+  --ink-faint: #63808A;
+  --accent: #3FC3F0;
+  --accent-ink: #06181D;
+  --line: #1E2E35;
+  --line-strong: #2A3D45;
+  --shadow: 0 2px 4px rgba(0,0,0,0.3), 0 16px 32px -18px rgba(0,0,0,0.7);
+  --sat: 76%;
+  --lig: 64%;
+  --sat-soft: 46%;
+  --lig-soft: 18%;
+  color-scheme: dark;
+}
+
+.chapter { --hue: 198; }
+
+/* Rotated tile cluster behind the hero copy */
+.hero-tiles {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 480px;
+  height: 480px;
+  pointer-events: none;
+}
+.hero-tiles span {
+  position: absolute;
+  border-radius: 22px;
+  background: hsl(198 var(--sat-soft) var(--lig-soft));
+}
+.hero-tiles span:nth-child(1) { width: 160px; height: 160px; top: 20px; left: 260px; transform: rotate(8deg); }
+.hero-tiles span:nth-child(2) { width: 120px; height: 120px; top: 190px; left: 60px; transform: rotate(-6deg); }
+.hero-tiles span:nth-child(3) { width: 100px; height: 100px; top: 300px; left: 300px; transform: rotate(14deg); }
+.hero-tiles span:nth-child(4) { width: 80px; height: 80px; top: 80px; left: 420px; transform: rotate(-12deg); }
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  border: 2px solid hsl(var(--hue) var(--sat) var(--lig));
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  pointer-events: none;
+}
+.card:hover::before { opacity: 1; }
+.card:hover { transform: translateY(-3px) scale(1.01); }
+
+.card-idx {
+  align-self: flex-start;
+  background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+  padding: 2px 8px;
+  border-radius: 6px;
+}
