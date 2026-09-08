@@ -17,6 +17,9 @@
  *   #emptyState    - "no results" message element (optional)
  *   #totalCount    - element to fill with the total game count (optional)
  *   #themeToggle   - button that cycles light/dark/system (optional)
+ *   #curatorNote   - the curator's note card, wraps #noteBody + #noteToggle
+ *                    for the collapsible teaser (optional)
+ *   #noteToggle    - button that expands/collapses the curator's note (optional)
  *
  * Data file shape (data/<id>.json) — a plain JSON array of chapters:
  *   [
@@ -169,6 +172,17 @@
       else if (current === 'dark') next = 'light';
       else next = 'dark';
       root.setAttribute('data-theme', next);
+    });
+  }
+
+  var noteToggle = document.getElementById('noteToggle');
+  var noteCard = document.getElementById('curatorNote');
+  if (noteToggle && noteCard) {
+    var noteLabel = noteToggle.querySelector('.note-toggle-label');
+    noteToggle.addEventListener('click', function () {
+      var expanded = noteCard.classList.toggle('is-expanded');
+      noteToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      if (noteLabel) noteLabel.textContent = expanded ? 'Show less' : "Read the curator's note";
     });
   }
 })();

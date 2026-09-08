@@ -109,20 +109,49 @@ h1, h2, h3 {
 
 .brand {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
   font-family: "Fraunces", serif;
   font-weight: 600;
   font-size: 1.05rem;
   letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.15s ease;
 }
 
-.brand .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--accent);
-  display: inline-block;
+.brand:hover,
+.brand:focus-visible {
+  color: var(--accent);
+}
+
+.brand-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-link {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link[aria-current="page"] {
+  color: var(--accent);
 }
 
 .theme-toggle {
@@ -182,6 +211,115 @@ h1, h2, h3 {
   flex-shrink: 0;
 }
 
+.version-pill {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 5px 13px;
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.version-pill:hover,
+.version-pill:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.back-link {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  font-family: "Spline Sans Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.15s ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: var(--accent);
+}
+
+/* ---------- Changelog ---------- */
+
+.changelog-list {
+  padding: 0 0 clamp(64px, 9vw, 100px);
+}
+
+.changelog-entry {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 28px;
+  padding: 30px 0;
+  border-top: 1px solid var(--line);
+}
+
+.changelog-entry:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.changelog-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.changelog-version {
+  font-family: "Fraunces", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.changelog-badge {
+  font-family: "Spline Sans Mono", monospace;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+
+.changelog-date {
+  font-family: "Spline Sans Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+}
+
+.changelog-entry ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.changelog-entry li {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.changelog-entry li:last-child { margin-bottom: 0; }
+
+@media (max-width: 640px) {
+  .changelog-entry { grid-template-columns: 1fr; gap: 10px; }
+}
+
 .hero h1 {
   font-size: clamp(2.4rem, 6vw, 4.4rem);
   font-weight: 600;
@@ -189,6 +327,12 @@ h1, h2, h3 {
   letter-spacing: -0.015em;
   max-width: 16ch;
   position: relative;
+}
+
+.hero-version-pill {
+  vertical-align: middle;
+  margin-left: 14px;
+  transform: translateY(-0.2em);
 }
 
 .hero h1 em {
@@ -394,4 +538,41 @@ footer p {
   color: var(--ink-faint);
   font-size: 0.86rem;
   margin: 0 0 8px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+}
+
+.footer-notes { flex: 1 1 420px; }
+
+.social-links {
+  display: flex;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: var(--ink-faint);
+  transition: color 0.15s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  color: var(--accent);
+}
+
+.social-links svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }

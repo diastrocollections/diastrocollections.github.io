@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diastro Gaming Collections</title>
+  <title>Version History - Diastro Gaming Collections</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Spline+Sans+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/hub.css">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="../assets/css/hub.css">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
   <script data-goatcounter="https://diastro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
@@ -21,7 +21,7 @@
     <div class="wrap topbar-inner">
       <div class="topbar-left">
         <a class="brand" href="https://www.youtube.com/@DiastroGaming" target="_blank" rel="noopener" aria-label="Diastro Gaming on YouTube"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> Diastro Gaming</a>
-        <a class="nav-link" href="changelog/">Version history</a>
+        <a class="nav-link" href="./" aria-current="page">Version history</a>
       </div>
       <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
     </div>
@@ -29,24 +29,100 @@
 
   <section class="hero">
     <div class="wrap">
-      <div class="eyebrow"><span class="dot"></span> A field guide to twelve classic platforms</div>
-      <h1>Diastro Gaming <em>Collections</em><a class="version-pill hero-version-pill mono" href="changelog/" title="View version history">v1.2.0</a></h1>
-      <p class="hero-lede">Pick a console. Each one opens onto its own Explorer's Collection &mdash; a hundred games
-        spanning every genre the hardware ever touched, not just the titles that top a review-score spreadsheet. Twelve
-        chapters apiece, fact-checked, searchable, built to be browsed rather than ranked. Five of the twelve &mdash;
-        Mega Drive, NES, SNES, N64, and PS1 &mdash; are catalogued the European way, PAL names and years leading; the
-        rest lead with North America.</p>
-      <div class="hero-stats" id="heroStats"></div>
+      <a class="back-link" href="../">&larr; Back to the shelf</a>
+      <div class="eyebrow"><span class="dot"></span> Diastro Gaming Collections</div>
+      <h1>Version <em>history</em></h1>
+      <p class="hero-lede">Every notable change to Diastro Gaming Collections, newest first. Versions follow a simple
+        major.minor.patch scheme: major for a redesign or a new wave of platforms, minor for new content or features,
+        patch for fixes and small tweaks.</p>
     </div>
   </section>
 
-  <section class="shelf">
+  <section class="changelog-list">
     <div class="wrap">
-      <div class="shelf-head">
-        <h2>The shelf</h2>
-        <p id="shelfCount">12 collections</p>
+
+      <div class="changelog-entry">
+        <div class="changelog-meta">
+          <span class="changelog-version">v1.2.0</span>
+          <span class="changelog-badge">Current</span>
+          <span class="changelog-date">September 8, 2026</span>
+        </div>
+        <ul>
+          <li>Added social links (YouTube, Bluesky, Instagram, Threads, X) to the footer of every page</li>
+          <li>Linked the "Diastro Gaming" hub logo to the YouTube channel</li>
+          <li>Added this version history page, plus a link to it and a version pill on the hub</li>
+          <li>Added a "Back to the shelf" link to every collection page</li>
+          <li>Made the curator's note collapsible on every collection page, with a short preview and a "read more" toggle</li>
+          <li>Reorganized the collection page toolbar: search, result count, and the theme toggle now share a row, with the genre chips moved to their own row below</li>
+          <li>Several minor improvements to styling and layout.</li>
+        </ul>
       </div>
-      <div class="tiles" id="tiles"></div>
+
+      <div class="changelog-entry">
+        <div class="changelog-meta">
+          <span class="changelog-version">v1.1.0</span>
+          <span class="changelog-date">September 4, 2026</span>
+        </div>
+        <ul>
+          <li>New curator notes added across every collection</li>
+          <li>Layout optimizations and styling fixes throughout the hub and collection pages</li>
+          <li>AI disclaimer added to every page</li>
+          <li>Copyright notice added to every page</li>
+        </ul>
+      </div>
+
+      <div class="changelog-entry">
+        <div class="changelog-meta">
+          <span class="changelog-version">v1.0.4</span>
+          <span class="changelog-date">September 4, 2026</span>
+        </div>
+        <ul>
+          <li>Added GoatCounter analytics to every page</li>
+        </ul>
+      </div>
+
+      <div class="changelog-entry">
+        <div class="changelog-meta">
+          <span class="changelog-version">v1.0.3</span>
+          <span class="changelog-date">September 4, 2026</span>
+        </div>
+        <ul>
+          <li>Color and release-year corrections across several collections</li>
+          <li>Analytics setup groundwork</li>
+        </ul>
+      </div>
+
+      <div class="changelog-entry">
+        <div class="changelog-meta">
+          <span class="changelog-version">v1.0.2</span>
+          <span class="changelog-date">September 4, 2026</span>
+        </div>
+        <ul>
+          <li>Documentation updated to reflect the project's file structure</li>
+        </ul>
+      </div>
+
+      <div class="changelog-entry">
+        <div class="changelog-meta">
+          <span class="changelog-version">v1.0.1</span>
+          <span class="changelog-date">September 4, 2026</span>
+        </div>
+        <ul>
+          <li>Styles and HTML refactored across every page</li>
+        </ul>
+      </div>
+
+      <div class="changelog-entry">
+        <div class="changelog-meta">
+          <span class="changelog-version">v1.0</span>
+          <span class="changelog-date">September 4, 2026</span>
+        </div>
+        <ul>
+          <li>First release: twelve platform collections, 1,200 games, 144 genre chapters</li>
+          <li>Searchable, filterable collection pages with a shared hub</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
@@ -72,7 +148,23 @@
     </div>
   </footer>
 
-  <script src="assets/hub.js"></script>
+  <script>
+    (function () {
+      var themeToggle = document.getElementById('themeToggle');
+      if (themeToggle) {
+        var root = document.documentElement;
+        themeToggle.addEventListener('click', function () {
+          var current = root.getAttribute('data-theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var next;
+          if (!current) next = prefersDark ? 'light' : 'dark';
+          else if (current === 'dark') next = 'light';
+          else next = 'dark';
+          root.setAttribute('data-theme', next);
+        });
+      }
+    })();
+  </script>
 </body>
 
 </html>
