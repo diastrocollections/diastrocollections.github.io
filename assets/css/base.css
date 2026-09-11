@@ -315,12 +315,18 @@ h1, h2, h3, .display {
   gap: 8px;
   overflow-x: auto;
   scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb, var(--accent)) var(--surface-2);
   padding-bottom: 2px;
   flex: 1 1 auto;
 }
 
-.chips::-webkit-scrollbar { height: 5px; }
-.chips::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 4px; }
+.chips::-webkit-scrollbar { height: 3px; }
+.chips::-webkit-scrollbar-track { background: var(--surface-2); border-radius: 2px; }
+.chips::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb, var(--accent));
+  border-radius: 2px;
+}
+.chips::-webkit-scrollbar-thumb:hover { background: var(--ink); }
 
 .chip {
   flex-shrink: 0;

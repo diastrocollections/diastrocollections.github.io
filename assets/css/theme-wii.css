@@ -9,6 +9,7 @@
   --ink-faint: #7C8F99;
   --accent: #0099D8;
   --accent-ink: #FFFFFF;
+  --scrollbar-thumb: #008AC2; /* darkened from --accent to clear 3:1 contrast against --surface-2 (WCAG 1.4.11) */
   --line: #D6E7EF;
   --line-strong: #B9D6E3;
   --shadow: 0 2px 4px rgba(16,45,58,0.06), 0 14px 30px -16px rgba(16,45,58,0.24);

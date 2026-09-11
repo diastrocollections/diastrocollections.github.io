@@ -71,12 +71,15 @@
 
 .chapter { --hue: 217; }
 
+.hero { isolation: isolate; }
+
 .hero::before {
   content: "";
   position: absolute;
   inset: -20% -10% auto auto;
   width: 62%;
   aspect-ratio: 16 / 9;
+  z-index: -1;
   background: linear-gradient(115deg, hsl(217 var(--sat-soft) var(--lig-soft)) 0%, transparent 60%);
   transform: rotate(-6deg);
   pointer-events: none;

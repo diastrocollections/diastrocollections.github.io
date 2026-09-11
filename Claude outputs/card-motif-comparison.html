@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diastro Gaming — Card Background Motif Comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Archivo:ital,wght@0,400;0,500;0,600;0,700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F3F0E6;
+    --surface: #FFFFFF;
+    --surface-2: #E7ECDA;
+    --ink: #1B2117;
+    --ink-soft: #565D4A;
+    --ink-faint: #868C76;
+    --accent: #4F8F52;
+    --line: #DBDCC5;
+    --line-strong: #C3C7A9;
+    --shadow: 0 1px 2px rgba(33,28,21,0.06), 0 14px 32px -18px rgba(33,28,21,0.28);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Archivo", "Segoe UI", system-ui, sans-serif;
+    line-height: 1.5;
+    padding: 32px 20px 80px;
+  }
+  .wrap { max-width: 1220px; margin: 0 auto; }
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    margin: 0 0 6px;
+  }
+  .lede { color: var(--ink-soft); max-width: 700px; margin: 0 0 40px; font-size: 0.98rem; }
+  h2.section-title {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.3rem; margin: 0 0 4px;
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  .section-title .letter {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--ink); color: var(--bg);
+    font-family: "Spline Sans Mono", monospace; font-size: 0.8rem; flex-shrink: 0;
+  }
+  .section-note { color: var(--ink-faint); font-size: 0.88rem; margin: 0 0 18px; max-width: 700px; }
+  section.style-block { margin-bottom: 52px; }
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 18px;
+  }
+  .tile {
+    position: relative;
+    display: flex; flex-direction: column;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    min-height: 210px;
+  }
+  .tile-spine { height: 8px; background: var(--tile-accent, var(--accent)); position: relative; z-index: 2; }
+  .tile-body { position: relative; z-index: 2; padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .tile-art {
+    position: absolute; z-index: 1;
+    right: -10%; bottom: -8%;
+    width: 82%; height: 78%;
+    color: var(--tile-accent, var(--accent));
+    pointer-events: none;
+    transform: rotate(14.6deg);
+    transform-origin: 55% 45%;
+  }
+  .tile-art svg { width: 100%; height: 100%; display: block; overflow: visible; }
+  .fade-subtle { -webkit-mask-image: radial-gradient(circle at 30% 28%, transparent 0%, black 62%); mask-image: radial-gradient(circle at 30% 28%, transparent 0%, black 62%); opacity: 0.16; }
+  .fade-bold   { -webkit-mask-image: radial-gradient(circle at 30% 28%, transparent 0%, black 55%); mask-image: radial-gradient(circle at 30% 28%, transparent 0%, black 55%); opacity: 0.32; }
+  /* old icon badge, for the "before" row only */
+  .tile-icon-old {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; flex-shrink: 0;
+    background: color-mix(in srgb, var(--tile-accent, var(--accent)) 16%, var(--surface));
+  }
+  .tile-top-old { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .tile-years-old { font-family: "Spline Sans Mono", monospace; font-size: 0.75rem; color: var(--ink-faint); padding-top: 4px; white-space: nowrap; }
+
+  /* new head layout, no icon */
+  .tile-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .tile h3 { font-family: "Fraunces", Georgia, serif; font-size: 1.24rem; margin: 0; font-weight: 700; line-height: 1.2; }
+  .tile-years { font-family: "Spline Sans Mono", monospace; font-size: 0.74rem; color: var(--ink-faint); white-space: nowrap; }
+  .tile .tagline { margin: 0; font-size: 0.84rem; color: var(--ink-soft); line-height: 1.48; max-width: 88%; }
+  .tile-meta {
+    display: flex; gap: 16px;
+    font-family: "Spline Sans Mono", monospace; font-size: 0.74rem;
+    color: var(--ink-faint); padding-top: 10px; margin-top: auto;
+    border-top: 1px solid var(--line);
+  }
+  .tile-meta strong { color: var(--tile-accent, var(--accent)); font-weight: 600; }
+
+  .divider { border: none; border-top: 1px dashed var(--line-strong); margin: 48px 0; }
+  .callout {
+    background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px;
+    padding: 16px 18px; font-size: 0.88rem; color: var(--ink-soft); margin-top: 8px;
+  }
+  .callout strong { color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Card concept — rotated to match the "Collections" italic</h1>
+  <p class="lede">Same background-motif idea as before, now angled. I measured the actual slant of the italic "Collections" wordmark pixel-by-pixel from your screenshot — both letterforms' stems line up at <strong>14.6°</strong> off vertical, extremely consistently — and applied that exact same rotation to every card's background graphic below. The motif is each platform's own controller (or, for Game Boy Color, the handheld body itself), fading toward the card's center.</p>
+
+  <section class="style-block">
+    <h2 class="section-title"><span class="letter">0</span> Current cards, for reference</h2>
+    <p class="section-note">What's live today: the colored icon badge in the top-left corner.</p>
+    <div class="tiles" id="tilesBefore"></div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="style-block">
+    <h2 class="section-title"><span class="letter">1</span> Subtle — barely-there watermark, rotated 14.6°</h2>
+    <p class="section-note">Very low opacity (~16%), fading fast toward the center, tilted to match the italic exactly. Reads as texture more than illustration; text has zero competition.</p>
+    <div class="tiles" id="tilesSubtle"></div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="style-block">
+    <h2 class="section-title"><span class="letter">2</span> Bolder — the graphic actually reads, rotated 14.6°</h2>
+    <p class="section-note">Higher opacity (~32%) and a slower fade, so you can tell it's a controller at a glance rather than just sensing a texture — same rotation applied.</p>
+    <div class="tiles" id="tilesBold"></div>
+  </section>
+
+  <div class="callout">
+    <strong>Things worth deciding once you've looked:</strong> how strong the fade should be (styles 1 vs 2, or something between); whether the motif should be each platform's controller (shown here) or something else per platform — a cartridge/disc silhouette, like last round's icon shapes, just blown up large; and whether the freed-up space should go to a bigger title (done here), a longer tagline, or an extra stat. The 14.6° rotation itself reads as a deliberate signature now, tying the card art back to your own wordmark rather than looking like a random tilt.
+  </div>
+</div>
+
+<script>
+var PLATFORMS = [
+  { id:"nes", name:"NES", years:"1985–1994", accent:"#C8102E", games:100, chapters:12, region:"EU-first", tagline:"Nintendo's foundational classics and the imports that never crossed every border." },
+  { id:"snes", name:"SNES", years:"1990–1997", accent:"#5C3FA3", games:100, chapters:12, region:"EU-first", tagline:"Deep in every genre, from Chrono Trigger to a sequel that shipped 22 years late." },
+  { id:"n64", name:"Nintendo 64", years:"1996–2002", accent:"#2148D6", games:100, chapters:12, region:"EU-first", tagline:"Cartridges over discs, and the platformer that proved consoles could do 3D." },
+  { id:"ps1", name:"PlayStation", years:"1994–2006", accent:"#1E5FBF", games:100, chapters:12, region:"EU-first", tagline:"The console that made RPGs mainstream in the West." },
+  { id:"gbc", name:"Game Boy Color", years:"1998–2003", accent:"#8E44AD", games:100, chapters:12, region:"NA-first", tagline:"A decade in your pocket, now in full color." }
+];
+var OLD_ICON = { nes:"👾", snes:"🟪", n64:"🔷", ps1:"🔺", gbc:"🌈" };
+
+function crossPath(cx, cy, arm, thick) {
+  var h = thick/2;
+  return 'M'+(cx-h)+' '+(cy-arm)+' h'+thick+' v'+(arm-h)+' h'+arm+' v'+thick+' h'+(-arm)+' v'+(arm-h)+
+    ' h'+(-thick)+' v'+(-(arm-h))+' h'+(-arm)+' v'+(-thick)+' h'+arm+' Z';
+}
+
+// Large controller-shaped line art per platform. All viewBox 240x150 (240x220 for gbc's handheld body).
+var ART = {
+  nes: '<svg viewBox="0 0 240 150" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' +
+      '<rect x="10" y="35" width="220" height="80" rx="10"/>' +
+      '<path d="' + crossPath(62,75,20,12) + '"/>' +
+      '<circle cx="160" cy="80" r="12"/><circle cx="192" cy="64" r="12"/>' +
+      '<rect x="104" y="98" width="20" height="10" rx="4"/><rect x="132" y="98" width="20" height="10" rx="4"/>' +
+    '</svg>',
+  snes: '<svg viewBox="0 0 240 150" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' +
+      '<path d="M20 70 Q20 40 55 40 L185 40 Q220 40 220 70 Q220 112 178 112 Q158 112 150 96 L90 96 Q82 112 62 112 Q20 112 20 70 Z"/>' +
+      '<path d="' + crossPath(66,72,16,10) + '"/>' +
+      '<circle cx="150" cy="58" r="9"/><circle cx="172" cy="72" r="9"/><circle cx="150" cy="86" r="9"/><circle cx="128" cy="72" r="9"/>' +
+      '<path d="M45 40 Q45 26 62 26 L84 26" /><path d="M195 40 Q195 26 178 26 L156 26"/>' +
+    '</svg>',
+  n64: '<svg viewBox="0 0 240 150" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' +
+      '<path d="M120 20 L120 62"/>' +
+      '<path d="M120 62 L48 128"/>' +
+      '<path d="M120 62 L192 128"/>' +
+      '<rect x="98" y="6" width="44" height="30" rx="10"/>' +
+      '<rect x="22" y="106" width="52" height="30" rx="10"/>' +
+      '<rect x="166" y="106" width="52" height="30" rx="10"/>' +
+      '<circle cx="120" cy="62" r="16"/>' +
+      '<path d="' + crossPath(48,121,10,7) + '"/>' +
+      '<circle cx="184" cy="113" r="6"/><circle cx="200" cy="121" r="6"/><circle cx="184" cy="129" r="6"/><circle cx="192" cy="121" r="6"/>' +
+    '</svg>',
+  ps1: '<svg viewBox="0 0 240 150" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' +
+      '<path d="M46 46 Q30 46 26 70 L18 118 Q16 134 34 132 Q48 130 54 112 L64 90 L176 90 L186 112 Q192 130 206 132 Q224 134 222 118 L214 70 Q210 46 194 46 Z"/>' +
+      '<path d="' + crossPath(64,76,14,9) + '"/>' +
+      '<path d="M170 56 L180 66 M180 56 L170 66" stroke-width="3.5"/>' +
+      '<circle cx="196" cy="72" r="8" stroke-width="3.5"/>' +
+      '<path d="M182 84 L192 78 L202 84 L192 90 Z" stroke-width="3.5"/>' +
+      '<rect x="174" y="76" width="11" height="11" transform="rotate(45 179.5 81.5)" stroke-width="3.5"/>' +
+    '</svg>',
+  gbc: '<svg viewBox="0 0 150 220" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' +
+      '<rect x="14" y="10" width="122" height="200" rx="16"/>' +
+      '<rect x="30" y="28" width="90" height="66" rx="6"/>' +
+      '<path d="' + crossPath(46,144,14,9) + '"/>' +
+      '<circle cx="100" cy="132" r="10"/><circle cx="122" cy="150" r="10"/>' +
+      '<rect x="52" y="182" width="20" height="9" rx="4"/><rect x="78" y="182" width="20" height="9" rx="4"/>' +
+    '</svg>'
+};
+
+function makeCard(p, opts) {
+  var art = opts.art ? '<div class="tile-art ' + opts.fadeClass + '">' + ART[p.id] + '</div>' : '';
+  var head = opts.oldIcon
+    ? '<div class="tile-top-old"><div class="tile-icon-old">' + OLD_ICON[p.id] + '</div><div class="tile-years-old mono">' + p.years + '</div></div><h3>' + p.name + '</h3>'
+    : '<div class="tile-head"><h3>' + p.name + '</h3><span class="tile-years mono">' + p.years + '</span></div>';
+  var tile = document.createElement('div');
+  tile.className = 'tile';
+  tile.style.setProperty('--tile-accent', p.accent);
+  tile.innerHTML =
+    '<div class="tile-spine"></div>' +
+    art +
+    '<div class="tile-body">' +
+      head +
+      '<p class="tagline">' + p.tagline + '</p>' +
+      '<div class="tile-meta">' +
+        '<span><strong>' + p.games + '</strong> games</span>' +
+        '<span><strong>' + p.chapters + '</strong> chapters</span>' +
+      '</div>' +
+    '</div>';
+  return tile;
+}
+
+function renderRow(containerId, opts) {
+  var el = document.getElementById(containerId);
+  PLATFORMS.forEach(function (p) { el.appendChild(makeCard(p, opts)); });
+}
+
+renderRow('tilesBefore', { art:false, oldIcon:true });
+renderRow('tilesSubtle', { art:true, fadeClass:'fade-subtle', oldIcon:false });
+renderRow('tilesBold', { art:true, fadeClass:'fade-bold', oldIcon:false });
+</script>
+</body>
+</html>

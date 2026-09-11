@@ -96,18 +96,17 @@
   z-index: -1;
   background: repeating-linear-gradient(90deg, rgba(242,238,229,0.09) 0 10px, transparent 10px 20px);
 }
-.hero .wrap { max-width: 920px; text-align: center; }
 .hero .eyebrow { color: var(--ink-faint); }
-.hero .hero-lede { margin-left: auto; margin-right: auto; color: #D8D2C4; }
-.hero .hero-meta { --hero-meta-justify: center; color: #B7B0A2; }
+.hero .hero-lede { color: #D8D2C4; }
+.hero .hero-meta { color: #B7B0A2; }
 .hero .hero-meta strong, .hero .num { color: #F2EEE5; }
-.hero h1 { text-transform: uppercase; font-style: italic; font-weight: 900; margin-left: auto; margin-right: auto; }
+.hero h1 { text-transform: uppercase; font-style: italic; font-weight: 900; }
 .hero h1 em { font-style: italic; }
 
 .badge-row {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.9rem;
   margin-bottom: 1.4rem;
 }

@@ -251,13 +251,13 @@ h1, h2, h3 {
   color: var(--accent);
 }
 
-/* ---------- Changelog ---------- */
+/* ---------- Version history ---------- */
 
-.changelog-list {
+.vh-list {
   padding: 0 0 clamp(64px, 9vw, 100px);
 }
 
-.changelog-entry {
+.vh-entry {
   display: grid;
   grid-template-columns: 180px 1fr;
   gap: 28px;
@@ -265,26 +265,26 @@ h1, h2, h3 {
   border-top: 1px solid var(--line);
 }
 
-.changelog-entry:first-of-type {
+.vh-entry:first-of-type {
   border-top: none;
   padding-top: 0;
 }
 
-.changelog-meta {
+.vh-meta {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
 }
 
-.changelog-version {
+.vh-version {
   font-family: "Fraunces", serif;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--accent);
 }
 
-.changelog-badge {
+.vh-badge {
   font-family: "Spline Sans Mono", monospace;
   font-size: 0.66rem;
   font-weight: 600;
@@ -296,28 +296,28 @@ h1, h2, h3 {
   padding: 3px 9px;
 }
 
-.changelog-date {
+.vh-date {
   font-family: "Spline Sans Mono", monospace;
   font-size: 0.78rem;
   color: var(--ink-faint);
 }
 
-.changelog-entry ul {
+.vh-entry ul {
   margin: 0;
   padding-left: 1.15rem;
 }
 
-.changelog-entry li {
+.vh-entry li {
   color: var(--ink-soft);
   font-size: 0.98rem;
   line-height: 1.6;
   margin-bottom: 8px;
 }
 
-.changelog-entry li:last-child { margin-bottom: 0; }
+.vh-entry li:last-child { margin-bottom: 0; }
 
 @media (max-width: 640px) {
-  .changelog-entry { grid-template-columns: 1fr; gap: 10px; }
+  .vh-entry { grid-template-columns: 1fr; gap: 10px; }
 }
 
 .hero h1 {
