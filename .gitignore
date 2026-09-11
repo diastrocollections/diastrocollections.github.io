@@ -1,2 +1,5 @@
-.DS_Store           # Jesper 04.09.2026 - macOS generates these files in folders, but I guess they're not needed at all for the website.
-Claude outputs/     # Jesper 11.09.2026 - Claude has access to the project folder, so when I brainstorm new ideas it sometimes drops artifacts in there that I don't want to add to the website.
+# Jesper 04.09.2026 - macOS generates these files in folders, but I guess they're not needed at all for the website.
+.DS_Store
+
+# Jesper 11.09.2026 - Claude has access to the project folder, so when I brainstorm new ideas it sometimes drops artifacts in there that I don't want to add to the website.
+Claude outputs/
