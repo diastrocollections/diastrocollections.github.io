@@ -1,0 +1,185 @@
+# Pages CMS configuration — https://pagescms.org
+#
+# Each platform's game list (data/<id>.json) is a JSON array of "chapters";
+# each chapter has a list of "games". The `game` component below defines the
+# shared game fields once and is reused across every platform file. See
+# assets/collection.js for how this data is rendered.
+
+components:
+  game:
+    type: object
+    label: Game
+    fields:
+      - name: title
+        type: string
+        label: Title
+      - name: year
+        type: string
+        label: Year
+      - name: developer
+        type: string
+        label: Developer
+      - name: blurb
+        type: text
+        label: Blurb
+
+content:
+  - name: nes
+    label: "NES — Collection Data"
+    type: file
+    path: data/nes.json
+    format: json
+    list: true
+    fields: &chapterFields
+      - name: hue
+        type: number
+        label: Accent hue (0-360)
+      - name: tag
+        type: string
+        label: Chapter tag
+      - name: title
+        type: string
+        label: Chapter title
+      - name: blurb
+        type: text
+        label: Chapter blurb
+      - name: games
+        component: game
+        list: true
+        label: Games
+
+  - name: gameboy
+    label: "Game Boy — Collection Data"
+    type: file
+    path: data/gameboy.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: gbc
+    label: "Game Boy Color — Collection Data"
+    type: file
+    path: data/gbc.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: gba
+    label: "Game Boy Advance — Collection Data"
+    type: file
+    path: data/gba.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: snes
+    label: "SNES — Collection Data"
+    type: file
+    path: data/snes.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: n64
+    label: "Nintendo 64 — Collection Data"
+    type: file
+    path: data/n64.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: gamecube
+    label: "GameCube — Collection Data"
+    type: file
+    path: data/gamecube.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: wii
+    label: "Wii — Collection Data"
+    type: file
+    path: data/wii.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: ps1
+    label: "PlayStation — Collection Data"
+    type: file
+    path: data/ps1.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: ps2
+    label: "PlayStation 2 — Collection Data"
+    type: file
+    path: data/ps2.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: psp
+    label: "PSP — Collection Data"
+    type: file
+    path: data/psp.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: megadrive
+    label: "Mega Drive — Collection Data"
+    type: file
+    path: data/megadrive.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: platforms
+    label: "Hub — Platform Tiles"
+    type: file
+    path: data/platforms.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        type: string
+        label: "ID (matches folder name, e.g. nes)"
+      - name: icon
+        type: string
+        label: Icon (emoji)
+      - name: manufacturer
+        type: string
+      - name: name
+        type: string
+        label: Short name
+      - name: title
+        type: string
+        label: Full collection title
+      - name: years
+        type: string
+        label: "Years shown (e.g. 1985–1994)"
+      - name: start
+        type: number
+        label: Start year
+      - name: end
+        type: number
+        label: End year
+      - name: games
+        type: number
+        label: Game count
+      - name: chapters
+        type: number
+        label: Chapter count
+      - name: accent
+        type: string
+        label: "Accent color (hex, e.g. #C8102E)"
+      - name: region
+        type: string
+        label: "Region label (e.g. EU-first)"
+      - name: tagline
+        type: text
+      - name: url
+        type: string
+        label: "Link to platform page (e.g. nes/)"

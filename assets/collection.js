@@ -24,7 +24,10 @@
  * Data file shape (data/<id>.json) — a plain JSON array of chapters:
  *   [
  *     { "hue": 350, "tag": "Platformer", "title": "...", "blurb": "...",
- *       "games": [ ["Title", "Year", "Developer", "One-line blurb"], ... ] },
+ *       "games": [
+ *         { "title": "...", "year": "...", "developer": "...", "blurb": "..." },
+ *         ...
+ *       ] },
  *     ...
  *   ]
  */
@@ -78,7 +81,7 @@
       grid.className = 'grid';
 
       chapter.games.forEach(function (game) {
-        var title = game[0], year = game[1], dev = game[2], gblurb = game[3];
+        var title = game.title, year = game.year, dev = game.developer, gblurb = game.blurb;
         globalIdx++;
         var card = document.createElement('div');
         card.className = 'card';
