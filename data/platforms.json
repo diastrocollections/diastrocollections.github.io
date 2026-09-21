@@ -190,5 +190,22 @@
     "region": "NA-first",
     "tagline": "The best-selling console of its generation, from pack-in bowling to three JRPGs a fan campaign had to save.",
     "url": "wii/"
-  }
+  },
+  {
+    "id": "Nintendo DS",
+    "icon": "🐶",
+    "manufacturer": "Nintendo",
+    "name": "DS",
+    "title": "The Nintendo DS Collection",
+    "years": "2004-2010",
+    "start": 2004,
+    "end": 2010,
+    "games": 100,
+    "chapters": 12,
+    "accent": "#C8102E",
+    "region": "EU-first",
+    "tagline": "This is a tagline.",
+    "url": "ds/"
+  },
+  {}
 ]
