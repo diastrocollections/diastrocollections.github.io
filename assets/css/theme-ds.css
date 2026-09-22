@@ -1,0 +1,320 @@
+/* Diastro Gaming Collections — Nintendo DS theme (colors, fonts, flourishes). */
+
+:root {
+  --bg: #EDF1F8;
+  --surface: #FFFFFF;
+  --surface-2: #E2E8F3;
+  --ink: #161C2A;
+  --ink-soft: #4B5568;
+  --ink-faint: #66728A;
+  --accent: #2C6BDE;
+  --accent-ink: #FFFFFF;
+  --line: #D5DCE9;
+  --line-strong: #C3CCDD;
+  --shadow: 0 2px 4px rgba(22,28,42,0.06), 0 14px 28px -16px rgba(22,28,42,0.26);
+  --hue: 215;
+  --sat: 62%;
+  --lig: 42%;
+  --sat-soft: 60%;
+  --lig-soft: 92%;
+
+  --font-body: 'Lexend', system-ui, sans-serif;
+  --font-display: 'Baloo 2', 'Lexend', system-ui, sans-serif;
+  --font-display-weight: 800;
+  --font-mono: 'DM Mono', ui-monospace, monospace;
+
+  --control-radius: 12px;
+
+  /* the hero handheld: polar white */
+  --ds-shell: #FFFFFF;
+  --ds-edge: #B7C0D0;
+  --ds-hinge: #D3DAE6;
+  --ds-bezel: #1A1F2B;
+  --ds-scr-top: #CFE0FB;
+  --ds-scr-top-ink: #16233F;
+  --ds-scr-bot: #F4F7FD;
+  --ds-btn: #E4E9F2;
+  --ds-grille: #B7C0D0;
+  --ds-glow: rgba(22, 28, 42, 0.22);
+
+  --bezel: #1A1F2B;
+  --ring: rgba(44, 107, 222, 0.16);
+  --dots: rgba(44, 107, 222, 0.20);
+  --bubble-a: 210 90% 72%;
+  --bubble-b: 330 85% 76%;
+  --bubble-c: 150 70% 62%;
+  --hue-strip: linear-gradient(90deg,hsl(210 78% 58%) 0.000% 8.333%,hsl(150 78% 58%) 8.333% 16.667%,hsl(35 78% 58%) 16.667% 25.000%,hsl(0 78% 58%) 25.000% 33.333%,hsl(275 78% 58%) 33.333% 41.667%,hsl(100 78% 58%) 41.667% 50.000%,hsl(55 78% 58%) 50.000% 58.333%,hsl(300 78% 58%) 58.333% 66.667%,hsl(190 78% 58%) 66.667% 75.000%,hsl(330 78% 58%) 75.000% 83.333%,hsl(20 78% 58%) 83.333% 91.667%,hsl(180 78% 58%) 91.667% 100.000%);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1117;
+    --surface: #161B25;
+    --surface-2: #1D2431;
+    --ink: #E7ECF5;
+    --ink-soft: #A3AEC2;
+    --ink-faint: #6F7C93;
+    --accent: #6FA3FF;
+    --accent-ink: #0E1117;
+    --line: #252D3C;
+    --line-strong: #2F394C;
+    --shadow: 0 2px 4px rgba(0,0,0,0.35), 0 16px 30px -18px rgba(0,0,0,0.75);
+    --sat: 72%;
+    --lig: 68%;
+    --sat-soft: 40%;
+    --lig-soft: 18%;
+
+    /* the hero handheld: onyx black */
+    --ds-shell: #232936;
+    --ds-edge: #3B4459;
+    --ds-hinge: #2D3444;
+    --ds-bezel: #06080C;
+    --ds-scr-top: #1D3157;
+    --ds-scr-top-ink: #DCE8FF;
+    --ds-scr-bot: #121826;
+    --ds-btn: #333C50;
+    --ds-grille: #4A5670;
+    --ds-glow: rgba(0, 0, 0, 0.6);
+
+    --bezel: #05070B; --ring: rgba(111,163,255,0.16); --dots: rgba(111,163,255,0.22);
+    --bubble-a: 215 90% 60%; --bubble-b: 330 80% 58%; --bubble-c: 150 60% 46%;
+
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0E1117;
+  --surface: #161B25;
+  --surface-2: #1D2431;
+  --ink: #E7ECF5;
+  --ink-soft: #A3AEC2;
+  --ink-faint: #6F7C93;
+  --accent: #6FA3FF;
+  --accent-ink: #0E1117;
+  --line: #252D3C;
+  --line-strong: #2F394C;
+  --shadow: 0 2px 4px rgba(0,0,0,0.35), 0 16px 30px -18px rgba(0,0,0,0.75);
+  --sat: 72%;
+  --lig: 68%;
+  --sat-soft: 40%;
+  --lig-soft: 18%;
+
+  --ds-shell: #232936;
+  --ds-edge: #3B4459;
+  --ds-hinge: #2D3444;
+  --ds-bezel: #06080C;
+  --ds-scr-top: #1D3157;
+  --ds-scr-top-ink: #DCE8FF;
+  --ds-scr-bot: #121826;
+  --ds-btn: #333C50;
+  --ds-grille: #4A5670;
+  --ds-glow: rgba(0, 0, 0, 0.6);
+
+  --bezel: #05070B; --ring: rgba(111,163,255,0.16); --dots: rgba(111,163,255,0.22);
+  --bubble-a: 215 90% 60%; --bubble-b: 330 80% 58%; --bubble-c: 150 60% 46%;
+
+  color-scheme: dark;
+}
+
+.search input, .chip { background: var(--surface-2); }
+
+/* ---------- Hero handheld ---------- */
+
+.hero-device {
+  position: absolute;
+  top: 50%;
+  right: max(clamp(20px, 6vw, 80px), calc((100vw - 1180px) / 2 + 24px));
+  width: clamp(210px, 23vw, 272px);
+  transform: translateY(-50%) rotate(3deg);
+  pointer-events: none;
+}
+
+.hero-device svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 18px 20px var(--ds-glow));
+}
+
+.ds-shell  { fill: var(--ds-shell); stroke: var(--ds-edge); stroke-width: 1.5; }
+.ds-hinge  { fill: var(--ds-hinge); stroke: var(--ds-edge); stroke-width: 1.5; }
+.ds-bezel  { fill: var(--ds-bezel); }
+.ds-top    { fill: var(--ds-scr-top); }
+.ds-bot    { fill: var(--ds-scr-bot); }
+.ds-btn    { fill: var(--ds-btn); stroke: var(--ds-edge); stroke-width: 1; }
+.ds-grille { fill: var(--ds-grille); }
+.ds-k      { font-family: var(--font-mono); font-size: 7.5px; letter-spacing: 0.18em; fill: var(--ds-scr-top-ink); opacity: 0.7; }
+.ds-big    { font-family: var(--font-mono); font-size: 17px; font-weight: 500; fill: var(--ds-scr-top-ink); }
+.ds-tap    { fill: none; stroke: var(--accent); stroke-width: 2; opacity: 0.85; transform-box: fill-box; transform-origin: center; animation: tap 2.4s ease-out infinite; }
+.ds-tap-dot { fill: var(--accent); }
+@keyframes tap { 0% { transform: scale(0.7); opacity: 0.95; } 100% { transform: scale(2.1); opacity: 0; } }
+
+@media (max-width: 960px) {
+  .hero-device {
+    position: static;
+    transform: rotate(2deg);
+    width: 210px;
+    margin: 36px auto 0;
+  }
+}
+@media (min-width: 961px) {
+  .hero-device { animation: bob 6s ease-in-out infinite; }
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(-50%) rotate(3deg); }
+  50% { transform: translateY(calc(-50% - 9px)) rotate(2deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-device, .ds-tap, .hero .eyebrow .dot::after { animation: none; }
+}
+
+/* Hero: the DS home menu — soft bubbles, tap ripples, a dot-matrix touch grid */
+.hero {
+  isolation: isolate;
+  border-bottom: 12px solid transparent;
+  border-image: var(--hue-strip) 1;
+  background:
+    radial-gradient(circle, var(--dots) 1.4px, transparent 1.7px) 0 0 / 18px 18px,
+    linear-gradient(180deg, var(--bg) 0%, var(--surface-2) 100%);
+}
+.hero::before {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(circle at 8% 22%, hsl(var(--bubble-a) / 0.55) 0 54px, transparent 56px),
+    radial-gradient(circle at 30% 88%, hsl(var(--bubble-b) / 0.45) 0 84px, transparent 86px),
+    radial-gradient(circle at 55% 14%, hsl(var(--bubble-c) / 0.40) 0 34px, transparent 36px),
+    radial-gradient(circle at 96% 92%, hsl(var(--bubble-a) / 0.45) 0 120px, transparent 122px),
+    repeating-radial-gradient(circle at 80% 50%, transparent 0 58px, var(--ring) 58px 61px);
+  pointer-events: none;
+}
+.hero .wrap { position: relative; z-index: 1; }
+
+.hero .eyebrow {
+  background: var(--surface);
+  border: 2px solid var(--bezel);
+  border-radius: 22px;
+  padding: 6px 16px 6px 12px;
+  color: var(--ink);
+  box-shadow: 0 3px 0 var(--bezel);
+  gap: 14px;
+}
+.hero .eyebrow .dot { position: relative; margin-left: 2px; }
+.hero .eyebrow .dot::after {
+  content: ""; position: absolute; inset: -2px; border-radius: 50%;
+  border: 2px solid var(--accent); animation: ping 2.2s ease-out infinite;
+}
+@keyframes ping { from { transform: scale(1); opacity: 0.9; } to { transform: scale(2.2); opacity: 0; } }
+
+.hero h1 {
+  font-weight: 800;
+  font-size: clamp(2.6rem, 7.4vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  max-width: 11ch;
+}
+.hero h1 em {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: 0.02em 0.28em 0.08em;
+  border-radius: 0.28em;
+  transform: rotate(-1.8deg);
+  box-shadow: 0 0.09em 0 #1F4FAE;
+  margin: 0.05em 0;
+}
+:root[data-theme="dark"] .hero h1 em { box-shadow: 0 0.09em 0 #2E5CB8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hero h1 em { box-shadow: 0 0.09em 0 #2E5CB8; } }
+
+.hero-meta { border-top: 0; padding-top: 0; gap: 14px; }
+.hero-meta .stat {
+  background: var(--surface);
+  border: 3px solid var(--bezel);
+  border-radius: 16px;
+  padding: 10px 18px 12px;
+  box-shadow: 0 5px 0 var(--bezel);
+}
+
+/* ---------- Chapters & cards ---------- */
+
+.chapter-num {
+  letter-spacing: 0.01em;
+  width: 58px; height: 58px; border-radius: 50%;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.25rem; font-weight: 800;
+  background: radial-gradient(circle at 30% 24%, hsl(var(--hue) var(--sat) calc(var(--lig) + 20%)), hsl(var(--hue) var(--sat) var(--lig)) 58%, hsl(var(--hue) var(--sat) calc(var(--lig) - 8%)));
+  box-shadow: 0 5px 0 hsl(var(--hue) var(--sat) calc(var(--lig) - 16%)), inset 0 2px 0 rgba(255,255,255,0.45);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+.chapter-title { font-size: clamp(1.6rem, 3.6vw, 2.4rem); font-weight: 800; line-height: 1.05; }
+.chapter-tag { border-radius: 999px; border: 2px solid hsl(var(--hue) var(--sat) var(--lig)); font-weight: 600; }
+.chapter-blurb { border-bottom: 0; padding-bottom: 0; }
+.chapter-blurb::after {
+  content: ""; display: block; height: 12px; margin-top: 24px;
+  background: radial-gradient(circle, hsl(var(--hue) var(--sat) var(--lig)) 3.2px, transparent 3.8px) 0 50% / 18px 12px repeat-x;
+  opacity: 0.85;
+}
+
+.card {
+  --card-shadow: 0 1px 0 var(--line);
+  border-radius: 22px;
+  border: 2px solid var(--line);
+  border-bottom: 7px solid hsl(var(--hue) var(--sat) var(--lig));
+  background: linear-gradient(180deg, hsl(var(--hue) var(--sat-soft) var(--lig-soft)) 0, var(--surface) 78px);
+  overflow: hidden;
+  --card-hover-transform: translateY(-4px) rotate(-0.4deg);
+}
+.card::after {
+  content: ""; position: absolute; top: 10px; right: 10px; width: 78px; height: 44px;
+  background: radial-gradient(circle, hsl(var(--hue) var(--sat) var(--lig) / 0.6) 2px, transparent 2.6px) 0 0 / 11px 11px;
+  -webkit-mask-image: linear-gradient(225deg, #000, transparent 80%);
+          mask-image: linear-gradient(225deg, #000, transparent 80%);
+  pointer-events: none;
+}
+.card:hover { border-color: hsl(var(--hue) var(--sat) var(--lig)); border-bottom-color: hsl(var(--hue) var(--sat) var(--lig)); box-shadow: 0 0 0 4px hsl(var(--hue) var(--sat) var(--lig) / 0.22), var(--shadow); }
+
+.card-idx {
+  align-self: flex-start;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+  padding: 2px 9px;
+  border-radius: 999px;
+  color: var(--accent-ink); font-weight: 700; letter-spacing: 0.04em; position: relative; z-index: 1;
+}
+
+.card-title { font-family: var(--font-display); font-weight: 800; font-size: 1.18rem; }
+
+/* Toolbar */
+.toolbar { border-bottom: 6px solid transparent; border-image: var(--hue-strip) 1; }
+.chip { border-radius: 999px; font-weight: 500; }
+.chip:nth-child(1) { border-bottom: 4px solid hsl(210 70% 52%); }
+.chip:nth-child(2) { border-bottom: 4px solid hsl(150 70% 52%); }
+.chip:nth-child(3) { border-bottom: 4px solid hsl(35 70% 52%); }
+.chip:nth-child(4) { border-bottom: 4px solid hsl(0 70% 52%); }
+.chip:nth-child(5) { border-bottom: 4px solid hsl(275 70% 52%); }
+.chip:nth-child(6) { border-bottom: 4px solid hsl(100 70% 52%); }
+.chip:nth-child(7) { border-bottom: 4px solid hsl(55 70% 52%); }
+.chip:nth-child(8) { border-bottom: 4px solid hsl(300 70% 52%); }
+.chip:nth-child(9) { border-bottom: 4px solid hsl(190 70% 52%); }
+.chip:nth-child(10) { border-bottom: 4px solid hsl(330 70% 52%); }
+.chip:nth-child(11) { border-bottom: 4px solid hsl(20 70% 52%); }
+.chip:nth-child(12) { border-bottom: 4px solid hsl(180 70% 52%); }
+
+/* Curator's note as a top screen in its bezel */
+.note-card {
+  border: 12px solid var(--bezel);
+  border-radius: 30px;
+  box-shadow: 0 8px 0 -1px var(--surface-2), 0 18px 30px -18px rgba(0,0,0,0.5);
+}
+.note-card::before {
+  content: ""; position: absolute; top: -9px; left: 50%; width: 6px; height: 6px;
+  margin-left: -3px; border-radius: 50%; background: #56617A;
+}
+.note-card h2 { color: var(--accent); font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; }
+
+/* Footer */
+footer { border-top: 12px solid transparent; border-image: var(--hue-strip) 1; margin-top: 72px; }
+.footer-cols h3 { font-family: var(--font-display); font-weight: 800; color: var(--accent); }

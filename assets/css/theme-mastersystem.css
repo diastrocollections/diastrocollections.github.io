@@ -1,0 +1,261 @@
+/* Diastro Gaming Collections — Sega Master System theme (colors, fonts, flourishes).
+   Feel: a Space Harrier / Out Run horizon (checkerboard floor, striped sun), red-and-blue racing stripes. */
+
+:root {
+  --bg: #F3EEE6;
+  --surface: #FFFFFF;
+  --surface-2: #EBE4D9;
+  --ink: #17151A;
+  --ink-soft: #524D57;
+  --ink-faint: #6E6873;
+  --accent: #D3202F;
+  --accent-ink: #FFFFFF;
+  --blue: #0B5FD8;
+  --line: #DDD5C8;
+  --line-strong: #17151A;
+  --shadow: 0 3px 0 rgba(23,21,26,0.14);
+  --sat: 68%;
+  --lig: 46%;
+  --sat-soft: 62%;
+  --lig-soft: 92%;
+
+  --hue: 355;
+
+  --font-body: 'Archivo', system-ui, sans-serif;
+  --font-display: 'Bungee', 'Archivo', system-ui, sans-serif;
+  --font-display-weight: 400;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+
+  --card-radius: 2px;
+  --note-radius: 2px;
+  --control-radius: 2px;
+  --chip-radius: 2px;
+  --hero-border: 8px solid var(--accent);
+  --eyebrow-dot-radius: 0;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F0E12;
+    --surface: #18161C;
+    --surface-2: #211E26;
+    --ink: #F0ECEF;
+    --ink-soft: #B3ADB8;
+    --ink-faint: #7C7683;
+    --accent: #FF5C69;
+    --accent-ink: #0F0E12;
+    --blue: #5B9BFF;
+    --line: #2A2630;
+    --line-strong: #6B6573;
+    --shadow: 0 3px 0 rgba(0,0,0,0.6);
+    --sat: 78%;
+    --lig: 66%;
+    --sat-soft: 42%;
+    --lig-soft: 19%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0F0E12;
+  --surface: #18161C;
+  --surface-2: #211E26;
+  --ink: #F0ECEF;
+  --ink-soft: #B3ADB8;
+  --ink-faint: #7C7683;
+  --accent: #FF5C69;
+  --accent-ink: #0F0E12;
+  --blue: #5B9BFF;
+  --line: #2A2630;
+  --line-strong: #6B6573;
+  --shadow: 0 3px 0 rgba(0,0,0,0.6);
+  --sat: 78%;
+  --lig: 66%;
+  --sat-soft: 42%;
+  --lig-soft: 19%;
+  color-scheme: dark;
+}
+
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+.search input, .chip { background: var(--surface-2); }
+
+/* ---------- Hero: a Space Harrier horizon, always on a dark chassis ---------- */
+
+.hero {
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0 1px, transparent 1px 3px),
+    linear-gradient(180deg, #06050A 0%, #12070F 48%, #3C0F1C 100%);
+  color: #F5EFE8;
+  isolation: isolate;
+  min-height: clamp(420px, 52vw, 560px);
+  box-shadow:
+    inset 0 8px 0 #E5283A,
+    inset 0 12px 0 #06050A,
+    inset 0 16px 0 #1F72F0;
+}
+
+/* the setting sun, cut with slits */
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  right: max(4vw, calc((100vw - 1180px) / 2 + 24px));
+  bottom: 29%;
+  width: clamp(200px, 30vw, 400px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #FFE066 0%, #FF9A3C 42%, #F0303F 78%, #B01528 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 0 48%, transparent 48% 52%, #000 52% 58%, transparent 58% 63%, #000 63% 70%, transparent 70% 77%, #000 77% 86%, transparent 86% 100%);
+          mask-image: linear-gradient(180deg, #000 0 48%, transparent 48% 52%, #000 52% 58%, transparent 58% 63%, #000 63% 70%, transparent 70% 77%, #000 77% 86%, transparent 86% 100%);
+  filter: drop-shadow(0 0 40px rgba(255, 80, 60, 0.45));
+  pointer-events: none;
+}
+
+/* the checkerboard floor */
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -60%;
+  right: -60%;
+  top: 64%;
+  height: 340px;
+  background:
+    linear-gradient(180deg, #06050A 0%, rgba(6,5,10,0.55) 22%, transparent 55%),
+    repeating-conic-gradient(#9E1A2A 0 25%, #14070D 0 50%) 50% 0 / 84px 84px;
+  transform: perspective(360px) rotateX(72deg);
+  transform-origin: 50% 0;
+  pointer-events: none;
+}
+
+.hero .wrap { position: relative; z-index: 1; }
+
+.hero .back-link { color: #B9AFBA; }
+.hero .back-link:hover, .hero .back-link:focus-visible { color: #FFD24A; }
+
+.hero .eyebrow {
+  background: #E5283A;
+  color: #fff;
+  padding: 7px 22px 7px 14px;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+}
+.hero .eyebrow .dot { background: #FFD24A; }
+
+.hero h1 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: #F8F2EA;
+  max-width: 14ch;
+  line-height: 1.08;
+  text-shadow: 4px 4px 0 #1F72F0, 8px 8px 0 rgba(0,0,0,0.45);
+}
+.hero h1 em { color: #FF5A66; font-style: normal; }
+
+.hero .hero-lede {
+  color: #E6DED5;
+  max-width: 54ch;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+}
+
+.hero .hero-meta {
+  border-top: 3px dashed rgba(255,255,255,0.28);
+  max-width: 620px;
+}
+.hero .hero-meta .num { color: #FFD24A; text-shadow: 2px 2px 0 #1F72F0; }
+.hero .hero-meta .label { color: #D0C6CF; }
+
+@media (max-width: 720px) {
+  .hero::before { opacity: 0.6; bottom: 31%; }
+  .hero h1 { text-shadow: 3px 3px 0 #1F72F0; }
+}
+
+/* ---------- Toolbar & note ---------- */
+
+.toolbar { border-bottom: 3px solid var(--accent); }
+
+.chip { text-transform: uppercase; letter-spacing: 0.06em; font-family: var(--font-mono); font-size: 0.72rem; }
+
+.note-card {
+  border: 2px solid var(--line-strong);
+  border-left: 10px solid var(--accent);
+  box-shadow: 6px 6px 0 var(--blue);
+  padding-top: clamp(32px, 4.5vw, 48px);
+}
+.note-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 10px;
+  background: repeating-linear-gradient(115deg, var(--accent) 0 18px, transparent 18px 26px, var(--blue) 26px 34px, transparent 34px 42px);
+}
+.note-card h2 { font-family: var(--font-display); color: var(--accent); letter-spacing: 0.08em; }
+
+/* ---------- Chapters ---------- */
+
+.chapter-num {
+  background: hsl(var(--hue) var(--sat) var(--lig));
+  color: var(--accent-ink);
+  padding: 8px 14px 6px 10px;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+  align-self: center;
+}
+.chapter-title { text-transform: uppercase; letter-spacing: 0.02em; }
+
+.chapter-tag { font-weight: 700; border: 2px solid hsl(var(--hue) var(--sat) var(--lig)); }
+
+.chapter-blurb { border-bottom: 0; padding-bottom: 0; }
+.chapter-blurb::after {
+  content: "";
+  display: block;
+  height: 10px;
+  margin-top: 22px;
+  background: repeating-conic-gradient(hsl(var(--hue) var(--sat) var(--lig)) 0 25%, transparent 0 50%) 0 0 / 10px 10px;
+  opacity: 0.85;
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+  border: 2px solid var(--line);
+  border-left: 5px solid hsl(var(--hue) var(--sat) var(--lig));
+  padding-top: 20px;
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+  --card-hover-transform: translateY(-3px);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+  transition: height 0.15s ease;
+}
+.card:hover::before { height: 11px; }
+.card:hover { border-color: hsl(var(--hue) var(--sat) var(--lig)); }
+
+.card-idx {
+  align-self: flex-start;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+  color: var(--accent-ink);
+  padding: 2px 8px;
+  border-radius: 0;
+  letter-spacing: 0.06em;
+}
+.card-title { font-family: var(--font-body); font-weight: 800; font-size: 1.08rem; }
+
+/* ---------- Footer ---------- */
+
+footer { position: relative; margin-top: 64px; border-top: 0; }
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 16px;
+  background:
+    repeating-conic-gradient(var(--accent) 0 25%, transparent 0 50%) 0 0 / 16px 16px;
+}
+footer .wrap { padding-top: 20px; }
+.footer-cols h3 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); }

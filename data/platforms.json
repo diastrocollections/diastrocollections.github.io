@@ -16,6 +16,22 @@
     "url": "nes/"
   },
   {
+    "id": "mastersystem",
+    "icon": "🕹️",
+    "manufacturer": "Sega",
+    "name": "Master System",
+    "title": "The Sega Master System Collection",
+    "years": "1987–1997",
+    "start": 1987,
+    "end": 1997,
+    "games": 100,
+    "chapters": 12,
+    "accent": "#D3202F",
+    "region": "EU-first",
+    "tagline": "Sega's other 8-bit hero, seen from Europe: arcade conversions in 1987, PAL-only Sonic and Streets of Rage, and Brazil's Tec Toy keeping it alive.",
+    "url": "mastersystem/"
+  },
+  {
     "id": "gameboy",
     "icon": "🧩",
     "manufacturer": "Nintendo",
@@ -176,6 +192,22 @@
     "url": "psp/"
   },
   {
+    "id": "ds",
+    "icon": "🐶",
+    "manufacturer": "Nintendo",
+    "name": "DS",
+    "title": "The Nintendo DS Collection",
+    "years": "2004–2013",
+    "start": 2004,
+    "end": 2013,
+    "games": 100,
+    "chapters": 12,
+    "accent": "#2C6BDE",
+    "region": "EU-first",
+    "tagline": "Two screens, a stylus and a microphone, seen from Europe: from the March 2005 launch to the DSiWare shop's 2017 closure.",
+    "url": "ds/"
+  },
+  {
     "id": "wii",
     "icon": "🎾",
     "manufacturer": "Nintendo",
@@ -192,20 +224,19 @@
     "url": "wii/"
   },
   {
-    "id": "Nintendo DS",
-    "icon": "🐶",
-    "manufacturer": "Nintendo",
-    "name": "DS",
-    "title": "The Nintendo DS Collection",
-    "years": "2004-2010",
-    "start": 2004,
-    "end": 2010,
+    "id": "xbox",
+    "icon": "🪐",
+    "manufacturer": "Microsoft",
+    "name": "Xbox",
+    "title": "The Original Xbox Collection",
+    "years": "2001–2006",
+    "start": 2001,
+    "end": 2006,
     "games": 100,
     "chapters": 12,
-    "accent": "#C8102E",
+    "accent": "#6FCF1A",
     "region": "EU-first",
-    "tagline": "This is a tagline.",
-    "url": "ds/"
-  },
-  {}
+    "tagline": "Microsoft's first console, built around one shooter and a built-in online service everyone else spent years catching up to.",
+    "url": "xbox/"
+  }
 ]

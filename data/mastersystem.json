@@ -1,0 +1,698 @@
+[
+ {
+  "hue": 355,
+  "tag": "Arcade",
+  "title": "The Arcade Comes Home",
+  "blurb": "Europe's Master System arrived in 1987 with a simple pitch: Sega's arcade hits, at home. This chapter follows that pitch from the first Space Harrier cartridge to the last conversions of 1991, and shows how often the console's programmers had to rebuild an arcade game rather than simply shrink it.",
+  "games": [
+   {
+    "title": "Space Harrier",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "The port by Mutsuhiro Fujii and Yuji Naka was the first two-megabit cartridge made for the system, and it was proof that the little black box could handle real arcade speed. Europe got it in August 1987."
+   },
+   {
+    "title": "Out Run",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "Sega's open-top drive with the arcade's branching route and its choice of music, squeezed onto a 1987 cartridge. It was never a pixel-perfect copy, but the sense of speed carried over, and it reached Europe in October 1987."
+   },
+   {
+    "title": "Fantasy Zone",
+    "year": "1987",
+    "developer": "Sega R&D2",
+    "blurb": "Opa-Opa's pastel shooter reached PAL regions in August 1987. The conversion drops the base radar and energy gauge and swaps two of the bosses for new ones, but the shop-between-levels loop and the sugary look made it one of the console's signature games."
+   },
+   {
+    "title": "Alien Syndrome",
+    "year": "1988",
+    "developer": "Sanritsu",
+    "blurb": "A top-down rescue-and-shoot through spaceship corridors, racing a timer to free crew members before a boss. Sanritsu's port became one of the best-selling Master System games, which tells you how hungry the audience was for arcade-style action."
+   },
+   {
+    "title": "Shinobi",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "Joe Musashi arrived in Europe in November 1988, and this version changed the arcade rules: a health gauge instead of one-hit deaths, and hostage rescue that is optional rather than mandatory. It kept the ninja fantasy and made the game far more playable at home."
+   },
+   {
+    "title": "R-Type",
+    "year": "1989",
+    "developer": "Compile",
+    "blurb": "Irem's relentless shooter, with the detachable Force pod, was tough to fit into a console that struggled with many sprites. It reached Japan in October 1988 and Europe in 1989, and it is still one of the more impressive shooters on the system."
+   },
+   {
+    "title": "Rampage",
+    "year": "1989",
+    "developer": "Sega",
+    "blurb": "Three monsters demolishing cities for points, converted by Sega for the Master System in 1989. It is a simple game and a slightly clumsy one to control, but the cartoon feel of the arcade original survives, and the console version adds music."
+   },
+   {
+    "title": "Golden Axe",
+    "year": "1990",
+    "developer": "Sega",
+    "blurb": "The Master System version retells the arcade story around the barbarian Tarik, keeps all the levels and magic, and is single-player only. It is a reminder that Europe's 8-bit owners were still getting big Mega Drive-era names in 1990."
+   },
+   {
+    "title": "Bonanza Bros.",
+    "year": "1991",
+    "developer": "Sega",
+    "blurb": "Robo and Mobo, Sega's cartoon burglars, sneaking through buildings in a heist game that arrived in October 1991. It was one of the later arcade conversions the Master System received."
+   },
+   {
+    "title": "Ghouls 'n Ghosts",
+    "year": "1991",
+    "developer": "Sega",
+    "blurb": "Sega built its own version of Capcom's brutal sequel, with a power-up system of its own: secret shops where armour can be upgraded. Europe got it in April 1991, a few months after North America."
+   }
+  ]
+ },
+ {
+  "hue": 200,
+  "tag": "3-D",
+  "title": "Light Phaser and 3-D Glasses",
+  "blurb": "Sega's 1987 answer to the competition was hardware: the Light Phaser gun and the SegaScope 3-D glasses, LCD shutter glasses that plugged into the card slot. Only a small shelf of games used them, and this is that shelf, plus the Light Phaser game that shipped with Europe's Hang-On.",
+  "games": [
+   {
+    "title": "Safari Hunt",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "The Light Phaser's pack-in shooting gallery, with animals to hit and a score to beat. European buyers found it on the same cartridge as Hang-On, which is how many people met both games."
+   },
+   {
+    "title": "Missile Defense 3-D",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "The first game to use the SegaScope 3-D glasses. Mark Cerny designed the glasses, and the game works with the Light Phaser too. It reached Europe in October 1987, and it later came bundled with the glasses and the gun in the Sega Super System edition."
+   },
+   {
+    "title": "Zaxxon 3-D",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "A 3-D shoot 'em up that reached Europe in November 1987, months before North America got it in March 1988. It is a game that mainly exists to show off the glasses."
+   },
+   {
+    "title": "Space Harrier 3-D",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "A sequel to the original Space Harrier, built for the shutter glasses. It is a rail shooter in the style of the original, with stereoscopic depth added, and it reached Europe in 1988."
+   },
+   {
+    "title": "Blade Eagle 3-D",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "A vertical shooter across nine levels with three selectable modules, each with its own stats and power-ups. The 3-D effect is a bonus rather than the point, which is why it holds up as a shooter."
+   },
+   {
+    "title": "Poseidon Wars 3-D",
+    "year": "1989",
+    "developer": "Sega",
+    "blurb": "A naval rail shooter from 1989 that used the glasses to give its ocean stages some depth. It came late in the 3-D run, when the glasses had already become a curiosity."
+   },
+   {
+    "title": "Out Run 3-D",
+    "year": "1989",
+    "developer": "Sega",
+    "blurb": "One of only eight games made for the SegaScope glasses. It also has a normal 2-D mode, which you reach by pressing Pause at the title screen, useful for anyone without the glasses."
+   }
+  ]
+ },
+ {
+  "hue": 45,
+  "tag": "Platformer",
+  "title": "Mascots and Platformers",
+  "blurb": "Nintendo had Mario. Sega had Alex Kidd, and then Sonic, and Europe got the best of both. This chapter follows the mascot race from 1987 to 1995, including two Sonic games that only PAL regions received and a pinball port that arrived just as the console was fading.",
+  "games": [
+   {
+    "title": "Alex Kidd in Miracle World",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "Sega's first real mascot platformer. Many Master System and Master System II consoles later shipped with it built in, which is why so many people first played it without ever buying it."
+   },
+   {
+    "title": "Wonder Boy",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "A direct port of the Sega arcade game, a plain run-jump-collect with a fruit timer. It reached Europe in 1987 and started a series that would go in very different directions."
+   },
+   {
+    "title": "Alex Kidd: The Lost Stars",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "Alex Kidd's second Master System adventure began as an arcade game in December 1986, and the console version reached Europe in 1988."
+   },
+   {
+    "title": "Wonder Boy III: The Dragon's Trap",
+    "year": "1989",
+    "developer": "Westone",
+    "blurb": "Westone's action-adventure has the hero cursed to turn into different animals, each with its own abilities. Sega published it in 1989 in Europe and North America, and Japan only got it as a Game Gear game in 1992."
+   },
+   {
+    "title": "Psycho Fox",
+    "year": "1989",
+    "developer": "Vic Tokai",
+    "blurb": "Vic Tokai's shape-shifting platformer reached Europe in December 1989 and North America in May 1990. In Brazil it became Sapo Xulé: Os Invasores do Brejo, one of the country's own takes on the Master System catalogue."
+   },
+   {
+    "title": "Alex Kidd in Shinobi World",
+    "year": "1990",
+    "developer": "Sega",
+    "blurb": "Alex Kidd drops into a parody of Sega's own ninja game. It was made for Western markets, including Europe and Brazil, and never came out in Japan."
+   },
+   {
+    "title": "Sonic the Hedgehog",
+    "year": "1991",
+    "developer": "Ancient",
+    "blurb": "The 8-bit Sonic was built from scratch for Master System hardware by Ancient rather than squeezed down from the Mega Drive game. It launched in Europe on 8 November 1991, and in North America it became the console's swan song."
+   },
+   {
+    "title": "Sonic the Hedgehog 2",
+    "year": "1992",
+    "developer": "Aspect",
+    "blurb": "A PAL-only Master System release on 24 November 1992, and it stayed exclusive to PAL territories until its 2008 Virtual Console release. The Game Gear version was the one that reached every region."
+   },
+   {
+    "title": "Rainbow Islands",
+    "year": "1993",
+    "developer": "I.T.L.",
+    "blurb": "Taito's rainbow-climbing sequel to Bubble Bobble, released in the UK in June 1993. It resembles the NES version more than the Mega Drive one and has less content than the 16-bit game, but the game's core is intact."
+   },
+   {
+    "title": "Sonic Chaos",
+    "year": "1993",
+    "developer": "Aspect",
+    "blurb": "Sonic Chaos came out on the Master System exclusively in PAL regions on 23 November 1993, alongside a worldwide Game Gear release."
+   },
+   {
+    "title": "Sonic Spinball",
+    "year": "1995",
+    "developer": "Sega",
+    "blurb": "Sega ported the pinball-platformer to 8-bit in January 1995, in Europe and Brazil. The Master System release came near the end of the console's life, did not sell well, and became a collector's item."
+   }
+  ]
+ },
+ {
+  "hue": 275,
+  "tag": "RPG",
+  "title": "Quests and Dungeons",
+  "blurb": "The Master System's RPGs are its unsung strength, from Phantasy Star's first-person dungeons in 1988 to a Zelda-style Golden Axe in 1991. Several of them reached Europe first or only, and a few were the first time English-speaking players saw a Japanese role-playing game at all.",
+  "games": [
+   {
+    "title": "Zillion",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "A tie-in with Tatsunoko's anime, released in Europe in October 1987, a month before North America. Its gun was the design model for the Master System's Light Phaser, and its base-infiltration puzzles feel like Impossible Mission with a Metroid mood."
+   },
+   {
+    "title": "Wonder Boy in Monster Land",
+    "year": "1988",
+    "developer": "Westone",
+    "blurb": "The arcade platformer that added shops, armour and gold to its formula. It is the game where Wonder Boy started turning into an RPG hero, and it set the direction for Dragon's Trap."
+   },
+   {
+    "title": "Phantasy Star",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "The four-megabit cartridge with a battery save was the most expensive Master System release in every market. It reached Europe in November 1988 with first-person 3-D dungeons and a heroine, Alis, who still stands out in 8-bit games."
+   },
+   {
+    "title": "Miracle Warriors: Seal of the Dark Lord",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "Kogado's PC-88 RPG, ported by Sega and released in Europe in November 1988. It is often described as the first officially released Japanese RPG to be localised into English."
+   },
+   {
+    "title": "Golvellius: Valley of Doom",
+    "year": "1988",
+    "developer": "Compile",
+    "blurb": "Compile's action-adventure began on the MSX. The Master System version, released in Europe in 1988, has different overworld and dungeon layouts and better graphics than the original."
+   },
+   {
+    "title": "Ys: The Vanished Omens",
+    "year": "1989",
+    "developer": "Sega",
+    "blurb": "Falcom's 'bump' combat RPG in a Master System edition that was well reviewed in 1989, with some dungeon areas flipped horizontally compared to the PC original. It is a quiet, fast little adventure and one of the console's best."
+   },
+   {
+    "title": "Ultima IV: Quest of the Avatar",
+    "year": "1990",
+    "developer": "Sega",
+    "blurb": "The only Ultima ever ported to a Sega system. Sega redrew the graphics, kept the classic music and turned dungeons into top-down maps. Most cartridges were made for Europe, with English, French and German manuals."
+   },
+   {
+    "title": "Psychic World",
+    "year": "1991",
+    "developer": "Sanritsu",
+    "blurb": "A Master System release exclusive to Europe in June 1991, an action-adventure in which a heroine uses psychic powers. It later appeared on the Game Gear as well."
+   },
+   {
+    "title": "Golden Axe Warrior",
+    "year": "1991",
+    "developer": "Sega",
+    "blurb": "A Zelda-style top-down adventure, released in Europe in May 1991. IGN later included it in a list of shameless rip-offs, and British magazines were unimpressed, but it is a competent little adventure."
+   },
+   {
+    "title": "Wonder Boy in Monster World",
+    "year": "1993",
+    "developer": "Westone",
+    "blurb": "Released in Europe in August 1993 as a very different game from the Mega Drive one: redrawn graphics, fewer and shorter stages and a password system. Brazil received its own version as Turma da Mônica."
+   }
+  ]
+ },
+ {
+  "hue": 20,
+  "tag": "Action",
+  "title": "Fists, Blades and Ninjas",
+  "blurb": "Sega's 8-bit brawlers and swordfighters started with cut-down arcade games and ended with some of the strangest ports of 1993 and 1994. Several of them, including Streets of Rage, were released only in PAL territories.",
+  "games": [
+   {
+    "title": "Black Belt",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "A Fist of the North Star game in Japan, sold in Europe in August 1987 as Black Belt. Sega removed the licence, which meant modifying the sprites and backgrounds and changing some music."
+   },
+   {
+    "title": "Kenseiden",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "A samurai action-adventure with a big map and a hunt for a legendary sword. It reached Europe in November 1988."
+   },
+   {
+    "title": "Double Dragon",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "Co-developed with Arc System Works, this version keeps the two-player co-op mode, including the final duel between the two players. It has brighter colours and more enemies on screen than the NES game."
+   },
+   {
+    "title": "Vigilante",
+    "year": "1989",
+    "developer": "Sega",
+    "blurb": "A street-brawler port that reached PAL regions in July 1989. Arc System Works developed the Master System version, published by Sega."
+   },
+   {
+    "title": "The Cyber Shinobi",
+    "year": "1991",
+    "developer": "Sega",
+    "blurb": "A Master System exclusive, not an arcade conversion. It was released in Europe in April 1991 and also in Canada, Australia and Brazil, because the console had already been discontinued in the USA and Japan."
+   },
+   {
+    "title": "Master of Darkness",
+    "year": "1992",
+    "developer": "SIMS",
+    "blurb": "A gothic action-platformer in which Dr Social hunts Dracula in Victorian London. Reviewers called it the closest thing to Castlevania on a Sega console."
+   },
+   {
+    "title": "Ninja Gaiden",
+    "year": "1992",
+    "developer": "SIMS",
+    "blurb": "A PAL-only release licensed from Tecmo, and not a port of the NES game. It replaces wall-clinging with wall-to-wall jumping, a move that came back in the series much later."
+   },
+   {
+    "title": "Streets of Rage",
+    "year": "1993",
+    "developer": "Sega",
+    "blurb": "Released only in PAL regions, on 7 June 1993. It is a heavily reduced version of the Mega Drive game: cut-down music, one player, and only two enemies on screen at a time."
+   },
+   {
+    "title": "Mortal Kombat",
+    "year": "1993",
+    "developer": "Probe Software",
+    "blurb": "Probe made the Master System version for the September 1993 'Mortal Monday' launch, in PAL regions only. It was based on the Game Gear version, lacks Kano and Reptile, and can be uncensored with a code."
+   },
+   {
+    "title": "Streets of Rage 2",
+    "year": "1994",
+    "developer": "Sega",
+    "blurb": "A February 1994 European release, with different levels and weaker graphics than the Mega Drive game, and without Max Thunder as a playable fighter. It was a very late Master System release."
+   }
+  ]
+ },
+ {
+  "hue": 170,
+  "tag": "Shooter",
+  "title": "Skies and Stars",
+  "blurb": "Shooters were the Master System's natural genre, and a Japanese studio called Compile turned it into a shooting-game machine. This chapter runs from 1988's Power Strike to a 1993 sequel that only Europe and Brazil received.",
+  "games": [
+   {
+    "title": "Power Strike",
+    "year": "1988",
+    "developer": "Compile",
+    "blurb": "Compile's Aleste, renamed for the West. It has one fewer level than the Japanese game and no anime story, but it is a quick vertical shooter with the polish that made Compile's name."
+   },
+   {
+    "title": "Fantasy Zone II",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "Opa-Opa returned in a Master System sequel that reached Europe in 1988, with the same shop-between-levels loop and the same candy-coloured look as the first game."
+   },
+   {
+    "title": "Thunder Blade",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "Sega's helicopter shooter, released in Europe in November 1988. It is a technical showpiece rather than a deep game."
+   },
+   {
+    "title": "Galaxy Force",
+    "year": "1989",
+    "developer": "Sega",
+    "blurb": "Completely redone for the Master System, more like Space Harrier than the arcade original. It is the only home version not based on Galaxy Force II."
+   },
+   {
+    "title": "Bomber Raid",
+    "year": "1989",
+    "developer": "Sanritsu",
+    "blurb": "A vertical shooter with a Freedom Fighter aircraft across five levels, released in Europe in June 1989. Activision handled its release in North America."
+   },
+   {
+    "title": "Aerial Assault",
+    "year": "1990",
+    "developer": "Sanritsu",
+    "blurb": "Sanritsu's shooter, published by Sega in 1990 and later released for the Game Gear in 1992. It is one of the console's lesser-known shooters."
+   },
+   {
+    "title": "Operation Wolf",
+    "year": "1990",
+    "developer": "Taito",
+    "blurb": "Taito's rescue-mission shooter arrived in Europe in 1990 without Light Phaser support, unlike the NES version. The Master System box even used artwork from the sequel, Operation Thunderbolt."
+   },
+   {
+    "title": "Power Strike II",
+    "year": "1993",
+    "developer": "Compile",
+    "blurb": "Released in Europe and Brazil only. It is the only entry in the series designed from scratch as a Power Strike game, and one of the last great Master System shooters."
+   }
+  ]
+ },
+ {
+  "hue": 220,
+  "tag": "Racing",
+  "title": "Speed on Eight Bits",
+  "blurb": "Racing was central to Sega's arcade identity, and the Master System's racers show the whole arc, from a 1987 motorbike game to Road Rash and Micro Machines in 1994.",
+  "games": [
+   {
+    "title": "Hang-On",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "The Master System version of Sega's motorbike racer, first released in Japan in October 1985. Europe got it in August 1987, bundled with Safari Hunt on a single cartridge."
+   },
+   {
+    "title": "Enduro Racer",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "A dirt-bike game that came out in Europe in November 1987. The jumping and bumpy track make it feel different from Hang-On."
+   },
+   {
+    "title": "Super Monaco GP",
+    "year": "1990",
+    "developer": "Sega",
+    "blurb": "Sega's Formula One game arrived in Europe in 1990, and North America in September 1990. It is a serious attempt at a driving game, with a career structure that was rare on the system."
+   },
+   {
+    "title": "Chase H.Q.",
+    "year": "1990",
+    "developer": "Taito",
+    "blurb": "The arcade police chase, published by Taito in Europe in 1990. It was well reviewed for keeping the arcade's speed and excitement."
+   },
+   {
+    "title": "Ayrton Senna's Super Monaco GP II",
+    "year": "1992",
+    "developer": "Sega",
+    "blurb": "The sequel, released in July 1992 with the official endorsement of the F1 champion. It went to PAL regions and Japan in July and reached North America in September."
+   },
+   {
+    "title": "OutRun Europa",
+    "year": "1992",
+    "developer": "Probe Software",
+    "blurb": "Probe's European-themed sequel, published by U.S. Gold. Console XS gave it 90%."
+   },
+   {
+    "title": "Micro Machines",
+    "year": "1994",
+    "developer": "Codemasters",
+    "blurb": "A Codemasters game that reached the Master System on 10 March 1994. Mean Machines Sega called its two-player mode 'timeless' and 'an absolutely essential purchase'."
+   },
+   {
+    "title": "Road Rash",
+    "year": "1994",
+    "developer": "Probe Software",
+    "blurb": "Gary Priest of Probe converted the biker-brawler for the Master System in March 1994, alongside the Game Gear version. It has no simultaneous two-player mode, but it is smooth and detailed."
+   }
+  ]
+ },
+ {
+  "hue": 120,
+  "tag": "Sports",
+  "title": "Football, Tennis and Fair Play",
+  "blurb": "Europe is football country, and the Master System's sports shelf leans that way. It is a small chapter, but it shows how much the console's sports games depended on licences and European computer studios.",
+  "games": [
+   {
+    "title": "Pro Wrestling",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "Sega's wrestling game was the only pro wrestling title released for the Master System in the USA. In Japan it was Gokuaku Doumei Dump Matsumoto."
+   },
+   {
+    "title": "California Games",
+    "year": "1989",
+    "developer": "Westwood Associates",
+    "blurb": "Epyx's sunshine sports collection reached Europe in July 1989, published there by U.S. Gold. It includes surfing, skating and footbag events."
+   },
+   {
+    "title": "World Cup Italia '90",
+    "year": "1990",
+    "developer": "Sega",
+    "blurb": "Sega's football game for the 1990 World Cup, which Italy hosted. It is a rare football game on a console whose main audience was in Europe."
+   },
+   {
+    "title": "Olympic Gold",
+    "year": "1992",
+    "developer": "Tiertex",
+    "blurb": "Tiertex made the 8-bit versions of the Barcelona 1992 Olympics game for U.S. Gold. It is a summer-sports collection, released in June 1992, shortly before the Games opened."
+   },
+   {
+    "title": "Wimbledon",
+    "year": "1992",
+    "developer": "Sega",
+    "blurb": "Sega's tennis game, released in August 1992 under the Wimbledon name."
+   },
+   {
+    "title": "Andre Agassi Tennis",
+    "year": "1993",
+    "developer": "TecMagik",
+    "blurb": "A Europe-only Master System release, from June 1993, published by TecMagik. It is a tennis game with a licence and a serve."
+   },
+   {
+    "title": "Sensible Soccer",
+    "year": "1993",
+    "developer": "Eurocom",
+    "blurb": "Sensible Software's overhead football classic, converted by Eurocom. It is a British game that made the trip to the Master System."
+   }
+  ]
+ },
+ {
+  "hue": 300,
+  "tag": "Puzzle",
+  "title": "Puzzles and Strategy",
+  "blurb": "Puzzle and strategy games are a small but interesting corner of the Master System. This chapter covers Sega's own Columns, the Compile game that became Dr. Robotnik's Mean Bean Machine, and Bullfrog's god game Populous.",
+  "games": [
+   {
+    "title": "Shanghai",
+    "year": "1988",
+    "developer": "Sega",
+    "blurb": "The tile-matching solitaire game, published by Activision in North America. It is a quiet, patient game, and a good example of how the console served players who wanted something other than arcade action."
+   },
+   {
+    "title": "Columns",
+    "year": "1990",
+    "developer": "Sega",
+    "blurb": "Sega's answer to Tetris, a falling-jewel game that reached the Master System in 1990. It is simple, addictive and one of the console's best puzzle games."
+   },
+   {
+    "title": "Klax",
+    "year": "1991",
+    "developer": "Tiertex",
+    "blurb": "Tiertex's version of the Atari tile-catching game, published by Tengen in Europe in November 1991."
+   },
+   {
+    "title": "Marble Madness",
+    "year": "1992",
+    "developer": "Tengen",
+    "blurb": "The isometric marble game reached Europe in August 1992. It is a tough game, and it shows that the console was still receiving Western arcade games late in its life."
+   },
+   {
+    "title": "Lemmings",
+    "year": "1992",
+    "developer": "Probe Software",
+    "blurb": "The Master System version came out in Europe on 26 November 1992, with Probe as developer and Sega as publisher. It is a very good port for the hardware."
+   },
+   {
+    "title": "Populous",
+    "year": "1991",
+    "developer": "Bullfrog Productions",
+    "blurb": "Peter Molyneux's god game arrived in Europe in October 1991, published by Sega. It did well on the console, and was one of the few strategy titles the Master System had."
+   },
+   {
+    "title": "Dr. Robotnik's Mean Bean Machine",
+    "year": "1994",
+    "developer": "Compile",
+    "blurb": "A Master System exclusive for Europe, in March 1994. Compile adapted it from the Japanese Nazo Puyo game, not from the Mega Drive version."
+   }
+  ]
+ },
+ {
+  "hue": 80,
+  "tag": "Licensed",
+  "title": "Cartoons, Comics and Licences",
+  "blurb": "Licences were a big part of the console's later years in Europe. This chapter has Mickey and Donald from Disney, two Asterix games, Taz-Mania and a Spider-Man game, plus a Ghostbusters port that took years to reach PAL regions.",
+  "games": [
+   {
+    "title": "Ghostbusters",
+    "year": "1989",
+    "developer": "Compile",
+    "blurb": "Compile made the Master System version of the classic Activision game. North America got it in May 1987, while PAL regions had to wait until October 1989."
+   },
+   {
+    "title": "Castle of Illusion Starring Mickey Mouse",
+    "year": "1991",
+    "developer": "Sega",
+    "blurb": "The 8-bit version is a different game from the Mega Drive one, with different mechanics, enemies and levels. It is a compact, charming Mickey platformer."
+   },
+   {
+    "title": "The Lucky Dime Caper Starring Donald Duck",
+    "year": "1991",
+    "developer": "Sega",
+    "blurb": "Donald Duck's platformer reached Europe in 1991, and it was also released on the Game Gear. It is a solid game."
+   },
+   {
+    "title": "Spider-Man vs. The Kingpin",
+    "year": "1991",
+    "developer": "Sega",
+    "blurb": "The Master System version was one of the last games released in North America for the console, and reached Europe in October 1991. Sega made it themselves, not Technopop, and changed the levels."
+   },
+   {
+    "title": "Asterix",
+    "year": "1992",
+    "developer": "Sega",
+    "blurb": "Sega's first Asterix game for the Master System, released in March 1992. It is an adaptation of the French comic, and a good match for a console that sold mostly in Europe."
+   },
+   {
+    "title": "Taz-Mania",
+    "year": "1992",
+    "developer": "Technical Wave",
+    "blurb": "A Europe-only game, released on 10 December 1992. Technical Wave developed the Master System version, and Sega published it."
+   },
+   {
+    "title": "Land of Illusion Starring Mickey Mouse",
+    "year": "1993",
+    "developer": "Sega",
+    "blurb": "Mickey searches for a crystal to save a village, in a game that runs from the forest to the Phantom's Castle. It came out in Europe in April 1993, and in Brazil in 1994."
+   },
+   {
+    "title": "Deep Duck Trouble Starring Donald Duck",
+    "year": "1994",
+    "developer": "Aspect",
+    "blurb": "Aspect's Donald Duck game reached Europe in January 1994 alongside the Game Gear version."
+   },
+   {
+    "title": "Asterix and the Great Rescue",
+    "year": "1994",
+    "developer": "Core Design",
+    "blurb": "Released in Europe in August 1994 and in Brazil in 1995. The Master System version lets you change character during a level."
+   }
+  ]
+ },
+ {
+  "hue": 330,
+  "tag": "Imports",
+  "title": "Europe's Home-Computer Imports",
+  "blurb": "Europe had its own computer scene, and the Master System received some of its games. This chapter collects British computer classics and a few arcade games that reached the console through home-computer studios.",
+  "games": [
+   {
+    "title": "Paperboy",
+    "year": "1990",
+    "developer": "Tiertex",
+    "blurb": "The arcade newspaper-delivery game reached the UK in November 1990. It was published by Sega and U.S. Gold, and reviewers thought it one of the best arcade conversions on the console."
+   },
+   {
+    "title": "Fantastic Dizzy",
+    "year": "1991",
+    "developer": "Codemasters",
+    "blurb": "The Codemasters egg hero came to the Master System in April 1991 alongside the other platforms."
+   },
+   {
+    "title": "Prince of Persia",
+    "year": "1992",
+    "developer": "The Kremlin",
+    "blurb": "Domark's Master System version came out on 1 October 1992. Mean Machines gave it 91%, and Sega Force said it was the best Master System game they had seen in ages."
+   },
+   {
+    "title": "Chuck Rock",
+    "year": "1992",
+    "developer": "Core Design",
+    "blurb": "Core Design's caveman platformer reached Europe in August 1992, published by Virgin Games."
+   },
+   {
+    "title": "Cool Spot",
+    "year": "1993",
+    "developer": "Virgin Games",
+    "blurb": "The 7 Up mascot in a platform game from Virgin, released in Europe in October 1993."
+   },
+   {
+    "title": "Cosmic Spacehead",
+    "year": "1993",
+    "developer": "Codemasters",
+    "blurb": "Codemasters' comic space adventure, released in 1993 across several platforms including the Master System."
+   }
+  ]
+ },
+ {
+  "hue": 150,
+  "tag": "Brazil",
+  "title": "Cards and Brazil",
+  "blurb": "The Master System has two bookends: the Sega Card, and Brazil's Tec Toy. Cards were a short-lived format of the Mark III and Master System, with about a dozen games released. Tec Toy launched the console in Brazil in September 1989 and was still selling Master System-style plug-and-play consoles in 2015.",
+  "games": [
+   {
+    "title": "Ghost House",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "Originally released in the Sega Card format, then again on cartridge. In Brazil, Tec Toy remade it as Chapolim x Drácula, based on the Mexican series El Chapulín Colorado."
+   },
+   {
+    "title": "Bank Panic",
+    "year": "1987",
+    "developer": "Sanritsu",
+    "blurb": "A Sega Card-era game that only reached Europe in 1987, three years after the arcade original. It is a very simple shooting game about bank customers and bandits."
+   },
+   {
+    "title": "Teddy Boy Blues",
+    "year": "1987",
+    "developer": "Sega",
+    "blurb": "A launch game for the Mark III in Japan. The export version is simply called Teddy Boy, and in Brazil it was Geraldinho, with a new protagonist from a Brazilian comic."
+   },
+   {
+    "title": "Turma da Mônica em O Resgate",
+    "year": "1993",
+    "developer": "Tec Toy",
+    "blurb": "A Brazil-only game based on Wonder Boy in Monster World, with characters from the Turma da Mônica comics, released in 1993."
+   },
+   {
+    "title": "Dynamite Headdy",
+    "year": "1995",
+    "developer": "Tec Toy",
+    "blurb": "Treasure's puppet platformer was ported to the Master System exclusively in Brazil in 1995, based on the Game Gear version."
+   },
+   {
+    "title": "Street Fighter II",
+    "year": "1997",
+    "developer": "Tec Toy",
+    "blurb": "A Master System port of Capcom's fighting game, from September 1997, and evidence that Brazil kept the platform running long after the rest of the world."
+   },
+   {
+    "title": "Sonic Blast",
+    "year": "1997",
+    "developer": "Aspect",
+    "blurb": "A Brazil-only Master System version of the Game Gear game, released in December 1997 by Tec Toy. It had to be simplified for the console, and it is very rare."
+   }
+  ]
+ }
+]

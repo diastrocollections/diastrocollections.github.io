@@ -1,0 +1,698 @@
+[
+  {
+    "hue": 210,
+    "tag": "Launch",
+    "title": "Two Screens, One Bold Idea",
+    "blurb": "Europe's DS story started on 11 March 2005, months after Japan and North America, with a launch line-up that had to answer one question: what are two screens, a stylus and a microphone actually for? These nine games are the early answers, from a proper 3D Mario to a game about rubbing the screen.",
+    "games": [
+      {
+        "title": "Super Mario 64 DS",
+        "year": "2005",
+        "developer": "Nintendo EAD",
+        "blurb": "Europe's headline launch title: the N64 classic rebuilt with Yoshi, Luigi and Wario as playable characters and a bottom-screen minigame collection. The D-pad-and-touch controls divided people, but it proved a handheld could hold a real 3D Mario."
+      },
+      {
+        "title": "Project Rub",
+        "year": "2005",
+        "developer": "Sonic Team",
+        "blurb": "Sonic Team's gloriously odd collection of rub, blow and tap microgames, wrapped in a story about impressing a crush. Europe knew it as Project Rub, North America as Feel the Magic: XY/XX, and it remains one of the purest demonstrations of the touchscreen and microphone."
+      },
+      {
+        "title": "WarioWare: Touched!",
+        "year": "2005",
+        "developer": "Nintendo SPD",
+        "blurb": "Hundreds of five-second microgames played by poking, rubbing, blowing and sketching. It landed in Europe in the console's launch month and is still the fastest way to explain to someone what a DS was for."
+      },
+      {
+        "title": "Kirby: Power Paintbrush",
+        "year": "2005",
+        "developer": "HAL Laboratory",
+        "blurb": "No buttons at all: you draw rainbow ropes and Kirby rolls along them. One of the first games designed entirely around the stylus, and one of the best. Europe's title was Power Paintbrush; North America called it Canvas Curse."
+      },
+      {
+        "title": "Polarium",
+        "year": "2005",
+        "developer": "Mitchell Corporation",
+        "blurb": "Swipe the stylus to flip tiles and draw lines that turn a whole grid to one colour. A quiet, brainy puzzler and a genuine launch-month title in Europe."
+      },
+      {
+        "title": "Pac-Pix",
+        "year": "2005",
+        "developer": "Namco",
+        "blurb": "You draw Pac-Man into existence and scribble barriers to steer him away from ghosts. A tiny idea, but a charming one, and a very literal use of the stylus."
+      },
+      {
+        "title": "Yoshi Touch & Go",
+        "year": "2005",
+        "developer": "Nintendo EAD",
+        "blurb": "A stylus-only arcade game where you draw clouds to guide a falling Baby Mario down to Yoshi, then guide Yoshi across the ground. Short, tactile and made for high-score chasing."
+      },
+      {
+        "title": "Trauma Center: Under the Knife",
+        "year": "2006",
+        "developer": "Atlus",
+        "blurb": "Surgery as a stylus game: scalpel, sutures and healing gel against a ticking clock. Atlus's breakout hit was published in Europe by Nintendo in 2006, and it was the moment many players realised the DS could do serious concepts, not just toys."
+      },
+      {
+        "title": "Rayman DS",
+        "year": "2005",
+        "developer": "DC Studios",
+        "blurb": "A launch-day reworking of Rayman 2's world for two screens. Europe got it on 11 March 2005, more than two weeks before North America, which made it one of the more visible early third-party bets on the platform."
+      }
+    ]
+  },
+  {
+    "hue": 150,
+    "tag": "Lifestyle",
+    "title": "The Everyday Revolution",
+    "blurb": "Nintendo's big idea was that the DS did not have to be a gamer's machine. Puppies, brain exercises, cooking and drawing tutors turned it into something people kept on the kitchen table. In Europe the turning point was June 2006, when Brain Training arrived two weeks before the slimmer DS Lite.",
+    "games": [
+      {
+        "title": "Dr Kawashima's Brain Training: How Old Is Your Brain?",
+        "year": "2006",
+        "developer": "Nintendo EAD",
+        "blurb": "The game that made the DS a household object: daily maths and reading drills, a 'brain age' score, and a stylus for handwriting recognition. It launched in Europe on 9 June 2006, just before the DS Lite, and brought a whole new audience to gaming."
+      },
+      {
+        "title": "Big Brain Academy",
+        "year": "2006",
+        "developer": "Nintendo EAD",
+        "blurb": "Brain Training's more playful cousin: competitive, colourful mini-tests of thinking, memory and analysis, with head-to-head modes that worked well in a room."
+      },
+      {
+        "title": "Nintendogs",
+        "year": "2005",
+        "developer": "Nintendo EAD",
+        "blurb": "Raise a puppy with your voice, a stylus and a lot of patience. It launched as separate versions with different breeds, sold in enormous numbers, and made 'the touchscreen is a petting surface' a mainstream idea."
+      },
+      {
+        "title": "Animal Crossing: Wild World",
+        "year": "2006",
+        "developer": "Nintendo EAD",
+        "blurb": "The first Animal Crossing you could take anywhere and the first with online visits to friends' towns over Wi-Fi. Europe waited until March 2006, a few months behind Japan and North America."
+      },
+      {
+        "title": "Art Academy",
+        "year": "2010",
+        "developer": "Headstrong Games",
+        "blurb": "A British-made drawing tutor with ten lessons and a virtual easel on the touchscreen. It started life as two DSiWare downloads in PAL regions in late 2009 and early 2010, then got a full cartridge in August 2010."
+      },
+      {
+        "title": "Nintendo presents: Style Boutique",
+        "year": "2009",
+        "developer": "Syn Sophia",
+        "blurb": "Run a fashion boutique, dress customers and read the trends. Japan got it a full year before Europe, and the title changed on the way: Europe's name is Style Boutique, North America's is Style Savvy."
+      },
+      {
+        "title": "Cooking Guide: Can't Decide What to Eat?",
+        "year": "2008",
+        "developer": "indieszero",
+        "blurb": "A recipe app for the kitchen counter, with voice-controlled 'next step' prompts and a DS propped against the flour. Europe got it first, about five months before North America and Japan."
+      },
+      {
+        "title": "Drawn to Life",
+        "year": "2007",
+        "developer": "5th Cell",
+        "blurb": "Draw your own hero, platforms and enemies, and watch them become the game. The first hit from 5th Cell, the studio that would later make Scribblenauts and Lock's Quest."
+      }
+    ]
+  },
+  {
+    "hue": 35,
+    "tag": "Mystery",
+    "title": "Notebooks and Nightmares",
+    "blurb": "The DS was made for detective work: a notebook on the lower screen, evidence on the upper one, and a stylus for poking. This is also where Europe's love of puzzle-box mysteries took off, thanks largely to one gentleman with a top hat.",
+    "games": [
+      {
+        "title": "Phoenix Wright: Ace Attorney",
+        "year": "2006",
+        "developer": "Capcom",
+        "blurb": "Europe's introduction to courtroom drama: cross-examine witnesses, press them, present evidence and shout 'Objection!'. The DS version was a remake of a Japan-only GBA game, with a new final case that used the touchscreen."
+      },
+      {
+        "title": "Professor Layton and the Curious Village",
+        "year": "2008",
+        "developer": "Level-5",
+        "blurb": "Hershel Layton's debut, with 100-plus puzzles wrapped in a beautifully drawn village mystery. It reached Europe in November 2008, nine months after North America, and set off the series' run of European hits."
+      },
+      {
+        "title": "Professor Layton and Pandora's Box",
+        "year": "2009",
+        "developer": "Level-5",
+        "blurb": "The sequel took the puzzle-mystery formula further, with more atmosphere and a darker plot. Europe knew it as Pandora's Box; North America renamed it Diabolical Box."
+      },
+      {
+        "title": "Hotel Dusk: Room 215",
+        "year": "2007",
+        "developer": "Cing",
+        "blurb": "Hold the DS sideways like a book and investigate a noir hotel, ex-cop Kyle Hyde and everyone's lies. A moody, slow, unusually mature adventure that arrived in Europe about three months after North America."
+      },
+      {
+        "title": "Another Code: Two Memories",
+        "year": "2005",
+        "developer": "Cing",
+        "blurb": "Cing's touchscreen mystery about a girl, a lost father and a ghost boy, built around puzzles that used the hardware. Europe and Japan share the title Another Code; North America renamed it Trace Memory."
+      },
+      {
+        "title": "Ghost Trick: Phantom Detective",
+        "year": "2011",
+        "developer": "Capcom",
+        "blurb": "Shu Takumi's post-Phoenix Wright puzzle-adventure: you are a ghost who possesses objects to rewind the last four minutes of a victim's life. One of the DS's most inventive and best-written late games."
+      },
+      {
+        "title": "999: Nine Hours, Nine Persons, Nine Doors",
+        "year": "2009",
+        "developer": "Chunsoft",
+        "blurb": "A visual novel welded to escape-room puzzles and a deadly game. Listed here by its Japanese year, since it never got a DS release in Europe at all; Europeans first got it through 2017's Zero Escape: The Nonary Games."
+      },
+      {
+        "title": "Broken Sword: Shadow of the Templars - Director's Cut",
+        "year": "2009",
+        "developer": "Revolution Software",
+        "blurb": "A British point-and-click classic given touch controls and new playable scenes with Nico. The DS version has no spoken dialogue, only subtitles, a small price for fitting it on the cartridge."
+      }
+    ]
+  },
+  {
+    "hue": 0,
+    "tag": "Adventure",
+    "title": "Castles, Seas and Cities",
+    "blurb": "The DS gave big adventure series a second life on a small screen. Zelda learned to be played entirely with a stylus, Castlevania became the platform's best action-adventure factory, and Rockstar quietly delivered one of the machine's finest games.",
+    "games": [
+      {
+        "title": "The Legend of Zelda: Phantom Hourglass",
+        "year": "2007",
+        "developer": "Nintendo EAD",
+        "blurb": "Zelda played entirely with the stylus: draw your own route on the sea chart, boomerang path and all. The temple of the Ocean King is hated and loved in equal parts, but the sailing is a delight."
+      },
+      {
+        "title": "The Legend of Zelda: Spirit Tracks",
+        "year": "2009",
+        "developer": "Nintendo EAD",
+        "blurb": "Swap the sea for a steam train and add Zelda's spirit as a sidekick you can possess into Phantom guards. Its touch controls are the culmination of the DS Zelda formula."
+      },
+      {
+        "title": "Castlevania: Dawn of Sorrow",
+        "year": "2005",
+        "developer": "Konami",
+        "blurb": "The DS's first Castlevania, and Europe got it in September 2005, a month ahead of North America. Soma Cruz's soul-collecting castle is the best example of how well a stylus-and-buttons hybrid could work."
+      },
+      {
+        "title": "Castlevania: Portrait of Ruin",
+        "year": "2007",
+        "developer": "Konami",
+        "blurb": "Two heroes at once, one for melee and one for magic, plus a set of paintings that each hide their own levels. A generous, inventive Metroidvania."
+      },
+      {
+        "title": "Castlevania: Order of Ecclesia",
+        "year": "2009",
+        "developer": "Konami",
+        "blurb": "The hardest, darkest and least whimsical of the DS trio: a return to stage-based levels and an outdoor world, with Shanoa's glyph magic system. Europe waited until February 2009."
+      },
+      {
+        "title": "Okamiden",
+        "year": "2011",
+        "developer": "Capcom",
+        "blurb": "A handheld sequel to Okami with the Celestial Brush reimagined for the stylus. Chibiterasu is small, but the watercolour world is as charming as the original."
+      },
+      {
+        "title": "Grand Theft Auto: Chinatown Wars",
+        "year": "2009",
+        "developer": "Rockstar Leeds",
+        "blurb": "A top-down GTA made for the DS, with drug dealing and touchscreen hot-wiring. It launched in Europe on 20 March 2009 and remains one of the DS's best-reviewed games."
+      },
+      {
+        "title": "Kingdom Hearts 358/2 Days",
+        "year": "2009",
+        "developer": "h.a.n.d.",
+        "blurb": "Roxas's year in Organization XIII told in day-long missions, with a panel system for customising his abilities. Europe got it in October 2009, a month after North America."
+      },
+      {
+        "title": "Ninja Gaiden: Dragon Sword",
+        "year": "2008",
+        "developer": "Team Ninja",
+        "blurb": "Hold the DS sideways and slash the stylus to carve through enemies as Ryu Hayabusa. An unusually pure use of the touchscreen for a hard, fast action game."
+      }
+    ]
+  },
+  {
+    "hue": 275,
+    "tag": "RPG",
+    "title": "The Handheld JRPG Renaissance",
+    "blurb": "The DS became one of the great JRPG machines. Europe in particular got a run of Nintendo-published RPGs it might otherwise have missed, from Dragon Quest to Etrian Odyssey, while a handful of cult favourites, including Radiant Historia, never crossed to PAL at all.",
+    "games": [
+      {
+        "title": "Pokémon Diamond / Pearl",
+        "year": "2007",
+        "developer": "Game Freak",
+        "blurb": "The first Pokémon on DS, with online trading and battling over Wi-Fi. Europe waited until July 2007, ten months after Japan."
+      },
+      {
+        "title": "Pokémon HeartGold / SoulSilver",
+        "year": "2010",
+        "developer": "Game Freak",
+        "blurb": "Remakes of the Johto games, with your lead Pokémon following you around and a bundled Pokéwalker pedometer. Often called the definitive way to play Gold and Silver."
+      },
+      {
+        "title": "Pokémon Black / White",
+        "year": "2011",
+        "developer": "Game Freak",
+        "blurb": "A new region, entirely new Pokémon and a dynamic seasonal cycle. Europe got it in March 2011, six months after Japan, and its main story shows only brand-new Pokémon."
+      },
+      {
+        "title": "Dragon Quest IX: Sentinels of the Starry Skies",
+        "year": "2010",
+        "developer": "Level-5",
+        "blurb": "A Japanese phenomenon that also made Dragon Quest a multiplayer, customisable handheld series. Nintendo published it in Europe on 23 July 2010, a full year after Japan."
+      },
+      {
+        "title": "Dragon Quest V: Hand of the Heavenly Bride",
+        "year": "2009",
+        "developer": "ArtePiazza",
+        "blurb": "The first time this much-loved 1992 RPG left Japan, with its famous choice of bride and its monster-recruiting party. Its European release in February 2009 came the same week as North America's."
+      },
+      {
+        "title": "Final Fantasy III",
+        "year": "2007",
+        "developer": "Matrix Software",
+        "blurb": "The Famicom original, never released outside Japan, rebuilt in 3D for the DS. Europe got it in May 2007, six months after North America."
+      },
+      {
+        "title": "Chrono Trigger",
+        "year": "2009",
+        "developer": "Tose",
+        "blurb": "The SNES dream-team RPG with new dungeons and a monster arena, ported by Tose. Europe waited until February 2009, over two months after North America."
+      },
+      {
+        "title": "The World Ends with You",
+        "year": "2008",
+        "developer": "Square Enix / Jupiter",
+        "blurb": "A stylish, stubbornly original action-RPG set in Shibuya, played with both screens at once. It reached Europe in April 2008, and its fusion of pop culture and unusual combat has made it a cult classic."
+      },
+      {
+        "title": "Etrian Odyssey",
+        "year": "2008",
+        "developer": "Atlus / Lancarse",
+        "blurb": "A first-person dungeon crawler where you draw your own maps on the lower screen. Nintendo published it in Europe in June 2008, a year after North America."
+      },
+      {
+        "title": "Radiant Historia",
+        "year": "2011",
+        "developer": "Atlus / Headlock",
+        "blurb": "A time-travel JRPG whose branching timeline is still admired. Listed by its North American year because it never received a European DS release."
+      },
+      {
+        "title": "Golden Sun: Dark Dawn",
+        "year": "2010",
+        "developer": "Camelot Software Planning",
+        "blurb": "The return of Golden Sun after seven years, with new heroes and a new adventure that leans heavily on the series' Psynergy puzzles. Europe got it on 10 December 2010, about ten days after North America."
+      },
+      {
+        "title": "Mario & Luigi: Bowser's Inside Story",
+        "year": "2009",
+        "developer": "AlphaDream",
+        "blurb": "Bowser inhales the Mario Bros., who then fight their way around his insides while you play his outer body too. Funny, inventive and one of the best Mario RPGs."
+      }
+    ]
+  },
+  {
+    "hue": 100,
+    "tag": "Strategy",
+    "title": "Tactics on Two Screens",
+    "blurb": "Turn-based strategy suited the DS: a map above, a command panel below, and a stylus for precision. Europe got a lively mix here, including one case where it got the game before North America.",
+    "games": [
+      {
+        "title": "Advance Wars: Dual Strike",
+        "year": "2005",
+        "developer": "Intelligent Systems",
+        "blurb": "The peak of the series: two battlefields at once, commanding officers who can Tag Power, and a huge campaign. Europe got it in September 2005."
+      },
+      {
+        "title": "Fire Emblem: Shadow Dragon",
+        "year": "2008",
+        "developer": "Intelligent Systems",
+        "blurb": "A remake of the very first Fire Emblem. Europe got it in December 2008, two months before North America."
+      },
+      {
+        "title": "Final Fantasy Tactics A2: Grimoire of the Rift",
+        "year": "2008",
+        "developer": "Square Enix",
+        "blurb": "A very large, very playable tactical RPG with a job system, a colourful cast, and a huge quest board. Europe's release was in June 2008, the same month as North America."
+      },
+      {
+        "title": "Disgaea DS",
+        "year": "2009",
+        "developer": "Nippon Ichi",
+        "blurb": "The absurd, level-999-friendly tactical RPG shrunk down for the DS as a port of the PSP version. Europe got it in April 2009, about six months after North America."
+      },
+      {
+        "title": "Age of Empires: Age of Kings",
+        "year": "2006",
+        "developer": "Backbone Entertainment",
+        "blurb": "A turn-based reworking of the PC real-time strategy classic, which worked better than you'd expect. Europe waited until November 2006, nine months after North America."
+      },
+      {
+        "title": "Luminous Arc",
+        "year": "2007",
+        "developer": "Image Epoch",
+        "blurb": "A tactical RPG about a church's witch hunts, with a manga-flavoured art style. Rising Star Games brought it to Europe in October 2007."
+      },
+      {
+        "title": "Pokémon Conquest",
+        "year": "2012",
+        "developer": "Omega Force",
+        "blurb": "Pokémon crossed with Koei's Nobunaga's Ambition series: build kingdoms, link Pokémon with warlords and fight tactical battles. A strange but surprisingly fine late-life release."
+      },
+      {
+        "title": "Lock's Quest",
+        "year": "2008",
+        "developer": "5th Cell",
+        "blurb": "A tower-defence-meets-RPG hybrid where you build defences with the stylus and then defend them in real time. 5th Cell's other big idea after Drawn to Life."
+      }
+    ]
+  },
+  {
+    "hue": 55,
+    "tag": "Platformer",
+    "title": "Jumping, Rolling, Drawing",
+    "blurb": "The DS was a great platformer machine, with a handful of Nintendo classics and some very inventive third-party takes. Europe's version of the story features a couple of long waits and one clean reversal.",
+    "games": [
+      {
+        "title": "New Super Mario Bros.",
+        "year": "2006",
+        "developer": "Nintendo EAD",
+        "blurb": "The first new side-scrolling Mario in well over a decade, and one of the best-selling DS games of all time. Its mix of classic feel and modern polish redefined the series."
+      },
+      {
+        "title": "Yoshi's Island DS",
+        "year": "2006",
+        "developer": "Artoon",
+        "blurb": "A baby-carrying relay of Mario, Peach, DK, Wario and Bowser. Europe's release in December 2006 came after North America's, and Japan, unusually, got it last in March 2007."
+      },
+      {
+        "title": "Kirby Super Star Ultra",
+        "year": "2009",
+        "developer": "HAL Laboratory",
+        "blurb": "An expanded remake of the SNES classic (which Europe knew as Kirby's Fun Pak), with new sub-games and cutscenes. Europe waited a year after North America."
+      },
+      {
+        "title": "Sonic Rush",
+        "year": "2005",
+        "developer": "Sonic Team / Dimps",
+        "blurb": "Dimps' blindingly fast, boost-driven 2D Sonic, split across both screens, with Blaze the Cat's debut. A defining moment in Sonic's handheld years."
+      },
+      {
+        "title": "Mega Man ZX",
+        "year": "2007",
+        "developer": "Inti Creates",
+        "blurb": "A Metroidvania-style Mega Man where you morph into other heroes by way of 'Biometals'. Europe waited until June 2007, nine months after North America."
+      },
+      {
+        "title": "Kirby Mass Attack",
+        "year": "2011",
+        "developer": "HAL Laboratory",
+        "blurb": "Ten little Kirbys, all controlled with the stylus. The final DS Kirby game is a delight for its charm and its cleverness."
+      },
+      {
+        "title": "Henry Hatsworth in the Puzzling Adventure",
+        "year": "2009",
+        "developer": "EA Tiburon",
+        "blurb": "A platformer on the top screen and a puzzle game on the bottom, each feeding the other. A rare and rather brilliant EA original."
+      },
+      {
+        "title": "Super Princess Peach",
+        "year": "2006",
+        "developer": "Tose",
+        "blurb": "Peach rescues Mario, powered by emotion-based abilities like Joy, Gloom, Rage and Calm. Japan got it first, in October 2005, and Europe followed in May 2006."
+      }
+    ]
+  },
+  {
+    "hue": 300,
+    "tag": "Puzzle",
+    "title": "Brain-Benders and Block Games",
+    "blurb": "Puzzle games were perfect for the DS: a grid, a stylus, and short bursts of play. This chapter keeps the sequence of falling blocks, match-threes and drawing games as diverse as possible.",
+    "games": [
+      {
+        "title": "Tetris DS",
+        "year": "2006",
+        "developer": "Nintendo SPD",
+        "blurb": "Tetris dressed up in Nintendo history, with online multiplayer and a Push mode that made it fresh. Europe got it on 21 April 2006, a month after North America."
+      },
+      {
+        "title": "Puzzle Quest: Challenge of the Warlords",
+        "year": "2007",
+        "developer": "Infinite Interactive",
+        "blurb": "Match-three combat plus RPG progression: a hybrid that created its own genre. Europe got the DS version four days before North America."
+      },
+      {
+        "title": "Scribblenauts",
+        "year": "2009",
+        "developer": "5th Cell",
+        "blurb": "Write any word and the object appears, then use it to solve puzzles. Japan didn't get it until 2011, renamed Flash Puzzle: Maxwell's Mysterious Notebook."
+      },
+      {
+        "title": "Picross DS",
+        "year": "2007",
+        "developer": "Jupiter",
+        "blurb": "The nonogram craze that took over the DS, with hundreds of puzzles. Europe got it in May 2007, two months before North America."
+      },
+      {
+        "title": "Mario vs. Donkey Kong 2: March of the Minis",
+        "year": "2007",
+        "developer": "Nintendo Software Technology",
+        "blurb": "Guide wind-up Mini Marios to safety by placing blocks and steering with the stylus. Europe waited until March 2007, six months after North America."
+      },
+      {
+        "title": "Actionloop",
+        "year": "2007",
+        "developer": "Mitchell Corporation",
+        "blurb": "Shoot balls at a chain to make matches before it reaches the end. Europe knew it as Actionloop, while North America's version is Magnetica, and it came several months after."
+      },
+      {
+        "title": "Meteos",
+        "year": "2005",
+        "developer": "Q Entertainment",
+        "blurb": "Falling blocks that launch themselves into space when you line up three. Frantic, colourful and played by sliding whole columns with the stylus."
+      }
+    ]
+  },
+  {
+    "hue": 190,
+    "tag": "Action",
+    "title": "Shooters, Racers and Sports",
+    "blurb": "The action side of the DS was messier and more interesting than it gets credit for: first-person shooters played with a stylus, twin-stick blasters, racers with online play, and a handful of games that never made it to Europe.",
+    "games": [
+      {
+        "title": "Metroid Prime Hunters",
+        "year": "2006",
+        "developer": "Nintendo Software Technology",
+        "blurb": "First-person shooting with stylus aiming and a bundle of rival bounty hunters. It reached Europe in May 2006, two months after North America and a month before Japan."
+      },
+      {
+        "title": "Dementium: The Ward",
+        "year": "2009",
+        "developer": "Renegade Kid",
+        "blurb": "A grim survival-horror first-person shooter made for the DS. Europe waited 18 months after North America to get it."
+      },
+      {
+        "title": "Geometry Wars: Galaxies",
+        "year": "2008",
+        "developer": "Kuju Entertainment",
+        "blurb": "Bizarre Creations' twin-stick arcade classic reworked for the DS by Kuju, with a galaxy of small levels to clear."
+      },
+      {
+        "title": "Bangai-O Spirits",
+        "year": "2008",
+        "developer": "Treasure",
+        "blurb": "Hundreds of missiles at once, and a level editor whose creations you could share as sound. Treasure at its most frenetic."
+      },
+      {
+        "title": "Contra 4",
+        "year": "2007",
+        "developer": "WayForward Technologies",
+        "blurb": "A brilliant return to the series' roots across both screens. Listed by its North American year because it never got a European release, despite including Probotector robots as unlockable characters."
+      },
+      {
+        "title": "Star Fox Command",
+        "year": "2007",
+        "developer": "Q-Games",
+        "blurb": "Strategy-flavoured Arwing action, with branching endings and touch-drawn flight paths. Europe waited until January 2007, five months after Japan and North America."
+      },
+      {
+        "title": "Resident Evil: Deadly Silence",
+        "year": "2006",
+        "developer": "Capcom",
+        "blurb": "The original Resident Evil remade for the DS, with knife-fighting done with the stylus. It reached Europe in March 2006."
+      },
+      {
+        "title": "Mario Kart DS",
+        "year": "2005",
+        "developer": "Nintendo EAD",
+        "blurb": "The first Mario Kart with online play, and the first to bring back a full set of sixteen tracks from earlier games. It hit Europe in November 2005, a month before Japan."
+      },
+      {
+        "title": "Race Driver: Create & Race",
+        "year": "2007",
+        "developer": "Firebrand Games",
+        "blurb": "A DS racer with a track editor, so you can build your own circuits. Europe got it in September 2007, a month before North America."
+      },
+      {
+        "title": "Mario & Sonic at the Olympic Games",
+        "year": "2008",
+        "developer": "Sega",
+        "blurb": "The crossover nobody expected, with stylus-driven Olympic events. The DS version was developed under Shigeru Miyamoto's supervision."
+      },
+      {
+        "title": "Mario Slam Basketball",
+        "year": "2007",
+        "developer": "Square Enix",
+        "blurb": "Square Enix's arcade three-on-three basketball with Mario characters, known in North America as Mario Hoops 3-on-3. Europe got it in February 2007."
+      },
+      {
+        "title": "Tony Hawk's American Sk8land",
+        "year": "2005",
+        "developer": "Vicarious Visions",
+        "blurb": "The first third-party DS game with online play. It reached Europe on 18 November 2005."
+      }
+    ]
+  },
+  {
+    "hue": 330,
+    "tag": "Rhythm",
+    "title": "Beats, Strings and Synths",
+    "blurb": "The DS's microphone, dual screens and touchscreen made it one of the most musical consoles ever. From rhythm games to a real synthesiser, these six games treated it as an instrument.",
+    "games": [
+      {
+        "title": "Elite Beat Agents",
+        "year": "2007",
+        "developer": "iNiS",
+        "blurb": "A rhythm game with tap-and-slide stylus controls and a cast of dancing agents who cheer people up. Europe got it in July 2007, eight months after North America, though the original Japanese Ouendan never reached Europe."
+      },
+      {
+        "title": "Rhythm Paradise",
+        "year": "2009",
+        "developer": "Nintendo SPD",
+        "blurb": "The DS entry in Nintendo's cult rhythm series, a game of odd characters and rhythmic gags. Europe knew it as Rhythm Paradise, North America as Rhythm Heaven, and the original Japanese GBA game stayed in Japan."
+      },
+      {
+        "title": "Electroplankton",
+        "year": "2006",
+        "developer": "indieszero",
+        "blurb": "Toshio Iwai's music-toy art piece, with ten interactive plankton that make music when touched. Europe got it in July 2006, after Japan and North America."
+      },
+      {
+        "title": "Guitar Hero: On Tour",
+        "year": "2008",
+        "developer": "Vicarious Visions",
+        "blurb": "A plastic four-button 'Guitar Grip' that slipped into the GBA slot, with the stylus for strumming. The peripheral wouldn't work on the DSi, which had no GBA slot."
+      },
+      {
+        "title": "Korg DS-10 Synthesizer",
+        "year": "2008",
+        "developer": "Cave",
+        "blurb": "A full analogue-style synthesiser and sequencer, with two DS-10s able to jam together. Europe got it in October 2008, a month before North America."
+      },
+      {
+        "title": "Jam Sessions",
+        "year": "2007",
+        "developer": "Plato",
+        "blurb": "Play a guitar with the stylus, strumming on the touchscreen. Ubisoft's European version added extra tutorials, effects like distortion and flanger, and songs by European artists."
+      }
+    ]
+  },
+  {
+    "hue": 20,
+    "tag": "Curios",
+    "title": "Curios and Cult Classics",
+    "blurb": "A handful of games that only make sense on a system as odd as the DS, including several that Europe never officially got, and one that only Japan ever saw.",
+    "games": [
+      {
+        "title": "Retro Game Challenge",
+        "year": "2009",
+        "developer": "indieszero",
+        "blurb": "A time-travelling tribute to 8-bit games, with fictional NES-era titles you replay with a mentor. Listed by its North American year, since Europe never got it; the original Japanese version was based on the TV show GameCenter CX."
+      },
+      {
+        "title": "Space Invaders Extreme",
+        "year": "2008",
+        "developer": "Taito",
+        "blurb": "The arcade classic reinvented with chained blocks, power-ups and a soundtrack that reacts to how you play."
+      },
+      {
+        "title": "Tomodachi Collection",
+        "year": "2009",
+        "developer": "Nintendo SPD",
+        "blurb": "A quirky Mii-based life simulator that became a Japanese sensation. It was never released in Europe or North America on the DS, only reaching the West through its 3DS sequel."
+      },
+      {
+        "title": "Solatorobo: Red the Hunter",
+        "year": "2011",
+        "developer": "CyberConnect2",
+        "blurb": "A steampunk action RPG of dog-like heroes from the studio behind the .hack games and Naruto: Ultimate Ninja. Europe got it in July 2011, two months before North America."
+      },
+      {
+        "title": "The Legendary Starfy",
+        "year": "2008",
+        "developer": "Tose",
+        "blurb": "A cute, water-based platformer from a series that skipped Europe entirely. Japan had it in July 2008, North America in June 2009, and Europe never got a DS Starfy."
+      },
+      {
+        "title": "Contact",
+        "year": "2007",
+        "developer": "Grasshopper Manufacture",
+        "blurb": "An oddball action-RPG in which the game addresses you as part of its story. Europe got it in February 2007, published by Rising Star Games."
+      },
+      {
+        "title": "Sprung",
+        "year": "2005",
+        "developer": "Longtail Studios",
+        "blurb": "A dating sim with conversation trees and a surprisingly bold sense of humour, released in Europe in March 2005, just after North America."
+      }
+    ]
+  },
+  {
+    "hue": 180,
+    "tag": "DSiWare",
+    "title": "The Download Shelf",
+    "blurb": "The DSi arrived in Europe in April 2009 with a download shop of its own. These six small games and tools are the best of that shelf. The DSi Shop closed for purchases in Europe on 31 March 2017.",
+    "games": [
+      {
+        "title": "Flipnote Studio",
+        "year": "2009",
+        "developer": "Nintendo",
+        "blurb": "A free animation tool that became a cultural phenomenon, with a built-in community where people shared, starred and remixed each other's work. Europe got it in August 2009."
+      },
+      {
+        "title": "WarioWare: Snapped!",
+        "year": "2009",
+        "developer": "Nintendo",
+        "blurb": "A microgame collection you complete by posing in front of the DSi's camera. One of the first showcases of the new hardware."
+      },
+      {
+        "title": "Mighty Flip Champs!",
+        "year": "2009",
+        "developer": "WayForward",
+        "blurb": "A puzzle-platformer in which you flip the world, made by WayForward. Europe got it on 27 November 2009, and Japan finally received it in 2014."
+      },
+      {
+        "title": "Shantae: Risky's Revenge",
+        "year": "2011",
+        "developer": "WayForward",
+        "blurb": "The half-genie's return, on DSiWare. Europe waited until 11 February 2011, four months after North America, and Nintendo Life's headline for the release was 'Shantae Finally Reaches Europe'."
+      },
+      {
+        "title": "A Little Bit of... Dr. Mario",
+        "year": "2009",
+        "developer": "Arika",
+        "blurb": "The classic falling-capsule virus puzzler, in a DSiWare pack. Europe's title is A Little Bit of... Dr. Mario, while North America knew it as Dr. Mario Express."
+      },
+      {
+        "title": "Art Style: PiCOPiCT",
+        "year": "2009",
+        "developer": "Skip Ltd.",
+        "blurb": "Falling blocks that reveal retro pixel-art characters, in Skip's minimalist Art Style series. Europe knew it as PiCOPiCT, and North America as PiCTOBiTS."
+      }
+    ]
+  }
+]

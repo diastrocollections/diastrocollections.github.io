@@ -1,0 +1,273 @@
+/* Diastro Gaming Collections — Xbox theme (colors, fonts, flourishes).
+   Feel: black hardware, one signal color. The green ring-glow of the boot animation,
+   crossed blade beams for the "X", and pill-shaped Live-dashboard chips. No console art. */
+
+:root {
+  --bg: #F1F3EA;
+  --surface: #FFFFFF;
+  --surface-2: #E4E9D8;
+  --ink: #10130B;
+  --ink-soft: #4A5240;
+  --ink-faint: #6C7461;
+  --accent: #4FA316;
+  --accent-ink: #FFFFFF;
+  --blue: #7A8471;
+  --line: #D7DECB;
+  --line-strong: #10130B;
+  --shadow: 0 3px 0 rgba(16,19,11,0.14);
+  --sat: 70%;
+  --lig: 42%;
+  --sat-soft: 55%;
+  --lig-soft: 92%;
+
+  --hue: 100;
+
+  --font-body: 'Barlow', system-ui, sans-serif;
+  --font-display: 'Michroma', 'Barlow', system-ui, sans-serif;
+  --font-display-weight: 400;
+  --font-mono: 'Chivo Mono', ui-monospace, monospace;
+
+  --card-radius: 4px;
+  --note-radius: 4px;
+  --control-radius: 999px;
+  --chip-radius: 999px;
+  --hero-border: 6px solid var(--accent);
+  --eyebrow-dot-radius: 50%;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0A0C07;
+    --surface: #12150D;
+    --surface-2: #1A1E12;
+    --ink: #EAF0DE;
+    --ink-soft: #A9B39A;
+    --ink-faint: #6E7863;
+    --accent: #8CE62B;
+    --accent-ink: #0A0C07;
+    --blue: #4A5A3E;
+    --line: #232A18;
+    --line-strong: #4A5540;
+    --shadow: 0 3px 0 rgba(0,0,0,0.6);
+    --sat: 75%;
+    --lig: 62%;
+    --sat-soft: 40%;
+    --lig-soft: 18%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0A0C07;
+  --surface: #12150D;
+  --surface-2: #1A1E12;
+  --ink: #EAF0DE;
+  --ink-soft: #A9B39A;
+  --ink-faint: #6E7863;
+  --accent: #8CE62B;
+  --accent-ink: #0A0C07;
+  --blue: #4A5A3E;
+  --line: #232A18;
+  --line-strong: #4A5540;
+  --shadow: 0 3px 0 rgba(0,0,0,0.6);
+  --sat: 75%;
+  --lig: 62%;
+  --sat-soft: 40%;
+  --lig-soft: 18%;
+  color-scheme: dark;
+}
+
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+.search input, .chip { background: var(--surface-2); }
+
+/* ---------- Hero: black chassis, a green ring-glow, crossed blade beams ---------- */
+
+.hero {
+  background:
+    repeating-linear-gradient(180deg, rgba(140,230,43,0.028) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse 60% 50% at 82% 38%, rgba(140,230,43,0.16) 0%, transparent 70%),
+    linear-gradient(160deg, #050603 0%, #0A0D06 55%, #0E1409 100%);
+  color: #EFF5E4;
+  isolation: isolate;
+  min-height: clamp(420px, 52vw, 560px);
+  box-shadow:
+    inset 0 6px 0 #8CE62B,
+    inset 0 9px 0 #050603;
+}
+
+/* the boot-glow ring */
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  right: max(2vw, calc((100vw - 1180px) / 2 - 60px));
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(280px, 34vw, 460px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, transparent 0 42%, rgba(140,230,43,0.9) 42.4% 43.4%, transparent 43.8% 56%, rgba(140,230,43,0.55) 56.4% 57%, transparent 57.4% 70%, rgba(140,230,43,0.28) 70.4% 71%, transparent 71.4%);
+  filter: drop-shadow(0 0 50px rgba(140,230,43,0.45));
+  animation: xbring 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes xbring {
+  0%, 100% { opacity: 0.75; transform: translateY(-50%) scale(1); }
+  50% { opacity: 1; transform: translateY(-50%) scale(1.035); }
+}
+
+/* the crossed blade beams (an abstracted "X", never a console) */
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -10% -5% -10% -5%;
+  background:
+    linear-gradient(65deg, transparent 46%, rgba(140,230,43,0.14) 49%, rgba(140,230,43,0.22) 50%, rgba(140,230,43,0.14) 51%, transparent 54%),
+    linear-gradient(-65deg, transparent 46%, rgba(140,230,43,0.10) 49%, rgba(140,230,43,0.18) 50%, rgba(140,230,43,0.10) 51%, transparent 54%);
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+.hero .wrap { position: relative; z-index: 1; }
+
+.hero .back-link { color: #9AA68C; }
+.hero .back-link:hover, .hero .back-link:focus-visible { color: #8CE62B; }
+
+.hero .eyebrow {
+  background: #0E1409;
+  color: #8CE62B;
+  border: 1px solid rgba(140,230,43,0.5);
+  padding: 7px 18px;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+}
+.hero .eyebrow .dot { background: #8CE62B; box-shadow: 0 0 8px rgba(140,230,43,0.9); }
+
+.hero h1 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: #F5F9EE;
+  max-width: 15ch;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  text-shadow: 0 0 18px rgba(140,230,43,0.55), 0 0 46px rgba(140,230,43,0.28);
+}
+.hero h1 em { color: #8CE62B; font-style: normal; }
+
+.hero .hero-lede {
+  color: #CFD8C3;
+  max-width: 54ch;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+}
+
+.hero .hero-meta {
+  border-top: 1px solid rgba(140,230,43,0.28);
+  max-width: 620px;
+}
+.hero .hero-meta .num { color: #8CE62B; text-shadow: 0 0 12px rgba(140,230,43,0.6); }
+.hero .hero-meta .label { color: #9CA692; }
+
+@media (max-width: 720px) {
+  .hero::before { opacity: 0.55; }
+}
+
+/* ---------- Toolbar & note ---------- */
+
+.toolbar { border-bottom: 2px solid var(--accent); }
+
+.chip { text-transform: uppercase; letter-spacing: 0.05em; font-family: var(--font-mono); font-size: 0.7rem; border: 1px solid var(--line); }
+.chip.active, .chip[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--accent) inset; }
+
+.note-card {
+  border: 2px solid var(--line-strong);
+  border-left: 8px solid var(--accent);
+  box-shadow: 6px 6px 0 var(--surface-2), 6px 6px 0 1px var(--line-strong);
+  padding-top: clamp(32px, 4.5vw, 48px);
+}
+.note-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 40%, transparent 60%, var(--accent) 100%);
+}
+.note-card h2 { font-family: var(--font-display); color: var(--accent); letter-spacing: 0.06em; font-size: 1rem; }
+
+/* ---------- Chapters ---------- */
+
+.chapter-num {
+  background: hsl(var(--hue) var(--sat) var(--lig));
+  color: var(--accent-ink);
+  padding: 8px 16px;
+  border-radius: 999px;
+  align-self: center;
+}
+.chapter-title { text-transform: uppercase; letter-spacing: 0.02em; }
+
+.chapter-tag {
+  font-weight: 700;
+  border: 1.5px solid hsl(var(--hue) var(--sat) var(--lig));
+  border-radius: 999px;
+  color: hsl(var(--hue) var(--sat) var(--lig));
+}
+
+.chapter-blurb { border-bottom: 0; padding-bottom: 0; }
+.chapter-blurb::after {
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: 22px;
+  background: linear-gradient(90deg, hsl(var(--hue) var(--sat) var(--lig)) 0%, transparent 70%);
+  opacity: 0.9;
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+  border: 1.5px solid var(--line);
+  border-left: 4px solid hsl(var(--hue) var(--sat) var(--lig));
+  border-radius: var(--card-radius);
+  padding-top: 20px;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  --card-hover-transform: translateY(-3px);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+  transition: height 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover::before { height: 6px; box-shadow: 0 0 12px hsl(var(--hue) var(--sat) var(--lig) / 0.7); }
+.card:hover { border-color: hsl(var(--hue) var(--sat) var(--lig)); }
+
+.card-idx {
+  align-self: flex-start;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+  color: var(--accent-ink);
+  padding: 2px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+}
+.card-title { font-family: var(--font-body); font-weight: 800; font-size: 1.06rem; }
+
+/* ---------- Footer ---------- */
+
+footer { position: relative; margin-top: 64px; border-top: 0; }
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 20%, var(--accent) 80%, transparent 100%);
+  box-shadow: 0 0 10px 1px rgba(140,230,43,0.4);
+}
+footer .wrap { padding-top: 20px; }
+.footer-cols h3 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; color: var(--accent); font-size: 0.85rem; }

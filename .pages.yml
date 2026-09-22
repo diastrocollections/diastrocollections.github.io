@@ -136,6 +136,30 @@ content:
     list: true
     fields: *chapterFields
 
+  - name: ds
+    label: "Nintendo DS — Collection Data"
+    type: file
+    path: data/ds.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: mastersystem
+    label: "Sega Master System — Collection Data"
+    type: file
+    path: data/mastersystem.json
+    format: json
+    list: true
+    fields: *chapterFields
+
+  - name: xbox
+    label: "Xbox — Collection Data"
+    type: file
+    path: data/xbox.json
+    format: json
+    list: true
+    fields: *chapterFields
+
   - name: platforms
     label: "Hub — Platform Tiles"
     type: file
