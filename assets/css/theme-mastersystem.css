@@ -161,7 +161,7 @@
 }
 
 .hero .hero-meta {
-  border-top: 3px dashed rgba(255,255,255,0.28);
+  border-top: none;
   max-width: 620px;
 }
 .hero .hero-meta .num { color: #FFD24A; text-shadow: 2px 2px 0 #1F72F0; }

@@ -79,6 +79,14 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/* Cross-fade the light/dark swap: theme colors live in CSS custom properties (see
+   :root / :root[data-theme] above), and this animates the properties that consume
+   them — the properties, not the variables, since custom properties aren't transitionable. */
+*, *::before, *::after {
+  transition: background-color 0.6s ease, color 0.6s ease, border-color 0.6s ease,
+    box-shadow 0.6s ease, fill 0.6s ease, stroke 0.6s ease;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -107,7 +115,7 @@ h3 {
 }
 
 .mono {
-  font-family: "Spline Sans Mono", ui-monospace, "SFMono-Regular", monospace;
+  font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
   font-variant-numeric: tabular-nums;
 }
 
@@ -132,11 +140,17 @@ h3 {
 
 /* ---------- Top bar ---------- */
 
+/* Keep in-page jumps (e.g. the How it's made contents) clear of the sticky bar. */
+html {
+  scroll-padding-top: 72px;
+}
+
+/* 52px in total on desktop, 44px on mobile (row + 1px border); every link and
+   button fills the full height, so the whole bar height is the click/tap target. */
 .topbar {
   position: sticky;
   top: 0;
   z-index: 30;
-  padding: 22px 0;
   border-bottom: 1px solid var(--line);
   background: var(--sticky-bg);
   -webkit-backdrop-filter: blur(12px);
@@ -146,23 +160,76 @@ h3 {
 .topbar-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  height: 51px;
 }
 
+.site-nav {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 16px;
+  height: 100%;
+}
+
+.site-nav-title,
+.theme-toggle-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Links carry their spacing as padding (not gap) so neighbouring targets touch;
+   the negative margins keep the text aligned with the page gutter. */
+.topbar-left {
+  margin-left: -11px;
+}
+
+.topbar-right {
+  margin-right: -5px;
+}
+
+.nav-link,
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  padding: 0 11px;
   font-family: "Fraunces", serif;
   font-weight: 600;
   font-size: 1.05rem;
   letter-spacing: -0.01em;
+  white-space: nowrap;
   color: var(--ink);
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
+.brand {
+  gap: 10px;
+}
+
+.nav-link:focus-visible,
+.brand:focus-visible,
+.theme-toggle:focus-visible,
+.menu-toggle:focus-visible {
+  outline-offset: -2px;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link[aria-current="page"],
 .brand:hover,
 .brand:focus-visible {
   color: var(--accent);
@@ -175,52 +242,190 @@ h3 {
   flex-shrink: 0;
 }
 
-.topbar-left {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-}
-
-.nav-link {
-  font-family: "Fraunces", serif;
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-  text-decoration: none;
-  transition: color 0.15s ease;
-}
-
-.nav-link:hover,
-.nav-link:focus-visible,
-.nav-link[aria-current="page"] {
-  color: var(--accent);
+.ext-icon {
+  width: 13px;
+  height: 13px;
+  margin-left: -4px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  opacity: 0.7;
 }
 
 .theme-toggle {
-  border: 1px solid var(--line-strong);
-  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
   color: var(--ink-soft);
-  border-radius: 8px;
-  width: 34px;
-  height: 34px;
-  font-size: 1rem;
+  font: inherit;
   cursor: pointer;
+}
+
+.theme-toggle-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 1rem;
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 
 .theme-toggle:hover {
-  border-color: var(--accent);
   color: var(--ink);
+}
+
+.theme-toggle:hover .theme-toggle-icon {
+  border-color: var(--accent);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Narrow screens: the bar collapses to a Menu button and a drop-down panel. */
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 64px;
+  }
+
+  .topbar-inner {
+    height: 43px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+    margin-left: -12px;
+    padding: 0 12px;
+    border: 0;
+    background: none;
+    color: var(--ink);
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+
+  .menu-icon-close,
+  .menu-toggle[aria-expanded="true"] .menu-icon-open {
+    display: none;
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-icon-close {
+    display: inline;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+    max-height: calc(100vh - 44px);
+    overflow-y: auto;
+    padding: 4px clamp(20px, 4vw, 56px) 16px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .topbar.is-menu-open .site-nav {
+    display: flex;
+  }
+
+  .site-nav-title {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    padding: 12px 0 6px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .topbar-left,
+  .topbar-right {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .topbar-right {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid var(--line);
+  }
+
+  .nav-link,
+  .brand,
+  .theme-toggle {
+    min-height: 44px;
+    padding: 0;
+  }
+
+  .theme-toggle {
+    width: auto;
+    justify-content: flex-start;
+    gap: 12px;
+    color: var(--ink);
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+  }
+
+  .theme-toggle-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+
+  .theme-toggle-label {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
 }
 
 /* ---------- Hero ---------- */
 
 .hero {
-  padding: clamp(52px, 9vw, 92px) 0 clamp(36px, 6vw, 56px);
+  padding: clamp(38px, 9vw, 62px) 0 clamp(16px, 4vw, 32px);
   position: relative;
   overflow: hidden;
 }
@@ -256,8 +461,8 @@ h3 {
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-family: "Spline Sans Mono", monospace;
+  gap: 12px;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 12.5px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -266,7 +471,7 @@ h3 {
   background: var(--surface);
   border: 1px solid var(--line-strong);
   border-radius: 999px;
-  padding: 6px 14px 6px 12px;
+  padding: 6px 18px 5px 14px;
 }
 
 .eyebrow .dot {
@@ -327,7 +532,7 @@ h3 {
   width: fit-content;
   align-items: center;
   gap: 6px;
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 0.8rem;
   color: var(--ink-faint);
   text-decoration: none;
@@ -345,7 +550,7 @@ h3 {
   font-weight: 600;
   line-height: 1.04;
   letter-spacing: -0.015em;
-  max-width: 16ch;
+  max-width: 17ch;
   position: relative;
 }
 
@@ -364,7 +569,7 @@ h3 {
 .hero-lede {
   max-width: 62ch;
   margin-top: 24px;
-  font-size: 1.14rem;
+  font-size: 1.1rem;
   color: var(--ink-soft);
 }
 
@@ -372,14 +577,14 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 40px;
+  margin-top: 30px;
   padding-top: 0;
   border-top: none;
 }
 
 .hero-stats .stat {
   position: relative;
-  padding: 16px 22px 14px;
+  padding: 14px 20px 12px;
   min-width: 150px;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -415,7 +620,7 @@ h3 {
 
 .hero-stats .num {
   font-family: "Fraunces", serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.1;
   color: var(--accent);
@@ -434,24 +639,26 @@ h3 {
 /* the era ruler: platforms plotted along the timeline they actually shipped in */
 .era-ruler {
   position: relative;
-  margin: clamp(48px, 7vw, 76px) 4px 0;
-  height: 96px;
+  margin: clamp(32px, 5vw, 40px) 4px 0;
+  height: 80px;
 }
 
 .er-line {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 49%;
   height: 2px;
-  background: var(--line-strong);
-  border-radius: 1px;
+  background-image: radial-gradient(circle, var(--line-strong) 1px, transparent 1.6px);
+  background-size: 7px 2px;
+  background-repeat: repeat-x;
+  background-position: center;
 }
 
 .er-tick {
   position: absolute;
   top: 50%;
-  width: 1px;
+  width: 2px;
   height: 8px;
   background: var(--line-strong);
   transform: translate(-50%, -50%);
@@ -460,9 +667,9 @@ h3 {
 
 .er-tick-label {
   position: absolute;
-  top: calc(50% + 30px);
+  top: calc(50% + 16px);
   transform: translateX(-50%);
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 0.68rem;
   color: var(--ink-faint);
 }
@@ -494,16 +701,26 @@ h3 {
 .er-label {
   position: absolute;
   left: 0;
-  font-family: "Spline Sans Mono", monospace;
+  top: -14px;
+  transform: translate(-50%, -100%);
+  font-family: "IBM Plex Mono", monospace;
   font-size: 0.62rem;
   font-weight: 600;
   color: var(--c);
   white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
 }
 
 .er-marker:hover .er-dot,
 .er-marker:focus-visible .er-dot {
   transform: translate(calc(-50% + var(--dot-shift, 0px)), -50%) scale(1.5);
+}
+
+.er-marker:hover .er-label,
+.er-marker:focus-visible .er-label {
+  opacity: 1;
 }
 
 @keyframes er-in {
@@ -530,7 +747,7 @@ h3 {
 .vh-entry::before {
   content: "";
   position: absolute;
-  left: 213px;
+  left: 216px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -538,19 +755,19 @@ h3 {
 }
 
 .vh-entry:first-of-type::before {
-  top: 34px;
+  top: 64px;
 }
 
 .vh-entry:last-of-type::before {
   bottom: auto;
-  height: 34px;
+  height: 64px;
 }
 
 .vh-entry::after {
   content: "";
   position: absolute;
   left: 206px;
-  top: 28px;
+  top: 52px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -569,7 +786,7 @@ h3 {
   align-items: flex-end;
   gap: 8px;
   text-align: right;
-  padding-top: 18px;
+  padding-top: 26px;
 }
 
 .vh-version {
@@ -584,7 +801,7 @@ h3 {
   width: 22px;
   height: 22px;
   left: 203px;
-  top: 25px;
+  top: 53px;
   background: var(--accent);
   box-shadow: 0 0 0 5px var(--accent-soft);
 }
@@ -596,8 +813,8 @@ h3 {
 .vh-entry.patch::after {
   width: 10px;
   height: 10px;
-  left: 209px;
-  top: 33px;
+  left: 210px;
+  top: 37px;
   border-width: 2px;
 }
 
@@ -607,7 +824,8 @@ h3 {
 }
 
 .vh-entry.patch {
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .vh-entry.patch::before {
@@ -616,11 +834,11 @@ h3 {
 }
 
 .vh-entry.patch .vh-meta {
-  padding-top: 22px;
+  padding-top: 24px;
 }
 
 .vh-badge {
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 0.66rem;
   font-weight: 600;
   letter-spacing: 0.07em;
@@ -633,7 +851,7 @@ h3 {
 }
 
 .vh-date {
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 0.78rem;
   color: var(--ink-faint);
 }
@@ -641,7 +859,7 @@ h3 {
 .vh-entry ul {
   position: relative;
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 16px;
   padding: 22px 26px;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -649,11 +867,16 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.vh-entry strong {
+  font-style: normal;
+  font-weight: bold;
+}
+
 .vh-entry ul::before {
   content: "";
   position: absolute;
   left: -9px;
-  top: 34px;
+  top: 30px;
   width: 16px;
   height: 16px;
   background: var(--surface);
@@ -668,6 +891,7 @@ h3 {
 }
 
 .vh-entry.major ul::before {
+  top: 34px;
   border-color: var(--accent);
 }
 
@@ -793,8 +1017,8 @@ h3 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 22px;
-  height: 12px;
+  bottom: 20px;
+  height: 16px;
   pointer-events: none;
   opacity: 0.8;
 }
@@ -804,27 +1028,38 @@ h3 {
   position: absolute;
   left: 0;
   right: 0;
-  top: 5px;
-  height: 2px;
+  top: 7px;
+  height: 1px;
   background: repeating-linear-gradient(90deg, var(--line-strong) 0 8px, transparent 8px 14px);
 }
 
-.commit-line::after {
-  content: "";
+.commit-track {
   position: absolute;
   left: clamp(20px, 4vw, 56px);
+  right: clamp(20px, 4vw, 56px);
   top: 0;
-  width: 12px;
-  height: 12px;
+  height: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.commit-dot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
+  background: var(--line-strong);
+}
+
+.commit-dot.current {
   background: var(--accent);
-  box-shadow: 44px 0 0 -2px var(--line-strong), 88px 0 0 -2px var(--line-strong), 132px 0 0 -2px var(--line-strong), 176px 0 0 -2px var(--line-strong), 220px 0 0 -2px var(--line-strong), 264px 0 0 -2px var(--line-strong);
+  box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
 /* ---------- Shelf section ---------- */
 
 .shelf {
-  padding: clamp(20px, 4vw, 32px) 0 clamp(64px, 9vw, 100px);
+  padding: clamp(8px, 2vw, 20px) 0 clamp(56px, 9vw, 100px);
 }
 
 .shelf-head {
@@ -846,7 +1081,7 @@ h3 {
 .shelf-head p {
   margin: 0;
   font-size: 0.92rem;
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
   background: var(--accent-soft);
   color: var(--accent);
   padding: 4px 12px;
@@ -888,6 +1123,19 @@ h3 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* The whole tile is clickable via this stretched link; the status pill sits above it. */
+.tile-link {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+}
+
+.tile-link:focus-visible {
+  outline: 2px solid var(--tile-accent, var(--accent));
+  outline-offset: -4px;
 }
 
 .tile-spine {
@@ -968,7 +1216,7 @@ h3 {
 }
 
 .tile-years {
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 0.78rem;
   color: var(--ink-faint);
   padding-top: 4px;
@@ -976,7 +1224,7 @@ h3 {
 }
 
 .tile h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -989,27 +1237,28 @@ h3 {
   flex: 1;
 }
 
-.tile-span {
+/* Horizontal line with highlight color, removed on 23.09.2026 because I found it too busy. */
+/* .tile-span {
   position: relative;
   height: 6px;
   border-radius: 3px;
   background: var(--line);
   margin: 2px 0 -2px;
-}
+} */
 
-.tile-span i {
+/* .tile-span i {
   position: absolute;
   top: 0;
   bottom: 0;
   border-radius: 3px;
   background: var(--tile-accent, var(--accent));
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--tile-accent, var(--accent)) 18%, transparent);
-}
+} */
 
 .tile-meta {
   display: flex;
   gap: 18px;
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 0.76rem;
   color: var(--ink-faint);
   padding-top: 12px;
@@ -1042,6 +1291,14 @@ h3 {
   font-weight: 600;
   color: var(--tile-accent, var(--accent));
   margin-top: 2px;
+}
+
+.tile-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 12px;
 }
 
 .tile-cta svg {
@@ -1091,6 +1348,11 @@ footer p {
   flex: 1 1 420px;
 }
 
+.footer-notes strong {
+  font-style: normal;
+  font-weight: 600;
+}
+
 .social-links {
   display: flex;
   gap: 14px;
@@ -1126,22 +1388,22 @@ footer p {
   }
 
   .vh-entry::before {
-    left: 8px;
+    left: 11px;
   }
 
   .vh-entry::after {
     left: 1px;
-    top: 26px;
-  }
-
-  .vh-entry.major::after {
-    left: -2px;
     top: 24px;
   }
 
+  .vh-entry.major::after {
+    left: -1px;
+    top: 26px;
+  }
+
   .vh-entry.patch::after {
-    left: 3px;
-    top: 30px;
+    left: 4px;
+    top: 37px;
   }
 
   .vh-meta {
@@ -1150,7 +1412,7 @@ footer p {
     flex-wrap: wrap;
     gap: 10px;
     text-align: left;
-    padding-top: 14px;
+    padding: 0 0 0 20px;
   }
 
   .vh-entry ul::before {
@@ -1162,8 +1424,8 @@ footer p {
   }
 
   .era-ruler {
-    height: 56px;
-    margin-top: 32px;
+    height: 48px;
+    margin-top: 24px;
   }
 
   .er-tick-label {

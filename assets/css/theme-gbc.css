@@ -130,7 +130,6 @@
 }
 .chapter:first-child::before { display: none; }
 .chapter:first-child { padding-top: clamp(40px, 6vw, 60px); }
-.chapter-head { align-items: center; }
 .chapter-num {
   padding: 7px 20px; border-radius: 999px; color: #fff; font-size: 1.1rem;
   background: linear-gradient(180deg, hsl(var(--hue) 85% 68%), hsl(var(--hue) 70% 46%));

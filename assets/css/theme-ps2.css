@@ -17,10 +17,10 @@
   --sat-soft: 60%;
   --lig-soft: 92%;
 
-  --font-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --font-display: "Audiowide", "Segoe UI", system-ui, sans-serif;
   --font-display-weight: 400;
-  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
 
   --card-radius: 10px;
   --note-radius: 10px;
@@ -146,7 +146,6 @@
 }
 .chapter:first-child::before, .chapter:first-child::after { display: none; }
 .chapter:first-child { padding-top: clamp(40px, 6vw, 60px); }
-.chapter-head { align-items: center; }
 .chapter-num {
   min-width: 46px; height: 52px; padding: 0 12px; justify-content: center; color: #fff; font-size: 1.05rem;
   background: linear-gradient(0deg, hsl(var(--hue) 70% 34%), hsl(var(--hue) 70% 52%));

@@ -18,10 +18,10 @@
   --sat-soft: 55%;
   --lig-soft: 92%;
 
-  --font-body: 'Figtree', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
   --font-display: 'Press Start 2P', monospace;
   --font-display-weight: 400;
-  --font-mono: 'Ubuntu Mono', monospace;
+  --font-mono: 'IBM Plex Mono', monospace;
 
   --sky-a: #5C94FC;
   --sky-b: #ABCCFF;

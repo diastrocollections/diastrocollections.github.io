@@ -18,10 +18,10 @@
   --sat-soft: 55%;
   --lig-soft: 91%;
 
-  --font-body: 'Mulish', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
   --font-display: 'Rajdhani', sans-serif;
   --font-display-weight: 700;
-  --font-mono: 'Fira Code', monospace;
+  --font-mono: 'IBM Plex Mono', monospace;
 
   --card-radius: 12px;
   --note-radius: 12px;
@@ -141,7 +141,6 @@
 .chapter::before { content: ""; position: absolute; left: 0; top: clamp(26px, 3.6vw, 42px); width: 112px; height: 4px; background: var(--four); }
 .chapter:first-child::before { display: none; }
 .chapter:first-child { padding-top: clamp(40px, 6vw, 60px); }
-.chapter-head { align-items: center; }
 .chapter-num {
   width: 54px; height: 54px; justify-content: center; flex-shrink: 0; color: #fff; font-size: 1.15rem;
   background: linear-gradient(135deg, hsl(var(--hue) 78% 64%), hsl(var(--hue) 70% 44%) 55%, hsl(var(--hue) 70% 32%));

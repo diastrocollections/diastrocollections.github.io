@@ -196,6 +196,12 @@ content:
       - name: chapters
         type: number
         label: Chapter count
+      - name: handwritten
+        type: boolean
+        label: "Hand-written (drives the Hand-written / Draft in progress status on the hub and collection page, and the \"How it's made\" shelf progress)"
+      - name: progress
+        type: number
+        label: "Hand-written progress in % (0–100, fills this collection's spine on the \"How it's made\" shelf; ignored once Hand-written is ticked)"
       - name: accent
         type: string
         label: "Accent color (hex, e.g. #C8102E)"
@@ -207,3 +213,37 @@ content:
       - name: url
         type: string
         label: "Link to platform page (e.g. nes/)"
+
+  - name: version-history
+    label: "Version History"
+    type: file
+    path: data/version-history.json
+    format: json
+    list: true
+    fields:
+      - name: version
+        type: string
+        label: "Version number (no 'v' prefix, e.g. 2.1.0)"
+      - name: type
+        type: select
+        label: Release type
+        options:
+          values: ["major", "minor", "patch"]
+      - name: date
+        type: date
+        label: Release date
+      - name: current
+        type: boolean
+        label: "Show the \"Current\" badge"
+      - name: bullets
+        type: object
+        list: true
+        label: Bullets
+        fields:
+          - name: text
+            type: text
+            label: "Bullet text (inline <em> and <a href=\"\"> tags allowed)"
+          - name: sub
+            type: string
+            list: true
+            label: "Sub-bullets (optional, inline tags allowed)"

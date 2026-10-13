@@ -20,7 +20,7 @@
   --font-body: 'Rubik', sans-serif;
   --font-display: 'Big Shoulders Display', sans-serif;
   --font-display-weight: 800;
-  --font-mono: 'Red Hat Mono', monospace;
+  --font-mono: 'IBM Plex Mono', monospace;
 
   --card-radius: 4px 12px 10px 10px;
   --control-radius: 8px;
@@ -187,7 +187,6 @@
 }
 .chapter:first-child::before { display: none; }
 .chapter:first-child { padding-top: clamp(40px, 6vw, 60px); }
-.chapter-head { align-items: center; }
 .chapter-num {
   background: hsl(var(--hue) var(--sat) var(--lig)); color: #fff;
   padding: 8px 18px 8px 14px; transform: skewX(-12deg);

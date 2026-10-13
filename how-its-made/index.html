@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="How Diastro Gaming Collections is made: the research method, where AI is and isn't used, source credit, privacy, and how the site is funded.">
+  <title>How it's made - Diastro Gaming Collections</title>
+  <meta property="og:title" content="How it's made - Diastro Gaming Collections">
+  <meta property="og:description"
+    content="How Diastro Gaming Collections is made: the research method, where AI is and isn't used, source credit, privacy, and how the site is funded.">
+  <meta property="og:image" content="https://diastrocollections.github.io/assets/og/og-hub.png">
+  <meta property="og:url" content="https://diastrocollections.github.io/how-its-made/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="../assets/css/hub.css">
+  <link rel="stylesheet" href="../assets/css/how-its-made.css">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <script data-goatcounter="https://diastro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <svg class="menu-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path class="menu-icon-open" d="M4 7h16M4 12h16M4 17h16" />
+          <path class="menu-icon-close" d="M6 6l12 12M18 6L6 18" />
+        </svg>
+        <span>Menu</span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-labelledby="siteNavTitle">
+        <h2 class="site-nav-title" id="siteNavTitle">Navigation</h2>
+        <div class="topbar-left">
+          <a class="nav-link" href="../">The shelf</a>
+          <a class="nav-link" href="./" aria-current="page">How it's made</a>
+          <a class="nav-link" href="../version-history/">Version history</a>
+        </div>
+        <div class="topbar-right">
+          <a class="brand" href="https://www.youtube.com/@DiastroGaming" target="_blank" rel="noopener"
+            aria-label="Diastro Gaming on YouTube (opens in a new tab)" title="Opens YouTube in a new tab"><svg
+              class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg> Diastro Gaming
+            <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M14 4h6v6" />
+              <path d="M20 4 10 14" />
+              <path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
+            </svg></a>
+          <button class="theme-toggle" id="themeToggle" type="button" title="Dark / light mode"><span
+              class="theme-toggle-icon" aria-hidden="true">◐</span><span class="theme-toggle-label">Dark / light
+              mode</span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero-->
+  <section class="hero">
+    <div class="wrap">
+      <a class="back-link" href="../">&larr; Back to the shelf</a>
+      <div class="eyebrow"><span class="dot"></span> Diastro Gaming Collections</div>
+      <h1>How this project <em>is made</em></h1>
+      <p class="hero-lede">Thanks for checking out this section, where I tell you a little more about myself, but more
+        importantly, how this project came to be, how I created it, developed and expanded it, and how I intend to keep
+        it going. I also provide full transparency on the use of AI, finances and privacy. If you have any questions,
+        don't hesitate to <a href="mailto:diastrogaming@pm.me">send me an email</a>.
+
+      </p>
+      <p class="aim-updated">Last updated: 13 October 2026</p>
+    </div>
+  </section>
+
+  <!-- The short version -->
+  <section class="wrap">
+    <div class="aim-promises">
+      <h2>The short version</h2>
+      <div class="aim-promise-grid">
+        <div class="aim-promise">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M5.6 5.6l12.8 12.8"></path>
+          </svg>
+          <div class="aim-promise-title">No ads, ever</div>
+          <div class="aim-promise-text">Nothing on this website is for sale or sponsored.</div>
+        </div>
+        <div class="aim-promise">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 20V11"></path>
+            <path d="M10 20V5"></path>
+            <path d="M16 20v-7"></path>
+            <path d="M21 20H3"></path>
+          </svg>
+          <div class="aim-promise-title">No tracking, ever</div>
+          <div class="aim-promise-text">Absolutely no tracking. Only anonymous page views are counted.</div>
+        </div>
+        <div class="aim-promise">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"></path>
+            <path d="M14 7l3 3"></path>
+          </svg>
+          <div class="aim-promise-title">Every word by hand</div>
+          <div class="aim-promise-text">AI helps with code and drafts, but the final text is hand-written.</div>
+        </div>
+        <div class="aim-promise">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"></path>
+            <path d="M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"></path>
+          </svg>
+          <div class="aim-promise-title">Sources are credited</div>
+          <div class="aim-promise-text">Sources are listed on every Collection.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page navigation -->
+  <div class="wrap aim-layout">
+    <nav class="aim-toc" aria-label="On this page">
+      <div class="aim-toc-label">On this page</div>
+      <a href="#who">Who makes this</a>
+      <a href="#method">How Collections are made</a>
+      <a href="#ai">How AI is used</a>
+      <a href="#sources">Sources and credit</a>
+      <a href="#ethics">Ethics and respecting creators</a>
+      <a href="#privacy">Your privacy</a>
+      <a href="#funding">No ads, and funding</a>
+      <a href="#everywhere">Beyond this website</a>
+    </nav>
+
+    <main class="aim-main">
+
+      <!-- Who makes this -->
+      <section id="who" class="aim-section">
+        <h2>Who makes this</h2>
+        <div class="aim-who">
+          <div class="aim-who-media">
+            <img class="aim-photo" src="../assets/img/jesper-pp.jpg" alt="Portrait of Jesper" width="108" height="108">
+            <img class="aim-logo" src="../assets/img/diastrogaming-logo-smallest.png" alt="Diastro Gaming logo"
+              width="108" height="108">
+          </div>
+          <div class="aim-who-text">
+            <p>My name is Jesper. I live in the Netherlands with my wife, my son and our two cats.</p>
+            <p>I've been toying with the idea of starting a gaming channel for a very long time,
+              but I've always doubted anyone would be interested in reading or watching what I have to say. But in 2026,
+              something changed. Something needed to come out. So here I am, with you. I need to show and tell you this
+              <em>for me</em>. Because I love video games more than anything in the world.
+            </p>
+            <p>There are so many fantastic gaming content creators out there. The majority of great gaming content
+              originates from North America. With this project, I try to tell stories about video games from a European
+              perspective
+              whenever that angle is relevant.</p>
+            <p>You'll also find that the Collections are not ranked, and they certainly
+              aren't top 100 lists of the best games per platform. Instead, with each Collection I try to find
+              noteworthy and interesting games across every major genre represented on the platform.</p>
+            <p>So, the adventure begins. You can find me here, and you can expect to find me on YouTube very soon. I
+              can't wait to see where we go from here. Please enjoy Diastro Gaming Collections, and let's play some
+              video
+              games!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How Collections are made -->
+      <section id="method" class="aim-section">
+        <h2>How Collections are made</h2>
+        <p>Here is an overview of my method for each Diastro Gaming Collection. While I work out the plans for
+          individual
+          games' stories, this method focuses on the creation of the Collections.</p>
+        <ol class="aim-steps">
+          <li>
+            <span class="aim-step-num">1</span>
+            <span class="aim-step-title">Research</span>
+            <span class="aim-step-text">With a vast prompt that includes my personal story and ideas about the
+              platform, I instruct Claude to start researching. I convey the pillars of the project clearly, so that
+              Claude goes genre-by-genre, focuses on a European historical viewpoint, and uses enthusiast and critic
+              sources over popular consensus.</span>
+          </li>
+          <li>
+            <span class="aim-step-num">2</span>
+            <span class="aim-step-title">Curate</span>
+            <span class="aim-step-text">From the research, I select 100 games based on critical, historical and
+              regional significance, generally spread across 12 chapters. A good amount; not so low that it leaves out
+              platform essentials, or so high that it becomes boring. Future Collections may be smaller if the
+              platform's catalogue is small.</span>
+          </li>
+          <li>
+            <span class="aim-step-num">3</span>
+            <span class="aim-step-title">Fact-check</span>
+            <span class="aim-step-text">A second Claude pass fact-checks every game's European title, release date,
+              developer and publisher, as well as its historical significance. I double-check every title manually.
+              It's a lot of fun and it pays off to really dive into the cult hits and regional curios!</span>
+          </li>
+          <li>
+            <span class="aim-step-num">4</span>
+            <span class="aim-step-title">Write by hand</span>
+            <span class="aim-step-text">This is the best part: I play every single game! Looking at a massive library of
+              1500 games, you can bet your sweet stroopwafel I'll be fast-forwarding and drowning in save states at this
+              point. ;) I'll write the stories by hand, and replace the AI-generated blurbs.</span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- How AI is used -->
+      <section id="ai" class="aim-section">
+        <h2>How AI is used</h2>
+        <p>I am open and transparent about the use of AI. Without it, I couldn't build this project the way I want to,
+          not in a hundred years! I use Claude Code for the technical side and Claude Desktop (Cowork) for research,
+          fact-checking and first drafts. But the stories are human. A Diastro Gaming Collection only counts as finished
+          when every word is hand-written by me.</p>
+
+        <div class="aim-table-wrap">
+          <table class="aim-table" role="table">
+            <caption>Who makes what</caption>
+            <thead role="rowgroup">
+              <tr role="row">
+                <th scope="col" role="columnheader">Part of the project</th>
+                <th scope="col" role="columnheader">AI's role</th>
+                <th scope="col" role="columnheader">Jesper's role</th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              <tr role="row">
+                <th scope="row" role="rowheader">Code and styling</th>
+                <td role="cell" data-label="AI's role">Programming, QA, bug fixing, versioning, refactoring, first pass
+                  of technical documentation (Claude Code).</td>
+                <td role="cell" data-label="Jesper's role">Direction, product management, prompts, review, testing.
+                  Manual HTML and CSS improvements. Rewriting technical documentation. Tool configuration.</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader">Research</th>
+                <td role="cell" data-label="AI's role">Claude finds and cross-checks sources. I initially used Sonnet 5
+                  (High effort), but switched to Opus 5.5 (High effort) after the first 6 Collections.</td>
+                <td role="cell" data-label="Jesper's role">Additional research, verification, decision-making,
+                  attribution,
+                  tool selection, but you know the most important part: PLAYING ALL THE GAMES! :D</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader">Early drafts</th>
+                <td role="cell" data-label="AI's role">Claude generates the initial draft of each Collection's copy and
+                  blurbs as a starting point, which I think is fair game.</td>
+                <td role="cell" data-label="Jesper's role">After the initial draft, every curator's note, chapter
+                  blurb, game blurb, game story, footer and version update gets rewritten by me.
+                </td>
+              </tr>
+            </tbody>
+            <tfoot role="rowgroup">
+              <tr role="row" class="aim-table-final">
+                <th scope="row" role="rowheader">Final text</th>
+                <td role="cell" data-label="AI's role">None.</td>
+                <td role="cell" data-label="Jesper's role">100% hand-written by me!</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="aim-shelf-box">
+          <div class="aim-shelf-head">
+            <h3>Rewrite progress overview</h3>
+            <p class="aim-shelf-count" id="aimShelfCount"></p>
+          </div>
+          <p class="aim-shelf-text">Each spine represents a Collection. Filled spines are fully hand-written, the dotted
+            ones are in progress.</p>
+          <div class="aim-spines" id="aimSpines" role="img"></div>
+          <p class="aim-shelf-text" style="font-size:0.82rem">Updates automatically as Collections are rewritten.</p>
+        </div>
+
+        <div>
+          <h3>The badges you'll see</h3>
+          <div class="aim-badge-grid">
+            <div class="aim-badge-card">
+              <span class="aim-badge is-written"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M4 20l4-1 11-11-3-3L5 16l-1 4z"></path>
+                </svg>Hand-written</span>
+              <p>When you see this badge, it means every word on the page was hand-written by me.</p>
+            </div>
+            <div class="aim-badge-card">
+              <span class="aim-badge is-draft"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="8"></circle>
+                  <path d="M12 8v4l3 2"></path>
+                </svg>Draft in progress</span>
+              <p>This badge means some text is still an AI-assisted draft either partially rewritten or scheduled to be
+                rewritten.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sources & credit -->
+      <section id="sources" class="aim-section">
+        <h2>Sources and credit</h2>
+        <p>Credits and sources can be found at the bottom of every Collection. Game Details pages are coming in a future
+          update, and they get inline sources.</p>
+        <figure class="aim-source-example">
+          <figcaption>How a source looks on a Game Details page</figcaption>
+          <p>The original Japanese sequel (<em>The Lost Levels</em>) was considered too tough for Western players, so
+            Nintendo reskinned <em>Yume Kōjō: Doki Doki Panic</em>, a 1987 Famicom Disk System game, with Mario
+            characters instead. It already felt surprisingly Mario-like, so the switch was easy, and that’s how we got
+            the Super Mario Bros. 2 we know. <a href="https://www.mariowiki.com/Yume_Kojo:_Doki_Doki_Panic" target="_blank" rel="noopener">Super Mario
+              Wiki</a>
+          </p>
+        </figure>
+        <div class="aim-report">
+          <p>Spotted a mistake? Please send me an email! There's a link on every page. I appreciate the help and will
+            credit you.</p>
+          <a class="aim-cta"
+            href="mailto:diastrogaming@pm.me?subject=DGC%20error%20report%20%E2%80%93%20How%20it%27s%20made"><svg
+              width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>Report a mistake</a>
+        </div>
+      </section>
+
+      <!-- Ethics and respecting creators -->
+      <section id="ethics" class="aim-section">
+        <h2>Ethics and respecting creators</h2>
+        <div>
+          <p>Brands, console names and game titles are used only to identify them. The project respects the intellectual
+            property of respective rights holders.</p>
+          <p>This project does not and will never provide any links to copyrighted material or piracy sites.</p>
+        </div>
+      </section>
+
+      <!-- Your privacy -->
+      <section id="privacy" class="aim-section">
+        <h2>Your privacy</h2>
+        <p>Online privacy, both yours and mine, is extremely important to me. I consider this website a safe haven for
+          all gamers. I respect your privacy like I hope you will respect mine. I don't need to know anything about you
+          for us to enjoy some awesome games. So, in summary:</p>
+        <div class="aim-privacy-grid">
+          <div class="aim-privacy-card is-counted">
+            <h3>What is counted</h3>
+            <ul>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12l5 5 9-10"></path>
+                </svg>Anonymous page views over time</li>
+            </ul>
+          </div>
+          <div class="aim-privacy-card is-never">
+            <h3>What never happens</h3>
+            <ul>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" aria-hidden="true">
+                  <path d="M6 6l12 12M18 6L6 18"></path>
+                </svg>No user accounts or registration</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" aria-hidden="true">
+                  <path d="M6 6l12 12M18 6L6 18"></path>
+                </svg>No tracking or profiling</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" aria-hidden="true">
+                  <path d="M6 6l12 12M18 6L6 18"></path>
+                </svg>No selling or sharing of data</li>
+            </ul>
+          </div>
+        </div>
+        <div class="aim-services">
+          <h3>Outside services this site talks to</h3>
+          <div>
+            <p><strong><a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a></strong>
+              Used to count anonymous page views.</p>
+            <p><strong><a href="https://docs.github.com/en/pages" target="_blank" rel="noopener">GitHub
+                  Pages</a></strong> This is where the project is hosted. GitHub may log visits for security,
+              under its own privacy policy.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- No ads, and how it's funded -->
+      <section id="funding" class="aim-section">
+        <h2>No ads, and funding</h2>
+        <div>
+          <p>I do not and will never show ads on this website. Ads suck. Other than my ISP and Claude subscription, this
+            project costs nothing to run.</p>
+          <p>As the project grows and expands to other platforms such as YouTube, I may consider adding a way to buy me
+            a coffee or something. I also don't discount the possibility of setting up a Patreon at some point. You get
+            the idea.</p>
+          <p>A note on YouTube specifically: I do plan on enabling monetization through YouTube Ads when eligible, and
+            direct sponsorships are an option there. But I will carefully consider them and I will be transparent about
+            them.</p>
+        </div>
+        <!-- <div style="display:flex;align-items:center;gap:16px">
+          <button type="button" class="aim-cta" disabled>Support the project</button>
+          <span class="aim-shelf-text">[Coming later, if ever]</span>
+        </div> -->
+      </section>
+
+      <!-- Beyond this website -->
+      <section id="everywhere" class="aim-section">
+        <h2>Beyond this website</h2>
+        <p>Currently, you can find me on the platforms below. The same methods and rules regarding AI, crediting sources
+          and privacy apply to Diastro Gaming videos and social posts, but be aware that by using these platforms, you
+          also accept their respective privacy policies and terms of use. You and me both, unfortunately.
+        </p>
+        <div class="aim-social">
+          <a href="https://www.youtube.com/@DiastroGaming" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://bsky.app/profile/diastrogaming.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          <a href="https://instagram.com/diastrogaming" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://threads.com/@diastrogaming" target="_blank" rel="noopener">Threads</a>
+          <a href="https://x.com/DiastroGaming" target="_blank" rel="noopener">X</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-notes">
+        <p>&copy; 2026 Jesper Bekkering / Diastro Gaming. Brands, platforms, game titles, box art, and screenshots are
+          trademarks and copyrights of their respective owners/publishers and are used here for identification and
+          commentary purposes only.</p>
+      </div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@DiastroGaming" target="_blank" rel="noopener" aria-label="YouTube"><svg
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg></a>
+        <a href="https://bsky.app/profile/diastrogaming.bsky.social" target="_blank" rel="noopener"
+          aria-label="Bluesky"><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026" />
+          </svg></a>
+        <a href="https://instagram.com/diastrogaming" target="_blank" rel="noopener" aria-label="Instagram"><svg
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+          </svg></a>
+        <a href="https://threads.com/@diastrogaming" target="_blank" rel="noopener" aria-label="Threads"><svg
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M18.263 11.097c-.03-3.486-1.92-5.586-5.111-5.586-2.13 0-3.922.963-4.863 2.499l2.062 1.438c.535-.843 1.272-1.543 2.628-1.543 1.528 0 2.318.85 2.544 2.431a15 15 0 0 0-2.236-.173c-4.125 0-6.068 1.867-6.068 4.336s1.943 3.99 4.804 3.99c3.139 0 5.013-2.115 5.781-4.735.798.361 1.348 1.204 1.348 2.47 0 3.387-3.907 5.232-7.22 5.232-4.885 0-8.077-3.207-8.077-8.424 0-6.392 4.223-10.487 9.9-10.487 3.808 0 5.69 1.671 6.97 3.914l2.108-1.475C21.44 2.078 18.331 0 13.663 0 6.227 0 1.168 5.277 1.168 12.934c0 7 4.953 11.066 10.856 11.066 4.878 0 9.809-2.846 9.809-7.716 0-2.545-1.46-4.231-3.569-5.187m-6.33 4.855c-1.077 0-2.026-.512-2.026-1.453 0-1.483 1.822-1.934 3.606-1.934.678 0 1.34.045 1.927.173-.422 1.927-1.671 3.215-3.508 3.214Z" />
+          </svg></a>
+        <a href="https://x.com/DiastroGaming" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path
+              d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />
+          </svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/nav.js"></script>
+  <script src="../assets/how-its-made.js"></script>
+</body>
+
+</html>

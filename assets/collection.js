@@ -17,6 +17,8 @@
  *   #emptyState    - "no results" message element (optional)
  *   #totalCount    - element to fill with the total game count (optional)
  *   #themeToggle   - button that cycles light/dark/system (optional)
+ *   .hero .eyebrow - gets the Hand-written / Draft status appended (optional;
+ *                    needs assets/status.js loaded first)
  *   #curatorNote   - the curator's note card, wraps #noteBody + #noteToggle
  *                    for the collapsible teaser (optional)
  *   #noteToggle    - button that expands/collapses the curator's note (optional)
@@ -67,7 +69,7 @@
         chapterGlyph = '<span class="chapter-glyph" style="color:' + cg.color + '">' + cg.ch + '</span>';
       }
       head.innerHTML =
-        '<span class="chapter-num">' + chapterGlyph + romanNumerals[ci] + '</span>' +
+        '<span class="chapter-num">' + chapterGlyph + '<span class="chapter-num-text">' + romanNumerals[ci] + '</span></span>' +
         '<h2 class="chapter-title">' + chapter.title + '</h2>' +
         '<span class="chapter-tag">' + chapter.tag + '</span>';
       section.appendChild(head);
@@ -164,6 +166,58 @@
       .catch(showError);
   }
 
+  // "Hand-written" / "Draft in progress" status in the hero eyebrow, driven by
+  // the platform's `handwritten` flag in data/platforms.json (see status.js).
+  var eyebrowEl = document.querySelector('.hero .eyebrow');
+  if (dataSrc && eyebrowEl && window.DGStatus) {
+    var platformId = dataSrc.replace(/^.*\//, '').replace(/\.json$/, '');
+    fetch(dataSrc.replace(/[^/]+$/, 'platforms.json'))
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function (platforms) {
+        var platform = platforms.filter(function (p) { return p.id === platformId; })[0];
+        if (!platform) return;
+        // Gather the eyebrow text into one inline run so the status wraps along
+        // with the words instead of becoming its own flex item.
+        var run = document.createElement('span');
+        Array.prototype.slice.call(eyebrowEl.childNodes).forEach(function (node) {
+          if (!(node.classList && node.classList.contains('dot'))) run.appendChild(node);
+        });
+        run.appendChild(document.createTextNode(' '));
+        run.insertAdjacentHTML('beforeend', DGStatus.html(platform.handwritten, {
+          variant: 'inline',
+          base: dataSrc.replace(/data\/[^/]+$/, '')
+        }));
+        eyebrowEl.appendChild(run);
+      })
+      .catch(function (err) { console.error('collection.js: failed to load platform status', err); });
+  }
+
+  // "Send me an email" link in the footer: prefill the subject with the
+  // platform's `title` from data/platforms.json, so error reports say which
+  // Collection they came from. Without it the link still opens a blank email.
+  var mailLinks = document.querySelectorAll('.footer-fine a[href^="mailto:"]');
+  if (dataSrc && mailLinks.length) {
+    var mailPlatformId = dataSrc.replace(/^.*\//, '').replace(/\.json$/, '');
+    fetch(dataSrc.replace(/[^/]+$/, 'platforms.json'))
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function (platforms) {
+        var platform = platforms.filter(function (p) { return p.id === mailPlatformId; })[0];
+        if (!platform) return;
+        var subject = encodeURIComponent('DGC error report \u2013 ' + platform.title);
+        Array.prototype.forEach.call(mailLinks, function (a) {
+          a.href = 'mailto:diastrogaming@pm.me?subject=' + subject;
+        });
+      })
+      .catch(function (err) { console.error('collection.js: failed to load email subject', err); });
+  }
+
+  // Theme toggle
   var themeToggle = document.getElementById('themeToggle');
   if (themeToggle) {
     var root = document.documentElement;
@@ -178,6 +232,7 @@
     });
   }
 
+  // Curator's note toggle
   var noteToggle = document.getElementById('noteToggle');
   var noteCard = document.getElementById('curatorNote');
   if (noteToggle && noteCard) {

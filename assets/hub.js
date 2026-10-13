@@ -72,8 +72,6 @@
       }
 
       var rulerW = rulerEl.clientWidth || 1080;
-      var laneRight = [-9999, -9999, -9999, -9999];
-      var laneOffset = [-13, 13, -48, 48]; // the far lanes (index 2/3) must clear .er-tick-label at +30px
 
       // Platforms that launched the same year land on the exact same x position; without
       // this, only the last dot in the list would be visible, hiding the others underneath it.
@@ -88,20 +86,12 @@
         var group = dotGroups[key];
         if (group.length < 2) return;
         group.forEach(function (p, gi) {
-          dotShift[p.id] = ((gi - (group.length - 1) / 2) * 8).toFixed(1);
+          dotShift[p.id] = ((gi - (group.length - 1) / 2) * 18).toFixed(1);
         });
       });
 
       PLATFORMS.forEach(function (p, i) {
         var pct = ((p.start - earliestStart) / span) * 100;
-        var xpx = (pct / 100) * rulerW;
-        var halfW = (p.name.length * 6.3) / 2 + 4;
-        var lane = laneRight.length - 1;
-        for (var L = 0; L < laneRight.length; L++) {
-          if (xpx - halfW > laneRight[L] + 10) { lane = L; break; }
-        }
-        laneRight[lane] = xpx + halfW;
-        var dy = laneOffset[lane];
         var m = document.createElement('a');
         m.className = 'er-marker';
         m.href = p.url;
@@ -110,7 +100,7 @@
         m.style.animationDelay = (i * 0.04) + 's';
         m.title = p.name + ' · ' + p.years;
         m.innerHTML =
-          '<span class="er-label mono" style="top:' + dy + 'px;transform:translate(-50%,' + (dy < 0 ? '-100%' : '0') + ')">' + p.name + '</span>' +
+          '<span class="er-label mono">' + p.name + '</span>' +
           '<span class="er-dot" style="--dot-shift:' + (dotShift[p.id] || 0) + 'px"></span>';
         rulerEl.appendChild(m);
       });
@@ -118,12 +108,12 @@
 
     if (tilesEl) {
       PLATFORMS.forEach(function (p, i) {
-        var a = document.createElement('a');
+        var a = document.createElement('div');
         a.className = 'tile';
-        a.href = p.url;
         a.style.setProperty('--tile-accent', p.accent);
         a.style.animationDelay = (i * 0.06) + 's';
         a.innerHTML =
+          '<a class="tile-link" href="' + p.url + '" aria-label="Enter the ' + p.name + ' collection"></a>' +
           '<div class="tile-spine"></div>' +
           '<div class="tile-body">' +
             '<span class="tile-watermark" aria-hidden="true">' + p.icon + '</span>' +
@@ -140,9 +130,12 @@
               '<span><strong>' + p.chapters + '</strong> chapters</span>' +
               '<span class="tile-region mono">' + p.region + '</span>' +
             '</div>' +
-            '<span class="tile-cta">Enter the collection' +
-              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
-            '</span>' +
+            '<div class="tile-foot">' +
+              '<span class="tile-cta">Enter the collection' +
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
+              '</span>' +
+              DGStatus.html(p.handwritten, { variant: 'pill' }) +
+            '</div>' +
           '</div>';
         tilesEl.appendChild(a);
       });

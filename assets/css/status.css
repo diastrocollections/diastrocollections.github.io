@@ -1,0 +1,156 @@
+/*
+ * Diastro Gaming Collections — "Hand-written" / "Draft in progress" status
+ * button and its explainer popover (see assets/status.js). Shared by the hub
+ * and every collection page; colors come from each page's theme tokens.
+ */
+
+.status {
+  display: inline-flex;
+  position: relative;
+}
+
+.status-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: help;
+  font: inherit;
+  white-space: nowrap;
+}
+
+.status-btn svg {
+  width: 11px;
+  height: 11px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* Pill variant: hub tiles */
+
+.status--pill {
+  z-index: 3; /* above the tile's full-card link */
+}
+
+.status--pill .status-btn {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.status--pill .status-btn.is-handwritten {
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.status--pill .status-btn.is-draft {
+  color: var(--ink-faint);
+  border-style: dashed;
+}
+
+.status--pill .status-btn:hover,
+.status--pill .status-btn[aria-expanded="true"] {
+  border-color: var(--tile-accent, var(--accent));
+  color: var(--ink);
+}
+
+/* Inline variant: collection-page eyebrow, inherits the eyebrow's type */
+
+.status--inline {
+  vertical-align: baseline;
+}
+
+.status--inline .status-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* Themes style the eyebrow very differently (dark bars, glossy pills), so hover
+   keeps the eyebrow's own color and only firms up the underline. */
+.status--inline .status-btn:hover,
+.status--inline .status-btn[aria-expanded="true"] {
+  text-decoration-style: solid;
+}
+
+/* Popover */
+
+.status-pop:not(.is-open) {
+  display: none;
+}
+
+.status-pop {
+  position: fixed;
+  inset: auto;
+  margin: 0;
+  z-index: 50;
+  width: min(340px, calc(100vw - 24px));
+  padding: 14px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink-soft);
+  box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.35);
+  font-family: var(--font-body, "Archivo", "Segoe UI", system-ui, sans-serif);
+  font-size: 0.84rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: none;
+  text-align: left;
+  white-space: normal;
+  overflow: visible;
+  cursor: auto;
+}
+
+.status-pop p {
+  margin: 0;
+}
+
+.status-def {
+  padding-left: 10px;
+  border-left: 2px solid transparent;
+}
+
+.status-def + .status-def {
+  margin-top: 8px;
+}
+
+.status-def.is-current {
+  border-left-color: var(--tile-accent, var(--accent));
+  color: var(--ink);
+}
+
+.status-def strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.status-more {
+  margin-top: 12px !important;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.status-more a {
+  color: var(--tile-accent, var(--accent));
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

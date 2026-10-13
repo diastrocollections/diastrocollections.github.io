@@ -17,7 +17,7 @@
   --sat-soft: 66%;
   --lig-soft: 93%;
 
-  --font-body: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --font-display: "Chakra Petch", "Segoe UI", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
 
@@ -136,7 +136,6 @@
 .chapter::after { content: ""; position: absolute; left: 0; top: clamp(30px, 4vw, 44px); width: 7px; height: 7px; margin-top: -3px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px 2px var(--accent); }
 .chapter:first-child::before, .chapter:first-child::after { display: none; }
 .chapter:first-child { padding-top: clamp(40px, 6vw, 60px); }
-.chapter-head { align-items: center; }
 .chapter-num {
   position: relative; width: 50px; height: 50px; justify-content: center; border-radius: 8px; color: #fff; font-size: 1.05rem; flex-shrink: 0;
   background: linear-gradient(180deg, hsl(var(--hue) 65% 56%), hsl(var(--hue) 65% 36%));

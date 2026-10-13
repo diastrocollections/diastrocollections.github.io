@@ -18,10 +18,10 @@
   --sat-soft: 50%;
   --lig-soft: 91%;
 
-  --font-body: 'Inter', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
   --font-display: 'Zen Dots', sans-serif;
   --font-display-weight: 400;
-  --font-mono: 'Azeret Mono', monospace;
+  --font-mono: 'IBM Plex Mono', monospace;
 
   --card-radius: 12px;
   --control-radius: 10px;
@@ -167,7 +167,6 @@
 }
 .chapter:first-child::before, .chapter:first-child::after { display: none; }
 .chapter:first-child { padding-top: clamp(40px, 6vw, 60px); }
-.chapter-head { align-items: center; }
 .chapter-num {
   background: var(--surface); border: 2px solid hsl(var(--hue) var(--sat) var(--lig)); border-radius: 10px;
   padding: 9px 15px; box-shadow: 0 4px 0 hsl(var(--hue) var(--sat) var(--lig) / 0.55);

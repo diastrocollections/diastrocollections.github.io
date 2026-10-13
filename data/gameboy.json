@@ -228,6 +228,12 @@
         "blurb": "A full console-caliber Zelda squeezed onto a cartridge, with a surreal dream-island story unlike anything else in the series."
       },
       {
+        "title": "Castlevania II: Belmont's Revenge",
+        "year": "1991",
+        "developer": "Konami",
+        "blurb": "Konami's course-correction after the stiff, punishing original Castlevania: The Adventure. Split into four selectable stages before a final gauntlet, it moves faster, jumps better, and is generally regarded as the strongest of the series' three original Game Boy outings."
+      },
+      {
         "title": "Blaster Master Boy",
         "year": "1992",
         "developer": "Sunsoft Osaka",
@@ -244,12 +250,6 @@
         "year": "1996",
         "developer": "Kemco",
         "blurb": "A sequel that expands the original's text-adventure structure — Kemco released it in Japan in 1992 but held the English version back until 1996, a four-year wait for the West."
-      },
-      {
-        "title": "Solomon's Club",
-        "year": "1991",
-        "developer": "Graphic Research",
-        "blurb": "A Game Boy port of the puzzle-platformer Solomon's Key, trading keys and blocks for wits over reflexes."
       }
     ]
   },

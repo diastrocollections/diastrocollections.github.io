@@ -1,111 +1,148 @@
 # Diastro Gaming Collections
 
-A twelve-platform field guide to classic console and handheld games — NES, Game Boy, Mega Drive, SNES, PlayStation, Nintendo 64, Game Boy Color, PlayStation 2, GameCube, Game Boy Advance, PSP, and Wii. 1,200 games across 144 genre chapters.
+**Live site:** https://diastrocollections.github.io
 
-This is a static site: no build step, no server-side code. Every page fetches its game data from a JSON file at runtime, so you can edit the JSON in any text editor (VS Code works great) without touching HTML or JavaScript.
+A curated field guide to classic console and handheld games: 1,500 games across 15 platforms, from the NES (1985) to the PSP and DS. Each platform gets 100 games split into 12 genre chapters. Every game is fact-checked for release year, developer and regional availability. Where a European release exists, the European release year comes first.
 
-## Site structure
+This repository holds the entire website. This README explains how it is built.
+
+> This is a personal project and isn't open to outside contributions yet. If you spot a mistake in a collection, please use the email link in the footer of any page.
+
+## The approach: a static site that loads its data from JSON
+
+The site is plain HTML, CSS and JavaScript. It has no framework, no build step, no package manager and no server-side code. GitHub Pages serves the files as they are in the repository.
+
+The site keeps content separate from presentation:
+
+- **Content** lives in JSON files in `data/`, one per platform, plus one for the hub and one for the changelog.
+- **Presentation** is a small set of shared scripts and stylesheets. They fetch that JSON when the page loads and build the page in the browser.
+
+Because of this split, all 15 collection pages run on one renderer and one layout stylesheet. What makes each platform look different is a single theme file.
+
+## Repository layout
 
 ```
-site/
-├── index.html                    the hub page (the tile grid linking to all 12 collections)
-├── assets/
-│   ├── hub.js                    renders the hub's tiles + stats from data/platforms.json
-│   ├── collection.js             shared renderer used by all 12 collection pages
-│   └── css/
-│       ├── base.css              shared layout for all 12 collection pages (hero,
-│       │                         curator note, toolbar/search, card grid, footer)
-│       ├── hub.css               the hub page's own styles
-│       ├── theme-nes.css         one small file per platform: just its colors,
-│       ├── theme-gameboy.css     fonts, and visual flourishes (loaded after
-│       ├── theme-megadrive.css   base.css, so it only needs to override what
-│       ├── theme-snes.css        makes that platform look different)
-│       ├── theme-ps1.css
-│       ├── theme-n64.css
-│       ├── theme-gbc.css
-│       ├── theme-ps2.css
-│       ├── theme-gamecube.css
-│       ├── theme-gba.css
-│       ├── theme-psp.css
-│       └── theme-wii.css
-├── data/
-│   ├── platforms.json            one entry per platform, feeds the hub page
-│   ├── nes.json
-│   ├── gameboy.json
-│   ├── megadrive.json
-│   ├── snes.json
-│   ├── ps1.json
-│   ├── n64.json
-│   ├── gbc.json
-│   ├── ps2.json
-│   ├── gamecube.json
-│   ├── gba.json
-│   ├── psp.json
-│   └── wii.json
-├── nes/index.html                each of these is a collection page. They all share
-├── gameboy/index.html            the same HTML skeleton and assets/css/base.css,
-├── megadrive/index.html          link their own assets/css/theme-<platform>.css for
-├── snes/index.html               look and feel, and render their games through the
-├── ps1/index.html                shared assets/collection.js script, reading their
-├── n64/index.html                own data/<platform>.json file.
-├── gbc/index.html
-├── ps2/index.html
-├── gamecube/index.html
-├── gba/index.html
-├── psp/index.html
-└── wii/index.html
+index.html                    The hub: a shelf of platform tiles with site-wide totals
+<platform>/index.html         One collection page per platform (15 in total)
+how-its-made/index.html       How the collections are researched, written and built
+version-history/index.html    Release history of the site
+
+data/
+  <platform>.json             The chapters and games of one collection
+  platforms.json              One entry per platform: feeds the hub tiles and stats
+  version-history.json        Changelog entries, newest first
+
+assets/
+  collection.js               Shared renderer for every collection page
+  hub.js                      Renders the hub from platforms.json
+  status.js                   "Hand-written" / "Draft in progress" badge and popover
+  nav.js                      Responsive top-bar menu
+  version-history.js          Renders the changelog
+  how-its-made.js             Shelf progress chart and "On this page" scroll-spy
+  css/
+    base.css                  Shared layout for all collection pages
+    theme-<platform>.css      Per-platform colors, fonts and decorative extras
+    hub.css                   Hub layout, also used by the two info pages
+    how-its-made.css          Extras for the "How it's made" page
+    status.css                Badge and popover styles
+    fonts.css                 @font-face rules for the self-hosted fonts
+  fonts/                      Self-hosted .woff2 files (see fonts/MANIFEST.md)
+  og/                         Open Graph share images, one per page
+  img/                        Logo and author photo
+
+.pages.yml                    Pages CMS schema for the JSON files
 ```
 
-## Editing a collection's games
+Platform IDs are used the same way everywhere. For example, `nes` means `nes/index.html`, `data/nes.json` and `assets/css/theme-nes.css`. The 15 IDs are `nes`, `mastersystem`, `gameboy`, `megadrive`, `snes`, `ps1`, `n64`, `gbc`, `ps2`, `gamecube`, `gba`, `psp`, `ds`, `wii` and `xbox`.
 
-Open `data/<platform>.json` (e.g. `data/nes.json`) in VS Code. It's a JSON array of chapters, each with four games-per-entry:
+## How a collection page works
+
+All collection pages share the same HTML skeleton. The only parts that differ from one page to the next are the text (hero, curator's note, footer), the meta tags, the theme stylesheet and one attribute on the script tag:
+
+```html
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/theme-nes.css">
+...
+<script src="../assets/status.js"></script>
+<script src="../assets/collection.js" data-src="../data/nes.json"></script>
+```
+
+`collection.js` reads its own `data-src` attribute, fetches that file and renders:
+
+- the chapters and their game cards, numbered No. 001 to No. 100 across the whole page;
+- a row of chapter-jump chips;
+- live search over title, developer and genre, which ignores accents so that "pokemon" also finds "Pokémon";
+- the collapsible curator's note;
+- the light / dark / system theme toggle;
+- the platform's writing status in the hero, which it looks up in `platforms.json`.
+
+The renderer only needs a handful of element IDs on the page, such as `#chapters`, `#chips` and `#searchInput`, and every one except `#chapters` is optional. Platform-specific touches are opt-in through attributes. For example, the PlayStation page passes `data-glyphs` so the renderer cycles the △ ○ ✕ □ button symbols through its cards.
+
+### The data format
+
+Each `data/<platform>.json` file is an array of chapters:
 
 ```json
 [
   {
-    "hue": 350,
-    "tag": "Platformer",
-    "title": "Foundational Platforming",
-    "blurb": "One or two sentences introducing this chapter's theme.",
+    "hue": 71,
+    "tag": "Puzzle",
+    "title": "Falling-Block & Puzzle",
+    "blurb": "Chapter introduction.",
     "games": [
-      ["Super Mario Bros.", "1985", "Nintendo", "One-line description of the game."],
-      ["Mega Man 2", "1988", "Capcom", "One-line description of the game."]
+      { "title": "Tetris", "year": "1989", "developer": "Nintendo R&D1", "blurb": "About the game." }
     ]
   }
 ]
 ```
 
-Notes on the fields:
+`hue` (0–360) is fed into a CSS custom property, so each chapter gets its own accent color within the platform's palette.
 
-- **`hue`** — a number 0–360 that sets the chapter's accent color (used in `hsl(var(--hue) ...)` throughout that page's CSS). Pick a hue that doesn't collide with a neighboring chapter if you want them visually distinct.
-- **`tag`** — the short genre/category label shown next to the chapter title (e.g. "RPG", "Platformer", "Racing").
-- **`title`** / **`blurb`** — the chapter's heading and one-paragraph intro.
-- **`games`** — an array of `[Title, Year, Developer, Blurb]` tuples. Order within a chapter is the order they'll display in the grid.
+## Styling and theming
 
-To add a game, add another `[Title, Year, Developer, Blurb]` entry to a chapter's `games` array. To add a whole new chapter, add another object to the top-level array with the same four keys. There's no hard limit on chapter or game count — the page numbers cards automatically (No. 001, No. 002, …) and the hub's totals won't update on their own (see below).
+The CSS is built in layers:
 
-**Keep the JSON valid**: every string in double quotes, commas between entries but not after the last one, and escape any literal `"` inside a blurb as `\"`. If a page shows a small "could not load this collection's data" message instead of your games, the most common cause is a JSON syntax error — paste the file into [jsonlint.com](https://jsonlint.com) or run `python3 -m json.tool data/nes.json` to find it.
+1. **`base.css`** holds the complete layout of a collection page: hero, curator's note, sticky toolbar, card grid and footer. It uses no fixed colors or fonts. Everything comes from CSS custom properties.
+2. **`theme-<platform>.css`** loads after it and sets those properties (`--bg`, `--surface`, `--ink`, `--accent`, `--hue`, `--font-display` and so on). It then adds that console's decorative extras, such as the NES page's pixel-art hills and brick pattern or the PS1 page's button glyphs.
 
-## Editing the hub page
+Each theme defines its palette three times: once for light mode, once inside `@media (prefers-color-scheme: dark)` to follow the system setting, and once under `:root[data-theme="dark"]` for the manual toggle. Switching themes cross-fades colors instead of snapping.
 
-`data/platforms.json` is what feeds the tile grid on the home page. Each platform's entry there is independent of its own `data/<platform>.json` — so if you add or remove games from a collection, update that platform's `games` count in `platforms.json` too (and `chapters` if you added/removed a chapter), or the hub's stats and tile numbers will drift out of sync with the actual page.
+The hub, "How it's made" and version history pages share `hub.css`, which has its own tile-based layout.
 
-## Adding a 13th platform
+## Fonts
 
-1. Create a new folder, e.g. `site/genesis-cd/`.
-2. Copy an existing collection page's `index.html` (any of the 12) to `site/genesis-cd/index.html` as a starting point — the HTML skeleton is identical across all of them, so it doesn't matter which one you pick. Update its `<title>`, the Google Fonts `<link>` if you want different fonts, the `href` on its `theme-<platform>.css` link (point it at a new `../assets/css/theme-genesis-cd.css`), the hero copy (eyebrow, `<h1>`, lede, stats), the curator note, the footer, and the `data-src` attribute on its closing `<script>` tag (`../data/genesis-cd.json`). The "&larr; Back to the shelf" link at the top of the hero comes along with the copy and needs no changes — it always points to `../` and its styling (`.back-link` in `base.css`) already follows the new page's theme colors and fonts automatically.
-3. Create `assets/css/theme-genesis-cd.css` for the new platform's look. Easiest path: copy the theme file closest to the vibe you want (e.g. `theme-nes.css` for something blocky/retro, `theme-wii.css` for something soft and rounded) and change its colors, fonts, and the small set of decorative overrides at the bottom (hero background, card shape). See "What's shared vs. per-page" below for what a theme file needs to define.
-4. Create `data/genesis-cd.json` with your chapters and games, following the schema above.
-5. Add one new entry to `data/platforms.json` with that platform's `id`, `icon` (an emoji), `name`, `title`, `years`, `start`/`end` (for the hub's hardware-span stat), `games`, `chapters`, `accent` (a hex color for the tile), `region`, `tagline`, and `url` (`"genesis-cd/"`).
+The themes use 29 typefaces, and all of them are self-hosted in `assets/fonts/` instead of loaded from Google Fonts, so visitors' IP addresses are never sent to a third party. Only the Latin and Latin Extended subsets are included, and only the weights and styles the site actually uses. `assets/fonts/MANIFEST.md` documents where each file came from.
 
-The hub page needs no code changes — it renders however many entries are in `platforms.json`.
+## Hub, status and version history
 
-## What's shared vs. per-page
+- **`platforms.json`** stores each platform's metadata: name, years, accent color, region, tagline, game and chapter counts, and writing status. `hub.js` builds the tiles from it and calculates the site-wide totals (games, chapters and the hardware timeline). Adding an entry adds a tile without any code changes.
+- **Writing status:** every collection starts from an AI-assisted draft and is rewritten by hand. The `handwritten` and `progress` fields drive the "Hand-written" / "Draft in progress" badges (`status.js`, which uses the Popover API so the popover isn't clipped by the tiles). The same fields drive the shelf progress chart on the "How it's made" page.
+- **`version-history.json`** is rendered by `version-history.js` as a timeline of releases. Each release is tagged major, minor or patch.
 
-- **`assets/css/base.css`** is the layout every collection page shares: the hero, curator note, sticky search toolbar, chapter/card grid, and footer. Edit this file and the change applies to all 12 pages at once — this is the one place to make a site-wide layout change (spacing, grid breakpoints, adding a new section, etc.).
-- **`assets/css/theme-<platform>.css`** is what makes each platform look different. It's loaded after `base.css`, so it only needs to set what's distinct for that page:
-  - Color variables (`--bg`, `--surface`, `--ink`, `--accent`, etc.) for light mode, plus the two dark-mode blocks (`@media (prefers-color-scheme: dark)` and `:root[data-theme="dark"]`, which need the same values — the first handles system dark mode, the second handles the manual toggle).
-  - Font variables (`--font-body`, `--font-display`, `--font-mono`).
-  - A handful of decorative overrides at the bottom of the file — things like the hero's background pattern, card shape (`--card-radius`, a `::before`/`::after` accent bar), or one-off flourishes like PS1's scattered button glyphs or GBC's gradient bubbles. These are optional; a bare-minimum theme file with just colors and fonts still renders correctly using base.css's defaults.
-- **`assets/collection.js`** is the one script every collection page uses. It reads the game data, builds the chapter/card HTML, wires up search and the theme toggle, and is the same file for all 12 pages — editing it changes behavior everywhere at once.
-- **`assets/hub.js`** and **`assets/css/hub.css`** do the same job for the home page only — the hub has its own layout (tile grid instead of chapters), so it isn't built on `base.css`.
+## Content management
+
+The JSON files are edited through [Pages CMS](https://pagescms.org), which commits straight to this repository. `.pages.yml` describes the chapter and game fields once and reuses them for all 15 platform files. Because every page reads its data at runtime, a content change goes live as soon as GitHub Pages redeploys. No HTML or JavaScript needs to be touched.
+
+## Privacy and third parties
+
+- **Analytics:** [GoatCounter](https://www.goatcounter.com) counts page views anonymously. There are no cookies and no personal tracking.
+- **Fonts:** self-hosted (see above).
+- **Browser storage:** none. The dark-mode choice is not saved between visits.
+- There are no ads, accounts or other external scripts.
+
+## Running it locally
+
+Pages load their data with `fetch()`, which browsers block for files opened directly from disk (`file://`). Serve the folder with any static server instead:
+
+```sh
+python3 -m http.server
+# then open http://localhost:8000
+```
+
+## How it's made, and AI
+
+Much of the technical side (the HTML, CSS and JavaScript in this repository) is built with [Claude Code](https://claude.com/claude-code), under my direction and with my review and testing. Version 1.0 of the collections also used research and draft texts created with Claude. From then on, every collection is being rewritten, expanded and edited by hand, and the status badges show how far each one has got. The [How it's made](https://diastrocollections.github.io/how-its-made/) page covers the process in full.
+
+## License and trademarks
+
+© 2026 Jesper Bekkering / Diastro Gaming. Platform names, game titles and other trademarks belong to their respective owners and are used only for identification and commentary.

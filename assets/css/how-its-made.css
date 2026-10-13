@@ -1,0 +1,765 @@
+/* Diastro Gaming Collections — "How it's made" page.
+ * The initial draft of this CSS is generated with Claude Code. After that, finetuning is done by Jesper.
+ * 
+ * Everything reusable (hero, eyebrow, back-link, wrap, headings, footer) comes
+ * from hub.css. This file only covers what hub.css genuinely has no pattern
+ * for yet: the on-page nav, the promise/step grids, the AI table, the shelf
+ * progress chart, the two badges, and a couple of small callouts.
+ */
+
+.aim-updated {
+  margin: 4px 0 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.86rem;
+  color: var(--ink-faint);
+}
+
+.aim-layout {
+  display: flex;
+  gap: clamp(32px, 5vw, 80px);
+  align-items: flex-start;
+  padding-top: clamp(40px, 6vw, 64px);
+  padding-bottom: clamp(64px, 9vw, 100px);
+}
+
+/* ---------- On-page nav ---------- */
+
+.aim-toc {
+  width: 210px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.aim-toc-label {
+  font-family: "Fraunces", serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.aim-toc a {
+  padding: 9px 0 9px 14px;
+  border-left: 2px solid var(--line-strong);
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.aim-toc a:hover,
+.aim-toc a:focus-visible,
+.aim-toc a.is-active {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+.aim-toc a.is-active {
+  font-weight: 600;
+}
+
+/* ---------- Sections ---------- */
+
+.aim-main {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(48px, 6vw, 72px);
+}
+
+.aim-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: clamp(40px, 6vw, 56px);
+  border-top: 1px solid var(--line);
+}
+
+.aim-section:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.aim-section h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 600;
+}
+
+.aim-section>p {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  max-width: 68ch;
+}
+
+.aim-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ---------- The short version: 4 promises ---------- */
+
+.aim-promises {
+  margin: 0 0 clamp(24px, 4vw, 32px);
+  padding: clamp(28px, 4vw, 40px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.aim-promises h2 {
+  margin: 0 0 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.aim-promise-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+}
+
+.aim-promise {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 24px;
+  border-left: 1px solid var(--line);
+}
+
+.aim-promise:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.aim-promise:last-child {
+  padding-right: 0;
+}
+
+.aim-promise svg {
+  color: var(--accent);
+}
+
+.aim-promise-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.aim-promise-text {
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+/* ---------- Who makes this ---------- */
+
+.aim-who {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.aim-who-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.aim-photo,
+.aim-logo {
+  display: block;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: scale-down;
+}
+
+.aim-photo {
+  background: var(--surface-2);
+  border: 2px solid var(--accent);
+}
+
+.aim-who-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+
+.aim-who-text p {
+  margin: 0;
+}
+
+/* ---------- Method: 4 steps ---------- */
+
+.aim-steps {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  /* 2x2, not 4 across: next to the on-page nav the main column tops out around
+     780px, which made four columns too narrow for a full paragraph each. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 32px;
+}
+
+.aim-steps li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 3px solid var(--accent);
+}
+
+.aim-step-num {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.aim-step-title {
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+
+.aim-step-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+/* ---------- Who makes what table ---------- */
+
+.aim-table-wrap {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow-x: auto;
+  background: var(--surface);
+}
+
+.aim-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.96rem;
+}
+
+.aim-table caption {
+  text-align: left;
+  padding: 18px 22px 8px;
+  font-family: "Fraunces", serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.aim-table th,
+.aim-table td {
+  padding: 14px 22px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.aim-table thead th {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.aim-table tbody th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.aim-table tbody tr:last-child th,
+.aim-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.aim-table tr.aim-table-final {
+  background: var(--accent-soft);
+}
+
+.aim-table tr.aim-table-final td:last-child {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ---------- The shelf, word by word ---------- */
+
+.aim-shelf-box {
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: clamp(20px, 3vw, 32px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.aim-shelf-head {
+  display: flex;
+  flex-wrap: wrap;
+  /* on narrow screens the count drops below the title */
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+
+.aim-shelf-head h3 {
+  margin: 0;
+}
+
+.aim-shelf-count {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.86rem;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+.aim-shelf-text {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+/* A bookcase instead of a scroller: when the spines don't fit on one shelf they
+   wrap onto the next. Rows have a fixed height (the tallest spine, see
+   renderShelf in how-its-made.js), the row gap is exactly one plank thick, and a
+   repeating background paints a plank into every gap. The bottom border is the
+   last plank. Spines first narrow from 34px towards 22px to keep everything on
+   one shelf (--spines is the collection count, set by renderShelf), and only
+   wrap once that's not enough. */
+.aim-spines {
+  --shelf-row: 194px;
+  --plank: 6px;
+  --spine-gap: 6px;
+  --spine-w: clamp(22px, (100cqw - 16px - (var(--spines, 15) - 1) * var(--spine-gap)) / var(--spines, 15), 34px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--spine-w));
+  grid-auto-rows: var(--shelf-row);
+  gap: var(--plank) var(--spine-gap);
+  margin-top: 16px;
+  /* margin, not padding, so no plank repeats above row one */
+  padding: 0 8px;
+  border-bottom: var(--plank) solid var(--line-strong);
+  background: repeating-linear-gradient(to bottom,
+      transparent 0 var(--shelf-row),
+      var(--line-strong) var(--shelf-row) calc(var(--shelf-row) + var(--plank)));
+}
+
+.aim-spine {
+  align-self: end;
+  width: var(--spine-w);
+  height: var(--spine-h, 160px);
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--spine-c, var(--accent));
+}
+
+/* Draft spines fill from the shelf up to --fill (the collection's hand-written
+   progress, set by renderShelf) with a tint of the console color, capped by a
+   solid 2px line. The tint keeps the spine's name readable. The spine is rotated
+   180deg, so "to bottom" here fills visually upwards. */
+.aim-spine.is-draft {
+  background: linear-gradient(to bottom,
+      color-mix(in srgb, var(--spine-c, var(--accent)) 32%, transparent) 0 calc(var(--fill, 0%) - 2px),
+      var(--spine-c, var(--accent)) calc(var(--fill, 0%) - 2px) var(--fill, 0%),
+      transparent var(--fill, 0%));
+  color: var(--ink);
+  font-weight: 500;
+  border: 2px dashed var(--spine-c, var(--line-strong));
+  border-bottom: 0;
+}
+
+/* ---------- Badges ---------- */
+
+.aim-badge-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.aim-badge-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.aim-badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 13px 6px 10px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.aim-badge.is-written {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.aim-badge.is-draft {
+  border: 1.5px dashed var(--accent);
+  color: var(--accent);
+}
+
+.aim-badge-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+/* ---------- Source example + report callout ---------- */
+
+.aim-source-example {
+  margin: 0;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.aim-source-example figcaption {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+}
+
+.aim-source-example p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.aim-source-example a {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.86rem;
+  color: var(--accent);
+}
+
+.aim-report {
+  display: flex;
+  flex-wrap: wrap;
+  /* button drops below the text when there's no room for both */
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+}
+
+.aim-report p {
+  margin: 0;
+  flex: 1 1 16em;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.aim-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.94rem;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.aim-cta[disabled] {
+  background: transparent;
+  color: var(--ink-soft);
+  border: 1.5px dashed var(--line-strong);
+  cursor: default;
+}
+
+/* ---------- Privacy grid ---------- */
+
+.aim-privacy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.aim-privacy-card {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.aim-privacy-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.96rem;
+  line-height: 1.4;
+}
+
+.aim-privacy-card li {
+  display: flex;
+  gap: 10px;
+}
+
+.aim-privacy-card li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.aim-privacy-card.is-counted li svg {
+  color: var(--accent);
+}
+
+.aim-privacy-card.is-never li svg {
+  color: var(--ink-faint);
+}
+
+.aim-services {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 22px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 12px;
+}
+
+.aim-services > div {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px 20px;
+}
+
+/* Each service is a row of the grid above, so all explanations start at the
+   same point, set by the longest name. No lines or cells: it stays a list. */
+.aim-services p {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.aim-services strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ---------- Beyond this site ---------- */
+
+.aim-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.aim-social a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.aim-social a:hover,
+.aim-social a:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .aim-layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .aim-toc {
+    position: static;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+  }
+
+  .aim-toc-label {
+    display: none;
+  }
+
+  .aim-toc a {
+    border-left: none;
+    border-bottom: 2px solid var(--line-strong);
+    padding: 6px 0;
+  }
+
+  .aim-promise-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 24px;
+  }
+
+  .aim-promise:nth-child(3) {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .aim-badge-grid,
+  .aim-privacy-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .aim-promise-grid,
+  .aim-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .aim-promise {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .aim-who {
+    flex-direction: column;
+  }
+
+  /* Too narrow for two columns: name above its explanation. */
+  .aim-services p {
+    display: block;
+  }
+
+  .aim-services strong {
+    display: block;
+  }
+
+  .aim-who-media {
+    flex-direction: row;
+  }
+
+  /* The roles table becomes one card per row: the row heading on top, then each
+     cell with its column heading as a small label (the data-label attribute on
+     each cell in the HTML). Everything fits the screen; nothing scrolls sideways. */
+  .aim-table,
+  .aim-table caption,
+  .aim-table tbody,
+  .aim-table tfoot,
+  .aim-table tr,
+  .aim-table th,
+  .aim-table td {
+    display: block;
+  }
+
+  .aim-table caption {
+    padding: 18px 18px 6px;
+  }
+
+  .aim-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .aim-table tr {
+    padding: 14px 18px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .aim-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .aim-table tfoot tr {
+    border-top: 1px solid var(--line);
+    border-bottom: none;
+    border-radius: 0 0 11px 11px;
+  }
+
+  .aim-table th,
+  .aim-table td {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .aim-table tbody th,
+  .aim-table tfoot th {
+    white-space: normal;
+    margin-bottom: 10px;
+    font-family: "Fraunces", serif;
+    font-size: 1.05rem;
+  }
+
+  .aim-table td+td {
+    margin-top: 10px;
+  }
+
+  .aim-table td::before {
+    content: attr(data-label);
+    content: attr(data-label) / "";
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+}

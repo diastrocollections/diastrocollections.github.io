@@ -20,7 +20,7 @@
 
   --font-body: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
   --font-display: "Quicksand", "Segoe UI", system-ui, sans-serif;
-  --font-mono: "Roboto Mono", ui-monospace, "SFMono-Regular", monospace;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
 
   --card-radius: 18px;
   --note-radius: 20px;
@@ -143,7 +143,6 @@
 .chapter::before { content: ""; position: absolute; left: 0; top: clamp(30px, 4vw, 44px); width: 12px; height: 12px; margin-top: -6px; border-radius: 50%; background: var(--accent); box-shadow: 22px 0 0 var(--line-strong), 44px 0 0 var(--line-strong); }
 .chapter:first-child::before { display: none; }
 .chapter:first-child { padding-top: clamp(40px, 6vw, 60px); }
-.chapter-head { align-items: center; }
 .chapter-num {
   position: relative; width: 72px; height: 48px; justify-content: center; flex-shrink: 0; border-radius: 14px; color: #fff; font-size: 1.15rem; overflow: hidden;
   background: linear-gradient(180deg, hsl(var(--hue) 75% 60%), hsl(var(--hue) 70% 42%));

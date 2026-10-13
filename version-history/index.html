@@ -14,11 +14,7 @@
   <meta property="og:url" content="https://diastrocollections.github.io/version-history/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Spline+Sans+Mono:wght@400;500;600&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
   <link rel="stylesheet" href="../assets/css/hub.css">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
   <script data-goatcounter="https://diastro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -28,15 +24,27 @@
 
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <div class="topbar-left">
-        <a class="brand" href="https://www.youtube.com/@DiastroGaming" target="_blank" rel="noopener"
-          aria-label="Diastro Gaming on YouTube"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-          </svg> Diastro Gaming</a>
-        <a class="nav-link" href="./" aria-current="page">Version history</a>
-      </div>
-      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <svg class="menu-icon" viewBox="0 0 24 24" aria-hidden="true"><path class="menu-icon-open" d="M4 7h16M4 12h16M4 17h16" /><path class="menu-icon-close" d="M6 6l12 12M18 6L6 18" /></svg>
+        <span>Menu</span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-labelledby="siteNavTitle">
+        <h2 class="site-nav-title" id="siteNavTitle">Navigation</h2>
+        <div class="topbar-left">
+          <a class="nav-link" href="../">The shelf</a>
+          <a class="nav-link" href="../how-its-made/">How it's made</a>
+          <a class="nav-link" href="./" aria-current="page">Version history</a>
+        </div>
+        <div class="topbar-right">
+          <a class="brand" href="https://www.youtube.com/@DiastroGaming" target="_blank" rel="noopener"
+            aria-label="Diastro Gaming on YouTube (opens in a new tab)" title="Opens YouTube in a new tab"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg> Diastro Gaming
+            <svg class="ext-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6" /><path d="M20 4 10 14" /><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></svg></a>
+          <button class="theme-toggle" id="themeToggle" type="button" title="Dark / light mode"><span class="theme-toggle-icon" aria-hidden="true">◐</span><span class="theme-toggle-label">Dark / light mode</span></button>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -50,137 +58,11 @@
         patch for fixes and small tweaks.</p>
       <div class="vh-stats" id="vhStats"></div>
     </div>
-    <div class="commit-line" aria-hidden="true"></div>
+    <div class="commit-line" id="commitLine" aria-hidden="true"></div>
   </section>
 
   <section class="vh-list">
-    <div class="wrap">
-
-      <div class="vh-entry major">
-        <div class="vh-meta">
-          <span class="vh-version">v2.0.0</span>
-          <span class="vh-badge">Current</span>
-          <span class="vh-date">September 21, 2026</span>
-        </div>
-        <ul>
-          <li><em>3 new collections added:</em> The Nintendo DS, Sega Master System and Microsoft Xbox Collections are
-            now live. They were researched and styled with Claude Cowork (Sonnet 5, High effort), same as before. I'll be
-            rewriting their stories myself over time, just like the original twelve.</li>
-          <li><em>Styling overhaul:</em> Pushing the styling intensity on the 3 new collections made them noticeably
-            bolder than the original set, so I brought that same energy back to the base collections and the hub page.
-            <ul>
-              <li><em>CSS cleanup across every theme:</em> 13 theme stylesheets and the hub stylesheet had leftover
-                duplicate code from the styling passes, now consolidated with no visual changes.</li>
-              <li>Added a graphical timeline to the hub page, with clickable platform markers.</li>
-              <li>A handful of smaller styling fixes and tweaks throughout.</li>
-            </ul>
-          </li>
-          <li><em>Simple CMS support:</em> Added <a href="https://github.com/hunvreus/pagescms">GitHub Pages CMS</a>
-            by Ronan Berder, so I can add and edit content without touching the code.
-            <ul>
-              <li><em>Data format migration:</em> required converting all 12 original platforms' game lists from
-                arrays to named objects.</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="vh-entry">
-        <div class="vh-meta">
-          <span class="vh-version">v1.3.0</span>
-          <span class="vh-date">September 11, 2026</span>
-        </div>
-        <ul>
-          <li>Added OpenGraph tags and images to every page so Link Previews now look right.</li>
-          <li>Updated hero, footer and hub page texts.</li>
-          <li>Added meta descriptions to every page.</li>
-        </ul>
-      </div>
-
-      <div class="vh-entry">
-        <div class="vh-meta">
-          <span class="vh-version">v1.2.0</span>
-          <span class="vh-date">September 8, 2026</span>
-        </div>
-        <ul>
-          <li>Added social links (YouTube, Bluesky, Instagram, Threads, X) to the footer of every page</li>
-          <li>Linked the "Diastro Gaming" hub logo to the YouTube channel</li>
-          <li>Added this version history page, plus a link to it and a version pill on the hub</li>
-          <li>Added a "Back to the shelf" link to every collection page</li>
-          <li>Made the curator's note collapsible on every collection page, with a short preview and a "read more"
-            toggle</li>
-          <li>Reorganized the collection page toolbar: search, result count, and the theme toggle now share a row, with
-            the genre chips moved to their own row below</li>
-          <li>Several minor improvements to styling and layout.</li>
-        </ul>
-      </div>
-
-      <div class="vh-entry">
-        <div class="vh-meta">
-          <span class="vh-version">v1.1.0</span>
-          <span class="vh-date">September 4, 2026</span>
-        </div>
-        <ul>
-          <li>New curator notes added across every collection</li>
-          <li>Layout optimizations and styling fixes throughout the hub and collection pages</li>
-          <li>AI disclaimer added to every page</li>
-          <li>Copyright notice added to every page</li>
-        </ul>
-      </div>
-
-      <div class="vh-entry patch">
-        <div class="vh-meta">
-          <span class="vh-version">v1.0.4</span>
-          <span class="vh-date">September 4, 2026</span>
-        </div>
-        <ul>
-          <li>Added GoatCounter analytics to every page</li>
-        </ul>
-      </div>
-
-      <div class="vh-entry patch">
-        <div class="vh-meta">
-          <span class="vh-version">v1.0.3</span>
-          <span class="vh-date">September 4, 2026</span>
-        </div>
-        <ul>
-          <li>Color and release-year corrections across several collections</li>
-          <li>Analytics setup groundwork</li>
-        </ul>
-      </div>
-
-      <div class="vh-entry patch">
-        <div class="vh-meta">
-          <span class="vh-version">v1.0.2</span>
-          <span class="vh-date">September 4, 2026</span>
-        </div>
-        <ul>
-          <li>Documentation updated to reflect the project's file structure</li>
-        </ul>
-      </div>
-
-      <div class="vh-entry patch">
-        <div class="vh-meta">
-          <span class="vh-version">v1.0.1</span>
-          <span class="vh-date">September 4, 2026</span>
-        </div>
-        <ul>
-          <li>Styles and HTML refactored across every page</li>
-        </ul>
-      </div>
-
-      <div class="vh-entry major">
-        <div class="vh-meta">
-          <span class="vh-version">v1.0</span>
-          <span class="vh-date">September 4, 2026</span>
-        </div>
-        <ul>
-          <li>First release: twelve platform collections, 1,200 games, 144 genre chapters</li>
-          <li>Searchable, filterable collection pages with a shared hub</li>
-        </ul>
-      </div>
-
-    </div>
+    <div class="wrap" id="vhList"></div>
   </section>
 
   <footer>
@@ -188,7 +70,7 @@
       <div class="footer-notes">
         <p>AI Disclaimer: Much of the technical side of this project is built with Claude Code. In addition, version 1.0
           contains research, texts and stories created with Claude Cowork. From this point on, everything
-          is manually written, expanded and edited by me, a human! :)</p>
+          is manually written, expanded and edited by me, a human! :) <a href="../how-its-made/">Read how this site is made</a></p>
         <p>&copy; 2026 Jesper Bekkering / Diastro Gaming. Brands, platforms, game titles, box art, and screenshots are
           trademarks
           and copyrights of their respective owners/publishers and are used here for identification and commentary
@@ -224,35 +106,8 @@
     </div>
   </footer>
 
-  <script>
-    (function () {
-      var entries = document.querySelectorAll('.vh-entry');
-      var el = document.getElementById('vhStats');
-      if (el && entries.length) {
-        var latest = entries[0].querySelector('.vh-version').textContent;
-        var first = entries[entries.length - 1].querySelector('.vh-date').textContent;
-        var majors = document.querySelectorAll('.vh-entry.major').length;
-        [[String(entries.length), 'releases'], [latest, 'latest version'], [String(majors), 'major updates'], [first, 'first release']].forEach(function (s) {
-          var d = document.createElement('div'); d.className = 'stat';
-          d.innerHTML = '<span class="num mono">' + s[0] + '</span><span class="label">' + s[1] + '</span>';
-          el.appendChild(d);
-        });
-      }
-      var themeToggle = document.getElementById('themeToggle');
-      if (themeToggle) {
-        var root = document.documentElement;
-        themeToggle.addEventListener('click', function () {
-          var current = root.getAttribute('data-theme');
-          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          var next;
-          if (!current) next = prefersDark ? 'light' : 'dark';
-          else if (current === 'dark') next = 'light';
-          else next = 'dark';
-          root.setAttribute('data-theme', next);
-        });
-      }
-    })();
-  </script>
+  <script src="../assets/nav.js"></script>
+  <script src="../assets/version-history.js"></script>
 </body>
 
 </html>
