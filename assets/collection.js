@@ -11,12 +11,15 @@
  *
  * The page itself only needs to provide these elements (ids/classes):
  *   #chapters      - empty container the chapters render into
- *   #chips         - empty container the chapter-jump chips render into
- *   #searchInput   - text input (optional; search is skipped if absent)
- *   #resultCount   - small "N / total" label (optional)
+ *   #chips         - empty container the chapter links render into, inside
+ *                    #chaptersPanel, which #chaptersToggle opens and closes;
+ *                    #chaptersCurrent shows the chapter you're reading (optional)
+ *   #searchInput   - the filter input (optional; filtering is skipped if absent),
+ *                    with #filterClear to empty it and #filterStatus, a
+ *                    visually hidden live region that announces the result
+ *   #resultCount   - small "N of total" label (optional)
  *   #emptyState    - "no results" message element (optional)
  *   #totalCount    - element to fill with the total game count (optional)
- *   #themeToggle   - button that cycles light/dark/system (optional)
  *   .hero .eyebrow - gets the Hand-written / Draft status appended (optional;
  *                    needs assets/status.js loaded first)
  *   #curatorNote   - the curator's note card, wraps #noteBody + #noteToggle
@@ -27,7 +30,8 @@
  *   [
  *     { "hue": 350, "tag": "Platformer", "title": "...", "blurb": "...",
  *       "games": [
- *         { "title": "...", "year": "...", "developer": "...", "blurb": "..." },
+ *         { "title": "...", "year": "...", "developer": "...", "blurb": "...",
+ *           "badge": "..." },   // badge is optional: a short label beside the card's No.
  *         ...
  *       ] },
  *     ...
@@ -70,32 +74,37 @@
       }
       head.innerHTML =
         '<span class="chapter-num">' + chapterGlyph + '<span class="chapter-num-text">' + romanNumerals[ci] + '</span></span>' +
-        '<h2 class="chapter-title">' + chapter.title + '</h2>' +
-        '<span class="chapter-tag">' + chapter.tag + '</span>';
+        '<div class="chapter-head-main">' +
+          '<h2 class="chapter-title" tabindex="-1">' + chapter.title + '</h2>' +
+          '<span class="chapter-tag">' + chapter.tag + '</span>' +
+        '</div>';
       section.appendChild(head);
 
       var blurb = document.createElement('p');
       blurb.className = 'chapter-blurb';
-      blurb.textContent = chapter.blurb;
+      blurb.innerHTML = chapter.blurb;
       section.appendChild(blurb);
 
       var grid = document.createElement('div');
       grid.className = 'grid';
 
       chapter.games.forEach(function (game) {
-        var title = game.title, year = game.year, dev = game.developer, gblurb = game.blurb;
+        var title = game.title, year = game.year, dev = game.developer, gblurb = game.blurb, badge = game.badge;
         globalIdx++;
         var card = document.createElement('div');
         card.className = 'card';
-        var searchStr = (title + ' ' + dev + ' ' + gblurb + ' ' + chapter.title + ' ' + chapter.tag).toLowerCase();
+        var searchStr = (title + ' ' + dev + ' ' + gblurb + ' ' + chapter.title + ' ' + chapter.tag + (badge ? ' ' + badge : '')).toLowerCase();
         card.setAttribute('data-search', searchStr);
         var cardGlyph = '';
         if (GLYPHS && GLYPHS.length) {
           var g = GLYPHS[(globalIdx - 1) % GLYPHS.length];
           cardGlyph = '<span class="card-glyph" style="color:' + g.color + '">' + g.ch + '</span>';
         }
+        var idx = '<span class="card-idx">' + cardGlyph + 'No. ' + String(globalIdx).padStart(3, '0') + '</span>';
+        // Cards without a badge keep the bare index so no theme's card styling shifts.
+        if (badge) idx = '<div class="card-head">' + idx + '<span class="card-badge">' + badge + '</span></div>';
         card.innerHTML =
-          '<span class="card-idx">' + cardGlyph + 'No. ' + String(globalIdx).padStart(3, '0') + '</span>' +
+          idx +
           '<h3 class="card-title">' + title + '</h3>' +
           '<span class="card-meta">' + year + ' · ' + dev + '</span>' +
           '<p class="card-blurb">' + gblurb + '</p>';
@@ -106,12 +115,10 @@
       chaptersEl.appendChild(section);
 
       if (chipsEl) {
-        var chip = document.createElement('button');
+        var chip = document.createElement('a');
         chip.className = 'chip';
+        chip.href = '#ch-' + (ci + 1);
         chip.textContent = romanNumerals[ci] + '. ' + chapter.tag;
-        chip.addEventListener('click', function () {
-          document.getElementById('ch-' + (ci + 1)).scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
         chipsEl.appendChild(chip);
       }
     });
@@ -120,25 +127,153 @@
     if (totalCountEl) totalCountEl.textContent = globalIdx;
 
     var resultCount = document.getElementById('resultCount');
-    if (resultCount) resultCount.textContent = globalIdx + ' / ' + globalIdx;
+    if (resultCount) resultCount.textContent = globalIdx + ' games';
 
-    var searchInput = document.getElementById('searchInput');
+    setUpChapters(DATA);
+    setUpFilter(globalIdx);
+  }
+
+  // ---------- Chapters drop-down ----------
+
+  // The "Chapters" button opens a panel with one link per chapter (the themed
+  // .chip links), and names the chapter you're currently reading.
+  var chaptersBtn = document.getElementById('chaptersToggle');
+  var chaptersPanel = document.getElementById('chaptersPanel');
+  var chaptersCurrent = document.getElementById('chaptersCurrent');
+  var updateCurrentChapter = function () {};
+
+  function setUpChapters(DATA) {
+    if (!chaptersBtn || !chaptersPanel) return;
+    var container = chaptersBtn.parentNode;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function isOpen() { return chaptersBtn.getAttribute('aria-expanded') === 'true'; }
+    function setOpen(open) {
+      chaptersBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      chaptersPanel.hidden = !open;
+    }
+    chaptersBtn.addEventListener('click', function () { setOpen(!isOpen()); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && isOpen()) {
+        setOpen(false);
+        chaptersBtn.focus();
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (isOpen() && !container.contains(e.target)) setOpen(false);
+    });
+    container.addEventListener('focusout', function (e) {
+      if (isOpen() && e.relatedTarget && !container.contains(e.relatedTarget)) setOpen(false);
+    });
+
+    // Jump to a chapter: close the panel, scroll, and move focus to its title.
+    chaptersPanel.addEventListener('click', function (e) {
+      var link = e.target.closest('a.chip');
+      if (!link) return;
+      e.preventDefault();
+      var section = document.getElementById(link.getAttribute('href').slice(1));
+      if (!section) return;
+      setOpen(false);
+      if (location.hash !== '#' + section.id) history.pushState(null, '', '#' + section.id);
+      section.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' });
+      section.querySelector('.chapter-title').focus({ preventScroll: true });
+    });
+
+    // Which chapter are we in? The last visible one whose top has passed the
+    // bottom of the sticky toolbar.
+    var toolbar = document.querySelector('.toolbar');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('.chapter'));
+    var chips = Array.prototype.slice.call(chaptersPanel.querySelectorAll('.chip'));
+    var lastIndex = null;
+    updateCurrentChapter = function () {
+      var line = (toolbar ? toolbar.getBoundingClientRect().bottom : 0) + 24;
+      var current = -1;
+      sections.forEach(function (sec, i) {
+        if (!sec.classList.contains('hidden') && sec.getBoundingClientRect().top <= line) current = i;
+      });
+      if (current === lastIndex) return;
+      lastIndex = current;
+      chips.forEach(function (chip, i) {
+        if (i === current) chip.setAttribute('aria-current', 'location');
+        else chip.removeAttribute('aria-current');
+      });
+      if (chaptersCurrent) {
+        chaptersCurrent.innerHTML = current === -1 ? '' :
+          '<span class="chapters-current-num">' + romanNumerals[current] + '</span>' +
+          '<span class="chapters-current-tag">' + DATA[current].tag + '</span>';
+      }
+    };
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () { ticking = false; updateCurrentChapter(); });
+    }, { passive: true });
+    updateCurrentChapter();
+
+    // A link straight to a chapter (…/nes/#ch-3) can't jump by itself, because
+    // the chapters only exist once the JSON has loaded.
+    var target = location.hash && document.getElementById(location.hash.slice(1));
+    if (target && target.classList.contains('chapter')) target.scrollIntoView({ block: 'start' });
+  }
+
+  // ---------- Filter ----------
+
+  function setUpFilter(total) {
+    var input = document.getElementById('searchInput');
+    if (!input) return;
+    var clearBtn = document.getElementById('filterClear');
+    var status = document.getElementById('filterStatus');
+    var resultCount = document.getElementById('resultCount');
     var emptyState = document.getElementById('emptyState');
-    if (searchInput) {
-      searchInput.addEventListener('input', function () {
-        var q = normalize(searchInput.value.trim());
-        var visible = 0;
-        document.querySelectorAll('.chapter').forEach(function (sec) {
-          var chapterVisible = 0;
-          sec.querySelectorAll('.card').forEach(function (card) {
-            var match = normalize(card.getAttribute('data-search')).indexOf(q) !== -1;
-            card.classList.toggle('hidden', !match);
-            if (match) { chapterVisible++; visible++; }
-          });
-          sec.classList.toggle('hidden', chapterVisible === 0);
+    var toolbar = document.querySelector('.toolbar');
+    var chips = chaptersPanel ? Array.prototype.slice.call(chaptersPanel.querySelectorAll('.chip')) : [];
+    var announceTimer = null;
+
+    function apply() {
+      var raw = input.value.trim();
+      var q = normalize(raw);
+      var visible = 0;
+      document.querySelectorAll('.chapter').forEach(function (sec, i) {
+        var chapterVisible = 0;
+        sec.querySelectorAll('.card').forEach(function (card) {
+          var match = normalize(card.getAttribute('data-search')).indexOf(q) !== -1;
+          card.classList.toggle('hidden', !match);
+          if (match) { chapterVisible++; visible++; }
         });
-        if (resultCount) resultCount.textContent = visible + ' / ' + globalIdx;
-        if (emptyState) emptyState.style.display = visible === 0 ? 'block' : 'none';
+        sec.classList.toggle('hidden', chapterVisible === 0);
+        if (chips[i]) chips[i].hidden = chapterVisible === 0;
+      });
+      if (resultCount) resultCount.textContent = raw ? visible + ' of ' + total : total + ' games';
+      if (emptyState) emptyState.style.display = visible === 0 ? 'block' : 'none';
+      if (clearBtn) clearBtn.hidden = !raw;
+      if (toolbar) toolbar.classList.toggle('is-filtering', !!raw);
+      updateCurrentChapter();
+
+      // Announce the result once typing pauses, not on every keystroke.
+      if (status) {
+        clearTimeout(announceTimer);
+        announceTimer = setTimeout(function () {
+          status.textContent = !raw ? 'Showing all ' + total + ' games.' :
+            visible === 0 ? 'No games match.' :
+            visible + ' of ' + total + ' games match.';
+        }, 600);
+      }
+    }
+
+    input.addEventListener('input', apply);
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && input.value) {
+        e.stopPropagation();
+        input.value = '';
+        apply();
+      }
+    });
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function () {
+        input.value = '';
+        apply();
+        input.focus();
       });
     }
   }
@@ -195,10 +330,10 @@
       .catch(function (err) { console.error('collection.js: failed to load platform status', err); });
   }
 
-  // "Send me an email" link in the footer: prefill the subject with the
+  // "Report a mistake" button in the footer: prefill the subject with the
   // platform's `title` from data/platforms.json, so error reports say which
   // Collection they came from. Without it the link still opens a blank email.
-  var mailLinks = document.querySelectorAll('.footer-fine a[href^="mailto:"]');
+  var mailLinks = document.querySelectorAll('.footer-report a[href^="mailto:"]');
   if (dataSrc && mailLinks.length) {
     var mailPlatformId = dataSrc.replace(/^.*\//, '').replace(/\.json$/, '');
     fetch(dataSrc.replace(/[^/]+$/, 'platforms.json'))
@@ -217,20 +352,6 @@
       .catch(function (err) { console.error('collection.js: failed to load email subject', err); });
   }
 
-  // Theme toggle
-  var themeToggle = document.getElementById('themeToggle');
-  if (themeToggle) {
-    var root = document.documentElement;
-    themeToggle.addEventListener('click', function () {
-      var current = root.getAttribute('data-theme');
-      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var next;
-      if (!current) next = prefersDark ? 'light' : 'dark';
-      else if (current === 'dark') next = 'light';
-      else next = 'dark';
-      root.setAttribute('data-theme', next);
-    });
-  }
 
   // Curator's note toggle
   var noteToggle = document.getElementById('noteToggle');

@@ -33,19 +33,19 @@
 
     return '<div class="status status--' + variant + '">' +
       '<button type="button" class="status-btn is-' + key + '" aria-expanded="false" aria-controls="' + id + '">' +
-        ICONS[key] + label +
+      ICONS[key] + label +
       '</button>' +
       '<div class="status-pop" id="' + id + '" popover="manual">' +
-        '<p class="status-def' + (handwritten ? '' : ' is-current') + '">' +
-          '<strong>Draft in progress:</strong> This Collection is written completely by Claude and the ' +
-          'hand-written revision is currently in progress.</p>' +
-        '<p class="status-def' + (handwritten ? ' is-current' : '') + '">' +
-          '<strong>Hand-written:</strong> This Collection is hand-written by Jesper and does not contain any ' +
-          'AI-generated text.</p>' +
-        '<p class="status-more">You can learn more about the use of AI in this project on the ' +
-          '<a href="' + base + 'how-its-made/#ai">How it\'s made</a> page.</p>' +
+      '<p class="status-def' + (handwritten ? '' : ' is-current') + '">' +
+      '<strong>Draft in progress:</strong> This Collection is an AI-assisted draft and the ' +
+      'hand-written revision is currently in progress.</p>' +
+      '<p class="status-def' + (handwritten ? ' is-current' : '') + '">' +
+      '<strong>Hand-written:</strong> This Collection is hand-written by Jesper and does not contain any ' +
+      'AI-generated text.</p>' +
+      '<p class="status-more">You can learn more about the use of AI in this project on the ' +
+      '<a href="' + base + 'how-its-made/#ai">How it\'s made</a> page.</p>' +
       '</div>' +
-    '</div>';
+      '</div>';
   }
 
   function position() {

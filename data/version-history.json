@@ -1,30 +1,95 @@
 [
   {
+    "version": "2.2.0",
+    "type": "minor",
+    "date": "2026-10-20",
+    "current": true,
+    "sections": [
+      {
+        "heading": "Content updates",
+        "bullets": [
+          {
+            "text": "The <a href=\"/nes/\">NES Collection</a>'s Curator's Note and first two chapters are now fully hand-written! While I was at it, a fresh research pass caught a few wrong game titles and release years."
+          },
+          {
+            "text": "<strong>PAL badges:</strong> NES cards now show \"PAL-adjusted\" or \"PAL-optimised\", so you can see at a glance which games actually got some love for 50Hz. The filter finds those labels too."
+          },
+          {
+            "text": "The <a href=\"/gameboy/\">Game Boy Collection</a>'s Curator's Note is now hand-written as well."
+          }
+        ]
+      },
+      {
+        "heading": "New features & improved navigation",
+        "bullets": [
+          {
+            "text": "<strong>Navigation bar:</strong> a persistent bar at the top of every page, so you can jump to any part of the project from anywhere."
+          },
+          {
+            "text": "<strong>Dark/light toggle:</strong> always in the top right corner now, whatever page you're on."
+          },
+          {
+            "text": "<strong>Back to top:</strong> on large screens, a button appears once you've scrolled down. Phones don't get one, because tapping the top of the screen already does the trick."
+          },
+          {
+            "text": "<strong>Chapters drop-down:</strong> replaces the chapter chips. It's cleaner on every screen size and better for accessibility. You can now also link straight to a chapter, e.g. `/nes/#ch-3`."
+          },
+          {
+            "text": "<strong>Previous / next:</strong> every Collection now ends with links to its neighbours on the shelf, for when you just want to keep browsing."
+          },
+          {
+            "text": "<strong>Footer:</strong> tidied up, with direct links to the AI disclaimer and privacy policy on the <a href=\"/how-its-made/\">How it's made</a> page."
+          }
+        ]
+      },
+      {
+        "heading": "Improved accessibility",
+        "bullets": [
+          {
+            "text": "<strong>Screen readers:</strong> the whole project is now fully usable with them."
+          },
+          {
+            "text": "<strong>Keyboard:</strong> navigation is much improved, and every page now has a skip link. More improvements are on the way!"
+          },
+          {
+            "text": "<strong>Colour:</strong> this one's tricky, since the project leans heavily on artistic use of colour. Accessibility matters to me, though, so high-contrast and colourblind modes are on my list."
+          }
+        ]
+      },
+      {
+        "text": "And as always, lots of tiny visual fine-tuning. :D"
+      }
+    ]
+  },
+  {
     "version": "2.1.0",
     "type": "minor",
     "date": "2026-10-13",
-    "current": true,
-    "bullets": [
+    "sections": [
       {
-        "text": "In the <a href=\"/gameboy/\">Game Boy Collection</a>, I swapped in <strong>Castlevania II: Belmont's Revenge</strong> for <strong>Solomon's Club</strong>. I forgot to add an actual Castlevania game to the chapter on Metroidvania! :D I also found Solomon's Club redundant because block puzzlers are already well represented in the Collection, and it has no unique regional or historical story."
-      },
-      {
-        "text": "<strong>The <a href=\"/how-its-made/\">How it's made</a> page is now available.</strong> Here you can learn about who I am, how I create, improve and maintain this project. I also find it very important to be 100% transparent on the use of AI, how I measure site views, my zero-tracking policy, as well as possible ways to financially support the project in the future. Check it out if you get the chance, I appreciate it!"
-      },
-      {
-        "text": "<strong>Version history is now dynamic:</strong> To support a fun new dynamic release timeline graphic, as well as a possible notification service or Discord bot in the future, I converted the version history from static HTML to JSON data."
-      },
-      {
-        "text": "Added <strong>\"Hand-written\" / \"Draft in progress\" badges</strong> on the hub and on every Collection page."
-      },
-      {
-        "text": "<strong>Fonts are now self-hosted</strong>, so visitor IP addresses no longer go to Google."
-      },
-      {
-        "text": "The <strong>\"Report a mistake\" email links</strong> now fill in the page name in the subject line."
-      },
-      {
-        "text": "<strong>Several styling improvements:</strong> Site navigation has improved both on desktop and mobile browsers. Fine-tuned the platform flourishes for the Game Boy, SNES and DS."
+        "bullets": [
+          {
+            "text": "In the <a href=\"/gameboy/\">Game Boy Collection</a>, I swapped in <strong>Castlevania II: Belmont's Revenge</strong> for <strong>Solomon's Club</strong>. I forgot to add an actual Castlevania game to the chapter on Metroidvania! :D I also found Solomon's Club redundant because block puzzlers are already well represented in the Collection, and it has no unique regional or historical story."
+          },
+          {
+            "text": "<strong>The <a href=\"/how-its-made/\">How it's made</a> page is now available.</strong> Here you can learn about who I am, how I create, improve and maintain this project. I also find it very important to be 100% transparent on the use of AI, how I measure site views, my zero-tracking policy, as well as possible ways to financially support the project in the future. Check it out if you get the chance, I appreciate it!"
+          },
+          {
+            "text": "<strong>Version history is now dynamic:</strong> To support a fun new dynamic release timeline graphic, as well as a possible notification service or Discord bot in the future, I converted the version history from static HTML to JSON data."
+          },
+          {
+            "text": "Added <strong>\"Hand-written\" / \"Draft in progress\" badges</strong> on the hub and on every Collection page."
+          },
+          {
+            "text": "<strong>Fonts are now self-hosted</strong>, so visitor IP addresses no longer go to Google."
+          },
+          {
+            "text": "The <strong>\"Report a mistake\" email links</strong> now fill in the page name in the subject line."
+          },
+          {
+            "text": "<strong>Several styling improvements:</strong> Site navigation has improved both on desktop and mobile browsers. Fine-tuned the platform flourishes for the Game Boy, SNES and DS."
+          }
+        ]
       }
     ]
   },
@@ -32,22 +97,26 @@
     "version": "2.0.0",
     "type": "major",
     "date": "2026-09-21",
-    "bullets": [
+    "sections": [
       {
-        "text": "<strong>3 new collections added:</strong> The <a href=\"/ds/\">Nintendo DS</a>, <a href=\"/mastersystem/\">Sega Master System</a> and <a href=\"/xbox/\">Microsoft Xbox</a> Collections are now live. They were researched and styled with Claude Cowork (Sonnet 5, High effort), same as before. I'll be rewriting their stories myself over time, just like the original twelve."
-      },
-      {
-        "text": "<strong>Styling overhaul:</strong> Pushing the styling intensity on the 3 new collections made them noticeably bolder than the original set, so I brought that same energy back to the base collections and the hub page.",
-        "sub": [
-          "<strong>CSS cleanup across every theme:</strong> 13 theme stylesheets and the hub stylesheet had leftover duplicate code from the styling passes, now consolidated with no visual changes.",
-          "Added a graphical timeline to the hub page, with clickable platform markers.",
-          "A handful of smaller styling fixes and tweaks throughout."
-        ]
-      },
-      {
-        "text": "<strong>Simple CMS support:</strong> Added <a href=\"https://github.com/hunvreus/pagescms\">GitHub Pages CMS</a> by Ronan Berder, so I can add and edit content without touching the code.",
-        "sub": [
-          "<strong>Data format migration:</strong> required converting all 12 original platforms' game lists from arrays to named objects."
+        "bullets": [
+          {
+            "text": "<strong>3 new collections added:</strong> The <a href=\"/ds/\">Nintendo DS</a>, <a href=\"/mastersystem/\">Sega Master System</a> and <a href=\"/xbox/\">Microsoft Xbox</a> Collections are now live. They were researched and styled with Claude Cowork (Sonnet 5, High effort), same as before. I'll be rewriting their stories myself over time, just like the original twelve."
+          },
+          {
+            "text": "<strong>Styling overhaul:</strong> Pushing the styling intensity on the 3 new collections made them noticeably bolder than the original set, so I brought that same energy back to the base collections and the hub page.",
+            "sub": [
+              "<strong>CSS cleanup across every theme:</strong> 13 theme stylesheets and the hub stylesheet had leftover duplicate code from the styling passes, now consolidated with no visual changes.",
+              "Added a graphical timeline to the hub page, with clickable platform markers.",
+              "A handful of smaller styling fixes and tweaks throughout."
+            ]
+          },
+          {
+            "text": "<strong>Simple CMS support:</strong> Added <a href=\"https://github.com/hunvreus/pagescms\">GitHub Pages CMS</a> by Ronan Berder, so I can add and edit content without touching the code.",
+            "sub": [
+              "<strong>Data format migration:</strong> required converting all 12 original platforms' game lists from arrays to named objects."
+            ]
+          }
         ]
       }
     ]
@@ -56,15 +125,19 @@
     "version": "1.3.0",
     "type": "minor",
     "date": "2026-09-11",
-    "bullets": [
+    "sections": [
       {
-        "text": "Added OpenGraph tags and images to every page so Link Previews now look right."
-      },
-      {
-        "text": "Updated hero, footer and hub page texts."
-      },
-      {
-        "text": "Added meta descriptions to every page."
+        "bullets": [
+          {
+            "text": "Added OpenGraph tags and images to every page so Link Previews now look right."
+          },
+          {
+            "text": "Updated hero, footer and hub page texts."
+          },
+          {
+            "text": "Added meta descriptions to every page."
+          }
+        ]
       }
     ]
   },
@@ -72,27 +145,31 @@
     "version": "1.2.0",
     "type": "minor",
     "date": "2026-09-08",
-    "bullets": [
+    "sections": [
       {
-        "text": "Added social links (YouTube, Bluesky, Instagram, Threads, X) to the footer of every page"
-      },
-      {
-        "text": "Linked the \"Diastro Gaming\" hub logo to the YouTube channel"
-      },
-      {
-        "text": "Added this version history page, plus a link to it and a version pill on the hub"
-      },
-      {
-        "text": "Added a \"Back to the shelf\" link to every collection page"
-      },
-      {
-        "text": "Made the curator's note collapsible on every collection page, with a short preview and a \"read more\" toggle"
-      },
-      {
-        "text": "Reorganized the collection page toolbar: search, result count, and the theme toggle now share a row, with the genre chips moved to their own row below"
-      },
-      {
-        "text": "Several minor improvements to styling and layout."
+        "bullets": [
+          {
+            "text": "Added social links (YouTube, Bluesky, Instagram, Threads, X) to the footer of every page"
+          },
+          {
+            "text": "Linked the \"Diastro Gaming\" hub logo to the YouTube channel"
+          },
+          {
+            "text": "Added this version history page, plus a link to it and a version pill on the hub"
+          },
+          {
+            "text": "Added a \"Back to the shelf\" link to every collection page"
+          },
+          {
+            "text": "Made the curator's note collapsible on every collection page, with a short preview and a \"read more\" toggle"
+          },
+          {
+            "text": "Reorganized the collection page toolbar: search, result count, and the theme toggle now share a row, with the genre chips moved to their own row below"
+          },
+          {
+            "text": "Several minor improvements to styling and layout."
+          }
+        ]
       }
     ]
   },
@@ -100,18 +177,22 @@
     "version": "1.1.0",
     "type": "minor",
     "date": "2026-09-04",
-    "bullets": [
+    "sections": [
       {
-        "text": "New curator notes added across every collection"
-      },
-      {
-        "text": "Layout optimizations and styling fixes throughout the hub and collection pages"
-      },
-      {
-        "text": "AI disclaimer added to every page"
-      },
-      {
-        "text": "Copyright notice added to every page"
+        "bullets": [
+          {
+            "text": "New curator notes added across every collection"
+          },
+          {
+            "text": "Layout optimizations and styling fixes throughout the hub and collection pages"
+          },
+          {
+            "text": "AI disclaimer added to every page"
+          },
+          {
+            "text": "Copyright notice added to every page"
+          }
+        ]
       }
     ]
   },
@@ -119,9 +200,13 @@
     "version": "1.0.4",
     "type": "patch",
     "date": "2026-09-04",
-    "bullets": [
+    "sections": [
       {
-        "text": "Added GoatCounter analytics to every page"
+        "bullets": [
+          {
+            "text": "Added GoatCounter analytics to every page"
+          }
+        ]
       }
     ]
   },
@@ -129,12 +214,16 @@
     "version": "1.0.3",
     "type": "patch",
     "date": "2026-09-04",
-    "bullets": [
+    "sections": [
       {
-        "text": "Color and release-year corrections across several collections"
-      },
-      {
-        "text": "Analytics setup groundwork"
+        "bullets": [
+          {
+            "text": "Colour and release-year corrections across several collections"
+          },
+          {
+            "text": "Analytics setup groundwork"
+          }
+        ]
       }
     ]
   },
@@ -142,9 +231,13 @@
     "version": "1.0.2",
     "type": "patch",
     "date": "2026-09-04",
-    "bullets": [
+    "sections": [
       {
-        "text": "Documentation updated to reflect the project's file structure"
+        "bullets": [
+          {
+            "text": "Documentation updated to reflect the project's file structure"
+          }
+        ]
       }
     ]
   },
@@ -152,9 +245,13 @@
     "version": "1.0.1",
     "type": "patch",
     "date": "2026-09-04",
-    "bullets": [
+    "sections": [
       {
-        "text": "Styles and HTML refactored across every page"
+        "bullets": [
+          {
+            "text": "Styles and HTML refactored across every page"
+          }
+        ]
       }
     ]
   },
@@ -162,12 +259,16 @@
     "version": "1.0",
     "type": "major",
     "date": "2026-09-04",
-    "bullets": [
+    "sections": [
       {
-        "text": "First release: twelve platform collections, 1,200 games, 144 genre chapters"
-      },
-      {
-        "text": "Searchable, filterable collection pages with a shared hub"
+        "bullets": [
+          {
+            "text": "First release: twelve platform collections, 1,200 games, 144 genre chapters"
+          },
+          {
+            "text": "Searchable, filterable collection pages with a shared hub"
+          }
+        ]
       }
     ]
   }

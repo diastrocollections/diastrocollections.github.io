@@ -133,8 +133,6 @@
 
 .hero .wrap { position: relative; z-index: 1; }
 
-.hero .back-link { color: #B9AFBA; }
-.hero .back-link:hover, .hero .back-link:focus-visible { color: #FFD24A; }
 
 .hero .eyebrow {
   background: #E5283A;

@@ -58,6 +58,7 @@ h1, h2, h3, .display {
 
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  html { scroll-behavior: auto; }
 }
 
 .wrap {
@@ -74,24 +75,6 @@ h1, h2, h3, .display {
   overflow: hidden;
   background: var(--bg);
   border-bottom: var(--hero-border, 1px solid var(--line));
-}
-
-.back-link {
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--ink-faint);
-  text-decoration: none;
-  margin-bottom: 18px;
-  transition: color 0.15s ease;
-}
-
-.back-link:hover,
-.back-link:focus-visible {
-  color: var(--accent);
 }
 
 .eyebrow {
@@ -248,33 +231,32 @@ h1, h2, h3, .display {
 
 /* ---------- Toolbar ---------- */
 
+/* One row under the site's top bar (nav.css): the filter, the result count and
+   the Chapters drop-down. It sticks right below the top bar, tucked 1px under
+   it: at fractional zoom levels the two edges can round apart and leave a
+   one-pixel seam of unblurred page between the bars. */
 .toolbar {
   position: sticky;
-  top: 0;
+  top: calc(var(--topbar-h, 1px) - 1px);
   z-index: 20;
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
-  padding: 14px 0;
-}
-
-.toolbar-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  padding: 10px 0;
 }
 
 .toolbar-row {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
-.search { position: relative; flex: 1 1 220px; max-width: 320px; }
+.search { position: relative; flex: 1 1 220px; max-width: 360px; }
 
 .search input {
   width: 100%;
-  padding: 10px 14px 10px 36px;
+  height: 40px;
+  padding: 0 12px 0 36px;
   border-radius: var(--control-radius, 10px);
   border: 1px solid var(--line-strong);
   background: var(--surface);
@@ -285,9 +267,11 @@ h1, h2, h3, .display {
 }
 
 .search input:focus { border-color: var(--accent); }
+.search:has(.filter-clear:not([hidden])) input { padding-right: 40px; }
+.search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .search input::placeholder { color: var(--ink-faint); }
 
-.search svg {
+.search-icon {
   position: absolute;
   left: 11px;
   top: 50%;
@@ -298,45 +282,114 @@ h1, h2, h3, .display {
   pointer-events: none;
 }
 
-.theme-toggle {
+.filter-clear {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: calc(var(--control-radius, 10px) - 2px);
+  background: none;
+  color: var(--ink-faint);
+  cursor: pointer;
+}
+
+.filter-clear[hidden] { display: none; }
+.filter-clear:hover { color: var(--ink); background: var(--surface-2); }
+.filter-clear svg { width: 16px; height: 16px; }
+
+.result-count {
   flex-shrink: 0;
-  width: 36px;
-  height: 36px;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.76rem;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+/* The Chapters drop-down: a button naming the chapter you're in, opening a
+   panel of chapter links (the .chip links each theme styles). */
+.chapters-nav {
+  position: relative;
+  margin-left: auto;
+}
+
+.chapters-toggle {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 3px;
+  gap: 8px;
+  height: 40px;
+  max-width: 100%;
+  padding: 0 12px 0 14px;
   border-radius: var(--control-radius, 10px);
   border: 1px solid var(--line-strong);
   background: var(--surface);
-  color: var(--ink-soft);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
   cursor: pointer;
-  font-size: 1rem;
-  line-height: 1;
-  margin-left: auto;
-  transition: border-color 0.8s ease, color 0.8s ease;
 }
 
-.theme-toggle:hover { border-color: var(--accent); color: var(--ink); }
+.chapters-toggle:hover,
+.chapters-toggle[aria-expanded="true"] { border-color: var(--accent); }
+
+.chapters-current:not(:empty) {
+  display: inline-flex;
+  gap: 6px;
+  min-width: 0;
+  color: var(--ink-soft);
+}
+
+.chapters-current:not(:empty)::before { content: "·"; color: var(--ink-faint); }
+.chapters-label,
+.chapters-current-num { flex: none; }
+.chapters-current-num { color: var(--accent); font-weight: 700; }
+/* a long chapter name gives way first, with an ellipsis, but never shrinks to
+   an unreadable sliver */
+.chapters-current-tag { min-width: 3.5ch; overflow: hidden; text-overflow: ellipsis; }
+
+.chapters-icon,
+.chapters-chevron {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.chapters-icon { color: var(--ink-faint); }
+.chapters-chevron { transition: transform 0.2s ease; }
+.chapters-toggle[aria-expanded="true"] .chapters-chevron { transform: rotate(180deg); }
+
+.chapters-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(560px, calc(100vw - 40px));
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--note-radius, 14px);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.chapters-panel[hidden] { display: none; }
 
 .chips {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  overflow-x: auto;
-  padding-top: 10px;
-  padding-bottom: 6px;
-  flex: 1 1 auto;
 }
-
-.chips::-webkit-scrollbar { height: 3px; }
-.chips::-webkit-scrollbar-track { background: var(--surface-2); border-radius: 2px; }
-.chips::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb, var(--accent));
-  border-radius: 2px;
-}
-.chips::-webkit-scrollbar-thumb:hover { background: var(--ink); }
 
 .chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
   flex-shrink: 0;
   font-family: var(--font-mono);
   font-size: 0.76rem;
@@ -346,37 +399,132 @@ h1, h2, h3, .display {
   border: 1px solid var(--line-strong);
   background: var(--surface);
   color: var(--ink-soft);
+  text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
 
+.chip[hidden] { display: none; }
 .chip:hover { border-color: var(--accent); color: var(--accent); }
+.chip[aria-current="location"] { border-color: var(--accent); color: var(--accent); font-weight: 700; }
 
-.result-count {
-  flex-shrink: 0;
-  font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-  font-size: 0.76rem;
-  color: var(--ink-faint);
-  padding: 2px 0 0 8px;
-  white-space: nowrap;
+/* Phones (one column of games): the same row as on larger screens, but the
+   filter starts compact and grows while you type in it; the Chapters button
+   then steps back to just the chapter number. The count only shows while
+   filtering (collection.js sets .is-filtering), since the hero already says
+   how many games there are. */
+@media (max-width: 560px) {
+  .toolbar-row { gap: 10px; }
+
+  .search {
+    flex: 1 1 160px;
+    min-width: 112px;
+    max-width: none;
+    transition: flex-grow 0.25s ease, flex-basis 0.25s ease;
+  }
+
+  /* while typing, the filter takes all the room the compact Chapters button leaves */
+  .search:focus-within { flex: 1 1 0%; }
+
+  /* 16px keeps iOS Safari from zooming in when the field is tapped */
+  .search input { font-size: 16px; }
+
+  .toolbar:not(.is-filtering) .result-count { display: none; }
+
+  /* when space runs out, the chapter name gives way first (it shrinks 4x as
+     eagerly as the filter), but never past the rest of the button */
+  .chapters-nav { position: static; flex: 0 4 auto; min-width: 0; }
+  .chapters-toggle { width: 100%; min-width: 0; }
+
+  /* While typing, or while a filter is active (the count needs the room), the
+     button steps back to just the chapter number. */
+  .toolbar.is-filtering .chapters-label,
+  .toolbar-row:has(.search:focus-within) .chapters-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .toolbar.is-filtering .chapters-nav,
+  .toolbar-row:has(.search:focus-within) .chapters-nav,
+  .toolbar.is-filtering .chapters-toggle,
+  .toolbar-row:has(.search:focus-within) .chapters-toggle { flex-shrink: 0; min-width: auto; }
+
+  .toolbar.is-filtering .chapters-current-tag,
+  .toolbar.is-filtering .chapters-current::before,
+  .toolbar-row:has(.search:focus-within) .chapters-current-tag,
+  .toolbar-row:has(.search:focus-within) .chapters-current::before { display: none; }
+
+  .chapters-panel {
+    top: 100%;
+    left: 12px;
+    right: 12px;
+    width: auto;
+  }
+}
+
+/* Most phones (up to 400px) only fit the chapter number, especially with the
+   wider theme fonts. */
+@media (max-width: 400px) {
+  .chapters-current-tag { display: none; }
+  .chapters-nav,
+  .chapters-toggle { min-width: auto; }
+}
+
+/* The smallest phones (iPhone SE size) can't fit the word "Chapters" next to
+   the filter: icon and number only. Screen readers still hear "Chapters". */
+@media (max-width: 360px) {
+  .chapters-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .chapters-current::before { display: none; }
 }
 
 /* ---------- Chapters ---------- */
 
 .chapter {
   padding: clamp(48px, 7vw, 76px) 0 8px;
-  scroll-margin-top: 84px;
+  /* the top bar's own scroll-padding (nav.css) covers the bar; this covers the toolbar */
+  scroll-margin-top: 0;
 }
 
+.chapter-title:focus { outline: none; }
+.chapter-title:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+/* Two blocks side by side, at every width: the chapter number on the left, and
+   to its right the title with the tag. The title wraps onto as many lines as it
+   needs (the number stays centred next to them); the tag sits at the right of
+   the title's row when there is room, and drops below the title when not. */
 .chapter-head {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 8px;
+}
+
+.chapter-num { flex: none; }
+
+.chapter-head-main {
+  flex: 1 1 0;
+  min-width: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 16px;
-  row-gap: 8px;
-  margin-bottom: 8px;
+  gap: 8px 16px;
+  /* Buttons with a ledge draw their numeral above the box's centre. A theme
+     sets --num-lift to the ledge's height, which lifts the title the same way
+     (half of it), so the two lines of text align. */
+  margin-bottom: var(--num-lift, 0px);
 }
 
 .chapter-num {
@@ -397,7 +545,7 @@ h1, h2, h3, .display {
   font-weight: var(--font-display-weight, 700);
   font-size: clamp(1.15rem, 2.4vw, 1.5rem);
   flex: 1 1 auto;
-  min-width: 200px;
+  min-width: 0;
   margin: 0;
 }
 
@@ -463,6 +611,29 @@ h1, h2, h3, .display {
   gap: 0.3rem;
 }
 
+/* Optional per-game badge (e.g. "PAL-optimised"), sits beside .card-idx */
+.card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-badge {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: hsl(var(--hue) var(--sat) var(--lig));
+  background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+  padding: 2px 8px;
+  border-radius: var(--chip-radius, 999px);
+}
+
 .card-title {
   font-family: var(--font-body);
   font-weight: 700;
@@ -488,6 +659,86 @@ h1, h2, h3, .display {
   text-align: center;
   color: var(--ink-faint);
   font-family: var(--font-mono);
+}
+
+/* ---------- Previous / next Collection (filled in by nav.js) ---------- */
+
+/* Two compact links, always side by side: direction on one line, then the
+   Collection's name and years. The colored edge is the target's accent. */
+.collection-pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.collection-pager:empty { display: none; }
+
+.pager-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--c);
+  border-radius: var(--card-radius, 12px);
+  background: var(--card-bg, var(--surface));
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.pager-next {
+  align-items: flex-end;
+  text-align: right;
+  border-left: 1px solid var(--line);
+  border-right: 4px solid var(--c);
+}
+
+.pager-link:hover,
+.pager-link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.pager-dir {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+
+.pager-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 10px;
+  max-width: 100%;
+}
+
+.pager-next .pager-title { justify-content: flex-end; }
+
+.pager-name {
+  font-family: var(--font-display);
+  font-weight: var(--font-display-weight, 700);
+  font-size: 1.05rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.pager-years {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+}
+
+@media (max-width: 560px) {
+  .collection-pager { gap: 8px; margin-top: 24px; }
+  .pager-link { padding: 8px 10px; }
+  .pager-dir-long, .pager-years { display: none; }
+  .pager-dir { font-size: 0.68rem; }
+  .pager-name { font-size: 0.92rem; }
 }
 
 /* ---------- Footer ---------- */
@@ -518,45 +769,43 @@ footer a { color: var(--accent); text-decoration: underline; text-underline-offs
 .footer-cols li { margin-bottom: 6px; color: var(--ink-faint); font-size: 0.86rem; }
 .footer-cols p { margin: 0 0 22px; }
 
-.footer-fine-row {
+/* The fact-check note and "Report a mistake" button, below the sources.
+   collection.js puts the Collection's name in the email's subject line. */
+.footer-report {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px 28px;
-  border-top: 1px solid var(--line);
-  padding-top: 18px;
+  align-items: center;
+  gap: 14px 24px;
+  padding: 16px 20px;
+  border-radius: var(--card-radius, 12px);
+  background: var(--surface-2, var(--surface));
+  border: 1px solid var(--line);
 }
 
-.footer-fine {
-  flex: 1 1 420px;
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
+footer .footer-report p {
+  flex: 1 1 22em;
+  max-width: none; /* lifts the general footer cap, so the button sits at the far right */
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
 }
 
-.social-links {
-  display: flex;
-  gap: 14px;
-  flex-shrink: 0;
-}
-
-.social-links a {
+footer .report-btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  color: var(--ink-faint);
-  transition: color 0.15s ease;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: var(--control-radius, 10px);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.social-links a:hover,
-.social-links a:focus-visible {
-  color: var(--accent);
-}
-
-.social-links svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-}
+footer .report-btn:hover,
+footer .report-btn:focus-visible { filter: brightness(1.08); }
+.report-btn svg { width: 16px; height: 16px; flex-shrink: 0; }

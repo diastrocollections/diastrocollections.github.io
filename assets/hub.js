@@ -53,8 +53,14 @@
     }
 
     if (rulerEl) {
+      // For screen readers the ruler is a named group of links, one per platform;
+      // the line, ticks and year labels are drawing only.
+      rulerEl.setAttribute('role', 'group');
+      rulerEl.setAttribute('aria-label', 'Platform timeline, ' + earliestStart + ' to ' + latestEnd);
+
       var line = document.createElement('div');
       line.className = 'er-line';
+      line.setAttribute('aria-hidden', 'true');
       rulerEl.appendChild(line);
 
       var tickStart = Math.ceil(earliestStart / 5) * 5;
@@ -62,10 +68,12 @@
         var pct = ((y - earliestStart) / span) * 100;
         var tick = document.createElement('i');
         tick.className = 'er-tick';
+        tick.setAttribute('aria-hidden', 'true');
         tick.style.left = pct + '%';
         rulerEl.appendChild(tick);
         var label = document.createElement('span');
         label.className = 'er-tick-label mono';
+        label.setAttribute('aria-hidden', 'true');
         label.style.left = pct + '%';
         label.textContent = y;
         rulerEl.appendChild(label);
@@ -99,8 +107,9 @@
         m.style.setProperty('--c', p.accent);
         m.style.animationDelay = (i * 0.04) + 's';
         m.title = p.name + ' · ' + p.years;
+        m.setAttribute('aria-label', p.name + ', ' + p.years);
         m.innerHTML =
-          '<span class="er-label mono">' + p.name + '</span>' +
+          '<span class="er-label mono" aria-hidden="true">' + p.name + '</span>' +
           '<span class="er-dot" style="--dot-shift:' + (dotShift[p.id] || 0) + 'px"></span>';
         rulerEl.appendChild(m);
       });
@@ -117,22 +126,21 @@
           '<div class="tile-spine"></div>' +
           '<div class="tile-body">' +
             '<span class="tile-watermark" aria-hidden="true">' + p.icon + '</span>' +
-            '<div class="tile-kicker mono"><span>' + String(i + 1).padStart(2, '0') + '</span><span>' + p.manufacturer + '</span></div>' +
+            '<div class="tile-kicker mono"><span>' + String(i + 1).padStart(2, '0') + '</span><span>' + p.manufacturer + '</span><span>' + p.years + '</span></div>' +
             '<div class="tile-top">' +
-              '<div class="tile-icon">' + p.icon + '</div>' +
-              '<div class="tile-years mono">' + p.years + '</div>' +
+              '<div class="tile-icon" aria-hidden="true">' + p.icon + '</div>' +
+              '<h3>' + p.name + '</h3>' +
             '</div>' +
-            '<h3>' + p.name + '</h3>' +
             '<p class="tagline">' + p.tagline + '</p>' +
-            '<div class="tile-span" aria-hidden="true"><i style="left:' + (((p.start - earliestStart) / span) * 100).toFixed(1) + '%;width:' + Math.max(((p.end - p.start) / span) * 100, 5).toFixed(1) + '%"></i></div>' +
             '<div class="tile-meta">' +
               '<span><strong>' + p.games + '</strong> games</span>' +
               '<span><strong>' + p.chapters + '</strong> chapters</span>' +
               '<span class="tile-region mono">' + p.region + '</span>' +
             '</div>' +
             '<div class="tile-foot">' +
-              '<span class="tile-cta">Enter the collection' +
-                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
+              // Hidden from screen readers: the tile's link already says "Enter the … collection".
+              '<span class="tile-cta" aria-hidden="true">Enter the collection' +
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
               '</span>' +
               DGStatus.html(p.handwritten, { variant: 'pill' }) +
             '</div>' +
@@ -142,17 +150,4 @@
     }
   }
 
-  var themeToggle = document.getElementById('themeToggle');
-  if (themeToggle) {
-    var root = document.documentElement;
-    themeToggle.addEventListener('click', function () {
-      var current = root.getAttribute('data-theme');
-      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var next;
-      if (!current) next = prefersDark ? 'light' : 'dark';
-      else if (current === 'dark') next = 'light';
-      else next = 'dark';
-      root.setAttribute('data-theme', next);
-    });
-  }
 })();

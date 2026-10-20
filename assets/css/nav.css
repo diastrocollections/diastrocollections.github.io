@@ -1,0 +1,742 @@
+/* Diastro Gaming Collections — site navigation, shared by every page.
+ *
+ * The top bar (shelf, Collections switcher, info pages, YouTube, theme toggle,
+ * back to top), the skip link and the site footer at the bottom of every page. Loaded last on every page, after hub.css or
+ * after base.css + a platform theme, so it looks the same everywhere: the
+ * typography is fixed, the colors come from whichever page it sits on.
+ *
+ * Collection pages don't define every token the hub does, hence the fallbacks.
+ * Behaviour lives in assets/nav.js.
+ *
+ * One breakpoint: at 760px and narrower the bar collapses into a Menu button
+ * (keep it in sync with the matchMedia query in nav.js).
+ */
+
+:root {
+  --topbar-h: 52px;
+}
+
+/* Keep in-page jumps (e.g. the How it's made contents) clear of the sticky bar. */
+html {
+  scroll-padding-top: calc(var(--topbar-h) + 20px);
+}
+
+/* ---------- Skip link ---------- */
+
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 50;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--bg);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Top bar ---------- */
+
+/* 52px in total on desktop, 44px on mobile (row + 1px border); every link and
+   button fills the full height, so the whole bar height is the click/tap target. */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid var(--line);
+  background: var(--sticky-bg, color-mix(in srgb, var(--bg) 88%, transparent));
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  height: calc(var(--topbar-h) - 1px);
+}
+
+.site-nav {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 16px;
+  height: 100%;
+}
+
+.site-nav-title,
+.theme-toggle-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Links carry their spacing as padding (not gap) so neighbouring targets touch;
+   the negative margins keep the text aligned with the page gutter. */
+.topbar-left {
+  margin-left: -11px;
+}
+
+.topbar-right {
+  margin-right: 0;
+}
+
+.nav-link,
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 11px;
+  border: 0;
+  background: none;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  /* fixed, so links and the Collections button (which wouldn't inherit it)
+     line up on every page, whatever the page's own line-height */
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  color: var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.brand {
+  gap: 10px;
+}
+
+.nav-link:focus-visible,
+.brand:focus-visible,
+.theme-toggle:focus-visible,
+.menu-toggle:focus-visible,
+.topbar-top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  border-radius: 3px;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link[aria-current="page"],
+.nav-link.is-current,
+.brand:hover,
+.brand:focus-visible {
+  color: var(--accent);
+}
+
+.nav-chevron {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s ease;
+}
+
+.nav-link[aria-expanded="true"] .nav-chevron {
+  transform: rotate(180deg);
+}
+
+.brand-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.ext-icon {
+  width: 13px;
+  height: 13px;
+  margin-left: -4px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+/* The two square icon buttons at the right end share one look. */
+.theme-toggle,
+.topbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-soft);
+  font: inherit;
+  cursor: pointer;
+}
+
+.theme-toggle-icon,
+.topbar-top-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 1rem;
+  line-height: 1;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.topbar-top-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle:hover,
+.topbar-top:hover {
+  color: var(--ink);
+}
+
+.theme-toggle:hover .theme-toggle-icon,
+.topbar-top:hover .topbar-top-icon {
+  border-color: var(--accent);
+}
+
+/* Back to top: its space is always reserved (no shifting when it appears), it
+   just stays invisible and out of the tab order until the hero has scrolled away. */
+.topbar-top {
+  margin-right: -5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+}
+
+.topbar-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease, visibility 0s;
+}
+
+/* While back to top is hidden, the YouTube link and theme toggle sit in its
+   spot instead of leaving a gap, and slide left when it appears. It's a
+   transform, so nothing else in the bar moves. nav.js sets .has-top, and
+   .is-ready only after the first check, so a page loaded halfway down starts
+   in place rather than sliding. */
+.topbar:not(.has-top) .topbar-right,
+.topbar:not(.has-top) .theme-toggle {
+  transform: translateX(44px);
+}
+
+.topbar.is-ready .topbar-right,
+.topbar.is-ready .theme-toggle {
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* ---------- Collections switcher ---------- */
+
+/* the wrapper stretches to the bar's height, like the links beside it */
+.nav-collections {
+  display: flex;
+}
+
+/* A drop-down sheet the full width of the bar, laid out like a small shelf:
+   one group per manufacturer, each Collection with its colored spine. It is
+   positioned against the sticky .topbar, so .site-nav and friends stay static. */
+.collections-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.collections-panel[hidden] {
+  display: none;
+}
+
+.collections-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 20px 28px;
+  padding-top: 20px;
+  padding-bottom: 22px;
+}
+
+.collections-group-title {
+  margin: 0 0 8px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.collections-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 4px;
+}
+
+.collections-group.is-wide .collections-list {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+}
+
+.collection-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 44px;
+  padding: 5px 10px 5px 18px;
+  border-radius: 8px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+/* the spine, in the platform's color, like the tiles on the shelf */
+.collection-link::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 7px;
+  bottom: 7px;
+  width: 4px;
+  border-radius: 2px;
+  background: var(--c);
+  transition: width 0.15s ease;
+}
+
+.collection-name {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.2;
+}
+
+.collection-years {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+}
+
+.collection-link:hover,
+.collection-link:focus-visible {
+  background: var(--surface);
+}
+
+.collection-link:hover::before,
+.collection-link:focus-visible::before {
+  width: 6px;
+}
+
+.collection-link[aria-current="page"] {
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--line-strong);
+}
+
+.collection-here {
+  margin-left: 6px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.collections-all {
+  grid-column: 1 / -1;
+  justify-self: start;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.collections-all:hover,
+.collections-all:focus-visible {
+  color: var(--accent);
+}
+
+/* ---------- Site footer ---------- */
+
+/* The same on every page, at the bottom of the page's <footer>: name and
+   socials, three short promises that link to the details on How it's made,
+   and the copyright line. On collection pages it follows the Collection's
+   own notes and sources, separated by a rule. */
+.site-footer {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  font-family: "Archivo", "Segoe UI", system-ui, sans-serif;
+}
+
+.site-footer:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.site-footer .site-footer-inner {
+  display: grid;
+  gap: 20px;
+  padding-top: 0;
+}
+
+.site-footer p {
+  max-width: none;
+  margin: 0;
+}
+
+.site-footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
+.site-footer .site-footer-name {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.site-footer .site-footer-tagline {
+  margin-top: 2px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+}
+
+.site-social {
+  display: flex;
+  gap: 2px;
+  margin-right: -10px;
+}
+
+.site-footer .site-social a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  color: var(--ink-faint);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.site-footer .site-social a:hover,
+.site-footer .site-social a:focus-visible {
+  color: var(--accent);
+  background: var(--surface);
+}
+
+.site-social svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.site-footer-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer .site-footer-facts a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.site-footer .site-footer-facts a:hover,
+.site-footer .site-footer-facts a:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-footer-facts svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Exactly two layouts: side by side (the trademark notice wraps within its own
+   right-aligned column), or, at 760px and narrower, stacked and both left-aligned.
+   No wrapping in between, which would stack them with the notice still right-aligned. */
+.site-footer-legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6px 32px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.site-footer .site-footer-legal p:first-child {
+  flex: none;
+}
+
+.site-footer .site-footer-legal p {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--ink-faint);
+}
+
+.site-footer .site-footer-legal p:last-child {
+  flex: 0 1 58ch;
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .site-footer-facts { flex-direction: column; }
+  .site-social { margin: 0 0 0 -11px; }
+}
+
+@media (max-width: 760px) {
+  .site-footer-legal { flex-direction: column; }
+  .site-footer .site-footer-legal p:last-child { flex: none; text-align: left; }
+}
+
+/* ---------- Mid widths: room is tight, so the YouTube link shows only its icon ---------- */
+
+@media (max-width: 960px) {
+  .brand-text,
+  .brand .ext-icon {
+    display: none;
+  }
+}
+
+/* ---------- Narrow screens: the bar collapses to a Menu button and a drop-down panel ---------- */
+
+@media (max-width: 760px) {
+  :root {
+    --topbar-h: 44px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+    margin-left: -12px;
+    padding: 0 12px;
+    border: 0;
+    background: none;
+    color: var(--ink);
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+
+  .menu-icon-close,
+  .menu-toggle[aria-expanded="true"] .menu-icon-open {
+    display: none;
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-icon-close {
+    display: inline;
+  }
+
+  /* Phones scroll to the top by tapping the status bar; no button needed,
+     and so nothing to make room for. */
+  .topbar-top {
+    display: none;
+  }
+
+  .topbar:not(.has-top) .topbar-right,
+  .topbar:not(.has-top) .theme-toggle {
+    transform: none;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+    max-height: calc(100vh - var(--topbar-h));
+    max-height: calc(100dvh - var(--topbar-h));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 4px clamp(20px, 4vw, 56px) 16px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .topbar.is-menu-open .site-nav {
+    display: flex;
+  }
+
+  .site-nav-title {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    padding: 12px 0 6px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .topbar-left,
+  .topbar-right {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .topbar-right {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid var(--line);
+  }
+
+  .nav-link,
+  .brand {
+    min-height: 44px;
+    padding: 0;
+  }
+
+  /* The theme toggle stays in the bar itself, at the right end. */
+  .theme-toggle {
+    margin-left: auto;
+    margin-right: -5px;
+  }
+
+  .nav-collections {
+    flex-direction: column;
+  }
+
+  .nav-collections-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .brand-text,
+  .brand .ext-icon {
+    display: inline;
+  }
+
+
+  /* Inside the menu the Collections list simply unfolds in place. */
+  .collections-panel {
+    position: static;
+    border: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  .collections-inner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 4px 0 12px;
+  }
+
+  .collections-list,
+  .collections-group.is-wide .collections-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-chevron,
+  .topbar-top,
+  .topbar.is-ready .topbar-right,
+  .topbar.is-ready .theme-toggle,
+  .collection-link,
+  .collection-link::before {
+    transition: none;
+  }
+}

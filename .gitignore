@@ -6,3 +6,6 @@ Claude outputs/
 
 # Jesper 29.09.2026 - Experimenting with local AI models for development using Continue in VSCodium. This folder stores its configuration files, which aren't necessary for the project to function.
 .continue/
+
+# 16.10.2026 - VSCodium editor settings, including the "Preview site" task that starts a local preview server. Only useful on this computer, not part of the website.
+.vscode/

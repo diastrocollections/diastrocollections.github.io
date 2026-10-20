@@ -36,13 +36,14 @@ assets/
   collection.js               Shared renderer for every collection page
   hub.js                      Renders the hub from platforms.json
   status.js                   "Hand-written" / "Draft in progress" badge and popover
-  nav.js                      Responsive top-bar menu
+  nav.js                      Site navigation: top bar, Collections switcher, back to top, previous / next
   version-history.js          Renders the changelog
   how-its-made.js             Shelf progress chart and "On this page" scroll-spy
   css/
     base.css                  Shared layout for all collection pages
     theme-<platform>.css      Per-platform colors, fonts and decorative extras
     hub.css                   Hub layout, also used by the two info pages
+    nav.css                   The top bar and Collections switcher, shared by every page
     how-its-made.css          Extras for the "How it's made" page
     status.css                Badge and popover styles
     fonts.css                 @font-face rules for the self-hosted fonts
@@ -63,6 +64,9 @@ All collection pages share the same HTML skeleton. The only parts that differ fr
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/theme-nes.css">
 ...
+<link rel="stylesheet" href="../assets/css/nav.css">
+...
+<script src="../assets/nav.js"></script>
 <script src="../assets/status.js"></script>
 <script src="../assets/collection.js" data-src="../data/nes.json"></script>
 ```
@@ -70,10 +74,9 @@ All collection pages share the same HTML skeleton. The only parts that differ fr
 `collection.js` reads its own `data-src` attribute, fetches that file and renders:
 
 - the chapters and their game cards, numbered No. 001 to No. 100 across the whole page;
-- a row of chapter-jump chips;
-- live search over title, developer and genre, which ignores accents so that "pokemon" also finds "Pokémon";
+- the "Chapters" drop-down in the toolbar, which lists every chapter and shows which one you're reading;
+- the filter over title, developer and genre, which ignores accents so that "pokemon" also finds "Pokémon", and announces the number of matches to screen readers;
 - the collapsible curator's note;
-- the light / dark / system theme toggle;
 - the platform's writing status in the hero, which it looks up in `platforms.json`.
 
 The renderer only needs a handful of element IDs on the page, such as `#chapters`, `#chips` and `#searchInput`, and every one except `#chapters` is optional. Platform-specific touches are opt-in through attributes. For example, the PlayStation page passes `data-glyphs` so the renderer cycles the △ ○ ✕ □ button symbols through its cards.
@@ -109,6 +112,14 @@ Each theme defines its palette three times: once for light mode, once inside `@m
 
 The hub, "How it's made" and version history pages share `hub.css`, which has its own tile-based layout.
 
+## Navigation
+
+Every page has the same top bar: the shelf, a "Collections" switcher, the two info pages, YouTube, the theme toggle and a back-to-top arrow that appears once you scroll past the hero. Its styles live in `nav.css` (loaded last, so it looks the same everywhere while taking its colors from the page's theme) and its behaviour in `nav.js`. At 760px and narrower the bar folds into a Menu button, and the back-to-top arrow is hidden, since phones scroll to the top by tapping the status bar.
+
+Every page also ends with the same site footer (styled in `nav.css` too): the name and social links, three short promises that link to the details on the "How it's made" page (how AI is used, no ads or tracking, contact), and the copyright line. On collection pages it follows the Collection's own notes, sources and "Report a mistake" button.
+
+`nav.js` builds the Collections switcher and the "previous / next on the shelf" links at the bottom of each collection page from `platforms.json`, so a new platform appears there automatically. On collection pages it also replaces the footer's general AI line with that Collection's own writing status, such as "AI-assisted draft, 5% rewritten by hand". The HTML of the top bar and the footer is repeated in every page, so a change to either means updating all 18 `index.html` files.
+
 ## Fonts
 
 The themes use 29 typefaces, and all of them are self-hosted in `assets/fonts/` instead of loaded from Google Fonts, so visitors' IP addresses are never sent to a third party. Only the Latin and Latin Extended subsets are included, and only the weights and styles the site actually uses. `assets/fonts/MANIFEST.md` documents where each file came from.
@@ -117,7 +128,7 @@ The themes use 29 typefaces, and all of them are self-hosted in `assets/fonts/` 
 
 - **`platforms.json`** stores each platform's metadata: name, years, accent color, region, tagline, game and chapter counts, and writing status. `hub.js` builds the tiles from it and calculates the site-wide totals (games, chapters and the hardware timeline). Adding an entry adds a tile without any code changes.
 - **Writing status:** every collection starts from an AI-assisted draft and is rewritten by hand. The `handwritten` and `progress` fields drive the "Hand-written" / "Draft in progress" badges (`status.js`, which uses the Popover API so the popover isn't clipped by the tiles). The same fields drive the shelf progress chart on the "How it's made" page.
-- **`version-history.json`** is rendered by `version-history.js` as a timeline of releases. Each release is tagged major, minor or patch.
+- **`version-history.json`** is rendered by `version-history.js` as a timeline of releases. Each release is tagged major, minor or patch, and its notes are a list of `sections`: each one an optional `heading` (rendered as an `<h3>`, for short labels like "Content updates"), an optional paragraph (`text`, for sentences) and optional `bullets`, which can have `sub` bullets. Inline HTML works everywhere, and `` `backticks` `` show as inline code.
 
 ## Content management
 

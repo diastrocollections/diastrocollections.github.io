@@ -244,20 +244,11 @@
   image-rendering: pixelated;
 }
 
-.hero .back-link {
-  color: rgba(255, 255, 255, 0.72);
-}
-
-.hero .back-link:hover,
-.hero .back-link:focus-visible {
-  color: var(--accent);
-}
-
 .hero .eyebrow {
   background: #000;
   color: #fff;
   border: 3px solid #fff;
-  padding: 7px 12px;
+  padding: 6px 12px 7px;
   box-shadow: 0 0 0 3px #000;
 }
 
@@ -267,6 +258,7 @@
   height: 10px;
   background: var(--red-hot);
   animation: blink 1s steps(2) infinite;
+  margin: 1px 0 0 0;
 }
 
 @keyframes blink {
@@ -294,7 +286,7 @@
   color: #fff;
   border: 3px solid #fff;
   box-shadow: 0 0 0 3px #000;
-  padding: 14px 18px;
+  padding: 13px 18px 14px;
   max-width: 58ch;
   font-weight: 500;
   font-size: 1rem;
@@ -305,7 +297,7 @@
   border-top: 3px solid #fff;
   background: #000;
   box-shadow: 0 0 0 3px #000;
-  padding: 14px 20px;
+  padding: 14px 20px 11px;
   gap: 30px;
   width: fit-content;
   max-width: 100%;
@@ -343,8 +335,9 @@
 
 .press::before {
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 11px;
+  height: 11px;
+  margin-bottom: 2px;
   flex-shrink: 0;
   background: var(--yellow);
   clip-path: polygon(0 0, 60% 0, 60% 20%, 80% 20%, 80% 40%, 100% 40%, 100% 60%, 80% 60%, 80% 80%, 60% 80%, 60% 100%, 0 100%);
@@ -418,7 +411,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 22px;
+  height: 16px;
   background: repeating-linear-gradient(90deg, #C8102E 0 24px, #8E0B21 24px 28px);
   border-bottom: 3px solid #000;
 }
@@ -446,11 +439,6 @@
 }
 
 .search input {
-  border-radius: 0;
-  border: 3px solid #000;
-}
-
-.theme-toggle {
   border-radius: 0;
   border: 3px solid #000;
 }
@@ -580,17 +568,37 @@
 .card-idx {
   background: #000;
   color: #fff;
-  padding: 4px 7px;
+  padding: 4px 6px;
   font-family: var(--font-display);
+  /* Press Start 2P only ships a 400 weight; inheriting 700 from base.css would make
+     browsers synthesize a wider bold. */
+  font-weight: 400;
   font-size: 0.5rem;
   letter-spacing: 0.04em;
   align-self: flex-start;
+  /* Safari at 100% zoom rounds glyph advances up to whole pixels, making this ~10%
+     wider than elsewhere; geometricPrecision keeps the fractional advances. */
+  text-rendering: geometricPrecision;
+}
+
+.card-head {
+  gap: 4px;
+}
+
+.card-badge {
+  border-radius: 0;
+  padding: 4px 6px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 0.5rem;
+  letter-spacing: 0.04em;
+  text-rendering: geometricPrecision;
 }
 
 .card-title {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   line-height: 1.7;
 }
 

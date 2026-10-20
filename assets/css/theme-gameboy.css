@@ -250,6 +250,11 @@
   box-shadow: 3px 3px 0 var(--g-mid);
 }
 
+/* already sits on the eyebrow's baseline; cancel status.css's nudge */
+.status--inline .status-btn {
+  top: 0;
+}
+
 .hero .eyebrow .dot {
   background: #E5343A;
   width: 9px;

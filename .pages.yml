@@ -19,6 +19,9 @@ components:
       - name: developer
         type: string
         label: Developer
+      - name: badge
+        type: string
+        label: Badge (optional, short, e.g. PAL-optimised)
       - name: blurb
         type: text
         label: Blurb
@@ -175,6 +178,11 @@ content:
         label: Icon (emoji)
       - name: manufacturer
         type: string
+      - name: type
+        type: select
+        label: "Platform type (sorts the \"How it's made\" shelf: home consoles before handhelds)"
+        options:
+          values: ["home", "handheld"]
       - name: name
         type: string
         label: Short name
@@ -235,15 +243,26 @@ content:
       - name: current
         type: boolean
         label: "Show the \"Current\" badge"
-      - name: bullets
+      - name: sections
         type: object
         list: true
-        label: Bullets
+        label: "Sections (each a heading and/or paragraph, followed by bullets)"
         fields:
+          - name: heading
+            type: string
+            label: "Heading (optional; a short label like \"Content updates\", no colon at the end)"
           - name: text
             type: text
-            label: "Bullet text (inline <em> and <a href=\"\"> tags allowed)"
-          - name: sub
-            type: string
+            label: "Paragraph (optional; inline <em>, <strong> and <a href=\"\"> tags allowed, `backticks` for code)"
+          - name: bullets
+            type: object
             list: true
-            label: "Sub-bullets (optional, inline tags allowed)"
+            label: "Bullets (optional)"
+            fields:
+              - name: text
+                type: text
+                label: "Bullet text (inline tags and `backticks` allowed)"
+              - name: sub
+                type: string
+                list: true
+                label: "Sub-bullets (optional, inline tags and `backticks` allowed)"

@@ -259,7 +259,7 @@
   color: var(--ink);
   border: 3px solid var(--edge);
   border-radius: 8px;
-  padding: 10px 14px 6px 12px;
+  padding: 7px 14px 8px 12px;
   box-shadow: 4px 4px 0 var(--edge);
 }
 
@@ -267,7 +267,8 @@
   width: 10px;
   height: 10px;
   border-radius: 2px;
-  margin: -4px 34px 0 0; /* room for the four button dots drawn by box-shadow */
+  margin: 1px 34px 0 0;
+  /* room for the four button dots drawn by box-shadow */
   background: var(--btn-a);
   box-shadow: 12px 0 0 var(--btn-b), 24px 0 0 var(--btn-y), 36px 0 0 var(--btn-x);
 }
@@ -369,26 +370,101 @@
   opacity: clamp(0, calc((100vw - 960px) / 200px), 1);
 }
 
-.pb {
+/* Retro buttons, shared by the hero's X/Y/A/B buttons and the chapter numbers:
+   a softly domed cap in the button's colour, lit gently from the top left, with
+   a darker skirt of the same colour showing below it. No outlines.
+
+   Built from separate layers so nothing leaves a light seam and nothing is left
+   behind when a button is pressed: the skirt (::after) is its own circle that
+   sits only BELOW the cap, the cap (::before) is on top of it, and the label
+   is above both. Pressing moves the cap and label down over the skirt, so the
+   skirt shrinks from view as the button sinks, like a real button going into
+   its housing, and nothing stays visible above the cap. A box-shadow ledge
+   would instead be painted outside the element only, and let the page show
+   through its curved edge as a 1px line. --c is the button's colour; the other
+   shades are mixed from it. */
+.pb,
+/* The numeral sits above the button's centre (the button is taller than its numeral sits); lift the title by the
+   same amount (half of --num-lift) so the two lines of text align. */
+.chapter-head {
+  --num-lift: 5px;
+}
+
+.chapter-num {
+  --c-light: color-mix(in srgb, var(--c) 82%, #fff);
+  --c-rim: color-mix(in srgb, var(--c) 84%, #000);
+  --c-skirt: color-mix(in srgb, var(--c) 62%, #000);
   position: absolute;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  isolation: isolate;
   display: grid;
   place-items: center;
+  box-sizing: border-box;
+  width: var(--size);
+  height: calc(var(--size) + var(--skirt));
   font-family: var(--font-display);
-  font-size: 2.2rem;
-  color: #fff;
   font-weight: 400;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.pb::before,
+.chapter-num::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background:
+    /* a faint, soft sheen on the upper left; no hard edge */
+    radial-gradient(ellipse 46% 34% at 32% 22%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)),
+    /* the dome: slightly lighter towards the light, darker towards the rim */
+    radial-gradient(circle at 40% 32%, var(--c-light), var(--c) 55%, var(--c-rim));
+}
+
+.pb::after,
+.chapter-num::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: var(--skirt);
+  left: 0;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: var(--c-skirt);
+}
+
+.pb > span,
+.chapter-num > .chapter-num-text {
+  position: relative;
+  z-index: 2;
+  /* centred on the cap, not on cap + skirt: a bottom margin of m moves a
+     centred item up by m / 2 */
+  margin-bottom: var(--skirt);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Hero face buttons ---------- */
+
+.pb {
+  --size: 90px;
+  --skirt: 8px;      /* how much skirt shows below the cap at rest */
   --c: var(--btn-a);
-  background: radial-gradient(circle at 32% 26%, color-mix(in srgb, var(--c) 55%, #fff), var(--c) 55%, color-mix(in srgb, var(--c) 80%, #000));
-  border: 4px solid color-mix(in srgb, var(--c) 60%, #000);
-  box-shadow: 0 6px 0 color-mix(in srgb, var(--c) 55%, #000), 0 20px 22px -8px rgba(0, 0, 0, 0.45), inset 0 3px 0 rgba(255, 255, 255, 0.45);
-  animation-name: press;
-  animation-duration: 4s;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
+  --press-delay: 0s;
+  font-size: 2.2rem;
+}
+
+/* a soft drop shadow under the skirt; the housing doesn't move when pressed */
+.pb::after {
+  box-shadow: 0 14px 20px -10px rgba(0, 0, 0, 0.45);
+}
+
+/* the cap and its letter sink onto the skirt */
+.pb::before,
+.pb > span {
+  animation: press 4s ease var(--press-delay) infinite;
 }
 
 .pb.x {
@@ -401,30 +477,34 @@
   --c: var(--btn-a);
   left: 120px;
   top: 60px;
-  animation-delay: 1s;
+  --press-delay: 1s;
 }
 
 .pb.b {
   --c: var(--btn-b);
   left: 60px;
   top: 120px;
-  animation-delay: 2s;
+  --press-delay: 2s;
   color: #4A3A00;
-  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+.pb.b > span {
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.35);
 }
 
 .pb.y {
   --c: var(--btn-y);
   left: 0;
   top: 60px;
-  animation-delay: 3s;
+  --press-delay: 3s;
 }
 
 /* 4s cycle. Phase durations below are in ms so each one is easy to retune on its own:
-   0%    -> 4%    press-down   (160ms, eases per .pb's animation-timing-function)
+   0%    -> 4%    press-down   (160ms, eases per the animation's timing function)
    4%    -> 14%   held down    (400ms, no visual change)
    14%   -> 15.5% snap-back    (60ms,  rubber-dome snap; timing-function set on the 14% stop below)
-   15.5% -> 100%  released, idle (3380ms) */
+   15.5% -> 100%  released, idle (3380ms)
+   Pressed, the cap sinks 6px over the skirt, leaving 2px of the 8px skirt in view. */
 @keyframes press {
 
   0%,
@@ -433,20 +513,17 @@
   }
 
   4% {
-    transform: translateY(8px);
-    box-shadow: 0 1px 0 color-mix(in srgb, var(--c) 55%, #000), 0 8px 12px -6px rgba(0, 0, 0, 0.45), inset 0 3px 0 rgba(255, 255, 255, 0.45);
+    transform: translateY(6px);
   }
 
   14% {
-    transform: translateY(8px);
-    box-shadow: 0 1px 0 color-mix(in srgb, var(--c) 55%, #000), 0 8px 12px -6px rgba(0, 0, 0, 0.45), inset 0 3px 0 rgba(255, 255, 255, 0.45);
+    transform: translateY(6px);
     /* eases the 14% -> 15.5% snap-back segment only; tweak this to change how the button pops back up */
     animation-timing-function: ease-out;
   }
 
   15.5% {
     transform: translateY(0);
-    box-shadow: 0 6px 0 color-mix(in srgb, var(--c) 55%, #000), 0 20px 22px -8px rgba(0, 0, 0, 0.45), inset 0 3px 0 rgba(255, 255, 255, 0.45);
   }
 }
 
@@ -465,7 +542,8 @@
   .star-field,
   .cloud,
   .hill,
-  .pb,
+  .pb::before,
+  .pb > span,
   .note-card::after {
     animation: none;
   }
@@ -530,24 +608,20 @@
   border-bottom: 4px solid hsl(15 65% 55%);
 }
 
-/* Chapters: each chapter gets its own coloured face button */
+/* Chapters: each chapter gets its own coloured face button (see above) */
 .chapter-num {
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  justify-content: center;
-  color: #fff;
+  --size: 52px;
+  --skirt: 6px;
+  --c: hsl(var(--hue) var(--sat) var(--lig));
+  position: relative;
   font-size: 1.3rem;
-  background: radial-gradient(circle at 32% 26%, hsl(var(--hue) var(--sat) calc(var(--lig) + 20%)), hsl(var(--hue) var(--sat) var(--lig)) 58%, hsl(var(--hue) var(--sat) calc(var(--lig) - 10%)));
-  border: 3px solid hsl(var(--hue) var(--sat) calc(var(--lig) - 18%));
-  box-shadow: 0 6px 0 hsl(var(--hue) var(--sat) calc(var(--lig) - 20%)), inset 0 2px 0 rgba(255, 255, 255, 0.45);
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 .chapter-title {
   font-size: clamp(1.5rem, 3.4vw, 2.3rem);
   line-height: 1.08;
   text-shadow: 3px 3px 0 hsl(var(--hue) var(--sat-soft) calc(var(--lig-soft) - 6%));
+
 }
 
 .chapter-tag {

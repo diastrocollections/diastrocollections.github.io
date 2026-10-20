@@ -71,6 +71,8 @@
 }
 
 .status--inline .status-btn {
+  position: relative;
+  top: 0.5px; /* optical nudge onto the eyebrow's baseline; Game Boy opts out */
   padding: 0;
   border: 0;
   background: none;

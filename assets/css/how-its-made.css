@@ -338,8 +338,8 @@
 }
 
 /* A bookcase instead of a scroller: when the spines don't fit on one shelf they
-   wrap onto the next. Rows have a fixed height (the tallest spine, see
-   renderShelf in how-its-made.js), the row gap is exactly one plank thick, and a
+   wrap onto the next. Rows have a fixed height (the tallest allowed
+   spine, see SHELF_MAKERS in how-its-made.js), the row gap is exactly one plank thick, and a
    repeating background paints a plank into every gap. The bottom border is the
    last plank. Spines first narrow from 34px towards 22px to keep everything on
    one shelf (--spines is the collection count, set by renderShelf), and only
@@ -353,8 +353,6 @@
   grid-template-columns: repeat(auto-fill, var(--spine-w));
   grid-auto-rows: var(--shelf-row);
   gap: var(--plank) var(--spine-gap);
-  margin-top: 16px;
-  /* margin, not padding, so no plank repeats above row one */
   padding: 0 8px;
   border-bottom: var(--plank) solid var(--line-strong);
   background: repeating-linear-gradient(to bottom,
@@ -363,10 +361,13 @@
 }
 
 .aim-spine {
+  --line-c: rgba(255, 255, 255, 0.5);
+  position: relative;
   align-self: end;
-  width: var(--spine-w);
+  justify-self: center;
+  width: calc(var(--spine-w) * var(--spine-thick, 1));
   height: var(--spine-h, 160px);
-  border-radius: 4px 4px 0 0;
+  border-radius: 3px 3px 1px 1px;
   display: flex;
   align-items: center;
   padding: 10px 0;
@@ -376,7 +377,52 @@
   font-size: 0.7rem;
   font-weight: 600;
   color: #fff;
-  background: var(--spine-c, var(--accent));
+  /* a faint highlight and darker edges suggest a rounded spine */
+  background:
+    linear-gradient(to right,
+      rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.1) 30%,
+      rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.1)),
+    var(--spine-c, var(--accent));
+}
+
+/* Spine decoration, set per manufacturer in SHELF_MAKERS (how-its-made.js):
+   none, one line, a double line, or a line at the head and the foot. The spine is rotated 180deg, so
+   "bottom" here is the visual top. */
+.aim-spine::before,
+.aim-spine::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  height: 0;
+  border-top: 1.5px solid var(--line-c);
+  pointer-events: none;
+}
+
+.aim-spine.line-none::before,
+.aim-spine.line-none::after,
+.aim-spine.line-single::after,
+.aim-spine.line-double::after {
+  display: none;
+}
+
+.aim-spine.line-single::before {
+  bottom: 12px;
+}
+
+.aim-spine.line-double::before {
+  bottom: 10px;
+  height: 3px;
+  border-top-width: 1px;
+  border-bottom: 1px solid var(--line-c);
+}
+
+.aim-spine.line-head-foot::before {
+  bottom: 9px;
+}
+
+.aim-spine.line-head-foot::after {
+  top: 4px;
 }
 
 /* Draft spines fill from the shelf up to --fill (the collection's hand-written
@@ -384,6 +430,7 @@
    solid 2px line. The tint keeps the spine's name readable. The spine is rotated
    180deg, so "to bottom" here fills visually upwards. */
 .aim-spine.is-draft {
+  --line-c: color-mix(in srgb, var(--spine-c, var(--accent)) 60%, transparent);
   background: linear-gradient(to bottom,
       color-mix(in srgb, var(--spine-c, var(--accent)) 32%, transparent) 0 calc(var(--fill, 0%) - 2px),
       var(--spine-c, var(--accent)) calc(var(--fill, 0%) - 2px) var(--fill, 0%),
@@ -571,7 +618,7 @@
   border-radius: 12px;
 }
 
-.aim-services > div {
+.aim-services>div {
   display: grid;
   grid-template-columns: max-content 1fr;
   gap: 8px 20px;

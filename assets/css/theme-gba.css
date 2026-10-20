@@ -226,6 +226,7 @@
 .hero .eyebrow .dot {
   background: var(--accent-ink);
   border-radius: 0;
+  transform: translateY(0.5px);
 }
 
 .hero h1 {
@@ -343,7 +344,7 @@
   padding: 0 14px;
   justify-content: center;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: linear-gradient(135deg, hsl(var(--hue) 70% 58%), hsl(var(--hue) 65% 36%));
   clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
 }
