@@ -3,13 +3,13 @@
     "hue": 350,
     "tag": "Platformer",
     "title": "Platformers",
-    "blurb": "Crash and Spyro anchor a chapter of mascot platformers that helped define the PS1's identity, alongside a scrappy British entry that beat its own Japanese release to market.",
+    "blurb": "Crash and Spyro anchor a chapter of mascot platformers that helped define the PS1’s identity, alongside a scrappy British entry that beat its own Japanese release to market.",
     "games": [
       {
         "title": "Crash Bandicoot",
         "year": "1996",
         "developer": "Naughty Dog",
-        "blurb": "The spin-attacking marsupial that became Sony's first mascot, built by Naughty Dog around aggressively tight level design and a signature save-crystal structure."
+        "blurb": "The spin-attacking marsupial that became Sony’s first mascot, built by Naughty Dog around aggressively tight level design and a signature save-crystal structure."
       },
       {
         "title": "Crash Bandicoot 2: Cortex Strikes Back",
@@ -21,25 +21,25 @@
         "title": "Crash Bandicoot 3: Warped",
         "year": "1998",
         "developer": "Naughty Dog",
-        "blurb": "The trilogy's high point, breaking up its platforming with motorbike, jet-ski, and biplane stages for real variety between levels."
+        "blurb": "The trilogy’s high point, breaking up its platforming with motorbike, jet-ski, and biplane stages for real variety between levels."
       },
       {
         "title": "Spyro the Dragon",
         "year": "1998",
         "developer": "Insomniac Games",
-        "blurb": "A fully explorable, seamless 3D hub-world structure was rare for its time, wrapped around Spyro's charm, gliding, and gem-collecting loop."
+        "blurb": "A fully explorable, seamless 3D hub-world structure was rare for its time, wrapped around Spyro’s charm, gliding, and gem-collecting loop."
       },
       {
-        "title": "Spyro 2: Ripto's Rage",
+        "title": "Spyro 2: Ripto’s Rage",
         "year": "1999",
         "developer": "Insomniac Games",
-        "blurb": "Released across Europe as Spyro 2: Gateway to Glimmer rather than Ripto's Rage — one of this collection's clearest title swaps — while adding swimming and new powered abilities to the original's formula."
+        "blurb": "Released across Europe as Spyro 2: Gateway to Glimmer rather than Ripto’s Rage — one of this collection’s clearest title swaps — while adding swimming and new powered abilities to the original’s formula."
       },
       {
         "title": "Spyro: Year of the Dragon",
         "year": "2000",
         "developer": "Insomniac Games",
-        "blurb": "The trilogy's closer, adding four extra playable characters alongside Spyro and pushing the series' draw distance and world size further than before."
+        "blurb": "The trilogy’s closer, adding four extra playable characters alongside Spyro and pushing the series’ draw distance and world size further than before."
       },
       {
         "title": "Rayman",
@@ -71,37 +71,37 @@
         "title": "Tomb Raider",
         "year": "1996",
         "developer": "Core Design",
-        "blurb": "A British-developed 3D adventure that made Lara Croft one of gaming's first true global icons, built around tank-control platforming and tomb-puzzle exploration."
+        "blurb": "A British-developed 3D adventure that made Lara Croft one of gaming’s first true global icons, built around tank-control platforming and tomb-puzzle exploration."
       },
       {
         "title": "Tomb Raider II",
         "year": "1997",
         "developer": "Core Design",
-        "blurb": "A more combat-focused, faster-paced sequel adding vehicles and a wider arsenal to the original's exploration formula."
+        "blurb": "A more combat-focused, faster-paced sequel adding vehicles and a wider arsenal to the original’s exploration formula."
       },
       {
         "title": "Tomb Raider III",
         "year": "1998",
         "developer": "Core Design",
-        "blurb": "Lets players tackle its globe-spanning levels in almost any order, trading the earlier games' linear structure for open-ended choice."
+        "blurb": "Lets players tackle its globe-spanning levels in almost any order, trading the earlier games’ linear structure for open-ended choice."
       },
       {
         "title": "Metal Gear Solid",
         "year": "1998",
         "developer": "Konami",
-        "blurb": "Hideo Kojima's cinematic reinvention of stealth action, built around avoiding detection rather than confrontation and a script unusually invested in film-style pacing."
+        "blurb": "Hideo Kojima’s cinematic reinvention of stealth action, built around avoiding detection rather than confrontation and a script unusually invested in film-style pacing."
       },
       {
-        "title": "Oddworld: Abe's Oddysee",
+        "title": "Oddworld: Abe’s Oddysee",
         "year": "1997",
         "developer": "Oddworld Inhabitants",
-        "blurb": "A puzzle-platformer with a genuinely strange tone, built around Abe's ability to possess enemies and a GameSpeak system for directing fellow slaves."
+        "blurb": "A puzzle-platformer with a genuinely strange tone, built around Abe’s ability to possess enemies and a GameSpeak system for directing fellow slaves."
       },
       {
-        "title": "Oddworld: Abe's Exoddus",
+        "title": "Oddworld: Abe’s Exoddus",
         "year": "1998",
         "developer": "Oddworld Inhabitants",
-        "blurb": "A direct sequel expanding the original's mechanics with new powers and a much larger, more varied set of environments."
+        "blurb": "A direct sequel expanding the original’s mechanics with new powers and a much larger, more varied set of environments."
       },
       {
         "title": "MediEvil",
@@ -121,7 +121,7 @@
     "hue": 270,
     "tag": "Horror",
     "title": "Survival Horror",
-    "blurb": "Resident Evil effectively invented the genre's console template here, in a chapter that also holds its most atmospheric psychological successor.",
+    "blurb": "Resident Evil effectively invented the genre’s console template here, in a chapter that also holds its most atmospheric psychological successor.",
     "games": [
       {
         "title": "Resident Evil",
@@ -133,7 +133,7 @@
         "title": "Resident Evil 2",
         "year": "1998",
         "developer": "Capcom",
-        "blurb": "Widely regarded as the series' peak on PS1, running two interlocking scenarios (Leon and Claire) through the same zombie-overrun police station."
+        "blurb": "Widely regarded as the series’ peak on PS1, running two interlocking scenarios (Leon and Claire) through the same zombie-overrun police station."
       },
       {
         "title": "Resident Evil 3: Nemesis",
@@ -145,13 +145,13 @@
         "title": "Silent Hill",
         "year": "1999",
         "developer": "Konami",
-        "blurb": "Traded Resident Evil's B-movie zombies for genuine psychological dread, with the town's famous fog originally a technical workaround that became a defining artistic choice."
+        "blurb": "Traded Resident Evil’s B-movie zombies for genuine psychological dread, with the town’s famous fog originally a technical workaround that became a defining artistic choice."
       },
       {
         "title": "Dino Crisis",
         "year": "1999",
         "developer": "Capcom",
-        "blurb": "Essentially 'Resident Evil with dinosaurs,' built by much of the same team and swapping the undead for genuinely unpredictable predators."
+        "blurb": "Essentially “Resident Evil with dinosaurs,” built by much of the same team and swapping the undead for genuinely unpredictable predators."
       },
       {
         "title": "Clock Tower",
@@ -171,7 +171,7 @@
     "hue": 40,
     "tag": "RPG",
     "title": "Role-Playing Adventures",
-    "blurb": "The genre PS1 is remembered for above all else — Square and Konami's golden age, including several celebrated RPGs that, unusually, never made it to Europe at all.",
+    "blurb": "The genre PS1 is remembered for above all else — Square and Konami’s golden age, including several celebrated RPGs that, unusually, never made it to Europe at all.",
     "games": [
       {
         "title": "Final Fantasy VII",
@@ -183,13 +183,13 @@
         "title": "Final Fantasy VIII",
         "year": "1999",
         "developer": "Square",
-        "blurb": "Trades the series' traditional leveling system for the Junction mechanic, tying stat growth directly to a much deeper magic system."
+        "blurb": "Trades the series’ traditional leveling system for the Junction mechanic, tying stat growth directly to a much deeper magic system."
       },
       {
         "title": "Final Fantasy IX",
         "year": "2000",
         "developer": "Square",
-        "blurb": "A deliberate return to the series' classic fantasy aesthetic after two increasingly futuristic entries, built as a love letter to its own earlier games."
+        "blurb": "A deliberate return to the series’ classic fantasy aesthetic after two increasingly futuristic entries, built as a love letter to its own earlier games."
       },
       {
         "title": "Final Fantasy Tactics",
@@ -207,7 +207,7 @@
         "title": "Chrono Cross",
         "year": "1999",
         "developer": "Square",
-        "blurb": "A spiritual successor to Chrono Trigger with a completely different cast and setting, notable for a soundtrack widely considered one of the format's best."
+        "blurb": "A spiritual successor to Chrono Trigger with a completely different cast and setting, notable for a soundtrack widely considered one of the format’s best."
       },
       {
         "title": "Vagrant Story",
@@ -219,7 +219,7 @@
         "title": "Suikoden",
         "year": "1996",
         "developer": "Konami",
-        "blurb": "Built around recruiting all 108 of the 'Stars of Destiny' into a growing castle headquarters, a collection hook the series became known for."
+        "blurb": "Built around recruiting all 108 of the “Stars of Destiny” into a growing castle headquarters, a collection hook the series became known for."
       },
       {
         "title": "Suikoden II",
@@ -251,19 +251,19 @@
     "hue": 150,
     "tag": "Fighting",
     "title": "Fighting",
-    "blurb": "Tekken's rise to the genre's top tier happened here, alongside a one-hit-kill sword duelist that rejected nearly every convention of the genre around it.",
+    "blurb": "Tekken’s rise to the genre’s top tier happened here, alongside a one-hit-kill sword duelist that rejected nearly every convention of the genre around it.",
     "games": [
       {
         "title": "Tekken",
         "year": "1995",
         "developer": "Namco",
-        "blurb": "A launch-era 3D fighter built on genuinely fluid character movement, establishing the series' signature four-limb-independent control scheme."
+        "blurb": "A launch-era 3D fighter built on genuinely fluid character movement, establishing the series’ signature four-limb-independent control scheme."
       },
       {
         "title": "Tekken 2",
         "year": "1996",
         "developer": "Namco",
-        "blurb": "Expands the roster substantially and refines the original's combo system, widely seen as tightening everything the first game established."
+        "blurb": "Expands the roster substantially and refines the original’s combo system, widely seen as tightening everything the first game established."
       },
       {
         "title": "Tekken 3",
@@ -275,7 +275,7 @@
         "title": "Street Fighter Alpha 3",
         "year": "1998",
         "developer": "Capcom",
-        "blurb": "Brings the arcade original's huge character roster and three selectable fighting styles (Ism system) to console with minimal compromise."
+        "blurb": "Brings the arcade original’s huge character roster and three selectable fighting styles (Ism system) to console with minimal compromise."
       },
       {
         "title": "Bushido Blade",
@@ -287,7 +287,7 @@
         "title": "Soul Blade",
         "year": "1996",
         "developer": "Namco",
-        "blurb": "Released in the West as Soul Blade rather than its Japanese title, Soul Edge, reportedly to avoid a trademark conflict — the European version also swapped one character's nunchaku for a censor-friendly staff."
+        "blurb": "Released in the West as Soul Blade rather than its Japanese title, Soul Edge, reportedly to avoid a trademark conflict — the European version also swapped one character’s nunchaku for a censor-friendly staff."
       },
       {
         "title": "Rival Schools: United by Fate",
@@ -307,37 +307,37 @@
     "hue": 195,
     "tag": "Racing",
     "title": "Racing",
-    "blurb": "Gran Turismo's arrival redefined what a racing sim could be on console, in a chapter also carrying two moody, electronic-music-scored British flagship titles.",
+    "blurb": "Gran Turismo’s arrival redefined what a racing sim could be on console, in a chapter also carrying two moody, electronic-music-scored British flagship titles.",
     "games": [
       {
         "title": "Gran Turismo",
         "year": "1997",
         "developer": "Polyphony Digital",
-        "blurb": "Marketed as 'the real driving simulator,' its enormous, meticulously modeled car roster reset expectations for what a console racer could be."
+        "blurb": "Marketed as “the real driving simulator,” its enormous, meticulously modeled car roster reset expectations for what a console racer could be."
       },
       {
         "title": "Gran Turismo 2",
         "year": "1999",
         "developer": "Polyphony Digital",
-        "blurb": "Roughly doubles the original's car count and adds rally courses, becoming one of the best-selling PS1 games in the process."
+        "blurb": "Roughly doubles the original’s car count and adds rally courses, becoming one of the best-selling PS1 games in the process."
       },
       {
         "title": "Ridge Racer Type 4",
         "year": "1998",
         "developer": "Namco",
-        "blurb": "An arcade racer built entirely around drift technique, wrapped in one of the console era's most distinctive anime-style intro sequences."
+        "blurb": "An arcade racer built entirely around drift technique, wrapped in one of the console era’s most distinctive anime-style intro sequences."
       },
       {
         "title": "Wipeout",
         "year": "1995",
         "developer": "Psygnosis",
-        "blurb": "A British-developed anti-gravity racer whose licensed electronic soundtrack (Chemical Brothers, Orbital) helped define PS1's early cool-factor image in Europe."
+        "blurb": "A British-developed anti-gravity racer whose licensed electronic soundtrack (Chemical Brothers, Orbital) helped define PS1’s early cool-factor image in Europe."
       },
       {
         "title": "Wipeout 2097",
         "year": "1996",
         "developer": "Psygnosis",
-        "blurb": "Released in North America as Wipeout XL rather than keeping the European title — one of the platform's clearer NA-side renames, running the opposite direction from most of this collection's title swaps."
+        "blurb": "Released in North America as Wipeout XL rather than keeping the European title — one of the platform’s clearer NA-side renames, running the opposite direction from most of this collection’s title swaps."
       },
       {
         "title": "Crash Team Racing",
@@ -375,22 +375,22 @@
         "title": "Actua Soccer",
         "year": "1995",
         "developer": "Gremlin Interactive",
-        "blurb": "A British-developed early entry in 3D football sims, built to compete directly with FIFA's arcade-leaning presentation."
+        "blurb": "A British-developed early entry in 3D football sims, built to compete directly with FIFA’s arcade-leaning presentation."
       },
       {
         "title": "FIFA 98: Road to World Cup",
         "year": "1997",
         "developer": "EA Canada",
-        "blurb": "Timed to that year's World Cup, adding every qualifying national team alongside the usual club rosters."
+        "blurb": "Timed to that year’s World Cup, adding every qualifying national team alongside the usual club rosters."
       },
       {
         "title": "Hot Shots Golf",
         "year": "1997",
         "developer": "Clap Hanzo",
-        "blurb": "An arcade-accessible golf game built around a simple three-click swing meter, launching a long-running series sold in Europe as Everybody's Golf."
+        "blurb": "An arcade-accessible golf game built around a simple three-click swing meter, launching a long-running series sold in Europe as Everybody’s Golf."
       },
       {
-        "title": "Tony Hawk's Pro Skater",
+        "title": "Tony Hawk’s Pro Skater",
         "year": "1999",
         "developer": "Neversoft",
         "blurb": "Turned skateboarding into a combo-scoring arcade genre almost overnight, its soundtrack becoming as iconic as the gameplay itself."
@@ -399,7 +399,7 @@
         "title": "NBA Jam Extreme",
         "year": "1996",
         "developer": "Sculptured Software",
-        "blurb": "Leans fully into arcade excess — no fouls, exaggerated dunks, and an 'on fire' streak mechanic — over basketball simulation."
+        "blurb": "Leans fully into arcade excess — no fouls, exaggerated dunks, and an “on fire” streak mechanic — over basketball simulation."
       },
       {
         "title": "International Track & Field",
@@ -413,7 +413,7 @@
     "hue": 320,
     "tag": "Puzzle",
     "title": "Puzzle & Party",
-    "blurb": "Point Blank's light-gun mini-games anchor a chapter that also holds one of the PS1's strangest rhythm curios — a game that took fifteen years to reach North America.",
+    "blurb": "Point Blank’s light-gun mini-games anchor a chapter that also holds one of the PS1’s strangest rhythm curios — a game that took fifteen years to reach North America.",
     "games": [
       {
         "title": "Tetris Plus",
@@ -443,13 +443,13 @@
         "title": "Devil Dice",
         "year": "1998",
         "developer": "Shift",
-        "blurb": "A dice-matching puzzle-strategy hybrid that would later return, retooled, as the PS2's Bombastic — one of the more unusual puzzle concepts on the platform."
+        "blurb": "A dice-matching puzzle-strategy hybrid that would later return, retooled, as the PS2’s Bombastic — one of the more unusual puzzle concepts on the platform."
       },
       {
         "title": "Vib-Ribbon",
         "year": "1999",
         "developer": "NanaOn-Sha",
-        "blurb": "A minimalist wireframe rhythm game that generates its courses from whatever music CD is in the player's own console — and, unusually, never received a North American PS1 release at all, only reaching the region 15 years later via PS3."
+        "blurb": "A minimalist wireframe rhythm game that generates its courses from whatever music CD is in the player’s own console — and, unusually, never received a North American PS1 release at all, only reaching the region 15 years later via PS3."
       }
     ]
   },
@@ -457,7 +457,7 @@
     "hue": 60,
     "tag": "Simulation",
     "title": "Simulation & Strategy",
-    "blurb": "British studios anchor this chapter almost entirely — Bullfrog and Team17's genre-founding console ports sit alongside a serious-toned tactical RPG.",
+    "blurb": "British studios anchor this chapter almost entirely — Bullfrog and Team17’s genre-founding console ports sit alongside a serious-toned tactical RPG.",
     "games": [
       {
         "title": "Populous: The Beginning",
@@ -481,7 +481,7 @@
         "title": "Harvest Moon: Back to Nature",
         "year": "1999",
         "developer": "Victor Interactive Software",
-        "blurb": "A fully 3D take on the farming-sim formula, deepening the original series' day-and-season cycle with more detailed town and relationship systems."
+        "blurb": "A fully 3D take on the farming-sim formula, deepening the original series’ day-and-season cycle with more detailed town and relationship systems."
       },
       {
         "title": "Theme Hospital",
@@ -507,13 +507,13 @@
     "hue": 230,
     "tag": "Licensed",
     "title": "Licensed & Movie Tie-ins",
-    "blurb": "Die Hard Trilogy's three genres on one disc anchors a chapter of largely well-regarded licensed titles from an era before movie tie-ins had a reputation for being rushed.",
+    "blurb": "Die Hard Trilogy’s three genres on one disc anchors a chapter of largely well-regarded licensed titles from an era before movie tie-ins had a reputation for being rushed.",
     "games": [
       {
         "title": "South Park",
         "year": "1998",
         "developer": "Iguana Entertainment",
-        "blurb": "A first-person shooter built entirely around the animated show's crude humor, using clay-animation-style character models to match the show's look."
+        "blurb": "A first-person shooter built entirely around the animated show’s crude humor, using clay-animation-style character models to match the show’s look."
       },
       {
         "title": "Die Hard Trilogy",
@@ -522,22 +522,22 @@
         "blurb": "A British-developed anthology squeezing three separate genres — rail shooter, third-person action, and driving — onto one disc, each tied to a different film in the series."
       },
       {
-        "title": "Disney's Hercules Action Game",
+        "title": "Disney’s Hercules Action Game",
         "year": "1997",
         "developer": "Eurocom",
-        "blurb": "A British-developed licensed platformer tracking the film's story beats, mixing on-foot combat with several distinct minigame styles."
+        "blurb": "A British-developed licensed platformer tracking the film’s story beats, mixing on-foot combat with several distinct minigame styles."
       },
       {
         "title": "Small Soldiers",
         "year": "1998",
         "developer": "DreamWorks Interactive",
-        "blurb": "A licensed action game built around the film's toy-soldiers-come-to-life premise, letting players command a squad through household-scale battlefields."
+        "blurb": "A licensed action game built around the film’s toy-soldiers-come-to-life premise, letting players command a squad through household-scale battlefields."
       },
       {
         "title": "Austin Powers: Oh, Behave!",
         "year": "2000",
         "developer": "Tarantula Studios",
-        "blurb": "A trivia-and-minigame party title built around the film's catchphrases and characters rather than a traditional action adaptation."
+        "blurb": "A trivia-and-minigame party title built around the film’s catchphrases and characters rather than a traditional action adaptation."
       },
       {
         "title": "Spider-Man",
@@ -599,13 +599,13 @@
         "title": "Threads of Fate",
         "year": "1999",
         "developer": "Square",
-        "blurb": "Released in Japan as Dewprism, this action-RPG lets players replay its entire story from either of two different protagonists' perspectives — and, like several Square RPGs of the era, never received a European PS1 release."
+        "blurb": "Released in Japan as Dewprism, this action-RPG lets players replay its entire story from either of two different protagonists’ perspectives — and, like several Square RPGs of the era, never received a European PS1 release."
       },
       {
         "title": "Legend of Legaia",
         "year": "1998",
         "developer": "Contrail",
-        "blurb": "A turn-based RPG whose combat runs on a unique directional-input combo system, closer to a fighting game's move list than typical menu-driven battles."
+        "blurb": "A turn-based RPG whose combat runs on a unique directional-input combo system, closer to a fighting game’s move list than typical menu-driven battles."
       }
     ]
   },
@@ -613,7 +613,7 @@
     "hue": 300,
     "tag": "Novelty",
     "title": "Arcade Ports & Multiplayer Curios",
-    "blurb": "The largest chapter in the collection, gathering vehicular-combat launch titles, British sci-fi flight sims, and party-focused multiplayer curios built around the console's four-player adapter.",
+    "blurb": "The largest chapter in the collection, gathering vehicular-combat launch titles, British sci-fi flight sims, and party-focused multiplayer curios built around the console’s four-player adapter.",
     "games": [
       {
         "title": "Twisted Metal",
@@ -625,19 +625,19 @@
         "title": "Twisted Metal 2",
         "year": "1996",
         "developer": "SingleTrac",
-        "blurb": "A sequel expanding the roster and arenas considerably, widely considered the series' high point on PS1."
+        "blurb": "A sequel expanding the roster and arenas considerably, widely considered the series’ high point on PS1."
       },
       {
         "title": "Ape Escape",
         "year": "1999",
         "developer": "SCE Japan Studio",
-        "blurb": "The first game built specifically around the DualShock's analog sticks, tasking players with net-capturing escaped monkeys across time-travel-themed levels."
+        "blurb": "The first game built specifically around the DualShock’s analog sticks, tasking players with net-capturing escaped monkeys across time-travel-themed levels."
       },
       {
         "title": "Bomberman",
         "year": "1996",
         "developer": "Hudson Soft",
-        "blurb": "Brings the series' classic grid-based, four-player bomb-battle format to PS1 largely unchanged from its earlier console outings."
+        "blurb": "Brings the series’ classic grid-based, four-player bomb-battle format to PS1 largely unchanged from its earlier console outings."
       },
       {
         "title": "Bomberman Fantasy Race",
@@ -684,14 +684,14 @@
       {
         "title": "WWF SmackDown!",
         "year": "2000",
-        "developer": "Yuke's",
+        "developer": "Yuke’s",
         "blurb": "Launched what would become a long-running wrestling series, moving beyond the earlier WWF console games toward a fuller, more simulation-leaning in-ring engine."
       },
       {
         "title": "Duke Nukem: Time to Kill",
         "year": "1998",
         "developer": "n-Space",
-        "blurb": "Swaps the mainline series' first-person perspective for third-person, time-travel-themed levels — a deliberate departure from the main FPS games."
+        "blurb": "Swaps the mainline series’ first-person perspective for third-person, time-travel-themed levels — a deliberate departure from the main FPS games."
       }
     ]
   }

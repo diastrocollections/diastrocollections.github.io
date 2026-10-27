@@ -987,6 +987,24 @@ h3 {
   transition: all .25s ease;
 }
 
+/* Controller illustration (assets/icons/*.svg), drawn in the tile's accent colour. */
+.tile-watermark--svg {
+  line-height: 0;
+  opacity: 0.12;
+  filter: none;
+  color: var(--tile-accent, var(--accent));
+}
+
+.tile-watermark--svg svg {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+}
+
+.tile:hover .tile-watermark--svg {
+  opacity: 0.2;
+}
+
 .tile-body {
   padding: 22px 22px 24px;
   display: flex;
@@ -999,7 +1017,7 @@ h3 {
   position: relative;
 }
 
-/* Icon then title, centered on each other vertically. */
+/* The title row; the hover cursor below sits to its left. */
 .tile-top {
   display: flex;
   align-items: center;
@@ -1007,7 +1025,7 @@ h3 {
   transition: transform .25s ease;
 }
 
-/* On hover, a pixel ▶ appears beside the icon like a game-menu cursor, and the row
+/* On hover, a pixel ▶ appears beside the title like a game-menu cursor, and the row
    nudges right to make room. Both use transforms, so the tile's size never changes
    (a taller tile would stretch its grid row and push the row below down). */
 .tile-top::before {
@@ -1060,19 +1078,6 @@ h3 {
 .tile-kicker span+span::before {
   content: "·";
   margin: 0 0.6em;
-}
-
-.tile-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  background: color-mix(in srgb, var(--tile-accent, var(--accent)) 16%, var(--surface));
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tile-accent, var(--accent)) 30%, transparent);
-  flex-shrink: 0;
 }
 
 .tile h3 {

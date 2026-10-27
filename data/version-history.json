@@ -1,21 +1,92 @@
 [
   {
+    "version": "2.3.0",
+    "type": "minor",
+    "date": "2026-10-27",
+    "current": true,
+    "sections": [
+      {
+        "heading": "We have our own domain!",
+        "bullets": [
+          {
+            "text": "Diastro Gaming Collections now lives at <a href=\"https://diastrogaming.com\">diastrogaming.com</a>. Nothing else has moved, and old links to diastrocollections.github.io will keep working and bring you right here."
+          }
+        ]
+      },
+      {
+        "heading": "The <a href=\"/nes/\">NES Collection</a> is now 100% hand-written!",
+        "bullets": [
+          {
+            "text": "Every part of the NES Collection is now written by me: the Curator’s Note, all twelve chapters, every single game."
+          },
+          {
+            "text": "<strong>The first step towards a fully European shelf:</strong> Collection by Collection, I’ll update the shelf to only include games that actually came out in Europe. For the NES that meant leaving out some real gems, like <em>Final Fantasy</em> and <em>Dragon Warrior</em>. But it made room for around 30 games that America never got to play, or that Europe simply loved more, such as <em>Asterix</em>, <em>The Smurfs</em>, <em>Fantastic Dizzy</em> and <em>Micro Machines</em>."
+          },
+          {
+            "text": "<strong>Two new chapters:</strong> “Home-Computer Hits” and “Zappers, Robots & Party Games”. The removal of Japanese-made RPGs left a huge hole, so that chapter became “Quests & Action-RPGs”. Finally, “Puzzle & Party” became “Puzzle & Co-op”."
+          },
+          {
+            "text": "<strong>The Collection now uses European titles:</strong> <em>Probotector</em> instead of <em>Contra</em>, <em>Teenage Mutant Hero Turtles</em>, <em>Street Gangs</em>, <em>Dynablaster</em>, and so on."
+          },
+          {
+            "text": "<strong>More PAL badges:</strong> 27 games in the Collection now carry a “PAL-adjusted” or “PAL-optimised” label, up from about a dozen. There are many interesting stories left to tell, and I hope to cover them in the upcoming YouTube videos!"
+          }
+        ]
+      },
+      {
+        "heading": "Custom controller illustrations",
+        "bullets": [
+          {
+            "text": "I’ve started replacing the emoji on the shelf with custom controller illustrations. The NES is the first one, and the rest will follow over the next few updates."
+          },
+          {
+            "text": "I removed the icon next to each Collection’s title on the shelf as well, which makes the tiles a little calmer."
+          }
+        ]
+      },
+      {
+        "heading": "Copyright and license",
+        "bullets": [
+          {
+            "text": "The <a href=\"/how-its-made/#license\">How it’s made</a> page has a new <strong>Copyright and license</strong> section."
+          },
+          {
+            "text": "All text, collection data and original images are licensed under <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\">CC BY-NC-ND 4.0</a>. Feel free to share them, unchanged and with credit, as long as it’s not commercial. The code behind the site is open source under the MIT license."
+          },
+          {
+            "text": "Every page’s footer now shows which license applies to what."
+          }
+        ]
+      },
+      {
+        "heading": "Other updates and improvements",
+        "bullets": [
+          {
+            "text": "I’ve adopted a sort-of standard <strong>typography</strong> ruleset for the project: apostrophes and quotation marks across the whole site are now real curly ones (’ “ ”). Searching still works the way you’d expect, so typing `kirby's` still finds <em>Kirby’s Adventure</em>."
+          },
+          {
+            "text": "Removed the “Back to the shelf” link from the How it’s made and Version history pages, since the persistent navigation bar already does that job."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.2.0",
     "type": "minor",
     "date": "2026-10-20",
-    "current": true,
     "sections": [
       {
         "heading": "Content updates",
         "bullets": [
           {
-            "text": "The <a href=\"/nes/\">NES Collection</a>'s Curator's Note and first two chapters are now fully hand-written! While I was at it, a fresh research pass caught a few wrong game titles and release years."
+            "text": "The <a href=\"/nes/\">NES Collection</a>’s Curator’s Note and first two chapters are now fully hand-written! While I was at it, a fresh research pass caught a few wrong game titles and release years."
           },
           {
-            "text": "<strong>PAL badges:</strong> NES cards now show \"PAL-adjusted\" or \"PAL-optimised\", so you can see at a glance which games actually got some love for 50Hz. The filter finds those labels too."
+            "text": "<strong>PAL badges:</strong> NES cards now show “PAL-adjusted” or “PAL-optimised”, so you can see at a glance which games actually got some love for 50Hz. The filter finds those labels too."
           },
           {
-            "text": "The <a href=\"/gameboy/\">Game Boy Collection</a>'s Curator's Note is now hand-written as well."
+            "text": "The <a href=\"/gameboy/\">Game Boy Collection</a>’s Curator’s Note is now hand-written as well."
           }
         ]
       },
@@ -26,19 +97,19 @@
             "text": "<strong>Navigation bar:</strong> a persistent bar at the top of every page, so you can jump to any part of the project from anywhere."
           },
           {
-            "text": "<strong>Dark/light toggle:</strong> always in the top right corner now, whatever page you're on."
+            "text": "<strong>Dark/light toggle:</strong> always in the top right corner now, whatever page you’re on."
           },
           {
-            "text": "<strong>Back to top:</strong> on large screens, a button appears once you've scrolled down. Phones don't get one, because tapping the top of the screen already does the trick."
+            "text": "<strong>Back to top:</strong> on large screens, a button appears once you’ve scrolled down. Phones don’t get one, because tapping the top of the screen already does the trick."
           },
           {
-            "text": "<strong>Chapters drop-down:</strong> replaces the chapter chips. It's cleaner on every screen size and better for accessibility. You can now also link straight to a chapter, e.g. `/nes/#ch-3`."
+            "text": "<strong>Chapters drop-down:</strong> replaces the chapter chips. It’s cleaner on every screen size and better for accessibility. You can now also link straight to a chapter, e.g. `/nes/#ch-3`."
           },
           {
             "text": "<strong>Previous / next:</strong> every Collection now ends with links to its neighbours on the shelf, for when you just want to keep browsing."
           },
           {
-            "text": "<strong>Footer:</strong> tidied up, with direct links to the AI disclaimer and privacy policy on the <a href=\"/how-its-made/\">How it's made</a> page."
+            "text": "<strong>Footer:</strong> tidied up, with direct links to the AI disclaimer and privacy policy on the <a href=\"/how-its-made/\">How it’s made</a> page."
           }
         ]
       },
@@ -52,7 +123,7 @@
             "text": "<strong>Keyboard:</strong> navigation is much improved, and every page now has a skip link. More improvements are on the way!"
           },
           {
-            "text": "<strong>Colour:</strong> this one's tricky, since the project leans heavily on artistic use of colour. Accessibility matters to me, though, so high-contrast and colourblind modes are on my list."
+            "text": "<strong>Colour:</strong> this one’s tricky, since the project leans heavily on artistic use of colour. Accessibility matters to me, though, so high-contrast and colourblind modes are on my list."
           }
         ]
       },
@@ -67,24 +138,41 @@
     "date": "2026-10-13",
     "sections": [
       {
+        "heading": "Content updates",
         "bullets": [
           {
-            "text": "In the <a href=\"/gameboy/\">Game Boy Collection</a>, I swapped in <strong>Castlevania II: Belmont's Revenge</strong> for <strong>Solomon's Club</strong>. I forgot to add an actual Castlevania game to the chapter on Metroidvania! :D I also found Solomon's Club redundant because block puzzlers are already well represented in the Collection, and it has no unique regional or historical story."
+            "text": "In the <a href=\"/gameboy/\">Game Boy Collection</a>, I swapped in <em>Castlevania II: Belmont’s Revenge</em> for <em>Solomon’s Club</em>. I forgot to add an actual Castlevania game to the chapter on Metroidvania! :D"
           },
           {
-            "text": "<strong>The <a href=\"/how-its-made/\">How it's made</a> page is now available.</strong> Here you can learn about who I am, how I create, improve and maintain this project. I also find it very important to be 100% transparent on the use of AI, how I measure site views, my zero-tracking policy, as well as possible ways to financially support the project in the future. Check it out if you get the chance, I appreciate it!"
+            "text": "I also found <em>Solomon’s Club</em> redundant because block puzzlers are already well represented in the Collection, and it has no unique regional or historical story."
           },
+          {
+            "text": "Added <strong>“Hand-written” / “Draft in progress” badges</strong> on the hub and on every Collection page."
+          }
+        ]
+      },
+      {
+        "heading": "<a href=\"/how-its-made/\">How it’s made</a> page added",
+        "bullets": [
+          {
+            "text": "Here you can learn about who I am, how I create, improve and maintain this project."
+          },
+          {
+            "text": "I also find it very important to be 100% transparent on the use of AI, how I measure site views, my zero-tracking policy, as well as possible ways to financially support the project in the future. Check it out if you get the chance, I appreciate it!"
+          }
+        ]
+      },
+      {
+        "heading": "Other updates and improvements",
+        "bullets": [
           {
             "text": "<strong>Version history is now dynamic:</strong> To support a fun new dynamic release timeline graphic, as well as a possible notification service or Discord bot in the future, I converted the version history from static HTML to JSON data."
-          },
-          {
-            "text": "Added <strong>\"Hand-written\" / \"Draft in progress\" badges</strong> on the hub and on every Collection page."
           },
           {
             "text": "<strong>Fonts are now self-hosted</strong>, so visitor IP addresses no longer go to Google."
           },
           {
-            "text": "The <strong>\"Report a mistake\" email links</strong> now fill in the page name in the subject line."
+            "text": "The <strong>“Report a mistake” email links</strong> now fill in the page name in the subject line."
           },
           {
             "text": "<strong>Several styling improvements:</strong> Site navigation has improved both on desktop and mobile browsers. Fine-tuned the platform flourishes for the Game Boy, SNES and DS."
@@ -99,23 +187,41 @@
     "date": "2026-09-21",
     "sections": [
       {
+        "heading": "New Collections available!",
         "bullets": [
           {
-            "text": "<strong>3 new collections added:</strong> The <a href=\"/ds/\">Nintendo DS</a>, <a href=\"/mastersystem/\">Sega Master System</a> and <a href=\"/xbox/\">Microsoft Xbox</a> Collections are now live. They were researched and styled with Claude Cowork (Sonnet 5, High effort), same as before. I'll be rewriting their stories myself over time, just like the original twelve."
+            "text": "The <a href=\"/ds\">Nintendo DS</a>, <a href=\"/mastersystem/\">Sega Master System</a> and <a href=\"/xbox\">Microsoft Xbox</a> Collections are now live."
           },
           {
-            "text": "<strong>Styling overhaul:</strong> Pushing the styling intensity on the 3 new collections made them noticeably bolder than the original set, so I brought that same energy back to the base collections and the hub page.",
-            "sub": [
-              "<strong>CSS cleanup across every theme:</strong> 13 theme stylesheets and the hub stylesheet had leftover duplicate code from the styling passes, now consolidated with no visual changes.",
-              "Added a graphical timeline to the hub page, with clickable platform markers.",
-              "A handful of smaller styling fixes and tweaks throughout."
-            ]
+            "text": "They were researched and styled with Claude Cowork (Sonnet 5, High effort), same as before. I’ll be rewriting their stories myself over time, just like the original twelve."
+          }
+        ]
+      },
+      {
+        "heading": "Styling overhaul",
+        "bullets": [
+          {
+            "text": "Pushing the <strong>styling intensity</strong> on the 3 new collections made them noticeably bolder than the original set, so I brought that same energy back to the base collections and the hub page."
           },
           {
-            "text": "<strong>Simple CMS support:</strong> Added <a href=\"https://github.com/hunvreus/pagescms\">GitHub Pages CMS</a> by Ronan Berder, so I can add and edit content without touching the code.",
-            "sub": [
-              "<strong>Data format migration:</strong> required converting all 12 original platforms' game lists from arrays to named objects."
-            ]
+            "text": "<strong>CSS cleanup across every theme:</strong> 13 theme stylesheets and the hub stylesheet had leftover duplicate code from the styling passes, now consolidated with no visual changes."
+          },
+          {
+            "text": "Added a graphical timeline to the hub page, with clickable platform markers."
+          },
+          {
+            "text": "A handful of smaller styling fixes and tweaks throughout."
+          }
+        ]
+      },
+      {
+        "heading": "Simple CMS support",
+        "bullets": [
+          {
+            "text": "Added <a href=\"https://github.com/hunvreus/pagescms\">GitHub Pages CMS</a> by Ronan Berder, so I can add and edit content without touching the code."
+          },
+          {
+            "text": "Data format migration: required converting all 12 original platforms’ game lists from arrays to named objects."
           }
         ]
       }
@@ -152,16 +258,16 @@
             "text": "Added social links (YouTube, Bluesky, Instagram, Threads, X) to the footer of every page"
           },
           {
-            "text": "Linked the \"Diastro Gaming\" hub logo to the YouTube channel"
+            "text": "Linked the “Diastro Gaming” hub logo to the YouTube channel"
           },
           {
             "text": "Added this version history page, plus a link to it and a version pill on the hub"
           },
           {
-            "text": "Added a \"Back to the shelf\" link to every collection page"
+            "text": "Added a “Back to the shelf” link to every collection page"
           },
           {
-            "text": "Made the curator's note collapsible on every collection page, with a short preview and a \"read more\" toggle"
+            "text": "Made the curator’s note collapsible on every collection page, with a short preview and a “read more” toggle"
           },
           {
             "text": "Reorganized the collection page toolbar: search, result count, and the theme toggle now share a row, with the genre chips moved to their own row below"
@@ -235,7 +341,7 @@
       {
         "bullets": [
           {
-            "text": "Documentation updated to reflect the project's file structure"
+            "text": "Documentation updated to reflect the project’s file structure"
           }
         ]
       }

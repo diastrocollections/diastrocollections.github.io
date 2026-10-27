@@ -89,12 +89,20 @@
   font-weight: 600;
 }
 
-.aim-section>p {
+.aim-section>p,
+.aim-prose p {
   margin: 0;
   font-size: 1.08rem;
   line-height: 1.65;
   color: var(--ink-soft);
   max-width: 68ch;
+}
+
+/* Groups several paragraphs inside one section, spaced like direct children */
+.aim-prose {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .aim-section h3 {

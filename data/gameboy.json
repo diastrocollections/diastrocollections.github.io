@@ -15,16 +15,16 @@
         "title": "Dr. Mario",
         "year": "1990",
         "developer": "Nintendo R&D1",
-        "blurb": "Miyamoto's viruses-and-capsules puzzler trades Tetris's abstraction for color-matching chaos that plays just as well on six-hour batteries."
+        "blurb": "Miyamoto’s viruses-and-capsules puzzler trades Tetris’s abstraction for color-matching chaos that plays just as well on six-hour batteries."
       },
       {
         "title": "Yoshi",
         "year": "1992",
         "developer": "Game Freak",
-        "blurb": "Game Freak's pre-Pokémon puzzler stacks falling enemies between two Marios, rewarding patient column-building over panic. Released in Europe as Mario & Yoshi."
+        "blurb": "Game Freak’s pre-Pokémon puzzler stacks falling enemies between two Marios, rewarding patient column-building over panic. Released in Europe as Mario & Yoshi."
       },
       {
-        "title": "Yoshi's Cookie",
+        "title": "Yoshi’s Cookie",
         "year": "1993",
         "developer": "Tose",
         "blurb": "A gentler row-and-column matching game wrapped in kitchen-themed sprites, proof the puzzle boom went well past Tetris clones."
@@ -51,7 +51,7 @@
         "title": "Tetris Attack",
         "year": "1996",
         "developer": "Intelligent Systems",
-        "blurb": "Panel de Pon's cute cast repackaged around Yoshi, swapping tiles instead of dropping them for one of the sharpest puzzlers on the system."
+        "blurb": "Panel de Pon’s cute cast repackaged around Yoshi, swapping tiles instead of dropping them for one of the sharpest puzzlers on the system."
       },
       {
         "title": "Mole Mania",
@@ -66,7 +66,7 @@
         "blurb": "The original Game Boy Sokoban port, unglamorous but foundational to every crate-pushing puzzler that followed on the system."
       },
       {
-        "title": "Kirby's Star Stacker",
+        "title": "Kirby’s Star Stacker",
         "year": "1997",
         "developer": "HAL Laboratory",
         "blurb": "Kirby swaps platforming for a falling-star matching game with a surprisingly deep chain-combo system."
@@ -77,7 +77,7 @@
     "hue": 100,
     "tag": "Platformer",
     "title": "Mario, Kirby & Wario Platforming Icons",
-    "blurb": "Nintendo's own mascots headline the Game Boy's platforming core, from Mario's cramped launch-window debut to Wario and Kirby's genre-bending spin-offs.",
+    "blurb": "Nintendo’s own mascots headline the Game Boy’s platforming core, from Mario’s cramped launch-window debut to Wario and Kirby’s genre-bending spin-offs.",
     "games": [
       {
         "title": "Super Mario Land",
@@ -89,40 +89,40 @@
         "title": "Super Mario Land 2: 6 Golden Coins",
         "year": "1992",
         "developer": "Nintendo R&D1",
-        "blurb": "A sprawling, six-world successor that introduces Wario and looks almost unrecognizable next to its predecessor's stiffness."
+        "blurb": "A sprawling, six-world successor that introduces Wario and looks almost unrecognizable next to its predecessor’s stiffness."
       },
       {
         "title": "Wario Land: Super Mario Land 3",
         "year": "1994",
         "developer": "Nintendo R&D1",
-        "blurb": "Wario's solo debut turns Mario's formula greedy, rewarding treasure-hoarding over flag-pole speedrunning."
+        "blurb": "Wario’s solo debut turns Mario’s formula greedy, rewarding treasure-hoarding over flag-pole speedrunning."
       },
       {
         "title": "Wario Land II",
         "year": "1998",
         "developer": "Nintendo R&D1",
-        "blurb": "An unkillable Wario game where getting hit changes his form instead of costing a life, one of the series' cleverest twists."
+        "blurb": "An unkillable Wario game where getting hit changes his form instead of costing a life, one of the series’ cleverest twists."
       },
       {
-        "title": "Kirby's Dream Land",
+        "title": "Kirby’s Dream Land",
         "year": "1992",
         "developer": "HAL Laboratory",
-        "blurb": "The pink puffball's debut is short, breezy, and unmistakably confident about what makes Kirby fun."
+        "blurb": "The pink puffball’s debut is short, breezy, and unmistakably confident about what makes Kirby fun."
       },
       {
-        "title": "Kirby's Dream Land 2",
+        "title": "Kirby’s Dream Land 2",
         "year": "1995",
         "developer": "HAL Laboratory",
-        "blurb": "Adds animal buddies and copy abilities together for the first time, doubling the original's scope without losing its charm."
+        "blurb": "Adds animal buddies and copy abilities together for the first time, doubling the original’s scope without losing its charm."
       },
       {
-        "title": "Kirby's Pinball Land",
+        "title": "Kirby’s Pinball Land",
         "year": "1993",
         "developer": "HAL Laboratory",
         "blurb": "Three interconnected pinball tables turn Kirby himself into the ball, a genre swap that works better than it should."
       },
       {
-        "title": "Kirby's Block Ball",
+        "title": "Kirby’s Block Ball",
         "year": "1996",
         "developer": "HAL Laboratory",
         "blurb": "Breakout by way of Kirby, with copy-ability power-ups that keep the paddle-and-brick loop from ever going stale."
@@ -137,13 +137,13 @@
         "title": "Donkey Kong Land",
         "year": "1995",
         "developer": "Rare",
-        "blurb": "Rare compresses the SNES Donkey Kong Country's silhouette-and-shading style into monochrome without losing the series' momentum."
+        "blurb": "Rare compresses the SNES Donkey Kong Country’s silhouette-and-shading style into monochrome without losing the series’ momentum."
       },
       {
         "title": "Donkey Kong Land 2",
         "year": "1996",
         "developer": "Rare",
-        "blurb": "Widely considered the trilogy's high point, pairing Diddy and Dixie across levels built around real platforming ideas, not downscaled ports."
+        "blurb": "Widely considered the trilogy’s high point, pairing Diddy and Dixie across levels built around real platforming ideas, not downscaled ports."
       }
     ]
   },
@@ -157,7 +157,7 @@
         "title": "Kid Dracula",
         "year": "1993",
         "developer": "Konami",
-        "blurb": "Castlevania's mascot spin-off plays it for laughs, a candy-colored shooter-platformer that didn't reach the West for decades."
+        "blurb": "Castlevania’s mascot spin-off plays it for laughs, a candy-colored shooter-platformer that didn’t reach the West for decades."
       },
       {
         "title": "Trip World",
@@ -166,16 +166,16 @@
         "blurb": "A fever dream of a platformer starring a rabbit named Sonic, prized today for sprite work that pushes the hardware harder than almost anything else on it — released in Japan and Europe, but never in North America."
       },
       {
-        "title": "Gargoyle's Quest",
+        "title": "Gargoyle’s Quest",
         "year": "1990",
         "developer": "Capcom",
-        "blurb": "Firebrand from Ghosts 'n Goblins gets his own overworld-and-dungeon adventure, laying groundwork for the Metroidvania genre before the term existed."
+        "blurb": "Firebrand from Ghosts ’n Goblins gets his own overworld-and-dungeon adventure, laying groundwork for the Metroidvania genre before the term existed."
       },
       {
         "title": "Kid Icarus: Of Myths and Monsters",
         "year": "1991",
         "developer": "Nintendo R&D1",
-        "blurb": "Pit's only Game Boy outing pairs vertical platforming with shop-based upgrades, a sequel Japan didn't see until the 3DS era."
+        "blurb": "Pit’s only Game Boy outing pairs vertical platforming with shop-based upgrades, a sequel Japan didn’t see until the 3DS era."
       },
       {
         "title": "Bionic Commando",
@@ -184,10 +184,10 @@
         "blurb": "The grapple-hook-only action game translates surprisingly well to a smaller screen, forcing precise swings through tight corridors."
       },
       {
-        "title": "Mega Man: Dr. Wily's Revenge",
+        "title": "Mega Man: Dr. Wily’s Revenge",
         "year": "1991",
         "developer": "Minakuchi Engineering",
-        "blurb": "The Blue Bomber's handheld debut remixes bosses from the first two NES games into new stages."
+        "blurb": "The Blue Bomber’s handheld debut remixes bosses from the first two NES games into new stages."
       },
       {
         "title": "Mega Man V",
@@ -199,13 +199,13 @@
         "title": "Batman: The Video Game",
         "year": "1990",
         "developer": "Sunsoft",
-        "blurb": "Sunsoft's take on the Tim Burton film swaps the NES version's grapple gun for tighter, punchier combat."
+        "blurb": "Sunsoft’s take on the Tim Burton film swaps the NES version’s grapple gun for tighter, punchier combat."
       },
       {
         "title": "DuckTales 2",
         "year": "1993",
         "developer": "Capcom",
-        "blurb": "Scrooge McDuck's pogo-cane platforming returns for a sequel that never lost the NES original's precision."
+        "blurb": "Scrooge McDuck’s pogo-cane platforming returns for a sequel that never lost the NES original’s precision."
       }
     ]
   },
@@ -219,25 +219,25 @@
         "title": "Metroid II: Return of Samus",
         "year": "1991",
         "developer": "Nintendo R&D1",
-        "blurb": "Samus hunts every Metroid on SR388 in a claustrophobic, score-tracking sequel that quietly reshaped the series' DNA."
+        "blurb": "Samus hunts every Metroid on SR388 in a claustrophobic, score-tracking sequel that quietly reshaped the series’ DNA."
       },
       {
-        "title": "The Legend of Zelda: Link's Awakening",
+        "title": "The Legend of Zelda: Link’s Awakening",
         "year": "1993",
         "developer": "Nintendo R&D1",
         "blurb": "A full console-caliber Zelda squeezed onto a cartridge, with a surreal dream-island story unlike anything else in the series."
       },
       {
-        "title": "Castlevania II: Belmont's Revenge",
+        "title": "Castlevania II: Belmont’s Revenge",
         "year": "1991",
         "developer": "Konami",
-        "blurb": "Konami's course-correction after the stiff, punishing original Castlevania: The Adventure. Split into four selectable stages before a final gauntlet, it moves faster, jumps better, and is generally regarded as the strongest of the series' three original Game Boy outings."
+        "blurb": "Konami’s course-correction after the stiff, punishing original Castlevania: The Adventure. Split into four selectable stages before a final gauntlet, it moves faster, jumps better, and is generally regarded as the strongest of the series’ three original Game Boy outings."
       },
       {
         "title": "Blaster Master Boy",
         "year": "1992",
         "developer": "Sunsoft Osaka",
-        "blurb": "Known as Bomber King in Japan, this loosely-related spinoff swaps the NES original's tank for on-foot dungeon crawling."
+        "blurb": "Known as Bomber King in Japan, this loosely-related spinoff swaps the NES original’s tank for on-foot dungeon crawling."
       },
       {
         "title": "The Sword of Hope",
@@ -249,7 +249,7 @@
         "title": "The Sword of Hope II",
         "year": "1996",
         "developer": "Kemco",
-        "blurb": "A sequel that expands the original's text-adventure structure — Kemco released it in Japan in 1992 but held the English version back until 1996, a four-year wait for the West."
+        "blurb": "A sequel that expands the original’s text-adventure structure — Kemco released it in Japan in 1992 but held the English version back until 1996, a four-year wait for the West."
       }
     ]
   },
@@ -257,25 +257,25 @@
     "hue": 187,
     "tag": "RPG",
     "title": "Role-Playing Adventures",
-    "blurb": "Square's SaGa-era experiments and the launch of Pokémon anchor a genre most people don't associate with the original Game Boy at all.",
+    "blurb": "Square’s SaGa-era experiments and the launch of Pokémon anchor a genre most people don’t associate with the original Game Boy at all.",
     "games": [
       {
         "title": "The Final Fantasy Legend",
         "year": "1990",
         "developer": "Square",
-        "blurb": "Known in Japan as Makai Toushi SaGa, this is the game that started the SaGa series and brought its brutal, mutation-driven design West under the Final Fantasy name — though 'West' meant North America only; none of the three Game Boy SaGa games got a European release until a 2020 Switch collection."
+        "blurb": "Known in Japan as Makai Toushi SaGa, this is the game that started the SaGa series and brought its brutal, mutation-driven design West under the Final Fantasy name — though “West” meant North America only; none of the three Game Boy SaGa games got a European release until a 2020 Switch collection."
       },
       {
         "title": "Final Fantasy Legend II",
         "year": "1991",
         "developer": "Square",
-        "blurb": "A stronger, more ambitious SaGa sequel with a multi-generational quest across parallel worlds — another entry Europe wouldn't officially see until decades later."
+        "blurb": "A stronger, more ambitious SaGa sequel with a multi-generational quest across parallel worlds — another entry Europe wouldn’t officially see until decades later."
       },
       {
         "title": "Final Fantasy Legend III",
         "year": "1993",
         "developer": "Square",
-        "blurb": "The trilogy's closer adds time travel and its deepest customization yet, a fitting send-off for a Game Boy SaGa era that Europe never got to play on original hardware."
+        "blurb": "The trilogy’s closer adds time travel and its deepest customization yet, a fitting send-off for a Game Boy SaGa era that Europe never got to play on original hardware."
       },
       {
         "title": "Final Fantasy Adventure",
@@ -296,36 +296,36 @@
         "blurb": "An anime-inspired remix of Red and Blue with a permanently-following Pikachu, runs on the original grey brick just fine."
       },
       {
-        "title": "Rolan's Curse",
+        "title": "Rolan’s Curse",
         "year": "1990",
         "developer": "NMK",
-        "blurb": "An overhead action-RPG about rescuing a princess that's tougher and stranger than its cute sprites suggest."
+        "blurb": "An overhead action-RPG about rescuing a princess that’s tougher and stranger than its cute sprites suggest."
       },
       {
-        "title": "Rolan's Curse II",
+        "title": "Rolan’s Curse II",
         "year": "1992",
         "developer": "NMK",
-        "blurb": "A direct sequel that widens the original's action-RPG loop with more weapons and a larger map."
+        "blurb": "A direct sequel that widens the original’s action-RPG loop with more weapons and a larger map."
       }
     ]
   },
   {
     "hue": 216,
     "tag": "Shooter",
-    "title": "Shoot-'Em-Ups",
+    "title": "Shoot-’Em-Ups",
     "blurb": "Arcade precision shrunk to four inches of screen — side-scrolling and vertical shooters that trade nothing for the smaller display.",
     "games": [
       {
         "title": "R-Type",
         "year": "1991",
         "developer": "Bits Studios",
-        "blurb": "Irem's punishing arcade shooter loses none of its bite in the downsize, memorization and the Force pod intact."
+        "blurb": "Irem’s punishing arcade shooter loses none of its bite in the downsize, memorization and the Force pod intact."
       },
       {
         "title": "R-Type II",
         "year": "1992",
         "developer": "Bits Studios",
-        "blurb": "A worthy sequel that keeps the original's precision-or-death philosophy while introducing new enemy patterns."
+        "blurb": "A worthy sequel that keeps the original’s precision-or-death philosophy while introducing new enemy patterns."
       },
       {
         "title": "Gradius: The Interstellar Assault",
@@ -343,25 +343,25 @@
         "title": "Solar Striker",
         "year": "1990",
         "developer": "Nintendo R&D1",
-        "blurb": "Nintendo's own vertical shooter is basic by design, a clean genre entry from the system's launch year."
+        "blurb": "Nintendo’s own vertical shooter is basic by design, a clean genre entry from the system’s launch year."
       },
       {
         "title": "Sagaia",
         "year": "1991",
         "developer": "Taito",
-        "blurb": "The Game Boy port of Darius II strips the arcade's triple-monitor spectacle down to one screen without losing its fish-shaped bosses."
+        "blurb": "The Game Boy port of Darius II strips the arcade’s triple-monitor spectacle down to one screen without losing its fish-shaped bosses."
       },
       {
         "title": "Trax",
         "year": "1991",
         "developer": "HAL Laboratory",
-        "blurb": "An overhead tank shooter with maze-like stages, one of HAL's odder handheld contributions."
+        "blurb": "An overhead tank shooter with maze-like stages, one of HAL’s odder handheld contributions."
       },
       {
         "title": "Parodius",
         "year": "1991",
         "developer": "Konami",
-        "blurb": "Konami's Gradius parody swaps spaceships for penguins and octopuses, released only in Japan and Europe."
+        "blurb": "Konami’s Gradius parody swaps spaceships for penguins and octopuses, released only in Japan and Europe."
       },
       {
         "title": "Battle Unit Zeoth",
@@ -381,7 +381,7 @@
         "title": "Track & Field",
         "year": "1992",
         "developer": "Konami",
-        "blurb": "The button-mashing arcade original translates awkwardly well to the Game Boy's cramped D-pad, sprint events and all."
+        "blurb": "The button-mashing arcade original translates awkwardly well to the Game Boy’s cramped D-pad, sprint events and all."
       },
       {
         "title": "Tennis",
@@ -399,19 +399,19 @@
         "title": "Blades of Steel",
         "year": "1991",
         "developer": "Konami",
-        "blurb": "Konami's arcade hockey game keeps its fighting mini-game intact even at handheld scale."
+        "blurb": "Konami’s arcade hockey game keeps its fighting mini-game intact even at handheld scale."
       },
       {
         "title": "Double Dribble: 5 on 5",
         "year": "1991",
         "developer": "Konami",
-        "blurb": "Released in Europe, a full three years later, as Hyper Dunk, this overhead basketball game is one of the system's few genuine team-sports entries."
+        "blurb": "Released in Europe, a full three years later, as Hyper Dunk, this overhead basketball game is one of the system’s few genuine team-sports entries."
       },
       {
         "title": "International Superstar Soccer",
         "year": "1998",
         "developer": "Konami Computer Entertainment Nagoya",
-        "blurb": "A late-era soccer game (Japan's World Soccer GB) that packs surprisingly readable player sprites into a top-down pitch."
+        "blurb": "A late-era soccer game (Japan’s World Soccer GB) that packs surprisingly readable player sprites into a top-down pitch."
       }
     ]
   },
@@ -425,7 +425,7 @@
         "title": "F-1 Race",
         "year": "1991",
         "developer": "Nintendo R&D1",
-        "blurb": "Nintendo's own Formula One game supports the four-player link cable adapter, a rare multiplayer racing option on original hardware. Europe followed about eight months after North America."
+        "blurb": "Nintendo’s own Formula One game supports the four-player link cable adapter, a rare multiplayer racing option on original hardware. Europe followed about eight months after North America."
       },
       {
         "title": "Motocross Maniacs",
@@ -437,19 +437,19 @@
         "title": "Super R.C. Pro-Am",
         "year": "1991",
         "developer": "Rare",
-        "blurb": "Rare's top-down racer keeps the NES original's weapon pickups and split-screen tension in a portable package. Europe followed about ten months after North America."
+        "blurb": "Rare’s top-down racer keeps the NES original’s weapon pickups and split-screen tension in a portable package. Europe followed about ten months after North America."
       },
       {
         "title": "Wave Race",
         "year": "1992",
         "developer": "Nintendo EAD / Pax Softnica",
-        "blurb": "A top-down jet-ski racer entirely unrelated to the later N64 game of the same name, built around slalom gates and wake management. Europe's release lagged an extraordinary five years behind North America's, not arriving until 1997."
+        "blurb": "A top-down jet-ski racer entirely unrelated to the later N64 game of the same name, built around slalom gates and wake management. Europe’s release lagged an extraordinary five years behind North America’s, not arriving until 1997."
       },
       {
         "title": "Chase H.Q.",
         "year": "1990",
         "developer": "Bits Corporation",
-        "blurb": "Taito's pursuit-driving arcade game becomes a countdown-timer chase across a scrolling highway."
+        "blurb": "Taito’s pursuit-driving arcade game becomes a countdown-timer chase across a scrolling highway."
       },
       {
         "title": "F-1 Spirit",
@@ -462,7 +462,7 @@
   {
     "hue": 303,
     "tag": "Fighting",
-    "title": "Fighting & Beat-'Em-Up",
+    "title": "Fighting & Beat-’Em-Up",
     "blurb": "Console-fighter ports that trimmed frames and colors but rarely trimmed ambition — including two Mortal Kombat games that kept their fatalities.",
     "games": [
       {
@@ -481,25 +481,25 @@
         "title": "Samurai Shodown",
         "year": "1994",
         "developer": "Takara",
-        "blurb": "SNK's weapon-based fighter loses some frames but keeps its slower, weightier combat intact."
+        "blurb": "SNK’s weapon-based fighter loses some frames but keeps its slower, weightier combat intact."
       },
       {
-        "title": "The King of Fighters '95",
+        "title": "The King of Fighters ’95",
         "year": "1997",
         "developer": "Takara",
-        "blurb": "A team-based SNK fighter port that did get a North American release after all, published by Nintendo in 1997, a year after Takara's original Japanese version."
+        "blurb": "A team-based SNK fighter port that did get a North American release after all, published by Nintendo in 1997, a year after Takara’s original Japanese version."
       },
       {
         "title": "Killer Instinct",
         "year": "1995",
         "developer": "Rare",
-        "blurb": "Rare's combo-heavy arcade fighter arrives with its announcer voice clips intact, an audio flex for 1995 handheld hardware."
+        "blurb": "Rare’s combo-heavy arcade fighter arrives with its announcer voice clips intact, an audio flex for 1995 handheld hardware."
       },
       {
         "title": "Battletoads",
         "year": "1991",
         "developer": "Rare",
-        "blurb": "Half beat-em-up, half punishing platformer, this Game Boy-exclusive Battletoads keeps the series' reputation for brutal difficulty intact."
+        "blurb": "Half beat-em-up, half punishing platformer, this Game Boy-exclusive Battletoads keeps the series’ reputation for brutal difficulty intact."
       }
     ]
   },
@@ -513,7 +513,7 @@
         "title": "Teenage Mutant Ninja Turtles: Fall of the Foot Clan",
         "year": "1990",
         "developer": "Konami",
-        "blurb": "A single-Turtle beat-em-up that trades the arcade game's chaos for tighter, more deliberate combat. Released in Europe as Teenage Mutant Hero Turtles: Fall of the Foot Clan, following the same 'Hero Turtles' rebrand the franchise carried across Europe throughout this console generation."
+        "blurb": "A single-Turtle beat-em-up that trades the arcade game’s chaos for tighter, more deliberate combat. Released in Europe as Teenage Mutant Hero Turtles: Fall of the Foot Clan, following the same “Hero Turtles” rebrand the franchise carried across Europe throughout this console generation."
       },
       {
         "title": "Double Dragon II",
@@ -525,7 +525,7 @@
         "title": "Bubble Bobble",
         "year": "1991",
         "developer": "Taito",
-        "blurb": "Bub and Bob's bubble-trapping platformer loses none of its cooperative charm in single-screen handheld form."
+        "blurb": "Bub and Bob’s bubble-trapping platformer loses none of its cooperative charm in single-screen handheld form."
       },
       {
         "title": "Pac-Man",
@@ -549,13 +549,13 @@
         "title": "Spy vs Spy: Operation Boobytrap",
         "year": "1992",
         "developer": "First Star Software",
-        "blurb": "Mad Magazine's black-and-white spies get a trap-laying handheld adaptation of the split-screen classic."
+        "blurb": "Mad Magazine’s black-and-white spies get a trap-laying handheld adaptation of the split-screen classic."
       },
       {
         "title": "Darkwing Duck",
         "year": "1993",
         "developer": "Capcom",
-        "blurb": "Capcom's Disney Afternoon platforming expertise extends to the masked mallard, gas-gun and all."
+        "blurb": "Capcom’s Disney Afternoon platforming expertise extends to the masked mallard, gas-gun and all."
       },
       {
         "title": "The Bugs Bunny Crazy Castle",
@@ -573,7 +573,7 @@
         "title": "Alien 3",
         "year": "1993",
         "developer": "Bits Studios",
-        "blurb": "A grim, atmospheric side-scroller that leans into the film's prison-planet dread more than most licensed movie games bother to."
+        "blurb": "A grim, atmospheric side-scroller that leans into the film’s prison-planet dread more than most licensed movie games bother to."
       },
       {
         "title": "Home Alone",
@@ -599,25 +599,25 @@
         "title": "Bomberman GB",
         "year": "1998",
         "developer": "Hudson Soft",
-        "blurb": "A single-player-focused Bomberman entry that trades the series' multiplayer chaos for puzzle-like stage design. Confusingly, this is a different game from 1994's Japanese Bomberman GB (which the West got that same year as Wario Blast: Featuring Bomberman!, below) — this one is the West's rename of Japan's 1998 sequel, Bomberman GB 2."
+        "blurb": "A single-player-focused Bomberman entry that trades the series’ multiplayer chaos for puzzle-like stage design. Confusingly, this is a different game from 1994’s Japanese Bomberman GB (which the West got that same year as Wario Blast: Featuring Bomberman!, below) — this one is the West’s rename of Japan’s 1998 sequel, Bomberman GB 2."
       },
       {
         "title": "Wario Blast: Featuring Bomberman!",
         "year": "1994",
         "developer": "Hudson Soft",
-        "blurb": "Wario crashes Bomberman's world for a link-cable multiplayer bout wrapped around the classic bombing formula."
+        "blurb": "Wario crashes Bomberman’s world for a link-cable multiplayer bout wrapped around the classic bombing formula."
       },
       {
-        "title": "Mario's Picross",
+        "title": "Mario’s Picross",
         "year": "1995",
         "developer": "Jupiter",
-        "blurb": "Nonogram puzzles hosted by Mario, the game that quietly built the West's first real audience for picross."
+        "blurb": "Nonogram puzzles hosted by Mario, the game that quietly built the West’s first real audience for picross."
       },
       {
         "title": "Picross 2",
         "year": "1996",
         "developer": "Jupiter",
-        "blurb": "A Japan-only sequel that never left the region despite the original's Western release, more of the same razor-sharp grid logic."
+        "blurb": "A Japan-only sequel that never left the region despite the original’s Western release, more of the same razor-sharp grid logic."
       },
       {
         "title": "Game Boy Camera",
@@ -667,13 +667,13 @@
         "title": "Kaeru no Tame ni Kane wa Naru",
         "year": "1992",
         "developer": "Nintendo / Intelligent Systems",
-        "blurb": "Japan-only precursor to Link's Awakening, sharing its engine and even some sound effects with Nintendo's later Zelda game."
+        "blurb": "Japan-only precursor to Link’s Awakening, sharing its engine and even some sound effects with Nintendo’s later Zelda game."
       },
       {
         "title": "Bubble Ghost",
         "year": "1990",
         "developer": "Opera House",
-        "blurb": "A ghost blows a bubble through obstacle-filled rooms in this delicate physics puzzler, composer Hitoshi Sakimoto's first video game score. Europe didn't get it until 1992, well over a year after North America."
+        "blurb": "A ghost blows a bubble through obstacle-filled rooms in this delicate physics puzzler, composer Hitoshi Sakimoto’s first video game score. Europe didn’t get it until 1992, well over a year after North America."
       },
       {
         "title": "Chalvo 55",
@@ -688,10 +688,10 @@
         "blurb": "A loose handheld reinterpretation of the NES trilogy, built as a fast side-scrolling action game rather than a direct port."
       },
       {
-        "title": "Boomer's Adventure in ASMIK World",
+        "title": "Boomer’s Adventure in ASMIK World",
         "year": "1990",
         "developer": "Asmik",
-        "blurb": "An obscure top-down action-adventure with RPG-lite elements, one of the system's truest deep-cut curios."
+        "blurb": "An obscure top-down action-adventure with RPG-lite elements, one of the system’s truest deep-cut curios."
       }
     ]
   }

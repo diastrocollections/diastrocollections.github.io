@@ -43,7 +43,7 @@
       '<strong>Hand-written:</strong> This Collection is hand-written by Jesper and does not contain any ' +
       'AI-generated text.</p>' +
       '<p class="status-more">You can learn more about the use of AI in this project on the ' +
-      '<a href="' + base + 'how-its-made/#ai">How it\'s made</a> page.</p>' +
+      '<a href="' + base + 'how-its-made/#ai">How it’s made</a> page.</p>' +
       '</div>' +
       '</div>';
   }

@@ -3,19 +3,19 @@
     "hue": 280,
     "tag": "Pokémon",
     "title": "Pokémon & Monster-Collecting",
-    "blurb": "The genre that defined the Game Boy Color commercially — Pokémon's second generation, plus the wave of monster-collecting imitators it inspired.",
+    "blurb": "The genre that defined the Game Boy Color commercially — Pokémon’s second generation, plus the wave of monster-collecting imitators it inspired.",
     "games": [
       {
         "title": "Pokémon Gold and Silver",
         "year": "1999",
         "developer": "Game Freak",
-        "blurb": "The sequel that added a whole new region, a day/night cycle, and breeding, still argued by many longtime fans to be the series' peak."
+        "blurb": "The sequel that added a whole new region, a day/night cycle, and breeding, still argued by many longtime fans to be the series’ peak."
       },
       {
         "title": "Pokémon Crystal",
         "year": "2000",
         "developer": "Game Freak",
-        "blurb": "Adds an animated player sprite and a Suicune-chasing storyline to Gold and Silver's Johto, the definitive way to play the generation."
+        "blurb": "Adds an animated player sprite and a Suicune-chasing storyline to Gold and Silver’s Johto, the definitive way to play the generation."
       },
       {
         "title": "Pokémon Trading Card Game",
@@ -27,7 +27,7 @@
         "title": "Pokémon Pinball",
         "year": "1999",
         "developer": "Jupiter Corp. / HAL Laboratory",
-        "blurb": "Built on Kirby's Pinball Land's engine, with a built-in Rumble Pak and all 151 original Pokémon to catch mid-flipper-run. Europe's release lagged more than a year behind North America's — the widest gap of any Pokémon title on this list."
+        "blurb": "Built on Kirby’s Pinball Land’s engine, with a built-in Rumble Pak and all 151 original Pokémon to catch mid-flipper-run. Europe’s release lagged more than a year behind North America’s — the widest gap of any Pokémon title on this list."
       },
       {
         "title": "Pokémon Puzzle Challenge",
@@ -39,7 +39,7 @@
         "title": "Dragon Warrior Monsters",
         "year": "1998",
         "developer": "Tose",
-        "blurb": "Enix's answer to Pokémon, breeding and battling monsters years before “monster tamer” became its own crowded genre."
+        "blurb": "Enix’s answer to Pokémon, breeding and battling monsters years before “monster tamer” became its own crowded genre."
       },
       {
         "title": "Dragon Warrior Monsters 2",
@@ -57,7 +57,7 @@
         "title": "Robopon: Sun Version",
         "year": "2000",
         "developer": "Hudson Soft",
-        "blurb": "A robot-collecting RPG with a battle-and-trade hook nearly identical to Pokémon's, split across Sun and Star versions."
+        "blurb": "A robot-collecting RPG with a battle-and-trade hook nearly identical to Pokémon’s, split across Sun and Star versions."
       }
     ]
   },
@@ -65,7 +65,7 @@
     "hue": 309,
     "tag": "Zelda",
     "title": "Zelda & Nintendo Action-Adventure",
-    "blurb": "Nintendo's first color Zelda outing anchors a small but essential chapter of first-party handheld adventure design.",
+    "blurb": "Nintendo’s first color Zelda outing anchors a small but essential chapter of first-party handheld adventure design.",
     "games": [
       {
         "title": "The Legend of Zelda: Oracle of Seasons",
@@ -83,10 +83,10 @@
         "title": "Wario Land 3",
         "year": "2000",
         "developer": "Nintendo R&D1",
-        "blurb": "A structurally strange Wario game with no game-over state, where treasure and time-of-day mechanics reshape levels you've already cleared."
+        "blurb": "A structurally strange Wario game with no game-over state, where treasure and time-of-day mechanics reshape levels you’ve already cleared."
       },
       {
-        "title": "Kirby Tilt 'n' Tumble",
+        "title": "Kirby Tilt ’n’ Tumble",
         "year": "2001",
         "developer": "HAL Laboratory / Nintendo R&D2",
         "blurb": "A cartridge with a built-in tilt sensor, years before motion controls were a mainstream pitch."
@@ -103,13 +103,13 @@
     "hue": 338,
     "tag": "Platformer",
     "title": "Platformers",
-    "blurb": "From Rare's prolific Nintendo-published run to WayForward's earliest work, the GBC's platforming chapter is stacked with talent that would define handheld games for a decade after.",
+    "blurb": "From Rare’s prolific Nintendo-published run to WayForward’s earliest work, the GBC’s platforming chapter is stacked with talent that would define handheld games for a decade after.",
     "games": [
       {
         "title": "Shantae",
         "year": "2002",
         "developer": "WayForward Technologies",
-        "blurb": "Released so late in the system's life almost nobody saw it at the time, now considered one of the best-looking games ever squeezed onto the hardware."
+        "blurb": "Released so late in the system’s life almost nobody saw it at the time, now considered one of the best-looking games ever squeezed onto the hardware."
       },
       {
         "title": "Super Mario Bros. Deluxe",
@@ -121,13 +121,13 @@
         "title": "Donkey Kong Country",
         "year": "2000",
         "developer": "Rare",
-        "blurb": "Rare's SNES benchmark compressed into a handheld cart, its pre-rendered look holding up far better than it should on this screen."
+        "blurb": "Rare’s SNES benchmark compressed into a handheld cart, its pre-rendered look holding up far better than it should on this screen."
       },
       {
         "title": "Rayman",
         "year": "2000",
         "developer": "Ubisoft",
-        "blurb": "The limbless platforming icon's only Game Boy Color outing, built from the ground up rather than ported down."
+        "blurb": "The limbless platforming icon’s only Game Boy Color outing, built from the ground up rather than ported down."
       },
       {
         "title": "Toki Tori",
@@ -151,7 +151,7 @@
         "title": "Bionic Commando: Elite Forces",
         "year": "2000",
         "developer": "Nintendo Software Technology",
-        "blurb": "A grapple-swinging platformer built by Nintendo's own North American studio under license from Capcom."
+        "blurb": "A grapple-swinging platformer built by Nintendo’s own North American studio under license from Capcom."
       },
       {
         "title": "Wendy: Every Witch Way",
@@ -160,16 +160,16 @@
         "blurb": "A gravity-flipping platformer starring a teenage witch, an early sign of the studio talent that would later make Shantae."
       },
       {
-        "title": "Conker's Pocket Tales",
+        "title": "Conker’s Pocket Tales",
         "year": "1999",
         "developer": "Rare",
         "blurb": "A cutesy, family-friendly prequel to the notoriously crude N64 game, unrecognizable in tone from what Conker would become."
       },
       {
-        "title": "Disney's Tarzan",
+        "title": "Disney’s Tarzan",
         "year": "1999",
         "developer": "Digital Eclipse",
-        "blurb": "Digital Eclipse's first wholly original game rather than a port, built in a famously tight three-month turnaround."
+        "blurb": "Digital Eclipse’s first wholly original game rather than a port, built in a famously tight three-month turnaround."
       }
     ]
   },
@@ -177,7 +177,7 @@
     "hue": 7,
     "tag": "Sports",
     "title": "Sports",
-    "blurb": "Nintendo's own handheld-companion sports duo headlines a chapter of games built as their own thing, not console ports squeezed down.",
+    "blurb": "Nintendo’s own handheld-companion sports duo headlines a chapter of games built as their own thing, not console ports squeezed down.",
     "games": [
       {
         "title": "Mario Golf",
@@ -201,19 +201,19 @@
         "title": "All-Star Baseball 2000",
         "year": "1999",
         "developer": "Realtime Associates",
-        "blurb": "A separately-built handheld entry in Acclaim's baseball series, developed apart from its console namesake."
+        "blurb": "A separately-built handheld entry in Acclaim’s baseball series, developed apart from its console namesake."
       },
       {
         "title": "NBA Jam 2001",
         "year": "2000",
         "developer": "Digital Creations",
-        "blurb": "Arcade two-on-two basketball with the series' signature exaggerated dunks, shrunk down without losing its over-the-top energy."
+        "blurb": "Arcade two-on-two basketball with the series’ signature exaggerated dunks, shrunk down without losing its over-the-top energy."
       },
       {
         "title": "Pocket Bowling",
         "year": "1999",
         "developer": "Jaleco",
-        "blurb": "A GBC launch-window title that keeps ten-pin bowling's rhythm intact despite the tiny screen."
+        "blurb": "A GBC launch-window title that keeps ten-pin bowling’s rhythm intact despite the tiny screen."
       }
     ]
   },
@@ -224,13 +224,13 @@
     "blurb": "Five ways to go fast, from a Disney-branded kart racer to a rally sim ported down from PC and PS1.",
     "games": [
       {
-        "title": "V-Rally: Edition '99",
+        "title": "V-Rally: Edition ’99",
         "year": "1999",
         "developer": "Bit Managers",
-        "blurb": "A rally racer built around Infogrames' PC/console series, released in Europe as V-Rally: Championship Edition."
+        "blurb": "A rally racer built around Infogrames’ PC/console series, released in Europe as V-Rally: Championship Edition."
       },
       {
-        "title": "Mickey's Racing Adventure",
+        "title": "Mickey’s Racing Adventure",
         "year": "1999",
         "developer": "Rare",
         "blurb": "A kart racer starring Mickey Mouse, built by Rare during their prolific late-90s Nintendo-published handheld run."
@@ -259,10 +259,10 @@
     "hue": 65,
     "tag": "Action",
     "title": "Fighting & Action",
-    "blurb": "Stealth, survival horror, and one very famous case of a handheld game trading on a name that wasn't quite its own.",
+    "blurb": "Stealth, survival horror, and one very famous case of a handheld game trading on a name that wasn’t quite its own.",
     "games": [
       {
-        "title": "Street Fighter Alpha: Warriors' Dreams",
+        "title": "Street Fighter Alpha: Warriors’ Dreams",
         "year": "1999",
         "developer": "Crawfish Interactive",
         "blurb": "A single-player-only conversion of the arcade fighter, without link-cable versus but with the full roster and move sets intact."
@@ -271,13 +271,13 @@
         "title": "Metal Gear: Ghost Babel",
         "year": "2000",
         "developer": "Konami Computer Entertainment Japan",
-        "blurb": "Released in the West simply as “Metal Gear Solid” to trade on the PS1 game's name, this is actually a wholly separate, original stealth game built for the handheld. The Japanese and European cartridges also included a bonus in-game radio broadcast that Konami quietly cut from the North American release."
+        "blurb": "Released in the West simply as “Metal Gear Solid” to trade on the PS1 game’s name, this is actually a wholly separate, original stealth game built for the handheld. The Japanese and European cartridges also included a bonus in-game radio broadcast that Konami quietly cut from the North American release."
       },
       {
         "title": "Perfect Dark",
         "year": "2000",
         "developer": "Rare",
-        "blurb": "A top-down action game bearing the N64 shooter's name and characters but built as its own distinct handheld experience."
+        "blurb": "A top-down action game bearing the N64 shooter’s name and characters but built as its own distinct handheld experience."
       },
       {
         "title": "Duke Nukem",
@@ -298,10 +298,10 @@
         "blurb": "A from-scratch handheld build of the survival-horror series, developed separately from the console/PC version by the same publisher."
       },
       {
-        "title": "John Romero's Daikatana",
+        "title": "John Romero’s Daikatana",
         "year": "2000",
         "developer": "Will",
-        "blurb": "The infamously troubled PC shooter's handheld spinoff plays it as a straightforward action game, and quietly outshines its console namesake's reputation. Europe got the only proper retail release anywhere in the world; Japan's release came a year later only through a Nintendo Power download kiosk, and North America's version was cancelled outright."
+        "blurb": "The infamously troubled PC shooter’s handheld spinoff plays it as a straightforward action game, and quietly outshines its console namesake’s reputation. Europe got the only proper retail release anywhere in the world; Japan’s release came a year later only through a Nintendo Power download kiosk, and North America’s version was cancelled outright."
       }
     ]
   },
@@ -333,13 +333,13 @@
         "title": "Pocket Bomberman",
         "year": "1998",
         "developer": "Hudson Soft",
-        "blurb": "A GBC-launch color re-release of a 1997 monochrome Bomberman puzzle-platformer built by the series' own developer."
+        "blurb": "A GBC-launch color re-release of a 1997 monochrome Bomberman puzzle-platformer built by the series’ own developer."
       },
       {
         "title": "Puchi Carat",
         "year": "1999",
         "developer": "Taito",
-        "blurb": "An obscure falling-jewel puzzler from Taito's deep catalog, rarely mentioned outside dedicated puzzle-genre roundups. A planned North American release was cancelled outright; Europe got it anyway, over a year later in December 2000."
+        "blurb": "An obscure falling-jewel puzzler from Taito’s deep catalog, rarely mentioned outside dedicated puzzle-genre roundups. A planned North American release was cancelled outright; Europe got it anyway, over a year later in December 2000."
       },
       {
         "title": "Bust-A-Move Millennium",
@@ -383,19 +383,19 @@
         "title": "Game Boy Wars 3",
         "year": "2001",
         "developer": "Hudson Soft",
-        "blurb": "A late Japan-only sequel refining the series' turn-based unit combat."
+        "blurb": "A late Japan-only sequel refining the series’ turn-based unit combat."
       },
       {
         "title": "Worms Armageddon",
         "year": "2000",
         "developer": "Infogrames Lyon House",
-        "blurb": "A from-scratch handheld build of the artillery-combat series, developed separately from Team17's console and PC versions."
+        "blurb": "A from-scratch handheld build of the artillery-combat series, developed separately from Team17’s console and PC versions."
       },
       {
         "title": "Yu-Gi-Oh! Dark Duel Stories",
         "year": "2002",
         "developer": "Konami",
-        "blurb": "A card-battle RPG hybrid built around the anime's dueling rules, deep enough to satisfy players who skipped the trading cards entirely. Europe didn't get its own release until a full year later, in 2003."
+        "blurb": "A card-battle RPG hybrid built around the anime’s dueling rules, deep enough to satisfy players who skipped the trading cards entirely. Europe didn’t get its own release until a full year later, in 2003."
       },
       {
         "title": "Heroes of Might and Magic II",
@@ -419,7 +419,7 @@
         "title": "Harvest Moon 3 GBC",
         "year": "2001",
         "developer": "Victor Interactive Software",
-        "blurb": "The trilogy's close, refining pacing and social systems built up over the two previous entries."
+        "blurb": "The trilogy’s close, refining pacing and social systems built up over the two previous entries."
       }
     ]
   },
@@ -427,7 +427,7 @@
     "hue": 152,
     "tag": "RPG",
     "title": "Role-Playing Adventures",
-    "blurb": "Square's absence is filled by Enix, Atlus, and Namco — a deep RPG chapter that leans heavily on Japan-only side stories that never made the trip West.",
+    "blurb": "Square’s absence is filled by Enix, Atlus, and Namco — a deep RPG chapter that leans heavily on Japan-only side stories that never made the trip West.",
     "games": [
       {
         "title": "Dragon Warrior I & II",
@@ -439,7 +439,7 @@
         "title": "Dragon Warrior III",
         "year": "2001",
         "developer": "Tose",
-        "blurb": "A remake of the NES-era game many consider the series' best pre-SNES entry, now with a party-swapping class system intact."
+        "blurb": "A remake of the NES-era game many consider the series’ best pre-SNES entry, now with a party-swapping class system intact."
       },
       {
         "title": "Lufia: The Legend Returns",
@@ -448,16 +448,16 @@
         "blurb": "A prequel built around randomized dungeons and a heavier strategy layer than the SNES originals it follows."
       },
       {
-        "title": "Harry Potter and the Sorcerer's Stone",
+        "title": "Harry Potter and the Sorcerer’s Stone",
         "year": "2001",
         "developer": "Griptonite Games",
-        "blurb": "A turn-based RPG adaptation of the first book, wandering Hogwarts and casting spells in a distinctly Final Fantasy-influenced structure. Released the same day in Europe under the book's original title there: Harry Potter and the Philosopher's Stone."
+        "blurb": "A turn-based RPG adaptation of the first book, wandering Hogwarts and casting spells in a distinctly Final Fantasy-influenced structure. Released the same day in Europe under the book’s original title there: Harry Potter and the Philosopher’s Stone."
       },
       {
         "title": "Harry Potter and the Chamber of Secrets",
         "year": "2002",
         "developer": "Griptonite Games",
-        "blurb": "A direct sequel expanding the first game's spellcasting and exploration systems."
+        "blurb": "A direct sequel expanding the first game’s spellcasting and exploration systems."
       },
       {
         "title": "Legend of the River King",
@@ -487,13 +487,13 @@
         "title": "Tales of Phantasia: Narikiri Dungeon",
         "year": "2000",
         "developer": "Namco",
-        "blurb": "A Japan-only spin-off letting players cosplay as any recruited character, spun off from Namco's original Tales RPG."
+        "blurb": "A Japan-only spin-off letting players cosplay as any recruited character, spun off from Namco’s original Tales RPG."
       },
       {
         "title": "Shin Megami Tensei: Devil Children — Black/Red/White Book",
         "year": "2000",
         "developer": "Multimedia Intelligence Transfer",
-        "blurb": "A Japan-only monster-fusion RPG trilogy that predates the Devil Children franchise's later GBA and anime expansion."
+        "blurb": "A Japan-only monster-fusion RPG trilogy that predates the Devil Children franchise’s later GBA and anime expansion."
       },
       {
         "title": "Grandia: Parallel Trippers",
@@ -507,7 +507,7 @@
     "hue": 181,
     "tag": "Shooter",
     "title": "Shooters & Arcade Classics",
-    "blurb": "Arcade history in color — three of Namco and Taito's oldest hits, plus a shooter compilation and two late-system deep cuts.",
+    "blurb": "Arcade history in color — three of Namco and Taito’s oldest hits, plus a shooter compilation and two late-system deep cuts.",
     "games": [
       {
         "title": "R-Type DX",
@@ -543,13 +543,13 @@
         "title": "Project S-11",
         "year": "2001",
         "developer": "Paragon 5",
-        "blurb": "A vertical shooter with smooth scrolling and multiple weapon loadouts, released late and quietly in the system's final year."
+        "blurb": "A vertical shooter with smooth scrolling and multiple weapon loadouts, released late and quietly in the system’s final year."
       },
       {
         "title": "Rampage 2: Universal Tour",
         "year": "1999",
         "developer": "Digital Eclipse Software",
-        "blurb": "Play a giant monster smashing city blocks, with the series' co-op destruction intact even at handheld scale."
+        "blurb": "Play a giant monster smashing city blocks, with the series’ co-op destruction intact even at handheld scale."
       }
     ]
   },
@@ -557,19 +557,19 @@
     "hue": 210,
     "tag": "Licensed",
     "title": "Licensed & Movie Tie-Ins",
-    "blurb": "The GBC's shovelware reputation came from somewhere — but a handful of licensed tie-ins here are genuinely well-built, not just cash-grabs.",
+    "blurb": "The GBC’s shovelware reputation came from somewhere — but a handful of licensed tie-ins here are genuinely well-built, not just cash-grabs.",
     "games": [
       {
         "title": "Tomb Raider",
         "year": "2000",
         "developer": "Core Design",
-        "blurb": "A top-down reimagining of Lara Croft's exploration-and-puzzle formula, built to work without a 3D camera. Titled simply Tomb Raider in Europe, where North America's box added Starring Lara Croft."
+        "blurb": "A top-down reimagining of Lara Croft’s exploration-and-puzzle formula, built to work without a 3D camera. Titled simply Tomb Raider in Europe, where North America’s box added Starring Lara Croft."
       },
       {
         "title": "Rugrats: Totally Angelica",
         "year": "2000",
         "developer": "Art Co., Ltd.",
-        "blurb": "An unusually well-regarded licensed platformer that lets the show's spoiled antagonist headline her own adventure."
+        "blurb": "An unusually well-regarded licensed platformer that lets the show’s spoiled antagonist headline her own adventure."
       },
       {
         "title": "Austin Powers: Oh, Behave! and Welcome to My Underground Lair!",
@@ -581,7 +581,7 @@
         "title": "Dragon Ball Z: Legendary Super Warriors",
         "year": "2002",
         "developer": "Flight-Plan",
-        "blurb": "A one-on-one fighter with a huge roster spanning the anime's Saiyan through Buu arcs."
+        "blurb": "A one-on-one fighter with a huge roster spanning the anime’s Saiyan through Buu arcs."
       },
       {
         "title": "Action Man: Search for Base X",
@@ -599,7 +599,7 @@
         "title": "Croc 2",
         "year": "2001",
         "developer": "Natsume Co., Ltd.",
-        "blurb": "A handheld reimagining of the 3D platformer's sequel, rebuilt from the ground up for two dimensions."
+        "blurb": "A handheld reimagining of the 3D platformer’s sequel, rebuilt from the ground up for two dimensions."
       }
     ]
   },
@@ -619,10 +619,10 @@
         "title": "Game & Watch Gallery 3",
         "year": "1999",
         "developer": "Tose",
-        "blurb": "A third helping of remastered Game & Watch classics, including Donkey Kong Jr. and Mario's Cement Factory."
+        "blurb": "A third helping of remastered Game & Watch classics, including Donkey Kong Jr. and Mario’s Cement Factory."
       },
       {
-        "title": "Quest: Brian's Journey",
+        "title": "Quest: Brian’s Journey",
         "year": "2000",
         "developer": "Atelier Double",
         "blurb": "Known in Japan as Elemental Tale, an overlooked action-RPG about a boy solving elemental puzzles across a fantasy world."
@@ -631,13 +631,13 @@
         "title": "Bomberman Max: Blue Champion / Red Challenger",
         "year": "2000",
         "developer": "Hudson Soft",
-        "blurb": "A pair of connectable Bomberman versions blending the series' puzzle-action with light RPG progression — titled Hero of Light and Warrior of Darkness in Japan, entirely different names again from their North American release."
+        "blurb": "A pair of connectable Bomberman versions blending the series’ puzzle-action with light RPG progression — titled Hero of Light and Warrior of Darkness in Japan, entirely different names again from their North American release."
       },
       {
         "title": "Konami GB Collection Vol. 4",
         "year": "2000",
         "developer": "Tose",
-        "blurb": "A Japan-and-Europe-only compilation cartridge that finally brought Game Boy Color support to a set of Konami's earlier monochrome classics — never released in North America. The European cut also quietly reshuffled the Japanese lineup and swapped one Japan-specific mascot on the menu for the more internationally familiar Penta from Antarctic Adventure."
+        "blurb": "A Japan-and-Europe-only compilation cartridge that finally brought Game Boy Color support to a set of Konami’s earlier monochrome classics — never released in North America. The European cut also quietly reshuffled the Japanese lineup and swapped one Japan-specific mascot on the menu for the more internationally familiar Penta from Antarctic Adventure."
       },
       {
         "title": "Survival Kids",
@@ -655,7 +655,7 @@
         "title": "Monster Rancher Explorer",
         "year": "2000",
         "developer": "Graphic Research",
-        "blurb": "An action-puzzle spin-off of Tecmo's monster-raising series, built more like a puzzle-platformer than its console cousins."
+        "blurb": "An action-puzzle spin-off of Tecmo’s monster-raising series, built more like a puzzle-platformer than its console cousins."
       },
       {
         "title": "Return of the Ninja",
@@ -679,13 +679,13 @@
         "title": "From TV Animation One Piece: Maboroshi no Grand Line Boukenhen!",
         "year": "2002",
         "developer": "Alpha Unit",
-        "blurb": "A Japan-only One Piece adventure game from early in the anime's handheld-game history."
+        "blurb": "A Japan-only One Piece adventure game from early in the anime’s handheld-game history."
       },
       {
         "title": "Daiku no Gen-san: Kachikachi no Tonkachi ga Kachi",
         "year": "2000",
         "developer": "Biox",
-        "blurb": "A Japan-only spin-off of Irem's carpenter-hero Hammerin' Harry series, built as an action-puzzle game."
+        "blurb": "A Japan-only spin-off of Irem’s carpenter-hero Hammerin’ Harry series, built as an action-puzzle game."
       },
       {
         "title": "Meitantei Conan: Karakuri Jiin Satsujin Jiken",

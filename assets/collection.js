@@ -48,8 +48,11 @@
 
   var romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
 
+  // Strip accents and fold curly quotes to straight ones, so typing "kirby's"
+  // or "pokemon" still matches "Kirby’s" and "Pokémon".
   function normalize(str) {
-    return str.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+    return str.normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/[‘’]/g, "'").replace(/[“”]/g, '"').toLowerCase();
   }
 
   function render(DATA) {
@@ -361,7 +364,7 @@
     noteToggle.addEventListener('click', function () {
       var expanded = noteCard.classList.toggle('is-expanded');
       noteToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-      if (noteLabel) noteLabel.textContent = expanded ? 'Show less' : "Read the curator's note";
+      if (noteLabel) noteLabel.textContent = expanded ? 'Show less' : 'Read the curator’s note';
     });
   }
 })();

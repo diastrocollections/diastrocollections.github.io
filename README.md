@@ -1,6 +1,6 @@
 # Diastro Gaming Collections
 
-**Live site:** https://diastrocollections.github.io
+**Live site:** https://diastrogaming.com
 
 A curated field guide to classic console and handheld games: 1,500 games across 15 platforms, from the NES (1985) to the PSP and DS. Each platform gets 100 games split into 12 genre chapters. Every game is fact-checked for release year, developer and regional availability. Where a European release exists, the European release year comes first.
 
@@ -152,8 +152,15 @@ python3 -m http.server
 
 ## How it's made, and AI
 
-Much of the technical side (the HTML, CSS and JavaScript in this repository) is built with [Claude Code](https://claude.com/claude-code), under my direction and with my review and testing. Version 1.0 of the collections also used research and draft texts created with Claude. From then on, every collection is being rewritten, expanded and edited by hand, and the status badges show how far each one has got. The [How it's made](https://diastrocollections.github.io/how-its-made/) page covers the process in full.
+Much of the technical side (the HTML, CSS and JavaScript in this repository) is built with [Claude Code](https://claude.com/claude-code), under my direction and with my review and testing. Version 1.0 of the collections also used research and draft texts created with Claude. From then on, every collection is being rewritten, expanded and edited by hand, and the status badges show how far each one has got. The [How it's made](https://diastrogaming.com/how-its-made/) page covers the process in full.
 
 ## License and trademarks
 
-© 2026 Jesper Bekkering / Diastro Gaming. Platform names, game titles and other trademarks belong to their respective owners and are used only for identification and commentary.
+© 2026 Jesper Bekkering / Diastro Gaming. This repository uses two licenses:
+
+- **Content** (all written text, everything in `data/`, and original images such as `assets/og/` and `assets/icons/`): [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). Share it unchanged, with credit, for non-commercial purposes.
+- **Code** (HTML markup, CSS, JavaScript and configuration): [MIT](LICENSE).
+
+My name and photo, the Diastro Gaming and Diastro Gaming Collections names, and the Diastro Gaming logo are my own and are not covered by either license. Fonts in `assets/fonts/` are under the SIL Open Font License. See [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) for exactly what falls under which license.
+
+Platform names, game titles and other trademarks belong to their respective owners and are used only for identification and commentary.

@@ -18,10 +18,10 @@
         "blurb": "The SNES classic in your pocket, largely unchanged and none the worse for it."
       },
       {
-        "title": "Super Mario Advance 3: Yoshi's Island",
+        "title": "Super Mario Advance 3: Yoshi’s Island",
         "year": "2002",
         "developer": "Nintendo",
-        "blurb": "A faithful port of the SNES original's painterly art style, still one of the best-looking 2D platformers Nintendo ever made."
+        "blurb": "A faithful port of the SNES original’s painterly art style, still one of the best-looking 2D platformers Nintendo ever made."
       },
       {
         "title": "Super Mario Advance 4: Super Mario Bros. 3",
@@ -33,37 +33,37 @@
         "title": "Wario Land 4",
         "year": "2001",
         "developer": "Nintendo R&D1",
-        "blurb": "A pyramid full of theme-park-ride levels and a ticking escape-the-dungeon finale, widely considered the series' high point."
+        "blurb": "A pyramid full of theme-park-ride levels and a ticking escape-the-dungeon finale, widely considered the series’ high point."
       },
       {
         "title": "Kirby: Nightmare in Dream Land",
         "year": "2002",
         "developer": "HAL Laboratory",
-        "blurb": "A remake of the original NES Kirby's Adventure with copy abilities intact, brighter and friendlier than the 8-bit original."
+        "blurb": "A remake of the original NES Kirby’s Adventure with copy abilities intact, brighter and friendlier than the 8-bit original."
       },
       {
         "title": "Kirby & the Amazing Mirror",
         "year": "2004",
         "developer": "HAL Laboratory",
-        "blurb": "Splits Kirby into four and opens up a genuinely non-linear map, the series' first real detour into Metroidvania territory."
+        "blurb": "Splits Kirby into four and opens up a genuinely non-linear map, the series’ first real detour into Metroidvania territory."
       },
       {
         "title": "Mario vs. Donkey Kong",
         "year": "2004",
         "developer": "Nintendo Software Technology",
-        "blurb": "A puzzle-platformer spiritual sequel to the Game Boy's Donkey Kong '94, guiding Mini Marios through hazard-filled toy factories."
+        "blurb": "A puzzle-platformer spiritual sequel to the Game Boy’s Donkey Kong ’94, guiding Mini Marios through hazard-filled toy factories."
       },
       {
         "title": "Sonic Advance",
         "year": "2002",
         "developer": "Sonic Team & Dimps",
-        "blurb": "Sega's answer to the question of whether 2D Sonic could survive on a handheld, co-developed with Dimps after Sonic Team's own attempts stalled."
+        "blurb": "Sega’s answer to the question of whether 2D Sonic could survive on a handheld, co-developed with Dimps after Sonic Team’s own attempts stalled."
       },
       {
         "title": "Klonoa: Empire of Dreams",
         "year": "2001",
         "developer": "Namco",
-        "blurb": "A 2D reimagining of the PS1 platformer's dream-logic world, swapping out the original's pseudo-3D visuals for flat sprite work."
+        "blurb": "A 2D reimagining of the PS1 platformer’s dream-logic world, swapping out the original’s pseudo-3D visuals for flat sprite work."
       }
     ]
   },
@@ -83,7 +83,7 @@
         "title": "Metroid: Zero Mission",
         "year": "2004",
         "developer": "Nintendo R&D1",
-        "blurb": "A full remake of the original NES Metroid with a stealth-driven post-game epilogue that reframes Samus's origin story."
+        "blurb": "A full remake of the original NES Metroid with a stealth-driven post-game epilogue that reframes Samus’s origin story."
       },
       {
         "title": "Castlevania: Circle of the Moon",
@@ -119,7 +119,7 @@
         "title": "Boktai: The Sun Is in Your Hand",
         "year": "2003",
         "developer": "Konami / Kojima Productions",
-        "blurb": "Hideo Kojima's vampire-hunting action-RPG ships with a literal solar sensor in the cartridge that reads real sunlight to power your weapon."
+        "blurb": "Hideo Kojima’s vampire-hunting action-RPG ships with a literal solar sensor in the cartridge that reads real sunlight to power your weapon."
       },
       {
         "title": "Mega Man Zero",
@@ -139,31 +139,31 @@
     "hue": 303,
     "tag": "RPG",
     "title": "Role-Playing Adventures",
-    "blurb": "Camelot's original Golden Sun duology anchors a chapter stacked with Square Enix remasters and a run of Japan-only tactical RPGs that took years to reach the West, if they ever did.",
+    "blurb": "Camelot’s original Golden Sun duology anchors a chapter stacked with Square Enix remasters and a run of Japan-only tactical RPGs that took years to reach the West, if they ever did.",
     "games": [
       {
         "title": "Golden Sun",
         "year": "2001",
         "developer": "Camelot Software Planning",
-        "blurb": "An original GBA RPG built around elemental Djinn and environmental puzzle-solving, one of the console's true system-sellers."
+        "blurb": "An original GBA RPG built around elemental Djinn and environmental puzzle-solving, one of the console’s true system-sellers."
       },
       {
         "title": "Golden Sun: The Lost Age",
         "year": "2003",
         "developer": "Camelot Software Planning",
-        "blurb": "A direct continuation told from the villains' point of view, expanding the first game's Psynergy puzzle mechanics considerably."
+        "blurb": "A direct continuation told from the villains’ point of view, expanding the first game’s Psynergy puzzle mechanics considerably."
       },
       {
         "title": "Final Fantasy Tactics Advance",
         "year": "2003",
         "developer": "Square (Square Enix)",
-        "blurb": "A standalone tactical RPG set in a world literally rewritten by children's imagination, distinct from the PS1 Final Fantasy Tactics."
+        "blurb": "A standalone tactical RPG set in a world literally rewritten by children’s imagination, distinct from the PS1 Final Fantasy Tactics."
       },
       {
         "title": "Final Fantasy IV Advance",
         "year": "2005",
         "developer": "Tose",
-        "blurb": "A remake of the SNES classic with an added post-game dungeon and rebalanced difficulty, developed under Square Enix's supervision."
+        "blurb": "A remake of the SNES classic with an added post-game dungeon and rebalanced difficulty, developed under Square Enix’s supervision."
       },
       {
         "title": "Final Fantasy V Advance",
@@ -175,13 +175,13 @@
         "title": "Final Fantasy VI Advance",
         "year": "2007",
         "developer": "Tose",
-        "blurb": "The trilogy's closer adds new espers and a bonus dungeon to what many consider the strongest 16-bit Final Fantasy."
+        "blurb": "The trilogy’s closer adds new espers and a bonus dungeon to what many consider the strongest 16-bit Final Fantasy."
       },
       {
         "title": "Tactics Ogre: The Knight of Lodis",
         "year": "2002",
         "developer": "Quest Corporation",
-        "blurb": "A prequel to the SNES tactical RPG classic, notable as developer Quest's final release before its assets were absorbed into Square. Released in Japan and North America, but never in Europe."
+        "blurb": "A prequel to the SNES tactical RPG classic, notable as developer Quest’s final release before its assets were absorbed into Square. Released in Japan and North America, but never in Europe."
       },
       {
         "title": "Riviera: The Promised Land",
@@ -205,7 +205,7 @@
         "title": "Lunar Legend",
         "year": "2002",
         "developer": "Media Rings Corporation",
-        "blurb": "A compressed retelling of the Lunar: Silver Star Story saga, trading the PS1 original's anime cutscenes for a much smaller handheld canvas."
+        "blurb": "A compressed retelling of the Lunar: Silver Star Story saga, trading the PS1 original’s anime cutscenes for a much smaller handheld canvas."
       }
     ]
   },
@@ -219,13 +219,13 @@
         "title": "Pokémon Ruby and Sapphire",
         "year": "2003",
         "developer": "Game Freak",
-        "blurb": "The third generation's home base, introducing double battles, Abilities, and a new region built around weather manipulation."
+        "blurb": "The third generation’s home base, introducing double battles, Abilities, and a new region built around weather manipulation."
       },
       {
         "title": "Pokémon Emerald",
         "year": "2005",
         "developer": "Game Freak",
-        "blurb": "The definitive version of the Hoenn generation, adding the Battle Frontier's toughest post-game gauntlet yet."
+        "blurb": "The definitive version of the Hoenn generation, adding the Battle Frontier’s toughest post-game gauntlet yet."
       },
       {
         "title": "Pokémon FireRed and LeafGreen",
@@ -237,13 +237,13 @@
         "title": "Pokémon Mystery Dungeon: Red Rescue Team",
         "year": "2006",
         "developer": "Chunsoft",
-        "blurb": "A roguelike dungeon-crawler spin-off where you play as a Pokémon yourself, built on Chunsoft's own long-running Mystery Dungeon engine."
+        "blurb": "A roguelike dungeon-crawler spin-off where you play as a Pokémon yourself, built on Chunsoft’s own long-running Mystery Dungeon engine."
       },
       {
         "title": "Pokémon Pinball: Ruby & Sapphire",
         "year": "2003",
         "developer": "Jupiter",
-        "blurb": "A sequel to the Game Boy Color pinball spin-off, rebuilt around the Hoenn region's new roster."
+        "blurb": "A sequel to the Game Boy Color pinball spin-off, rebuilt around the Hoenn region’s new roster."
       }
     ]
   },
@@ -251,13 +251,13 @@
     "hue": 1,
     "tag": "Strategy",
     "title": "Strategy & Tactics",
-    "blurb": "Advance Wars turned Nintendo's own long-running Japan-only Wars series into a global hit; Fire Emblem's Western debut wasn't far behind.",
+    "blurb": "Advance Wars turned Nintendo’s own long-running Japan-only Wars series into a global hit; Fire Emblem’s Western debut wasn’t far behind.",
     "games": [
       {
         "title": "Advance Wars",
         "year": "2001",
         "developer": "Intelligent Systems",
-        "blurb": "A colorful reboot of the Japan-only Famicom Wars series that became an unexpected worldwide hit, its Japanese release delayed for years over the game's military theme."
+        "blurb": "A colorful reboot of the Japan-only Famicom Wars series that became an unexpected worldwide hit, its Japanese release delayed for years over the game’s military theme."
       },
       {
         "title": "Advance Wars 2: Black Hole Rising",
@@ -269,7 +269,7 @@
         "title": "Fire Emblem",
         "year": "2003",
         "developer": "Intelligent Systems",
-        "blurb": "The series' first game ever localized outside Japan, bundling in a tutorial-friendly prologue built specifically to teach newcomers permadeath tactics."
+        "blurb": "The series’ first game ever localized outside Japan, bundling in a tutorial-friendly prologue built specifically to teach newcomers permadeath tactics."
       },
       {
         "title": "Fire Emblem: The Sacred Stones",
@@ -281,7 +281,7 @@
         "title": "Yggdra Union",
         "year": "2006",
         "developer": "Sting",
-        "blurb": "A card-driven tactical RPG about rallying a defeated princess's army, built around a unique union-based battle formation system. Europe only got a limited release, through 505 Games in select countries like Italy and France."
+        "blurb": "A card-driven tactical RPG about rallying a defeated princess’s army, built around a unique union-based battle formation system. Europe only got a limited release, through 505 Games in select countries like Italy and France."
       },
       {
         "title": "Rebelstar: Tactical Command",
@@ -293,7 +293,7 @@
         "title": "Yu-Gi-Oh! The Sacred Cards",
         "year": "2003",
         "developer": "Konami",
-        "blurb": "A card-battle RPG following the anime's Duelist Kingdom and Battle City arcs, deep enough to work as a real strategy game on its own terms."
+        "blurb": "A card-battle RPG following the anime’s Duelist Kingdom and Battle City arcs, deep enough to work as a real strategy game on its own terms."
       }
     ]
   },
@@ -301,31 +301,31 @@
     "hue": 30,
     "tag": "Fighting",
     "title": "Fighting",
-    "blurb": "Full console-caliber fighting games compressed onto a cartridge, from Guilty Gear's frame-perfect combos to a licensed Dragon Ball Z brawler built for the format.",
+    "blurb": "Full console-caliber fighting games compressed onto a cartridge, from Guilty Gear’s frame-perfect combos to a licensed Dragon Ball Z brawler built for the format.",
     "games": [
       {
         "title": "Guilty Gear X Advance Edition",
         "year": "2002",
         "developer": "Arc System Works",
-        "blurb": "A shockingly faithful port of Arc System Works' own arcade fighter, frame data and all."
+        "blurb": "A shockingly faithful port of Arc System Works’ own arcade fighter, frame data and all."
       },
       {
         "title": "Street Fighter Alpha 3",
         "year": "2002",
         "developer": "Crawfish Interactive",
-        "blurb": "A handheld conversion of Capcom's arcade fighter with the full Isms system and roster intact."
+        "blurb": "A handheld conversion of Capcom’s arcade fighter with the full Isms system and roster intact."
       },
       {
         "title": "Mortal Kombat: Deadly Alliance",
         "year": "2002",
         "developer": "Midway",
-        "blurb": "A 2D reimagining of the console game's 3D fighting engine, built to keep fatalities and the series' brutal tone on original hardware."
+        "blurb": "A 2D reimagining of the console game’s 3D fighting engine, built to keep fatalities and the series’ brutal tone on original hardware."
       },
       {
         "title": "Sonic Battle",
         "year": "2004",
         "developer": "Sonic Team",
-        "blurb": "A surprisingly deep fighter starring Sonic's whole cast, with a lengthy single-player story mode wrapped around the versus battles."
+        "blurb": "A surprisingly deep fighter starring Sonic’s whole cast, with a lengthy single-player story mode wrapped around the versus battles."
       },
       {
         "title": "Dragon Ball Z: Supersonic Warriors",
@@ -337,7 +337,7 @@
         "title": "The King of Fighters EX2: Howling Blood",
         "year": "2003",
         "developer": "Marvelous Interactive",
-        "blurb": "A 3D-modeled-sprite fighter adapting SNK's team-battle series for a handheld screen."
+        "blurb": "A 3D-modeled-sprite fighter adapting SNK’s team-battle series for a handheld screen."
       },
       {
         "title": "Tekken Advance",
@@ -351,19 +351,19 @@
     "hue": 59,
     "tag": "Shooter",
     "title": "Shooters & Run-and-Gun",
-    "blurb": "Treasure's name appears three times in this chapter alone — the GBA quietly became one of the best shoot-em-up platforms of its generation.",
+    "blurb": "Treasure’s name appears three times in this chapter alone — the GBA quietly became one of the best shoot-em-up platforms of its generation.",
     "games": [
       {
         "title": "Metal Slug Advance",
         "year": "2004",
         "developer": "Noise Factory",
-        "blurb": "A from-scratch handheld Metal Slug with new stages, keeping the series' chaotic run-and-gun spectacle intact at a smaller resolution."
+        "blurb": "A from-scratch handheld Metal Slug with new stages, keeping the series’ chaotic run-and-gun spectacle intact at a smaller resolution."
       },
       {
         "title": "Contra Advance: The Alien Wars EX",
         "year": "2002",
         "developer": "CiNG",
-        "blurb": "A remake of the Super NES's Contra III built by the studio that would later make Hotel Dusk, not a straight console port."
+        "blurb": "A remake of the Super NES’s Contra III built by the studio that would later make Hotel Dusk, not a straight console port."
       },
       {
         "title": "Gunstar Super Heroes",
@@ -375,25 +375,25 @@
         "title": "Astro Boy: Omega Factor",
         "year": "2004",
         "developer": "Treasure",
-        "blurb": "A licensed beat-em-up/shooter hybrid guided by Astro Boy creator Osamu Tezuka's own manga continuity, widely considered one of Treasure's best."
+        "blurb": "A licensed beat-em-up/shooter hybrid guided by Astro Boy creator Osamu Tezuka’s own manga continuity, widely considered one of Treasure’s best."
       },
       {
         "title": "Iridion II",
         "year": "2003",
-        "developer": "Shin'en Multimedia",
-        "blurb": "A Mode-7-style rail shooter pushing pseudo-3D scaling effects further than most developers thought the GBA's hardware allowed."
+        "developer": "Shin’en Multimedia",
+        "blurb": "A Mode-7-style rail shooter pushing pseudo-3D scaling effects further than most developers thought the GBA’s hardware allowed."
       },
       {
         "title": "Doom",
         "year": "2001",
         "developer": "David A. Palmer Productions",
-        "blurb": "A surprisingly complete port of id Software's FPS classic, built by a small studio rather than id itself."
+        "blurb": "A surprisingly complete port of id Software’s FPS classic, built by a small studio rather than id itself."
       },
       {
         "title": "Duke Nukem Advance",
         "year": "2002",
         "developer": "Torus Games",
-        "blurb": "A side-scrolling reimagining of the one-liner-spouting mercenary's world, trading first-person shooting for run-and-gun platforming."
+        "blurb": "A side-scrolling reimagining of the one-liner-spouting mercenary’s world, trading first-person shooting for run-and-gun platforming."
       },
       {
         "title": "Sigma Star Saga",
@@ -405,7 +405,7 @@
         "title": "Advance Guardian Heroes",
         "year": "2004",
         "developer": "Treasure",
-        "blurb": "A beat-em-up adaptation of the Sega Saturn cult classic, trading some of the original's chaos for tighter handheld pacing."
+        "blurb": "A beat-em-up adaptation of the Sega Saturn cult classic, trading some of the original’s chaos for tighter handheld pacing."
       }
     ]
   },
@@ -413,13 +413,13 @@
     "hue": 88,
     "tag": "Sports",
     "title": "Sports & Racing",
-    "blurb": "Camelot's handheld-companion sports duo returns, joined by original GBA racers and a surprisingly faithful Tony Hawk's port.",
+    "blurb": "Camelot’s handheld-companion sports duo returns, joined by original GBA racers and a surprisingly faithful Tony Hawk’s port.",
     "games": [
       {
         "title": "Mario Kart: Super Circuit",
         "year": "2001",
         "developer": "Intelligent Systems",
-        "blurb": "Bundles every Super Mario Kart SNES track in as unlockable content alongside a full new roster of its own, one of the GBA's best-selling games."
+        "blurb": "Bundles every Super Mario Kart SNES track in as unlockable content alongside a full new roster of its own, one of the GBA’s best-selling games."
       },
       {
         "title": "F-Zero: Maximum Velocity",
@@ -431,7 +431,7 @@
         "title": "Mario Golf: Advance Tour",
         "year": "2004",
         "developer": "Camelot Software Planning",
-        "blurb": "A companion to the GameCube's Mario Golf with its own RPG-lite training campaign rather than a stripped-down port."
+        "blurb": "A companion to the GameCube’s Mario Golf with its own RPG-lite training campaign rather than a stripped-down port."
       },
       {
         "title": "Mario Tennis: Power Tour",
@@ -440,7 +440,7 @@
         "blurb": "Deepens the training-academy structure from Mario Golf: Advance Tour into a genuinely long single-player RPG-tennis hybrid."
       },
       {
-        "title": "Tony Hawk's Pro Skater 2",
+        "title": "Tony Hawk’s Pro Skater 2",
         "year": "2001",
         "developer": "Vicarious Visions",
         "blurb": "An isometric-3D handheld build of the skating classic, developed entirely separately from the GBC sidescroller that preceded it."
@@ -455,7 +455,7 @@
         "title": "Konami Krazy Racers",
         "year": "2001",
         "developer": "Konami Computer Entertainment Kobe",
-        "blurb": "A kart racer starring Konami's own mascot cast, built as a launch-window answer to Mario Kart."
+        "blurb": "A kart racer starring Konami’s own mascot cast, built as a launch-window answer to Mario Kart."
       },
       {
         "title": "Karnaaj Rally",
@@ -469,7 +469,7 @@
     "hue": 117,
     "tag": "Puzzle",
     "title": "Puzzle & Party",
-    "blurb": "WarioWare's microgame format was practically invented for a handheld — this chapter is anchored by its two best entries.",
+    "blurb": "WarioWare’s microgame format was practically invented for a handheld — this chapter is anchored by its two best entries.",
     "games": [
       {
         "title": "WarioWare, Inc.: Mega Microgames!",
@@ -496,16 +496,16 @@
         "blurb": "Dig straight down through color-coded blocks without getting crushed, ported to GBA years after its arcade and Dreamcast debut. Europe actually got it over a year earlier than North America, in early 2004."
       },
       {
-        "title": "It's Mr. Pants",
+        "title": "It’s Mr. Pants",
         "year": "2004",
         "developer": "Rare",
-        "blurb": "An offbeat tile-matching puzzler starring a sentient pair of trousers, one of Rare's odder post-Nintendo-era handheld games."
+        "blurb": "An offbeat tile-matching puzzler starring a sentient pair of trousers, one of Rare’s odder post-Nintendo-era handheld games."
       },
       {
         "title": "Denki Blocks!",
         "year": "2002",
         "developer": "Denki",
-        "blurb": "A block-clearing puzzler from the small Scottish studio it's named after, praised for a difficulty curve that never feels unfair."
+        "blurb": "A block-clearing puzzler from the small Scottish studio it’s named after, praised for a difficulty curve that never feels unfair."
       },
       {
         "title": "Bookworm",
@@ -517,7 +517,7 @@
         "title": "Mario Party Advance",
         "year": "2005",
         "developer": "Hudson Soft",
-        "blurb": "Trades the series' board-game format for a microgame-and-minigame collection built specifically around handheld play sessions."
+        "blurb": "Trades the series’ board-game format for a microgame-and-minigame collection built specifically around handheld play sessions."
       },
       {
         "title": "Bomberman Tournament",
@@ -531,7 +531,7 @@
     "hue": 146,
     "tag": "Licensed",
     "title": "Adventure, Action & Licensed",
-    "blurb": "Proof that licensed and ported games on GBA weren't automatically shovelware — several of these are genuinely well-regarded conversions.",
+    "blurb": "Proof that licensed and ported games on GBA weren’t automatically shovelware — several of these are genuinely well-regarded conversions.",
     "games": [
       {
         "title": "Ninja Five-O",
@@ -555,7 +555,7 @@
         "title": "Max Payne",
         "year": "2003",
         "developer": "Möbius Entertainment",
-        "blurb": "A top-down reimagining of the noir shooter's bullet-time gunplay, built from scratch for the handheld rather than a straight port."
+        "blurb": "A top-down reimagining of the noir shooter’s bullet-time gunplay, built from scratch for the handheld rather than a straight port."
       },
       {
         "title": "Teenage Mutant Ninja Turtles",
@@ -567,7 +567,7 @@
         "title": "Grand Theft Auto Advance",
         "year": "2004",
         "developer": "Digital Eclipse",
-        "blurb": "A top-down reimagining of the original 1997 Grand Theft Auto's free-roaming crime sandbox, built to run natively on GBA hardware."
+        "blurb": "A top-down reimagining of the original 1997 Grand Theft Auto’s free-roaming crime sandbox, built to run natively on GBA hardware."
       },
       {
         "title": "Crash Bandicoot: The Huge Adventure",
@@ -585,13 +585,13 @@
         "title": "Rocky",
         "year": "2002",
         "developer": "Virtucraft",
-        "blurb": "A boxing game tied to the film franchise with its own distinct handheld-built gameplay, separate from the PS2/Xbox version's engine."
+        "blurb": "A boxing game tied to the film franchise with its own distinct handheld-built gameplay, separate from the PS2/Xbox version’s engine."
       },
       {
         "title": "Bruce Lee: Return of the Legend",
         "year": "2003",
         "developer": "Vicarious Visions",
-        "blurb": "A side-scrolling martial-arts action game loosely inspired by Bruce Lee's films, built by the same studio behind Crash's handheld outings."
+        "blurb": "A side-scrolling martial-arts action game loosely inspired by Bruce Lee’s films, built by the same studio behind Crash’s handheld outings."
       }
     ]
   },
@@ -605,7 +605,7 @@
         "title": "Harvest Moon: Friends of Mineral Town",
         "year": "2003",
         "developer": "Marvelous Interactive",
-        "blurb": "A gender-flippable remake of the SNES-era farming sim's Mineral Town setting, still considered one of the series' most replayable entries."
+        "blurb": "A gender-flippable remake of the SNES-era farming sim’s Mineral Town setting, still considered one of the series’ most replayable entries."
       },
       {
         "title": "Chessmaster",
@@ -623,7 +623,7 @@
         "title": "Zone of the Enders: The Fist of Mars",
         "year": "2002",
         "developer": "Winky Soft",
-        "blurb": "A side-story spin-off of Konami and Hideo Kojima's mecha-action series, built as a top-down action-RPG rather than a 3D shooter."
+        "blurb": "A side-story spin-off of Konami and Hideo Kojima’s mecha-action series, built as a top-down action-RPG rather than a 3D shooter."
       },
       {
         "title": "Defender of the Crown",
@@ -679,13 +679,13 @@
         "title": "Sabre Wulf",
         "year": "2004",
         "developer": "Rare",
-        "blurb": "A loose remake of Rare's own 1984 ZX Spectrum classic, reworked into a top-down jungle-maze adventure."
+        "blurb": "A loose remake of Rare’s own 1984 ZX Spectrum classic, reworked into a top-down jungle-maze adventure."
       },
       {
         "title": "The Pinball of the Dead",
         "year": "2002",
         "developer": "WOW Entertainment (Sega)",
-        "blurb": "A pinball spin-off of Sega's House of the Dead light-gun series, zombies and all, built by the developer behind Sega's Pinball series. Unusually, it launched in North America a few weeks before Japan, with Europe following about a year later in 2003."
+        "blurb": "A pinball spin-off of Sega’s House of the Dead light-gun series, zombies and all, built by the developer behind Sega’s Pinball series. Unusually, it launched in North America a few weeks before Japan, with Europe following about a year later in 2003."
       },
       {
         "title": "Ballistic: Ecks vs. Sever",

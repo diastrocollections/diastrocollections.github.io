@@ -117,6 +117,9 @@
 
     if (tilesEl) {
       PLATFORMS.forEach(function (p, i) {
+        // An icon is either an SVG file (the controller illustrations) or an emoji
+        // placeholder until that Collection's illustration is ready.
+        var isSvg = /\.svg$/.test(p.icon);
         var a = document.createElement('div');
         a.className = 'tile';
         a.style.setProperty('--tile-accent', p.accent);
@@ -125,10 +128,9 @@
           '<a class="tile-link" href="' + p.url + '" aria-label="Enter the ' + p.name + ' collection"></a>' +
           '<div class="tile-spine"></div>' +
           '<div class="tile-body">' +
-            '<span class="tile-watermark" aria-hidden="true">' + p.icon + '</span>' +
+            '<span class="tile-watermark' + (isSvg ? ' tile-watermark--svg' : '') + '" aria-hidden="true">' + (isSvg ? '' : p.icon) + '</span>' +
             '<div class="tile-kicker mono"><span>' + String(i + 1).padStart(2, '0') + '</span><span>' + p.manufacturer + '</span><span>' + p.years + '</span></div>' +
             '<div class="tile-top">' +
-              '<div class="tile-icon" aria-hidden="true">' + p.icon + '</div>' +
               '<h3>' + p.name + '</h3>' +
             '</div>' +
             '<p class="tagline">' + p.tagline + '</p>' +
@@ -146,8 +148,20 @@
             '</div>' +
           '</div>';
         tilesEl.appendChild(a);
+        // Inlined rather than an <img> so the drawing can take the tile's accent colour.
+        if (isSvg) loadSvg(p.icon, a.querySelector('.tile-watermark'));
       });
     }
+  }
+
+  function loadSvg(src, el) {
+    fetch(src)
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.text();
+      })
+      .then(function (svg) { el.innerHTML = svg; })
+      .catch(function (err) { console.error('hub.js: failed to load ' + src, err); });
   }
 
 })();

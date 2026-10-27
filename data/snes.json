@@ -3,16 +3,16 @@
     "hue": 265,
     "tag": "Platformer",
     "title": "Nintendo Platforming Foundations",
-    "blurb": "Nintendo's own console-defining run, joined by Rare's technically dazzling Donkey Kong Country trilogy.",
+    "blurb": "Nintendo’s own console-defining run, joined by Rare’s technically dazzling Donkey Kong Country trilogy.",
     "games": [
       {
         "title": "Super Mario World",
         "year": "1992",
         "developer": "Nintendo EAD",
-        "blurb": "The SNES pack-in that redefined the platformer with Yoshi, the world map, and secret exits — Europe waited about two years after Japan's 1990 launch title release."
+        "blurb": "The SNES pack-in that redefined the platformer with Yoshi, the world map, and secret exits — Europe waited about two years after Japan’s 1990 launch title release."
       },
       {
-        "title": "Super Mario World 2: Yoshi's Island",
+        "title": "Super Mario World 2: Yoshi’s Island",
         "year": "1995",
         "developer": "Nintendo EAD",
         "blurb": "A hand-drawn, crayon-and-watercolor art style wrapped around one of the most inventive platformers Nintendo ever built, released the same year worldwide."
@@ -27,19 +27,19 @@
         "title": "Donkey Kong Country",
         "year": "1994",
         "developer": "Rare",
-        "blurb": "Pre-rendered CGI models pushed the SNES's graphics further than almost anything else on the system, reviving the Donkey Kong brand from scratch."
+        "blurb": "Pre-rendered CGI models pushed the SNES’s graphics further than almost anything else on the system, reviving the Donkey Kong brand from scratch."
       },
       {
-        "title": "Donkey Kong Country 2: Diddy's Kong Quest",
+        "title": "Donkey Kong Country 2: Diddy’s Kong Quest",
         "year": "1995",
         "developer": "Rare",
-        "blurb": "A darker pirate-themed sequel widely considered the series' peak, released the same year in all three regions."
+        "blurb": "A darker pirate-themed sequel widely considered the series’ peak, released the same year in all three regions."
       },
       {
-        "title": "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
+        "title": "Donkey Kong Country 3: Dixie Kong’s Double Trouble!",
         "year": "1996",
         "developer": "Rare",
-        "blurb": "The trilogy's closer, trading some of the pirate theming for a swampy, inventive final adventure."
+        "blurb": "The trilogy’s closer, trading some of the pirate theming for a swampy, inventive final adventure."
       },
       {
         "title": "Kirby Super Star",
@@ -48,13 +48,13 @@
         "blurb": "Eight compact sub-games in one cartridge, including the two-player Helper system that let a friend control a captured enemy ability."
       },
       {
-        "title": "Kirby's Dream Land 3",
+        "title": "Kirby’s Dream Land 3",
         "year": "1997",
         "developer": "HAL Laboratory",
-        "blurb": "One of the SNES's final first-party releases, arriving so late in the console's life that a European release never materialized."
+        "blurb": "One of the SNES’s final first-party releases, arriving so late in the console’s life that a European release never materialized."
       },
       {
-        "title": "Kirby's Dream Course",
+        "title": "Kirby’s Dream Course",
         "year": "1995",
         "developer": "HAL Laboratory",
         "blurb": "A golf-meets-pinball hybrid where Kirby himself is the ball, an unusually experimental format for the character."
@@ -65,13 +65,13 @@
     "hue": 300,
     "tag": "Adventure",
     "title": "Action-Adventure & Metroidvania",
-    "blurb": "A Link to the Past and Super Metroid anchor a chapter full of Quintet's atmospheric action-RPGs, one of which never left Japan under its English name until a year after release.",
+    "blurb": "A Link to the Past and Super Metroid anchor a chapter full of Quintet’s atmospheric action-RPGs, one of which never left Japan under its English name until a year after release.",
     "games": [
       {
         "title": "The Legend of Zelda: A Link to the Past",
         "year": "1992",
         "developer": "Nintendo EAD",
-        "blurb": "The template for nearly every top-down Zelda that followed, including the Dark World mechanic that doubled the game's map."
+        "blurb": "The template for nearly every top-down Zelda that followed, including the Dark World mechanic that doubled the game’s map."
       },
       {
         "title": "Super Metroid",
@@ -83,7 +83,7 @@
         "title": "Illusion of Gaia",
         "year": "1994",
         "developer": "Quintet",
-        "blurb": "An atmospheric action-RPG following a boy's journey around a fictionalized real-world map, released in Japan as Gaia Gensouki the year before."
+        "blurb": "An atmospheric action-RPG following a boy’s journey around a fictionalized real-world map, released in Japan as Gaia Gensouki the year before."
       },
       {
         "title": "Terranigma",
@@ -95,7 +95,7 @@
         "title": "Secret of Evermore",
         "year": "1995",
         "developer": "Square (North America)",
-        "blurb": "An unusual reversal: this action-RPG was developed entirely by Square's North American studio and never released in Japan at all."
+        "blurb": "An unusual reversal: this action-RPG was developed entirely by Square’s North American studio and never released in Japan at all."
       },
       {
         "title": "ActRaiser",
@@ -107,13 +107,13 @@
         "title": "Soul Blazer",
         "year": "1992",
         "developer": "Quintet",
-        "blurb": "Quintet's earlier action-RPG about resurrecting a ruined world town by town, with Europe's release following about a year later."
+        "blurb": "Quintet’s earlier action-RPG about resurrecting a ruined world town by town, with Europe’s release following about a year later."
       },
       {
-        "title": "Demon's Crest",
+        "title": "Demon’s Crest",
         "year": "1995",
         "developer": "Capcom",
-        "blurb": "A moody, atmospheric spin-off starring Ghosts 'n Goblins' gargoyle antihero Firebrand, released in Europe the year after North America."
+        "blurb": "A moody, atmospheric spin-off starring Ghosts ’n Goblins’ gargoyle antihero Firebrand, released in Europe the year after North America."
       },
       {
         "title": "The Legend of the Mystical Ninja",
@@ -127,7 +127,7 @@
     "hue": 20,
     "tag": "RPG",
     "title": "Role-Playing Adventures",
-    "blurb": "Square and Enix's golden age, and the platform where the console RPG genre truly matured — several of these never received any European release at all.",
+    "blurb": "Square and Enix’s golden age, and the platform where the console RPG genre truly matured — several of these never received any European release at all.",
     "games": [
       {
         "title": "Chrono Trigger",
@@ -145,7 +145,7 @@
         "title": "Super Mario RPG: Legend of the Seven Stars",
         "year": "1996",
         "developer": "Square",
-        "blurb": "Square and Nintendo's first collaboration, blending Mario's world with turn-based, timed-hit combat — never released in Europe."
+        "blurb": "Square and Nintendo’s first collaboration, blending Mario’s world with turn-based, timed-hit combat — never released in Europe."
       },
       {
         "title": "EarthBound",
@@ -163,13 +163,13 @@
         "title": "Breath of Fire",
         "year": "1995",
         "developer": "Capcom",
-        "blurb": "Capcom's own entry into the console RPG genre, released in Europe about a year after its North American debut."
+        "blurb": "Capcom’s own entry into the console RPG genre, released in Europe about a year after its North American debut."
       },
       {
         "title": "Breath of Fire II",
         "year": "1995",
         "developer": "Capcom",
-        "blurb": "A direct sequel deepening the original's dragon-transformation mechanics — never released in Europe."
+        "blurb": "A direct sequel deepening the original’s dragon-transformation mechanics — never released in Europe."
       },
       {
         "title": "Tales of Phantasia",
@@ -189,7 +189,7 @@
     "hue": 205,
     "tag": "Shooter",
     "title": "Run-and-Gun & Shooters",
-    "blurb": "Konami's Contra and Gradius sequels anchor a chapter full of genuinely difficult SNES shoot-em-ups, several carrying real regional title changes.",
+    "blurb": "Konami’s Contra and Gradius sequels anchor a chapter full of genuinely difficult SNES shoot-em-ups, several carrying real regional title changes.",
     "games": [
       {
         "title": "Contra III: The Alien Wars",
@@ -207,7 +207,7 @@
         "title": "Axelay",
         "year": "1992",
         "developer": "Konami",
-        "blurb": "A vertical shooter alternating between two visual styles stage to stage, showing off the SNES's Mode 7 scaling technique."
+        "blurb": "A vertical shooter alternating between two visual styles stage to stage, showing off the SNES’s Mode 7 scaling technique."
       },
       {
         "title": "Gradius III",
@@ -237,7 +237,7 @@
         "title": "Sunset Riders",
         "year": "1993",
         "developer": "Konami",
-        "blurb": "A home conversion of Konami's cowboy-themed arcade run-and-gun, released the same year across regions."
+        "blurb": "A home conversion of Konami’s cowboy-themed arcade run-and-gun, released the same year across regions."
       }
     ]
   },
@@ -245,7 +245,7 @@
     "hue": 335,
     "tag": "Fighting",
     "title": "Beat-em-ups, Wrestling & Fighting",
-    "blurb": "Capcom's Final Fight trilogy and Street Fighter II's SNES ports anchor a chapter that also includes one game with three genuinely different regional titles.",
+    "blurb": "Capcom’s Final Fight trilogy and Street Fighter II’s SNES ports anchor a chapter that also includes one game with three genuinely different regional titles.",
     "games": [
       {
         "title": "Street Fighter II Turbo",
@@ -263,13 +263,13 @@
         "title": "Mortal Kombat II",
         "year": "1994",
         "developer": "Sculptured Software",
-        "blurb": "A home port of the arcade sequel, restoring blood via a code — unlike the heavily censored first game's SNES port."
+        "blurb": "A home port of the arcade sequel, restoring blood via a code — unlike the heavily censored first game’s SNES port."
       },
       {
         "title": "Final Fight",
         "year": "1991",
         "developer": "Capcom",
-        "blurb": "A home conversion of Capcom's arcade beat-em-up landmark, released in Europe the year after Japan."
+        "blurb": "A home conversion of Capcom’s arcade beat-em-up landmark, released in Europe the year after Japan."
       },
       {
         "title": "Final Fight 2",
@@ -281,7 +281,7 @@
         "title": "Final Fight 3",
         "year": "1995",
         "developer": "Capcom",
-        "blurb": "The trilogy's closer, adding selectable special moves and a genuinely large character roster for the genre."
+        "blurb": "The trilogy’s closer, adding selectable special moves and a genuinely large character roster for the genre."
       },
       {
         "title": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
@@ -299,7 +299,7 @@
         "title": "The Ninja Warriors",
         "year": "1994",
         "developer": "Natsume",
-        "blurb": "An unusually scattered regional rollout: Japan's The Ninja Warriors Again, North America's plain The Ninja Warriors, and Europe's Ninja Warriors: The New Generation are all the same game."
+        "blurb": "An unusually scattered regional rollout: Japan’s The Ninja Warriors Again, North America’s plain The Ninja Warriors, and Europe’s Ninja Warriors: The New Generation are all the same game."
       }
     ]
   },
@@ -307,22 +307,22 @@
     "hue": 155,
     "tag": "Puzzle",
     "title": "Puzzle & Party",
-    "blurb": "A Japan-only Panel de Pon became Tetris Attack for a Western audience that had no idea it wasn't really a Tetris game at all.",
+    "blurb": "A Japan-only Panel de Pon became Tetris Attack for a Western audience that had no idea it wasn’t really a Tetris game at all.",
     "games": [
       {
         "title": "Tetris Attack",
         "year": "1996",
         "developer": "Intelligent Systems",
-        "blurb": "Originally Japan's character-driven puzzler Panel de Pon a year earlier — the Western version swapped in Yoshi's Island characters and was branded around Tetris despite having no real connection to it."
+        "blurb": "Originally Japan’s character-driven puzzler Panel de Pon a year earlier — the Western version swapped in Yoshi’s Island characters and was branded around Tetris despite having no real connection to it."
       },
       {
-        "title": "Kirby's Avalanche",
+        "title": "Kirby’s Avalanche",
         "year": "1995",
         "developer": "Compile / HAL Laboratory",
-        "blurb": "A Western-exclusive reskin of Super Puyo Puyo with Kirby's cast replacing the original characters — the only Kirby game never released in Japan."
+        "blurb": "A Western-exclusive reskin of Super Puyo Puyo with Kirby’s cast replacing the original characters — the only Kirby game never released in Japan."
       },
       {
-        "title": "Yoshi's Cookie",
+        "title": "Yoshi’s Cookie",
         "year": "1993",
         "developer": "Bullet-Proof Software",
         "blurb": "An unusual case where the North American release actually preceded the Japanese one by about a month."
@@ -331,7 +331,7 @@
         "title": "Super Bomberman",
         "year": "1993",
         "developer": "Hudson Soft",
-        "blurb": "A four-player-capable entry that helped define the series' multiplayer battle format for the 16-bit era."
+        "blurb": "A four-player-capable entry that helped define the series’ multiplayer battle format for the 16-bit era."
       },
       {
         "title": "Super Bomberman 2",
@@ -352,7 +352,7 @@
         "blurb": "A unicycle racer built entirely around chained stunt tricks, released in Europe the following year as Unirally — never released in Japan."
       },
       {
-        "title": "Wario's Woods",
+        "title": "Wario’s Woods",
         "year": "1995",
         "developer": "Nintendo / Intelligent Systems",
         "blurb": "This SNES version is distinct from the earlier NES release — Japan only ever got it via the Satellaview satellite service, never a retail cartridge."
@@ -363,25 +363,25 @@
     "hue": 88,
     "tag": "Sports",
     "title": "Sports & Racing",
-    "blurb": "F-Zero and Super Mario Kart's Mode 7 tracks anchor a chapter that also holds a surprising number of American-sports titles that made it to Europe anyway.",
+    "blurb": "F-Zero and Super Mario Kart’s Mode 7 tracks anchor a chapter that also holds a surprising number of American-sports titles that made it to Europe anyway.",
     "games": [
       {
         "title": "F-Zero",
         "year": "1992",
         "developer": "Nintendo EAD",
-        "blurb": "A launch-window showcase for the SNES's Mode 7 pseudo-3D scaling, and one of the earliest anti-gravity racers."
+        "blurb": "A launch-window showcase for the SNES’s Mode 7 pseudo-3D scaling, and one of the earliest anti-gravity racers."
       },
       {
         "title": "Super Mario Kart",
         "year": "1992",
         "developer": "Nintendo EAD",
-        "blurb": "The kart-racing genre's true origin point, released the same year across all three regions."
+        "blurb": "The kart-racing genre’s true origin point, released the same year across all three regions."
       },
       {
         "title": "Pilotwings",
         "year": "1992",
         "developer": "Nintendo EAD / Paradigm",
-        "blurb": "A flight-sim-adjacent launch title built to show off Mode 7's scaling and rotation effects, Europe following about a year after Japan."
+        "blurb": "A flight-sim-adjacent launch title built to show off Mode 7’s scaling and rotation effects, Europe following about a year after Japan."
       },
       {
         "title": "Top Gear",
@@ -390,7 +390,7 @@
         "blurb": "Released in Japan as Top Racer, a Mode 7 racer built by a British studio, published the same year across regions."
       },
       {
-        "title": "Rock n' Roll Racing",
+        "title": "Rock n’ Roll Racing",
         "year": "1993",
         "developer": "Silicon & Synapse",
         "blurb": "An overhead combat racer from the studio that would later become Blizzard Entertainment, released only in the West."
@@ -408,7 +408,7 @@
         "blurb": "A North America-exclusive baseball title, never released in Japan or Europe."
       },
       {
-        "title": "Madden NFL '94",
+        "title": "Madden NFL ’94",
         "year": "1993",
         "developer": "Visual Concepts",
         "blurb": "Released in Japan under different NFL-free branding, this American-football sim still found its way to a genuine European PAL release."
@@ -417,7 +417,7 @@
         "title": "International Superstar Soccer",
         "year": "1995",
         "developer": "Konami",
-        "blurb": "A soccer sim released in the West about a year after its Japanese debut, notably getting a real North American release despite the sport's smaller US audience."
+        "blurb": "A soccer sim released in the West about a year after its Japanese debut, notably getting a real North American release despite the sport’s smaller US audience."
       }
     ]
   },
@@ -425,7 +425,7 @@
     "hue": 42,
     "tag": "Simulation",
     "title": "Simulation & Strategy",
-    "blurb": "SimCity's SNES port anchors a small chapter that includes three tactical RPGs that stayed in Japan for years, or forever.",
+    "blurb": "SimCity’s SNES port anchors a small chapter that includes three tactical RPGs that stayed in Japan for years, or forever.",
     "games": [
       {
         "title": "SimCity",
@@ -437,7 +437,7 @@
         "title": "Harvest Moon",
         "year": "1997",
         "developer": "Pack-in-Video",
-        "blurb": "One of the SNES's last major releases anywhere, launching the farming-sim genre with a full day-and-season cycle."
+        "blurb": "One of the SNES’s last major releases anywhere, launching the farming-sim genre with a full day-and-season cycle."
       },
       {
         "title": "Ogre Battle: The March of the Black Queen",
@@ -449,7 +449,7 @@
         "title": "Front Mission",
         "year": "1995",
         "developer": "G-Craft",
-        "blurb": "A mecha tactical RPG that launched a long-running series — Japan-only on SNES; the West wouldn't see the franchise until later entries on other platforms."
+        "blurb": "A mecha tactical RPG that launched a long-running series — Japan-only on SNES; the West wouldn’t see the franchise until later entries on other platforms."
       },
       {
         "title": "Tactics Ogre: Let Us Cling Together",
@@ -475,10 +475,10 @@
     "hue": 285,
     "tag": "Licensed",
     "title": "Licensed, Movie & TV Tie-ins",
-    "blurb": "Capcom and Konami's Disney and superhero tie-ins remain some of the best-regarded licensed games of the 16-bit era.",
+    "blurb": "Capcom and Konami’s Disney and superhero tie-ins remain some of the best-regarded licensed games of the 16-bit era.",
     "games": [
       {
-        "title": "Disney's Aladdin",
+        "title": "Disney’s Aladdin",
         "year": "1994",
         "developer": "Capcom",
         "blurb": "Widely considered one of the best licensed platformers ever made, released in North America the year before its European and Japanese debuts."
@@ -487,7 +487,7 @@
         "title": "The Lion King",
         "year": "1994",
         "developer": "Westwood Studios",
-        "blurb": "A famously difficult platformer built around the film's key scenes, released across Europe and North America the same year."
+        "blurb": "A famously difficult platformer built around the film’s key scenes, released across Europe and North America the same year."
       },
       {
         "title": "Batman Returns",
@@ -529,7 +529,7 @@
         "title": "The Great Circus Mystery Starring Mickey & Minnie",
         "year": "1994",
         "developer": "Capcom",
-        "blurb": "Released in Japan as Magical Adventure 2 — unusually, Europe's release actually preceded North America's by a few months."
+        "blurb": "Released in Japan as Magical Adventure 2 — unusually, Europe’s release actually preceded North America’s by a few months."
       }
     ]
   },
@@ -537,7 +537,7 @@
     "hue": 168,
     "tag": "Curios",
     "title": "Cult Classics & Deep Cuts",
-    "blurb": "Earthworm Jim's absurdist run-and-gun sits alongside a run of Japan-only Square and Human Entertainment titles that stayed unlocalized for decades.",
+    "blurb": "Earthworm Jim’s absurdist run-and-gun sits alongside a run of Japan-only Square and Human Entertainment titles that stayed unlocalized for decades.",
     "games": [
       {
         "title": "Earthworm Jim",
@@ -561,13 +561,13 @@
         "title": "ActRaiser 2",
         "year": "1993",
         "developer": "Quintet",
-        "blurb": "Drops the original's city-building sections entirely in favor of pure action, released in Europe the year after North America."
+        "blurb": "Drops the original’s city-building sections entirely in favor of pure action, released in Europe the year after North America."
       },
       {
         "title": "Clock Tower",
         "year": "1995",
         "developer": "Human Entertainment",
-        "blurb": "A pioneering point-and-click survival horror game, Japan-only on SNES — its own sequel wouldn't reach the West until PlayStation, years later."
+        "blurb": "A pioneering point-and-click survival horror game, Japan-only on SNES — its own sequel wouldn’t reach the West until PlayStation, years later."
       },
       {
         "title": "Bahamut Lagoon",
@@ -579,7 +579,7 @@
         "title": "Star Ocean",
         "year": "1996",
         "developer": "tri-Ace",
-        "blurb": "The series' Japan-only SNES debut — the West's first taste of it came 12 years later via a PSP remake."
+        "blurb": "The series’ Japan-only SNES debut — the West’s first taste of it came 12 years later via a PSP remake."
       },
       {
         "title": "Umihara Kawase",
@@ -643,7 +643,7 @@
     "hue": 15,
     "tag": "Novelty",
     "title": "Multiplayer, Novelty & Peripheral Games",
-    "blurb": "Argonaut's Super FX chip games anchor a chapter closing on Star Fox 2, a finished game that didn't officially ship until 2017.",
+    "blurb": "Argonaut’s Super FX chip games anchor a chapter closing on Star Fox 2, a finished game that didn’t officially ship until 2017.",
     "games": [
       {
         "title": "Mario Paint",
@@ -667,7 +667,7 @@
         "title": "Star Fox",
         "year": "1993",
         "developer": "Nintendo EAD / Argonaut Software",
-        "blurb": "The Super FX chip's flagship showcase, turning the SNES into a passable 3D rail-shooter machine, released the same year worldwide."
+        "blurb": "The Super FX chip’s flagship showcase, turning the SNES into a passable 3D rail-shooter machine, released the same year worldwide."
       },
       {
         "title": "Star Fox 2",
@@ -679,19 +679,19 @@
         "title": "Wolfenstein 3D",
         "year": "1994",
         "developer": "id Software",
-        "blurb": "A heavily censored SNES port removing Nazi imagery and blood entirely to meet Nintendo's content policy — a striking contrast to the uncensored PC original, which was itself restricted in Germany for decades."
+        "blurb": "A heavily censored SNES port removing Nazi imagery and blood entirely to meet Nintendo’s content policy — a striking contrast to the uncensored PC original, which was itself restricted in Germany for decades."
       },
       {
         "title": "DOOM",
         "year": "1995",
         "developer": "Sculptured Software",
-        "blurb": "A technically ambitious port of id Software's FPS landmark, built to run on hardware never designed for it — a genuine engineering feat even with the compromises required."
+        "blurb": "A technically ambitious port of id Software’s FPS landmark, built to run on hardware never designed for it — a genuine engineering feat even with the compromises required."
       },
       {
         "title": "Mortal Kombat",
         "year": "1993",
         "developer": "Sculptured Software",
-        "blurb": "The infamous SNES port that removed blood entirely under Nintendo's content policy — the Sega Genesis version's now-legendary blood code had no SNES equivalent."
+        "blurb": "The infamous SNES port that removed blood entirely under Nintendo’s content policy — the Sega Genesis version’s now-legendary blood code had no SNES equivalent."
       }
     ]
   }

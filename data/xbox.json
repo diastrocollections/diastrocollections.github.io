@@ -3,7 +3,7 @@
     "hue": 20,
     "tag": "Flagships",
     "title": "The Games Xbox Was Built For",
-    "blurb": "Ten games Microsoft needed to exist for a first console to mean anything: the shooter built to sell hardware nobody had heard of, the racers and role-playing experiment that gave it a personality beyond Halo, and the online showcases that proved Xbox Live wasn't a gimmick.",
+    "blurb": "Ten games Microsoft needed to exist for a first console to mean anything: the shooter built to sell hardware nobody had heard of, the racers and role-playing experiment that gave it a personality beyond Halo, and the online showcases that proved Xbox Live wasn’t a gimmick.",
     "games": [
       {
         "title": "Halo: Combat Evolved",
@@ -15,7 +15,7 @@
         "title": "Halo 2",
         "year": "2004",
         "developer": "Bungie",
-        "blurb": "Xbox Live's coming-out party — dual-wielding, a new arsenal, and a midnight-launch frenzy that made online console gaming feel mainstream overnight. The cliffhanger ending was so infamous it became a running joke of its own."
+        "blurb": "Xbox Live’s coming-out party — dual-wielding, a new arsenal, and a midnight-launch frenzy that made online console gaming feel mainstream overnight. The cliffhanger ending was so infamous it became a running joke of its own."
       },
       {
         "title": "Fable",
@@ -27,7 +27,7 @@
         "title": "Ninja Gaiden",
         "year": "2004",
         "developer": "Team Ninja",
-        "blurb": "Tomonobu Itagaki's Xbox exclusive was less a reboot than a statement: brutally difficult, breathtakingly fast, and built to show off exactly what the hardware could do. Still cited as one of the best character-action games ever made."
+        "blurb": "Tomonobu Itagaki’s Xbox exclusive was less a reboot than a statement: brutally difficult, breathtakingly fast, and built to show off exactly what the hardware could do. Still cited as one of the best character-action games ever made."
       },
       {
         "title": "Project Gotham Racing",
@@ -39,25 +39,25 @@
         "title": "Project Gotham Racing 2",
         "year": "2003",
         "developer": "Bizarre Creations",
-        "blurb": "More cities, more cars, and a proper Xbox Live mode that made it one of the console's defining online experiences. The Kudos system got smarter, and the whole thing looked and felt a generation ahead of the original."
+        "blurb": "More cities, more cars, and a proper Xbox Live mode that made it one of the console’s defining online experiences. The Kudos system got smarter, and the whole thing looked and felt a generation ahead of the original."
       },
       {
         "title": "Forza Motorsport",
         "year": "2005",
         "developer": "Turn 10 Studios",
-        "blurb": "Microsoft's answer to Gran Turismo split the difference between sim and arcade, and added a livery editor that let players paint anything from regimental stripes to full anime characters onto their cars. It became Xbox's other racing pillar."
+        "blurb": "Microsoft’s answer to Gran Turismo split the difference between sim and arcade, and added a livery editor that let players paint anything from regimental stripes to full anime characters onto their cars. It became Xbox’s other racing pillar."
       },
       {
         "title": "Jet Set Radio Future",
         "year": "2002",
         "developer": "Smilebit",
-        "blurb": "A cel-shaded skating game about graffiti gangs tagging a stylised Tokyo to a soundtrack of funk, hip-hop and J-pop. Sega's visual style had nowhere else to go after Dreamcast folded, and Xbox exclusivity gave it a proper send-off."
+        "blurb": "A cel-shaded skating game about graffiti gangs tagging a stylised Tokyo to a soundtrack of funk, hip-hop and J-pop. Sega’s visual style had nowhere else to go after Dreamcast folded, and Xbox exclusivity gave it a proper send-off."
       },
       {
         "title": "Crimson Skies: High Road to Revenge",
         "year": "2003",
         "developer": "Zipper Interactive",
-        "blurb": "A dieselpunk alternate-1930s America where the Great Depression fractured the country into warring states, told through arcade dogfights in propeller planes bristling with machine guns and rockets. One of Xbox Live's best early multiplayer showcases."
+        "blurb": "A dieselpunk alternate-1930s America where the Great Depression fractured the country into warring states, told through arcade dogfights in propeller planes bristling with machine guns and rockets. One of Xbox Live’s best early multiplayer showcases."
       },
       {
         "title": "Panzer Dragoon Orta",
@@ -77,19 +77,19 @@
         "title": "The Elder Scrolls III: Morrowind",
         "year": "2002",
         "developer": "Bethesda Game Studios",
-        "blurb": "An alien, mushroom-forested island where the game trusted players to wander off the map entirely and figure things out for themselves. The Xbox Game of the Year Edition folded in both expansions and became many players' first taste of Bethesda's open worlds."
+        "blurb": "An alien, mushroom-forested island where the game trusted players to wander off the map entirely and figure things out for themselves. The Xbox Game of the Year Edition folded in both expansions and became many players’ first taste of Bethesda’s open worlds."
       },
       {
         "title": "Jade Empire",
         "year": "2005",
         "developer": "BioWare",
-        "blurb": "BioWare's martial-arts RPG swapped swords for kung fu styles you could switch mid-combo, wrapped in a mythic version of ancient China with the studio's usual knack for morally messy companions."
+        "blurb": "BioWare’s martial-arts RPG swapped swords for kung fu styles you could switch mid-combo, wrapped in a mythic version of ancient China with the studio’s usual knack for morally messy companions."
       },
       {
         "title": "Shenmue II",
         "year": "2002",
         "developer": "Sega AM2",
-        "blurb": "Dreamcast's cult classic never made it West in its home format, so Xbox became the console where English-speaking players finally continued Ryo Hazuki's revenge story through the markets and back alleys of Kowloon. Still one of gaming's most obsessively detailed worlds."
+        "blurb": "Dreamcast’s cult classic never made it West in its home format, so Xbox became the console where English-speaking players finally continued Ryo Hazuki’s revenge story through the markets and back alleys of Kowloon. Still one of gaming’s most obsessively detailed worlds."
       },
       {
         "title": "Phantasy Star Online Episode I & II",
@@ -104,7 +104,7 @@
         "blurb": "A British-made attempt at a JRPG-flavoured action RPG, switching between four playable characters and swapping between a bright fantasy world and a darker mirror dimension. Uneven, but a rare console-original RPG built specifically for Xbox."
       },
       {
-        "title": "The Bard's Tale",
+        "title": "The Bard’s Tale",
         "year": "2004",
         "developer": "InXile Entertainment",
         "blurb": "A tongue-in-cheek revival that turned the classic dungeon-crawling series into a wisecracking action-RPG, with the mercenary Bard breaking the fourth wall almost as often as he broke into song."
@@ -113,7 +113,7 @@
         "title": "Champions of Norrath: Realms of EverQuest",
         "year": "2004",
         "developer": "Snowblind Studios",
-        "blurb": "A couch co-op dungeon-crawler built from EverQuest's world but designed entirely around console play — drop-in loot runs with a friend on the same TV, years before that became a genre staple again."
+        "blurb": "A couch co-op dungeon-crawler built from EverQuest’s world but designed entirely around console play — drop-in loot runs with a friend on the same TV, years before that became a genre staple again."
       }
     ]
   },
@@ -121,7 +121,7 @@
     "hue": 355,
     "tag": "Shooters",
     "title": "Live And Let Fire",
-    "blurb": "Beyond Halo's shadow, Xbox quietly became a genuine shooter platform — mech combat, arena deathmatch, and tactical squad games that used Xbox Live before most consoles had figured out what online play was even for.",
+    "blurb": "Beyond Halo’s shadow, Xbox quietly became a genuine shooter platform — mech combat, arena deathmatch, and tactical squad games that used Xbox Live before most consoles had figured out what online play was even for.",
     "games": [
       {
         "title": "Unreal Championship",
@@ -133,19 +133,19 @@
         "title": "Unreal Championship 2: The Liandri Conflict",
         "year": "2005",
         "developer": "Epic Games / Midway",
-        "blurb": "Added melee combat and character classes to the arena-shooter formula, a late-cycle Xbox exclusive built to keep the console's shooter crowd engaged as the 360 loomed."
+        "blurb": "Added melee combat and character classes to the arena-shooter formula, a late-cycle Xbox exclusive built to keep the console’s shooter crowd engaged as the 360 loomed."
       },
       {
         "title": "MechAssault",
         "year": "2002",
         "developer": "Day 1 Studios",
-        "blurb": "Stomping around in BattleTech mechs became one of Xbox Live's first genuine word-of-mouth hits — simple to pick up, chaotic in multiplayer, and one of the games that actually sold people on paying for online play."
+        "blurb": "Stomping around in BattleTech mechs became one of Xbox Live’s first genuine word-of-mouth hits — simple to pick up, chaotic in multiplayer, and one of the games that actually sold people on paying for online play."
       },
       {
         "title": "MechAssault 2: Lone Wolf",
         "year": "2004",
         "developer": "Day 1 Studios",
-        "blurb": "Added on-foot combat, vehicles beyond mechs, and a beefed-up campaign, though it never quite recaptured the original's lightning-in-a-bottle Live following."
+        "blurb": "Added on-foot combat, vehicles beyond mechs, and a beefed-up campaign, though it never quite recaptured the original’s lightning-in-a-bottle Live following."
       },
       {
         "title": "Brute Force",
@@ -157,12 +157,12 @@
         "title": "Counter-Strike",
         "year": "2003",
         "developer": "Valve / Gearbox Software",
-        "blurb": "A faithful console port of the PC phenomenon, tactical round-based gunplay that lived or died on economy management and communication. Never quite replicated its PC scene's culture, but a solid entry point for console players."
+        "blurb": "A faithful console port of the PC phenomenon, tactical round-based gunplay that lived or died on economy management and communication. Never quite replicated its PC scene’s culture, but a solid entry point for console players."
       },
       {
         "title": "Metal Arms: Glitch in the System",
         "year": "2003",
-        "developer": "Swingin' Ape Studios",
+        "developer": "Swingin’ Ape Studios",
         "blurb": "A scrappy third-person shooter about a rebel robot fighting a tyrannical toaster army, with genuinely inventive gadget-based combat that punched well above its budget. A cult favorite that never got the sequel it deserved."
       },
       {
@@ -175,7 +175,7 @@
         "title": "TimeSplitters: Future Perfect",
         "year": "2005",
         "developer": "Free Radical Design",
-        "blurb": "The series' most polished entry, with a story mode that finally gave the wisecracking chaos some structure without losing any of the mapmaking and character-creation tools fans built entire communities around."
+        "blurb": "The series’ most polished entry, with a story mode that finally gave the wisecracking chaos some structure without losing any of the mapmaking and character-creation tools fans built entire communities around."
       },
       {
         "title": "Full Spectrum Warrior",
@@ -184,10 +184,10 @@
         "blurb": "Originally built as a U.S. Army training tool before being reworked for retail, this squad-command shooter had players positioning fireteams and calling suppressive fire rather than aiming a gun themselves — tense and methodical, unlike almost anything else on the console."
       },
       {
-        "title": "Tom Clancy's Rainbow Six 3",
+        "title": "Tom Clancy’s Rainbow Six 3",
         "year": "2003",
         "developer": "Red Storm Entertainment / Ubisoft",
-        "blurb": "Brought the series' planning-heavy tactical shooting to consoles with a mission-briefing and breach-and-clear structure that rewarded patience over reflexes, plus a robust Xbox Live co-op and versus suite."
+        "blurb": "Brought the series’ planning-heavy tactical shooting to consoles with a mission-briefing and breach-and-clear structure that rewarded patience over reflexes, plus a robust Xbox Live co-op and versus suite."
       },
       {
         "title": "Black",
@@ -204,10 +204,10 @@
     "blurb": "Sam Fisher, Garrett, and a small run of narrative-first thrillers made Xbox an unusually strong home for games about not being seen — patient, atmospheric, and often more interested in tension than spectacle.",
     "games": [
       {
-        "title": "Tom Clancy's Splinter Cell",
+        "title": "Tom Clancy’s Splinter Cell",
         "year": "2003",
         "developer": "Ubisoft Montreal",
-        "blurb": "Sam Fisher's debut leaned hard into Xbox's graphical horsepower for the era — dynamic shadows you could actually hide in, night-vision and thermal goggles, and a slower, more paranoid pace than Metal Gear's theatrics."
+        "blurb": "Sam Fisher’s debut leaned hard into Xbox’s graphical horsepower for the era — dynamic shadows you could actually hide in, night-vision and thermal goggles, and a slower, more paranoid pace than Metal Gear’s theatrics."
       },
       {
         "title": "Splinter Cell: Pandora Tomorrow",
@@ -225,13 +225,13 @@
         "title": "Deus Ex: Invisible War",
         "year": "2003",
         "developer": "Ion Storm",
-        "blurb": "The sequel to the acclaimed PC immersive-sim arrived on consoles Xbox-first, streamlining its predecessor's density into something more console-friendly while keeping the core idea: every level solvable by stealth, combat, hacking, or talking your way through."
+        "blurb": "The sequel to the acclaimed PC immersive-sim arrived on consoles Xbox-first, streamlining its predecessor’s density into something more console-friendly while keeping the core idea: every level solvable by stealth, combat, hacking, or talking your way through."
       },
       {
         "title": "Thief: Deadly Shadows",
         "year": "2004",
         "developer": "Ion Storm",
-        "blurb": "Master thief Garrett's console debut kept the series' light-and-sound-based stealth intact while opening up hub-city exploration between missions, one of the few true first-person stealth games Xbox ever got."
+        "blurb": "Master thief Garrett’s console debut kept the series’ light-and-sound-based stealth intact while opening up hub-city exploration between missions, one of the few true first-person stealth games Xbox ever got."
       },
       {
         "title": "Metal Gear Solid 2: Substance",
@@ -261,7 +261,7 @@
         "title": "Indigo Prophecy",
         "year": "2005",
         "developer": "Quantic Dream",
-        "blurb": "An interactive murder-mystery thriller (released in Europe as Fahrenheit) built almost entirely from quick-time events and branching dialogue, following a man trying to cover up a killing he doesn't remember committing. Wildly ambitious, and just as wildly uneven by its own ending."
+        "blurb": "An interactive murder-mystery thriller (released in Europe as Fahrenheit) built almost entirely from quick-time events and branching dialogue, following a man trying to cover up a killing he doesn’t remember committing. Wildly ambitious, and just as wildly uneven by its own ending."
       }
     ]
   },
@@ -269,13 +269,13 @@
     "hue": 30,
     "tag": "Open World",
     "title": "Crime Sprees And City Streets",
-    "blurb": "GTA III's success turned crime sprees into their own genre almost overnight, and Xbox got its share of the wave — plus, on San Andreas specifically, a version reviewers at the time actually preferred.",
+    "blurb": "GTA III’s success turned crime sprees into their own genre almost overnight, and Xbox got its share of the wave — plus, on San Andreas specifically, a version reviewers at the time actually preferred.",
     "games": [
       {
         "title": "Grand Theft Auto: Double Pack",
         "year": "2003",
         "developer": "DMA Design / Rockstar North",
-        "blurb": "GTA III and Vice City bundled together for Xbox owners who'd missed the PlayStation 2 phenomenon the first time round — two open-world crime sprees, one disc, arriving right as the genre they created was about to explode."
+        "blurb": "GTA III and Vice City bundled together for Xbox owners who’d missed the PlayStation 2 phenomenon the first time round — two open-world crime sprees, one disc, arriving right as the genre they created was about to explode."
       },
       {
         "title": "Grand Theft Auto: San Andreas",
@@ -287,7 +287,7 @@
         "title": "True Crime: Streets of LA",
         "year": "2003",
         "developer": "Luxoflux",
-        "blurb": "Activision's answer to GTA cast players as a loose-cannon cop free-roaming a recreated Los Angeles, mixing driving and shooting with martial-arts combat. Rough around the edges, but ambitious enough to spawn a sequel."
+        "blurb": "Activision’s answer to GTA cast players as a loose-cannon cop free-roaming a recreated Los Angeles, mixing driving and shooting with martial-arts combat. Rough around the edges, but ambitious enough to spawn a sequel."
       },
       {
         "title": "Mafia: The City of Lost Heaven",
@@ -299,7 +299,7 @@
         "title": "The Simpsons: Hit & Run",
         "year": "2003",
         "developer": "Radical Entertainment",
-        "blurb": "A GTA-style romp through Springfield that nailed the show's humor better than almost any licensed game before or since, with a genuinely funny script and a cast recorded by the show's real voice actors."
+        "blurb": "A GTA-style romp through Springfield that nailed the show’s humor better than almost any licensed game before or since, with a genuinely funny script and a cast recorded by the show’s real voice actors."
       },
       {
         "title": "Just Cause",
@@ -311,7 +311,7 @@
         "title": "Scarface: The World Is Yours",
         "year": "2006",
         "developer": "Radical Entertainment",
-        "blurb": "An unofficial sequel to the film that picked up where the movie's ending left off — Tony Montana lives, and rebuilds his empire — with a rage meter and a Little Friend that made every shootout feel appropriately excessive."
+        "blurb": "An unofficial sequel to the film that picked up where the movie’s ending left off — Tony Montana lives, and rebuilds his empire — with a rage meter and a Little Friend that made every shootout feel appropriately excessive."
       },
       {
         "title": "Driv3r",
@@ -325,13 +325,13 @@
     "hue": 130,
     "tag": "Racing",
     "title": "Full Throttle",
-    "blurb": "Beyond the flagship racers, Xbox built a genuinely deep bench — rally sims, arcade crash-fests, tuner culture, and Sega's own attempts to chase down Gran Turismo.",
+    "blurb": "Beyond the flagship racers, Xbox built a genuinely deep bench — rally sims, arcade crash-fests, tuner culture, and Sega’s own attempts to chase down Gran Turismo.",
     "games": [
       {
         "title": "RalliSport Challenge",
         "year": "2002",
         "developer": "Digital Illusions CE",
-        "blurb": "A rally racer that prized weight transfer and surface physics over arcade forgiveness, with rain, snow and mud all handling distinctly underfoot. A cult favorite among racing purists who'd never touched a Colin McRae game."
+        "blurb": "A rally racer that prized weight transfer and surface physics over arcade forgiveness, with rain, snow and mud all handling distinctly underfoot. A cult favorite among racing purists who’d never touched a Colin McRae game."
       },
       {
         "title": "RalliSport Challenge 2",
@@ -343,13 +343,13 @@
         "title": "Midtown Madness 3",
         "year": "2003",
         "developer": "Digital Illusions CE",
-        "blurb": "An Xbox-exclusive entry in Microsoft's arcade street-racing series, setting free-roaming traffic chaos across recreated Paris and Washington D.C. streets, cops and all."
+        "blurb": "An Xbox-exclusive entry in Microsoft’s arcade street-racing series, setting free-roaming traffic chaos across recreated Paris and Washington D.C. streets, cops and all."
       },
       {
         "title": "OutRun2",
         "year": "2004",
         "developer": "Sega AM2",
-        "blurb": "Sega's arcade classic reborn with a genuine sense of speed and joy that few racers of the era bothered chasing — sun-drenched coastal roads, a convertible, and a girlfriend clutching the passenger seat. Pure, uncomplicated fun."
+        "blurb": "Sega’s arcade classic reborn with a genuine sense of speed and joy that few racers of the era bothered chasing — sun-drenched coastal roads, a convertible, and a girlfriend clutching the passenger seat. Pure, uncomplicated fun."
       },
       {
         "title": "Burnout 3: Takedown",
@@ -373,31 +373,31 @@
         "title": "Crazy Taxi 3: High Roller",
         "year": "2003",
         "developer": "Sega / Hitmaker",
-        "blurb": "Sega's arcade taxi-driving series got its most content-rich entry on Xbox, adding a nighttime Las Vegas-inspired district to the original two cities, plus a Crazy Box mode full of trick challenges."
+        "blurb": "Sega’s arcade taxi-driving series got its most content-rich entry on Xbox, adding a nighttime Las Vegas-inspired district to the original two cities, plus a Crazy Box mode full of trick challenges."
       },
       {
         "title": "MotoGP",
         "year": "2003",
         "developer": "Climax Racing",
-        "blurb": "A properly technical motorcycle-racing sim licensed from the real MotoGP championship, demanding careful braking and lean angles rather than arcade forgiveness — a favorite among the console's small but dedicated bike-racing crowd."
+        "blurb": "A properly technical motorcycle-racing sim licensed from the real MotoGP championship, demanding careful braking and lean angles rather than arcade forgiveness — a favorite among the console’s small but dedicated bike-racing crowd."
       },
       {
         "title": "MotoGP 2",
         "year": "2004",
         "developer": "Climax Racing",
-        "blurb": "Refined the physics and added the full official roster and calendar, becoming the console's definitive two-wheeled racer."
+        "blurb": "Refined the physics and added the full official roster and calendar, becoming the console’s definitive two-wheeled racer."
       },
       {
         "title": "Sega GT 2002",
         "year": "2002",
         "developer": "Sega",
-        "blurb": "A GT-style sim racer with a surprisingly deep car-customization and career mode, released into Xbox's launch window as Sega's own answer to the genre Gran Turismo owned on PlayStation."
+        "blurb": "A GT-style sim racer with a surprisingly deep car-customization and career mode, released into Xbox’s launch window as Sega’s own answer to the genre Gran Turismo owned on PlayStation."
       },
       {
         "title": "Colin McRae Rally 04",
         "year": "2004",
         "developer": "Codemasters",
-        "blurb": "The long-running rally sim's Xbox entry leaned into a genuine career structure and damage modeling that punished sloppy driving far more than arcade rivals did."
+        "blurb": "The long-running rally sim’s Xbox entry leaned into a genuine career structure and damage modeling that punished sloppy driving far more than arcade rivals did."
       }
     ]
   },
@@ -405,7 +405,7 @@
     "hue": 350,
     "tag": "Fighting",
     "title": "Fists, Blades And Body Slams",
-    "blurb": "Team Ninja's Dead or Alive series anchored a fighting-game lineup that also picked up console-exclusive guest characters, hip-hop brawlers, and one of Xbox Live's earliest online wrestling experiments.",
+    "blurb": "Team Ninja’s Dead or Alive series anchored a fighting-game lineup that also picked up console-exclusive guest characters, hip-hop brawlers, and one of Xbox Live’s earliest online wrestling experiments.",
     "games": [
       {
         "title": "Dead or Alive 3",
@@ -423,7 +423,7 @@
         "title": "Soulcalibur II",
         "year": "2003",
         "developer": "Namco",
-        "blurb": "Each console got its own exclusive guest fighter — Xbox players got Spawn, alongside GameCube's Link and PlayStation 2's Heihachi — a rare case of a genuinely platform-specific roster difference worth caring about."
+        "blurb": "Each console got its own exclusive guest fighter — Xbox players got Spawn, alongside GameCube’s Link and PlayStation 2’s Heihachi — a rare case of a genuinely platform-specific roster difference worth caring about."
       },
       {
         "title": "Def Jam: Fight for NY",
@@ -435,7 +435,7 @@
         "title": "Mortal Kombat: Deadly Alliance",
         "year": "2002",
         "developer": "Midway",
-        "blurb": "The series' jump to full 3D combat, adding weapon-based stances to every character without losing the gore the franchise was built on."
+        "blurb": "The series’ jump to full 3D combat, adding weapon-based stances to every character without losing the gore the franchise was built on."
       },
       {
         "title": "Mortal Kombat: Deception",
@@ -447,7 +447,7 @@
         "title": "Capcom vs. SNK 2: Mark of the Millennium 2001",
         "year": "2002",
         "developer": "Capcom",
-        "blurb": "A dream-match crossover between two rival fighting-game universes, letting players mix and match Street Fighter and King of Fighters casts under a deep 'groove' system that changed each character's mechanics entirely."
+        "blurb": "A dream-match crossover between two rival fighting-game universes, letting players mix and match Street Fighter and King of Fighters casts under a deep “groove” system that changed each character’s mechanics entirely."
       },
       {
         "title": "Bloody Roar Extreme",
@@ -459,7 +459,7 @@
         "title": "WWE Raw",
         "year": "2002",
         "developer": "Anchor Inc.",
-        "blurb": "An Xbox Live launch title that let wrestling fans take the fight online before almost any other console sports game managed it, part of the handful of titles that made the case for paying for Xbox's online service in the first place."
+        "blurb": "An Xbox Live launch title that let wrestling fans take the fight online before almost any other console sports game managed it, part of the handful of titles that made the case for paying for Xbox’s online service in the first place."
       }
     ]
   },
@@ -467,43 +467,43 @@
     "hue": 265,
     "tag": "Horror",
     "title": "Turn The Lights Off",
-    "blurb": "A smaller chapter than most, but a distinctive one — Xbox's horror lineup leaned on enhanced ports and director's-cut extras that gave players reasons to pick this console's version over anyone else's.",
+    "blurb": "A smaller chapter than most, but a distinctive one — Xbox’s horror lineup leaned on enhanced ports and director’s-cut extras that gave players reasons to pick this console’s version over anyone else’s.",
     "games": [
       {
         "title": "Doom 3",
         "year": "2005",
         "developer": "id Software",
-        "blurb": "A slower, darker reimagining of the original that leaned entirely into atmosphere — flashlight-or-gun tension, sudden monster closets, and corridors so oppressively dark that players fought the game's lighting as much as its demons."
+        "blurb": "A slower, darker reimagining of the original that leaned entirely into atmosphere — flashlight-or-gun tension, sudden monster closets, and corridors so oppressively dark that players fought the game’s lighting as much as its demons."
       },
       {
-        "title": "Project Zero II: Crimson Butterfly (Director's Cut)",
+        "title": "Project Zero II: Crimson Butterfly (Director’s Cut)",
         "year": "2004",
         "developer": "Tecmo",
-        "blurb": "Twin sisters exploring an abandoned village armed only with a camera that photographs ghosts to damage them — one of survival horror's most purely unsettling ideas. The Xbox Director's Cut added a first-person mode, a Survival mode, extra difficulty tiers, new costumes, and an alternate ending not in the original release."
+        "blurb": "Twin sisters exploring an abandoned village armed only with a camera that photographs ghosts to damage them — one of survival horror’s most purely unsettling ideas. The Xbox Director’s Cut added a first-person mode, a Survival mode, extra difficulty tiers, new costumes, and an alternate ending not in the original release."
       },
       {
         "title": "The House of the Dead III",
         "year": "2003",
         "developer": "WOW Entertainment",
-        "blurb": "Sega's light-gun horror series translated to a standard controller reasonably well, sending players through a monster-infested mansion with the same over-the-top B-movie energy as the arcade original."
+        "blurb": "Sega’s light-gun horror series translated to a standard controller reasonably well, sending players through a monster-infested mansion with the same over-the-top B-movie energy as the arcade original."
       },
       {
         "title": "Silent Hill 2: Restless Dreams",
         "year": "2002",
         "developer": "Konami Computer Entertainment Tokyo",
-        "blurb": "Xbox's version of Silent Hill 2 arrived as an enhanced port bundling in Born from a Wish, a short side-story starring a character glimpsed only briefly in the main game, alongside extra costumes not in the original PlayStation 2 release."
+        "blurb": "Xbox’s version of Silent Hill 2 arrived as an enhanced port bundling in Born from a Wish, a short side-story starring a character glimpsed only briefly in the main game, alongside extra costumes not in the original PlayStation 2 release."
       },
       {
         "title": "The Suffering",
         "year": "2004",
         "developer": "Surreal Software",
-        "blurb": "A death-row inmate's escape from prison becomes a supernatural nightmare full of monsters born from real methods of execution, blending survival horror with third-person shooting and a genuinely grim sense of atmosphere."
+        "blurb": "A death-row inmate’s escape from prison becomes a supernatural nightmare full of monsters born from real methods of execution, blending survival horror with third-person shooting and a genuinely grim sense of atmosphere."
       },
       {
         "title": "The Thing",
         "year": "2002",
         "developer": "Computer Artworks",
-        "blurb": "An unofficial sequel to John Carpenter's film, built around a trust mechanic where squadmates could panic, turn on each other, or reveal themselves as the shapeshifting alien at the worst possible moment."
+        "blurb": "An unofficial sequel to John Carpenter’s film, built around a trust mechanic where squadmates could panic, turn on each other, or reveal themselves as the shapeshifting alien at the worst possible moment."
       }
     ]
   },
@@ -517,13 +517,13 @@
         "title": "Psychonauts",
         "year": "2005",
         "developer": "Double Fine Productions",
-        "blurb": "Tim Schafer's psychic-summer-camp platformer turned every level into a different character's literal mindscape, packed with the kind of writing and physical-comedy timing platformers rarely bothered with. A commercial disappointment that's been rediscovered and adored ever since."
+        "blurb": "Tim Schafer’s psychic-summer-camp platformer turned every level into a different character’s literal mindscape, packed with the kind of writing and physical-comedy timing platformers rarely bothered with. A commercial disappointment that’s been rediscovered and adored ever since."
       },
       {
         "title": "Voodoo Vince",
         "year": "2003",
         "developer": "Beep Industries",
-        "blurb": "A Microsoft-published mascot platformer starring a voodoo doll who could stab, burn and electrocute himself to solve puzzles, since damage done to Vince's own body became his main tool rather than his main threat."
+        "blurb": "A Microsoft-published mascot platformer starring a voodoo doll who could stab, burn and electrocute himself to solve puzzles, since damage done to Vince’s own body became his main tool rather than his main threat."
       },
       {
         "title": "Blinx: The Time Sweeper",
@@ -535,13 +535,13 @@
         "title": "Amped: Freestyle Snowboarding",
         "year": "2002",
         "developer": "2XL Games",
-        "blurb": "One of Xbox's launch-window titles, an early attempt at bringing real trick-based snowboarding culture to consoles with a career mode built around actual mountain resorts rather than abstract levels."
+        "blurb": "One of Xbox’s launch-window titles, an early attempt at bringing real trick-based snowboarding culture to consoles with a career mode built around actual mountain resorts rather than abstract levels."
       },
       {
         "title": "Conker: Live & Reloaded",
         "year": "2005",
         "developer": "Rare",
-        "blurb": "A remake of the cult N64 original, rebuilding Conker's Bad Fur Day's absurdly foul-mouthed, movie-referencing slapstick for Xbox and adding an entirely new multiplayer mode built around Xbox Live."
+        "blurb": "A remake of the cult N64 original, rebuilding Conker’s Bad Fur Day’s absurdly foul-mouthed, movie-referencing slapstick for Xbox and adding an entirely new multiplayer mode built around Xbox Live."
       },
       {
         "title": "Whacked!",
@@ -555,7 +555,7 @@
     "hue": 225,
     "tag": "Cult & Curios",
     "title": "The Beautifully Strange",
-    "blurb": "The games that didn't fit anywhere else because nothing else looked or played quite like them — a 40-button mech controller, a deck-building action game, a hero who fights through hell with a destructible sword. This is where Xbox got genuinely weird.",
+    "blurb": "The games that didn’t fit anywhere else because nothing else looked or played quite like them — a 40-button mech controller, a deck-building action game, a hero who fights through hell with a destructible sword. This is where Xbox got genuinely weird.",
     "games": [
       {
         "title": "Otogi: Myth of Demons",
@@ -567,7 +567,7 @@
         "title": "Otogi 2: Immortal Warriors",
         "year": "2004",
         "developer": "From Software",
-        "blurb": "Traded the original's single hero for a roster of five playable demon-hunters, each with their own combat style, while keeping the same destructible, painterly environments."
+        "blurb": "Traded the original’s single hero for a roster of five playable demon-hunters, each with their own combat style, while keeping the same destructible, painterly environments."
       },
       {
         "title": "Gunvalkyrie",
@@ -579,7 +579,7 @@
         "title": "Crimson Sea",
         "year": "2003",
         "developer": "Koei",
-        "blurb": "A sci-fi hack-and-slash pitting a small squad of soldiers against overwhelming alien swarms, closer in spirit to Koei's Dynasty Warriors games than anything else in its genre on Xbox."
+        "blurb": "A sci-fi hack-and-slash pitting a small squad of soldiers against overwhelming alien swarms, closer in spirit to Koei’s Dynasty Warriors games than anything else in its genre on Xbox."
       },
       {
         "title": "Phantom Dust",
@@ -609,7 +609,7 @@
         "title": "Half-Life 2",
         "year": "2005",
         "developer": "Valve Corporation / VU Games",
-        "blurb": "Valve's landmark PC shooter arrived on Xbox a year after its original release, physics puzzles, the Gravity Gun and all, running remarkably close to its PC counterpart on console hardware."
+        "blurb": "Valve’s landmark PC shooter arrived on Xbox a year after its original release, physics puzzles, the Gravity Gun and all, running remarkably close to its PC counterpart on console hardware."
       },
       {
         "title": "Breakdown",
@@ -629,7 +629,7 @@
         "title": "Star Wars: Knights of the Old Republic",
         "year": "2003",
         "developer": "BioWare",
-        "blurb": "Set thousands of years before the films, BioWare's Star Wars RPG let players build a Jedi from scratch and walk toward a twist ending still cited as one of gaming's best. Widely considered one of the best Star Wars stories in any medium."
+        "blurb": "Set thousands of years before the films, BioWare’s Star Wars RPG let players build a Jedi from scratch and walk toward a twist ending still cited as one of gaming’s best. Widely considered one of the best Star Wars stories in any medium."
       },
       {
         "title": "Star Wars: Knights of the Old Republic II – The Sith Lords",
@@ -653,13 +653,13 @@
         "title": "Star Wars: Battlefront II",
         "year": "2005",
         "developer": "Pandemic Studios",
-        "blurb": "Added space battles, a proper campaign following the 501st Legion through the prequel and original trilogies, and Jedi as playable heroes — refining nearly everything about the original into the series' most complete entry."
+        "blurb": "Added space battles, a proper campaign following the 501st Legion through the prequel and original trilogies, and Jedi as playable heroes — refining nearly everything about the original into the series’ most complete entry."
       },
       {
         "title": "The Lord of the Rings: The Return of the King",
         "year": "2003",
         "developer": "EA Redwood Shores",
-        "blurb": "A hack-and-slash built directly from Peter Jackson's films, using licensed footage, voice cast and John Rhys-Davies narration to turn the trilogy's climax into a surprisingly brutal, blood-and-fire action game."
+        "blurb": "A hack-and-slash built directly from Peter Jackson’s films, using licensed footage, voice cast and John Rhys-Davies narration to turn the trilogy’s climax into a surprisingly brutal, blood-and-fire action game."
       }
     ]
   },
@@ -667,7 +667,7 @@
     "hue": 310,
     "tag": "Curios",
     "title": "The Bottom Of The Toy Box",
-    "blurb": "Four games that exist because someone, somewhere, was allowed to just try something — a beach-volleyball spin-off, a fast-food advergame, a party game betting on Xbox Live's future, and a Hong Kong demolition derby. Xbox's strangest corners, gathered in one place.",
+    "blurb": "Four games that exist because someone, somewhere, was allowed to just try something — a beach-volleyball spin-off, a fast-food advergame, a party game betting on Xbox Live’s future, and a Hong Kong demolition derby. Xbox’s strangest corners, gathered in one place.",
     "games": [
       {
         "title": "Dead or Alive Xtreme Beach Volleyball",
@@ -679,12 +679,12 @@
         "title": "Sneak King",
         "year": "2006",
         "developer": "Blitz Games",
-        "blurb": "A free pack-in game from Burger King starring the unsettling King mascot sneaking up on hungry office workers and construction sites to hand them a sandwich. One of three Xbox advergames sold alongside value meals — the strangest marketing stunt in the console's history."
+        "blurb": "A free pack-in game from Burger King starring the unsettling King mascot sneaking up on hungry office workers and construction sites to hand them a sandwich. One of three Xbox advergames sold alongside value meals — the strangest marketing stunt in the console’s history."
       },
       {
         "title": "Fuzion Frenzy",
         "year": "2002",
-        "developer": "Bug's outdoor / Hudson Soft",
+        "developer": "Bug’s outdoor / Hudson Soft",
         "blurb": "A Mario Party-style minigame collection built as an Xbox Live-era launch title, betting that four-player chaos on one console could be its own genre. Modest, but genuinely fun in short bursts with a full room."
       },
       {

@@ -3,7 +3,7 @@
     "hue": 10,
     "tag": "Platformer",
     "title": "Sonic & Mascot Platformers",
-    "blurb": "The blue blur and the roster of speed-obsessed rivals Sega built around him, defining the Mega Drive's whole personality.",
+    "blurb": "The blue blur and the roster of speed-obsessed rivals Sega built around him, defining the Mega Drive’s whole personality.",
     "games": [
       {
         "title": "Sonic the Hedgehog",
@@ -15,7 +15,7 @@
         "title": "Sonic the Hedgehog 2",
         "year": "1992",
         "developer": "Sega",
-        "blurb": "Tails joins in, the Spin Dash arrives, and Emerald Hill Zone becomes the platform's signature opening act."
+        "blurb": "Tails joins in, the Spin Dash arrives, and Emerald Hill Zone becomes the platform’s signature opening act."
       },
       {
         "title": "Sonic the Hedgehog 3",
@@ -39,19 +39,19 @@
         "title": "Dynamite Headdy",
         "year": "1994",
         "developer": "Treasure",
-        "blurb": "A puppet-theatre platformer overflowing with ideas, where the hero's detachable head becomes the whole toolkit."
+        "blurb": "A puppet-theatre platformer overflowing with ideas, where the hero’s detachable head becomes the whole toolkit."
       },
       {
         "title": "Alex Kidd in the Enchanted Castle",
         "year": "1990",
         "developer": "Sega",
-        "blurb": "Sega's original mascot before Sonic, swapping punches and rock-paper-scissors duels through a fairy-tale kingdom."
+        "blurb": "Sega’s original mascot before Sonic, swapping punches and rock-paper-scissors duels through a fairy-tale kingdom."
       },
       {
         "title": "Rocket Knight Adventures",
         "year": "1993",
         "developer": "Konami",
-        "blurb": "A jetpack-propelled opossum knight in armor, charging and boosting through some of the era's most kinetic level design."
+        "blurb": "A jetpack-propelled opossum knight in armor, charging and boosting through some of the era’s most kinetic level design."
       },
       {
         "title": "Vectorman",
@@ -71,7 +71,7 @@
     "hue": 40,
     "tag": "Licensed",
     "title": "Licensed & Platforming Icons",
-    "blurb": "Disney deals and Western studio talent turned cartoon licenses into some of the console's most polished platforming.",
+    "blurb": "Disney deals and Western studio talent turned cartoon licenses into some of the console’s most polished platforming.",
     "games": [
       {
         "title": "Earthworm Jim",
@@ -92,7 +92,7 @@
         "blurb": "An Indiana Jones pastiche starring Donald on a globe-trotting treasure hunt, built on genuine exploration and backtracking."
       },
       {
-        "title": "Disney's Aladdin",
+        "title": "Disney’s Aladdin",
         "year": "1993",
         "developer": "Virgin Games",
         "blurb": "Hand-animated by former Disney artists, with a sword-slashing, apple-throwing Aladdin that still looks remarkable today."
@@ -113,7 +113,7 @@
         "title": "Cool Spot",
         "year": "1994",
         "developer": "Virgin Games",
-        "blurb": "The 7-Up mascot's own outing, built by the Aladdin team into a tight, atmospheric beach-side platformer."
+        "blurb": "The 7-Up mascot’s own outing, built by the Aladdin team into a tight, atmospheric beach-side platformer."
       },
       {
         "title": "James Pond II: Codename RoboCod",
@@ -130,28 +130,28 @@
       {
         "title": "Puggsy",
         "year": "1993",
-        "developer": "Traveller's Tales",
+        "developer": "Traveller’s Tales",
         "blurb": "An underappreciated British puzzle-platformer where a stranded alien solves rooms by picking up and hurling nearly everything."
       }
     ]
   },
   {
     "hue": 70,
-    "tag": "Beat-'em-up",
-    "title": "Beat-'Em-Ups & Brawlers",
+    "tag": "Beat-’em-up",
+    "title": "Beat-’Em-Ups & Brawlers",
     "blurb": "The genre the Mega Drive made its own: street gangs, ancient armies, and rubber-suited turtles, all cleared out fist by fist.",
     "games": [
       {
         "title": "Streets of Rage",
         "year": "1991",
         "developer": "Sega",
-        "blurb": "A synth-heavy debut that set the template for the console's signature brawler series."
+        "blurb": "A synth-heavy debut that set the template for the console’s signature brawler series."
       },
       {
         "title": "Streets of Rage 2",
         "year": "1993",
         "developer": "Sega",
-        "blurb": "Widely considered the genre's high point, with Yuzo Koshiro's soundtrack and a roster everyone remembers."
+        "blurb": "Widely considered the genre’s high point, with Yuzo Koshiro’s soundtrack and a roster everyone remembers."
       },
       {
         "title": "Streets of Rage 3",
@@ -175,7 +175,7 @@
         "title": "Altered Beast",
         "year": "1990",
         "developer": "Sega",
-        "blurb": "The console's original pack-in, where a resurrected warrior transforms into werewolves and dragons to rescue Athena."
+        "blurb": "The console’s original pack-in, where a resurrected warrior transforms into werewolves and dragons to rescue Athena."
       },
       {
         "title": "Comix Zone",
@@ -187,13 +187,13 @@
         "title": "Mazin Saga: Mutant Fighter",
         "year": "1993",
         "developer": "Almanic Corporation",
-        "blurb": "A giant-robot brawler built on the Mazinger anime license, mixing beat-'em-up combat with fighting-game specials."
+        "blurb": "A giant-robot brawler built on the Mazinger anime license, mixing beat-’em-up combat with fighting-game specials."
       },
       {
         "title": "Teenage Mutant Hero Turtles: The Hyperstone Heist",
         "year": "1993",
         "developer": "Konami",
-        "blurb": "Europe's censor-friendly Turtles rename for a tight, arcade-faithful four-turtle brawl through familiar city streets."
+        "blurb": "Europe’s censor-friendly Turtles rename for a tight, arcade-faithful four-turtle brawl through familiar city streets."
       }
     ]
   },
@@ -201,13 +201,13 @@
     "hue": 100,
     "tag": "Run-and-Gun",
     "title": "Run-and-Gun & Action",
-    "blurb": "Fast, loud, and frequently punishing — the console's answer to the arcade's most trigger-happy genre.",
+    "blurb": "Fast, loud, and frequently punishing — the console’s answer to the arcade’s most trigger-happy genre.",
     "games": [
       {
         "title": "Gunstar Heroes",
         "year": "1993",
         "developer": "Treasure",
-        "blurb": "Treasure's debut and a genre landmark, stacking weapon combinations and boss gauntlets at a relentless pace."
+        "blurb": "Treasure’s debut and a genre landmark, stacking weapon combinations and boss gauntlets at a relentless pace."
       },
       {
         "title": "Alien Soldier",
@@ -231,7 +231,7 @@
         "title": "Probotector",
         "year": "1994",
         "developer": "Konami",
-        "blurb": "Europe's robot-reskinned edition of the run-and-gun classic, swapping human soldiers for droids to sidestep content rules."
+        "blurb": "Europe’s robot-reskinned edition of the run-and-gun classic, swapping human soldiers for droids to sidestep content rules."
       },
       {
         "title": "Shinobi III: Return of the Ninja Master",
@@ -243,7 +243,7 @@
         "title": "Mercs",
         "year": "1991",
         "developer": "Sega",
-        "blurb": "A top-down commando shoot-'em-up ported from the arcade, playable solo or with a friend."
+        "blurb": "A top-down commando shoot-’em-up ported from the arcade, playable solo or with a friend."
       },
       {
         "title": "Cyborg Justice",
@@ -256,8 +256,8 @@
   {
     "hue": 130,
     "tag": "Shooter",
-    "title": "Shoot-'Em-Ups",
-    "blurb": "Technosoft, Toaplan, and Compile brought arcade-grade bullet-dodging home, several of these titles collector's-market legends.",
+    "title": "Shoot-’Em-Ups",
+    "blurb": "Technosoft, Toaplan, and Compile brought arcade-grade bullet-dodging home, several of these titles collector’s-market legends.",
     "games": [
       {
         "title": "Thunder Force III",
@@ -287,7 +287,7 @@
         "title": "Truxton",
         "year": "1990",
         "developer": "Toaplan",
-        "blurb": "A tightly-designed vertical shooter from Toaplan's arcade pedigree, ported faithfully to cartridge."
+        "blurb": "A tightly-designed vertical shooter from Toaplan’s arcade pedigree, ported faithfully to cartridge."
       },
       {
         "title": "Elemental Master",
@@ -325,7 +325,7 @@
     "hue": 160,
     "tag": "RPG",
     "title": "Role-Playing Adventures",
-    "blurb": "From Sega's own Phantasy Star lineage to cult European favorites, the Mega Drive's RPG library rewards patient exploring.",
+    "blurb": "From Sega’s own Phantasy Star lineage to cult European favorites, the Mega Drive’s RPG library rewards patient exploring.",
     "games": [
       {
         "title": "Phantasy Star II",
@@ -373,13 +373,13 @@
         "title": "The Story of Thor",
         "year": "1995",
         "developer": "Ancient",
-        "blurb": "Europe's title for the action-RPG North America knew as Beyond Oasis, built around elemental spirit companions."
+        "blurb": "Europe’s title for the action-RPG North America knew as Beyond Oasis, built around elemental spirit companions."
       },
       {
         "title": "Soleil",
         "year": "1995",
         "developer": "Nextech",
-        "blurb": "Europe's name for the game North America called Crusader of Centy, an animal-transforming action-RPG in a Zelda-adjacent mold."
+        "blurb": "Europe’s name for the game North America called Crusader of Centy, an animal-transforming action-RPG in a Zelda-adjacent mold."
       },
       {
         "title": "Shadowrun",
@@ -411,19 +411,19 @@
         "title": "Populous",
         "year": "1991",
         "developer": "Bullfrog Productions",
-        "blurb": "The original god game, terraforming land and guiding followers in a genre Peter Molyneux's team effectively invented."
+        "blurb": "The original god game, terraforming land and guiding followers in a genre Peter Molyneux’s team effectively invented."
       },
       {
         "title": "Dune II: The Battle for Arrakis",
         "year": "1994",
         "developer": "Westwood Studios",
-        "blurb": "Europe's cartridge title for the console adaptation of the game that helped define modern real-time strategy, distinct from the PC original."
+        "blurb": "Europe’s cartridge title for the console adaptation of the game that helped define modern real-time strategy, distinct from the PC original."
       },
       {
         "title": "Warsong",
         "year": "1991",
         "developer": "NCS Corporation",
-        "blurb": "Never released in Europe, this is the North American localization of Japan's Langrisser, a foundational tactical RPG."
+        "blurb": "Never released in Europe, this is the North American localization of Japan’s Langrisser, a foundational tactical RPG."
       },
       {
         "title": "Gain Ground",
@@ -443,19 +443,19 @@
     "hue": 220,
     "tag": "Puzzle",
     "title": "Puzzle",
-    "blurb": "Falling blocks and quick-thinking arcade puzzles, several of them Sega's own answer to the Tetris craze.",
+    "blurb": "Falling blocks and quick-thinking arcade puzzles, several of them Sega’s own answer to the Tetris craze.",
     "games": [
       {
         "title": "Columns",
         "year": "1990",
         "developer": "Sega",
-        "blurb": "Sega's own falling-gem answer to Tetris, simple enough to become an unofficial pack-in classic."
+        "blurb": "Sega’s own falling-gem answer to Tetris, simple enough to become an unofficial pack-in classic."
       },
       {
-        "title": "Dr. Robotnik's Mean Bean Machine",
+        "title": "Dr. Robotnik’s Mean Bean Machine",
         "year": "1994",
         "developer": "Compile",
-        "blurb": "A reskinned Puyo Puyo starring Sonic's villain, and one of the sharpest competitive puzzlers on the console."
+        "blurb": "A reskinned Puyo Puyo starring Sonic’s villain, and one of the sharpest competitive puzzlers on the console."
       },
       {
         "title": "Klax",
@@ -467,7 +467,7 @@
         "title": "Pac-Panic",
         "year": "1993",
         "developer": "Namco",
-        "blurb": "Europe's name for the falling-block puzzler North America released a year later as Pac-Attack."
+        "blurb": "Europe’s name for the falling-block puzzler North America released a year later as Pac-Attack."
       },
       {
         "title": "Zoop",
@@ -487,7 +487,7 @@
     "hue": 250,
     "tag": "Sports",
     "title": "Sports",
-    "blurb": "EA's Mega Drive sports run built the template modern sports games still follow, alongside a few gleefully strange detours.",
+    "blurb": "EA’s Mega Drive sports run built the template modern sports games still follow, alongside a few gleefully strange detours.",
     "games": [
       {
         "title": "Mutant League Football",
@@ -514,13 +514,13 @@
         "blurb": "Miniature golf reimagined as a physics playground, full of windmills, ramps, and genuinely clever course design."
       },
       {
-        "title": "NHL '94",
+        "title": "NHL ’94",
         "year": "1993",
         "developer": "High Score Productions",
         "blurb": "Still cited by hockey fans as one of the tightest, most responsive sports games ever made on any hardware."
       },
       {
-        "title": "John Madden Football '93",
+        "title": "John Madden Football ’93",
         "year": "1992",
         "developer": "LookingGlass Technologies",
         "blurb": "A key early entry in the Madden lineage, refining the formula that would define EA Sports for decades."
@@ -549,7 +549,7 @@
         "title": "Micro Machines 2: Turbo Tournament",
         "year": "1994",
         "developer": "Codemasters",
-        "blurb": "A refined sequel adding new toy-scale locations and one of the console's best multiplayer split-screen setups."
+        "blurb": "A refined sequel adding new toy-scale locations and one of the console’s best multiplayer split-screen setups."
       },
       {
         "title": "Super Monaco GP",
@@ -564,7 +564,7 @@
         "blurb": "Motorcycle racing where punching and kicking rivals off their bikes is just as important as the finish line."
       },
       {
-        "title": "Rock N' Roll Racing",
+        "title": "Rock N’ Roll Racing",
         "year": "1994",
         "developer": "Silicon & Synapse",
         "blurb": "An isometric combat-racer from the future Blizzard team, packed with rock riffs and weaponized vehicles."
@@ -573,7 +573,7 @@
         "title": "OutRun",
         "year": "1991",
         "developer": "Sega",
-        "blurb": "The arcade's breezy coastal cruiser brought home, trading route forks and a stereo soundtrack for pure driving feel."
+        "blurb": "The arcade’s breezy coastal cruiser brought home, trading route forks and a stereo soundtrack for pure driving feel."
       },
       {
         "title": "Combat Cars",
@@ -587,13 +587,13 @@
     "hue": 310,
     "tag": "Fighting",
     "title": "Fighting",
-    "blurb": "The console's fighting-game answer to the arcade boom, from home-grown brawlers to divisive ports of the era's biggest hits.",
+    "blurb": "The console’s fighting-game answer to the arcade boom, from home-grown brawlers to divisive ports of the era’s biggest hits.",
     "games": [
       {
         "title": "Eternal Champions",
         "year": "1993",
         "developer": "Sega",
-        "blurb": "Sega's own attempt at a flagship fighter, with a cast of time-displaced warriors and gruesome finishing moves."
+        "blurb": "Sega’s own attempt at a flagship fighter, with a cast of time-displaced warriors and gruesome finishing moves."
       },
       {
         "title": "Mortal Kombat",
@@ -617,13 +617,13 @@
         "title": "Teenage Mutant Hero Turtles: Tournament Fighters",
         "year": "1993",
         "developer": "Konami",
-        "blurb": "Europe's Turtles-branded one-on-one fighter, distinct from and often preferred over its SNES and NES counterparts."
+        "blurb": "Europe’s Turtles-branded one-on-one fighter, distinct from and often preferred over its SNES and NES counterparts."
       },
       {
         "title": "King of the Monsters",
         "year": "1993",
         "developer": "SPS Co., Ltd.",
-        "blurb": "A giant-monster wrestling game translating SNK's arcade kaiju brawl onto cartridge."
+        "blurb": "A giant-monster wrestling game translating SNK’s arcade kaiju brawl onto cartridge."
       }
     ]
   },
@@ -631,7 +631,7 @@
     "hue": 340,
     "tag": "Curios",
     "title": "Cult Classics & European Curios",
-    "blurb": "The console's British and French developer scene left a distinct fingerprint here, in games this collection's European framing was built to celebrate.",
+    "blurb": "The console’s British and French developer scene left a distinct fingerprint here, in games this collection’s European framing was built to celebrate.",
     "games": [
       {
         "title": "ToeJam & Earl",
@@ -673,7 +673,7 @@
         "title": "Speedball 2: Brutal Deluxe",
         "year": "1992",
         "developer": "The Bitmap Brothers",
-        "blurb": "A violent, futuristic sport blending handball and hockey, still cited as one of the genre's finest."
+        "blurb": "A violent, futuristic sport blending handball and hockey, still cited as one of the genre’s finest."
       },
       {
         "title": "Xenon 2: Megablast",
@@ -691,7 +691,7 @@
         "title": "Lemmings",
         "year": "1992",
         "developer": "Sunsoft",
-        "blurb": "The console conversion of DMA Design's puzzle phenomenon, guiding waves of doomed little walkers to safety."
+        "blurb": "The console conversion of DMA Design’s puzzle phenomenon, guiding waves of doomed little walkers to safety."
       }
     ]
   }

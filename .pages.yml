@@ -175,7 +175,7 @@ content:
         label: "ID (matches folder name, e.g. nes)"
       - name: icon
         type: string
-        label: Icon (emoji)
+        label: "Icon (SVG path, e.g. assets/icons/nes.svg, or an emoji until the illustration is ready)"
       - name: manufacturer
         type: string
       - name: type
