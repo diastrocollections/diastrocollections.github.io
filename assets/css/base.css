@@ -15,14 +15,6 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
-/* Cross-fade the light/dark swap: theme colors live in CSS custom properties (see
-   theme-<platform>.css), and this animates the properties that consume them —
-   the properties, not the variables, since custom properties aren't transitionable. */
-*, *::before, *::after {
-  transition: background-color 0.6s ease, color 0.6s ease, border-color 0.6s ease,
-    box-shadow 0.6s ease, fill 0.6s ease, stroke 0.6s ease;
-}
-
 body {
   margin: 0;
   background: var(--bg);
@@ -33,10 +25,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: var(--accent); color: var(--accent-ink); }
+::selection { background: var(--accent-text, var(--accent)); color: var(--accent-ink); }
 a { color: inherit; }
 img { max-width: 100%; }
-cite { font-style: normal; font-weight: bolder; } /* game titles: bold, same as <strong> */
+/* Titles of works (games, magazines, films, comics): italic, as in editorial style,
+   and tinted towards the platform accent. The mix is resolved on the cite itself,
+   so sections that redefine --accent or --ink (like a note card) tint it to match. */
+cite {
+  font-style: italic;
+  color: var(--ink);
+  color: color-mix(in oklab, var(--accent-text, var(--accent)) 60%, var(--ink));
+}
+/* A linked title keeps its tint; the underline follows it instead of the link. */
+a cite { text-decoration: underline; text-decoration-color: currentColor; }
 
 h1, h2, h3, .display {
   font-family: var(--font-display);
@@ -105,7 +106,7 @@ h1, h2, h3, .display {
   position: relative;
 }
 
-.hero h1 em { font-style: normal; color: var(--accent); }
+.hero h1 em { font-style: normal; color: var(--accent-text, var(--accent)); }
 
 .hero-lede {
   max-width: 62ch;
@@ -130,7 +131,7 @@ h1, h2, h3, .display {
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: var(--font-display-weight, 700);
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .hero-meta .label {
@@ -165,7 +166,7 @@ h1, h2, h3, .display {
 }
 
 .note-card p { max-width: 74ch; color: var(--ink-soft); margin: 0; }
-.note-card p strong, .note-card p cite { color: var(--ink); font-weight: 700; }
+.note-card p strong { color: var(--ink); font-weight: 700; }
 
 .note-body {
   max-height: 3.4em;
@@ -208,7 +209,7 @@ h1, h2, h3, .display {
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   cursor: pointer;
 }
 
@@ -350,7 +351,7 @@ h1, h2, h3, .display {
 .chapters-current:not(:empty)::before { content: "·"; color: var(--ink-faint); }
 .chapters-label,
 .chapters-current-num { flex: none; }
-.chapters-current-num { color: var(--accent); font-weight: 700; }
+.chapters-current-num { color: var(--accent-text, var(--accent)); font-weight: 700; }
 /* a long chapter name gives way first, with an ellipsis, but never shrinks to
    an unreadable sliver */
 .chapters-current-tag { min-width: 3.5ch; overflow: hidden; text-overflow: ellipsis; }
@@ -406,8 +407,8 @@ h1, h2, h3, .display {
 }
 
 .chip[hidden] { display: none; }
-.chip:hover { border-color: var(--accent); color: var(--accent); }
-.chip[aria-current="location"] { border-color: var(--accent); color: var(--accent); font-weight: 700; }
+.chip:hover { border-color: var(--accent); color: var(--accent-text, var(--accent)); }
+.chip[aria-current="location"] { border-color: var(--accent); color: var(--accent-text, var(--accent)); font-weight: 700; }
 
 /* Phones (one column of games): the same row as on larger screens, but the
    filter starts compact and grows while you type in it; the Chapters button
@@ -512,6 +513,19 @@ h1, h2, h3, .display {
   margin-bottom: 8px;
 }
 
+/* A chapter's colour as text. Where the browser can, its lightness is capped in
+   light mode and floored in dark mode, so every hue reads at 4.5:1 or better on
+   cards and tags; the tint itself (backgrounds, borders) is left alone. */
+.chapter { --chapter-ink: hsl(var(--hue) var(--sat) var(--lig)); }
+
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  .chapter {
+    --chapter-ink: light-dark(
+      oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.5) c h),
+      oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.68) c h));
+  }
+}
+
 .chapter-num { flex: none; }
 
 .chapter-head-main {
@@ -531,7 +545,7 @@ h1, h2, h3, .display {
   font-family: var(--font-display);
   font-size: clamp(1.3rem, 2.6vw, 1.8rem);
   font-weight: var(--font-display-weight, 700);
-  color: hsl(var(--hue) var(--sat) var(--lig));
+  color: var(--chapter-ink);
   line-height: 1;
   display: inline-flex;
   align-items: center;
@@ -557,7 +571,7 @@ h1, h2, h3, .display {
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: hsl(var(--hue) var(--sat) var(--lig));
+  color: var(--chapter-ink);
   background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
   padding: 4px 10px;
   border-radius: var(--chip-radius, 999px);
@@ -604,31 +618,38 @@ h1, h2, h3, .display {
 .card-idx {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: hsl(var(--hue) var(--sat) var(--lig));
+  color: var(--chapter-ink);
   font-weight: 700;
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
 }
 
-/* Optional per-game badge (e.g. "PAL-optimised"), sits beside .card-idx */
+/* Optional per-game badge (e.g. "PAL-optimised"), sits directly after .card-idx
+   so it stays clear of theme flourishes in the card's top-right corner. On a
+   narrow card it wraps under the number, still left-aligned. */
 .card-head {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 6px;
   position: relative;
   z-index: 1;
 }
 
+/* Several themes give .card-idx align-self: flex-start for the card's column
+   layout; in this row it would sit higher than the badge. */
+.card-head > .card-idx { align-self: center; }
+
 .card-badge {
+  white-space: nowrap;
   font-family: var(--font-mono);
   font-size: 0.66rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: hsl(var(--hue) var(--sat) var(--lig));
+  color: var(--chapter-ink);
   background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
   padding: 2px 8px;
   border-radius: var(--chip-radius, 999px);
@@ -750,7 +771,7 @@ footer {
 }
 
 footer p { max-width: 72ch; color: var(--ink-faint); font-size: 0.86rem; margin: 0 0 10px; }
-footer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+footer a { color: var(--accent-text, var(--accent)); text-decoration: underline; text-underline-offset: 2px; }
 
 .footer-cols {
   display: grid;
@@ -797,13 +818,16 @@ footer .report-btn {
   min-height: 40px;
   padding: 0 16px;
   border-radius: var(--control-radius, 10px);
-  background: var(--accent);
+  background: var(--accent-text, var(--accent));
   color: var(--accent-ink);
   font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
+  /* Own compositing layer: Safari otherwise rounds the text and the fill to
+     whole pixels separately, so the label jumps 1px as the window resizes. */
+  will-change: transform;
 }
 
 footer .report-btn:hover,

@@ -6,7 +6,7 @@
   --surface-2: #EEE4FA;
   --ink: #241B36;
   --ink-soft: #5B4B78;
-  --ink-faint: #8B7BA8;
+  --ink-faint: #776793;
   --accent: #7B2FBE;
   --accent-ink: #FFFFFF;
   --line: #E3D6F5;
@@ -46,7 +46,7 @@
     --surface-2: #241539;
     --ink: #F1E7FF;
     --ink-soft: #C3A9E8;
-    --ink-faint: #8C71AD;
+    --ink-faint: #9277B3;
     --accent: #C77DFF;
     --accent-ink: #140B22;
     --line: #35204F;
@@ -73,7 +73,7 @@
   --surface-2: #241539;
   --ink: #F1E7FF;
   --ink-soft: #C3A9E8;
-  --ink-faint: #8C71AD;
+  --ink-faint: #9277B3;
   --accent: #C77DFF;
   --accent-ink: #140B22;
   --line: #35204F;
@@ -250,7 +250,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   text-shadow: none;
 }
 
@@ -493,9 +493,22 @@
   z-index: 1;
 }
 
+/* Fill behind the card number. Its lightness is capped in light mode (white text)
+   and floored in dark mode (dark text), so the number reads at 4.5:1 on every
+   chapter colour. */
+.chapter { --chapter-fill: hsl(var(--hue) var(--sat) var(--lig)); }
+
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  .chapter {
+    --chapter-fill: light-dark(
+      oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.52) c h),
+      oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.74) c h));
+  }
+}
+
 .card-idx {
   align-self: flex-start;
-  background: hsl(var(--hue) var(--sat) var(--lig));
+  background: var(--chapter-fill);
   color: #fff;
   padding: 2px 11px;
   border-radius: 999px;
@@ -511,6 +524,8 @@
     color: #1a1224;
   }
 }
+
+.hero-meta .label { color: var(--ink); }
 
 /* ---------- Footer ---------- */
 footer {

@@ -6,8 +6,9 @@
   --surface-2: #EAE4D6;
   --ink: #18140F;
   --ink-soft: #5A5448;
-  --ink-faint: #8F8770;
+  --ink-faint: #746C56;
   --accent: #D6301F;
+  --accent-text: #D12919;
   --accent-ink: #FFFFFF;
   --line: #DAD3C2;
   --line-strong: #C2BAA5;
@@ -36,8 +37,9 @@
     --surface-2: #24211D;
     --ink: #F2EEE5;
     --ink-soft: #ADA695;
-    --ink-faint: #766F5F;
+    --ink-faint: #8A8272;
     --accent: #FF5A3C;
+    --accent-text: var(--accent);
     --accent-ink: #16110C;
     --line: #4f403f;
     --line-strong: #544443;
@@ -56,8 +58,9 @@
   --surface-2: #24211D;
   --ink: #F2EEE5;
   --ink-soft: #ADA695;
-  --ink-faint: #766F5F;
+  --ink-faint: #8A8272;
   --accent: #FF5A3C;
+  --accent-text: var(--accent);
   --accent-ink: #16110C;
   --line: #4f403f;
   --line-strong: #544443;
@@ -95,9 +98,11 @@
   z-index: -1;
   background: repeating-linear-gradient(90deg, rgba(242,238,229,0.09) 0 10px, transparent 10px 20px);
 }
-.hero .eyebrow { color: var(--ink-faint); margin-bottom: 18px; }
+.hero .eyebrow, .hero .eyebrow .status-btn { color: #C4BDAE; }
+.hero .eyebrow { margin-bottom: 18px; }
 .hero .hero-lede { color: #D8D2C4; }
 .hero .hero-meta { color: #B7B0A2; }
+.hero .hero-meta .label { color: #C4BDAE; }
 .hero .hero-meta strong, .hero .num { color: #F2EEE5; }
 .hero h1 { text-transform: uppercase; font-style: italic; font-weight: 900; text-shadow: 4px 4px 0 rgba(214,48,31,0.55); }
 .hero h1 em { font-style: italic; }
@@ -144,7 +149,7 @@
 .big16::after {
   content: "-BIT"; display: block; text-align: right; margin-top: 0.14em;
   font-size: 0.17em; letter-spacing: 0.5em; font-style: italic;
-  -webkit-text-stroke: 0; color: var(--accent); opacity: 0.85;
+  -webkit-text-stroke: 0; color: var(--accent-text, var(--accent)); opacity: 0.85;
 }
 
 .note-card h2, .chapter-title, .footer-cols h3 {
@@ -167,7 +172,7 @@
   content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 12px;
   background: repeating-linear-gradient(-45deg, var(--accent) 0 7px, var(--ink) 7px 14px);
 }
-.note-card h2::before { content: "\25E2\00a0"; color: var(--accent); }
+.note-card h2::before { content: "\25E2\00a0"; color: var(--accent-text, var(--accent)); }
 
 /* ---------- Toolbar & chips ---------- */
 .toolbar { border-bottom: 4px solid var(--accent); }
@@ -187,8 +192,19 @@
 }
 .chapter:first-child::before { display: none; }
 .chapter:first-child { padding-top: clamp(40px, 6vw, 60px); }
+/* Fill behind the chapter and card numbers. Its lightness is capped in light mode
+   (white text) and floored in dark mode (dark text), for 4.5:1 on every colour. */
+.chapter { --chapter-fill: hsl(var(--hue) var(--sat) var(--lig)); }
+
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  .chapter {
+    --chapter-fill: light-dark(
+      oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.5) c h),
+      oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.72) c h));
+  }
+}
 .chapter-num {
-  background: hsl(var(--hue) var(--sat) var(--lig)); color: #fff;
+  background: var(--chapter-fill); color: #fff;
   padding: 8px 18px 8px 14px; transform: skewX(-12deg);
   box-shadow: 5px 5px 0 hsl(var(--hue) 45% 22% / 0.4);
   font-size: clamp(1.1rem, 2.2vw, 1.5rem); text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
@@ -222,7 +238,7 @@
 }
 .card:hover { border-color: hsl(var(--hue) var(--sat) var(--lig) / 0.6); transform: translateY(-3px); }
 .card-idx {
-  align-self: flex-start; color: #fff; background: hsl(var(--hue) var(--sat) var(--lig));
+  align-self: flex-start; color: #fff; background: var(--chapter-fill);
   padding: 2px 10px 2px 8px; transform: skewX(-12deg); border-radius: 1px;
 }
 :root[data-theme="dark"] .card-idx { color: #16110C; }

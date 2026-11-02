@@ -108,7 +108,7 @@ The CSS is built in layers:
 1. **`base.css`** holds the complete layout of a collection page: hero, curator's note, sticky toolbar, card grid and footer. It uses no fixed colors or fonts. Everything comes from CSS custom properties.
 2. **`theme-<platform>.css`** loads after it and sets those properties (`--bg`, `--surface`, `--ink`, `--accent`, `--hue`, `--font-display` and so on). It then adds that console's decorative extras, such as the NES page's pixel-art hills and brick pattern or the PS1 page's button glyphs.
 
-Each theme defines its palette three times: once for light mode, once inside `@media (prefers-color-scheme: dark)` to follow the system setting, and once under `:root[data-theme="dark"]` for the manual toggle. Switching themes cross-fades colors instead of snapping.
+Each theme defines its palette three times: once for light mode, once inside `@media (prefers-color-scheme: dark)` to follow the system setting, and once under `:root[data-theme="dark"]` for the manual toggle. Switching themes cross-fades the whole page. New visits follow the device setting; a choice made with the toggle lasts for the current visit only, using `sessionStorage`, and an inline script in each page's `<head>` applies it before the first paint.
 
 The hub, "How it's made" and version history pages share `hub.css`, which has its own tile-based layout.
 

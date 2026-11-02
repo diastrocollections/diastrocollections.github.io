@@ -6,8 +6,9 @@
   --surface-2: #E9F3F9;
   --ink: #16232B;
   --ink-soft: #4A5F6B;
-  --ink-faint: #7C8F99;
+  --ink-faint: #62747E;
   --accent: #0099D8;
+  --accent-text: #0079AC;
   --accent-ink: #FFFFFF;
   --scrollbar-thumb: #008AC2; /* darkened from --accent to clear 3:1 contrast against --surface-2 (WCAG 1.4.11) */
   --line: #D6E7EF;
@@ -38,8 +39,9 @@
     --surface-2: #17242A;
     --ink: #EAF4F8;
     --ink-soft: #A9C0C9;
-    --ink-faint: #63808A;
+    --ink-faint: #6C8993;
     --accent: #3FC3F0;
+    --accent-text: var(--accent);
     --accent-ink: #06181D;
     --line: #1E2E35;
     --line-strong: #2A3D45;
@@ -59,8 +61,9 @@
   --surface-2: #17242A;
   --ink: #EAF4F8;
   --ink-soft: #A9C0C9;
-  --ink-faint: #63808A;
+  --ink-faint: #6C8993;
   --accent: #3FC3F0;
+  --accent-text: var(--accent);
   --accent-ink: #06181D;
   --line: #1E2E35;
   --line-strong: #2A3D45;
@@ -117,7 +120,7 @@
 .hero h1 { text-shadow: 0 2px 0 rgba(255,255,255,0.9), 0 6px 18px rgba(0,153,216,0.18); }
 :root[data-theme="dark"] .hero h1 { text-shadow: 0 4px 20px rgba(63,195,240,0.25); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hero h1 { text-shadow: 0 4px 20px rgba(63,195,240,0.25); } }
-.hero h1 em { background: linear-gradient(90deg, var(--em-a), var(--em-b)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: var(--accent); text-shadow: none; }
+.hero h1 em { background: linear-gradient(90deg, var(--em-a), var(--em-b)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: var(--accent-text, var(--accent)); text-shadow: none; }
 
 .hero-meta { border-top: none; padding-top: 0; gap: 14px; }
 .hero-meta .stat { position: relative; min-width: 116px; padding: 14px 22px 14px 40px; border-radius: 18px; background: linear-gradient(180deg, var(--surface), var(--surface-2)); border: 2px solid var(--line-strong); box-shadow: 0 8px 16px -10px rgba(0,153,216,0.45); overflow: hidden; }
@@ -136,9 +139,10 @@
 /* ---------- Toolbar & chips ---------- */
 .toolbar { border-bottom: 2px solid var(--line-strong); }
 .chip { border: 2px solid var(--line-strong); background: linear-gradient(180deg, var(--surface), var(--surface-2)); font-family: var(--font-display); font-weight: 700; transition: transform .15s cubic-bezier(.3,1.6,.5,1), border-color .15s ease, color .15s ease; }
-.chip:hover, .chip:focus-visible { border-color: var(--accent); color: var(--accent); transform: translateY(-2px) scale(1.03); }
+.chip:hover, .chip:focus-visible { border-color: var(--accent); color: var(--accent-text, var(--accent)); transform: translateY(-2px) scale(1.03); }
 
 /* ---------- Chapters: widescreen channel tiles ---------- */
+.hero-meta .label { color: var(--ink-soft); }
 .chapter { position: relative; padding-top: clamp(64px, 8vw, 92px); }
 .chapter::before { content: ""; position: absolute; left: 0; top: clamp(30px, 4vw, 44px); width: 12px; height: 12px; margin-top: -6px; border-radius: 50%; background: var(--accent); box-shadow: 22px 0 0 var(--line-strong), 44px 0 0 var(--line-strong); }
 .chapter:first-child::before { display: none; }
@@ -152,6 +156,21 @@
 .chapter-num::before { content: ""; position: absolute; inset: 0; background: linear-gradient(115deg, rgba(255,255,255,0.42) 0 38%, transparent 38%); pointer-events: none; }
 :root[data-theme="dark"] .chapter-num { color: #06181D; text-shadow: none; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chapter-num { color: #06181D; text-shadow: none; } }
+
+/* Chapter number gradient with its lightness capped in light mode (white text) and
+   floored in dark mode (dark text), for 4.5:1 on every chapter colour. Browsers
+   without these colour functions keep the gradients above. */
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  :root[data-theme="dark"] .chapter-num,
+  :root:not([data-theme="light"]) .chapter-num,
+  .chapter-num {
+    background: linear-gradient(180deg,
+      light-dark(oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.5) c h), oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.78) c h)),
+      light-dark(oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.42) c h), oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.68) c h)));
+  }
+
+  .chapter-num::before { opacity: 0.28; }
+}
 .chapter-tag { border-radius: 999px; border: 2px solid hsl(var(--hue) var(--sat) var(--lig) / 0.4); font-weight: 700; }
 .chapter-blurb { border-bottom: 2px solid var(--line-strong); }
 

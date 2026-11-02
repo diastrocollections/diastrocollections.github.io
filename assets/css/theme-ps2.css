@@ -6,8 +6,9 @@
   --surface-2: #E1EAEE;
   --ink: #12181B;
   --ink-soft: #4B5A61;
-  --ink-faint: #7C8B92;
+  --ink-faint: #616F76;
   --accent: #0089A8;
+  --accent-text: #007793;
   --accent-ink: #FFFFFF;
   --line: #CFDBE0;
   --line-strong: #B0C1C8;
@@ -37,8 +38,9 @@
     --surface-2: #1A262A;
     --ink: #E8F1F3;
     --ink-soft: #A7B9BE;
-    --ink-faint: #62757B;
+    --ink-faint: #74878D;
     --accent: #38C6E8;
+    --accent-text: var(--accent);
     --accent-ink: #06181C;
     --line: #223034;
     --line-strong: #2E4046;
@@ -58,8 +60,9 @@
   --surface-2: #1A262A;
   --ink: #E8F1F3;
   --ink-soft: #A7B9BE;
-  --ink-faint: #62757B;
+  --ink-faint: #74878D;
   --accent: #38C6E8;
+  --accent-text: var(--accent);
   --accent-ink: #06181C;
   --line: #223034;
   --line-strong: #2E4046;
@@ -102,7 +105,7 @@
 
 .hero .eyebrow .dot { box-shadow: 0 0 0 3px hsl(195 var(--sat-soft) var(--lig-soft)), 0 0 12px 2px var(--accent); }
 .hero h1 { letter-spacing: 0.01em; }
-.hero h1 em { background: linear-gradient(90deg, var(--em-a), var(--em-b)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: var(--accent); }
+.hero h1 em { background: linear-gradient(90deg, var(--em-a), var(--em-b)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: var(--accent-text, var(--accent)); }
 :root[data-theme="dark"] .hero h1 { text-shadow: 0 0 28px rgba(40,210,240,0.25); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hero h1 { text-shadow: 0 0 28px rgba(40,210,240,0.25); } }
 
@@ -126,7 +129,7 @@
 }
 .note-card::after { content: ""; position: absolute; right: 14px; top: 14px; width: 20px; height: 20px; border-top: 2px solid var(--accent); border-right: 2px solid var(--accent); pointer-events: none; }
 .note-card h2 { letter-spacing: 0.14em; }
-.note-card h2::before { content: "\25C8\00a0"; color: var(--accent); }
+.note-card h2::before { content: "\25C8\00a0"; color: var(--accent-text, var(--accent)); }
 
 /* ---------- Toolbar & chips ---------- */
 .toolbar { border-bottom: 2px solid transparent; border-image: linear-gradient(90deg, var(--accent), transparent 85%) 1; }
@@ -134,6 +137,7 @@
 .chip:hover, .chip:focus-visible { border-color: var(--accent); box-shadow: 0 0 0 2px hsl(195 80% 50% / 0.22), 0 0 14px hsl(195 90% 50% / 0.25); }
 
 /* ---------- Chapters: chamfer tiles, tower dividers ---------- */
+.hero-meta .label { color: var(--ink-soft); }
 .chapter { position: relative; padding-top: clamp(64px, 8vw, 92px); }
 .chapter::before { content: ""; position: absolute; left: 0; right: 0; top: clamp(30px, 4vw, 44px); height: 1px; background: linear-gradient(90deg, var(--accent), transparent 72%); }
 .chapter::after {
@@ -153,6 +157,19 @@
 }
 :root[data-theme="dark"] .chapter-num { color: #06181d; background: linear-gradient(0deg, hsl(var(--hue) 70% 50%), hsl(var(--hue) 80% 68%)); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chapter-num { color: #06181d; background: linear-gradient(0deg, hsl(var(--hue) 70% 50%), hsl(var(--hue) 80% 68%)); } }
+
+/* Chapter number gradient with its lightness capped in light mode (white text) and
+   floored in dark mode (dark text), for 4.5:1 on every chapter colour. Browsers
+   without these colour functions keep the gradients above. */
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  :root[data-theme="dark"] .chapter-num,
+  :root:not([data-theme="light"]) .chapter-num,
+  .chapter-num {
+    background: linear-gradient(0deg,
+      light-dark(oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.42) c h), oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.68) c h)),
+      light-dark(oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.5) c h), oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.78) c h)));
+  }
+}
 .chapter-tag { border-radius: 2px; border-left: 3px solid hsl(var(--hue) var(--sat) var(--lig)); font-family: var(--font-mono); }
 .chapter-blurb { border-bottom: 1px solid var(--line-strong); }
 

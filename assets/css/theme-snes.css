@@ -6,7 +6,7 @@
   --surface-2: #E3DCF2;
   --ink: #241F33;
   --ink-soft: #564C74;
-  --ink-faint: #948AAE;
+  --ink-faint: #6E6587;
   --accent: #5C3FA3;
   --accent-ink: #FFFFFF;
   --line: #D9D2EA;
@@ -31,6 +31,11 @@
   --btn-b: #F2C94C;
   --btn-x: #4A8BE6;
   --btn-y: #3FB57A;
+  /* Deeper shades behind the white card numbers, for 4.5:1. The brighter
+     originals above stay for decoration. */
+  --btn-a-fill: #D8373F;
+  --btn-x-fill: #3475CE;
+  --btn-y-fill: #00874F;
   --edge: #241F33;
   --sky-a: #C9BBF0;
   --sky-b: #F6E3EE;
@@ -56,7 +61,7 @@
     --surface-2: #2A2140;
     --ink: #EDE8F7;
     --ink-soft: #B6A9D6;
-    --ink-faint: #7A6C9C;
+    --ink-faint: #8E80B1;
     --accent: #A78BFA;
     --accent-ink: #191426;
     --line: #37294F;
@@ -86,7 +91,7 @@
   --surface-2: #2A2140;
   --ink: #EDE8F7;
   --ink-soft: #B6A9D6;
-  --ink-faint: #7A6C9C;
+  --ink-faint: #8E80B1;
   --accent: #A78BFA;
   --accent-ink: #191426;
   --line: #37294F;
@@ -664,7 +669,7 @@
   padding: 2px 8px;
   border-radius: 4px;
   color: #fff;
-  background: var(--btn-a);
+  background: var(--btn-a-fill);
   letter-spacing: 0.05em;
 }
 
@@ -674,11 +679,11 @@
 }
 
 .grid>.card:nth-child(4n+3) .card-idx {
-  background: var(--btn-y);
+  background: var(--btn-y-fill);
 }
 
 .grid>.card:nth-child(4n+4) .card-idx {
-  background: var(--btn-x);
+  background: var(--btn-x-fill);
 }
 
 .card-title {
@@ -698,5 +703,5 @@ footer {
 .footer-cols h3 {
   font-family: var(--font-display);
   font-weight: 400;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }

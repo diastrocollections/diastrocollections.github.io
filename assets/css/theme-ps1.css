@@ -6,7 +6,7 @@
   --surface-2: #DFDFE6;
   --ink: #1C1C21;
   --ink-soft: #53545F;
-  --ink-faint: #8B8C97;
+  --ink-faint: #666772;
   --accent: #1E5FBF;
   --accent-ink: #FFFFFF;
   --line: #D6D6DC;
@@ -38,7 +38,7 @@
     --surface-2: #24252E;
     --ink: #ECEDF2;
     --ink-soft: #A5A7B5;
-    --ink-faint: #6D6F7E;
+    --ink-faint: #848695;
     --accent: #6FA8FF;
     --accent-ink: #16171B;
     --line: #2B2C36;
@@ -59,7 +59,7 @@
   --surface-2: #24252E;
   --ink: #ECEDF2;
   --ink-soft: #A5A7B5;
-  --ink-faint: #6D6F7E;
+  --ink-faint: #848695;
   --accent: #6FA8FF;
   --accent-ink: #16171B;
   --line: #2B2C36;
@@ -127,6 +127,7 @@
 
 .hero-meta { border-top: 4px solid transparent; border-image: linear-gradient(90deg,#2FA84F 0 25%,#D64545 25% 50%,#1E5FBF 50% 75%,#E23E96 75% 100%) 1; }
 .hero-meta .num { font-size: 1.6rem; }
+.hero-meta .label { color: var(--ink-soft); }
 
 .chapter-num { font-family: var(--font-mono); font-weight: 700; letter-spacing: 0.02em; }
 .chapter-glyph { font-size: 1.05rem; }
@@ -170,7 +171,7 @@
 .chapter-num {
   background: var(--surface); border: 2px solid hsl(var(--hue) var(--sat) var(--lig)); border-radius: 10px;
   padding: 9px 15px; box-shadow: 0 4px 0 hsl(var(--hue) var(--sat) var(--lig) / 0.55);
-  font-size: 1.05rem; color: hsl(var(--hue) var(--sat) var(--lig));
+  font-size: 1.05rem; color: var(--chapter-ink);
 }
 .chapter-tag { border-radius: 999px; border: 2px solid hsl(var(--hue) var(--sat) var(--lig) / 0.5); font-weight: 600; }
 .chapter-blurb { border-bottom: 2px dashed var(--line-strong); }

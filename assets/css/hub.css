@@ -6,8 +6,9 @@
   --surface-2: #E7ECDA;
   --ink: #1B2117;
   --ink-soft: #565D4A;
-  --ink-faint: #868C76;
+  --ink-faint: #696E59;
   --accent: #4F8F52;
+  --accent-text: #36763B;
   --accent-soft: #E3EFDA;
   --accent-ink: #FFFFFF;
   --line: #DBDCC5;
@@ -32,6 +33,7 @@
     --ink-soft: #B8C0AC;
     --ink-faint: #80876F;
     --accent: #84C37D;
+    --accent-text: var(--accent);
     --accent-soft: #1E2A18;
     --accent-ink: #14210F;
     --line: #5E6450;
@@ -56,6 +58,7 @@
   --ink-soft: #B8C0AC;
   --ink-faint: #80876F;
   --accent: #84C37D;
+  --accent-text: var(--accent);
   --accent-soft: #1E2A18;
   --accent-ink: #14210F;
   --line: #5E6450;
@@ -79,16 +82,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/* Cross-fade the light/dark swap: theme colors live in CSS custom properties (see
-   :root / :root[data-theme] above), and this animates the properties that consume
-   them — the properties, not the variables, since custom properties aren't transitionable. */
-*,
-*::before,
-*::after {
-  transition: background-color 0.6s ease, color 0.6s ease, border-color 0.6s ease,
-    box-shadow 0.6s ease, fill 0.6s ease, stroke 0.6s ease;
-}
-
 body {
   margin: 0;
   background: var(--bg);
@@ -100,12 +93,26 @@ body {
 }
 
 ::selection {
-  background: var(--accent);
+  background: var(--accent-text, var(--accent));
   color: var(--accent-ink);
 }
 
 a {
   color: inherit;
+}
+
+/* Titles of works: italic and tinted towards the accent, same as base.css on the
+   Collection pages. */
+cite {
+  font-style: italic;
+  color: var(--ink);
+  color: color-mix(in oklab, var(--accent-text, var(--accent)) 60%, var(--ink));
+}
+
+/* A linked title keeps its tint; the underline follows it instead of the link. */
+a cite {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
 h1,
@@ -244,7 +251,7 @@ h3 {
 .version-pill:hover,
 .version-pill:focus-visible {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .back-link {
@@ -262,7 +269,7 @@ h3 {
 
 .back-link:hover,
 .back-link:focus-visible {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .hero h1 {
@@ -283,7 +290,7 @@ h3 {
 .hero h1 em {
   font-style: italic;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .hero-lede {
@@ -343,7 +350,7 @@ h3 {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.1;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .hero-stats .label {
@@ -514,7 +521,7 @@ h3 {
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 1;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .vh-entry.major::after {
@@ -564,7 +571,7 @@ h3 {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--accent-ink);
-  background: var(--accent);
+  background: var(--accent-text, var(--accent));
   border-radius: 999px;
   padding: 3px 9px;
   box-shadow: 0 0 0 3px var(--accent-soft);
@@ -713,7 +720,7 @@ h3 {
 }
 
 .vh-entry a {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   text-underline-offset: 3px;
 }
 
@@ -752,7 +759,7 @@ h3 {
   font-family: "Fraunces", serif;
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   line-height: 1.15;
 }
 
@@ -858,7 +865,7 @@ h3 {
 }
 
 .vh-tl-marker.current .vh-tl-label {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .vh-tl-marker:hover .vh-tl-dot,
@@ -902,15 +909,103 @@ h3 {
   font-weight: 600;
 }
 
-.shelf-head p {
-  margin: 0;
-  font-size: 0.92rem;
-  font-family: "IBM Plex Mono", monospace;
-  background: var(--accent-soft);
-  color: var(--accent);
-  padding: 4px 12px;
+/* "Arrange" segmented control: real radio buttons, so arrow keys work for free.
+   A div with role="radiogroup" rather than a fieldset: Safari won't lay a
+   <legend> out beside the options. */
+.arrange {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrange-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.arrange-options {
+  display: flex;
+  padding: 3px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
   border-radius: 999px;
+}
+
+.arrange-options label {
+  position: relative;
+  display: block;
+}
+
+.arrange-options input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.arrange-options span {
+  display: block;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  transition: background-color .15s ease, color .15s ease;
+}
+
+.arrange-options input:hover+span {
+  color: var(--accent-text, var(--accent));
+}
+
+.arrange-options input:checked+span {
+  background: var(--accent-soft);
+  color: var(--accent-text, var(--accent));
+  font-weight: 700;
+}
+
+.arrange-options input:focus-visible+span {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Windows high-contrast mode drops the background, so outline the chosen option. */
+@media (forced-colors: active) {
+  .arrange-options input:checked+span {
+    outline: 1px solid CanvasText;
+  }
+}
+
+.shelf-group+.shelf-group {
+  margin-top: 40px;
+}
+
+.shelf-group-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+  font-size: 0.78rem;
   font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* the rule runs from the heading to the right edge */
+.shelf-group-head::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line-strong);
+}
+
+.shelf-group-count {
+  color: var(--accent-text, var(--accent));
 }
 
 .tiles {
@@ -920,6 +1015,7 @@ h3 {
 }
 
 .tile {
+  --tile-ink: var(--tile-accent, var(--accent));
   display: flex;
   flex-direction: column;
   position: relative;
@@ -934,6 +1030,17 @@ h3 {
   transform: translateY(10px);
   animation: rise 0.5s ease forwards;
   transition: transform .22s cubic-bezier(.3, 1.4, .5, 1), box-shadow .22s ease, border-color .2s ease;
+}
+
+/* The platform colour as text: lightness capped in light mode and floored in dark
+   mode, so all tile accents read at 4.5:1 while spines and borders keep the
+   original colour. */
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  .tile {
+    --tile-ink: light-dark(
+      oklch(from var(--tile-accent) min(l, 0.48) c h),
+      oklch(from var(--tile-accent) max(l, 0.69) c h));
+  }
 }
 
 .tile:hover {
@@ -1065,22 +1172,22 @@ h3 {
   font-size: 0.66rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: var(--tile-ink);
+  font-weight: 600;
   margin-bottom: -4px;
 }
 
-.tile-kicker span:first-child {
-  color: var(--tile-accent, var(--accent));
-  font-weight: 600;
-}
-
-/* Number · manufacturer · years */
+/* Manufacturer · years */
 .tile-kicker span+span::before {
   content: "·";
   margin: 0 0.6em;
 }
 
-.tile h3 {
+/* h3 on the timeline, h4 when the shelf is grouped */
+.tile-title {
+  font-family: "Fraunces", Georgia, serif;
+  text-wrap: balance;
+  margin: 0;
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.25;
@@ -1123,13 +1230,13 @@ h3 {
 }
 
 .tile-meta strong {
-  color: var(--tile-accent, var(--accent));
+  color: var(--tile-ink);
   font-weight: 600;
 }
 
 .tile-region {
   margin-left: auto;
-  color: var(--tile-accent, var(--accent));
+  color: var(--tile-ink);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1146,7 +1253,7 @@ h3 {
   gap: 6px;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--tile-accent, var(--accent));
+  color: var(--tile-ink);
   margin-top: 2px;
 }
 
@@ -1234,6 +1341,23 @@ footer p {
 
   .vh-body {
     padding: 18px 18px;
+  }
+
+  .arrange {
+    width: 100%;
+  }
+
+  .arrange-options {
+    flex: 1;
+  }
+
+  .arrange-options label {
+    flex: 1;
+  }
+
+  .arrange-options span {
+    padding: 5px 6px;
+    text-align: center;
   }
 
   .era-ruler {

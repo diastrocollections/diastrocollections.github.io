@@ -6,7 +6,7 @@
   --surface-2: #DEE0EE;
   --ink: #1B1C24;
   --ink-soft: #52546C;
-  --ink-faint: #8D8FA6;
+  --ink-faint: #66677D;
   --accent: #2148D6;
   --accent-ink: #FFFFFF;
   --line: #D3D5E4;
@@ -39,7 +39,7 @@
     --surface-2: #232435;
     --ink: #EDEEF7;
     --ink-soft: #A6A8C2;
-    --ink-faint: #6C6E88;
+    --ink-faint: #8285A0;
     --accent: #7C9CFF;
     --accent-ink: #14151C;
     --line: #2B2D3E;
@@ -60,7 +60,7 @@
   --surface-2: #232435;
   --ink: #EDEEF7;
   --ink-soft: #A6A8C2;
-  --ink-faint: #6C6E88;
+  --ink-faint: #8285A0;
   --accent: #7C9CFF;
   --accent-ink: #14151C;
   --line: #2B2D3E;
@@ -109,7 +109,7 @@
 }
 .hero h1 { text-shadow: 3px 3px 0 rgba(33,72,214,0.14); }
 .hero h1 em {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   background: linear-gradient(90deg, #1E4FD9, #16A34A 38%, #E08A00 68%, #E8433D);
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
 }
@@ -137,6 +137,7 @@
 .chip:hover, .chip:focus-visible { border-color: var(--accent); transform: translateY(-2px); }
 
 /* ---------- Chapters: octagon badges ---------- */
+.hero-meta .label { color: var(--ink-soft); }
 .chapter { position: relative; padding-top: clamp(64px, 8vw, 92px); }
 .chapter::before { content: ""; position: absolute; left: 0; top: clamp(26px, 3.6vw, 42px); width: 112px; height: 4px; background: var(--four); }
 .chapter:first-child::before { display: none; }
@@ -146,6 +147,13 @@
   background: linear-gradient(135deg, hsl(var(--hue) 78% 64%), hsl(var(--hue) 70% 44%) 55%, hsl(var(--hue) 70% 32%));
   clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
   text-shadow: 1px 1px 0 rgba(0,0,0,0.35);
+}
+/* Lightness capped in both modes, so the white text reads at 4.5:1 on every chapter
+   colour. Browsers without these colour functions keep the gradient above. */
+@supports (color: oklch(from red l c h)) {
+  .chapter-num {
+    background: linear-gradient(135deg, oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.54) c h), oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.46) c h) 55%, oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.36) c h));
+  }
 }
 .chapter-tag { border: 2px solid hsl(var(--hue) var(--sat) var(--lig) / 0.5); font-weight: 700; }
 .chapter-blurb { border-bottom: 2px solid var(--line-strong); }

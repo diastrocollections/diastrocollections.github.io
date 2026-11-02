@@ -1,9 +1,86 @@
 [
   {
+    "version": "2.4.0",
+    "type": "minor",
+    "date": "2026-11-02",
+    "current": true,
+    "sections": [
+      {
+        "heading": "The <a href=\"/gameboy/\">Nintendo Game Boy Collection</a> is now 100% hand-written!",
+        "bullets": [
+          {
+            "text": "I’ve completely updated and rewritten every part of the Game Boy Collection, including the Curator’s Note, all twelve chapters and every game card."
+          },
+          {
+            "text": "<strong>Another step towards a fully European shelf:</strong> For the Game Boy I had to leave out some real gems, like the three <cite>Final Fantasy Legend</cite> games. But it made room for 25 games that had real impact in Europe, such as <cite>Asterix</cite>, <cite>Tintin in Tibet</cite>, <cite>The Smurfs</cite> and <cite>Lemmings</cite>."
+          },
+          {
+            "text": "<strong>Two new chapters:</strong> “Comic Heroes from Europe” and “Home-Computer Hits”. To make room, Sports and Racing now share a chapter, and so do Adventures and RPGs. A few other chapters got a new focus as well, like “Licensed & Movie Tie-ins” and “Cult Classics & Deep Cuts”."
+          },
+          {
+            "text": "<strong>The Collection now uses European titles and release years:</strong> <cite>Probotector</cite> instead of <cite>Operation C</cite>, <cite>Shadow Warriors</cite> instead of <cite>Ninja Gaiden Shadow</cite>, <cite>Mystic Quest</cite> instead of <cite>Final Fantasy Adventure</cite>, and so on. The Game Boy only reached Europe in 1990, so nothing here is dated 1989 anymore."
+          },
+          {
+            "text": "<strong>Super Game Boy badges:</strong> 25 games now carry a “Super Game Boy” badge: they have their own border, colours or sound when you play them on a SNES through Nintendo’s adapter. The filter finds the badges too."
+          },
+          {
+            "text": "<strong>Pixel corners:</strong> I used rounded corners for cards before. These are now replaced by stepped, pixel-style ones that fit the Game Boy theme much better."
+          }
+        ]
+      },
+      {
+        "heading": "Arrange the shelf however you like",
+        "bullets": [
+          {
+            "text": "The <a href=\"/\">shelf</a> has a new <strong>Arrange</strong> control. Besides the timeline, you can now group the Collections by maker, by type (home consoles or handhelds) or by status (hand-written or draft in progress)."
+          },
+          {
+            "text": "Your choice is part of the page’s address, so you can share a link to, say, the shelf <a href=\"/?arrange=maker\">grouped by maker</a>."
+          },
+          {
+            "text": "The timeline is now in true launch order, which moves the original Xbox from the end of the shelf to its rightful spot in 2001. I also removed the number on each tile, since it wouldn’t mean much in the new groupings."
+          }
+        ]
+      },
+      {
+        "heading": "Other updates and improvements",
+        "bullets": [
+          {
+            "text": "<strong>Updated typography for game titles:</strong> Titles of games, magazines, films and comics used to be bold. They’re now italic, as in editorial style, and tinted slightly towards the colour of the page. This now works the same on every page and in every section. Bold text is now reserved for real emphasis and key terms, which makes it easier to spot what actually matters in the Curator’s Notes."
+          },
+          {
+            "text": "<strong>Controller illustrations:</strong> The Game Boy Collection now also has a custom illustration instead of an emoji on the shelf."
+          },
+          {
+            "text": "<strong>Fewer labels:</strong> The European perspective is now the default, so I’ve hidden the “EU-first” label on the shelf. The six Collections that aren’t Europe-first yet keep their “NA-first” label for now."
+          },
+          {
+            "text": "<strong>Better contrast:</strong> Faint labels, accent-coloured text and chapter colours are now easier to read, in both light and dark mode, across all Collections. Another nice step towards my goal of the entire website passing WCAG accessibility requirements."
+          },
+          {
+            "text": "<strong>Smoother theme switching:</strong> Switching between light and dark mode now cross-fades the whole page at once. In Safari, some headings used to lag behind."
+          },
+          {
+            "text": "<strong>Theme choice carries across pages:</strong> If you switch between light and dark mode, the site now remembers that while you browse, instead of resetting on every page. It’s only saved for your current visit, so for a new visit it follows your device’s setting again."
+          },
+          {
+            "text": "<strong>Badges:</strong> Badges like “PAL-optimised” now sit right next to a game’s number, instead of on the other side of the card. This works better because some Collections have graphic elements in the top right corner of the game card."
+          },
+          {
+            "text": "I rewrote the description of the site that you see in search results and link previews, to emphasise the project’s European focus."
+          },
+          {
+            "text": "Fixed a few small Safari glitches, where elements could jump by a pixel while resizing the window."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "version": "2.3.0",
     "type": "minor",
     "date": "2026-10-27",
-    "current": true,
+    "current": false,
     "sections": [
       {
         "heading": "We have our own domain!",
@@ -20,13 +97,13 @@
             "text": "Every part of the NES Collection is now written by me: the Curator’s Note, all twelve chapters, every single game."
           },
           {
-            "text": "<strong>The first step towards a fully European shelf:</strong> Collection by Collection, I’ll update the shelf to only include games that actually came out in Europe. For the NES that meant leaving out some real gems, like <em>Final Fantasy</em> and <em>Dragon Warrior</em>. But it made room for around 30 games that America never got to play, or that Europe simply loved more, such as <em>Asterix</em>, <em>The Smurfs</em>, <em>Fantastic Dizzy</em> and <em>Micro Machines</em>."
+            "text": "<strong>The first step towards a fully European shelf:</strong> Collection by Collection, I’ll update the shelf to only include games that actually came out in Europe. For the NES that meant leaving out some real gems, like <cite>Final Fantasy</cite> and <cite>Dragon Warrior</cite>. But it made room for around 30 games that America never got to play, or that Europe simply loved more, such as <cite>Asterix</cite>, <cite>The Smurfs</cite>, <cite>Fantastic Dizzy</cite> and <cite>Micro Machines</cite>."
           },
           {
             "text": "<strong>Two new chapters:</strong> “Home-Computer Hits” and “Zappers, Robots & Party Games”. The removal of Japanese-made RPGs left a huge hole, so that chapter became “Quests & Action-RPGs”. Finally, “Puzzle & Party” became “Puzzle & Co-op”."
           },
           {
-            "text": "<strong>The Collection now uses European titles:</strong> <em>Probotector</em> instead of <em>Contra</em>, <em>Teenage Mutant Hero Turtles</em>, <em>Street Gangs</em>, <em>Dynablaster</em>, and so on."
+            "text": "<strong>The Collection now uses European titles:</strong> <cite>Probotector</cite> instead of <cite>Contra</cite>, <cite>Teenage Mutant Hero Turtles</cite>, <cite>Street Gangs</cite>, <cite>Dynablaster</cite>, and so on."
           },
           {
             "text": "<strong>More PAL badges:</strong> 27 games in the Collection now carry a “PAL-adjusted” or “PAL-optimised” label, up from about a dozen. There are many interesting stories left to tell, and I hope to cover them in the upcoming YouTube videos!"
@@ -62,7 +139,7 @@
         "heading": "Other updates and improvements",
         "bullets": [
           {
-            "text": "I’ve adopted a sort-of standard <strong>typography</strong> ruleset for the project: apostrophes and quotation marks across the whole site are now real curly ones (’ “ ”). Searching still works the way you’d expect, so typing `kirby's` still finds <em>Kirby’s Adventure</em>."
+            "text": "I’ve adopted a sort-of standard <strong>typography</strong> ruleset for the project: apostrophes and quotation marks across the whole site are now real curly ones (’ “ ”). Searching still works the way you’d expect, so typing `kirby's` still finds <cite>Kirby’s Adventure</cite>."
           },
           {
             "text": "Removed the “Back to the shelf” link from the How it’s made and Version history pages, since the persistent navigation bar already does that job."
@@ -141,10 +218,10 @@
         "heading": "Content updates",
         "bullets": [
           {
-            "text": "In the <a href=\"/gameboy/\">Game Boy Collection</a>, I swapped in <em>Castlevania II: Belmont’s Revenge</em> for <em>Solomon’s Club</em>. I forgot to add an actual Castlevania game to the chapter on Metroidvania! :D"
+            "text": "In the <a href=\"/gameboy/\">Game Boy Collection</a>, I swapped in <cite>Castlevania II: Belmont’s Revenge</cite> for <cite>Solomon’s Club</cite>. I forgot to add an actual Castlevania game to the chapter on Metroidvania! :D"
           },
           {
-            "text": "I also found <em>Solomon’s Club</em> redundant because block puzzlers are already well represented in the Collection, and it has no unique regional or historical story."
+            "text": "I also found <cite>Solomon’s Club</cite> redundant because block puzzlers are already well represented in the Collection, and it has no unique regional or historical story."
           },
           {
             "text": "Added <strong>“Hand-written” / “Draft in progress” badges</strong> on the hub and on every Collection page."

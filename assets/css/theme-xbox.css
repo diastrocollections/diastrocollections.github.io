@@ -8,8 +8,9 @@
   --surface-2: #E4E9D8;
   --ink: #10130B;
   --ink-soft: #4A5240;
-  --ink-faint: #6C7461;
+  --ink-faint: #68705D;
   --accent: #4FA316;
+  --accent-text: #377C00;
   --accent-ink: #FFFFFF;
   --blue: #7A8471;
   --line: #D7DECB;
@@ -44,8 +45,9 @@
     --surface-2: #1A1E12;
     --ink: #EAF0DE;
     --ink-soft: #A9B39A;
-    --ink-faint: #6E7863;
+    --ink-faint: #78836D;
     --accent: #8CE62B;
+    --accent-text: var(--accent);
     --accent-ink: #0A0C07;
     --blue: #4A5A3E;
     --line: #232A18;
@@ -65,8 +67,9 @@
   --surface-2: #1A1E12;
   --ink: #EAF0DE;
   --ink-soft: #A9B39A;
-  --ink-faint: #6E7863;
+  --ink-faint: #78836D;
   --accent: #8CE62B;
+  --accent-text: var(--accent);
   --accent-ink: #0A0C07;
   --blue: #4A5A3E;
   --line: #232A18;
@@ -80,7 +83,7 @@
 }
 
 ::selection {
-  background: var(--accent);
+  background: var(--accent-text, var(--accent));
   color: var(--accent-ink);
 }
 
@@ -248,7 +251,7 @@
 
 .note-card h2 {
   font-family: var(--font-display);
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   letter-spacing: 0.06em;
   font-size: 1rem;
 }
@@ -257,12 +260,25 @@
 
 /* The numeral sits above the button's centre (uneven padding puts the numeral above the pill's centre); lift the title by the
    same amount (half of --num-lift) so the two lines of text align. */
+/* Fill behind the chapter number and card index pills. Its lightness is capped
+   in light mode (white text) and floored in dark mode (dark text), so the
+   number reads at 4.5:1 on every chapter colour. */
+.chapter { --chapter-fill: hsl(var(--hue) var(--sat) var(--lig)); }
+
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  .chapter {
+    --chapter-fill: light-dark(
+      oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.52) c h),
+      oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.62) c h));
+  }
+}
+
 .chapter-head {
   --num-lift: 3.5px;
 }
 
 .chapter-num {
-  background: hsl(var(--hue) var(--sat) var(--lig));
+  background: var(--chapter-fill);
   color: var(--accent-ink);
   padding: 6px 15px 9px 16px;
   border-radius: 999px;
@@ -278,7 +294,7 @@
   font-weight: 700;
   border: 1.5px solid hsl(var(--hue) var(--sat) var(--lig));
   border-radius: 999px;
-  color: hsl(var(--hue) var(--sat) var(--lig));
+  color: var(--chapter-ink);
 }
 
 .chapter-blurb {
@@ -328,7 +344,7 @@
 
 .card-idx {
   align-self: flex-start;
-  background: hsl(var(--hue) var(--sat) var(--lig));
+  background: var(--chapter-fill);
   color: var(--accent-ink);
   padding: 2px 10px;
   border-radius: 999px;
@@ -368,6 +384,6 @@ footer .wrap {
   font-family: var(--font-display);
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   font-size: 0.85rem;
 }

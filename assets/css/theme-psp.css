@@ -6,7 +6,7 @@
   --surface-2: #E7EBF0;
   --ink: #14171C;
   --ink-soft: #52596A;
-  --ink-faint: #8991A3;
+  --ink-faint: #676E7F;
   --accent: #1E56E0;
   --accent-ink: #FFFFFF;
   --line: #D8DEE7;
@@ -37,7 +37,7 @@
     --surface-2: #1F232B;
     --ink: #EDEFF3;
     --ink-soft: #AEB4C2;
-    --ink-faint: #6E7686;
+    --ink-faint: #7B8494;
     --accent: #6E9FFF;
     --accent-ink: #0B1220;
     --line: #272C36;
@@ -58,7 +58,7 @@
   --surface-2: #1F232B;
   --ink: #EDEFF3;
   --ink-soft: #AEB4C2;
-  --ink-faint: #6E7686;
+  --ink-faint: #7B8494;
   --accent: #6E9FFF;
   --accent-ink: #0B1220;
   --line: #272C36;
@@ -104,7 +104,7 @@
 }
 .hero .eyebrow .dot { box-shadow: 0 0 0 3px rgba(30,86,224,0.18), 0 0 10px 1px var(--accent); }
 .hero h1 { text-shadow: 0 2px 18px rgba(30,86,224,0.18); }
-.hero h1 em { background: linear-gradient(90deg, var(--em-a), var(--em-b)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: var(--accent); }
+.hero h1 em { background: linear-gradient(90deg, var(--em-a), var(--em-b)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: var(--accent-text, var(--accent)); }
 
 .hero-meta { border-top: none; padding-top: 0; gap: 14px; }
 .hero-meta .stat {
@@ -127,10 +127,11 @@
 .toolbar { border-bottom: 1px solid var(--line-strong); }
 .chip { border: 1px solid transparent; background: transparent; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.04em; position: relative; transition: color .15s ease, background .15s ease; }
 .chip::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: 2px; height: 2px; background: var(--accent); box-shadow: 0 0 8px var(--accent); transform: scaleX(0); transition: transform .18s ease; }
-.chip:hover, .chip:focus-visible { color: var(--accent); background: var(--surface-2); }
+.chip:hover, .chip:focus-visible { color: var(--accent-text, var(--accent)); background: var(--surface-2); }
 .chip:hover::after, .chip:focus-visible::after { transform: scaleX(1); }
 
 /* ---------- Chapters: glossy icon tiles ---------- */
+.hero-meta .label { color: var(--ink-soft); }
 .chapter { position: relative; padding-top: clamp(64px, 8vw, 92px); }
 .chapter::before { content: ""; position: absolute; left: 0; right: 0; top: clamp(30px, 4vw, 44px); height: 1px; background: linear-gradient(90deg, var(--accent), var(--line-strong) 30%, transparent); }
 .chapter::after { content: ""; position: absolute; left: 0; top: clamp(30px, 4vw, 44px); width: 7px; height: 7px; margin-top: -3px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px 2px var(--accent); }
@@ -145,6 +146,21 @@
 .chapter-num::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 48%; background: linear-gradient(180deg, rgba(255,255,255,0.42), rgba(255,255,255,0.08)); pointer-events: none; }
 :root[data-theme="dark"] .chapter-num { color: #0B1220; text-shadow: none; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chapter-num { color: #0B1220; text-shadow: none; } }
+
+/* Chapter number gradient with its lightness capped in light mode (white text) and
+   floored in dark mode (dark text), for 4.5:1 on every chapter colour. Browsers
+   without these colour functions keep the gradients above. */
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  :root[data-theme="dark"] .chapter-num,
+  :root:not([data-theme="light"]) .chapter-num,
+  .chapter-num {
+    background: linear-gradient(180deg,
+      light-dark(oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.5) c h), oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.8) c h)),
+      light-dark(oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.42) c h), oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.7) c h)));
+  }
+
+  .chapter-num::before { opacity: 0.28; }
+}
 .chapter-tag { font-family: var(--font-mono); border: 1px solid hsl(var(--hue) var(--sat) var(--lig) / 0.5); }
 .chapter-blurb { border-bottom: 1px solid var(--line-strong); }
 

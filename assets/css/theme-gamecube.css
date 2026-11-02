@@ -6,7 +6,7 @@
   --surface-2: #ECE8F7;
   --ink: #1C1830;
   --ink-soft: #5C5470;
-  --ink-faint: #8C84A0;
+  --ink-faint: #726A85;
   --accent: #4B3B87;
   --accent-ink: #FFFFFF;
   --line: #DCD5EC;
@@ -41,7 +41,7 @@
     --surface-2: #241E3D;
     --ink: #F1EDFA;
     --ink-soft: #B7AECF;
-    --ink-faint: #837AA0;
+    --ink-faint: #887FA5;
     --accent: #B6A6EE;
     --accent-ink: #1A1530;
     --line: #322A50;
@@ -67,7 +67,7 @@
   --surface-2: #241E3D;
   --ink: #F1EDFA;
   --ink-soft: #B7AECF;
-  --ink-faint: #837AA0;
+  --ink-faint: #887FA5;
   --accent: #B6A6EE;
   --accent-ink: #1A1530;
   --line: #322A50;
@@ -154,7 +154,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .hero-meta {

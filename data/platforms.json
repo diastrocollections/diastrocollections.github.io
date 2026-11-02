@@ -39,21 +39,21 @@
   },
   {
     "id": "gameboy",
-    "icon": "🧩",
+    "icon": "assets/icons/gameboy.svg",
     "manufacturer": "Nintendo",
     "type": "handheld",
     "name": "Game Boy",
     "title": "The Nintendo Game Boy Collection",
-    "years": "1989–1998",
-    "start": 1989,
-    "end": 1998,
+    "years": "1990–2000",
+    "start": 1990,
+    "end": 2000,
     "games": 100,
     "chapters": 12,
-    "handwritten": false,
-    "progress": 10,
+    "handwritten": true,
+    "progress": 100,
     "accent": "#4C6B1F",
-    "region": "NA-first",
-    "tagline": "A decade in your pocket; puzzle boxes, SaGa-era RPGs, and the cartridge that started Pokémon.",
+    "region": "EU-first",
+    "tagline": "One hundred games for the original DMG-01, as Europe knew them. From Tetris and Pokémon to Franco-Belgian comic heroes and home-computer hits, here are the games that defined a decade in your pocket.",
     "url": "gameboy/"
   },
   {
@@ -129,7 +129,7 @@
     "progress": 0,
     "accent": "#2148D6",
     "region": "EU-first",
-    "tagline": "Nintendo’s leap into true 3D. Cartridges over discs, the most influencial 3D platformer ever made and the game that proved consoles could do shooters too.",
+    "tagline": "Nintendo’s leap into true 3D. Cartridges over discs, the most influential 3D platformer ever made and the game that proved consoles could do shooters too.",
     "url": "n64/"
   },
   {
@@ -209,6 +209,25 @@
     "url": "gba/"
   },
   {
+    "id": "xbox",
+    "icon": "🪐",
+    "manufacturer": "Microsoft",
+    "type": "home",
+    "name": "Xbox",
+    "title": "The Original Xbox Collection",
+    "years": "2001–2006",
+    "start": 2001,
+    "end": 2006,
+    "games": 100,
+    "chapters": 12,
+    "handwritten": false,
+    "progress": 0,
+    "accent": "#6FCF1A",
+    "region": "EU-first",
+    "tagline": "Microsoft’s first console, built around one shooter and a built-in online service everyone else spent years catching up to.",
+    "url": "xbox/"
+  },
+  {
     "id": "psp",
     "icon": "🕹️",
     "manufacturer": "Sony",
@@ -264,24 +283,5 @@
     "region": "NA-first",
     "tagline": "The best-selling console of its generation, from pack-in bowling to three JRPGs a fan campaign had to save.",
     "url": "wii/"
-  },
-  {
-    "id": "xbox",
-    "icon": "🪐",
-    "manufacturer": "Microsoft",
-    "type": "home",
-    "name": "Xbox",
-    "title": "The Original Xbox Collection",
-    "years": "2001–2006",
-    "start": 2001,
-    "end": 2006,
-    "games": 100,
-    "chapters": 12,
-    "handwritten": false,
-    "progress": 0,
-    "accent": "#6FCF1A",
-    "region": "EU-first",
-    "tagline": "Microsoft’s first console, built around one shooter and a built-in online service everyone else spent years catching up to.",
-    "url": "xbox/"
   }
 ]

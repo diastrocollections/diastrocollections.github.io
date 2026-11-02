@@ -6,7 +6,7 @@
   --surface-2: #E5E0C9;
   --ink: #1B2411;
   --ink-soft: #52603E;
-  --ink-faint: #7C8768;
+  --ink-faint: #646E50;
   --accent: #4C6B1F;
   --accent-ink: #FFFFFF;
   --line: #D9D4BE;
@@ -23,9 +23,15 @@
   --font-display-weight: 700;
   --font-mono: 'DotGothic16', monospace;
 
-  --card-radius: 6px;
-  --control-radius: 4px;
-  --chip-radius: 4px;
+  /* No rounded corners: outlines get pixel-stepped corners instead (see
+     "Pixel corners" at the end). --px-2 and --px-3 cut a 2px or 3px step out
+     of each corner, matching the outline's width. */
+  --card-radius: 0;
+  --control-radius: 0;
+  --chip-radius: 0;
+  --note-radius: 0;
+  --px-2: polygon(0 2px, 2px 2px, 2px 0, calc(100% - 2px) 0, calc(100% - 2px) 2px, 100% 2px, 100% calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) 100%, 2px 100%, 2px calc(100% - 2px), 0 calc(100% - 2px));
+  --px-3: polygon(0 3px, 3px 3px, 3px 0, calc(100% - 3px) 0, calc(100% - 3px) 3px, 100% 3px, 100% calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 3px 100%, 3px calc(100% - 3px), 0 calc(100% - 3px));
 
   --g-dark: #0F380F;
   --g-mid: #306230;
@@ -40,6 +46,9 @@
   --stat-bg: #0F380F;
   --stat-ink: #9BBC0F;
   --stat-ink2: #6F8F1A;
+  --note-edge: var(--ink);
+  --note-drop: var(--g-light);
+  --drop-soft: rgba(27, 36, 17, 0.08);
 
   color-scheme: light;
 }
@@ -51,7 +60,7 @@
     --surface-2: #17230F;
     --ink: #DCEAB8;
     --ink-soft: #97AC79;
-    --ink-faint: #64764C;
+    --ink-faint: #75885D;
     --accent: #9BD645;
     --accent-ink: #0A100A;
     --line: #465f36;
@@ -71,6 +80,9 @@
     --stat-bg: #9BBC0F;
     --stat-ink: #0F380F;
     --stat-ink2: #2E4A12;
+    --note-edge: var(--accent);
+    --note-drop: rgba(155, 214, 69, 0.25);
+    --drop-soft: rgba(0, 0, 0, 0.4);
 
     color-scheme: dark;
   }
@@ -82,7 +94,7 @@
   --surface-2: #17230F;
   --ink: #DCEAB8;
   --ink-soft: #97AC79;
-  --ink-faint: #64764C;
+  --ink-faint: #75885D;
   --accent: #9BD645;
   --accent-ink: #0A100A;
   --line: #24311C;
@@ -102,13 +114,19 @@
   --stat-bg: #9BBC0F;
   --stat-ink: #0F380F;
   --stat-ink2: #2E4A12;
+  --note-edge: var(--accent);
+  --note-drop: rgba(155, 214, 69, 0.25);
+  --drop-soft: rgba(0, 0, 0, 0.4);
 
   color-scheme: dark;
 }
 
-.search input,
-.chip {
+.search input {
   background: var(--surface-2);
+}
+
+.chip {
+  --face: var(--surface-2);
 }
 
 /* ---------- Hero: an LCD screen ---------- */
@@ -231,8 +249,9 @@
 /* T-tetromino */
 .tet.t5 {
   right: 38%;
-  box-shadow: 16px 0px 0 -2px var(--g-mid), 32px 16px 0 -2px var(--g-mid), 0px 16px 0 -2px var(--g-mid), 16px 16px 0 -2px var(--g-mid);;
-  animation-delay:-8s;
+  box-shadow: 16px 0px 0 -2px var(--g-mid), 32px 16px 0 -2px var(--g-mid), 0px 16px 0 -2px var(--g-mid), 16px 16px 0 -2px var(--g-mid);
+  ;
+  animation-delay: -8s;
   animation-duration: 37s;
 }
 
@@ -243,11 +262,12 @@
 }
 
 .hero .eyebrow {
-  background: var(--stat-bg);
+  --face: var(--stat-bg);
   color: var(--stat-ink);
   padding: 6px 12px;
-  border-radius: 2px;
-  box-shadow: 3px 3px 0 var(--g-mid);
+  --drop: var(--g-mid);
+  --drop-x: 3px;
+  --drop-y: 3px;
 }
 
 /* already sits on the eyebrow's baseline; cancel status.css's nudge */
@@ -300,10 +320,14 @@
   border-top: none;
   padding: 14px 20px;
   gap: 30px;
-  background: var(--stat-bg);
   border: 3px solid var(--ink);
-  box-shadow: 4px 4px 0 var(--g-mid), inset 0 0 0 2px var(--stat-bg), inset 0 0 0 3px var(--stat-ink2);
-  border-radius: 4px;
+  --edge: 3px;
+  --px: var(--px-3);
+  --face: var(--stat-bg);
+  --face-inset: inset 0 0 0 2px var(--stat-bg), inset 0 0 0 3px var(--stat-ink2);
+  --drop: var(--g-mid);
+  --drop-x: 4px;
+  --drop-y: 4px;
   width: fit-content;
   max-width: 100%;
 }
@@ -313,54 +337,35 @@
 }
 
 .hero-meta .label {
-  color: var(--stat-ink2);
+  color: #A9C92C;
 }
 
 :root[data-theme="dark"] .hero-meta .label {
   color: #2E4A12;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .hero-meta .label {
+    color: #2E4A12;
+  }
+}
+
 /* ---------- Curator's note: LCD panel with bezel stripes ---------- */
 .note-card {
-  border: 3px solid var(--ink);
-  border-radius: 6px;
-  box-shadow: 5px 5px 0 var(--g-light);
+  border: 3px solid var(--note-edge);
   padding-top: clamp(34px, 5vw, 48px);
-}
-
-.note-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 15px;
-  background:
+  --edge: 3px;
+  --px: var(--px-3);
+  --drop: var(--note-drop);
+  --drop-x: 5px;
+  --drop-y: 5px;
+  /* the bezel stripes: magenta and blue on a 15px band, then a 3px rule */
+  --face:
     linear-gradient(var(--magenta), var(--magenta)) 0 3px / 100% 3px no-repeat,
     linear-gradient(var(--blue), var(--blue)) 0 9px / 100% 3px no-repeat,
-    var(--surface-2);
-  border-bottom: 3px solid var(--ink);
-  border-radius: 3px 3px 0 0;
-}
-
-:root[data-theme="dark"] .note-card {
-  box-shadow: 5px 5px 0 rgba(155, 214, 69, 0.25);
-  border-color: var(--accent);
-}
-
-:root[data-theme="dark"] .note-card::before {
-  border-bottom-color: var(--accent);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .note-card {
-    box-shadow: 5px 5px 0 rgba(155, 214, 69, 0.25);
-    border-color: var(--accent);
-  }
-
-  :root:not([data-theme="light"]) .note-card::before {
-    border-bottom-color: var(--accent);
-  }
+    linear-gradient(var(--surface-2), var(--surface-2)) 0 0 / 100% 15px no-repeat,
+    linear-gradient(var(--note-edge), var(--note-edge)) 0 15px / 100% 3px no-repeat,
+    var(--surface);
 }
 
 .note-card h2 {
@@ -394,74 +399,89 @@
   font-size: 0.62rem;
   letter-spacing: 0.02em;
   border: 2px solid var(--line-strong);
-  box-shadow: 0 2px 0 var(--line-strong);
-  transition: transform .1s ease, box-shadow .1s ease, border-color .1s ease;
+  --edge: 2px;
+  --drop: var(--line-strong);
+  --drop-y: 2px;
+  transition: transform .1s ease, border-color .1s ease;
 }
 
 .chip:hover,
 .chip:focus-visible {
   transform: translateY(-1px);
-  box-shadow: 0 3px 0 var(--g-mid);
+  --drop: var(--g-mid);
+  --drop-y: 3px;
 }
 
 .chip:nth-child(1):hover,
 .chip:nth-child(1):focus-visible {
   border-color: hsl(71 55% 42%);
+  --drop: hsl(71 55% 42%);
 }
 
 .chip:nth-child(2):hover,
 .chip:nth-child(2):focus-visible {
   border-color: hsl(100 55% 42%);
+  --drop: hsl(100 55% 42%);
 }
 
 .chip:nth-child(3):hover,
 .chip:nth-child(3):focus-visible {
   border-color: hsl(129 55% 42%);
+  --drop: hsl(129 55% 42%);
 }
 
 .chip:nth-child(4):hover,
 .chip:nth-child(4):focus-visible {
   border-color: hsl(158 55% 42%);
+  --drop: hsl(158 55% 42%);
 }
 
 .chip:nth-child(5):hover,
 .chip:nth-child(5):focus-visible {
   border-color: hsl(187 55% 42%);
+  --drop: hsl(187 55% 42%);
 }
 
 .chip:nth-child(6):hover,
 .chip:nth-child(6):focus-visible {
   border-color: hsl(216 55% 42%);
+  --drop: hsl(216 55% 42%);
 }
 
 .chip:nth-child(7):hover,
 .chip:nth-child(7):focus-visible {
   border-color: hsl(245 55% 42%);
+  --drop: hsl(245 55% 42%);
 }
 
 .chip:nth-child(8):hover,
 .chip:nth-child(8):focus-visible {
   border-color: hsl(274 55% 42%);
+  --drop: hsl(274 55% 42%);
 }
 
 .chip:nth-child(9):hover,
 .chip:nth-child(9):focus-visible {
   border-color: hsl(303 55% 42%);
+  --drop: hsl(303 55% 42%);
 }
 
 .chip:nth-child(10):hover,
 .chip:nth-child(10):focus-visible {
   border-color: hsl(332 55% 42%);
+  --drop: hsl(332 55% 42%);
 }
 
 .chip:nth-child(11):hover,
 .chip:nth-child(11):focus-visible {
   border-color: hsl(21 55% 42%);
+  --drop: hsl(21 55% 42%);
 }
 
 .chip:nth-child(12):hover,
 .chip:nth-child(12):focus-visible {
   border-color: hsl(50 55% 42%);
+  --drop: hsl(50 55% 42%);
 }
 
 /* ---------- Chapters: A/B-button numbers, D-pad dividers ---------- */
@@ -476,19 +496,26 @@
   left: 0;
   right: 0;
   top: clamp(24px, 3.5vw, 40px);
+  top: round(clamp(24px, 3.5vw, 40px), 1px);
   height: 3px;
   background: repeating-linear-gradient(90deg, var(--line-strong) 0 6px, transparent 6px 12px);
 }
 
+/* The D-pad: five 5px blocks with 1px gaps, 17px across, so its middle row
+   sits exactly on the 3px line. Both are snapped to whole pixels: from a
+   fractional top, Safari rounds the line and the shadows separately and the
+   D-pad drops 1px below the line at some window widths. */
 .chapter::after {
   content: "";
   position: absolute;
-  left: 50%;
+  left: calc(50% - 8px);
+  left: calc(round(50%, 1px) - 8px);
   top: clamp(24px, 3.5vw, 40px);
-  width: 6px;
-  height: 6px;
-  margin: -7px 0 0 -9px;
-  box-shadow: 6px 0px 0 -0.5px var(--ink-faint), 0px 6px 0 -0.5px var(--ink-faint), 6px 6px 0 -0.5px var(--ink-faint), 12px 6px 0 -0.5px var(--ink-faint), 6px 12px 0 -0.5px var(--ink-faint);
+  top: round(clamp(24px, 3.5vw, 40px), 1px);
+  width: 5px;
+  height: 5px;
+  margin-top: -7px;
+  box-shadow: 6px 0 0 var(--ink-faint), 0 6px 0 var(--ink-faint), 6px 6px 0 var(--ink-faint), 12px 6px 0 var(--ink-faint), 6px 12px 0 var(--ink-faint);
   background: transparent;
   outline: 0;
 }
@@ -524,7 +551,6 @@
 
 .chapter-tag {
   border: 2px solid hsl(var(--hue) var(--sat) var(--lig) / 0.55);
-  border-radius: 3px;
   font-family: var(--font-display);
   font-size: 0.6rem;
 }
@@ -537,22 +563,32 @@
 .card {
   border: 2px solid var(--line-strong);
   border-top: 6px solid hsl(var(--hue) var(--sat) var(--lig));
-  box-shadow: 3px 3px 0 hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+  --edge: 2px;
+  --edge-t: 6px;
+  --drop: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
+  --drop-x: 3px;
+  --drop-y: 3px;
   --card-hover-transform: translate(-1px, -3px);
-  --card-hover-shadow: 5px 6px 0 hsl(var(--hue) var(--sat) var(--lig) / 0.45);
+  --card-hover-shadow: none;
+  /* The face draws the outline as flat bands rather than borders, so the
+     6px chapter band and the 2px sides meet square, not on a diagonal mitre.
+     Then the cartridge's grip ridges, top right. */
+  --face:
+    linear-gradient(var(--band), var(--band)) 0 0 / 100% 6px no-repeat,
+    linear-gradient(var(--line-strong), var(--line-strong)) 0 6px / 2px 100% no-repeat,
+    linear-gradient(var(--line-strong), var(--line-strong)) 100% 6px / 2px 100% no-repeat,
+    linear-gradient(var(--line-strong), var(--line-strong)) 0 100% / 100% 2px no-repeat,
+    linear-gradient(var(--grip), var(--grip)) right 12px top 14px / 18px 2px no-repeat,
+    linear-gradient(var(--grip), var(--grip)) right 12px top 18px / 18px 2px no-repeat,
+    var(--card-bg, var(--surface));
+  --band: hsl(var(--hue) var(--sat) var(--lig));
+  --grip: color-mix(in srgb, var(--line-strong) 80%, transparent);
 }
 
-.card::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  width: 18px;
-  height: 6px;
-  background:
-    linear-gradient(var(--line-strong), var(--line-strong)) 0 0 / 100% 2px no-repeat,
-    linear-gradient(var(--line-strong), var(--line-strong)) 0 4px / 100% 2px no-repeat;
-  opacity: 0.8;
+.card:hover {
+  --drop: hsl(var(--hue) var(--sat) var(--lig) / 0.45);
+  --drop-x: 5px;
+  --drop-y: 6px;
 }
 
 .card-idx {
@@ -563,7 +599,6 @@
   background: var(--stat-bg);
   color: var(--stat-ink);
   padding: 3px 8px 2px;
-  border-radius: 2px;
 }
 
 .card-title {
@@ -594,9 +629,114 @@ footer::before {
   width: 64px;
   height: 44px;
   background: repeating-linear-gradient(-58deg, var(--line-strong) 0 5px, transparent 5px 12px);
-  border-radius: 2px;
   opacity: 0.85;
   pointer-events: none;
+}
+
+/* ---------- Pixel corners ----------
+   Every outline gets a stepped corner as deep as the outline is wide, so the
+   lines stop one "pixel" short of each corner. clip-path cuts the steps.
+
+   clip-path would also cut away box-shadows and focus rings, so elements with
+   an offset shadow are drawn as two clipped layers behind their content
+   instead: ::after is the face (fill and outline), ::before the shadow,
+   shifted by --drop-x/--drop-y. The element keeps its border widths and
+   colours, so hover and current-state rules still work: the face inherits
+   them, and the element's own border is painted invisible with border-image.
+   --edge (and --edge-t) must match the element's border widths. */
+.hero .eyebrow,
+.hero-meta,
+.note-card,
+.chip,
+.card {
+  position: relative;
+}
+
+.hero .eyebrow,
+.hero-meta,
+.note-card,
+.chapters-panel,
+.chip,
+.card {
+  isolation: isolate;
+  background: none;
+  box-shadow: none;
+  border-image: linear-gradient(transparent, transparent) 1;
+}
+
+:is(.hero .eyebrow, .hero-meta, .note-card, .chapters-panel, .chip, .card)::before,
+:is(.hero .eyebrow, .hero-meta, .note-card, .chapters-panel, .chip, .card)::after {
+  content: "";
+  position: absolute;
+  inset:
+    calc(-1 * var(--edge-t, var(--edge, 0px))) calc(-1 * var(--edge, 0px)) calc(-1 * var(--edge, 0px));
+  z-index: -1;
+  clip-path: var(--px, var(--px-2));
+  pointer-events: none;
+}
+
+:is(.hero .eyebrow, .hero-meta, .note-card, .chapters-panel, .chip, .card)::before {
+  background: var(--drop, transparent);
+  translate: var(--drop-x, 0px) var(--drop-y, 0px);
+  transition: translate .15s ease, background-color .15s ease;
+}
+
+:is(.hero .eyebrow, .hero-meta, .note-card, .chapters-panel, .chip, .card)::after {
+  border-style: inherit;
+  border-width: inherit;
+  border-color: inherit;
+  background: var(--face, var(--surface));
+  box-shadow: var(--face-inset, none);
+}
+
+.grid .card::after {
+  border-width: 0;
+  /* outline is in the face's background, see .card */
+}
+
+.chapters-panel {
+  border-width: 2px;
+  --edge: 2px;
+  --drop: var(--drop-soft);
+  --drop-y: 2px;
+}
+
+/* No offset shadow: clip the element itself. 1px outlines become 2px, or
+   the step is too small to see. */
+.search input,
+.chapters-toggle,
+.filter-clear,
+.chapter-tag,
+.card-idx,
+.card-badge,
+.pager-link,
+footer .footer-report,
+footer .report-btn {
+  clip-path: var(--px-2);
+}
+
+.search input,
+.chapters-toggle,
+footer .footer-report {
+  border-width: 2px;
+}
+
+.pager-link {
+  border-width: 2px 2px 2px 4px;
+}
+
+.pager-next {
+  border-width: 2px 4px 2px 2px;
+}
+
+/* A focus ring sits outside the element, where the clip would hide it, so a
+   focused control shows its square corners for as long as it has focus. */
+:is(.search input, .chapters-toggle, .filter-clear, .pager-link, footer .report-btn):focus-visible {
+  clip-path: none;
+}
+
+:is(main, footer) :focus-visible {
+  border-radius: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

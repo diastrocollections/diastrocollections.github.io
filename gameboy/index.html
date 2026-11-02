@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>try{var t=sessionStorage.getItem('dgc-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <meta name="description"
-    content="100 original Game Boy games (1989–1998) — puzzle classics, SaGa-era RPGs, and the cartridge that launched Pokémon, sorted by genre, not hype.">
-  <title>The Nintendo Game Boy Collection — Diastro Gaming Collections</title>
-  <meta property="og:title" content="The Nintendo Game Boy Collection — Diastro Gaming Collections">
+    content="100 original Game Boy games (1990–2000), genre by genre and Europe-first: Nintendo’s classics, Europe’s own comic heroes, and games that only ever came out here.">
+  <title>The Nintendo Game Boy Collection - Diastro Gaming Collections</title>
+  <meta property="og:title" content="The Nintendo Game Boy Collection - Diastro Gaming Collections">
   <meta property="og:description"
-    content="100 original Game Boy games (1989–1998) — puzzle classics, SaGa-era RPGs, and the cartridge that launched Pokémon, sorted by genre, not hype.">
+    content="100 original Game Boy games (1990–2000), genre by genre and Europe-first: Nintendo’s classics, Europe’s own comic heroes, and games that only ever came out here.">
   <meta property="og:image" content="https://diastrogaming.com/assets/og/og-gb.png">
   <meta property="og:url" content="https://diastrogaming.com/gameboy/">
   <meta property="og:type" content="website">
@@ -68,8 +69,9 @@
       <button class="theme-toggle" id="themeToggle" type="button" title="Dark / light mode"><span
           class="theme-toggle-icon" aria-hidden="true">◐</span><span class="theme-toggle-label">Dark / light
           mode</span></button>
-      <button class="topbar-top" id="topbarTopBtn" type="button" aria-label="Back to the top" title="Back to the top"><span
-          class="topbar-top-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false">
+      <button class="topbar-top" id="topbarTopBtn" type="button" aria-label="Back to the top"
+        title="Back to the top"><span class="topbar-top-icon" aria-hidden="true"><svg viewBox="0 0 24 24"
+            focusable="false">
             <path d="M12 19V5" />
             <path d="m5 12 7-7 7 7" />
           </svg></span></button>
@@ -77,129 +79,167 @@
   </header>
 
   <main id="content">
-  <section class="hero">
-    <div class="bezel-lines" aria-hidden="true"><i></i><i></i></div>
-    <div class="blocks" aria-hidden="true"><i class="tet t1"></i><i class="tet t2"></i><i class="tet t3"></i><i
-        class="tet t4"></i><i class="tet t5"></i></div>
-    <div class="wrap">
-      <div class="eyebrow"><span class="dot"></span> DMG-01 &middot; Diastro Gaming Collections &middot;</div>
-      <h1>The <em>Nintendo Game Boy</em> Collection</h1>
-      <p class="hero-lede">One hundred games for the original DMG-01, sampled from every corner of its
-        library. Block puzzlers, RPG oddities, cartoons and movie tie-ins, obscure cuts, and of course, the platformers
-        that defined a decade in your pocket.</p>
-      <div class="hero-meta">
-        <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
-        <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
-        <div class="stat"><span class="num mono">1989&ndash;1998</span><span class="label">original hardware only</span>
+    <section class="hero">
+      <div class="bezel-lines" aria-hidden="true"><i></i><i></i></div>
+      <div class="blocks" aria-hidden="true"><i class="tet t1"></i><i class="tet t2"></i><i class="tet t3"></i><i
+          class="tet t4"></i><i class="tet t5"></i></div>
+      <div class="wrap">
+        <div class="eyebrow"><span class="dot"></span> DMG-01 &middot; Diastro Gaming Collections &middot;</div>
+        <h1>The <em>Nintendo Game Boy</em> Collection</h1>
+        <p class="hero-lede">One hundred games for the original DMG-01, as Europe knew it. From <cite>Tetris</cite> and
+          <cite>Pokémon</cite> to Franco-Belgian comic heroes and home-computer hits, here are the games that defined a
+          decade in your pocket.
+        </p>
+        <div class="hero-meta">
+          <div class="stat"><span class="num mono" id="totalCount">100</span><span class="label">games</span></div>
+          <div class="stat"><span class="num mono">12</span><span class="label">chapters</span></div>
+          <div class="stat"><span class="num mono">1990&ndash;2000</span><span class="label">European release
+              years</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="note">
-    <div class="wrap">
-      <div class="note-card" id="curatorNote">
-        <h2>A note from the curator</h2>
-        <div class="note-body" id="noteBody">
-          <p>Welcome to the Nintendo Game Boy Collection! This is not your usual Metacritic-based toplist, as the
-            original Game Boy entirely predates aggregate scores. Also, a pure sales or review ranking would bury the
-            system’s real personality under six <strong>Mega Man</strong> ports and a dozen movie tie-ins. No, instead,
-            this collection samples every genre the <em>DMG</em> actually supported: the falling-block puzzlers it’s
-            remembered for, but also the <em>SaGa</em>-era Square RPGs, the <strong>Donkey Kong Land</strong> trilogy,
-            the <em>Konami</em> shooters, and the Japan-only curios that never got a Western release at all.
-          </p>
-          <p>Only games confirmed to run on <strong>original monochrome Game Boy hardware</strong> made the cut here.
-            Game Boy Color-exclusive titles (<strong>Pokémon Gold/Silver</strong>, <strong>Wario Land 3</strong>,
-            <strong>Shantae</strong>, et cetera) are deliberately excluded. Though beloved, they simply won’t boot on
-            the
-            stock grey brick! But rest assured, they are most certainly included in the <a href="/gbc/">Game Boy Color
-              Collection</a>.
-          </p>
-          <p>Currently, release years follow the North American release date where one exists, because it was easier to
-            research this way. For games that never left Japan or only reached Japan and Europe, the original regional
-            release year is used instead, and I marked it accordingly in its chapter. Over the coming weeks I will
-            update the Collection to follow the project’s EU-first methodology.
-          </p>
-          <p>During my research, I noticed that several games were commonly mislabeled. Two games long assumed
-            Japan-only: <cite>The Sword of Hope II</cite> and <cite>The King of Fighters ’95</cite> actually got delayed
-            North American releases (1996 and 1997 respectively). <cite>Trip World</cite>, another game commonly thought
-            Japan-only, in fact reached Europe as well, just never North America.</p>
-          <p>Other than that, about a dozen entries also had noteworthy European divergence. For example:
-            <strong>Yoshi</strong> was
-            called <strong>Mario & Yoshi</strong>, <strong>Operation C</strong> became <strong>Probotector</strong>, and
-            <strong>Gradius: The Interstellar Assault</strong> had <strong>Nemesis II: The Return of the Hero</strong>
-            on its box. Finally, I discovered that while release gaps are very common, <strong>Wave Race</strong> was
-            released in Europe an extraordinary five years after North America and Japan!
-          </p>
-          <p>I hope you enjoy perusing the collection as much as I did creating it.</p>
-          <p>&middot; Jesper</p>
+    <section class="note">
+      <div class="wrap">
+        <div class="note-card" id="curatorNote">
+          <h2>A note from the curator</h2>
+          <div class="note-body" id="noteBody">
+            <p>Welcome to the Nintendo Game Boy Collection! This is not your usual Metacritic-style toplist, as the
+              original Game Boy entirely predates aggregate scores. A pure sales or review-based ranking also buries the
+              handheld’s real personality under five <cite>Mega Man</cite> games and a pile of movie tie-ins. No,
+              instead, this Collection samples every genre the DMG actually spanned: the falling-block puzzlers,
+              Nintendo’s own mascots, Konami’s shooters and, of course, the first <cite>Pokémon</cite> games. But you’ll
+              also find two very European chapters: comic heroes and home-computer hits.</p>
+
+            <p>Only games confirmed to run on <strong>original monochrome Game Boy hardware</strong> made the cut here.
+              Game Boy Color-exclusive titles (<cite>Pokémon Gold/Silver</cite>, <cite>Wario Land 3</cite>,
+              <cite>Shantae</cite>, et cetera) are deliberately excluded. Though beloved, they simply won’t boot on the
+              ol’ grey brick! But rest assured, they are most certainly included in the <a href="/gbc/">Game Boy Color
+                Collection</a>.
+            </p>
+
+            <p>When I first built this Collection, I used North American release years, because they were a bit easier
+              to source. Not anymore! Like the rest of the shelf, the Game Boy Collection is now <strong>fully
+                European</strong>: European titles and release years, and only games that actually came out here. That
+              meant saying goodbye to some games I like, such as the three <cite>Final Fantasy Legend</cite> games. But
+              it made room for <cite>Asterix</cite>, <cite>Tintin</cite>, <cite>Lemmings</cite>, <cite>Trip World</cite>
+              and plenty more. It also means nothing here is dated 1989! The Game Boy only reached Europe in 1990 after
+              all, with <cite>Tetris</cite> in the box.
+            </p>
+
+            <p>Why did <cite>Tetris</cite> come with every European Game Boy? That’s a famous story about a Dutch-born
+              man called Henk Rogers. He won the handheld rights in Moscow after Britain’s Mirrorsoft lost
+              the race, and then convinced Nintendo to bundle <cite>Tetris</cite> instead of <cite>Super Mario
+                Land</cite>. As a fellow Dutchman, I think that is pretty cool!</p>
+
+            <p>Unlike the home consoles, you won’t find any PAL badges here. The Game Boy runs at the same speed
+              everywhere. Instead, 25 games carry a <strong>Super Game Boy</strong> badge: they have their own border,
+              colours or sound when you play them on a SNES through Nintendo’s adapter. Older games like
+              <cite>Tetris</cite> only get one of the palettes built into the adapter itself, so they don’t count. Fun
+              fact: on a European SNES, the Super Game Boy actually runs about 1.5% too fast!
+            </p>
+
+            <p>The regional differences were my favourite again. <cite>Operation C</cite> became
+              <cite>Probotector</cite>, <cite>Ninja Gaiden Shadow</cite> became <cite>Shadow Warriors</cite>, and
+              <cite>Final Fantasy Adventure</cite> was sold here as <cite>Mystic Quest</cite>. That even forced the SNES
+              game <cite>Final Fantasy Mystic Quest</cite> to become <cite>Mystic Quest Legend</cite> in Europe. The
+              rollout order could flip too: Europe got <cite>R-Type</cite>, made by British studio Bits, months before
+              Japan and America. And just like on the NES, <cite>Mega Man V</cite> arrived before <cite>Mega Man
+                IV</cite>. On the other end of the scale, <cite>Wave Race</cite> and <cite>Spy vs Spy</cite> both took a
+              whopping five years to reach us!
+            </p>
+
+            <p>A few things about the Game Boy library are commonly misremembered, and I got some of them wrong myself.
+              <cite>Sagaia</cite> and <cite>Catrap</cite> were in this Collection from the beginning, but neither came
+              out in Europe. <cite>Kid Dracula</cite> and <cite>Double Dragon II</cite>, on the other hand, did! Some
+              games were simply wearing a disguise: <cite>McDonaldland</cite> was sold in the States as a 7 Up game, and
+              <cite>Hugo</cite> is secretly Kemco’s <cite>Crazy Castle 2</cite>. Europe even got that game twice: as
+              <cite>Mickey Mouse</cite> in 1992 and as <cite>Hugo</cite> in 1996.
+            </p>
+
+            <p>Now, find some AA batteries and let’s play some games. I hope you enjoy perusing the Collection as much
+              as I did creating it.
+            </p>
+            <p>&middot; Jesper
+            </p>
+          </div>
+          <button class="note-toggle" id="noteToggle" type="button" aria-expanded="false" aria-controls="noteBody">
+            <span class="note-toggle-label">Read the curator’s note</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
         </div>
-        <button class="note-toggle" id="noteToggle" type="button" aria-expanded="false" aria-controls="noteBody">
-          <span class="note-toggle-label">Read the curator’s note</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M6 9l6 6 6-6" />
+      </div>
+    </section>
+
+    <div class="toolbar">
+      <div class="wrap toolbar-row">
+        <div class="search" role="search" aria-label="This Collection">
+          <label class="sr-only" for="searchInput">Filter games by title, developer or genre</label>
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 5h18l-7 8.5V19l-4 2v-7.5z" />
           </svg>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <div class="toolbar">
-    <div class="wrap toolbar-row">
-      <div class="search" role="search" aria-label="This Collection">
-        <label class="sr-only" for="searchInput">Filter games by title, developer or genre</label>
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M3 5h18l-7 8.5V19l-4 2v-7.5z" />
-        </svg>
-        <input id="searchInput" type="text" placeholder="Filter…" autocomplete="off" spellcheck="false">
-        <button class="filter-clear" id="filterClear" type="button" aria-label="Clear the filter" hidden><svg
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-            aria-hidden="true">
-            <path d="M6 6l12 12M18 6L6 18" />
-          </svg></button>
-      </div>
-      <div class="result-count" id="resultCount" aria-hidden="true"></div>
-      <nav class="chapters-nav" aria-label="Chapters">
-        <button class="chapters-toggle" id="chaptersToggle" type="button" aria-expanded="false"
-          aria-controls="chaptersPanel"><svg class="chapters-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
-            <path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
-          </svg><span class="chapters-label">Chapters</span><span class="chapters-current"
-            id="chaptersCurrent"></span><svg class="chapters-chevron" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M6 9l6 6 6-6" />
-          </svg></button>
-        <div class="chapters-panel" id="chaptersPanel" hidden>
-          <div class="chips" id="chips"></div>
+          <input id="searchInput" type="text" placeholder="Filter…" autocomplete="off" spellcheck="false">
+          <button class="filter-clear" id="filterClear" type="button" aria-label="Clear the filter" hidden><svg
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+              aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg></button>
         </div>
-      </nav>
+        <div class="result-count" id="resultCount" aria-hidden="true"></div>
+        <nav class="chapters-nav" aria-label="Chapters">
+          <button class="chapters-toggle" id="chaptersToggle" type="button" aria-expanded="false"
+            aria-controls="chaptersPanel"><svg class="chapters-icon" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+              <path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" />
+            </svg><span class="chapters-label">Chapters</span><span class="chapters-current"
+              id="chaptersCurrent"></span><svg class="chapters-chevron" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg></button>
+          <div class="chapters-panel" id="chaptersPanel" hidden>
+            <div class="chips" id="chips"></div>
+          </div>
+        </nav>
+      </div>
+      <p class="sr-only" id="filterStatus" role="status"></p>
     </div>
-    <p class="sr-only" id="filterStatus" role="status"></p>
-  </div>
 
-  <div class="wrap" id="chapters"></div>
+    <div class="wrap" id="chapters"></div>
 
-  <div class="wrap">
-    <p class="empty-state" id="emptyState">No cartridges match that filter.</p>
-  </div>
+    <div class="wrap">
+      <p class="empty-state" id="emptyState">No cartridges match that filter.</p>
+    </div>
 
-  <div class="wrap">
-    <nav class="collection-pager" id="collectionPager" aria-label="More Collections"></nav>
-  </div>
+    <div class="wrap">
+      <nav class="collection-pager" id="collectionPager" aria-label="More Collections"></nav>
+    </div>
   </main>
 
   <footer>
     <div class="wrap">
       <div class="footer-cols">
         <div>
-          <h3>Japan/Europe-only titles (no North American release)</h3>
+          <h3>Regional-exclusivity curios</h3>
           <ul>
-            <li>Trip World (1992, Japan/Europe)</li>
-            <li>Parodius (1991, Japan/Europe)</li>
-            <li>Picross 2 (1996, Japan)</li>
-            <li>Kaeru no Tame ni Kane wa Naru — For the Frog the Bell Tolls (1992, Japan)</li>
-            <li>Chalvo 55 (1997, Japan)</li>
+            <li><cite>Asterix</cite> (1993), <cite>Asterix &amp; Obelix</cite> (1995), <cite>Spirou</cite> and
+              <cite>Tintin in Tibet</cite> (1996): Franco-Belgian comic heroes, made in Barcelona and sold only in
+              Europe.
+            </li>
+            <li><cite>McDonaldland</cite> (1992): only Europe got it with Ronald McDonald. Everywhere else, it starred
+              7 Up’s Spot.</li>
+            <li><cite>Hugo</cite> (1996): Kemco’s <cite>Crazy Castle 2</cite>, starring a Danish TV troll. Europe-only.
+            </li>
+            <li><cite>Boulder Dash</cite> (1991): converted by Australia’s Beam Software, and never released in America.
+            </li>
+            <li><cite>Trip World</cite> (1993) and <cite>Parodius</cite> (1992): Europe and Japan got them, America
+              never did.</li>
+            <li><cite>R-Type</cite> (1990), <cite>Aladdin</cite> (1994) and <cite>The King of Fighters ’95</cite>
+              (1996): Europe got these before America.</li>
           </ul>
         </div>
         <div>
@@ -225,9 +265,11 @@
         </div>
       </div>
       <div class="footer-report">
-        <p>I did my best to fact-check every game’s title, release year, developer, and original-hardware compatibility before publication. Spotted an error? Please let me know!</p>
-        <a class="report-btn" href="mailto:diastrogaming@pm.me"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <p>I did my best to fact-check every game’s title, release year, developer, and original-hardware compatibility
+          before publication. Spotted an error? Please let me know!</p>
+        <a class="report-btn" href="mailto:diastrogaming@pm.me"><svg viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+            focusable="false">
             <rect x="3" y="5" width="18" height="14" rx="2" />
             <path d="m3 7 9 6 9-6" />
           </svg>Report a mistake</a>
@@ -241,28 +283,33 @@
             <p class="site-footer-tagline">A European field guide to classic platforms</p>
           </div>
           <div class="site-social">
-            <a href="https://www.youtube.com/@DiastroGaming" target="_blank" rel="noopener" aria-label="Diastro Gaming on YouTube (opens in a new tab)"
-              title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <a href="https://www.youtube.com/@DiastroGaming" target="_blank" rel="noopener"
+              aria-label="Diastro Gaming on YouTube (opens in a new tab)" title="YouTube"><svg viewBox="0 0 24 24"
+                aria-hidden="true" focusable="false">
                 <path
                   d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg></a>
-            <a href="https://bsky.app/profile/diastrogaming.bsky.social" target="_blank" rel="noopener" aria-label="Diastro Gaming on Bluesky (opens in a new tab)"
-              title="Bluesky"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <a href="https://bsky.app/profile/diastrogaming.bsky.social" target="_blank" rel="noopener"
+              aria-label="Diastro Gaming on Bluesky (opens in a new tab)" title="Bluesky"><svg viewBox="0 0 24 24"
+                aria-hidden="true" focusable="false">
                 <path
                   d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026" />
               </svg></a>
-            <a href="https://instagram.com/diastrogaming" target="_blank" rel="noopener" aria-label="Diastro Gaming on Instagram (opens in a new tab)"
-              title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <a href="https://instagram.com/diastrogaming" target="_blank" rel="noopener"
+              aria-label="Diastro Gaming on Instagram (opens in a new tab)" title="Instagram"><svg viewBox="0 0 24 24"
+                aria-hidden="true" focusable="false">
                 <path
                   d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
               </svg></a>
-            <a href="https://threads.com/@diastrogaming" target="_blank" rel="noopener" aria-label="Diastro Gaming on Threads (opens in a new tab)"
-              title="Threads"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <a href="https://threads.com/@diastrogaming" target="_blank" rel="noopener"
+              aria-label="Diastro Gaming on Threads (opens in a new tab)" title="Threads"><svg viewBox="0 0 24 24"
+                aria-hidden="true" focusable="false">
                 <path
                   d="M18.263 11.097c-.03-3.486-1.92-5.586-5.111-5.586-2.13 0-3.922.963-4.863 2.499l2.062 1.438c.535-.843 1.272-1.543 2.628-1.543 1.528 0 2.318.85 2.544 2.431a15 15 0 0 0-2.236-.173c-4.125 0-6.068 1.867-6.068 4.336s1.943 3.99 4.804 3.99c3.139 0 5.013-2.115 5.781-4.735.798.361 1.348 1.204 1.348 2.47 0 3.387-3.907 5.232-7.22 5.232-4.885 0-8.077-3.207-8.077-8.424 0-6.392 4.223-10.487 9.9-10.487 3.808 0 5.69 1.671 6.97 3.914l2.108-1.475C21.44 2.078 18.331 0 13.663 0 6.227 0 1.168 5.277 1.168 12.934c0 7 4.953 11.066 10.856 11.066 4.878 0 9.809-2.846 9.809-7.716 0-2.545-1.46-4.231-3.569-5.187m-6.33 4.855c-1.077 0-2.026-.512-2.026-1.453 0-1.483 1.822-1.934 3.606-1.934.678 0 1.34.045 1.927.173-.422 1.927-1.671 3.215-3.508 3.214Z" />
               </svg></a>
-            <a href="https://x.com/DiastroGaming" target="_blank" rel="noopener" aria-label="Diastro Gaming on X (opens in a new tab)"
-              title="X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <a href="https://x.com/DiastroGaming" target="_blank" rel="noopener"
+              aria-label="Diastro Gaming on X (opens in a new tab)" title="X"><svg viewBox="0 0 24 24"
+                aria-hidden="true" focusable="false">
                 <path
                   d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />
               </svg></a>
@@ -283,7 +330,9 @@
               </svg><span>Contact</span></a></li>
         </ul>
         <div class="site-footer-legal">
-          <p>&copy; 2026 Jesper Bekkering / Diastro Gaming<br>Text, data and images: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a> · Code: <a href="https://github.com/diastrocollections/diastrocollections.github.io/blob/main/LICENSE">MIT</a></p>
+          <p>&copy; 2026 Jesper Bekkering / Diastro Gaming<br>Text, data and images: <a
+              href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a> · Code: <a
+              href="https://github.com/diastrocollections/diastrocollections.github.io/blob/main/LICENSE">MIT</a></p>
           <p>Platform names, game titles, box art and screenshots belong to their respective owners and are used for
             identification and commentary only.</p>
         </div>

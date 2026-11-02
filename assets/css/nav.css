@@ -16,6 +16,16 @@
   --topbar-h: 52px;
 }
 
+/* The light/dark swap: nav.js wraps it in a View Transition, so the browser
+   cross-fades a picture of the old page into the new one, everything at once.
+   (Fading each element's colours separately let nested headings lag behind
+   in Safari.) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+}
+
 /* Keep in-page jumps (e.g. the How it's made contents) clear of the sticky bar. */
 html {
   scroll-padding-top: calc(var(--topbar-h) + 20px);
@@ -155,7 +165,7 @@ html {
 .nav-link.is-current,
 .brand:hover,
 .brand:focus-visible {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .nav-chevron {
@@ -396,7 +406,7 @@ html {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .collections-all {
@@ -411,7 +421,7 @@ html {
 
 .collections-all:hover,
 .collections-all:focus-visible {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 /* ---------- Site footer ---------- */
@@ -485,7 +495,7 @@ html {
 
 .site-footer .site-social a:hover,
 .site-footer .site-social a:focus-visible {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   background: var(--surface);
 }
 
@@ -516,7 +526,7 @@ html {
 
 .site-footer .site-footer-facts a:hover,
 .site-footer .site-footer-facts a:focus-visible {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   text-decoration: underline;
   text-underline-offset: 3px;
 }

@@ -3,695 +3,720 @@
     "hue": 71,
     "tag": "Puzzle",
     "title": "Falling-Block & Puzzle",
-    "blurb": "The genre the Game Boy is remembered for — a run of falling-block and grid-logic puzzlers so strong the hardware and Tetris are practically synonymous.",
+    "blurb": "Tetris came in the box when the Game Boy launched in Europe, and puzzle games never really left. This chapter collects the best of them, from Nintendo’s own classics to a Japanese warehouse puzzle and a hero who started out as a potato.",
     "games": [
       {
         "title": "Tetris",
-        "year": "1989",
-        "developer": "Nintendo R&D1",
-        "blurb": "The pack-in cartridge that convinced the world falling blocks belonged in your pocket, its Game Boy build often cited as the definitive version."
-      },
-      {
-        "title": "Dr. Mario",
         "year": "1990",
         "developer": "Nintendo R&D1",
-        "blurb": "Miyamoto’s viruses-and-capsules puzzler trades Tetris’s abstraction for color-matching chaos that plays just as well on six-hour batteries."
-      },
-      {
-        "title": "Yoshi",
-        "year": "1992",
-        "developer": "Game Freak",
-        "blurb": "Game Freak’s pre-Pokémon puzzler stacks falling enemies between two Marios, rewarding patient column-building over panic. Released in Europe as Mario & Yoshi."
-      },
-      {
-        "title": "Yoshi’s Cookie",
-        "year": "1993",
-        "developer": "Tose",
-        "blurb": "A gentler row-and-column matching game wrapped in kitchen-themed sprites, proof the puzzle boom went well past Tetris clones."
-      },
-      {
-        "title": "Qix",
-        "year": "1990",
-        "developer": "Minakuchi Engineering",
-        "blurb": "The claim-the-territory arcade classic shrinks perfectly to a handheld screen, its slow-burn tension suited to short bursts."
-      },
-      {
-        "title": "Catrap",
-        "year": "1990",
-        "developer": "ASK Kodansha",
-        "blurb": "Known as Pitman in Japan, this push-block puzzler demands total-recall planning across more than a hundred single-screen levels."
+        "blurb": "The cartridge that came in the box when the Game Boy launched in Europe in September 1990. The handheld rights went to Dutch-born Henk Rogers, after Britain’s Mirrorsoft lost the race in Moscow. The story was (in my opinion) brilliantly dramatised in the 2023 film <cite>Tetris</cite>. Creator Alexey Pajitnov still calls this his favourite version of his own game."
       },
       {
         "title": "Kwirk",
         "year": "1990",
         "developer": "Atlus",
-        "blurb": "Localized from Puzzle Boy, this sokoban-style block-pusher stars a googly-eyed blob and a level list that never stops escalating."
+        "blurb": "Known as <cite>Puzzle Boy</cite> in Japan, where the hero was a potato. For the West he became a tomato called Kwirk. Nintendo itself published it in Europe, and <cite>Mean Machines</cite> gave it 85%."
+      },
+      {
+        "title": "Boxxle",
+        "year": "1991",
+        "developer": "Atelier Double",
+        "blurb": "A Game Boy version of <cite>Sokoban</cite>, the Japanese “warehouse keeper” puzzle that spawned a whole game genre. It was one of the very first third-party Game Boy games, with 108 levels and a level editor. FCI brought it to Europe in 1991."
+      },
+      {
+        "title": "Dr. Mario",
+        "year": "1991",
+        "developer": "Nintendo R&D1",
+        "blurb": "Not a Miyamoto game, despite the name! Gunpei Yokoi’s team made it. It reached Europe in April 1991, seven months after the Game Boy itself. Clear four combos in a row and you’ll hear a snippet of Mario’s invincibility music."
+      },
+      {
+        "title": "Mario & Yoshi",
+        "year": "1992",
+        "developer": "Game Freak",
+        "blurb": "Known simply as <cite>Yoshi</cite> in America. Swap the plates to stack falling enemies, then catch the eggshells to hatch a Yoshi! It sold well enough to help Game Freak on its way to its next big idea: Pokémon."
+      },
+      {
+        "title": "Yoshi’s Cookie",
+        "year": "1994",
+        "developer": "Tose",
+        "blurb": "Line up rows and columns of cookies, with Yoshi as the wild card. Henk Rogers licensed the idea from a failed arcade game called Hermetica, and the Game Boy version still mentions that name in its hidden debug menu."
+      },
+      {
+        "title": "Mario’s Picross",
+        "year": "1995",
+        "developer": "Jupiter",
+        "badge": "Super Game Boy",
+        "blurb": "Mario as an archaeologist, chiselling pictures out of number grids. It didn’t sell well in Europe or America, so its Game Boy sequel stayed in Japan. <cite>Total!</cite> still gave it 80%, and called it “instantly addictive”. I’m inclined to agree."
       },
       {
         "title": "Tetris Attack",
         "year": "1996",
-        "developer": "Intelligent Systems",
-        "blurb": "Panel de Pon’s cute cast repackaged around Yoshi, swapping tiles instead of dropping them for one of the sharpest puzzlers on the system."
-      },
-      {
-        "title": "Mole Mania",
-        "year": "1997",
-        "developer": "Nintendo EAD",
-        "blurb": "A late-era Miyamoto oddity that turns puzzle-box logic into an overworld adventure about a mole rescuing his family."
-      },
-      {
-        "title": "Boxxle",
-        "year": "1990",
-        "developer": "Atelier Double",
-        "blurb": "The original Game Boy Sokoban port, unglamorous but foundational to every crate-pushing puzzler that followed on the system."
+        "developer": "Nintendo R&D1 / Intelligent Systems",
+        "badge": "Super Game Boy",
+        "blurb": "Actually has nothing to do with <cite>Tetris</cite>: you swap coloured panels to make lines and set off chain reactions. The Super Famicom original starred fairies, but the Game Boy version is Yoshi-themed even in Japan. You can unlock six hidden Super Game Boy borders with button codes on the title screen."
       },
       {
         "title": "Kirby’s Star Stacker",
         "year": "1997",
         "developer": "HAL Laboratory",
-        "blurb": "Kirby swaps platforming for a falling-star matching game with a surprisingly deep chain-combo system."
+        "badge": "Super Game Boy",
+        "blurb": "Kirby’s animal friends Rick, Kine and Coo help clear stars in this falling-block puzzler. It was the last Kirby game made for the original Game Boy. Japan later got a Super Famicom remake that never left the country."
       }
     ]
   },
   {
     "hue": 100,
     "tag": "Platformer",
-    "title": "Mario, Kirby & Wario Platforming Icons",
-    "blurb": "Nintendo’s own mascots headline the Game Boy’s platforming core, from Mario’s cramped launch-window debut to Wario and Kirby’s genre-bending spin-offs.",
+    "title": "Mario, Wario, Kirby & Kong",
+    "blurb": "Nintendo’s mascots on the go! Mario launched alongside the Game Boy in Europe, Wario made his debut on it, and Kirby was born here too. Then British studio Rare managed to squeeze <cite>Donkey Kong Country</cite> onto it, which is quite impressive.",
     "games": [
       {
         "title": "Super Mario Land",
-        "year": "1989",
+        "year": "1990",
         "developer": "Nintendo R&D1",
-        "blurb": "The launch-window platformer that proved Mario could work at handheld scale, complete with a submarine level and an alien final boss."
+        "blurb": "Mario’s first handheld adventure, and one of the first games you could buy when the Game Boy launched in Europe in September 1990. It even inspired a UK top ten hit: “Supermarioland” by Ambassadors of Funk. Nintendo UK loved it, but the song never came out in America."
       },
       {
         "title": "Super Mario Land 2: 6 Golden Coins",
         "year": "1992",
         "developer": "Nintendo R&D1",
-        "blurb": "A sprawling, six-world successor that introduces Wario and looks almost unrecognizable next to its predecessor’s stiffness."
+        "blurb": "A big leap from the first game, with a world map and Wario’s first appearance. Britain got it in November 1992, a few months before the rest of Europe. Nintendo UK’s print ads took a cheeky swipe at Sega: “Why did the Hedgehog cross the road?”"
       },
       {
         "title": "Wario Land: Super Mario Land 3",
         "year": "1994",
         "developer": "Nintendo R&D1",
-        "blurb": "Wario’s solo debut turns Mario’s formula greedy, rewarding treasure-hoarding over flag-pole speedrunning."
+        "blurb": "The subtitle says Mario, but Wario steals the show. He collects treasure to buy his own castle, and your coin total decides how grand it gets, from a palace to a birdhouse. In the UK it was the best-selling Game Boy game for three months in 1994."
       },
       {
         "title": "Wario Land II",
         "year": "1998",
         "developer": "Nintendo R&D1",
-        "blurb": "An unkillable Wario game where getting hit changes his form instead of costing a life, one of the series’ cleverest twists."
+        "badge": "Super Game Boy",
+        "blurb": "Wario can’t die in this one. Getting hit squashes him flat or sets him on fire, which is often how you solve the level! Japan only got the Game Boy Color version, so this grey cartridge only came out in America and Europe."
       },
       {
         "title": "Kirby’s Dream Land",
         "year": "1992",
         "developer": "HAL Laboratory",
-        "blurb": "The pink puffball’s debut is short, breezy, and unmistakably confident about what makes Kirby fun."
+        "blurb": "Kirby’s debut, and the first game designed by Masahiro Sakurai. During development he was called Popopo, and early boxes were even printed as <cite>Twinkle Popo</cite>. There are no copy abilities yet: you simply suck up enemies and spit them back out. But even that was novel for the time!"
       },
       {
         "title": "Kirby’s Dream Land 2",
         "year": "1995",
         "developer": "HAL Laboratory",
-        "blurb": "Adds animal buddies and copy abilities together for the first time, doubling the original’s scope without losing its charm."
-      },
-      {
-        "title": "Kirby’s Pinball Land",
-        "year": "1993",
-        "developer": "HAL Laboratory",
-        "blurb": "Three interconnected pinball tables turn Kirby himself into the ball, a genre swap that works better than it should."
-      },
-      {
-        "title": "Kirby’s Block Ball",
-        "year": "1996",
-        "developer": "HAL Laboratory",
-        "blurb": "Breakout by way of Kirby, with copy-ability power-ups that keep the paddle-and-brick loop from ever going stale."
+        "badge": "Super Game Boy",
+        "blurb": "Kirby’s copy abilities arrive on Game Boy, together with three animal friends: Rick the hamster, Kine the fish and Coo the owl. Europe got it in July 1995. On a Super Game Boy, the ending uses every colour it can to paint a rainbow."
       },
       {
         "title": "Donkey Kong",
         "year": "1994",
         "developer": "Nintendo R&D1 / Pax Softnica",
-        "blurb": "A four-stage arcade remake that explodes into a hundred-plus-level puzzle-platformer once the original game ends."
+        "badge": "Super Game Boy",
+        "blurb": "It starts as the 1981 arcade game, with its four famous stages. Then it keeps going, with 97 brand-new puzzle levels. It was the first game designed for the Super Game Boy, and in the UK it was the best-selling Game Boy game in the autumn of 1994."
       },
       {
         "title": "Donkey Kong Land",
         "year": "1995",
         "developer": "Rare",
-        "blurb": "Rare compresses the SNES Donkey Kong Country’s silhouette-and-shading style into monochrome without losing the series’ momentum."
+        "badge": "Super Game Boy",
+        "blurb": "Rare didn’t simply port <cite>Donkey Kong Country</cite>. Programmer Paul Machacek convinced co-founder Tim Stamper to make a brand-new game instead. It came on a banana-yellow cartridge, and <cite>CVG</cite> even called it better than the SNES original."
       },
       {
         "title": "Donkey Kong Land 2",
         "year": "1996",
         "developer": "Rare",
-        "blurb": "Widely considered the trilogy’s high point, pairing Diddy and Dixie across levels built around real platforming ideas, not downscaled ports."
+        "badge": "Super Game Boy",
+        "blurb": "Diddy and Dixie’s adventure from <cite>Donkey Kong Country 2</cite>, rebuilt for the Game Boy by Rare. The levels are shorter and the colours are gone, but it still feels like proper <cite>Donkey Kong Country</cite>. It reached in November 1996, two months after America."
       }
     ]
   },
   {
     "hue": 129,
     "tag": "Action",
-    "title": "Action-Platformers & Run-and-Gun",
-    "blurb": "Faster, meaner platforming from Capcom, Konami, and Sunsoft, built around precise jumps and one-hit-punishing enemy patterns.",
+    "title": "Capcom & Konami Action",
+    "blurb": "Capcom and Konami ruled the NES, and they brought their heroes along to the Game Boy. Expect whips, robot masters and a bionic arm, plus Nintendo’s own <cite>Kid Icarus</cite> and a ninja that Europe once again knew from <cite>Shadow Warriors</cite>.",
     "games": [
       {
-        "title": "Kid Dracula",
-        "year": "1993",
-        "developer": "Konami",
-        "blurb": "Castlevania’s mascot spin-off plays it for laughs, a candy-colored shooter-platformer that didn’t reach the West for decades."
-      },
-      {
-        "title": "Trip World",
-        "year": "1992",
-        "developer": "Sunsoft",
-        "blurb": "A fever dream of a platformer starring a rabbit named Sonic, prized today for sprite work that pushes the hardware harder than almost anything else on it — released in Japan and Europe, but never in North America."
-      },
-      {
-        "title": "Gargoyle’s Quest",
-        "year": "1990",
-        "developer": "Capcom",
-        "blurb": "Firebrand from Ghosts ’n Goblins gets his own overworld-and-dungeon adventure, laying groundwork for the Metroidvania genre before the term existed."
-      },
-      {
-        "title": "Kid Icarus: Of Myths and Monsters",
+        "title": "Castlevania: The Adventure",
         "year": "1991",
-        "developer": "Nintendo R&D1",
-        "blurb": "Pit’s only Game Boy outing pairs vertical platforming with shop-based upgrades, a sequel Japan didn’t see until the 3DS era."
+        "developer": "Konami",
+        "blurb": "The very first handheld <cite>Castlevania</cite>, starring Christopher Belmont, Simon’s ancestor. There are no sub-weapons, and every hit downgrades your whip. It’s famously slow, but <cite>Total!</cite> said that didn’t spoil the fun. Europe later even got it in colour, in <cite>Konami GB Collection Vol. 1</cite>."
+      },
+      {
+        "title": "Castlevania II: Belmont’s Revenge",
+        "year": "1992",
+        "developer": "Konami",
+        "blurb": "Fifteen years later, Christopher returns to rescue his son Soleil from Dracula. You can play the first four castles in any order, just like in <cite>Mega Man</cite>. The Western release swapped the cross for an axe, but Europe’s <cite>Konami GB Collection Vol. 4</cite> brought it back, in colour."
       },
       {
         "title": "Bionic Commando",
         "year": "1992",
         "developer": "Minakuchi Engineering",
-        "blurb": "The grapple-hook-only action game translates surprisingly well to a smaller screen, forcing precise swings through tight corridors."
+        "blurb": "A Game Boy remake of the NES classic, with the story moved to a sci-fi future. You still can’t jump: your bionic arm is the only way up. It was made by Minakuchi Engineering, the same studio behind both Game Boy <cite>Mega Man</cite> games in this chapter."
+      },
+      {
+        "title": "Kid Icarus: Of Myths and Monsters",
+        "year": "1992",
+        "developer": "Nintendo R&D1 / Tose",
+        "blurb": "Pit’s second adventure, and a sequel to the NES original. Nintendo made it in Japan but never released it there: Japanese players only got it in 2012, on the 3DS. <cite>Nintendo Magazine System</cite> was less impressed, giving it 71% and calling it “long in the tooth”."
       },
       {
         "title": "Mega Man: Dr. Wily’s Revenge",
-        "year": "1991",
+        "year": "1992",
         "developer": "Minakuchi Engineering",
-        "blurb": "The Blue Bomber’s handheld debut remixes bosses from the first two NES games into new stages."
+        "blurb": "Mega Man’s handheld debut, mixing robot masters from the first two NES games. It was also the first <cite>Mega Man</cite> game Capcom handed to an outside studio. Europe got it in January 1992, and German cartridges even had their own title: <cite>Dr. Wily’s Rache</cite>."
       },
       {
         "title": "Mega Man V",
         "year": "1994",
         "developer": "Minakuchi Engineering",
-        "blurb": "The best-regarded of the Game Boy Mega Man quartet, built around new Stardroid bosses instead of NES retreads."
+        "badge": "Super Game Boy",
+        "blurb": "My favourite of the five Game Boy <cite>Mega Man</cite> games, with brand-new bosses from space: the Stardroids. Mega Man gets a rocket fist called the Mega Arm, and a robot cat called Tango. It came out in Europe in November 1994, a full year before <cite>Mega Man IV</cite>. PAL copies are now highly sought after."
       },
       {
-        "title": "Batman: The Video Game",
-        "year": "1990",
-        "developer": "Sunsoft",
-        "blurb": "Sunsoft’s take on the Tim Burton film swaps the NES version’s grapple gun for tighter, punchier combat."
-      },
-      {
-        "title": "DuckTales 2",
-        "year": "1993",
-        "developer": "Capcom",
-        "blurb": "Scrooge McDuck’s pogo-cane platforming returns for a sequel that never lost the NES original’s precision."
+        "title": "Shadow Warriors",
+        "year": "1992",
+        "developer": "Natsume",
+        "blurb": "It started life as a Game Boy version of Natsume’s <cite>Blue Shadow</cite>, until Tecmo bought the rights and turned it into a <cite>Ninja Gaiden</cite> prequel. The villain, Emperor Garuda, still comes from <cite>Blue Shadow</cite>. In Europe, Ryu’s NES games were already called <cite>Shadow Warriors</cite>, so this one was too. <cite>CVG</cite> gave it 90%."
       }
     ]
   },
   {
     "hue": 158,
     "tag": "Adventure",
-    "title": "Action-Adventure & Metroidvania",
-    "blurb": "A small but foundational chapter — overworld exploration and item-gated progression, including the two games that quietly invented the Metroidvania.",
+    "title": "Adventures & RPGs",
+    "blurb": "Hardly any Japanese RPGs came out in Europe during this era, so adventures and role-playing games share a chapter here. Link and Samus are joined by the very first <cite>Mana</cite> game, and by the two Pokémon games that swept through Europe’s schoolyards in 1999.",
     "games": [
       {
-        "title": "Metroid II: Return of Samus",
+        "title": "Blaster Master Jr.",
         "year": "1991",
+        "developer": "Aicom",
+        "blurb": "Despite the name, Jason leaves his tank at home! This is really a sequel to Hudson’s <cite>RoboWarrior</cite>, a <cite>Bomberman</cite> spin-off, given a <cite>Blaster Master</cite> makeover for the West. Europe even got it before America."
+      },
+      {
+        "title": "Gargoyle’s Quest",
+        "year": "1991",
+        "developer": "Capcom",
+        "blurb": "Firebrand, the gargoyle who made <cite>Ghosts ’n Goblins</cite> so damn hard, gets an adventure of his own. It mixes side-scrolling action with a top-down RPG map, and Nintendo itself published it in Europe. Its NES prequel, <cite>Gargoyle’s Quest II</cite>, is in the <a href=\"/nes/#ch-10\">NES Collection</a>."
+      },
+      {
+        "title": "Metroid II: Return of Samus",
+        "year": "1992",
         "developer": "Nintendo R&D1",
-        "blurb": "Samus hunts every Metroid on SR388 in a claustrophobic, score-tracking sequel that quietly reshaped the series’ DNA."
+        "blurb": "Samus has to wipe out every last Metroid on their home planet, SR388. Europe got it on 21 May 1992, the same day as <cite>Kid Icarus</cite>. <cite>Total!</cite> complained about large, empty areas, which I think is fair criticism. But its ending leads straight into <cite>Super Metroid</cite>!"
+      },
+      {
+        "title": "The Sword of Hope",
+        "year": "1992",
+        "developer": "Kemco",
+        "blurb": "A fantasy adventure where you explore by picking commands from a menu, instead of walking around. It comes from Kemco, the company behind the NES versions of <cite>Shadowgate</cite> and <cite>Déjà Vu</cite>. In Europe, it only came out in Swedish, Spanish and German."
       },
       {
         "title": "The Legend of Zelda: Link’s Awakening",
         "year": "1993",
-        "developer": "Nintendo R&D1",
-        "blurb": "A full console-caliber Zelda squeezed onto a cartridge, with a surreal dream-island story unlike anything else in the series."
+        "developer": "Nintendo EAD",
+        "blurb": "Link washes up on Koholint Island, and director Takashi Tezuka wanted it to feel like the TV series <cite>Twin Peaks</cite>. Look out for cameos by Yoshi, Kirby and Dr. Wright from <cite>SimCity</cite>. There’s even a prince from <cite>Kaeru no Tame ni Kane wa Naru</cite>, the Japan-only game whose engine this Zelda was built on."
       },
       {
-        "title": "Castlevania II: Belmont’s Revenge",
-        "year": "1991",
-        "developer": "Konami",
-        "blurb": "Konami’s course-correction after the stiff, punishing original Castlevania: The Adventure. Split into four selectable stages before a final gauntlet, it moves faster, jumps better, and is generally regarded as the strongest of the series’ three original Game Boy outings."
+        "title": "Mystic Quest",
+        "year": "1993",
+        "developer": "Square",
+        "blurb": "Known as <cite>Final Fantasy Adventure</cite> in America, and the first <cite>Mana</cite> game. Europe got it in June 1993, without the <cite>Final Fantasy</cite> name. Confusingly, Europe’s version of the SNES game <cite>Final Fantasy Mystic Quest</cite> was renamed as well, to <cite>Mystic Quest Legend</cite>."
       },
       {
-        "title": "Blaster Master Boy",
-        "year": "1992",
-        "developer": "Sunsoft Osaka",
-        "blurb": "Known as Bomber King in Japan, this loosely-related spinoff swaps the NES original’s tank for on-foot dungeon crawling."
+        "title": "Pokémon Red and Blue",
+        "year": "1999",
+        "developer": "Game Freak",
+        "badge": "Super Game Boy",
+        "blurb": "Gotta catch ’em all! Europe had to wait until October 1999, more than three years after Japan and a year after America. It was worth the wait: in France alone, it sold over 2.5 million copies in its first year."
       },
       {
-        "title": "The Sword of Hope",
-        "year": "1991",
-        "developer": "Kemco",
-        "blurb": "A point-and-click-style RPG-adventure hybrid that leans on menu-driven exploration instead of a directional overworld."
-      },
-      {
-        "title": "The Sword of Hope II",
-        "year": "1996",
-        "developer": "Kemco",
-        "blurb": "A sequel that expands the original’s text-adventure structure — Kemco released it in Japan in 1992 but held the English version back until 1996, a four-year wait for the West."
+        "title": "Pokémon Yellow",
+        "year": "2000",
+        "developer": "Game Freak",
+        "badge": "Super Game Boy",
+        "blurb": "<cite>Red</cite> and <cite>Blue</cite> again, but closer to the TV series, with Pikachu following you around. It reached Europe in June 2000. It’s a Game Boy Color-enhanced cartridge, but it plays perfectly well on the DMG. I was 10 at the time, and my friend down the street had it, which made me very jealous!"
       }
     ]
   },
   {
     "hue": 187,
-    "tag": "RPG",
-    "title": "Role-Playing Adventures",
-    "blurb": "Square’s SaGa-era experiments and the launch of Pokémon anchor a genre most people don’t associate with the original Game Boy at all.",
-    "games": [
-      {
-        "title": "The Final Fantasy Legend",
-        "year": "1990",
-        "developer": "Square",
-        "blurb": "Known in Japan as Makai Toushi SaGa, this is the game that started the SaGa series and brought its brutal, mutation-driven design West under the Final Fantasy name — though “West” meant North America only; none of the three Game Boy SaGa games got a European release until a 2020 Switch collection."
-      },
-      {
-        "title": "Final Fantasy Legend II",
-        "year": "1991",
-        "developer": "Square",
-        "blurb": "A stronger, more ambitious SaGa sequel with a multi-generational quest across parallel worlds — another entry Europe wouldn’t officially see until decades later."
-      },
-      {
-        "title": "Final Fantasy Legend III",
-        "year": "1993",
-        "developer": "Square",
-        "blurb": "The trilogy’s closer adds time travel and its deepest customization yet, a fitting send-off for a Game Boy SaGa era that Europe never got to play on original hardware."
-      },
-      {
-        "title": "Final Fantasy Adventure",
-        "year": "1991",
-        "developer": "Square",
-        "blurb": "The first Mana game, blending real-time action combat with RPG progression years before Secret of Mana existed. Europe got it two years later, in 1993, retitled Mystic Quest — not to be confused with the later SNES game of the same name."
-      },
-      {
-        "title": "Pokémon Red and Blue",
-        "year": "1998",
-        "developer": "Game Freak",
-        "blurb": "The monster-collecting phenomenon that redefined what a Game Boy cartridge could sell, built around a link cable most owners already had. Europe waited a full year longer than North America, arriving in October 1999."
-      },
-      {
-        "title": "Pokémon Yellow",
-        "year": "1999",
-        "developer": "Game Freak",
-        "blurb": "An anime-inspired remix of Red and Blue with a permanently-following Pikachu, runs on the original grey brick just fine."
-      },
-      {
-        "title": "Rolan’s Curse",
-        "year": "1990",
-        "developer": "NMK",
-        "blurb": "An overhead action-RPG about rescuing a princess that’s tougher and stranger than its cute sprites suggest."
-      },
-      {
-        "title": "Rolan’s Curse II",
-        "year": "1992",
-        "developer": "NMK",
-        "blurb": "A direct sequel that widens the original’s action-RPG loop with more weapons and a larger map."
-      }
-    ]
-  },
-  {
-    "hue": 216,
     "tag": "Shooter",
-    "title": "Shoot-’Em-Ups",
-    "blurb": "Arcade precision shrunk to four inches of screen — side-scrolling and vertical shooters that trade nothing for the smaller display.",
+    "title": "Shoot-’em-ups",
+    "blurb": "Playing shoot-’em-ups on a tiny greenish screen sounds like a bad idea, but these games prove otherwise. Konami’s <cite>Nemesis</cite> and <cite>Probotector</cite> games lead the way, next to a British-made <cite>R-Type</cite> that Europe got before anyone else.",
     "games": [
       {
         "title": "R-Type",
-        "year": "1991",
+        "year": "1990",
         "developer": "Bits Studios",
-        "blurb": "Irem’s punishing arcade shooter loses none of its bite in the downsize, memorization and the Force pod intact."
+        "blurb": "Japanese studios reportedly turned this conversion down, convinced it couldn’t be done. The job went to British studio Bits, where Jas Austin squeezed the arcade game onto a small cartridge by cutting two levels. It reached Europe in December 1990, months before Japan and America, and it won a Golden Joystick."
       },
       {
         "title": "R-Type II",
         "year": "1992",
         "developer": "Bits Studios",
-        "blurb": "A worthy sequel that keeps the original’s precision-or-death philosophy while introducing new enemy patterns."
-      },
-      {
-        "title": "Gradius: The Interstellar Assault",
-        "year": "1992",
-        "developer": "Konami",
-        "blurb": "Released in Europe as Nemesis II: The Return of the Hero, this side-scroller lets you carry power-up loadouts between stages for the first time in the series."
-      },
-      {
-        "title": "Operation C",
-        "year": "1991",
-        "developer": "Konami",
-        "blurb": "A Game Boy-original Contra spinoff with alternating top-down and side-scrolling stages, not a port of any NES or arcade Contra. Europe got it over a year later, in 1992, retitled Probotector — with the soldiers redesigned as robots, the same reskin Contra got on other Konami platforms."
+        "blurb": "Bits returned for the sequel, this time with Bob Pape programming. He’d already managed to fit the first <cite>R-Type</cite> onto the ZX Spectrum, so he was the right man for the job."
       },
       {
         "title": "Solar Striker",
         "year": "1990",
         "developer": "Nintendo R&D1",
-        "blurb": "Nintendo’s own vertical shooter is basic by design, a clean genre entry from the system’s launch year."
+        "blurb": "Nintendo’s own vertical shooter, and one of the games on the shelves when the Game Boy launched in Europe. German magazine <cite>Power Play</cite> liked its variety, but couldn’t ignore how simple it was. <cite>Mean Machines</cite> gave it just 69%."
       },
       {
-        "title": "Sagaia",
+        "title": "Nemesis",
         "year": "1991",
-        "developer": "Taito",
-        "blurb": "The Game Boy port of Darius II strips the arcade’s triple-monitor spectacle down to one screen without losing its fish-shaped bosses."
+        "developer": "Konami",
+        "blurb": "The first <cite>Gradius</cite> game on the DMG. It sold everywhere under the name Europe knew from the arcades: <cite>Nemesis</cite>. Even Japan got it with that title. <cite>Total!</cite> called it a “superb version of a classic coin-op” and gave it 92%."
       },
       {
-        "title": "Trax",
+        "title": "Nemesis II: The Return of the Hero",
+        "year": "1992",
+        "developer": "Konami",
+        "blurb": "Called <cite>Gradius: The Interstellar Assault</cite> in America, but Europe kept the <cite>Nemesis</cite> name. It’s a brand-new game made just for the Game Boy. Europe later got it in colour, in <cite>Konami GB Collection Vol. 4</cite>."
+      },
+      {
+        "title": "Probotector",
         "year": "1991",
-        "developer": "HAL Laboratory",
-        "blurb": "An overhead tank shooter with maze-like stages, one of HAL’s odder handheld contributions."
+        "developer": "Konami",
+        "blurb": "Konami’s Game Boy <cite>Contra</cite>, made just for the handheld, with top-down stages between the side-scrolling ones. As always in Europe, the soldiers became robots. Interestingly, when it returned in 2000 in <cite>Konami GB Collection Vol. 1</cite>, it was still called <cite>Probotector</cite>, but the heroes were human again."
+      },
+      {
+        "title": "Dropzone",
+        "year": "1992",
+        "developer": "Archer Maclean",
+        "blurb": "Archer Maclean’s 1984 computer classic, a <cite>Defender</cite>-style shooter where you rescue scientists from alien invaders. British publisher Mindscape brought it to the Game Boy in 1992."
       },
       {
         "title": "Parodius",
-        "year": "1991",
+        "year": "1992",
         "developer": "Konami",
-        "blurb": "Konami’s Gradius parody swaps spaceships for penguins and octopuses, released only in Japan and Europe."
+        "blurb": "Konami’s cheeky <cite>Gradius</cite> parody. The Game Boy version has eight of the arcade’s stages, and even lists the ages of the playable characters. Like the NES version, it only came out in Japan and Europe. Oddly, the European cartridges carry the name of Ultra Games, Konami’s American label."
+      }
+    ]
+  },
+  {
+    "hue": 216,
+    "tag": "Fighting",
+    "title": "Fighting & Beat-’em-ups",
+    "blurb": "Fighting games on a two-button handheld? Somehow, it worked. British studios Probe and Rare handled <cite>Mortal Kombat</cite> and <cite>Killer Instinct</cite>, while Technōs and Konami brought the beat-’em-ups that started it all.",
+    "games": [
+      {
+        "title": "Double Dragon",
+        "year": "1990",
+        "developer": "Technōs Japan",
+        "blurb": "Billy and Jimmy’s first handheld outing reached Europe in November 1990, just two months after the Game Boy itself. The American cartridge even warns that it can only be played in the USA and Canada. European players didn’t seem to mind."
       },
       {
-        "title": "Battle Unit Zeoth",
+        "title": "Double Dragon II",
         "year": "1991",
-        "developer": "Jaleco",
-        "blurb": "A four-directional mecha shooter that trades scrolling momentum for stationary, bullet-hell-style survival."
+        "developer": "Technōs Japan",
+        "blurb": "In Japan this was a <cite>Kunio-kun</cite> game, from the same series as <cite>River City Ransom</cite>, which Europe knew as <cite>Street Gangs</cite>. For the West, Acclaim turned it into a <cite>Double Dragon</cite> sequel, with Billy and Jimmy taking over. Europe got it in December 1991."
+      },
+      {
+        "title": "Teenage Mutant Hero Turtles: Fall of the Foot Clan",
+        "year": "1991",
+        "developer": "Konami",
+        "blurb": "The Turtles’ first Game Boy game. You pick a Turtle and fight your way through the Foot Clan to rescue April. <cite>Nintendo Power</cite> later ranked it among the 20 best Game Boy games of all time."
+      },
+      {
+        "title": "Battletoads",
+        "year": "1992",
+        "developer": "Rare",
+        "blurb": "Same name, different game. Rare made a brand-new <cite>Battletoads</cite> for the Game Boy, with its own levels, and it’s just as brutal. A proper port of the NES game followed in 1993, as <cite>Battletoads in Ragnarok’s World</cite>."
+      },
+      {
+        "title": "Mortal Kombat",
+        "year": "1993",
+        "developer": "Probe Software",
+        "blurb": "Released on every console on the same day: “Mortal Monday”, 13 September 1993. Probe had to cut a lot to fit it on a Game Boy cartridge, but it still sold over a million copies on the handheld alone."
+      },
+      {
+        "title": "Mortal Kombat II",
+        "year": "1994",
+        "developer": "Probe Software",
+        "blurb": "“Mortal Friday” followed a year later, on 9 September 1994, and Probe returned for the Game Boy version. Unlike the Game Gear version, this one has no blood at all."
+      },
+      {
+        "title": "Samurai Shodown",
+        "year": "1994",
+        "developer": "Takara",
+        "badge": "Super Game Boy",
+        "blurb": "SNK’s sword-fighting classic, ported by Takara. Somehow every character and stage made it onto the cartridge, although the combos and voices didn’t. Critics found it surprisingly good for a Game Boy game."
+      },
+      {
+        "title": "Killer Instinct",
+        "year": "1995",
+        "developer": "Rare",
+        "badge": "Super Game Boy",
+        "blurb": "Rare’s arcade hit crammed into the Game Boy, minus Cinder and Riptor. <cite>EGM</cite> said it “should never have been attempted on the Game Boy”. On a Super Game Boy, though, you get colour, plus a proper two-player mode with a second controller."
+      },
+      {
+        "title": "Street Fighter II",
+        "year": "1995",
+        "developer": "Sun L",
+        "badge": "Super Game Boy",
+        "blurb": "The Game Boy only has two buttons, so how hard you punch or kick depends on how long you hold them. Nintendo itself published it in Europe in 1995. <cite>EGM</cite> found it “lethargically slow”, but still an impressive conversion."
+      },
+      {
+        "title": "The King of Fighters ’95",
+        "year": "1996",
+        "developer": "Gaibrain",
+        "badge": "Super Game Boy",
+        "blurb": "Europe got this one in August 1996, half a year before America. Gaibrain squeezed SNK’s team fighter onto the Game Boy, and there’s even a secret character: Nakoruru from <cite>Samurai Shodown</cite>."
       }
     ]
   },
   {
     "hue": 245,
     "tag": "Sports",
-    "title": "Sports",
-    "blurb": "A modest but earnest lineup — the Game Boy was never a sports-sim machine, but Konami and Nintendo both gave it a fair try.",
+    "title": "Sports & Racing",
+    "blurb": "Simple sports games were perfect for a handheld. Nintendo’s own launch games sit next to Konami’s arcade ports, a Rare racer, and the Amiga’s favourite football game.",
     "games": [
-      {
-        "title": "Track & Field",
-        "year": "1992",
-        "developer": "Konami",
-        "blurb": "The button-mashing arcade original translates awkwardly well to the Game Boy’s cramped D-pad, sprint events and all."
-      },
-      {
-        "title": "Tennis",
-        "year": "1989",
-        "developer": "Nintendo R&D1",
-        "blurb": "A launch-era Nintendo sports title, simple enough to explain in one sentence and still satisfying to rally in."
-      },
       {
         "title": "Golf",
         "year": "1990",
         "developer": "Nintendo R&D1",
-        "blurb": "Eighteen holes of stripped-down, meter-based golf that later resurfaced as a mini-game inside other Nintendo titles."
+        "blurb": "One of the games on the shelves when the Game Boy launched in Europe. Eighteen holes of simple, meter-based golf, but <cite>AllGame</cite> still gave it four stars out of five."
+      },
+      {
+        "title": "Tennis",
+        "year": "1990",
+        "developer": "Nintendo R&D1 / Intelligent Systems",
+        "blurb": "Nintendo’s NES tennis game, shrunk down for the Game Boy, with Mario in the umpire’s chair. Slightly more forgiving than the original, in my opinion. In America it was one of the five launch games, and Europe got it in 1990."
       },
       {
         "title": "Blades of Steel",
         "year": "1991",
         "developer": "Konami",
-        "blurb": "Konami’s arcade hockey game keeps its fighting mini-game intact even at handheld scale."
+        "blurb": "Konami’s arcade-style hockey game, and yes, the fights survived the trip to the Game Boy. It was released in Europe in 1991, more than a year before Japan."
       },
       {
-        "title": "Double Dribble: 5 on 5",
+        "title": "F-1 Race",
+        "year": "1991",
+        "developer": "Nintendo R&D1",
+        "blurb": "Nintendo’s Formula One game supported the Four Player Adapter, so four friends could race each other. Look out for Mario, Link, Samus and other Nintendo stars at the end of the tracks. It was “lights out, and away we go!” in October 1991."
+      },
+      {
+        "title": "Motocross Maniacs",
         "year": "1991",
         "developer": "Konami",
-        "blurb": "Released in Europe, a full three years later, as Hyper Dunk, this overhead basketball game is one of the system’s few genuine team-sports entries."
+        "blurb": "A side-on dirt-bike racer full of loops and ramps, with nitro boosts to clear the jumps. It reached Europe in 1991. Sadly, it didn’t have battery-powered save memory, so your best times were gone as soon as you switched off."
+      },
+      {
+        "title": "The Spirit of F-1",
+        "year": "1992",
+        "developer": "Konami",
+        "blurb": "Konami’s racer was known as <cite>F-1 Spirit</cite> in Japan and <cite>World Circuit Series</cite> in America. Palcom brought it to Europe in 1992. You work your way up from Formula 3 through Formula 3000 to Formula 1, on 25 tracks from around the world."
+      },
+      {
+        "title": "Super R.C. Pro-Am",
+        "year": "1992",
+        "developer": "Rare",
+        "blurb": "British studio Rare’s Game Boy follow-up to its NES racer, with music by David Wise. It was released in Europe in April 1992, almost a year after America. It went on to sell over a million copies."
+      },
+      {
+        "title": "Track & Field",
+        "year": "1992",
+        "developer": "Konami",
+        "blurb": "Konami’s button-masher reached Europe in October 1992, just after the Barcelona Olympics. In Japan it was even called <cite>Konami Sports in Barcelona</cite>. Europe later got it in colour, in <cite>Konami GB Collection Vol. 2</cite>."
+      },
+      {
+        "title": "Hyperdunk",
+        "year": "1994",
+        "developer": "Konami",
+        "blurb": "Konami’s <cite>Double Dribble</cite> on the Game Boy, renamed <cite>Hyperdunk</cite> for Europe. In Japan it was <cite>Konamic Basket</cite>. Later, Konami’s Mega Drive game <cite>Double Dribble: The Playoff Edition</cite> was also sold in Europe as <cite>Hyperdunk</cite>, with this game’s box art, although it’s a completely different game."
+      },
+      {
+        "title": "Sensible Soccer",
+        "year": "1994",
+        "developer": "Sensible Software",
+        "blurb": "The Amiga’s favourite football game, from Britain’s Sensible Software. On the Game Boy it plays with a single button: how long you hold it decides how hard you shoot. Sony Imagesoft published it in 1994."
+      },
+      {
+        "title": "Wave Race",
+        "year": "1997",
+        "developer": "Nintendo EAD / Pax Softnica",
+        "blurb": "No relation to the later N64 game: this is a top-down jet-ski racer. America got it in 1992, but Europe had to wait five years. In the UK it became a £9.99 budget game, often bundled with the Game Boy Pocket, and Dutch magazine <cite>Power Unlimited</cite> recommended it for “speed enthusiasts who love the Game Boy”."
       },
       {
         "title": "International Superstar Soccer",
         "year": "1998",
         "developer": "Konami Computer Entertainment Nagoya",
-        "blurb": "A late-era soccer game (Japan’s World Soccer GB) that packs surprisingly readable player sprites into a top-down pitch."
+        "badge": "Super Game Boy",
+        "blurb": "Konami’s football game, known as <cite>World Soccer GB</cite> in Japan. Released in June 1998, we got it months before America. The Japan Football Association logo even appears on the title screen."
       }
     ]
   },
   {
     "hue": 274,
-    "tag": "Racing",
-    "title": "Racing",
-    "blurb": "Six ways to go fast on a screen that refreshes slower than most — from Formula One to dirt bikes to jet skis.",
-    "games": [
-      {
-        "title": "F-1 Race",
-        "year": "1991",
-        "developer": "Nintendo R&D1",
-        "blurb": "Nintendo’s own Formula One game supports the four-player link cable adapter, a rare multiplayer racing option on original hardware. Europe followed about eight months after North America."
-      },
-      {
-        "title": "Motocross Maniacs",
-        "year": "1990",
-        "developer": "Konami",
-        "blurb": "A physics-driven dirt-bike racer where momentum and wheelies matter more than raw speed. Japan had it a few months earlier in 1989; Europe waited about a year longer than North America."
-      },
-      {
-        "title": "Super R.C. Pro-Am",
-        "year": "1991",
-        "developer": "Rare",
-        "blurb": "Rare’s top-down racer keeps the NES original’s weapon pickups and split-screen tension in a portable package. Europe followed about ten months after North America."
-      },
-      {
-        "title": "Wave Race",
-        "year": "1992",
-        "developer": "Nintendo EAD / Pax Softnica",
-        "blurb": "A top-down jet-ski racer entirely unrelated to the later N64 game of the same name, built around slalom gates and wake management. Europe’s release lagged an extraordinary five years behind North America’s, not arriving until 1997."
-      },
-      {
-        "title": "Chase H.Q.",
-        "year": "1990",
-        "developer": "Bits Corporation",
-        "blurb": "Taito’s pursuit-driving arcade game becomes a countdown-timer chase across a scrolling highway."
-      },
-      {
-        "title": "F-1 Spirit",
-        "year": "1991",
-        "developer": "Konami",
-        "blurb": "Released in North America as World Circuit Series and in Europe as The Spirit of F-1, this overhead Formula One racer rewards careful cornering over brute acceleration."
-      }
-    ]
-  },
-  {
-    "hue": 303,
-    "tag": "Fighting",
-    "title": "Fighting & Beat-’Em-Up",
-    "blurb": "Console-fighter ports that trimmed frames and colors but rarely trimmed ambition — including two Mortal Kombat games that kept their fatalities.",
-    "games": [
-      {
-        "title": "Mortal Kombat",
-        "year": "1993",
-        "developer": "Probe Software",
-        "blurb": "A scaled-down but shockingly complete port of the fighting game that triggered a ratings-board panic, fatalities included."
-      },
-      {
-        "title": "Mortal Kombat II",
-        "year": "1994",
-        "developer": "Probe Software",
-        "blurb": "Doubles the roster and adds Babalities and Friendships to a handheld fighter that still finds room for blood."
-      },
-      {
-        "title": "Samurai Shodown",
-        "year": "1994",
-        "developer": "Takara",
-        "blurb": "SNK’s weapon-based fighter loses some frames but keeps its slower, weightier combat intact."
-      },
-      {
-        "title": "The King of Fighters ’95",
-        "year": "1997",
-        "developer": "Takara",
-        "blurb": "A team-based SNK fighter port that did get a North American release after all, published by Nintendo in 1997, a year after Takara’s original Japanese version."
-      },
-      {
-        "title": "Killer Instinct",
-        "year": "1995",
-        "developer": "Rare",
-        "blurb": "Rare’s combo-heavy arcade fighter arrives with its announcer voice clips intact, an audio flex for 1995 handheld hardware."
-      },
-      {
-        "title": "Battletoads",
-        "year": "1991",
-        "developer": "Rare",
-        "blurb": "Half beat-em-up, half punishing platformer, this Game Boy-exclusive Battletoads keeps the series’ reputation for brutal difficulty intact."
-      }
-    ]
-  },
-  {
-    "hue": 332,
     "tag": "Licensed",
-    "title": "Licensed & Arcade Ports",
-    "blurb": "Cartoons, movies, and arcade cabinets squeezed into a cartridge — the chapter that best shows how much shovelware the system had to rise above.",
+    "title": "Licensed & Movie Tie-ins",
+    "blurb": "Licensed games have a bad reputation, but not all of them deserve it. Sunsoft’s Batman and Capcom’s Disney games are really good, and Europe even got an enjoyable McDonald’s platformer that the rest of the world only knew with a 7 Up mascot.",
     "games": [
       {
-        "title": "Teenage Mutant Ninja Turtles: Fall of the Foot Clan",
+        "title": "Batman: The Video Game",
         "year": "1990",
-        "developer": "Konami",
-        "blurb": "A single-Turtle beat-em-up that trades the arcade game’s chaos for tighter, more deliberate combat. Released in Europe as Teenage Mutant Hero Turtles: Fall of the Foot Clan, following the same “Hero Turtles” rebrand the franchise carried across Europe throughout this console generation."
-      },
-      {
-        "title": "Double Dragon II",
-        "year": "1990",
-        "developer": "Technōs Japan",
-        "blurb": "A handheld original rather than a straight port, built around the same co-op-brawler DNA as the NES classics."
-      },
-      {
-        "title": "Bubble Bobble",
-        "year": "1991",
-        "developer": "Taito",
-        "blurb": "Bub and Bob’s bubble-trapping platformer loses none of its cooperative charm in single-screen handheld form."
-      },
-      {
-        "title": "Pac-Man",
-        "year": "1990",
-        "developer": "Namco",
-        "blurb": "The definitive arcade maze-chase, unchanged and unbothered by four decades of imitators."
-      },
-      {
-        "title": "Elevator Action",
-        "year": "1991",
-        "developer": "Taito",
-        "blurb": "A spy-thriller shooting game about riding elevators between floors, shooting out lights, and not getting shot in the back."
-      },
-      {
-        "title": "Battle City",
-        "year": "1991",
-        "developer": "Nova Games",
-        "blurb": "A tank-battle port of the Famicom classic, base-defense strategy layered under simple twin-directional shooting."
-      },
-      {
-        "title": "Spy vs Spy: Operation Boobytrap",
-        "year": "1992",
-        "developer": "First Star Software",
-        "blurb": "Mad Magazine’s black-and-white spies get a trap-laying handheld adaptation of the split-screen classic."
-      },
-      {
-        "title": "Darkwing Duck",
-        "year": "1993",
-        "developer": "Capcom",
-        "blurb": "Capcom’s Disney Afternoon platforming expertise extends to the masked mallard, gas-gun and all."
+        "developer": "Sunsoft",
+        "blurb": "Despite the name, it’s nothing like the NES game, which is great because that game is super hard! Reviewers compared the Game Boy game to <cite>Super Mario Land</cite>, and Batman even carries a gun. European magazines loved it: <cite>Player One</cite> gave it 94% and <cite>Mean Machines</cite> 85%. By the end of 1990 it had sold over half a million copies."
       },
       {
         "title": "The Bugs Bunny Crazy Castle",
         "year": "1990",
         "developer": "Kemco",
-        "blurb": "A maze-puzzle platformer that reskins a Japan-only engine with Looney Tunes characters."
+        "blurb": "In Japan this was a Mickey Mouse game, and on the Famicom it starred Roger Rabbit. Kemco simply swapped the licence for each market. Its sequel became <cite>Hugo</cite> in Europe, and in 2021 a young LeBron James even plays it in <cite>Space Jam: A New Legacy</cite>."
+      },
+      {
+        "title": "DuckTales",
+        "year": "1991",
+        "developer": "Capcom",
+        "blurb": "Scrooge’s pogo cane works just as well on the Game Boy, with the same five treasure hunts as the NES game, Moon included. Europe got it in 1991, and British magazine <cite>Raze</cite> gave it 90%."
+      },
+      {
+        "title": "Alien 3",
+        "year": "1992",
+        "developer": "Bits Studios",
+        "blurb": "Unlike every other version, the Game Boy <cite>Alien 3</cite> is a top-down game, made by Bits. It reached Europe in December 1992. Dutch and Belgian shops sold the German version, with a simple black-and-white sheet of Dutch and French instructions."
       },
       {
         "title": "McDonaldland",
         "year": "1992",
         "developer": "Visual Concepts",
-        "blurb": "A European licensed platformer starring Ronald McDonald, built on the same engine as Spot: The Cool Adventure."
+        "blurb": "This game only exists like this in Europe. America got the exact same game a couple of months later as <cite>Spot: The Cool Adventure</cite>, with 7 Up’s mascot Spot instead of Ronald McDonald. Dutch magazine <cite>Power Unlimited</cite> gave it 68%."
       },
       {
-        "title": "Alien 3",
+        "title": "Tiny Toon Adventures: Babs’ Big Break",
+        "year": "1992",
+        "developer": "Konami",
+        "blurb": "Montana Max wants to tear down the Acme Theatre, so Buster, Plucky and Hamton race to warn Babs before her big break. European magazines loved it: France’s <cite>Joystick</cite> gave it 93%, and <cite>Total!</cite> and <cite>Nintendo Magazine System</cite> both gave it 89%."
+      },
+      {
+        "title": "Darkwing Duck",
         "year": "1993",
-        "developer": "Bits Studios",
-        "blurb": "A grim, atmospheric side-scroller that leans into the film’s prison-planet dread more than most licensed movie games bother to."
+        "developer": "Capcom / Make Software",
+        "blurb": "Capcom’s NES adventure, shrunk down for the Game Boy, and <cite>Nintendo Power</cite>’s third-best Game Boy game of 1993. In Europe it came out in English, German and Spanish versions. <cite>Nintendo Magazine System</cite> called it “entertaining and varied”."
       },
       {
-        "title": "Home Alone",
+        "title": "Aladdin",
+        "year": "1994",
+        "developer": "NMS Software",
+        "badge": "Super Game Boy",
+        "blurb": "Made by British studio NMS Software and published by Virgin. Europe got it in September 1994, more than a year before America. <cite>CVG</cite> found it a bit ordinary next to the 16-bit versions, but on a Super Game Boy it does get a splash of colour."
+      }
+    ]
+  },
+  {
+    "hue": 303,
+    "tag": "Comics",
+    "title": "Comic Heroes from Europe",
+    "blurb": "Europe grew up on comic albums, not superhero comics. French publisher Infogrames brought Asterix, the Smurfs, Tintin, Spirou and Lucky Luke to the Game Boy, and most of them were made in Barcelona. Hardly any of them ever left Europe.",
+    "games": [
+      {
+        "title": "Asterix",
+        "year": "1993",
+        "developer": "Bit Managers",
+        "blurb": "Bit Managers’ first <cite>Asterix</cite> game came out on Game Boy in the summer of 1993, a few months before the NES version. It only ever came out in Europe, with text in English, French, German and Spanish. French magazine <cite>Joypad</cite> gave it 91%."
+      },
+      {
+        "title": "Asterix & Obelix",
+        "year": "1995",
+        "developer": "Bit Managers",
+        "badge": "Super Game Boy",
+        "blurb": "This time you can play as Asterix or Obelix, each with his own moves. To fit four languages in, Infogrames made two versions of the cartridge: one in English and Spanish, and one in French and German."
+      },
+      {
+        "title": "The Smurfs",
+        "year": "1993",
+        "developer": "Bit Managers",
+        "badge": "Super Game Boy",
+        "blurb": "One of the first games with a language menu: you could play it in English, French, German or Spanish. America got it a year later, in a revised version with Super Game Boy support that later reached European shops too. The revision quietly dropped Spanish, though."
+      },
+      {
+        "title": "Spirou",
+        "year": "1996",
+        "developer": "Bit Managers",
+        "blurb": "The Belgian bellboy’s only Game Boy adventure, made by Bit Managers and released only in Europe. Critics loved the animation and how faithful it was to the comic, but warned that it was hard, with only one password to save your progress."
+      },
+      {
+        "title": "Tintin in Tibet",
+        "year": "1996",
+        "developer": "Bit Managers",
+        "badge": "Super Game Boy",
+        "blurb": "Tintin follows his friend Chang’s trail into the Himalayas, based on Hergé’s famous album. Bit Managers made the Game Boy version, which only came out in Europe. French magazine <cite>Consoles+</cite> gave it 90%."
+      },
+      {
+        "title": "Lucky Luke",
+        "year": "1997",
+        "developer": "Velez & Dubail",
+        "blurb": "The man who shoots faster than his shadow, on a Game Boy cartridge by French studio Velez & Dubail. It came out in Europe in 1997, two years before a separate Game Boy Color game."
+      }
+    ]
+  },
+  {
+    "hue": 332,
+    "tag": "Arcade",
+    "title": "Arcade, Pinball & Party",
+    "blurb": "Not everything needs to be an epic adventure. These are arcade classics, pinball tables and party games: perfect for a quick round on the bus, or a link-cable battle with a friend.",
+    "games": [
+      {
+        "title": "Qix",
+        "year": "1990",
+        "developer": "Minakuchi Engineering",
+        "blurb": "Taito’s territory-grabbing arcade game, published by Nintendo itself and one of Europe’s very first Game Boy games. Between rounds, Mario, Luigi and Princess Peach make little cameo appearances."
+      },
+      {
+        "title": "Bubble Bobble",
         "year": "1991",
-        "developer": "Imagineering",
-        "blurb": "Kevin McCallister booby-traps his house across a top-down platformer built for the holiday movie tie-in market."
+        "developer": "Taito",
+        "blurb": "Bub and Bob’s bubble-blowing classic, squeezed onto the Game Boy by Taito itself. Europe got it first, in November 1991, a couple of months before America."
+      },
+      {
+        "title": "Chase H.Q.",
+        "year": "1991",
+        "developer": "Taito",
+        "blurb": "Europe already loved Ocean’s <cite>Chase H.Q.</cite> on home computers, where it won a Golden Joystick. Taito’s own Game Boy version followed in 1991: catch up with the criminal before time runs out, then ram his car until he gives up."
+      },
+      {
+        "title": "Elevator Action",
+        "year": "1991",
+        "developer": "Taito",
+        "blurb": "A spy game from 1983: ride the lifts, shoot out the lights and grab the secret documents before you escape. Taito’s Game Boy version reached Europe in December 1991."
+      },
+      {
+        "title": "Kirby’s Pinball Land",
+        "year": "1993",
+        "developer": "HAL Laboratory",
+        "blurb": "Kirby himself is the ball, bouncing across three tables, each with a boss at the top. Europe got this one on 1 December 1993, just one day after America. Still counts!"
+      },
+      {
+        "title": "Kirby’s Block Ball",
+        "year": "1996",
+        "developer": "Nintendo R&D1",
+        "badge": "Super Game Boy",
+        "blurb": "<cite>Breakout</cite>-but-Kirby! Kirby is the ball, and his copy abilities change how he smashes through the blocks. <cite>Nintendo World Report</cite> called it the best version of <cite>Breakout</cite> ever made. On a Super Game Boy it gets a themed border and lots of colour."
+      },
+      {
+        "title": "Pinball Dreams",
+        "year": "1993",
+        "developer": "Spidersoft",
+        "blurb": "Based on the Amiga pinball classic by Swedish studio Digital Illusions, who later became DICE. British studio Spidersoft managed to put three of its four tables onto the Game Boy, just leaving out Beat Box. Dutch magazine <cite>Power Unlimited</cite> gave it 85%."
+      },
+      {
+        "title": "Wario Blast: Featuring Bomberman!",
+        "year": "1995",
+        "developer": "Hudson Soft",
+        "badge": "Super Game Boy",
+        "blurb": "In Japan this is simply <cite>Bomberman GB</cite>, but in the West Wario muscled his way in. Europe got it in June 1995, and with a Super Game Boy and a multitap, four players could battle on one TV. <cite>Games World</cite> gave it 86%."
+      },
+      {
+        "title": "Game & Watch Gallery",
+        "year": "1997",
+        "developer": "Nintendo R&D1 / Tose",
+        "badge": "Super Game Boy",
+        "blurb": "Four Game & Watch classics, each in an original and a modern version starring Mario and friends. Collect enough stars and you unlock a gallery of other Game & Watch games. Europe got it in August 1997."
       }
     ]
   },
   {
     "hue": 21,
-    "tag": "Party",
-    "title": "Party, Compilations & Toys",
-    "blurb": "Not quite games in the traditional sense — a picross obsession, a Bomberman detour, and a cartridge that was also a working camera.",
+    "tag": "Computer",
+    "title": "Home-Computer Hits",
+    "blurb": "The <a href=\"/nes/#ch-11\">NES</a> got a handful of computer classics, but the Game Boy got even more. These are the games Europe’s computer kids already knew, from <cite>Boulder Dash</cite> to <cite>Lemmings</cite>, and many of them were converted by British studios.",
     "games": [
       {
-        "title": "Game & Watch Gallery",
+        "title": "Boulder Dash",
+        "year": "1991",
+        "developer": "Beam Software",
+        "blurb": "Australian studio Beam Software converted it, and it never came out in America at all. Japan got it first, with penguins and jellyfish added to Rockford’s caves. <cite>Mean Machines</cite> gave it 90%, calling it “one of the finest video games ever written”."
+      },
+      {
+        "title": "Bubble Ghost",
+        "year": "1992",
+        "developer": "Opera House",
+        "blurb": "French studio ERE Informatique’s Atari ST hit: you blow a fragile bubble through a haunted castle. Japan’s Opera House made the Game Boy version, with one of the very first scores by Hitoshi Sakimoto, who became famous for <cite>Final Fantasy Tactics</cite>. European players got it in 1992, two years after America."
+      },
+      {
+        "title": "Prince of Persia",
+        "year": "1992",
+        "developer": "Virgin Games",
+        "blurb": "Jordan Mechner’s classic: you have one hour to rescue the princess. The European cartridge lets you pick from five languages, and its music was the very first video game work of Tommy Tallarico, later known for <cite>Earthworm Jim</cite>."
+      },
+      {
+        "title": "Speedball 2: Brutal Deluxe",
+        "year": "1992",
+        "developer": "Spidersoft",
+        "blurb": "The Bitmap Brothers’ brutal future sport, converted by Spidersoft, who also did <cite>Pinball Dreams</cite>. Spidersoft later became part of Rockstar, as Rockstar Lincoln. The Amiga original’s music even won a Golden Joystick!"
+      },
+      {
+        "title": "Turrican",
+        "year": "1992",
+        "developer": "The Code Monkeys",
+        "blurb": "Manfred Trenz’s German computer hero, converted by British studio The Code Monkeys and released in Europe in spring 1992. Accolade later reworked this Game Boy version into <cite>Universal Soldier</cite>, a film tie-in."
+      },
+      {
+        "title": "Lemmings",
+        "year": "1993",
+        "developer": "Ocean Software",
+        "blurb": "Ocean brought DMA Design’s Scottish hit to the Game Boy, and Europe got it in January 1993, more than a year and a half before America. Guiding lemmings to the exit is <strong>a lot</strong> harder on a screen this small."
+      },
+      {
+        "title": "Spy vs Spy",
         "year": "1997",
-        "developer": "Nintendo R&D1",
-        "blurb": "Classic Game & Watch toys get modern and classic versions side by side, a handheld museum piece that still plays great."
-      },
-      {
-        "title": "Bomberman GB",
-        "year": "1998",
-        "developer": "Hudson Soft",
-        "blurb": "A single-player-focused Bomberman entry that trades the series’ multiplayer chaos for puzzle-like stage design. Confusingly, this is a different game from 1994’s Japanese Bomberman GB (which the West got that same year as Wario Blast: Featuring Bomberman!, below) — this one is the West’s rename of Japan’s 1998 sequel, Bomberman GB 2."
-      },
-      {
-        "title": "Wario Blast: Featuring Bomberman!",
-        "year": "1994",
-        "developer": "Hudson Soft",
-        "blurb": "Wario crashes Bomberman’s world for a link-cable multiplayer bout wrapped around the classic bombing formula."
-      },
-      {
-        "title": "Mario’s Picross",
-        "year": "1995",
-        "developer": "Jupiter",
-        "blurb": "Nonogram puzzles hosted by Mario, the game that quietly built the West’s first real audience for picross."
-      },
-      {
-        "title": "Picross 2",
-        "year": "1996",
-        "developer": "Jupiter",
-        "blurb": "A Japan-only sequel that never left the region despite the original’s Western release, more of the same razor-sharp grid logic."
-      },
-      {
-        "title": "Game Boy Camera",
-        "year": "1998",
-        "developer": "Nintendo R&D1 / Jupiter",
-        "blurb": "Part cartridge, part digital camera, this held the Guinness World Record for smallest digital camera at launch."
+        "developer": "First Star Software",
+        "blurb": "The <cite>Mad</cite> magazine spies, back on a Nintendo handheld. America got it in 1992, but Europe only got it in March 1997, five years later. Set your traps, grab the briefcase, and escape before the other spy does! Such a cool game."
       }
     ]
   },
   {
     "hue": 50,
     "tag": "Curios",
-    "title": "Cult Classics & Japan-Only Curios",
-    "blurb": "The deep cuts — games that never got a major marketing push, several that never left Japan at all, kept alive today by import collectors and fan translators.",
+    "title": "Cult Classics & Deep Cuts",
+    "blurb": "The strange, the rare and the overlooked. Some of these are now expensive collector’s items, one is a Danish TV troll in disguise, and one was made in Britain and reached Europe before anyone else.",
     "games": [
       {
-        "title": "Heiankyo Alien",
-        "year": "1990",
-        "developer": "Hyperware",
-        "blurb": "A pit-digging maze game with roots stretching back to a 1979 Japanese mainframe game, ported here almost unchanged."
-      },
-      {
-        "title": "Faceball 2000",
-        "year": "1991",
-        "developer": "Xanth Software",
-        "blurb": "An early first-person multiplayer shooter with a smiley-face aesthetic that hid genuinely ambitious link-cable deathmatches."
-      },
-      {
         "title": "Amazing Penguin",
-        "year": "1990",
-        "developer": "Natsume",
-        "blurb": "A maze-clearing puzzle-platformer about a penguin boxing in enemies with painted walls, an unsung Natsume original."
-      },
-      {
-        "title": "Mercenary Force",
-        "year": "1990",
-        "developer": "Lenar",
-        "blurb": "A side-scrolling action game about recruiting and managing a squad of hired soldiers, unusually tactical for its genre."
-      },
-      {
-        "title": "Great Greed",
-        "year": "1992",
-        "developer": "Namco",
-        "blurb": "A Namco RPG about a treasure-hungry protagonist, overlooked at release and still under-discussed today."
-      },
-      {
-        "title": "Kaeru no Tame ni Kane wa Naru",
-        "year": "1992",
-        "developer": "Nintendo / Intelligent Systems",
-        "blurb": "Japan-only precursor to Link’s Awakening, sharing its engine and even some sound effects with Nintendo’s later Zelda game."
-      },
-      {
-        "title": "Bubble Ghost",
-        "year": "1990",
-        "developer": "Opera House",
-        "blurb": "A ghost blows a bubble through obstacle-filled rooms in this delicate physics puzzler, composer Hitoshi Sakimoto’s first video game score. Europe didn’t get it until 1992, well over a year after North America."
-      },
-      {
-        "title": "Chalvo 55",
-        "year": "1997",
-        "developer": "Japan System Supply",
-        "blurb": "A Japan-only puzzle-platformer starring a ball-shaped hero who rolls and bounces through physics-driven stages."
-      },
-      {
-        "title": "Ninja Gaiden Shadow",
         "year": "1991",
         "developer": "Natsume",
-        "blurb": "A loose handheld reinterpretation of the NES trilogy, built as a fast side-scrolling action game rather than a direct port."
+        "blurb": "Known in Japan as <cite>Osawagase! Penguin Boy</cite>. Prince Pendrich clears each maze by tracing its panels, kicking enemies out of the way. A small, overlooked Natsume original."
       },
       {
-        "title": "Boomer’s Adventure in ASMIK World",
-        "year": "1990",
-        "developer": "Asmik",
-        "blurb": "An obscure top-down action-adventure with RPG-lite elements, one of the system’s truest deep-cut curios."
+        "title": "Avenging Spirit",
+        "year": "1992",
+        "developer": "C.P. Brain",
+        "blurb": "You play as a ghost who can possess almost any enemy, using their powers to rescue your kidnapped girlfriend. Jaleco brought it to Europe in 1992, and it became such a cult favourite that Limited Run Games reissued it on cartridge in 2022."
+      },
+      {
+        "title": "Alfred Chicken",
+        "year": "1993",
+        "developer": "Twilight",
+        "blurb": "A British original: the Game Boy version came first, before the Amiga and SNES ports. Mindscape released it in Europe in 1993, months before America and two years before Japan. The music is by David Whittaker, who also did the sound for <cite>R-Type</cite> on Game Boy."
+      },
+      {
+        "title": "Kid Dracula",
+        "year": "1993",
+        "developer": "Konami",
+        "blurb": "Konami’s own cute parody of <cite>Castlevania</cite>, starring Dracula’s son. It was released in Europe in March 1993, identical to the American version. Today, cartridges sell for between £75 and over £300, according to <cite>Retro Gamer</cite>."
+      },
+      {
+        "title": "Trip World",
+        "year": "1993",
+        "developer": "Sunsoft",
+        "blurb": "Sunsoft’s gentle platformer starring Yakopoo, a little bunny-like creature. It came out in Japan and Europe but never in America, with Britain getting it in June 1993. So few copies were made that boxed cartridges are now expensive collector’s items."
+      },
+      {
+        "title": "Hugo",
+        "year": "1996",
+        "developer": "Kemco",
+        "badge": "Super Game Boy",
+        "blurb": "The Danish TV troll’s Game Boy debut is secretly Kemco’s <cite>Crazy Castle 2</cite>, the sequel to the Bugs Bunny game in <a href=\"#ch-8\">chapter 8</a>. Europe had already got this exact game in 1992, released simply as <cite>Mickey Mouse</cite>. So Europe got it twice, under two different licences. Hugo has to rescue his wife Hugolina, and this is the only version of the game with Super Game Boy support."
+      },
+      {
+        "title": "Mole Mania",
+        "year": "1997",
+        "developer": "Nintendo EAD / Pax Softnica",
+        "badge": "Super Game Boy",
+        "blurb": "Muddy the mole digs between the surface and the underground to solve puzzles and rescue his family. Shigeru Miyamoto produced it, and Pax Softnica, also behind <cite>Wave Race</cite>, developed it with Nintendo. German <cite>Total!</cite> called the idea “not only new, but also surprisingly good”."
       }
     ]
   }

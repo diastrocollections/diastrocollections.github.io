@@ -8,7 +8,7 @@
  *   here without touching any page.
  * - Back to top: the arrow at the right end of the bar appears once the hero
  *   has scrolled out of view (hidden on phones by CSS).
- * - Theme toggle: dark / light.
+ * - Theme toggle: dark / light, remembered for the current visit only.
  * - Collection pages only: the "previous / next on the shelf" links in
  *   #collectionPager, in the same order as the shelf, and the footer's AI
  *   line (#footerAiLine), which states this Collection's writing status.
@@ -87,16 +87,39 @@
 
   // ---------- Theme toggle ----------
 
+  // New visits follow the device. A choice made with the toggle lasts for this
+  // visit only: sessionStorage keeps it across pages (the inline script in each
+  // page's <head> reads it back, before the first paint) and forgets it when the
+  // tab closes. Choosing what the device already shows, or the device switching
+  // mode, goes back to following the device.
+  var deviceDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function setThemeChoice(choice) {
+    if (choice) root.setAttribute('data-theme', choice);
+    else root.removeAttribute('data-theme');
+    try {
+      if (choice) sessionStorage.setItem('dgc-theme', choice);
+      else sessionStorage.removeItem('dgc-theme');
+    } catch (e) { /* storage blocked: the choice just won't carry to the next page */ }
+  }
+
+  deviceDark.addEventListener('change', function () { setThemeChoice(null); });
+
   var themeToggle = document.getElementById('themeToggle');
   if (themeToggle) {
     themeToggle.addEventListener('click', function () {
-      var current = root.getAttribute('data-theme');
-      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var next;
-      if (!current) next = prefersDark ? 'light' : 'dark';
-      else if (current === 'dark') next = 'light';
-      else next = 'dark';
-      root.setAttribute('data-theme', next);
+      var device = deviceDark.matches ? 'dark' : 'light';
+      var shown = root.getAttribute('data-theme') || device;
+      var next = shown === 'dark' ? 'light' : 'dark';
+      var swap = function () { setThemeChoice(next === device ? null : next); };
+      // Cross-fade the whole page as one (see nav.css). Without View
+      // Transitions, or with reduced motion, the theme switches at once.
+      if (document.startViewTransition &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.startViewTransition(swap);
+      } else {
+        swap();
+      }
     });
   }
 

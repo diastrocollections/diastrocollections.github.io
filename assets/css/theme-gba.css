@@ -6,7 +6,7 @@
   --surface-2: #E4E5F5;
   --ink: #1A1B2E;
   --ink-soft: #4B4D6B;
-  --ink-faint: #8587A8;
+  --ink-faint: #696A8A;
   --accent: #4A3F8C;
   --accent-ink: #FFFFFF;
   --line: #DADCEE;
@@ -44,7 +44,7 @@
     --surface-2: #1A1B36;
     --ink: #E6E7FA;
     --ink-soft: #A6A8CC;
-    --ink-faint: #6C6E96;
+    --ink-faint: #7C7EA7;
     --accent: #8B7FFF;
     --accent-ink: #0C0D1A;
     --line: #262842;
@@ -68,7 +68,7 @@
   --surface-2: #1A1B36;
   --ink: #E6E7FA;
   --ink-soft: #A6A8CC;
-  --ink-faint: #6C6E96;
+  --ink-faint: #7C7EA7;
   --accent: #8B7FFF;
   --accent-ink: #0C0D1A;
   --line: #262842;
@@ -238,7 +238,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .hero-meta {
@@ -276,7 +276,7 @@
 
 .note-card h2::before {
   content: "\25B8\25B8\00a0";
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   letter-spacing: -0.15em;
   padding-right: 8px;
 }
@@ -326,7 +326,7 @@
   font-family: var(--font-mono);
   font-size: 0.8rem;
   letter-spacing: -0.1em;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .chapter:first-child::before,
@@ -358,6 +358,19 @@
   :root:not([data-theme="light"]) .chapter-num {
     color: #0C0D1A;
     background: linear-gradient(135deg, hsl(var(--hue) 80% 72%), hsl(var(--hue) 70% 54%));
+  }
+}
+
+/* Chapter number gradient with its lightness capped in light mode (white text) and
+   floored in dark mode (dark text), for 4.5:1 on every chapter colour. Browsers
+   without these colour functions keep the gradients above. */
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  :root[data-theme="dark"] .chapter-num,
+  :root:not([data-theme="light"]) .chapter-num,
+  .chapter-num {
+    background: linear-gradient(135deg,
+      light-dark(oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.5) c h), oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.78) c h)),
+      light-dark(oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.4) c h), oklch(from hsl(var(--hue) var(--sat) var(--lig)) max(l, 0.66) c h)));
   }
 }
 

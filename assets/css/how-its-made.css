@@ -151,7 +151,7 @@
 }
 
 .aim-promise svg {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .aim-promise-title {
@@ -232,7 +232,7 @@
   font-family: "Fraunces", serif;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   line-height: 1;
 }
 
@@ -301,7 +301,7 @@
 
 .aim-table tr.aim-table-final td:last-child {
   font-weight: 600;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 /* ---------- The shelf, word by word ---------- */
@@ -485,7 +485,7 @@
 
 .aim-badge.is-draft {
   border: 1.5px dashed var(--accent);
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .aim-badge-card p {
@@ -523,7 +523,7 @@
 .aim-source-example a {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.86rem;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .aim-report {
@@ -610,7 +610,7 @@
 }
 
 .aim-privacy-card.is-counted li svg {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 .aim-privacy-card.is-never li svg {
@@ -675,7 +675,7 @@
 .aim-social a:hover,
 .aim-social a:focus-visible {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
 
 @media (max-width: 900px) {

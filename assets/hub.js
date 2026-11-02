@@ -1,14 +1,34 @@
 /*
  * Diastro Gaming Collections — hub page renderer.
- * Fetches data/platforms.json and builds the tile grid + hero stats.
+ * Fetches data/platforms.json and builds the tile grid + hero stats,
+ * plus the shelf's "Arrange" control (timeline, or grouped by maker/type/status).
  * To add a new platform later: append one entry to data/platforms.json
  * and it appears here automatically — no HTML/JS changes needed.
  */
 (function () {
-  var tilesEl = document.getElementById('tiles');
+  var shelfEl = document.getElementById('shelfBody');
+  var arrangeEl = document.getElementById('arrange');
+  var arrangeStatusEl = document.getElementById('arrangeStatus');
   var heroStatsEl = document.getElementById('heroStats');
-  var shelfCountEl = document.getElementById('shelfCount');
   var rulerEl = document.getElementById('eraRuler');
+
+  // Ways to arrange the shelf. Each tile list is always in launch order; a mode
+  // with a `group` function splits it into headed groups, ordered by `order`
+  // (or by the first group to appear on the timeline when there is none).
+  var ARRANGE = {
+    timeline: { label: 'Shelf in launch order' },
+    maker: { label: 'Shelf grouped by maker', group: function (p) { return p.manufacturer; } },
+    type: {
+      label: 'Shelf grouped by type',
+      group: function (p) { return p.type === 'handheld' ? 'Handhelds' : 'Home consoles'; },
+      order: ['Home consoles', 'Handhelds']
+    },
+    status: {
+      label: 'Shelf grouped by status',
+      group: function (p) { return p.handwritten ? 'Hand-written' : 'Draft in progress'; },
+      order: ['Hand-written', 'Draft in progress']
+    }
+  };
 
   fetch('data/platforms.json')
     .then(function (res) {
@@ -17,8 +37,8 @@
     })
     .then(render)
     .catch(function (err) {
-      if (tilesEl) {
-        tilesEl.innerHTML = '<p style="padding:2rem 0;color:var(--ink-faint);">Could not load the platform list (data/platforms.json). ' +
+      if (shelfEl) {
+        shelfEl.innerHTML = '<p style="padding:2rem 0;color:var(--ink-faint);">Could not load the platform list (data/platforms.json). ' +
           'If you’re opening this file directly (file://), the browser blocks the fetch — serve the site with ' +
           '<code>npx serve</code> or GitHub Pages instead.</p>';
       }
@@ -46,10 +66,6 @@
         el.innerHTML = '<span class="num mono">' + s.num + '</span><span class="label">' + s.label + '</span>';
         heroStatsEl.appendChild(el);
       });
-    }
-
-    if (shelfCountEl) {
-      shelfCountEl.textContent = PLATFORMS.length + ' collections · ' + totalGames + ' games';
     }
 
     if (rulerEl) {
@@ -115,43 +131,127 @@
       });
     }
 
-    if (tilesEl) {
-      PLATFORMS.forEach(function (p, i) {
-        // An icon is either an SVG file (the controller illustrations) or an emoji
-        // placeholder until that Collection's illustration is ready.
-        var isSvg = /\.svg$/.test(p.icon);
-        var a = document.createElement('div');
-        a.className = 'tile';
-        a.style.setProperty('--tile-accent', p.accent);
-        a.style.animationDelay = (i * 0.06) + 's';
-        a.innerHTML =
-          '<a class="tile-link" href="' + p.url + '" aria-label="Enter the ' + p.name + ' collection"></a>' +
-          '<div class="tile-spine"></div>' +
-          '<div class="tile-body">' +
-            '<span class="tile-watermark' + (isSvg ? ' tile-watermark--svg' : '') + '" aria-hidden="true">' + (isSvg ? '' : p.icon) + '</span>' +
-            '<div class="tile-kicker mono"><span>' + String(i + 1).padStart(2, '0') + '</span><span>' + p.manufacturer + '</span><span>' + p.years + '</span></div>' +
-            '<div class="tile-top">' +
-              '<h3>' + p.name + '</h3>' +
-            '</div>' +
-            '<p class="tagline">' + p.tagline + '</p>' +
-            '<div class="tile-meta">' +
-              '<span><strong>' + p.games + '</strong> games</span>' +
-              '<span><strong>' + p.chapters + '</strong> chapters</span>' +
-              '<span class="tile-region mono">' + p.region + '</span>' +
-            '</div>' +
-            '<div class="tile-foot">' +
-              // Hidden from screen readers: the tile's link already says "Enter the … collection".
-              '<span class="tile-cta" aria-hidden="true">Enter the collection' +
-                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
-              '</span>' +
-              DGStatus.html(p.handwritten, { variant: 'pill' }) +
-            '</div>' +
-          '</div>';
-        tilesEl.appendChild(a);
-        // Inlined rather than an <img> so the drawing can take the tile's accent colour.
-        if (isSvg) loadSvg(p.icon, a.querySelector('.tile-watermark'));
-      });
+    if (shelfEl) {
+      // Launch order; platforms from the same year keep their order in platforms.json.
+      var tiles = PLATFORMS.slice()
+        .sort(function (a, b) { return a.start - b.start; })
+        .map(function (p) { return { p: p, el: buildTile(p) }; });
+
+      var mode = readMode();
+      arrange(tiles, mode);
+      if (arrangeEl) {
+        arrangeEl.querySelector('input[value="' + mode + '"]').checked = true;
+        arrangeEl.addEventListener('change', function (e) {
+          var groups = arrange(tiles, e.target.value);
+          writeMode(e.target.value);
+          // Focus stays on the option, so tell screen readers what changed below it.
+          if (arrangeStatusEl) {
+            arrangeStatusEl.textContent = ARRANGE[e.target.value].label +
+              (groups > 1 ? ', ' + groups + ' groups' : '') + '.';
+          }
+        });
+      }
     }
+  }
+
+  function buildTile(p) {
+    // An icon is either an SVG file (the controller illustrations) or an emoji
+    // placeholder until that Collection's illustration is ready.
+    var isSvg = /\.svg$/.test(p.icon);
+    var a = document.createElement('div');
+    a.className = 'tile';
+    a.style.setProperty('--tile-accent', p.accent);
+    a.innerHTML =
+      '<a class="tile-link" href="' + p.url + '" aria-label="Enter the ' + p.name + ' collection"></a>' +
+      '<div class="tile-spine"></div>' +
+      '<div class="tile-body">' +
+        '<span class="tile-watermark' + (isSvg ? ' tile-watermark--svg' : '') + '" aria-hidden="true">' + (isSvg ? '' : p.icon) + '</span>' +
+        '<div class="tile-kicker mono"><span>' + p.manufacturer + '</span><span>' + p.years + '</span></div>' +
+        '<div class="tile-top">' +
+          '<h3 class="tile-title">' + p.name + '</h3>' +
+        '</div>' +
+        '<p class="tagline">' + p.tagline + '</p>' +
+        '<div class="tile-meta">' +
+          '<span><strong>' + p.games + '</strong> games</span>' +
+          '<span><strong>' + p.chapters + '</strong> chapters</span>' +
+          // EU-first is the shelf's default, so only the exceptions still get a label.
+          (p.region === 'EU-first' ? '' : '<span class="tile-region mono">' + p.region + '</span>') +
+        '</div>' +
+        '<div class="tile-foot">' +
+          // Hidden from screen readers: the tile's link already says "Enter the … collection".
+          '<span class="tile-cta" aria-hidden="true">Enter the collection' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
+          '</span>' +
+          DGStatus.html(p.handwritten, { variant: 'pill' }) +
+        '</div>' +
+      '</div>';
+    // Inlined rather than an <img> so the drawing can take the tile's accent colour.
+    if (isSvg) loadSvg(p.icon, a.querySelector('.tile-watermark'));
+    return a;
+  }
+
+  // Moves the already-built tiles into one grid (timeline) or one headed grid per
+  // group, so switching never re-fetches the illustrations.
+  function arrange(tiles, mode) {
+    var groupOf = ARRANGE[mode].group;
+    var names = [];
+    var byName = {};
+    tiles.forEach(function (t) {
+      var name = groupOf ? groupOf(t.p) : '';
+      if (!byName[name]) {
+        byName[name] = [];
+        names.push(name);
+      }
+      byName[name].push(t);
+    });
+    var order = ARRANGE[mode].order;
+    if (order) names.sort(function (a, b) { return order.indexOf(a) - order.indexOf(b); });
+
+    shelfEl.innerHTML = '';
+    var i = 0;
+    names.forEach(function (name) {
+      var group = document.createElement('section');
+      group.className = 'shelf-group';
+      if (groupOf) {
+        group.innerHTML = '<h3 class="shelf-group-head mono">' + name +
+          ' <span class="shelf-group-count">' + byName[name].length + '</span></h3>';
+      }
+      var grid = document.createElement('div');
+      grid.className = 'tiles';
+      byName[name].forEach(function (t) {
+        // Under a group heading (h3) the tile titles step down to h4.
+        setTitleLevel(t.el, groupOf ? 'H4' : 'H3');
+        // Re-inserting a tile restarts its rise animation, so stagger by new position.
+        t.el.style.animationDelay = (i++ * 0.04) + 's';
+        grid.appendChild(t.el);
+      });
+      group.appendChild(grid);
+      shelfEl.appendChild(group);
+    });
+    return names.length;
+  }
+
+  function setTitleLevel(tile, tag) {
+    var title = tile.querySelector('.tile-title');
+    if (title.tagName === tag) return;
+    var next = document.createElement(tag);
+    next.className = title.className;
+    next.innerHTML = title.innerHTML;
+    title.replaceWith(next);
+  }
+
+  // The chosen arrangement lives in the URL (?arrange=maker), so it can be shared
+  // and survives the back button. Timeline is the default and keeps the URL clean.
+  function readMode() {
+    var m = new URLSearchParams(location.search).get('arrange');
+    return ARRANGE.hasOwnProperty(m) ? m : 'timeline';
+  }
+
+  function writeMode(mode) {
+    var url = new URL(location.href);
+    if (mode === 'timeline') url.searchParams.delete('arrange');
+    else url.searchParams.set('arrange', mode);
+    history.replaceState(null, '', url);
   }
 
   function loadSvg(src, el) {

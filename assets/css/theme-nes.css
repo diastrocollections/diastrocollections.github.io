@@ -6,7 +6,7 @@
   --surface-2: #E2DDD1;
   --ink: #201C1A;
   --ink-soft: #55504A;
-  --ink-faint: #918A80;
+  --ink-faint: #6E675E;
   --accent: #C8102E;
   --accent-ink: #FFFFFF;
   --line: #D8D2C6;
@@ -46,7 +46,7 @@
     --surface-2: #2A241D;
     --ink: #F1EBDF;
     --ink-soft: #B8AF9F;
-    --ink-faint: #7E7566;
+    --ink-faint: #8E8575;
     --accent: #FF4D5E;
     --accent-ink: #17140F;
     --line: #35302A;
@@ -78,7 +78,7 @@
   --surface-2: #2A241D;
   --ink: #F1EBDF;
   --ink-soft: #B8AF9F;
-  --ink-faint: #7E7566;
+  --ink-faint: #8E8575;
   --accent: #FF4D5E;
   --accent-ink: #17140F;
   --line: #35302A;
@@ -377,6 +377,7 @@
   --ink-soft: #2B2B34;
   --ink-faint: #4A4A55;
   --accent: #C8102E;
+  --accent-text: #9E0C24;
   --line: #14141A;
   border: 3px solid #000;
   border-radius: 0;
@@ -391,6 +392,7 @@
   --ink-soft: #D6D0C4;
   --ink-faint: #A9A397;
   --accent: #FF6070;
+  --accent-text: #FF9AA5;
   --line: #F1EBDF;
 }
 
@@ -401,6 +403,7 @@
     --ink-soft: #D6D0C4;
     --ink-faint: #A9A397;
     --accent: #FF6070;
+    --accent-text: #FF9AA5;
     --line: #F1EBDF;
   }
 }
@@ -492,6 +495,17 @@
 }
 
 /* Chapters: block tiles */
+
+/* Fill behind the chapter number and tag. Its lightness is capped in both light
+   and dark mode, so their white text reads at 4.5:1 on every chapter colour. */
+.chapter { --chapter-fill: hsl(var(--hue) var(--sat) var(--lig)); }
+
+@supports (color: oklch(from red l c h)) {
+  .chapter {
+    --chapter-fill: oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.52) c h);
+  }
+}
+
 .chapter-num {
   min-width: 58px;
   height: 58px;
@@ -499,7 +513,7 @@
   justify-content: center;
   font-size: 1rem;
   color: #fff;
-  background: hsl(var(--hue) var(--sat) var(--lig));
+  background: var(--chapter-fill);
   border: 4px solid #000;
   box-shadow: inset 4px 4px 0 rgba(255, 255, 255, 0.38), inset -4px -4px 0 rgba(0, 0, 0, 0.3), 5px 5px 0 rgba(0, 0, 0, 0.85);
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
@@ -514,7 +528,7 @@
 .chapter-tag {
   border-radius: 0;
   border: 3px solid #000;
-  background: hsl(var(--hue) var(--sat) var(--lig));
+  background: var(--chapter-fill);
   color: #fff;
   font-family: var(--font-display);
   font-size: 0.55rem;
@@ -623,5 +637,5 @@ footer::before {
   font-family: var(--font-display);
   font-size: 0.7rem;
   line-height: 1.6;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }

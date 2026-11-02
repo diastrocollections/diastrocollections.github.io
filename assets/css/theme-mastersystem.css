@@ -9,6 +9,7 @@
   --ink-soft: #524D57;
   --ink-faint: #6E6873;
   --accent: #D3202F;
+  --accent-text: #D11D2D;
   --accent-ink: #FFFFFF;
   --blue: #0B5FD8;
   --line: #DDD5C8;
@@ -43,8 +44,9 @@
     --surface-2: #211E26;
     --ink: #F0ECEF;
     --ink-soft: #B3ADB8;
-    --ink-faint: #7C7683;
+    --ink-faint: #857F8C;
     --accent: #FF5C69;
+    --accent-text: var(--accent);
     --accent-ink: #0F0E12;
     --blue: #5B9BFF;
     --line: #2A2630;
@@ -64,8 +66,9 @@
   --surface-2: #211E26;
   --ink: #F0ECEF;
   --ink-soft: #B3ADB8;
-  --ink-faint: #7C7683;
+  --ink-faint: #857F8C;
   --accent: #FF5C69;
+  --accent-text: var(--accent);
   --accent-ink: #0F0E12;
   --blue: #5B9BFF;
   --line: #2A2630;
@@ -189,12 +192,24 @@
   height: 10px;
   background: repeating-linear-gradient(115deg, var(--accent) 0 18px, transparent 18px 26px, var(--blue) 26px 34px, transparent 34px 42px);
 }
-.note-card h2 { font-family: var(--font-display); color: var(--accent); letter-spacing: 0.08em; }
+.note-card h2 { font-family: var(--font-display); color: var(--accent-text, var(--accent)); letter-spacing: 0.08em; }
 
 /* ---------- Chapters ---------- */
 
+/* Fill behind the chapter and card numbers. Its lightness is capped in light mode
+   only, so white text reads at 4.5:1; dark mode's dark text already does. */
+.chapter { --chapter-fill: hsl(var(--hue) var(--sat) var(--lig)); }
+
+@supports (color: light-dark(red, red)) and (color: oklch(from red l c h)) {
+  .chapter {
+    --chapter-fill: light-dark(
+      oklch(from hsl(var(--hue) var(--sat) var(--lig)) min(l, 0.52) c h),
+      hsl(var(--hue) var(--sat) var(--lig)));
+  }
+}
+
 .chapter-num {
-  background: hsl(var(--hue) var(--sat) var(--lig));
+  background: var(--chapter-fill);
   color: var(--accent-ink);
   padding: 8px 14px 6px 10px;
   clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
@@ -236,7 +251,7 @@
 
 .card-idx {
   align-self: flex-start;
-  background: hsl(var(--hue) var(--sat) var(--lig));
+  background: var(--chapter-fill);
   color: var(--accent-ink);
   padding: 2px 8px;
   border-radius: 0;
@@ -256,4 +271,4 @@ footer::before {
     repeating-conic-gradient(var(--accent) 0 25%, transparent 0 50%) 0 0 / 16px 16px;
 }
 footer .wrap { padding-top: 20px; }
-.footer-cols h3 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); }
+.footer-cols h3 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent-text, var(--accent)); }

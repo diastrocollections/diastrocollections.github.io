@@ -6,8 +6,9 @@
   --surface-2: #E2E8F3;
   --ink: #161C2A;
   --ink-soft: #4B5568;
-  --ink-faint: #66728A;
+  --ink-faint: #616C84;
   --accent: #2C6BDE;
+  --accent-text: #2766D9;
   --accent-ink: #FFFFFF;
   --line: #D5DCE9;
   --line-strong: #C3CCDD;
@@ -55,8 +56,9 @@
     --surface-2: #1D2431;
     --ink: #E7ECF5;
     --ink-soft: #A3AEC2;
-    --ink-faint: #6F7C93;
+    --ink-faint: #77859C;
     --accent: #6FA3FF;
+    --accent-text: var(--accent);
     --accent-ink: #0E1117;
     --line: #252D3C;
     --line-strong: #2F394C;
@@ -95,8 +97,9 @@
   --surface-2: #1D2431;
   --ink: #E7ECF5;
   --ink-soft: #A3AEC2;
-  --ink-faint: #6F7C93;
+  --ink-faint: #77859C;
   --accent: #6FA3FF;
+  --accent-text: var(--accent);
   --accent-ink: #0E1117;
   --line: #252D3C;
   --line-strong: #2F394C;
@@ -547,7 +550,7 @@
 }
 
 .note-card h2 {
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.15rem;
@@ -563,5 +566,5 @@ footer {
 .footer-cols h3 {
   font-family: var(--font-display);
   font-weight: 800;
-  color: var(--accent);
+  color: var(--accent-text, var(--accent));
 }
