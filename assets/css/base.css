@@ -20,7 +20,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: var(--text-base);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
@@ -54,7 +54,7 @@ h1, h2, h3, .display {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-  border-radius: 3px;
+  border-radius: var(--radius-xs);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -83,7 +83,7 @@ h1, h2, h3, .display {
   align-items: center;
   gap: 10px;
   font-family: var(--font-mono);
-  font-size: 12.5px;
+  font-size: var(--text-xs);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -93,7 +93,7 @@ h1, h2, h3, .display {
 .eyebrow .dot {
   width: 8px;
   height: 8px;
-  border-radius: var(--eyebrow-dot-radius, 50%);
+  border-radius: var(--eyebrow-dot-radius, var(--radius-circle));
   background: var(--accent);
   flex-shrink: 0;
 }
@@ -111,7 +111,7 @@ h1, h2, h3, .display {
 .hero-lede {
   max-width: 62ch;
   margin-top: 22px;
-  font-size: 1.08rem;
+  font-size: var(--text-md);
   color: var(--ink-soft);
 }
 
@@ -129,13 +129,13 @@ h1, h2, h3, .display {
 
 .hero-meta .num {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: var(--text-2xl);
   font-weight: var(--font-display-weight, 700);
   color: var(--accent-text, var(--accent));
 }
 
 .hero-meta .label {
-  font-size: 0.8rem;
+  font-size: var(--text-xs);
   color: var(--ink-faint);
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -148,7 +148,7 @@ h1, h2, h3, .display {
 .note-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: var(--note-radius, 16px);
+  border-radius: var(--note-radius, var(--radius-lg));
   padding: clamp(24px, 4vw, 40px);
   box-shadow: var(--shadow);
   display: grid;
@@ -157,7 +157,7 @@ h1, h2, h3, .display {
 }
 
 .note-card h2 {
-  font-size: 1rem;
+  font-size: var(--text-base);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--ink-faint);
@@ -186,7 +186,7 @@ h1, h2, h3, .display {
   height: 2.6em;
   background: linear-gradient(to bottom, transparent, var(--surface));
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  transition: opacity var(--duration-medium) ease;
 }
 
 .note-card.is-expanded .note-body {
@@ -206,7 +206,7 @@ h1, h2, h3, .display {
   border: none;
   padding: 0;
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: var(--text-sm);
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--accent-text, var(--accent));
@@ -223,7 +223,7 @@ h1, h2, h3, .display {
   width: 14px;
   height: 14px;
   flex-shrink: 0;
-  transition: transform 0.2s ease;
+  transition: transform var(--duration-medium) ease;
 }
 
 .note-card.is-expanded .note-toggle svg {
@@ -263,7 +263,7 @@ h1, h2, h3, .display {
   background: var(--surface);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: 0.92rem;
+  font-size: var(--text-sm);
   outline: none;
 }
 
@@ -308,7 +308,7 @@ h1, h2, h3, .display {
   flex-shrink: 0;
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
-  font-size: 0.76rem;
+  font-size: var(--text-xs);
   color: var(--ink-faint);
   white-space: nowrap;
 }
@@ -332,7 +332,7 @@ h1, h2, h3, .display {
   background: var(--surface);
   color: var(--ink);
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: var(--text-xs);
   letter-spacing: 0.02em;
   white-space: nowrap;
   cursor: pointer;
@@ -364,7 +364,7 @@ h1, h2, h3, .display {
 }
 
 .chapters-icon { color: var(--ink-faint); }
-.chapters-chevron { transition: transform 0.2s ease; }
+.chapters-chevron { transition: transform var(--duration-medium) ease; }
 .chapters-toggle[aria-expanded="true"] .chapters-chevron { transform: rotate(180deg); }
 
 .chapters-panel {
@@ -393,17 +393,17 @@ h1, h2, h3, .display {
   min-height: 36px;
   flex-shrink: 0;
   font-family: var(--font-mono);
-  font-size: 0.76rem;
+  font-size: var(--text-xs);
   letter-spacing: 0.02em;
   padding: 7px 13px;
-  border-radius: var(--chip-radius, 999px);
+  border-radius: var(--chip-radius, var(--radius-pill));
   border: 1px solid var(--line-strong);
   background: var(--surface);
   color: var(--ink-soft);
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+  transition: background var(--duration-fast) ease, color var(--duration-fast) ease, border-color var(--duration-fast) ease, transform var(--duration-fast) ease;
 }
 
 .chip[hidden] { display: none; }
@@ -422,7 +422,7 @@ h1, h2, h3, .display {
     flex: 1 1 160px;
     min-width: 112px;
     max-width: none;
-    transition: flex-grow 0.25s ease, flex-basis 0.25s ease;
+    transition: flex-grow var(--duration-slow) ease, flex-basis var(--duration-slow) ease;
   }
 
   /* while typing, the filter takes all the room the compact Chapters button leaves */
@@ -568,13 +568,13 @@ h1, h2, h3, .display {
   align-items: center;
   gap: 6px;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: var(--text-2xs);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--chapter-ink);
   background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
   padding: 4px 10px;
-  border-radius: var(--chip-radius, 999px);
+  border-radius: var(--chip-radius, var(--radius-pill));
 }
 
 .chapter-blurb {
@@ -583,7 +583,7 @@ h1, h2, h3, .display {
   border-bottom: 1px solid var(--line);
   max-width: 68ch;
   color: var(--ink-soft);
-  font-size: 0.96rem;
+  font-size: var(--text-base);
 }
 
 /* ---------- Cards ---------- */
@@ -598,14 +598,14 @@ h1, h2, h3, .display {
 .card {
   background: var(--card-bg, var(--surface));
   border: 1px solid var(--line);
-  border-radius: var(--card-radius, 12px);
+  border-radius: var(--card-radius, var(--radius-md));
   padding: 15px 17px 17px;
   display: flex;
   flex-direction: column;
   gap: 6px;
   position: relative;
   box-shadow: var(--card-shadow, none);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  transition: transform var(--duration-fast) ease, box-shadow var(--duration-fast) ease, border-color var(--duration-fast) ease;
 }
 
 .card::before { content: var(--card-accent-content, none); }
@@ -617,7 +617,7 @@ h1, h2, h3, .display {
 
 .card-idx {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: var(--text-2xs);
   color: var(--chapter-ink);
   font-weight: 700;
   display: inline-flex;
@@ -645,20 +645,20 @@ h1, h2, h3, .display {
 .card-badge {
   white-space: nowrap;
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: var(--text-2xs);
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--chapter-ink);
   background: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
   padding: 2px 8px;
-  border-radius: var(--chip-radius, 999px);
+  border-radius: var(--chip-radius, var(--radius-pill));
 }
 
 .card-title {
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 1.02rem;
+  font-size: var(--text-base);
   line-height: 1.25;
   color: var(--ink);
   margin: 2px 0 0;
@@ -666,11 +666,11 @@ h1, h2, h3, .display {
 
 .card-meta {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   color: var(--ink-faint);
 }
 
-.card-blurb { margin: 4px 0 0; font-size: 0.89rem; color: var(--ink-soft); line-height: 1.48; }
+.card-blurb { margin: 4px 0 0; font-size: var(--text-sm); color: var(--ink-soft); line-height: 1.48; }
 
 .card.hidden, .chapter.hidden { display: none; }
 
@@ -703,11 +703,11 @@ h1, h2, h3, .display {
   padding: 10px 16px;
   border: 1px solid var(--line);
   border-left: 4px solid var(--c);
-  border-radius: var(--card-radius, 12px);
+  border-radius: var(--card-radius, var(--radius-md));
   background: var(--card-bg, var(--surface));
   color: var(--ink);
   text-decoration: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  transition: transform var(--duration-fast) ease, box-shadow var(--duration-fast) ease, border-color var(--duration-fast) ease;
 }
 
 .pager-next {
@@ -725,7 +725,7 @@ h1, h2, h3, .display {
 
 .pager-dir {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: var(--text-2xs);
   letter-spacing: 0.04em;
   color: var(--ink-faint);
 }
@@ -743,14 +743,14 @@ h1, h2, h3, .display {
 .pager-name {
   font-family: var(--font-display);
   font-weight: var(--font-display-weight, 700);
-  font-size: 1.05rem;
+  font-size: var(--text-base);
   line-height: 1.25;
   overflow-wrap: anywhere;
 }
 
 .pager-years {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: var(--text-2xs);
   color: var(--ink-faint);
 }
 
@@ -758,8 +758,8 @@ h1, h2, h3, .display {
   .collection-pager { gap: 8px; margin-top: 24px; }
   .pager-link { padding: 8px 10px; }
   .pager-dir-long, .pager-years { display: none; }
-  .pager-dir { font-size: 0.68rem; }
-  .pager-name { font-size: 0.92rem; }
+  .pager-dir { font-size: var(--text-2xs); }
+  .pager-name { font-size: var(--text-sm); }
 }
 
 /* ---------- Footer ---------- */
@@ -770,7 +770,7 @@ footer {
   border-top: 1px solid var(--line);
 }
 
-footer p { max-width: 72ch; color: var(--ink-faint); font-size: 0.86rem; margin: 0 0 10px; }
+footer p { max-width: 72ch; color: var(--ink-faint); font-size: var(--text-sm); margin: 0 0 10px; }
 footer a { color: var(--accent-text, var(--accent)); text-decoration: underline; text-underline-offset: 2px; }
 
 .footer-cols {
@@ -781,13 +781,14 @@ footer a { color: var(--accent-text, var(--accent)); text-decoration: underline;
 }
 
 .footer-cols h3 {
-  font-size: 1.2rem;
+  font-size: var(--text-md);
+  line-height: 1.3;
   color: var(--ink-soft);
   margin: 0 0 10px;
 }
 
 .footer-cols ul { margin: 0 0 22px; padding-left: 1.1rem; }
-.footer-cols li { margin-bottom: 6px; color: var(--ink-faint); font-size: 0.86rem; }
+.footer-cols li { margin-bottom: 6px; color: var(--ink-faint); font-size: var(--text-sm); }
 .footer-cols p { margin: 0 0 22px; }
 
 /* The fact-check note and "Report a mistake" button, below the sources.
@@ -798,7 +799,7 @@ footer a { color: var(--accent-text, var(--accent)); text-decoration: underline;
   align-items: center;
   gap: 14px 24px;
   padding: 16px 20px;
-  border-radius: var(--card-radius, 12px);
+  border-radius: var(--card-radius, var(--radius-md));
   background: var(--surface-2, var(--surface));
   border: 1px solid var(--line);
 }
@@ -808,7 +809,7 @@ footer .footer-report p {
   max-width: none; /* lifts the general footer cap, so the button sits at the far right */
   margin: 0;
   color: var(--ink-soft);
-  font-size: 0.9rem;
+  font-size: var(--text-sm);
 }
 
 footer .report-btn {
@@ -821,7 +822,7 @@ footer .report-btn {
   background: var(--accent-text, var(--accent));
   color: var(--accent-ink);
   font-family: var(--font-body);
-  font-size: 0.88rem;
+  font-size: var(--text-sm);
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;

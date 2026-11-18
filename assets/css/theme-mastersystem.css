@@ -22,8 +22,8 @@
 
   --hue: 355;
 
-  --font-body: 'Archivo', system-ui, sans-serif;
-  --font-display: 'Bungee', 'Archivo', system-ui, sans-serif;
+  --font-body: 'Atkinson Hyperlegible Next', system-ui, sans-serif;
+  --font-display: 'Bungee', 'Atkinson Hyperlegible Next', system-ui, sans-serif;
   --font-display-weight: 400;
   --font-mono: 'Space Mono', ui-monospace, monospace;
 

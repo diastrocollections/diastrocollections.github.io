@@ -3,99 +3,112 @@
     "hue": 280,
     "tag": "Pokémon",
     "title": "Pokémon & Monster-Collecting",
-    "blurb": "The genre that defined the Game Boy Color commercially — Pokémon’s second generation, plus the wave of monster-collecting imitators it inspired.",
+    "blurb": "Pokémon arrived in Europe late, but it defined the Game Boy Color here. <cite>Pokémon Gold</cite> surely defined my life at 11 years old! This chapter collects the second generation, its spin-offs and the monster-collecting games that followed it.",
     "games": [
       {
-        "title": "Pokémon Gold and Silver",
-        "year": "1999",
-        "developer": "Game Freak",
-        "blurb": "The sequel that added a whole new region, a day/night cycle, and breeding, still argued by many longtime fans to be the series’ peak."
-      },
-      {
-        "title": "Pokémon Crystal",
+        "title": "Dragon Warrior Monsters",
         "year": "2000",
-        "developer": "Game Freak",
-        "blurb": "Adds an animated player sprite and a Suicune-chasing storyline to Gold and Silver’s Johto, the definitive way to play the generation."
-      },
-      {
-        "title": "Pokémon Trading Card Game",
-        "year": "1998",
-        "developer": "Hudson Soft & Creatures",
-        "blurb": "An entire card game engine translated faithfully into software, complete with AI duelists modeled after in-game gym leaders."
+        "developer": "Tose",
+        "badge": "Dual Mode",
+        "blurb": "Enix’s monster-breeding RPG was known in Japan and non-English-speaking European countries as <cite>Dragon Quest Monsters</cite>. Eidos brought it to Europe in January 2000, which made it the first Dragon Quest game ever released here. It has 215 monsters, and stars Terry and Milly from <cite>Dragon Quest VI</cite> as children."
       },
       {
         "title": "Pokémon Pinball",
-        "year": "1999",
-        "developer": "Jupiter Corp. / HAL Laboratory",
-        "blurb": "Built on Kirby’s Pinball Land’s engine, with a built-in Rumble Pak and all 151 original Pokémon to catch mid-flipper-run. Europe’s release lagged more than a year behind North America’s — the widest gap of any Pokémon title on this list."
+        "year": "2000",
+        "developer": "Jupiter / HAL Laboratory",
+        "badge": "Dual Mode",
+        "blurb": "This one includes two tables, red and blue, and 151 Pokémon to catch by hitting the right targets. The cartridge has its own rumble motor, powered by a separate AAA battery, which made it a bit top-heavy! Europe got the game in October 2000, more than a year after America."
+      },
+      {
+        "title": "Pokémon Trading Card Game",
+        "year": "2000",
+        "developer": "Hudson Soft / Creatures",
+        "badge": "Dual Mode",
+        "blurb": "The card game on a cartridge, known in Japan as <cite>Pokémon Card GB</cite>. It has 226 cards, some of which never existed in the real card game. Trading over infrared unlocks extra cards through “Card Pop!”. Europe got it in December 2000, two years after Japan."
+      },
+      {
+        "title": "Pokémon Gold and Silver",
+        "year": "2001",
+        "developer": "Game Freak",
+        "badge": "Dual Mode",
+        "blurb": "Likely my most played Game Boy Color game! The second generation, with a new region called Johto, a day and night cycle, and breeding. Together they sold over 23 million copies, more than any other Game Boy Color game. Europe got them on 6 April 2001, almost a year and a half after Japan."
       },
       {
         "title": "Pokémon Puzzle Challenge",
-        "year": "2000",
-        "developer": "Intelligent Systems",
-        "blurb": "A Panel de Pon-engine puzzler reskinned with Pokémon, sharper and faster than its N64 cousin."
-      },
-      {
-        "title": "Dragon Warrior Monsters",
-        "year": "1998",
-        "developer": "Tose",
-        "blurb": "Enix’s answer to Pokémon, breeding and battling monsters years before “monster tamer” became its own crowded genre."
-      },
-      {
-        "title": "Dragon Warrior Monsters 2",
         "year": "2001",
-        "developer": "Tose",
-        "blurb": "Splits into two versions like its inspiration, with a deeper breeding system and a much larger monster roster."
+        "developer": "Intelligent Systems",
+        "blurb": "Known in Japan as <cite>Pokémon de Panepon</cite>, it’s really just a <cite>Panel de Pon</cite> type game, similar to <cite>Tetris Attack</cite>. Interestingly, the N64 counterpart <cite>Pokémon Puzzle League</cite> is based on the anime, while this GBC game is based on <cite>Gold and Silver</cite>. Europe got it in June 2001."
+      },
+      {
+        "title": "Pokémon Crystal",
+        "year": "2001",
+        "developer": "Game Freak",
+        "blurb": "The definitive version of <cite>Gold and Silver</cite>, with animated sprites, a Battle Tower and (for the first time) a female playable character option. It was also the first Pokémon game that doesn’t run on the original DMG. The Japanese version could connect to mobile phones, but that feature never came to Europe."
       },
       {
         "title": "Hamtaro: Ham-Hams Unite!",
-        "year": "2002",
+        "year": "2003",
         "developer": "Pax Softnica",
-        "blurb": "The last Game Boy Color game Nintendo ever published, an anime tie-in adventure far more charming than it has any right to be."
+        "blurb": "Based on the <cite>Hamtaro</cite> anime: Hamtaro gathers his friends by learning “Ham-Chat” words. It was the last Game Boy Color game Nintendo ever published. Europe got it in January 2003. <cite>Eurogamer</cite> and <cite>IGN</cite> said it works for adults as well as children, and I agree!"
       },
       {
-        "title": "Robopon: Sun Version",
-        "year": "2000",
-        "developer": "Hudson Soft",
-        "blurb": "A robot-collecting RPG with a battle-and-trade hook nearly identical to Pokémon’s, split across Sun and Star versions."
+        "title": "Yu-Gi-Oh! Dark Duel Stories",
+        "year": "2003",
+        "developer": "Konami",
+        "blurb": "A card-battle game based on the <cite>Yu-Gi-Oh!</cite> anime. In Japan it was called <cite>Duel Monsters III</cite>. Europe got it in March 2003, a year after America. The Japanese game called <cite>Dark Duel Stories</cite> was actually a different game that never left Japan."
       }
     ]
   },
   {
     "hue": 309,
-    "tag": "Zelda",
-    "title": "Zelda & Nintendo Action-Adventure",
-    "blurb": "Nintendo’s first color Zelda outing anchors a small but essential chapter of first-party handheld adventure design.",
+    "tag": "Nintendo",
+    "title": "Mario, Zelda & Wario",
+    "blurb": "Nintendo’s own games on the Game Boy Color: three Zelda adventures, a Mario classic in colour, Wario’s strangest platformer and two Game & Watch collections.",
     "games": [
       {
-        "title": "The Legend of Zelda: Oracle of Seasons",
-        "year": "2001",
-        "developer": "Flagship",
-        "blurb": "A dungeon-focused Zelda built around season-shifting puzzles, designed to be played as a linked pair with Oracle of Ages."
+        "title": "Game & Watch Gallery 2",
+        "year": "1998",
+        "developer": "Tose",
+        "badge": "Dual Mode",
+        "blurb": "Six Game & Watch games, each in a classic version and a modern version starring Mario and friends. In Japan it was <cite>Game Boy Gallery 2</cite>, a 1997 Game Boy game. Europe got the colour version on 3 December 1998, the same day as <cite>Tetris DX</cite>."
+      },
+      {
+        "title": "Game & Watch Gallery 3",
+        "year": "2000",
+        "developer": "Tose",
+        "badge": "Dual Mode",
+        "blurb": "Five more Game & Watch games in classic and modern versions, plus six classics to unlock. In Japan it was <cite>Game Boy Gallery 3</cite>, and in Australia <cite>Game Boy Gallery 4</cite>. Europe got it in March 2000."
+      },
+      {
+        "title": "The Legend of Zelda: Link’s Awakening DX",
+        "year": "1999",
+        "developer": "Nintendo EAD",
+        "badge": "Dual Mode",
+        "blurb": "The 1993 Game Boy adventure in colour, with a new Colour Dungeon full of colour-based puzzles that only opens on a Game Boy Color. A photo album lets you print pictures as stickers on the Game Boy Printer. Europe got it in February 1999."
       },
       {
         "title": "The Legend of Zelda: Oracle of Ages",
         "year": "2001",
         "developer": "Flagship",
-        "blurb": "The time-travel half of the linked Oracle duology, leaning harder into puzzle logic than combat."
+        "blurb": "One half of a linked pair, made by Capcom’s Flagship studio. <cite>Ages</cite> is about travelling through time and leans towards puzzles. A password from one game carries over into the other, and finishing both unlocks the real ending. Europe got both games on 4 October 2001."
+      },
+      {
+        "title": "The Legend of Zelda: Oracle of Seasons",
+        "year": "2001",
+        "developer": "Flagship",
+        "blurb": "The other half of the pair, built around changing the seasons, and more focused on combat. The two <cite>Oracle</cite> games sold 3.99 million copies together."
+      },
+      {
+        "title": "Super Mario Bros. Deluxe",
+        "year": "1999",
+        "developer": "Nintendo R&D2",
+        "blurb": "The 1985 NES game on a handheld, with new challenge and race modes. It also hides <cite>The Lost Levels</cite>, the Japanese sequel, as an unlockable extra. It stayed in the sales charts for two years. Europe got it in June 1999."
       },
       {
         "title": "Wario Land 3",
         "year": "2000",
         "developer": "Nintendo R&D1",
-        "blurb": "A structurally strange Wario game with no game-over state, where treasure and time-of-day mechanics reshape levels you’ve already cleared."
-      },
-      {
-        "title": "Kirby Tilt ’n’ Tumble",
-        "year": "2001",
-        "developer": "HAL Laboratory / Nintendo R&D2",
-        "blurb": "A cartridge with a built-in tilt sensor, years before motion controls were a mainstream pitch."
-      },
-      {
-        "title": "Crystalis",
-        "year": "2000",
-        "developer": "Nintendo Software Technology",
-        "blurb": "A color remake of the beloved 1990 NES action-RPG, brighter and more legible than the original ever could be."
+        "blurb": "Wario is trapped inside a music box and cannot die: enemies only change his shape or his abilities. Day and night change the levels, and there are 100 treasures to find. Europe got it on 13 April 2000, more than six weeks before America."
       }
     ]
   },
@@ -103,595 +116,613 @@
     "hue": 338,
     "tag": "Platformer",
     "title": "Platformers",
-    "blurb": "From Rare’s prolific Nintendo-published run to WayForward’s earliest work, the GBC’s platforming chapter is stacked with talent that would define handheld games for a decade after.",
+    "blurb": "Platformers from Rare, Capcom, Hudson Soft and Ubi Soft, including two Rayman games and a <cite>Donkey Kong Country</cite> that Europe got before anyone else.",
     "games": [
       {
-        "title": "Shantae",
-        "year": "2002",
-        "developer": "WayForward Technologies",
-        "blurb": "Released so late in the system’s life almost nobody saw it at the time, now considered one of the best-looking games ever squeezed onto the hardware."
+        "title": "Conker’s Pocket Tales",
+        "year": "1999",
+        "developer": "Rare",
+        "badge": "Dual Mode",
+        "blurb": "Conker the Squirrel’s first game, two years before the N64 game made him famous. He searches for his stolen birthday presents and his kidnapped girlfriend, Berri. The cartridge also runs on the original Game Boy and the Super Game Boy. Europe got it in July 1999."
       },
       {
-        "title": "Super Mario Bros. Deluxe",
+        "title": "Pocket Bomberman",
         "year": "1999",
-        "developer": "Nintendo",
-        "blurb": "The NES original plus Lost Levels, save states, and new challenge modes, built specifically to show off what color added to a classic."
+        "developer": "Hudson Soft",
+        "badge": "Dual Mode",
+        "blurb": "A Bomberman platformer instead of a maze game, with a Jump Mode where Bomberman bounces through the levels. It first came out in Japan in 1997 as a monochrome Game Boy game. The colour version reached Europe in 1999."
       },
       {
         "title": "Donkey Kong Country",
         "year": "2000",
         "developer": "Rare",
-        "blurb": "Rare’s SNES benchmark compressed into a handheld cart, its pre-rendered look holding up far better than it should on this screen."
+        "blurb": "Rare’s SNES game on the Game Boy Color. Rare built it alongside the GBC <cite>Perfect Dark</cite>, and reused graphics and sound from the <cite>Donkey Kong Land</cite> games. Europe got it on 16 November 2000, before America and Japan."
       },
       {
         "title": "Rayman",
         "year": "2000",
-        "developer": "Ubisoft",
-        "blurb": "The limbless platforming icon’s only Game Boy Color outing, built from the ground up rather than ported down."
+        "developer": "Digital Eclipse",
+        "blurb": "Ubi Soft’s limbless hero on the Game Boy Color, converted by Digital Eclipse. It uses the “Ubi Key”: Ubi Soft games could unlock bonuses in each other over the infrared port. Europe got it in July 2000."
       },
       {
-        "title": "Toki Tori",
+        "title": "Rayman 2 Forever",
         "year": "2001",
-        "developer": "Two Tribes",
-        "blurb": "A methodical puzzle-platformer about a chick collecting eggs with a toolkit of one-use gadgets, years before its celebrated Wii revival."
+        "developer": "Ubi Soft Milan",
+        "blurb": "Europe’s title for the handheld <cite>Rayman 2</cite>. America called it <cite>Rayman 2: The Great Escape</cite>, like the console game. It was made by Ubi Soft’s studio in Milan, and Europe got it on 14 December 2001, a few weeks before America."
+      },
+      {
+        "title": "Croc 2",
+        "year": "2001",
+        "developer": "Natsume",
+        "blurb": "A 2D version of the 3D <cite>Croc 2</cite> from British studio Argonaut, rebuilt for the handheld by Natsume. Europe got it in February 2001, about a week after America."
       },
       {
         "title": "Mega Man Xtreme",
         "year": "2001",
         "developer": "Capcom",
-        "blurb": "Remixes stages and bosses from the SNES X games into new handheld-sized levels."
+        "badge": "Dual Mode",
+        "blurb": "A handheld spin-off of the SNES <cite>Mega Man X</cite> series, known in Japan as <cite>Rockman X: Cyber Mission</cite>. Europe got it in August 2001."
       },
       {
         "title": "Mega Man Xtreme 2",
-        "year": "2001",
+        "year": "2002",
         "developer": "Capcom",
-        "blurb": "A sequel pulling from X4 and X5, with tighter pacing than the original Xtreme."
-      },
-      {
-        "title": "Bionic Commando: Elite Forces",
-        "year": "2000",
-        "developer": "Nintendo Software Technology",
-        "blurb": "A grapple-swinging platformer built by Nintendo’s own North American studio under license from Capcom."
-      },
-      {
-        "title": "Wendy: Every Witch Way",
-        "year": "2001",
-        "developer": "WayForward Technologies",
-        "blurb": "A gravity-flipping platformer starring a teenage witch, an early sign of the studio talent that would later make Shantae."
-      },
-      {
-        "title": "Conker’s Pocket Tales",
-        "year": "1999",
-        "developer": "Rare",
-        "blurb": "A cutesy, family-friendly prequel to the notoriously crude N64 game, unrecognizable in tone from what Conker would become."
-      },
-      {
-        "title": "Disney’s Tarzan",
-        "year": "1999",
-        "developer": "Digital Eclipse",
-        "blurb": "Digital Eclipse’s first wholly original game rather than a port, built in a famously tight three-month turnaround."
+        "blurb": "The sequel, known in Japan as <cite>Rockman X: Soul Eraser</cite>, set between <cite>Mega Man X3</cite> and <cite>X4</cite>. It sold 88,564 copies in Japan in 2001. Europe got it in February 2002."
       }
     ]
   },
   {
     "hue": 7,
-    "tag": "Sports",
-    "title": "Sports",
-    "blurb": "Nintendo’s own handheld-companion sports duo headlines a chapter of games built as their own thing, not console ports squeezed down.",
-    "games": [
-      {
-        "title": "Mario Golf",
-        "year": "1999",
-        "developer": "Camelot Software Planning",
-        "blurb": "A companion to the N64 game with its own characters and courses, not a stripped-down port."
-      },
-      {
-        "title": "Mario Tennis",
-        "year": "2001",
-        "developer": "Camelot Software Planning",
-        "blurb": "Same handheld-companion approach as Mario Golf, deep enough that its RPG-lite training mode became a fan favorite in its own right."
-      },
-      {
-        "title": "NBA 3 on 3 featuring Kobe Bryant",
-        "year": "1999",
-        "developer": "Left Field Productions",
-        "blurb": "A streetball-style three-on-three game built specifically for the handheld rather than downsized from a console original."
-      },
-      {
-        "title": "All-Star Baseball 2000",
-        "year": "1999",
-        "developer": "Realtime Associates",
-        "blurb": "A separately-built handheld entry in Acclaim’s baseball series, developed apart from its console namesake."
-      },
-      {
-        "title": "NBA Jam 2001",
-        "year": "2000",
-        "developer": "Digital Creations",
-        "blurb": "Arcade two-on-two basketball with the series’ signature exaggerated dunks, shrunk down without losing its over-the-top energy."
-      },
-      {
-        "title": "Pocket Bowling",
-        "year": "1999",
-        "developer": "Jaleco",
-        "blurb": "A GBC launch-window title that keeps ten-pin bowling’s rhythm intact despite the tiny screen."
-      }
-    ]
-  },
-  {
-    "hue": 36,
-    "tag": "Racing",
-    "title": "Racing",
-    "blurb": "Five ways to go fast, from a Disney-branded kart racer to a rally sim ported down from PC and PS1.",
-    "games": [
-      {
-        "title": "V-Rally: Edition ’99",
-        "year": "1999",
-        "developer": "Bit Managers",
-        "blurb": "A rally racer built around Infogrames’ PC/console series, released in Europe as V-Rally: Championship Edition."
-      },
-      {
-        "title": "Mickey’s Racing Adventure",
-        "year": "1999",
-        "developer": "Rare",
-        "blurb": "A kart racer starring Mickey Mouse, built by Rare during their prolific late-90s Nintendo-published handheld run."
-      },
-      {
-        "title": "Test Drive: Off-Road 3",
-        "year": "1999",
-        "developer": "Infogrames",
-        "blurb": "A handheld entry in the off-road racing series, developed in-house alongside its PC and PS1 versions. Rebranded entirely for its European release the following spring, as 4x4 World Trophy."
-      },
-      {
-        "title": "Xtreme Wheels",
-        "year": "2001",
-        "developer": "Spike Co.",
-        "blurb": "A stunt-driving racer with looping, ramp-heavy tracks built for one-more-run replay value."
-      },
-      {
-        "title": "Supercross Freestyle",
-        "year": "2000",
-        "developer": "Fernando Velez and Guillaume Dubail",
-        "blurb": "A Europe-only motocross racer that never crossed the Atlantic."
-      }
-    ]
-  },
-  {
-    "hue": 65,
     "tag": "Action",
-    "title": "Fighting & Action",
-    "blurb": "Stealth, survival horror, and one very famous case of a handheld game trading on a name that wasn’t quite its own.",
+    "title": "Action, Stealth & Horror",
+    "blurb": "Stealth, shooting and survival horror on a small screen. Several of these games were made for Europe, or reached Europe first.",
     "games": [
+      {
+        "title": "Duke Nukem",
+        "year": "1999",
+        "developer": "Torus Games",
+        "blurb": "A port of the 1993 PC game <cite>Duke Nukem II</cite>, with Duke fighting the Rigelatins across side-scrolling levels. Neo LA from the PC version became Nerola City. Europe got it in September 1999, at the same time as America."
+      },
       {
         "title": "Street Fighter Alpha: Warriors’ Dreams",
         "year": "1999",
         "developer": "Crawfish Interactive",
-        "blurb": "A single-player-only conversion of the arcade fighter, without link-cable versus but with the full roster and move sets intact."
+        "blurb": "British studio Crawfish converted Capcom’s arcade fighter, without a link-cable mode. Europe got it on 17 December 1999, three months before America. Even the Japanese release used the Western name <cite>Alpha</cite> instead of <cite>Zero</cite>."
       },
       {
-        "title": "Metal Gear: Ghost Babel",
+        "title": "Metal Gear Solid",
         "year": "2000",
         "developer": "Konami Computer Entertainment Japan",
-        "blurb": "Released in the West simply as “Metal Gear Solid” to trade on the PS1 game’s name, this is actually a wholly separate, original stealth game built for the handheld. The Japanese and European cartridges also included a bonus in-game radio broadcast that Konami quietly cut from the North American release."
+        "blurb": "Known in Japan as <cite>Metal Gear: Ghost Babel</cite>. It is not a port of the PlayStation game, but a new story built for the handheld. Konami’s European branch asked for a Game Boy Color <cite>Metal Gear Solid</cite>, and with 95.61% it is the best-rated Game Boy Color game on GameRankings. Europe got it on 1 May 2000."
       },
       {
         "title": "Perfect Dark",
         "year": "2000",
         "developer": "Rare",
-        "blurb": "A top-down action game bearing the N64 shooter’s name and characters but built as its own distinct handheld experience."
+        "blurb": "A prequel to the N64 game: Joanna Dark finishes her training at the Carrington Institute and uncovers dataDyne’s plans. Europe got it in September 2000, a few days after America."
       },
       {
-        "title": "Duke Nukem",
-        "year": "1999",
-        "developer": "Torus Games",
-        "blurb": "A side-scrolling action game starring the one-liner-spouting mercenary, trading first-person shooting for run-and-gun platforming."
-      },
-      {
-        "title": "Resident Evil Gaiden",
-        "year": "2002",
-        "developer": "M4",
-        "blurb": "An overhead survival-horror hybrid with first-person shooting segments, developed under story input from series creator Shinji Mikami. An unusual release order for the era: Europe actually got it first, months ahead of both Japan and North America."
+        "title": "Tomb Raider",
+        "year": "2000",
+        "developer": "Core Design",
+        "blurb": "Lara Croft’s first handheld game, made by British studio Core Design. It began as a prototype for a science-fiction project called “Salvage”, and is also known as <cite>Tomb Raider: The Nightmare Stone</cite>. Europe got it in June 2000."
       },
       {
         "title": "Alone in the Dark: The New Nightmare",
         "year": "2001",
         "developer": "Pocket Studios",
-        "blurb": "A from-scratch handheld build of the survival-horror series, developed separately from the console/PC version by the same publisher."
+        "blurb": "A handheld version of Infogrames’ survival-horror game, made separately by British studio Pocket Studios. Europe got it on 18 May 2001, a month before America. <cite>GamesMaster</cite> gave it 90%."
       },
       {
-        "title": "John Romero’s Daikatana",
-        "year": "2000",
-        "developer": "Will",
-        "blurb": "The infamously troubled PC shooter’s handheld spinoff plays it as a straightforward action game, and quietly outshines its console namesake’s reputation. Europe got the only proper retail release anywhere in the world; Japan’s release came a year later only through a Nintendo Power download kiosk, and North America’s version was cancelled outright."
+        "title": "Resident Evil Gaiden",
+        "year": "2001",
+        "developer": "M4",
+        "blurb": "Virgin Interactive, Capcom’s European publisher, asked British studio M4 to make it. You explore from above, and fights switch to a first-person view. Europe got it on 14 December 2001, months before Japan and America."
+      },
+      {
+        "title": "Return of the Ninja",
+        "year": "2001",
+        "developer": "Act Japan",
+        "blurb": "A stealth platformer, and a spiritual successor to Natsume’s <cite>Shadow of the Ninja</cite> on the NES. Europe got it on 30 March 2001, two months before America."
       }
     ]
   },
   {
-    "hue": 94,
-    "tag": "Puzzle",
-    "title": "Puzzle",
-    "blurb": "Falling blocks, popping bubbles, and one very literal exercise in digging straight down.",
+    "hue": 36,
+    "tag": "RPG",
+    "title": "RPGs, Farms & Fishing",
+    "blurb": "Few Japanese RPGs reached Europe on the Game Boy Color, so this chapter mixes RPGs with the farming and fishing games that did.",
     "games": [
-      {
-        "title": "Tetris DX",
-        "year": "1998",
-        "developer": "Nintendo R&D1",
-        "blurb": "The GBC launch-window Tetris, adding color-coded pieces and a genuinely useful multiplayer mode."
-      },
-      {
-        "title": "Mr. Driller",
-        "year": "2000",
-        "developer": "Namco",
-        "blurb": "Dig straight down through color-coded blocks without getting crushed, a perfect one-handed handheld translation of the arcade original."
-      },
       {
         "title": "Bomberman Quest",
         "year": "1999",
         "developer": "Hudson Soft",
-        "blurb": "An action-RPG spin on Bomberman rather than the usual multiplayer bomb-em-up, closer to a Zelda-style dungeon crawl."
+        "badge": "Dual Mode",
+        "blurb": "An action RPG in which Bomberman fights monsters and the bosses of each area. It was the last Bomberman game by composer Jun Chikuma. Europe got it in May 1999, half a year before America."
       },
       {
-        "title": "Pocket Bomberman",
-        "year": "1998",
-        "developer": "Hudson Soft",
-        "blurb": "A GBC-launch color re-release of a 1997 monochrome Bomberman puzzle-platformer built by the series’ own developer."
-      },
-      {
-        "title": "Puchi Carat",
-        "year": "1999",
-        "developer": "Taito",
-        "blurb": "An obscure falling-jewel puzzler from Taito’s deep catalog, rarely mentioned outside dedicated puzzle-genre roundups. A planned North American release was cancelled outright; Europe got it anyway, over a year later in December 2000."
-      },
-      {
-        "title": "Bust-A-Move Millennium",
-        "year": "2000",
-        "developer": "Altron",
-        "blurb": "A bubble-popping puzzler entry that adds new modes on top of the core Puzzle Bobble formula."
-      },
-      {
-        "title": "Hexcite: The Shapes of Victory",
-        "year": "1999",
-        "developer": "Landwarf",
-        "blurb": "A hexagonal tile-matching puzzler developed differently for its Japanese and North American releases."
-      }
-    ]
-  },
-  {
-    "hue": 123,
-    "tag": "Strategy",
-    "title": "Strategy & Simulation",
-    "blurb": "An unlikely run of real-time and turn-based strategy experiments, anchored by three generations of a beloved farming sim.",
-    "games": [
-      {
-        "title": "Warlocked",
-        "year": "2000",
-        "developer": "Bits Studios",
-        "blurb": "A real-time strategy game in the Warcraft mold, widely considered proof the genre could actually work on a D-pad."
-      },
-      {
-        "title": "Force 21",
-        "year": "2000",
-        "developer": "The Code Monkeys",
-        "blurb": "A modern military RTS ported down from PC, commanding armored units across a simplified but genuine strategy layer."
-      },
-      {
-        "title": "Game Boy Wars 2",
-        "year": "1998",
-        "developer": "Hudson Soft",
-        "blurb": "A Japan-only turn-based wargame in the Famicom Wars lineage, the same design DNA that would become Advance Wars."
-      },
-      {
-        "title": "Game Boy Wars 3",
-        "year": "2001",
-        "developer": "Hudson Soft",
-        "blurb": "A late Japan-only sequel refining the series’ turn-based unit combat."
-      },
-      {
-        "title": "Worms Armageddon",
-        "year": "2000",
-        "developer": "Infogrames Lyon House",
-        "blurb": "A from-scratch handheld build of the artillery-combat series, developed separately from Team17’s console and PC versions."
-      },
-      {
-        "title": "Yu-Gi-Oh! Dark Duel Stories",
-        "year": "2002",
-        "developer": "Konami",
-        "blurb": "A card-battle RPG hybrid built around the anime’s dueling rules, deep enough to satisfy players who skipped the trading cards entirely. Europe didn’t get its own release until a full year later, in 2003."
-      },
-      {
-        "title": "Heroes of Might and Magic II",
-        "year": "2000",
-        "developer": "New World Computing",
-        "blurb": "A surprisingly faithful handheld adaptation of the PC turn-based strategy classic."
-      },
-      {
-        "title": "Harvest Moon GBC",
+        "title": "Harvest Moon GB",
         "year": "1999",
         "developer": "Victor Interactive Software",
-        "blurb": "A distinct, from-scratch color entry in the farming-sim series, not a port of the earlier monochrome Harvest Moon."
+        "badge": "Dual Mode",
+        "blurb": "The first handheld Harvest Moon, released in Europe as <cite>Harvest Moon GB</cite> and in America as <cite>Harvest Moon GBC</cite>. Nintendo published it in Europe in November 1999."
       },
       {
         "title": "Harvest Moon 2 GBC",
-        "year": "2000",
-        "developer": "Victor Interactive Software",
-        "blurb": "Expands the farm-sim formula with new crops, animals, and a bigger town to build relationships in."
-      },
-      {
-        "title": "Harvest Moon 3 GBC",
         "year": "2001",
         "developer": "Victor Interactive Software",
-        "blurb": "The trilogy’s close, refining pacing and social systems built up over the two previous entries."
-      }
-    ]
-  },
-  {
-    "hue": 152,
-    "tag": "RPG",
-    "title": "Role-Playing Adventures",
-    "blurb": "Square’s absence is filled by Enix, Atlus, and Namco — a deep RPG chapter that leans heavily on Japan-only side stories that never made the trip West.",
-    "games": [
-      {
-        "title": "Dragon Warrior I & II",
-        "year": "2000",
-        "developer": "Tose",
-        "blurb": "Faithful color remakes of the two Famicom games that started the entire JRPG genre in Japan."
-      },
-      {
-        "title": "Dragon Warrior III",
-        "year": "2001",
-        "developer": "Tose",
-        "blurb": "A remake of the NES-era game many consider the series’ best pre-SNES entry, now with a party-swapping class system intact."
-      },
-      {
-        "title": "Lufia: The Legend Returns",
-        "year": "2001",
-        "developer": "Neverland",
-        "blurb": "A prequel built around randomized dungeons and a heavier strategy layer than the SNES originals it follows."
-      },
-      {
-        "title": "Harry Potter and the Sorcerer’s Stone",
-        "year": "2001",
-        "developer": "Griptonite Games",
-        "blurb": "A turn-based RPG adaptation of the first book, wandering Hogwarts and casting spells in a distinctly Final Fantasy-influenced structure. Released the same day in Europe under the book’s original title there: Harry Potter and the Philosopher’s Stone."
-      },
-      {
-        "title": "Harry Potter and the Chamber of Secrets",
-        "year": "2002",
-        "developer": "Griptonite Games",
-        "blurb": "A direct sequel expanding the first game’s spellcasting and exploration systems."
-      },
-      {
-        "title": "Legend of the River King",
-        "year": "1999",
-        "developer": "Victor Interactive Software",
-        "blurb": "A fishing RPG that plays it surprisingly straight, with real tackle strategy layered under its cute exterior. Europe waited over a year for its own release, arriving in December 2000."
-      },
-      {
-        "title": "Legend of the River King 2",
-        "year": "2001",
-        "developer": "Victor Interactive Software",
-        "blurb": "A sequel with multiple playable characters and an expanded fishing-and-story loop."
+        "badge": "Dual Mode",
+        "blurb": "Known in Japan as <cite>Bokujō Monogatari GB2</cite>. The goal is to save the farm before the land is turned into an amusement park, and you can play as a boy or a girl. Europe got it in March 2001."
       },
       {
         "title": "Azure Dreams",
         "year": "2000",
         "developer": "Konami Computer Entertainment Nagoya",
-        "blurb": "A roguelike dungeon-crawler with monster-taming and tower-building layered on top, adapted from the PS1 original."
+        "badge": "Dual Mode",
+        "blurb": "A dungeon crawler about climbing the Monster Tower with monsters you hatch yourself. Compared with the PlayStation original, it has more than twice as many monsters and an extra 100-floor dungeon, but no town building or dating. Europe got it in 2000."
       },
       {
-        "title": "Revelations: The Demon Slayer",
-        "year": "1999",
-        "developer": "Multimedia Intelligence Transfer",
-        "blurb": "A Western localization of a 1992 Japanese Megami Tensei spin-off, effectively the first color RPG Atlus brought to North America."
-      },
-      {
-        "title": "Tales of Phantasia: Narikiri Dungeon",
+        "title": "Legend of the River King GB",
         "year": "2000",
-        "developer": "Namco",
-        "blurb": "A Japan-only spin-off letting players cosplay as any recruited character, spun off from Namco’s original Tales RPG."
+        "developer": "TOSE",
+        "badge": "Dual Mode",
+        "blurb": "A fishing RPG: a boy catches fish to find the Guardian Fish that can cure his sick sister. It was the first <cite>Kawa no Nushi Tsuri</cite> game released in the West, and Europe’s title added “GB”. Europe got it in December 2000, more than a year after America."
       },
       {
-        "title": "Shin Megami Tensei: Devil Children — Black/Red/White Book",
-        "year": "2000",
-        "developer": "Multimedia Intelligence Transfer",
-        "blurb": "A Japan-only monster-fusion RPG trilogy that predates the Devil Children franchise’s later GBA and anime expansion."
-      },
-      {
-        "title": "Grandia: Parallel Trippers",
-        "year": "2000",
-        "developer": "Game Arts",
-        "blurb": "A Japan-only side story spun off from the acclaimed PS1 RPG, built as an original handheld adventure rather than a port."
-      }
-    ]
-  },
-  {
-    "hue": 181,
-    "tag": "Shooter",
-    "title": "Shooters & Arcade Classics",
-    "blurb": "Arcade history in color — three of Namco and Taito’s oldest hits, plus a shooter compilation and two late-system deep cuts.",
-    "games": [
-      {
-        "title": "R-Type DX",
-        "year": "1999",
-        "developer": "Bits Studios",
-        "blurb": "A two-in-one color compilation of R-Type and R-Type II, the definitive way to play either on original hardware."
-      },
-      {
-        "title": "Space Invaders",
-        "year": "1999",
-        "developer": "Crawfish Interactive",
-        "blurb": "A single-player-only color conversion of the arcade original, stripped of its multiplayer but faithful to the core invasion loop."
-      },
-      {
-        "title": "Frogger",
-        "year": "1998",
-        "developer": "Morning Star Multimedia",
-        "blurb": "A GBC-launch-era conversion of the arcade classic that reintroduced an entire generation to hopping across traffic."
-      },
-      {
-        "title": "Ms. Pac-Man: Special Color Edition",
-        "year": "1999",
-        "developer": "Namco",
-        "blurb": "A color-enhanced handheld port that keeps the harder, more randomized ghost AI that made the arcade sequel tougher than the original."
-      },
-      {
-        "title": "Pac-Man: Special Color Edition",
-        "year": "1999",
-        "developer": "Namco",
-        "blurb": "The arcade original in color, maze layout and ghost patterns untouched by four decades of imitators."
-      },
-      {
-        "title": "Project S-11",
+        "title": "Legend of the River King 2",
         "year": "2001",
-        "developer": "Paragon 5",
-        "blurb": "A vertical shooter with smooth scrolling and multiple weapon loadouts, released late and quietly in the system’s final year."
+        "developer": "Victor Interactive Software",
+        "badge": "Dual Mode",
+        "blurb": "Known in Japan as <cite>Kawa no Nushi Tsuri 4</cite>. Europe got it on 30 March 2001, a few weeks before America."
       },
       {
-        "title": "Rampage 2: Universal Tour",
-        "year": "1999",
-        "developer": "Digital Eclipse Software",
-        "blurb": "Play a giant monster smashing city blocks, with the series’ co-op destruction intact even at handheld scale."
+        "title": "Harry Potter and the Philosopher’s Stone",
+        "year": "2001",
+        "developer": "Griptonite Games",
+        "blurb": "A turn-based RPG, instead of the action game on other systems. Europe got it on 16 November 2001 under the book’s original British title, a day after America got <cite>Sorcerer’s Stone</cite>."
+      },
+      {
+        "title": "Harry Potter and the Chamber of Secrets",
+        "year": "2002",
+        "developer": "Griptonite Games",
+        "blurb": "Griptonite’s second Harry Potter RPG, again turn-based and again different from the console versions. Europe got it on 15 November 2002."
+      },
+      {
+        "title": "Lufia: The Legend Returns",
+        "year": "2001",
+        "developer": "Neverland",
+        "blurb": "The first handheld <cite>Lufia</cite>, with randomly generated dungeons. Ubi Soft published it in Europe in October 2001."
       }
     ]
   },
   {
-    "hue": 210,
-    "tag": "Licensed",
-    "title": "Licensed & Movie Tie-Ins",
-    "blurb": "The GBC’s shovelware reputation came from somewhere — but a handful of licensed tie-ins here are genuinely well-built, not just cash-grabs.",
+    "hue": 65,
+    "tag": "Puzzle",
+    "title": "Puzzle",
+    "blurb": "Falling blocks, popping bubbles and a few puzzle games from British and Scottish studios.",
     "games": [
       {
-        "title": "Tomb Raider",
-        "year": "2000",
-        "developer": "Core Design",
-        "blurb": "A top-down reimagining of Lara Croft’s exploration-and-puzzle formula, built to work without a 3D camera. Titled simply Tomb Raider in Europe, where North America’s box added Starring Lara Croft."
+        "title": "Tetris DX",
+        "year": "1998",
+        "developer": "Nintendo",
+        "badge": "Dual Mode",
+        "blurb": "<cite>Tetris</cite> in colour, with save files, new modes and a two-player mode over the link cable. Europe got it on 3 December 1998, as one of the first Game Boy Color games released here."
       },
       {
-        "title": "Rugrats: Totally Angelica",
+        "title": "Hexcite: The Shapes of Victory",
+        "year": "1999",
+        "developer": "Gu Inc. / Landwarf",
+        "badge": "Dual Mode",
+        "blurb": "A puzzle game about placing shapes on a hexagonal board. It was a launch game for the Game Boy Color in Japan, and Landwarf reworked it for the West. Europe got it in January 1999."
+      },
+      {
+        "title": "Bust-A-Move Millennium",
         "year": "2000",
-        "developer": "Art Co., Ltd.",
-        "blurb": "An unusually well-regarded licensed platformer that lets the show’s spoiled antagonist headline her own adventure."
+        "developer": "Dreams",
+        "blurb": "Known in Japan as <cite>Puzzle Bobble Millennium</cite>: aim, fire and pop bubbles of the same colour. Europe got it in November 2000."
+      },
+      {
+        "title": "Mr. Driller",
+        "year": "2000",
+        "developer": "Namco",
+        "blurb": "Namco’s arcade puzzle game: drill down through coloured blocks before your air runs out. Europe and America got it on the same day, 2 August 2000."
+      },
+      {
+        "title": "Puchi Carat",
+        "year": "2000",
+        "developer": "ITL",
+        "badge": "Dual Mode",
+        "blurb": "A puzzle game based on Taito’s 1997 arcade original. Europe got it in December 2000, but America never did."
+      },
+      {
+        "title": "Wetrix GB",
+        "year": "2000",
+        "developer": "Zed Two",
+        "blurb": "A water puzzle game by British studio Zed Two, run by brothers Ste and John Pickford. You raise the landscape with falling pieces to hold water. Japan got it first, and Europe followed in September 2000."
+      },
+      {
+        "title": "Denki Blocks!",
+        "year": "2001",
+        "developer": "Denki",
+        "blurb": "A puzzle game by Scottish studio Denki: slide coloured blocks around a grid to join them. <cite>Edge</cite> said it felt as if it was made in Kyoto rather than Aberdeen. Rage published it in September 2001."
+      }
+    ]
+  },
+  {
+    "hue": 94,
+    "tag": "Sports",
+    "title": "Sports & Racing",
+    "blurb": "Football, rallying, touring cars and kart racing, from studios in Britain, France, Spain and Japan.",
+    "games": [
+      {
+        "title": "International Track & Field",
+        "year": "1999",
+        "developer": "Konami",
+        "badge": "Dual Mode",
+        "blurb": "Konami’s button-mashing athletics game, known in Japan as <cite>Hyper Olympic Track & Field GB</cite>. Europe got it in November 1999, two months before America."
+      },
+      {
+        "title": "Mario Golf",
+        "year": "1999",
+        "developer": "Camelot Software Planning",
+        "blurb": "Camelot’s handheld companion to the N64 <cite>Mario Golf</cite>. Europe got it in the autumn of 1999."
+      },
+      {
+        "title": "Mickey’s Racing Adventure",
+        "year": "1999",
+        "developer": "Rare",
+        "blurb": "A kart racer by Rare, starring Mickey Mouse and friends. Over infrared, it unlocks a secret track in <cite>Mickey’s Speedway USA</cite>. Europe got it in late 1999, days after America."
+      },
+      {
+        "title": "V-Rally: Championship Edition",
+        "year": "1999",
+        "developer": "Bit Managers",
+        "blurb": "Europe’s title for <cite>V-Rally: Edition ’99</cite>, the handheld version of Infogrames’ rally series from Lyon. It was converted by Bit Managers in Barcelona. Europe and America got it in June 1999."
+      },
+      {
+        "title": "4x4 World Trophy",
+        "year": "2000",
+        "developer": "Xantera",
+        "badge": "Dual Mode",
+        "blurb": "Europe’s title for <cite>Test Drive Off-Road 3</cite>. The cartridge has a built-in rumble feature. Europe got it in April 2000, five months after America."
+      },
+      {
+        "title": "International Superstar Soccer 2000",
+        "year": "2000",
+        "developer": "Konami",
+        "blurb": "Konami’s football game, known in Japan as <cite>World Soccer GB 2000</cite>. Europe got it in September 2000, months before America."
+      },
+      {
+        "title": "Micro Machines 1 and 2: Twin Turbo",
+        "year": "2000",
+        "developer": "Virtucraft",
+        "blurb": "Codemasters’ top-down racers, both on one cartridge, converted by British studio Virtucraft. Europe and America got it in 2000."
+      },
+      {
+        "title": "Supercross Freestyle",
+        "year": "2000",
+        "developer": "Velez & Dubail",
+        "blurb": "A motocross game by French duo Fernando Velez and Guillaume Dubail, with racing, freestyle tricks and an arcade mode. It was only released in Europe. <cite>CVG</cite> put it “on the podium” for best Game Boy racer ever."
+      },
+      {
+        "title": "Xtreme Wheels",
+        "year": "2000",
+        "developer": "Spike",
+        "blurb": "A BMX racer that reviewers compared to <cite>Excitebike</cite>. Europe got it in November 2000, five months before America."
+      },
+      {
+        "title": "Colin McRae Rally",
+        "year": "2001",
+        "developer": "Spellbound Entertainment",
+        "blurb": "The first handheld <cite>Colin McRae Rally</cite>, released only in Europe, in 2001."
+      },
+      {
+        "title": "Mario Tennis",
+        "year": "2001",
+        "developer": "Camelot Software Planning",
+        "blurb": "Camelot’s companion to the N64 game, with a story mode called Mario Tour. Europe got it on 1 February 2001."
+      },
+      {
+        "title": "TOCA Touring Car Championship",
+        "year": "2001",
+        "developer": "Spellbound Entertainment",
+        "blurb": "Codemasters’ touring-car series on the Game Boy Color, made by Spellbound. Europe got it in November 2001."
+      }
+    ]
+  },
+  {
+    "hue": 123,
+    "tag": "Licensed",
+    "title": "Licensed & TV Tie-ins",
+    "blurb": "Film, TV and toy licences, several of them British or French: <cite>Chicken Run</cite>, <cite>Robot Wars</cite>, <cite>Thunderbirds</cite> and <cite>Kirikou</cite>.",
+    "games": [
+      {
+        "title": "Tarzan",
+        "year": "1999",
+        "developer": "Digital Eclipse",
+        "blurb": "The Game Boy Color version of Disney’s <cite>Tarzan</cite>, made by Digital Eclipse, a studio best known for faithful ports such as <cite>Joust</cite> and <cite>Paperboy</cite>. Europe and America got it in June 1999."
       },
       {
         "title": "Austin Powers: Oh, Behave! and Welcome to My Underground Lair!",
         "year": "2000",
         "developer": "Tarantula Studios",
-        "blurb": "A two-cartridge tie-in split between hero and villain campaigns, published in North America by an unlikely source: Rockstar Games."
+        "blurb": "Two cartridges, one for Austin Powers and one for Dr. Evil, that can connect to each other. Rockstar Games published them, and Europe got both on 3 November 2000. Two more games were planned but never released."
       },
       {
-        "title": "Dragon Ball Z: Legendary Super Warriors",
-        "year": "2002",
-        "developer": "Flight-Plan",
-        "blurb": "A one-on-one fighter with a huge roster spanning the anime’s Saiyan through Buu arcs."
+        "title": "Chicken Run",
+        "year": "2000",
+        "developer": "Blitz Games",
+        "blurb": "Based on Aardman’s British film. On the Game Boy Color it is an isometric puzzle game: Ginger lures the other chickens to the exit with corn. Europe got it in November 2000."
+      },
+      {
+        "title": "Robot Wars: Metal Mayhem",
+        "year": "2000",
+        "developer": "Tiertex Design Studios",
+        "blurb": "The first game based on the British TV show <cite>Robot Wars</cite>, released only on the Game Boy Color. It is based on the third series, with champion Chaos 2. BBC Multimedia published it on 7 December 2000."
+      },
+      {
+        "title": "Spider-Man",
+        "year": "2000",
+        "developer": "Vicarious Visions",
+        "blurb": "A Game Boy Color original by Vicarious Visions. It got a sequel that was only released on the Game Boy Color, <cite>Spider-Man 2: The Sinister Six</cite>. Europe got it in September 2000."
+      },
+      {
+        "title": "Thunderbirds",
+        "year": "2000",
+        "developer": "Pukka Games",
+        "blurb": "SCi bought the <cite>Thunderbirds</cite> licence when BBC Two brought back the 1965 series in 2000. <cite>Total Game Boy</cite> called it “a ripping adventure”. It came out in Europe only, in December 2000."
       },
       {
         "title": "Action Man: Search for Base X",
         "year": "2001",
-        "developer": "Natsume Co., Ltd.",
-        "blurb": "A toy-line tie-in action-adventure with more genuine level design than most licensed platformers of its era."
+        "developer": "Natsume",
+        "blurb": "Based on the <cite>Action Man</cite> TV series and toy line. Europe got it in March 2001, a month after America."
       },
       {
-        "title": "Matchbox: Emergency Patrol",
+        "title": "Kirikou",
         "year": "2001",
-        "developer": "Lucky Chicken Games",
-        "blurb": "A top-down rescue-vehicle action game built around the toy brand rather than a racing game, despite the name."
+        "developer": "Planet Interactive",
+        "blurb": "Based on Michel Ocelot’s French animated film <cite>Kirikou and the Sorceress</cite>. Wanadoo published it in Europe in November 2001, together with PlayStation and PC versions."
       },
       {
-        "title": "Croc 2",
+        "title": "Dragon Ball Z: Legendary Super Warriors",
+        "year": "2002",
+        "developer": "Banpresto",
+        "blurb": "A turn-based card-battle game that covers the anime from the Saiyan Saga to the Buu Saga. Europe got it in 2002."
+      }
+    ]
+  },
+  {
+    "hue": 152,
+    "tag": "Comics",
+    "title": "Comic Heroes from Europe",
+    "blurb": "Europe’s comic heroes, from Belgium, France, Switzerland and Finland. Most of these games were only released in Europe, and several were made by European studios.",
+    "games": [
+      {
+        "title": "Lucky Luke",
+        "year": "1999",
+        "developer": "Infogrames",
+        "blurb": "A colour version of the 1997 Game Boy game, based on the Belgian comic. Europe got it in May 1999, and it was one of the few European comic games that also reached America."
+      },
+      {
+        "title": "Astérix: Search for Dogmatix",
+        "year": "2000",
+        "developer": "Rebellion",
+        "blurb": "Asterix and Obelix go looking for their dog, Dogmatix. It was made by British studio Rebellion and published by Infogrames. Europe got it in May 2000, and it never came out in America."
+      },
+      {
+        "title": "Moomin’s Tale",
+        "year": "2000",
+        "developer": "Pixel",
+        "blurb": "Based on Tove Jansson’s Moomins from Finland. Sunsoft published it in Japan in June 2000, and Europe got it in December 2000."
+      },
+      {
+        "title": "Papyrus",
+        "year": "2000",
+        "developer": "Planet Interactive",
+        "blurb": "Based on Lucien De Gieter’s Belgian comic, which first ran in <cite>Spirou</cite> magazine in 1974. Ubi Soft announced it at ECTS as a Europe-only release, and it came out in February 2000."
+      },
+      {
+        "title": "The Smurfs’ Nightmare",
+        "year": "2000",
+        "developer": "Bit Managers",
+        "blurb": "Gargamel traps the Smurfs in their nightmares, and one Smurf has to rescue the others. It came in English, French, German and Spanish. Pirates later hacked it into a fake Pokémon game called <cite>Monster Go! Go! Go!</cite>. Europe got it in 2000."
+      },
+      {
+        "title": "Spirou: The Robot Invasion",
+        "year": "2000",
+        "developer": "Planet Interactive",
+        "blurb": "Known in French as <cite>Spirou : La Panique mécanique</cite>, and a follow-up to the 1996 Game Boy <cite>Spirou</cite>. German <cite>Total!</cite> gave it 1.75 on a scale where 1 is the best. Europe got it in 2000."
+      },
+      {
+        "title": "Tintin: Le Temple du Soleil",
+        "year": "2000",
+        "developer": "Bit Managers",
+        "blurb": "A colour version of the 1997 <cite>Prisoners of the Sun</cite> game, based on the albums <cite>The Seven Crystal Balls</cite> and <cite>Prisoners of the Sun</cite>. Bit Managers made it, and it came out in Europe in September 2000."
+      },
+      {
+        "title": "Titeuf",
         "year": "2001",
-        "developer": "Natsume Co., Ltd.",
-        "blurb": "A handheld reimagining of the 3D platformer’s sequel, rebuilt from the ground up for two dimensions."
+        "developer": "Planet Interactive",
+        "blurb": "A party game based on Swiss cartoonist Zep’s schoolboy, known in English as Tootuff. Infogrames released it in France in June 2001."
+      },
+      {
+        "title": "Suske en Wiske: De Tijdtemmers",
+        "year": "2002",
+        "developer": "Witan Entertainment",
+        "blurb": "Willy Vandersteen’s Flemish comic heroes, known in French as <cite>Bob et Bobette</cite>. Dutch studio Witan made it, with graphics by Engine Software and music by Jeroen Tel of Maniacs of Noise. Infogrames Benelux released it in 2002."
+      }
+    ]
+  },
+  {
+    "hue": 181,
+    "tag": "Arcade",
+    "title": "Arcade Classics & Shooters",
+    "blurb": "Arcade games from Konami, Namco, Taito, Capcom, Irem and Midway, converted for the Game Boy Color, several of them by British studios.",
+    "games": [
+      {
+        "title": "Frogger",
+        "year": "1999",
+        "developer": "Morning Star Multimedia",
+        "badge": "Dual Mode",
+        "blurb": "Konami’s 1981 arcade game: get the frogs safely across the road and the river. Majesco published it in America in December 1998, and Europe got it in 1999."
+      },
+      {
+        "title": "Pac-Man: Special Colour Edition",
+        "year": "1999",
+        "developer": "Namco",
+        "badge": "Dual Mode",
+        "blurb": "Released for Pac-Man’s 20th anniversary, with <cite>Pac-Attack</cite>, a falling-block puzzle game, on the same cartridge. Acclaim published it in Europe in August 1999, with “Colour” in the title."
+      },
+      {
+        "title": "Ms. Pac-Man: Special Colour Edition",
+        "year": "1999",
+        "developer": "Namco",
+        "badge": "Dual Mode",
+        "blurb": "The arcade sequel in colour. Acclaim published it in Europe in November 1999."
+      },
+      {
+        "title": "Rampage 2: Universal Tour",
+        "year": "1999",
+        "developer": "Digital Eclipse",
+        "blurb": "Giant monsters smash their way through cities around the world. Digital Eclipse converted it, and Europe got it in November 1999."
+      },
+      {
+        "title": "R-Type DX",
+        "year": "1999",
+        "developer": "Bits Studios",
+        "badge": "Dual Mode",
+        "blurb": "Both Game Boy <cite>R-Type</cite> games on one cartridge, in colour, made by British studio Bits. Europe got it on 20 July 1999."
+      },
+      {
+        "title": "Space Invaders",
+        "year": "1999",
+        "developer": "Crawfish Interactive",
+        "badge": "Dual Mode",
+        "blurb": "A colour version of Taito’s arcade classic, made by British studio Crawfish and published by Activision. Japan called it <cite>Space Invaders X</cite>. Europe and America got it in October 1999."
+      },
+      {
+        "title": "1942",
+        "year": "2001",
+        "developer": "Digital Eclipse",
+        "blurb": "Capcom’s 1984 arcade shooter, converted by Digital Eclipse. Europe got it in 2001, months after America."
+      },
+      {
+        "title": "Ghosts ’n Goblins",
+        "year": "2001",
+        "developer": "Digital Eclipse",
+        "badge": "Dual Mode",
+        "blurb": "Capcom’s arcade classic, based on the NES version, with passwords to skip to later levels. Europe got it in August 2001, a year and a half after America."
+      }
+    ]
+  },
+  {
+    "hue": 210,
+    "tag": "Computer",
+    "title": "Home-Computer Hits",
+    "blurb": "Europe grew up on home computers, and many of their hits came to the Game Boy Color. This chapter collects them.",
+    "games": [
+      {
+        "title": "Grand Theft Auto",
+        "year": "1999",
+        "developer": "Tarantula Studios",
+        "badge": "Dual Mode",
+        "blurb": "The first <cite>Grand Theft Auto</cite>, from Scottish studio DMA Design, on a handheld. Rockstar released it in Europe on 22 October 1999, a month before America."
+      },
+      {
+        "title": "Cannon Fodder",
+        "year": "2000",
+        "developer": "Codemasters",
+        "blurb": "Sensible Software’s war game from the Amiga, converted by Codemasters. Europe got it in November 2000, before America."
+      },
+      {
+        "title": "Carmageddon",
+        "year": "2000",
+        "developer": "Aqua Pacific",
+        "blurb": "The controversial British PC game, converted by Aqua Pacific. SCi published it in Europe in April 2000."
+      },
+      {
+        "title": "Die Original Moorhuhn Jagd",
+        "year": "2000",
+        "developer": "Nival Interactive",
+        "blurb": "The German PC shooting game, in which you shoot chickens. Ravensburger Interactive released the Game Boy Color version in 2000."
+      },
+      {
+        "title": "Worms Armageddon",
+        "year": "2000",
+        "developer": "Infogrames",
+        "blurb": "Team17’s artillery game, rebuilt for the handheld. Europe got it in 2000."
+      },
+      {
+        "title": "Commander Keen",
+        "year": "2001",
+        "developer": "David A. Palmer Productions",
+        "blurb": "A new <cite>Commander Keen</cite>, ten years after the MS-DOS episodes. The idea came from John Carmack and id Software, who approached Activision. Europe got it in June 2001."
+      },
+      {
+        "title": "Heroes of Might and Magic II",
+        "year": "2001",
+        "developer": "KnowWonder",
+        "blurb": "A handheld version of the PC strategy game. Europe got it in March 2001."
+      },
+      {
+        "title": "SWIV",
+        "year": "2001",
+        "developer": "The Conversion Company",
+        "blurb": "The Sales Curve’s vertically scrolling shooter from the Amiga and Atari ST. SCi published the Game Boy Color version in Europe in March 2001."
       }
     ]
   },
   {
     "hue": 239,
     "tag": "Curios",
-    "title": "Cult Classics & Japan-Only Curios",
-    "blurb": "The deepest cuts in the whole collection — including a near-unbroken run of games that never left Japan at all.",
+    "title": "Cult Classics & Deep Cuts",
+    "blurb": "The odd, the rare and the overlooked, including several games that were only released in Europe.",
     "games": [
       {
-        "title": "Game & Watch Gallery 2",
-        "year": "1998",
-        "developer": "Tose",
-        "blurb": "Classic Game & Watch toys reimagined with both their original look and a “modern” reskinned mode, now finally in color."
-      },
-      {
-        "title": "Game & Watch Gallery 3",
+        "title": "Space Station Silicon Valley",
         "year": "1999",
-        "developer": "Tose",
-        "blurb": "A third helping of remastered Game & Watch classics, including Donkey Kong Jr. and Mario’s Cement Factory."
+        "developer": "Tarantula Studios",
+        "badge": "Dual Mode",
+        "blurb": "A 2D version of DMA Design’s N64 game, made by Tarantula Studios. It came out in Europe in July 1999."
       },
       {
-        "title": "Quest: Brian’s Journey",
-        "year": "2000",
-        "developer": "Atelier Double",
-        "blurb": "Known in Japan as Elemental Tale, an overlooked action-RPG about a boy solving elemental puzzles across a fantasy world."
+        "title": "Stranded Kids",
+        "year": "1999",
+        "developer": "Konami",
+        "badge": "Dual Mode",
+        "blurb": "A survival game on a deserted island, known in America as <cite>Survival Kids</cite>. The series later became <cite>Lost in Blue</cite>. Europe got it in December 1999."
       },
       {
-        "title": "Bomberman Max: Blue Champion / Red Challenger",
+        "title": "Alfred’s Adventure",
         "year": "2000",
-        "developer": "Hudson Soft",
-        "blurb": "A pair of connectable Bomberman versions blending the series’ puzzle-action with light RPG progression — titled Hero of Light and Warrior of Darkness in Japan, entirely different names again from their North American release."
+        "developer": "Möbius Entertainment",
+        "blurb": "A remake of the Game Boy <cite>Alfred Chicken</cite>, made by Möbius Entertainment and released only in Europe. SCi published it in 2000."
+      },
+      {
+        "title": "Hype: The Time Quest",
+        "year": "2000",
+        "developer": "Planet Interactive",
+        "blurb": "Based on Playmobil’s knights and castles. Ubi Soft released it in Europe in September 2000, while America waited more than a year."
+      },
+      {
+        "title": "John Romero’s Daikatana",
+        "year": "2000",
+        "developer": "Will",
+        "blurb": "Not a shooter like the PC game, but a top-down action adventure. Kemco cancelled the American release, and Japan only got it as a download. Europe got it on cartridge in September 2000."
       },
       {
         "title": "Konami GB Collection Vol. 4",
         "year": "2000",
-        "developer": "Tose",
-        "blurb": "A Japan-and-Europe-only compilation cartridge that finally brought Game Boy Color support to a set of Konami’s earlier monochrome classics — never released in North America. The European cut also quietly reshuffled the Japanese lineup and swapped one Japan-specific mascot on the menu for the more internationally familiar Penta from Antarctic Adventure."
+        "developer": "Konami",
+        "badge": "Dual Mode",
+        "blurb": "Four older Konami Game Boy games on one cartridge, in colour. Japan had monochrome versions in 1997 and 1998, but the colour versions of all four volumes were only released in Europe. IGN gave it eight out of ten."
       },
       {
-        "title": "Survival Kids",
-        "year": "1999",
-        "developer": "Konami Computer Entertainment Sapporo",
-        "blurb": "A desert-island survival game about foraging, crafting, and staying alive with almost no combat at all. Released in Europe several months later under a different name: Stranded Kids."
-      },
-      {
-        "title": "Magical Chase GB",
-        "year": "2000",
-        "developer": "Microcabin",
-        "blurb": "A Japan-only port of a beloved 1991 TurboGrafx-16 shooter, a genuine deep-cut for import shoot-em-up collectors."
-      },
-      {
-        "title": "Monster Rancher Explorer",
-        "year": "2000",
-        "developer": "Graphic Research",
-        "blurb": "An action-puzzle spin-off of Tecmo’s monster-raising series, built more like a puzzle-platformer than its console cousins."
-      },
-      {
-        "title": "Return of the Ninja",
-        "year": "2001",
-        "developer": "Act Japan",
-        "blurb": "A side-scrolling ninja action game with a heavier emphasis on stealth than most genre peers of its era."
-      },
-      {
-        "title": "Koto Battle: Tengai no Moribito",
-        "year": "2001",
-        "developer": "AlphaDream",
-        "blurb": "A Japan-only tactical RPG from the developer who would go on to make Mario & Luigi: Superstar Saga."
-      },
-      {
-        "title": "Kettō Transformers Beast Wars: Beast Senshi Saikyō Kettei-sen",
-        "year": "1999",
-        "developer": "Gaibrain",
-        "blurb": "A Japan-only Transformers fighting game tied to the Beast Wars toy and cartoon line."
-      },
-      {
-        "title": "From TV Animation One Piece: Maboroshi no Grand Line Boukenhen!",
+        "title": "Toki Tori",
         "year": "2002",
-        "developer": "Alpha Unit",
-        "blurb": "A Japan-only One Piece adventure game from early in the anime’s handheld-game history."
-      },
-      {
-        "title": "Daiku no Gen-san: Kachikachi no Tonkachi ga Kachi",
-        "year": "2000",
-        "developer": "Biox",
-        "blurb": "A Japan-only spin-off of Irem’s carpenter-hero Hammerin’ Harry series, built as an action-puzzle game."
-      },
-      {
-        "title": "Meitantei Conan: Karakuri Jiin Satsujin Jiken",
-        "year": "2000",
-        "developer": "Alpha Unit",
-        "blurb": "A Japan-only Detective Conan mystery-adventure, investigating a murder in a trap-filled temple."
+        "developer": "Two Tribes",
+        "blurb": "A puzzle platformer by Dutch studio Two Tribes, published by Capcom: a chick collects eggs with a limited set of tools. Europe got it in March 2002, half a year after America."
       }
     ]
   }

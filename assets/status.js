@@ -1,5 +1,5 @@
 /*
- * Diastro Gaming Collections — "Hand-written" / "Draft in progress" status.
+ * Diastro Gaming Collections — "Hand-written" / "In progress" status.
  *
  * Shared by the hub (tile pills) and every collection page (eyebrow).
  * Load before hub.js / collection.js, together with assets/css/status.css.
@@ -28,7 +28,7 @@
     var variant = opts.variant || 'pill';
     var base = opts.base || '';
     var key = handwritten ? 'handwritten' : 'draft';
-    var label = handwritten ? 'Hand-written' : 'Draft in progress';
+    var label = handwritten ? 'Hand-written' : 'In progress';
     var id = 'status-pop-' + (++uid);
 
     return '<div class="status status--' + variant + '">' +
@@ -37,7 +37,7 @@
       '</button>' +
       '<div class="status-pop" id="' + id + '" popover="manual">' +
       '<p class="status-def' + (handwritten ? '' : ' is-current') + '">' +
-      '<strong>Draft in progress:</strong> This Collection is an AI-assisted draft and the ' +
+      '<strong>In progress:</strong> This Collection is an AI-assisted draft and the ' +
       'hand-written revision is currently in progress.</p>' +
       '<p class="status-def' + (handwritten ? ' is-current' : '') + '">' +
       '<strong>Hand-written:</strong> This Collection is hand-written by Jesper and does not contain any ' +

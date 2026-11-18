@@ -1,6 +1,6 @@
 /*
  * Diastro Gaming Collections — hub page renderer.
- * Fetches data/platforms.json and builds the tile grid + hero stats,
+ * Fetches data/platforms.json and builds the tile grid + the hero's line of totals,
  * plus the shelf's "Arrange" control (timeline, or grouped by maker/type/status).
  * To add a new platform later: append one entry to data/platforms.json
  * and it appears here automatically — no HTML/JS changes needed.
@@ -10,7 +10,6 @@
   var arrangeEl = document.getElementById('arrange');
   var arrangeStatusEl = document.getElementById('arrangeStatus');
   var heroStatsEl = document.getElementById('heroStats');
-  var rulerEl = document.getElementById('eraRuler');
 
   // Ways to arrange the shelf. Each tile list is always in launch order; a mode
   // with a `group` function splits it into headed groups, ordered by `order`
@@ -25,8 +24,8 @@
     },
     status: {
       label: 'Shelf grouped by status',
-      group: function (p) { return p.handwritten ? 'Hand-written' : 'Draft in progress'; },
-      order: ['Hand-written', 'Draft in progress']
+      group: function (p) { return p.handwritten ? 'Hand-written' : 'In progress'; },
+      order: ['Hand-written', 'In progress']
     }
   };
 
@@ -50,85 +49,17 @@
     var totalChapters = PLATFORMS.reduce(function (sum, p) { return sum + p.chapters; }, 0);
     var earliestStart = Math.min.apply(null, PLATFORMS.map(function (p) { return p.start; }));
     var latestEnd = Math.max.apply(null, PLATFORMS.map(function (p) { return p.end; }));
-    var span = (latestEnd - earliestStart) || 1;
 
-    var stats = [
-      { num: String(PLATFORMS.length), label: "platforms catalogued" },
-      { num: String(totalGames), label: "games across the shelf" },
-      { num: String(totalChapters), label: "genre chapters" },
-      { num: earliestStart + "–" + latestEnd, label: "hardware span" }
-    ];
-
+    // The totals, under the tagline like the edition line on a title page.
+    // Only numbers go into the markup, so innerHTML is safe here.
     if (heroStatsEl) {
-      stats.forEach(function (s) {
-        var el = document.createElement('div');
-        el.className = 'stat';
-        el.innerHTML = '<span class="num mono">' + s.num + '</span><span class="label">' + s.label + '</span>';
-        heroStatsEl.appendChild(el);
-      });
-    }
-
-    if (rulerEl) {
-      // For screen readers the ruler is a named group of links, one per platform;
-      // the line, ticks and year labels are drawing only.
-      rulerEl.setAttribute('role', 'group');
-      rulerEl.setAttribute('aria-label', 'Platform timeline, ' + earliestStart + ' to ' + latestEnd);
-
-      var line = document.createElement('div');
-      line.className = 'er-line';
-      line.setAttribute('aria-hidden', 'true');
-      rulerEl.appendChild(line);
-
-      var tickStart = Math.ceil(earliestStart / 5) * 5;
-      for (var y = tickStart; y <= latestEnd; y += 5) {
-        var pct = ((y - earliestStart) / span) * 100;
-        var tick = document.createElement('i');
-        tick.className = 'er-tick';
-        tick.setAttribute('aria-hidden', 'true');
-        tick.style.left = pct + '%';
-        rulerEl.appendChild(tick);
-        var label = document.createElement('span');
-        label.className = 'er-tick-label mono';
-        label.setAttribute('aria-hidden', 'true');
-        label.style.left = pct + '%';
-        label.textContent = y;
-        rulerEl.appendChild(label);
-      }
-
-      var rulerW = rulerEl.clientWidth || 1080;
-
-      // Platforms that launched the same year land on the exact same x position; without
-      // this, only the last dot in the list would be visible, hiding the others underneath it.
-      var dotGroups = {};
-      PLATFORMS.forEach(function (p) {
-        var xpx = (((p.start - earliestStart) / span) * 100 / 100) * rulerW;
-        var key = Math.round(xpx / 4);
-        (dotGroups[key] = dotGroups[key] || []).push(p);
-      });
-      var dotShift = {};
-      Object.keys(dotGroups).forEach(function (key) {
-        var group = dotGroups[key];
-        if (group.length < 2) return;
-        group.forEach(function (p, gi) {
-          dotShift[p.id] = ((gi - (group.length - 1) / 2) * 18).toFixed(1);
-        });
-      });
-
-      PLATFORMS.forEach(function (p, i) {
-        var pct = ((p.start - earliestStart) / span) * 100;
-        var m = document.createElement('a');
-        m.className = 'er-marker';
-        m.href = p.url;
-        m.style.left = pct + '%';
-        m.style.setProperty('--c', p.accent);
-        m.style.animationDelay = (i * 0.04) + 's';
-        m.title = p.name + ' · ' + p.years;
-        m.setAttribute('aria-label', p.name + ', ' + p.years);
-        m.innerHTML =
-          '<span class="er-label mono" aria-hidden="true">' + p.name + '</span>' +
-          '<span class="er-dot" style="--dot-shift:' + (dotShift[p.id] || 0) + 'px"></span>';
-        rulerEl.appendChild(m);
-      });
+      // Each total is one span, so a narrow screen breaks the line between totals.
+      heroStatsEl.innerHTML = [
+        '<b>' + PLATFORMS.length + '</b> platforms',
+        '<b>' + totalGames.toLocaleString('en-GB') + '</b> games',
+        '<b>' + totalChapters + '</b> chapters',
+        '<b>' + earliestStart + '–' + latestEnd + '</b>'
+      ].map(function (item) { return '<span>' + item + '</span>'; }).join(' · ');
     }
 
     if (shelfEl) {
@@ -165,28 +96,28 @@
       '<a class="tile-link" href="' + p.url + '" aria-label="Enter the ' + p.name + ' collection"></a>' +
       '<div class="tile-spine"></div>' +
       '<div class="tile-body">' +
-        '<span class="tile-watermark' + (isSvg ? ' tile-watermark--svg' : '') + '" aria-hidden="true">' + (isSvg ? '' : p.icon) + '</span>' +
-        '<div class="tile-kicker mono"><span>' + p.manufacturer + '</span><span>' + p.years + '</span></div>' +
-        '<div class="tile-top">' +
-          '<h3 class="tile-title">' + p.name + '</h3>' +
+        // The card's head is centred: emblem, title, then maker and years.
+        '<div class="tile-head">' +
+          '<span class="tile-emblem' + (isSvg ? ' tile-emblem--svg' : '') + '" aria-hidden="true">' + (isSvg ? '' : p.icon) + '</span>' +
+          '<div class="tile-top">' +
+            '<h3 class="tile-title">' + p.name + '</h3>' +
+          '</div>' +
+          '<div class="tile-kicker mono"><span>' + p.manufacturer + '</span><span>' + p.years + '</span>' +
+            // EU-first is the shelf's default, so only the exceptions still get a label.
+            (p.region === 'EU-first' ? '' : '<span class="tile-region">' + p.region + '</span>') +
+          '</div>' +
         '</div>' +
+        // No games/chapters count: every Collection has 100 games in 12 chapters,
+        // and the hero already says so.
         '<p class="tagline">' + p.tagline + '</p>' +
-        '<div class="tile-meta">' +
-          '<span><strong>' + p.games + '</strong> games</span>' +
-          '<span><strong>' + p.chapters + '</strong> chapters</span>' +
-          // EU-first is the shelf's default, so only the exceptions still get a label.
-          (p.region === 'EU-first' ? '' : '<span class="tile-region mono">' + p.region + '</span>') +
-        '</div>' +
         '<div class="tile-foot">' +
-          // Hidden from screen readers: the tile's link already says "Enter the … collection".
-          '<span class="tile-cta" aria-hidden="true">Enter the collection' +
-            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
-          '</span>' +
           DGStatus.html(p.handwritten, { variant: 'pill' }) +
+          // Hidden from screen readers: the tile's link already says "Enter the … collection".
+          '<span class="tile-enter mono" aria-hidden="true"><span class="tile-enter-label">Enter</span><span class="tile-cursor"></span></span>' +
         '</div>' +
       '</div>';
     // Inlined rather than an <img> so the drawing can take the tile's accent colour.
-    if (isSvg) loadSvg(p.icon, a.querySelector('.tile-watermark'));
+    if (isSvg) loadSvg(p.icon, a.querySelector('.tile-emblem'));
     return a;
   }
 
@@ -213,8 +144,8 @@
       var group = document.createElement('section');
       group.className = 'shelf-group';
       if (groupOf) {
-        group.innerHTML = '<h3 class="shelf-group-head mono">' + name +
-          ' <span class="shelf-group-count">' + byName[name].length + '</span></h3>';
+        group.innerHTML = '<h3 class="shelf-group-head">' + name +
+          ' <span class="shelf-group-count mono">' + byName[name].length + '</span></h3>';
       }
       var grid = document.createElement('div');
       grid.className = 'tiles';

@@ -1,9 +1,108 @@
 [
   {
+    "version": "3.0.0",
+    "type": "major",
+    "date": "2026-11-18",
+    "current": true,
+    "sections": [
+      {
+        "heading": "The shelf gets a new hero: Europe on a CRT!",
+        "bullets": [
+          {
+            "text": "<strong>A globe of game developers:</strong> the hub’s hero now shows Europe drawn in CRT scanlines as seen from orbit. Each light is one of the 57 cities where the shelf’s 118 studios were based, sized by how many games on the shelf were made there. Not complete yet, as I have many Collections still to rewrite. Hover a light for the city and its studios. It shows Europe by day in light mode and at night in dark mode, following the theme toggle."
+          },
+          {
+            "text": "<strong>Cleaner title, tagline and share image:</strong> “A European Field Guide to Classic Games”, now also in the footer of every page. The old stat blocks and era ruler are replaced by a single line under the tagline. The site’s link-preview image has also been updated."
+          },
+          {
+            "text": "<strong>Redesigned shelf tiles:</strong> the controllers sit centred on top, above the title, maker and years. The per-tile “100 games / 12 chapters” counts are gone, the hero line says that once for the whole shelf anyway. And I turned “Enter the collection” into a blinking-cursor."
+          },
+          {
+            "text": "<strong>Custom emblems instead of emoji:</strong> nine Collections that still had an emoji on their tile now have their own illustration, tinted in the tile’s accent colour. I love drawing these in Pixelmator, it’s very zen! Just four left to complete the set."
+          }
+        ]
+      },
+      {
+        "heading": "The <a href=\"/gbc/\">Game Boy Color Collection</a> goes EU-first!",
+        "bullets": [
+          {
+            "text": "<strong>Region flipped:</strong> the Game Boy Color is now EU-first on the shelf."
+          },
+          {
+            "text": "<strong>Twelve reworked chapters:</strong> a new lineup with two new chapters, “Comic Heroes from Europe” and “Home-Computer Hits”. To make room, Sports and Racing now share a chapter, and the other chapters were retitled around what the European library actually looks like."
+          },
+          {
+            "text": "<strong>46 games swapped:</strong> removed the Japan-only curios and US-only releases, and in their place I added European comic heroes like <cite>Astérix</cite>, <cite>Tintin</cite>, <cite>The Smurfs</cite>, <cite>Lucky Luke</cite>, <cite>Spirou</cite> and <cite>Titeuf</cite>, plus European-made hits like <cite>Cannon Fodder</cite>, <cite>Carmageddon</cite>, <cite>Colin McRae Rally</cite>, <cite>SWIV</cite>, <cite>Space Station Silicon Valley</cite> and the <cite>Moorhuhn Jagd</cite>."
+          },
+          {
+            "text": "<strong>European titles and release years throughout:</strong> <cite>Harry Potter and the Philosopher’s Stone</cite>, <cite>Pac-Man: Special Colour Edition</cite>, and years now match Europe: <cite>Pokémon Gold and Silver</cite> is 2001 here, not 1999, and the <cite>Pokémon Trading Card Game</cite> reached Europe in 2000."
+          },
+          {
+            "text": "<strong>New “Dual Mode” badges:</strong> games that get their own colours, border or features on a Game Boy Color now carry a badge, just like the “Super Game Boy” badges on the <a href=\"/gameboy/\">Game Boy Collection</a>."
+          },
+          {
+            "text": "<strong>A fresh look:</strong> “Color” in the Collection’s title is spelled in the five launch-shell colours, the hero now says “European release years”, and the first 10% of the game stories are now hand-written. Working on the rest!"
+          }
+        ]
+      },
+      {
+        "heading": "New site typefaces: Atkinson Hyperlegible",
+        "bullets": [
+          {
+            "text": "<strong>Body and mono text updated</strong>, replacing Archivo and IBM Plex. All site text, every page, the top bar and the footer included, now uses <strong>Atkinson Hyperlegible Next</strong> for body text and <strong>Atkinson Hyperlegible Mono</strong> for numbers, labels and code. This family of typefaces is one of my favourites, and they are designed for maximum legibility, which fits my accessibility goals for this project."
+          }
+        ]
+      },
+      {
+        "heading": "Under the hood: design tokens and contrast",
+        "bullets": [
+          {
+            "text": "<strong>Tokenized CSS:</strong> a new <code>tokens.css</code> now loads first on every page, holding the values the whole site shares — site fonts (<code>--site-font-*</code>), text sizes (<code>--text-*</code>), corner radii (<code>--radius-*</code>) and transition speeds (<code>--duration-*</code>). The shared stylesheets use these tokens, which makes the styling more consistent and much easier to maintain. Collection themes keep their own values, because those are part of each platform’s character."
+          },
+          {
+            "text": "<strong>WCAG contrast pass:</strong> I updated the colour schemes of several Collections so more of the site meets WCAG accessibility requirements in both light and dark mode."
+          },
+          {
+            "text": "Fixed a couple of minor bugs in the visual flourishes, and marked purely decorative elements (like the Game Boy Color hero’s bubbles) as hidden from screen readers."
+          }
+        ]
+      },
+      {
+        "heading": "How It’s Made and Version History refresh",
+        "bullets": [
+          {
+            "text": "<strong>Version history:</strong> the hero now matches the hub, with a one-line totals strip, a “Current” badge on the newest entry, and a timeline where each release is a little scanline bar whose height shows how much changed in it."
+          },
+          {
+            "text": "<strong>How it’s made:</strong> the hero matches the new style too, with my hand-made Diastro Gaming stamp. The project’s promises are now links in the hero itself, replacing the “The short version” grid."
+          },
+          {
+            "text": "<strong>“Draft in progress” is now “In progress”:</strong> the badge was renamed everywhere; on the shelf tiles, in the popovers and on the <a href=\"/how-its-made/\">How it’s made</a> page."
+          },
+          {
+            "text": "<strong>Pixel light/dark mode toggle:</strong> I replaced the boring ◐ icon in the top bar by two pixel-art push keys (a sun and a moon) on every page."
+          }
+        ]
+      },
+      {
+        "heading": "Discord",
+        "bullets": [
+          {
+            "text": "I’m working on a Discord server. It will be open to join soon."
+          },
+          {
+            "text": "Every new release will be posted automatically to the `#collections-updates` channel: a GitHub Actions workflow checks this version history after each deploy and posts each new entry to Discord, so the message always links to the live page."
+          }
+        ]
+      }
+    ]
+  },
+
+  {
     "version": "2.4.0",
     "type": "minor",
     "date": "2026-11-02",
-    "current": true,
+    "current": false,
     "sections": [
       {
         "heading": "The <a href=\"/gameboy/\">Nintendo Game Boy Collection</a> is now 100% hand-written!",
@@ -52,7 +151,7 @@
             "text": "<strong>Controller illustrations:</strong> The Game Boy Collection now also has a custom illustration instead of an emoji on the shelf."
           },
           {
-            "text": "<strong>Fewer labels:</strong> The European perspective is now the default, so I’ve hidden the “EU-first” label on the shelf. The six Collections that aren’t Europe-first yet keep their “NA-first” label for now."
+            "text": "<strong>Fewer labels:</strong> The European perspective is now the default, so I’ve hidden the “EU-first” label on the shelf. The Collections that aren’t Europe-first yet keep their “NA-first” label for now."
           },
           {
             "text": "<strong>Better contrast:</strong> Faint labels, accent-coloured text and chapter colours are now easier to read, in both light and dark mode, across all Collections. Another nice step towards my goal of the entire website passing WCAG accessibility requirements."

@@ -36,16 +36,16 @@
 }
 
 .status--pill .status-btn {
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.66rem;
+  font-family: var(--site-font-mono);
+  font-size: var(--text-2xs);
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 3px 9px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: 1px solid var(--line-strong);
   background: transparent;
-  transition: border-color 0.15s ease, color 0.15s ease;
+  transition: border-color var(--duration-fast) ease, color var(--duration-fast) ease;
 }
 
 .status--pill .status-btn.is-handwritten {
@@ -105,12 +105,12 @@
   width: min(340px, calc(100vw - 24px));
   padding: 14px 16px;
   border: 1px solid var(--line-strong);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   background: var(--surface);
   color: var(--ink-soft);
   box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.35);
-  font-family: var(--font-body, "Archivo", "Segoe UI", system-ui, sans-serif);
-  font-size: 0.84rem;
+  font-family: var(--font-body, var(--site-font-body));
+  font-size: var(--text-sm);
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: normal;

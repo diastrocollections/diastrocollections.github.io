@@ -87,7 +87,8 @@
     if (listEl) {
       releases.forEach(function (r) {
         var entry = document.createElement('div');
-        entry.className = 'vh-entry' + (r.type === 'major' ? ' major' : r.type === 'patch' ? ' patch' : '');
+        entry.className = 'vh-entry' + (r.type === 'major' ? ' major' : r.type === 'patch' ? ' patch' : '') +
+          (r.current ? ' current' : '');
         entry.id = releaseId(r.version);
         entry.innerHTML =
           '<div class="vh-meta">' +
@@ -100,16 +101,17 @@
       });
     }
 
+    // The totals line, in the same style as the hub's. Each total is one span,
+    // so a narrow screen breaks the line between totals.
     if (statsEl && releases.length) {
       var majors = releases.filter(function (r) { return r.type === 'major'; }).length;
-      var latest = 'v' + releases[0].version;
-      var first = formatDate(releases[releases.length - 1].date);
-      [[String(releases.length), 'releases'], [latest, 'latest version'], [String(majors), 'major updates'], [first, 'first release']].forEach(function (s) {
-        var d = document.createElement('div');
-        d.className = 'stat';
-        d.innerHTML = '<span class="num mono">' + s[0] + '</span><span class="label">' + s[1] + '</span>';
-        statsEl.appendChild(d);
-      });
+      var firstDate = new Date(releases[releases.length - 1].date.slice(0, 10) + 'T00:00:00Z');
+      var since = firstDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', timeZone: 'UTC' });
+      statsEl.innerHTML = [
+        '<b>' + releases.length + '</b> releases',
+        '<b>' + majors + '</b> major updates',
+        'since <b>' + since + '</b>'
+      ].map(function (item) { return '<span>' + item + '</span>'; }).join(' · ');
     }
 
     if (timelineEl && releases.length) renderTimeline(releases);
@@ -138,7 +140,15 @@
     var step = Math.ceil(months.length / 4);
     months = months.filter(function (d, i) { return i % step === 0; });
 
-    var sizes = { patch: 8, minor: 12, major: 16 };
+    // Each release is a bar of scanlines; its height shows how much changed
+    // (the number of bullet points, or 1 for a section of plain text).
+    // Square root, so one huge release doesn't flatten all the others.
+    var changes = chrono.map(function (r) {
+      return (r.sections || []).reduce(function (n, sec) {
+        return n + (sec.bullets && sec.bullets.length ? sec.bullets.length : 1);
+      }, 0) || 1;
+    });
+    var mostChanges = Math.max.apply(null, changes);
     var typeNames = { patch: 'patch release', minor: 'minor release', major: 'major release' };
 
     var line = document.createElement('div');
@@ -162,15 +172,16 @@
       var li = document.createElement('li');
       var a = document.createElement('a');
       var id = releaseId(r.version);
-      var size = sizes[r.type] || sizes.minor;
-      a.className = 'vh-tl-marker' + (r.current ? ' current' : '');
+      a.className = 'vh-tl-marker ' + (typeNames[r.type] ? r.type : 'minor') + (r.current ? ' current' : '');
+      a.style.setProperty('--bar', Math.sqrt(changes[i] / mostChanges).toFixed(3));
       a.href = '#' + id;
       a.setAttribute('aria-label', 'v' + r.version + ', ' + formatDate(r.date) + ', ' +
-        (typeNames[r.type] || typeNames.minor) + (r.current ? ', current version' : ''));
+        (typeNames[r.type] || typeNames.minor) + ', ' + changes[i] + (changes[i] === 1 ? ' change' : ' changes') +
+        (r.current ? ', current version' : ''));
       a.style.animationDelay = (i * 0.04) + 's';
       a.innerHTML =
         '<span class="vh-tl-label mono" aria-hidden="true">v' + r.version + '</span>' +
-        '<span class="vh-tl-dot" style="width:' + size + 'px;height:' + size + 'px"></span>';
+        '<span class="vh-tl-bar"></span>';
       a.addEventListener('click', function (e) {
         e.preventDefault();
         if (location.hash !== '#' + id) history.pushState(null, '', '#' + id);

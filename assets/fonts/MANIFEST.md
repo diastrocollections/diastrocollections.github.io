@@ -7,7 +7,7 @@ so visitors' IPs are never sent to Google. `assets/css/fonts.css` declares one
 
 ## What's here
 
-29 font families, `latin` + `latin-ext` subsets only (this site's content is
+28 font families, `latin` + `latin-ext` subsets only (this site's content is
 English/European — the `latin-ext` subset covers accented characters like the é in
 "Pokémon" or German umlauts; subsets for Greek, Cyrillic, Vietnamese, Arabic, Hebrew,
 Thai and Devanagari were dropped since nothing on the site needs them).
@@ -15,6 +15,13 @@ Thai and Devanagari were dropped since nothing on the site needs them).
 Each family's folder (`assets/fonts/<slug>/`) holds one `.woff2` file per
 weight/style/subset combination actually used somewhere on the site — no unused
 weights were bulk-downloaded.
+
+The exception is the two Atkinson Hyperlegible families (Next and Mono), the site's
+own body and mono fonts. Google serves them as variable fonts, so each folder holds one
+file per style/subset covering every weight from 200 to 800, named
+`<slug>-variable-<style>-<subset>.woff2`. They come from Google Fonts on purpose:
+Google's copies are under the SIL Open Font License, while the Braille Institute's
+own download forbids altering the files, which subsetting and woff2 would do.
 
 ## How this was generated
 
@@ -37,8 +44,8 @@ CSS — it's Google's own generated font-face rules with the URLs swapped, which
    `fonts.css` with its `src` rewritten to the local path — following the naming
    pattern `<slug>-<weight>-<style>-<subset>.woff2`.
 4. Point the relevant theme's `--font-body` / `--font-display` / `--font-mono`
-   variable (or hub.css's hardcoded font-family, for the hub/version-history pages) at
-   the new family name.
+   variable (or `--site-font-*` in tokens.css, for the hub, the info pages and the top
+   bar and footer) at the new family name.
 
 No page needs its own font `<link>` — `fonts.css` carries every family used anywhere
 on the site, and browsers only ever fetch the specific files a page's rendered text

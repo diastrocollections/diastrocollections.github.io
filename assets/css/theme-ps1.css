@@ -18,10 +18,10 @@
   --sat-soft: 50%;
   --lig-soft: 91%;
 
-  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-body: 'Atkinson Hyperlegible Next', sans-serif;
   --font-display: 'Zen Dots', sans-serif;
   --font-display-weight: 400;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --font-mono: 'Atkinson Hyperlegible Mono', monospace;
 
   --card-radius: 12px;
   --control-radius: 10px;

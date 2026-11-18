@@ -47,6 +47,7 @@ assets/
     how-its-made.css          Extras for the "How it's made" page
     status.css                Badge and popover styles
     fonts.css                 @font-face rules for the self-hosted fonts
+    tokens.css                Site-wide design tokens: fonts, text sizes, corner radii, transition speeds
   fonts/                      Self-hosted .woff2 files (see fonts/MANIFEST.md)
   og/                         Open Graph share images, one per page
   img/                        Logo and author photo
@@ -61,6 +62,7 @@ Platform IDs are used the same way everywhere. For example, `nes` means `nes/ind
 All collection pages share the same HTML skeleton. The only parts that differ from one page to the next are the text (hero, curator's note, footer), the meta tags, the theme stylesheet and one attribute on the script tag:
 
 ```html
+<link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/theme-nes.css">
 ...
@@ -105,12 +107,20 @@ Each `data/<platform>.json` file is an array of chapters:
 
 The CSS is built in layers:
 
-1. **`base.css`** holds the complete layout of a collection page: hero, curator's note, sticky toolbar, card grid and footer. It uses no fixed colors or fonts. Everything comes from CSS custom properties.
-2. **`theme-<platform>.css`** loads after it and sets those properties (`--bg`, `--surface`, `--ink`, `--accent`, `--hue`, `--font-display` and so on). It then adds that console's decorative extras, such as the NES page's pixel-art hills and brick pattern or the PS1 page's button glyphs.
+1. **`tokens.css`** loads first on every page and holds the values the whole site shares: the site fonts (`--site-font-*`), text sizes (`--text-*`), corner radii (`--radius-*`) and transition speeds (`--duration-*`). The shared stylesheets use these tokens. Themes keep their own values, because those are part of each console's character.
+2. **`base.css`** holds the complete layout of a collection page: hero, curator's note, sticky toolbar, card grid and footer. It uses no fixed colors or fonts. Everything comes from CSS custom properties.
+3. **`theme-<platform>.css`** loads after it and sets those properties (`--bg`, `--surface`, `--ink`, `--accent`, `--hue`, `--font-display` and so on). It then adds that console's decorative extras, such as the NES page's pixel-art hills and brick pattern or the PS1 page's button glyphs.
 
 Each theme defines its palette three times: once for light mode, once inside `@media (prefers-color-scheme: dark)` to follow the system setting, and once under `:root[data-theme="dark"]` for the manual toggle. Switching themes cross-fades the whole page. New visits follow the device setting; a choice made with the toggle lasts for the current visit only, using `sessionStorage`, and an inline script in each page's `<head>` applies it before the first paint.
 
 The hub, "How it's made" and version history pages share `hub.css`, which has its own tile-based layout.
+
+### When to use a token
+
+1. **Shared stylesheets use tokens by default.** That covers `base.css`, `hub.css`, `nav.css`, `status.css` and `how-its-made.css`, unless one of the rules below applies.
+2. **Themes can go custom when it's part of the console's character.** Sizes tuned to Press Start 2P or the NES page's brick pattern are fine. If a value is just a default, use the token.
+3. **A custom value needs a reason.** The reason can be technical, like the 16px phone search box that stops iOS zooming the page. It can also be a size that follows something else, like `clamp()` headings that scale with the screen or `em` sizes that follow the text around them.
+4. **If nobody can see the difference, use the token.** No one can tell `0.85rem` from `0.86rem`, and small differences like that are how the shared stylesheets ended up with 46 text sizes.
 
 ## Navigation
 
@@ -122,13 +132,22 @@ Every page also ends with the same site footer (styled in `nav.css` too): the na
 
 ## Fonts
 
-The themes use 29 typefaces, and all of them are self-hosted in `assets/fonts/` instead of loaded from Google Fonts, so visitors' IP addresses are never sent to a third party. Only the Latin and Latin Extended subsets are included, and only the weights and styles the site actually uses. `assets/fonts/MANIFEST.md` documents where each file came from.
+The themes use 28 typefaces, and all of them are self-hosted in `assets/fonts/` instead of loaded from Google Fonts, so visitors' IP addresses are never sent to a third party. Only the Latin and Latin Extended subsets are included, and only the weights and styles the site actually uses. `assets/fonts/MANIFEST.md` documents where each file came from.
 
 ## Hub, status and version history
 
-- **`platforms.json`** stores each platform's metadata: name, years, accent color, region, tagline, game and chapter counts, and writing status. `hub.js` builds the tiles from it and calculates the site-wide totals (games, chapters and the hardware timeline). Adding an entry adds a tile without any code changes.
+- **`platforms.json`** stores each platform's metadata: name, years, accent color, region, tagline, game and chapter counts, and writing status. `hub.js` builds the tiles from it and calculates the site-wide totals (platforms, games, chapters and the span of years). Adding an entry adds a tile without any code changes.
 - **Writing status:** every collection starts from an AI-assisted draft and is rewritten by hand. The `handwritten` and `progress` fields drive the "Hand-written" / "Draft in progress" badges (`status.js`, which uses the Popover API so the popover isn't clipped by the tiles). The same fields drive the shelf progress chart on the "How it's made" page.
 - **`version-history.json`** is rendered by `version-history.js` as a timeline of releases. Each release is tagged major, minor or patch, and its notes are a list of `sections`: each one an optional `heading` (rendered as an `<h3>`, for short labels like "Content updates"), an optional paragraph (`text`, for sentences) and optional `bullets`, which can have `sub` bullets. Inline HTML works everywhere, and `` `backticks` `` show as inline code.
+
+### Discord update feed
+
+Every new release in `version-history.json` is posted to the Diastro Gaming Discord automatically. `.github/workflows/discord-update.yml` runs after each successful GitHub Pages deploy (so the link in the post always opens the live page), compares the file with the previously deployed commit, and posts each new version as an embed through `.github/scripts/discord_update.py`. Editing an existing entry doesn't repost it.
+
+- **Secret `DISCORD_WEBHOOK_URL`** (Settings → Secrets and variables → Actions → Secrets): the channel's webhook.
+- **Variable `DISCORD_ROLE_ID`** (same page, Variables tab, optional): a role to @mention with each post. Leave it unset for no ping.
+- **Reposting or testing:** Actions → Discord update feed → Run workflow, with a version number. "Dry run" is on by default and only prints the message to the log.
+- **Locally:** `python3 .github/scripts/discord_update.py --before HEAD --after WORKTREE --dry-run` shows what your uncommitted changes would post.
 
 ## Content management
 

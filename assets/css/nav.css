@@ -39,11 +39,11 @@ html {
   left: 8px;
   z-index: 50;
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   background: var(--ink);
   color: var(--bg);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.85rem;
+  font-family: var(--site-font-mono);
+  font-size: var(--text-sm);
   font-weight: 600;
   text-decoration: none;
   transform: translateY(-200%);
@@ -131,9 +131,9 @@ html {
   padding: 0 11px;
   border: 0;
   background: none;
-  font-family: "Fraunces", Georgia, serif;
+  font-family: var(--site-font-display);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: var(--text-base);
   /* fixed, so links and the Collections button (which wouldn't inherit it)
      line up on every page, whatever the page's own line-height */
   line-height: 1.5;
@@ -142,7 +142,7 @@ html {
   color: var(--ink);
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.15s ease;
+  transition: color var(--duration-fast) ease;
 }
 
 .brand {
@@ -156,7 +156,7 @@ html {
 .topbar-top:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: -2px;
-  border-radius: 3px;
+  border-radius: var(--radius-xs);
 }
 
 .nav-link:hover,
@@ -176,7 +176,7 @@ html {
   stroke-width: 2.2;
   stroke-linecap: round;
   stroke-linejoin: round;
-  transition: transform 0.2s ease;
+  transition: transform var(--duration-medium) ease;
 }
 
 .nav-link[aria-expanded="true"] .nav-chevron {
@@ -203,7 +203,8 @@ html {
   opacity: 0.7;
 }
 
-/* The two square icon buttons at the right end share one look. */
+/* The two buttons at the right end: back to top is a square icon button,
+   the theme switch a pair of push keys (below). */
 .theme-toggle,
 .topbar-top {
   display: flex;
@@ -220,7 +221,6 @@ html {
   cursor: pointer;
 }
 
-.theme-toggle-icon,
 .topbar-top-icon {
   display: inline-flex;
   align-items: center;
@@ -229,11 +229,11 @@ html {
   height: 34px;
   flex-shrink: 0;
   border: 1px solid var(--line-strong);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   background: var(--surface);
-  font-size: 1rem;
+  font-size: var(--text-base);
   line-height: 1;
-  transition: border-color 0.15s ease, color 0.15s ease;
+  transition: border-color var(--duration-fast) ease, color var(--duration-fast) ease;
 }
 
 .topbar-top-icon svg {
@@ -251,9 +251,127 @@ html {
   color: var(--ink);
 }
 
-.theme-toggle:hover .theme-toggle-icon,
 .topbar-top:hover .topbar-top-icon {
   border-color: var(--accent);
+}
+
+/* ---------- Theme switch: a day key and a night key ----------
+   Two push keys in a tray, like the shelf's Arrange selector. The key for the
+   theme on screen stays pressed in and lights up, as if an LED under it shines
+   through the keycap. The light's colour is --key-led (tokens.css), the
+   page's accent. Which key is down follows the theme alone
+   (data-theme or the device setting), so it's right from the first paint. */
+.theme-toggle {
+  width: auto;
+  padding: 0 4px;
+}
+
+.theme-keys {
+  display: flex;
+  gap: 3px;
+  padding: 3px 3px 5px;
+  border-radius: 9px;
+  background: var(--key-tray);
+  box-shadow: inset 0 1px 2px var(--key-shade-soft);
+}
+
+/* A key's look comes from --k-* variables: a pressed key sets them, a key
+   that's up uses the fallbacks. */
+.theme-key {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--k-bg, var(--surface));
+  color: var(--k-ink, var(--ink-faint));
+  transform: var(--k-shift, var(--k-hover, none));
+  box-shadow: var(--k-shadow, var(--k-hover-shadow, 0 2px 0 var(--key-edge), 0 2px 3px var(--key-shade-soft), inset 0 1px 0 var(--key-lip)));
+  transition:
+    transform 260ms cubic-bezier(0.3, 1.7, 0.55, 1),
+    box-shadow 260ms cubic-bezier(0.3, 1.7, 0.55, 1),
+    background-color var(--duration-medium) ease,
+    color var(--duration-fast) ease;
+}
+
+/* The LED: brightest at the bottom of the key, fading up across the cap. */
+.theme-key::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(120% 90% at 50% 100%, color-mix(in srgb, var(--key-led) 55%, transparent), transparent 70%);
+  opacity: var(--k-glow, 0);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* The pixel sun and moon, on the same 9x9 grid as the site's pixel cursor. */
+.theme-key svg {
+  position: relative;
+  z-index: 1;
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  shape-rendering: crispEdges;
+  filter: var(--k-filter, none);
+}
+
+/* On hover the key that's up gives a little, like a finger resting on it. */
+@media (hover: hover) {
+  .theme-toggle:hover .theme-key {
+    --k-hover: translateY(1px);
+    --k-hover-shadow: 0 1px 0 var(--key-edge), 0 1px 2px var(--key-shade-soft), inset 0 1px 0 var(--key-lip);
+    color: var(--k-ink, var(--ink-soft));
+  }
+}
+
+/* By day the day key is down, softly lit. */
+.theme-key-day {
+  --k-bg: color-mix(in srgb, var(--key-led) 22%, var(--surface));
+  --k-ink: color-mix(in srgb, var(--key-led) 70%, var(--ink));
+  --k-shift: translateY(2px);
+  --k-shadow: 0 0 0 var(--key-edge), 0 0 10px 1px color-mix(in srgb, var(--key-led) 45%, transparent), inset 0 1px 2px var(--key-shade), inset 0 0 0 1px color-mix(in srgb, var(--key-led) 40%, transparent);
+  --k-glow: 1;
+}
+
+/* At night the night key is down, and its light is stronger against the dark
+   tray: the moon glows almost white and the halo reaches further. */
+:root[data-theme="dark"] .theme-key-day {
+  --k-bg: initial;
+  --k-ink: initial;
+  --k-shift: initial;
+  --k-shadow: initial;
+  --k-glow: initial;
+}
+
+:root[data-theme="dark"] .theme-key-night {
+  --k-bg: color-mix(in srgb, var(--key-led) 30%, var(--key-tray));
+  --k-ink: color-mix(in srgb, var(--key-led) 35%, #FFF);
+  --k-shift: translateY(2px);
+  --k-shadow: 0 0 0 var(--key-edge), 0 0 14px 2px color-mix(in srgb, var(--key-led) 50%, transparent), inset 0 1px 2px rgba(0, 0, 0, 0.5), inset 0 0 0 1px color-mix(in srgb, var(--key-led) 55%, transparent);
+  --k-glow: 1;
+  --k-filter: drop-shadow(0 0 3px color-mix(in srgb, var(--key-led) 80%, transparent));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .theme-key-day {
+    --k-bg: initial;
+    --k-ink: initial;
+    --k-shift: initial;
+    --k-shadow: initial;
+    --k-glow: initial;
+  }
+
+  :root:not([data-theme]) .theme-key-night {
+    --k-bg: color-mix(in srgb, var(--key-led) 30%, var(--key-tray));
+    --k-ink: color-mix(in srgb, var(--key-led) 35%, #FFF);
+    --k-shift: translateY(2px);
+    --k-shadow: 0 0 0 var(--key-edge), 0 0 14px 2px color-mix(in srgb, var(--key-led) 50%, transparent), inset 0 1px 2px rgba(0, 0, 0, 0.5), inset 0 0 0 1px color-mix(in srgb, var(--key-led) 55%, transparent);
+    --k-glow: 1;
+    --k-filter: drop-shadow(0 0 3px color-mix(in srgb, var(--key-led) 80%, transparent));
+  }
 }
 
 /* Back to top: its space is always reserved (no shifting when it appears), it
@@ -262,13 +380,13 @@ html {
   margin-right: -5px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+  transition: opacity var(--duration-medium) ease, visibility 0s linear var(--duration-medium);
 }
 
 .topbar-top.is-visible {
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.2s ease, visibility 0s;
+  transition: opacity var(--duration-medium) ease, visibility 0s;
 }
 
 /* While back to top is hidden, the YouTube link and theme toggle sit in its
@@ -324,8 +442,8 @@ html {
 
 .collections-group-title {
   margin: 0 0 8px;
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.7rem;
+  font-family: var(--site-font-mono);
+  font-size: var(--text-2xs);
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -352,10 +470,10 @@ html {
   justify-content: center;
   min-height: 44px;
   padding: 5px 10px 5px 18px;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   color: var(--ink);
   text-decoration: none;
-  transition: background-color 0.15s ease;
+  transition: background-color var(--duration-fast) ease;
 }
 
 /* the spine, in the platform's color, like the tiles on the shelf */
@@ -368,19 +486,19 @@ html {
   width: 4px;
   border-radius: 2px;
   background: var(--c);
-  transition: width 0.15s ease;
+  transition: width var(--duration-fast) ease;
 }
 
 .collection-name {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: var(--site-font-display);
   font-weight: 600;
-  font-size: 0.98rem;
+  font-size: var(--text-base);
   line-height: 1.2;
 }
 
 .collection-years {
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.7rem;
+  font-family: var(--site-font-mono);
+  font-size: var(--text-2xs);
   color: var(--ink-faint);
 }
 
@@ -401,8 +519,8 @@ html {
 
 .collection-here {
   margin-left: 6px;
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.62rem;
+  font-family: var(--site-font-mono);
+  font-size: var(--text-2xs);
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -412,8 +530,8 @@ html {
 .collections-all {
   grid-column: 1 / -1;
   justify-self: start;
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.8rem;
+  font-family: var(--site-font-mono);
+  font-size: var(--text-xs);
   color: var(--ink-soft);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -434,7 +552,7 @@ html {
   margin-top: 36px;
   padding-top: 28px;
   border-top: 1px solid var(--line);
-  font-family: "Archivo", "Segoe UI", system-ui, sans-serif;
+  font-family: var(--site-font-body);
 }
 
 .site-footer:first-child {
@@ -463,8 +581,8 @@ html {
 }
 
 .site-footer .site-footer-name {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.15rem;
+  font-family: var(--site-font-display);
+  font-size: var(--text-md);
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--ink);
@@ -472,8 +590,8 @@ html {
 
 .site-footer .site-footer-tagline {
   margin-top: 2px;
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.74rem;
+  font-family: var(--site-font-mono);
+  font-size: var(--text-xs);
   color: var(--ink-faint);
 }
 
@@ -488,9 +606,9 @@ html {
   place-items: center;
   width: 40px;
   height: 40px;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   color: var(--ink-faint);
-  transition: color 0.15s ease, background-color 0.15s ease;
+  transition: color var(--duration-fast) ease, background-color var(--duration-fast) ease;
 }
 
 .site-footer .site-social a:hover,
@@ -520,7 +638,7 @@ html {
   gap: 8px;
   min-height: 36px;
   color: var(--ink-soft);
-  font-size: 0.9rem;
+  font-size: var(--text-sm);
   text-decoration: none;
 }
 
@@ -559,7 +677,7 @@ html {
 }
 
 .site-footer .site-footer-legal p {
-  font-size: 0.78rem;
+  font-size: var(--text-xs);
   line-height: 1.5;
   color: var(--ink-faint);
 }
@@ -605,9 +723,9 @@ html {
     border: 0;
     background: none;
     color: var(--ink);
-    font-family: "Fraunces", Georgia, serif;
+    font-family: var(--site-font-display);
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: var(--text-base);
     letter-spacing: -0.01em;
     cursor: pointer;
   }
@@ -672,8 +790,8 @@ html {
     overflow: visible;
     clip: auto;
     padding: 12px 0 6px;
-    font-family: "IBM Plex Mono", ui-monospace, monospace;
-    font-size: 0.72rem;
+    font-family: var(--site-font-mono);
+    font-size: var(--text-2xs);
     font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -745,6 +863,8 @@ html {
   .topbar-top,
   .topbar.is-ready .topbar-right,
   .topbar.is-ready .theme-toggle,
+  .theme-key,
+  .theme-key::after,
   .collection-link,
   .collection-link::before {
     transition: none;

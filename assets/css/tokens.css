@@ -1,0 +1,81 @@
+/*
+ * Diastro Gaming Collections — site-wide design tokens.
+ *
+ * The values every page shares, in one place. Loaded first on every page, so
+ * all other stylesheets can use them. Change a value here and it changes
+ * everywhere that uses the token.
+ *
+ * What does not belong here: anything that differs per Collection. Each
+ * theme-<platform>.css sets its own colors and fonts (--bg, --accent,
+ * --font-display and so on), and its decorative details stay in that file.
+ * The push-key colours below are mixed from those, so they follow each
+ * Collection's palette without being set per Collection.
+ */
+
+:root {
+  /* Fonts of the site itself: the hub, the info pages and the top bar. A
+     Collection page's content uses its theme's --font-* tokens instead. */
+  --site-font-display: "Fraunces", Georgia, serif;
+  --site-font-body: "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif;
+  --site-font-mono: "Atkinson Hyperlegible Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Text sizes, for the shared stylesheets. In rem, so they follow the size set
+     in the visitor's browser (1rem is 16px by default). */
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+
+  /* Corner radius */
+  --radius-xs: 3px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  /* Transition speed */
+  --duration-fast: 0.15s;
+  --duration-medium: 0.2s;
+  --duration-slow: 0.25s;
+
+  /* Push keys (the shelf's Arrange selector and the theme switch). Mixed from
+     the page's own colours, so on a Collection the keys take on its palette.
+     --key-tray: the recess the keys sit in. --key-edge: the side of a key
+     that shows while it's up. --key-shade / --key-shade-soft: shadows.
+     --key-lip: the light catching a key's top edge. */
+  --key-tray: color-mix(in srgb, var(--ink) 4%, var(--bg));
+  --key-edge: color-mix(in srgb, var(--line-strong) 85%, var(--bg));
+  --key-shade: rgba(33, 28, 21, 0.16);
+  --key-shade-soft: rgba(33, 28, 21, 0.08);
+  --key-lip: rgba(255, 255, 255, 0.85);
+
+  /* The light under a pressed theme-switch key: each page's accent, so it
+     glows green on the hub and in the Collection's own colour elsewhere. The
+     dark palettes' lighter accents carry over by themselves. */
+  --key-led: var(--accent);
+}
+
+/* In dark mode the tray and key sides are darker than the page, shadows
+   deeper and the top-edge light much fainter. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --key-tray: color-mix(in srgb, #000 30%, var(--bg));
+    --key-edge: color-mix(in srgb, #000 45%, var(--bg));
+    --key-shade: rgba(0, 0, 0, 0.55);
+    --key-shade-soft: rgba(0, 0, 0, 0.3);
+    --key-lip: rgba(255, 255, 255, 0.06);
+  }
+}
+
+:root[data-theme="dark"] {
+  --key-tray: color-mix(in srgb, #000 30%, var(--bg));
+  --key-edge: color-mix(in srgb, #000 45%, var(--bg));
+  --key-shade: rgba(0, 0, 0, 0.55);
+  --key-shade-soft: rgba(0, 0, 0, 0.3);
+  --key-lip: rgba(255, 255, 255, 0.06);
+}

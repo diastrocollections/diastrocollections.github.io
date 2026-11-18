@@ -18,10 +18,10 @@
   --sat-soft: 60%;
   --lig-soft: 92%;
 
-  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif;
   --font-display: "Audiowide", "Segoe UI", system-ui, sans-serif;
   --font-display-weight: 400;
-  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+  --font-mono: "Atkinson Hyperlegible Mono", ui-monospace, "SFMono-Regular", monospace;
 
   --card-radius: 10px;
   --note-radius: 10px;

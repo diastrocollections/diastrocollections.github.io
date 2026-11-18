@@ -20,7 +20,7 @@
   },
   {
     "id": "mastersystem",
-    "icon": "🕹️",
+    "icon": "assets/icons/mastersystem.svg",
     "manufacturer": "Sega",
     "type": "home",
     "name": "Master System",
@@ -58,7 +58,7 @@
   },
   {
     "id": "megadrive",
-    "icon": "🔴",
+    "icon": "assets/icons/megadrive.svg",
     "manufacturer": "Sega",
     "type": "home",
     "name": "Mega Drive",
@@ -77,7 +77,7 @@
   },
   {
     "id": "snes",
-    "icon": "🟪",
+    "icon": "assets/icons/snes.svg",
     "manufacturer": "Nintendo",
     "type": "home",
     "name": "SNES",
@@ -96,7 +96,7 @@
   },
   {
     "id": "ps1",
-    "icon": "🔺",
+    "icon": "assets/icons/ps1.svg",
     "manufacturer": "Sony",
     "type": "home",
     "name": "PlayStation",
@@ -115,7 +115,7 @@
   },
   {
     "id": "n64",
-    "icon": "🔷",
+    "icon": "assets/icons/n64.svg",
     "manufacturer": "Nintendo",
     "type": "home",
     "name": "Nintendo 64",
@@ -134,7 +134,7 @@
   },
   {
     "id": "gbc",
-    "icon": "🌈",
+    "icon": "assets/icons/gbc.svg",
     "manufacturer": "Nintendo",
     "type": "handheld",
     "name": "Game Boy Color",
@@ -145,15 +145,15 @@
     "games": 100,
     "chapters": 12,
     "handwritten": false,
-    "progress": 0,
+    "progress": 10,
     "accent": "#7B2FBE",
-    "region": "NA-first",
+    "region": "EU-first",
     "tagline": "Its own identity, not a Game Boy footnote — a Pokémon-driven boom, Nintendo’s first color Zeldas, and a deep well of Japan-only curios.",
     "url": "gbc/"
   },
   {
     "id": "ps2",
-    "icon": "💿",
+    "icon": "assets/icons/ps2.svg",
     "manufacturer": "Sony",
     "type": "home",
     "name": "PlayStation 2",
@@ -172,7 +172,7 @@
   },
   {
     "id": "gamecube",
-    "icon": "🎮",
+    "icon": "assets/icons/gc.svg",
     "manufacturer": "Nintendo",
     "type": "home",
     "name": "GameCube",
@@ -191,7 +191,7 @@
   },
   {
     "id": "gba",
-    "icon": "💜",
+    "icon": "assets/icons/gba.svg",
     "manufacturer": "Nintendo",
     "type": "handheld",
     "name": "Game Boy Advance",
