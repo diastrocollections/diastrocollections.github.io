@@ -62,53 +62,53 @@
   {
     "hue": 309,
     "tag": "Nintendo",
-    "title": "Mario, Zelda & Wario",
-    "blurb": "Nintendo’s own games on the Game Boy Color: three Zelda adventures, a Mario classic in colour, Wario’s strangest platformer and two Game & Watch collections.",
+    "title": "Mario, Link & Wario in Colour",
+    "blurb": "Nintendo’s mascots on the colour handheld! A Mario classic on the go, two Game & Watch collections, and the Wario platformer Europe got before anyone else. I never owned a Game Boy Colour back then, so I missed out, especially on the three Zelda adventures that totally hold up today!",
     "games": [
       {
         "title": "Game & Watch Gallery 2",
         "year": "1998",
         "developer": "Tose",
         "badge": "Dual Mode",
-        "blurb": "Six Game & Watch games, each in a classic version and a modern version starring Mario and friends. In Japan it was <cite>Game Boy Gallery 2</cite>, a 1997 Game Boy game. Europe got the colour version on 3 December 1998, the same day as <cite>Tetris DX</cite>."
+        "blurb": "Initially released in Japan on the DMG, Europe (and America) got the colour version on 3 December 1998, on the same day as <cite>Tetris DX</cite>. Guess which one sold better? It included six Game & Watch games, each in a classic version and a modern version starring Mario and his friends."
       },
       {
         "title": "Game & Watch Gallery 3",
         "year": "2000",
         "developer": "Tose",
         "badge": "Dual Mode",
-        "blurb": "Five more Game & Watch games in classic and modern versions, plus six classics to unlock. In Japan it was <cite>Game Boy Gallery 3</cite>, and in Australia <cite>Game Boy Gallery 4</cite>. Europe got it in March 2000."
+        "blurb": "Five more Game & Watch games in classic and modern versions, plus six classics to unlock, released in Europe in February 2000. In Japan it was <cite>Game Boy Gallery 3</cite>, and in Australia <cite>Game Boy Gallery 4</cite>. Confused yet?"
       },
       {
         "title": "The Legend of Zelda: Link’s Awakening DX",
         "year": "1999",
         "developer": "Nintendo EAD",
         "badge": "Dual Mode",
-        "blurb": "The 1993 Game Boy adventure in colour, with a new Colour Dungeon full of colour-based puzzles that only opens on a Game Boy Color. A photo album lets you print pictures as stickers on the Game Boy Printer. Europe got it in February 1999."
+        "blurb": "Nintendo was smart to release a colourized version of the hugely successful 1993 Game Boy adventure, and they added a new \"Colour Dungeon\" full of colour-based puzzles that only opens on the GBC. A photo album lets you print pictures as stickers on the Game Boy Printer."
       },
       {
         "title": "The Legend of Zelda: Oracle of Ages",
         "year": "2001",
         "developer": "Flagship",
-        "blurb": "One half of a linked pair, made by Capcom’s Flagship studio. <cite>Ages</cite> is about travelling through time and leans towards puzzles. A password from one game carries over into the other, and finishing both unlocks the real ending. Europe got both games on 4 October 2001."
+        "blurb": "The first mainline Zelda game not developed by Nintendo, but instead Capcom’s Flagship studio. Together with <cite>Oracle of Seasons</cite>, it forms a linked pair. <cite>Oracle of Ages</cite> is about travelling through time and leans towards puzzles. A password from one game carries over into the other, and finishing both unlocks the real ending."
       },
       {
         "title": "The Legend of Zelda: Oracle of Seasons",
         "year": "2001",
         "developer": "Flagship",
-        "blurb": "The other half of the pair, built around changing the seasons, and more focused on combat. The two <cite>Oracle</cite> games sold 3.99 million copies together."
+        "blurb": "Released in Europe on 4 October 2001, together with <cite>Ages</cite>. Oracle of Seasons is built around changing the seasons (shocker!), and is more focused on combat. The two <cite>Oracle</cite> games combined sold 3.99 million copies worldwide."
       },
       {
         "title": "Super Mario Bros. Deluxe",
         "year": "1999",
         "developer": "Nintendo R&D2",
-        "blurb": "The 1985 NES game on a handheld, with new challenge and race modes. It also hides <cite>The Lost Levels</cite>, the Japanese sequel, as an unlockable extra. It stayed in the sales charts for two years. Europe got it in June 1999."
+        "blurb": "The 1985 NES game on a handheld, with new challenge and race modes. It also hides <cite>The Lost Levels</cite> as an unlockable extra. Some levels were even made slightly easier. Although with quite a bit of screen crunch, it was a very faithful port of the originals. It stayed in the sales charts for two years. Europe got it in June 1999."
       },
       {
         "title": "Wario Land 3",
         "year": "2000",
         "developer": "Nintendo R&D1",
-        "blurb": "Wario is trapped inside a music box and cannot die: enemies only change his shape or his abilities. Day and night change the levels, and there are 100 treasures to find. Europe got it on 13 April 2000, more than six weeks before America."
+        "blurb": "Wario is trapped inside a music box and cannot die: enemies only change his shape or his abilities. Day and night change the levels, and there are 100 treasures to find. Not without a guide, though! Europe got it on 13 April 2000, more than six weeks before America."
       }
     ]
   },

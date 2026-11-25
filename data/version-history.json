@@ -1,9 +1,44 @@
 [
+    {
+    "version": "3.1.0",
+    "type": "minor",
+    "date": "2026-11-25",
+    "current": true,
+    "sections": [
+      {
+        "heading": "GBC Collection progress update",
+        "bullets": [
+          {
+            "text": "<strong>Chapter 2 now fully hand-written:</strong> “Mario, Link &amp; Wario in Colour” on the <a href=\"/gbc/\">Game Boy Color Collection</a> now tells its stories in my own words. 10 chapters to go."
+          }
+        ]
+      },
+      {
+        "heading": "Other improvements",
+        "bullets": [
+          {
+            "text": "<strong>The emblem set is complete:</strong> the last four shelf tiles (<a href=\"/ds/\">DS</a>, <a href=\"/psp/\">PSP</a>, <a href=\"/wii/\">Wii</a> and <a href=\"/xbox/\">Xbox</a>) now have their own illustration, tinted in each tile’s accent colour like the other eleven. All 15 Collections now have a custom emblem. I learned a lot about drawing vector icons along the way, and I used that knowledge to give the NES controller a touch-up. More to come."
+          },
+          {
+            "text": "<strong>Link previews updated:</strong> all 18 pages now have an updated OpenGraph share image based each page’s current hero and descriptions, so a shared link finally looks as good as the page it opens."
+          }
+        ]
+      },
+      {
+        "heading": "Under the hood",
+        "bullets": [
+          {
+            "text": "<strong>The version pill on the hub updates itself:</strong> it reads the entry flagged <code>current</code> in <code>data/version-history.json</code>, so shipping a release is now just adding its changelog entry — no HTML to touch. The current major release version stays in the markup as the no-JS fallback."
+          }
+        ]
+      }
+    ]
+  },
   {
     "version": "3.0.0",
     "type": "major",
     "date": "2026-11-18",
-    "current": true,
+    "current": false,
     "sections": [
       {
         "heading": "The shelf gets a new hero: Europe on a CRT!",

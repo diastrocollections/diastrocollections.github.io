@@ -210,7 +210,7 @@
   },
   {
     "id": "xbox",
-    "icon": "🪐",
+    "icon": "assets/icons/xbox.svg",
     "manufacturer": "Microsoft",
     "type": "home",
     "name": "Xbox",
@@ -229,7 +229,7 @@
   },
   {
     "id": "psp",
-    "icon": "🕹️",
+    "icon": "assets/icons/psp.svg",
     "manufacturer": "Sony",
     "type": "handheld",
     "name": "PSP",
@@ -248,7 +248,7 @@
   },
   {
     "id": "ds",
-    "icon": "🐶",
+    "icon": "assets/icons/ds.svg",
     "manufacturer": "Nintendo",
     "type": "handheld",
     "name": "DS",
@@ -267,7 +267,7 @@
   },
   {
     "id": "wii",
-    "icon": "🎾",
+    "icon": "assets/icons/wii.svg",
     "manufacturer": "Nintendo",
     "type": "home",
     "name": "Wii",

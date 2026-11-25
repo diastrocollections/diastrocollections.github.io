@@ -10,6 +10,7 @@
   var arrangeEl = document.getElementById('arrange');
   var arrangeStatusEl = document.getElementById('arrangeStatus');
   var heroStatsEl = document.getElementById('heroStats');
+  var versionPillEl = document.getElementById('versionPill');
 
   // Ways to arrange the shelf. Each tile list is always in launch order; a mode
   // with a `group` function splits it into headed groups, ordered by `order`
@@ -42,6 +43,28 @@
           '<code>npx serve</code> or GitHub Pages instead.</p>';
       }
       console.error('hub.js: failed to load data/platforms.json', err);
+    });
+
+  // The hero's version pill shows the current release from
+  // data/version-history.json, so shipping a release only means adding an
+  // entry there. The hardcoded text in index.html stays as the fallback when
+  // JS is off or the fetch fails.
+  fetch('data/version-history.json')
+    .then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function (releases) {
+      if (!versionPillEl || !releases.length) return;
+      var current = null;
+      for (var i = 0; i < releases.length; i++) {
+        if (releases[i].current) { current = releases[i]; break; }
+      }
+      if (!current) current = releases[0];
+      versionPillEl.textContent = 'v' + current.version;
+    })
+    .catch(function (err) {
+      console.error('hub.js: failed to load data/version-history.json', err);
     });
 
   function render(PLATFORMS) {
