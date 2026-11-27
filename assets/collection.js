@@ -9,6 +9,13 @@
  * Optional: data-glyphs='[{"ch":"△","color":"#2FA84F"}, ...]' cycles a small
  * colored glyph badge through chapters/cards in that order (used by PS1).
  *
+ * Optional: data-boxart (a bare attribute) wraps the card's number, title and
+ * meta around a portrait box-art tile in the card's top-left (the blurb stays
+ * full width below). The tile is a styled placeholder; real art is filled in
+ * later, per Collection. When a game has both art and an ssGameId, the tile
+ * opens the box-art viewer: a modal showing the art larger, with a caption
+ * crediting ScreenScraper and linking to the game's entry there.
+ *
  * The page itself only needs to provide these elements (ids/classes):
  *   #chapters      - empty container the chapters render into
  *   #chips         - empty container the chapter links render into, inside
@@ -45,6 +52,11 @@
   if (glyphsAttr) {
     try { GLYPHS = JSON.parse(glyphsAttr); } catch (e) { GLYPHS = null; }
   }
+  var BOXART = scriptEl.getAttribute('data-boxart') !== null;
+
+  // "../data/nes.json" → "../assets/", the base for game.art paths written by
+  // tools/boxart.mjs (e.g. "img/boxart/nes/4023.png").
+  var ASSET_BASE = dataSrc ? dataSrc.replace(/data\/[^/]+$/, 'assets/') : '';
 
   var romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
 
@@ -53,6 +65,14 @@
   function normalize(str) {
     return str.normalize('NFD').replace(/[̀-ͯ]/g, '')
       .replace(/[‘’]/g, "'").replace(/[“”]/g, '"').toLowerCase();
+  }
+
+  // Game titles go into the box-art tile's data-* attributes and aria-label;
+  // quotes and angle brackets would break out of the attribute.
+  function escapeAttr(str) {
+    return String(str)
+      .replace(/&/g, '&amp;').replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
   function render(DATA) {
@@ -78,8 +98,8 @@
       head.innerHTML =
         '<span class="chapter-num">' + chapterGlyph + '<span class="chapter-num-text">' + romanNumerals[ci] + '</span></span>' +
         '<div class="chapter-head-main">' +
-          '<h2 class="chapter-title" tabindex="-1">' + chapter.title + '</h2>' +
-          '<span class="chapter-tag">' + chapter.tag + '</span>' +
+        '<h2 class="chapter-title" tabindex="-1">' + chapter.title + '</h2>' +
+        '<span class="chapter-tag">' + chapter.tag + '</span>' +
         '</div>';
       section.appendChild(head);
 
@@ -106,11 +126,52 @@
         var idx = '<span class="card-idx">' + cardGlyph + 'No. ' + String(globalIdx).padStart(3, '0') + '</span>';
         // Cards without a badge keep the bare index so no theme's card styling shifts.
         if (badge) idx = '<div class="card-head">' + idx + '<span class="card-badge">' + badge + '</span></div>';
-        card.innerHTML =
+        var head =
           idx +
           '<h3 class="card-title">' + title + '</h3>' +
-          '<span class="card-meta">' + year + ' · ' + dev + '</span>' +
-          '<p class="card-blurb">' + gblurb + '</p>';
+          '<span class="card-meta">' + year + ' · ' + dev + '</span>';
+        if (BOXART) {
+          // Box-art cards stack the meta: developer above, release year below.
+          // game.art (from tools/boxart.mjs) overlays the placeholder tile; a
+          // broken image removes itself so the placeholder shows instead.
+          // The blurb sits inside .card-top so the grid can move it around:
+          // spanning the full width below on narrow cards, but flowing in the
+          // text column beside the art on wide single-column cards.
+          var artImg = game.art
+            ? '<img class="card-art-img" src="' + ASSET_BASE + game.art + '" alt="" loading="lazy" onerror="this.remove()">'
+            : '';
+          // With real art and a ScreenScraper id to link to, the tile is a
+          // button that opens the box-art viewer. Placeholder tiles stay a
+          // plain div, kept out of the tab order, since there is nothing to
+          // show. The data-* attributes carry what the viewer needs. Buttons
+          // also carry a pixel magnifier that CSS reveals on hover over the
+          // darkened art. Editable source: assets/icons/boxart-magnifier-nes.svg
+          // (12x12 grid at 4px cells); this inline copy is the same artwork
+          // with the empty margin trimmed (10x10 viewBox) and recolored to
+          // currentColor, so CSS gives it the chapter colour — keep the two
+          // in sync when the source changes.
+          var tileInner = artImg + '<span class="card-art-fallback">boxart</span>';
+          var zoomSvg = '<svg class="card-art-zoom" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path fill="currentColor" d="M1 0h1v1h-1zM2 0h1v1h-1zM3 0h1v1h-1zM4 0h1v1h-1zM5 0h1v1h-1zM0 1h1v1h-1zM1 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM0 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM0 3h1v1h-1zM6 3h1v1h-1zM0 4h1v1h-1zM6 4h1v1h-1zM0 5h1v1h-1zM1 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM7 6h1v1h-1zM6 7h1v1h-1zM8 7h1v1h-1zM7 8h1v1h-1zM9 8h1v1h-1zM8 9h1v1h-1zM9 9h1v1h-1z"/></svg>';
+          var tile = (artImg && game.ssGameId)
+            ? '<button class="card-art card-art-btn" type="button"' +
+            ' data-art-src="' + ASSET_BASE + game.art + '"' +
+            ' data-art-title="' + escapeAttr(title) + '"' +
+            ' data-art-id="' + game.ssGameId + '"' +
+            ' aria-label="View the box art of ' + escapeAttr(title) + ' larger">' + tileInner + zoomSvg + '</button>'
+            : '<div class="card-art" aria-hidden="true">' + tileInner + '</div>';
+          card.innerHTML =
+            '<div class="card-top">' +
+            tile +
+            '<div class="card-top-main">' +
+            idx +
+            '<h3 class="card-title">' + title + '</h3>' +
+            '<div class="card-meta"><span>' + dev + '</span><span>' + year + '</span></div>' +
+            '</div>' +
+            '<p class="card-blurb">' + gblurb + '</p>' +
+            '</div>';
+        } else {
+          card.innerHTML = head + '<p class="card-blurb">' + gblurb + '</p>';
+        }
         grid.appendChild(card);
       });
 
@@ -134,6 +195,63 @@
 
     setUpChapters(DATA);
     setUpFilter(globalIdx);
+    setUpArtViewer();
+  }
+
+  // ---------- Box-art viewer ----------
+
+  // On data-boxart pages, clicking a card's art tile opens the art at its
+  // natural size (shrunk to fit the screen) in a native <dialog>. Escape,
+  // focus trapping, backdrop and close-on-focus-loss come from the dialog
+  // element itself; only the tile buttons, the close button and clicks on
+  // the backdrop need wiring here. The caption credits ScreenScraper and
+  // links to the game's entry there, so the viewer doubles as attribution.
+  function setUpArtViewer() {
+    if (!BOXART) return;
+    var chaptersEl = document.getElementById('chapters');
+    if (!chaptersEl) return;
+
+    var dialog = document.createElement('dialog');
+    dialog.className = 'art-dialog';
+    dialog.innerHTML =
+      '<button class="art-close" type="button" aria-label="Close">' +
+      '<svg viewBox="0 0 9 9" aria-hidden="true" focusable="false"><path fill="currentColor" d="M1 1h1v1h-1zM2 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM1 2h1v1h-1zM2 2h1v1h-1zM3 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM2 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM2 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM2 6h1v1h-1zM3 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM1 7h1v1h-1zM2 7h1v1h-1zM6 7h1v1h-1zM7 7h1v1h-1z"/></svg>' +
+      '</button>' +
+      '<figure class="art-figure">' +
+      '<img class="art-img" alt="">' +
+      '<figcaption class="art-caption"><span class="art-caption-title"></span> via ' +
+      '<a href="https://www.screenscraper.fr/gameinfos.php?gameid=" target="_blank" rel="noopener">ScreenScraper.fr</a>. ' +
+      'Box art belongs to its respective owner and is used for identification and commentary only.' +
+      '</figcaption>' +
+      '</figure>';
+    document.body.appendChild(dialog);
+
+    var img = dialog.querySelector('.art-img');
+    var titleEl = dialog.querySelector('.art-caption-title');
+    var link = dialog.querySelector('.art-caption a');
+    var closeBtn = dialog.querySelector('.art-close');
+
+    // One listener for every card, present and future: the buttons carry the
+    // source, the game name and the ScreenScraper id in data-* attributes.
+    chaptersEl.addEventListener('click', function (e) {
+      var btn = e.target.closest('.card-art-btn');
+      if (!btn || !btn.querySelector('img')) return; // art failed to load
+      var title = btn.getAttribute('data-art-title');
+      img.src = btn.getAttribute('data-art-src');
+      img.alt = title + ' box art';
+      titleEl.textContent = title;
+      link.href = 'https://www.screenscraper.fr/gameinfos.php?gameid=' + btn.getAttribute('data-art-id');
+      dialog.setAttribute('aria-label', title + ' box art');
+      // Frame the viewer in the clicked card's chapter colour, like the card.
+      var hue = getComputedStyle(btn.closest('.chapter')).getPropertyValue('--hue');
+      if (hue) dialog.style.setProperty('--hue', hue.trim());
+      dialog.showModal();
+    });
+
+    closeBtn.addEventListener('click', function () { dialog.close(); });
+    // Clicks that reach the <dialog> element itself hit the area around the
+    // figure, so they count as "outside the box art" and close the viewer.
+    dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
   }
 
   // ---------- Chapters drop-down ----------
@@ -143,7 +261,7 @@
   var chaptersBtn = document.getElementById('chaptersToggle');
   var chaptersPanel = document.getElementById('chaptersPanel');
   var chaptersCurrent = document.getElementById('chaptersCurrent');
-  var updateCurrentChapter = function () {};
+  var updateCurrentChapter = function () { };
 
   function setUpChapters(DATA) {
     if (!chaptersBtn || !chaptersPanel) return;
@@ -259,7 +377,7 @@
         announceTimer = setTimeout(function () {
           status.textContent = !raw ? 'Showing all ' + total + ' games.' :
             visible === 0 ? 'No games match.' :
-            visible + ' of ' + total + ' games match.';
+              visible + ' of ' + total + ' games match.';
         }, 600);
       }
     }

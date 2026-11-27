@@ -33,6 +33,11 @@
   --px-2: polygon(0 2px, 2px 2px, 2px 0, calc(100% - 2px) 0, calc(100% - 2px) 2px, 100% 2px, 100% calc(100% - 2px), calc(100% - 2px) calc(100% - 2px), calc(100% - 2px) 100%, 2px 100%, 2px calc(100% - 2px), 0 calc(100% - 2px));
   --px-3: polygon(0 3px, 3px 3px, 3px 0, calc(100% - 3px) 0, calc(100% - 3px) 3px, 100% 3px, 100% calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 3px 100%, 3px calc(100% - 3px), 0 calc(100% - 3px));
 
+  /* Game Boy boxes are square: the 100 box-2D scans shipped with this
+     theme average 1.002 in width/height and all sit between 0.98 and 1.05,
+     so the box-art tile is a true square, not base.css's 5:7 portrait. */
+  --card-art-ratio: 1 / 1;
+
   --g-dark: #0F380F;
   --g-mid: #306230;
   --g-light: #8BAC0F;
@@ -568,8 +573,6 @@
   --drop: hsl(var(--hue) var(--sat-soft) var(--lig-soft));
   --drop-x: 3px;
   --drop-y: 3px;
-  --card-hover-transform: translate(-1px, -3px);
-  --card-hover-shadow: none;
   /* The face draws the outline as flat bands rather than borders, so the
      6px chapter band and the 2px sides meet square, not on a diagonal mitre.
      Then the cartridge's grip ridges, top right. */
@@ -585,10 +588,13 @@
   --grip: color-mix(in srgb, var(--line-strong) 80%, transparent);
 }
 
+/* No hover effect: the cards carry box art now and are informational, not
+   interactive — the art tile is the clickable part, and it has its own hover
+   treatment. Overrides base.css's lift; the offset shadow stays put (it is
+   drawn by ::before, whose hover shift went away with this rule). */
 .card:hover {
-  --drop: hsl(var(--hue) var(--sat) var(--lig) / 0.45);
-  --drop-x: 5px;
-  --drop-y: 6px;
+  transform: none;
+  box-shadow: none;
 }
 
 .card-idx {
@@ -603,6 +609,113 @@
 
 .card-title {
   font-size: 1.04rem;
+}
+
+/* ---------- Box art ---------- */
+
+/* Colour of the box-art tile's hover magnifier: the chapter hue with its
+   lightness lifted to 68%, so it stays above the 3:1 non-text minimum over
+   the tile scrim (brightness 0.55 + rgb(0 0 0 / 0.72) is ~2% luminance) in
+   every chapter colour, light or dark mode. */
+.chapter {
+  --card-zoom: hsl(var(--hue) var(--sat) 68%);
+}
+
+/* Three columns on desktop, two on tablet, one below — the same breakpoints
+   as the NES grid, so Collections switch columns at the same widths. The chip
+   arithmetic for this theme: "No. 100" in Silkscreen (70px with padding) and
+   the longest badge, "Super Game Boy", in DotGothic16 (102px with padding)
+   need 178px of text column to share a line; the text column is ~70% of the
+   card, so the pair fits from cards of ~307px. In the 3-column band that is
+   true from roughly a 1032px viewport: between 940px and 1032px the badge
+   wraps under the number (on the 25 of 100 cards that carry one). If that
+   ever bothers the eye, raise the 940px breakpoint towards 1032. */
+.grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 780px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 940px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* The tile gets the same 2px pixel-step corners as the rest of the theme.
+   The focus ring survives the clip: base.css draws it inside the tile. */
+.card-art {
+  clip-path: var(--px-2);
+}
+
+/* The hover magnifier takes the chapter colour (see --card-zoom above for
+   why it is not plain --chapter-ink). */
+.card-art-zoom {
+  color: var(--card-zoom);
+}
+
+/* Square Game Boy boxes are much shorter than the NES's portrait boxes, so
+   the head beside the art is regularly taller than the art itself — and the
+   base layout's stacked meta (developer over year) made it taller still,
+   leaving the meta hanging under a long title. One line, mid-dot separated
+   like the non-box-art cards, keeps the head compact. The NES theme keeps
+   the stacked form: its boxes are tall enough that the head never outgrows
+   them.
+   Plain inline flow, not a flex row: in a row, a long developer string
+   ("Nintendo R&D1 / Pax Softnica") is squeezed to fill the line and pushes
+   the year span to the row's right edge — mid-line, misaligned. As inline
+   text the pair just wraps like a sentence: the year stays glued behind
+   the developer (or drops to the next line at the left edge). */
+.card-top-main .card-meta {
+  display: block;
+}
+
+.card-top-main .card-meta span + span::before {
+  content: "·";
+  margin: 0 0.45em;
+}
+
+/* Box-art viewer: the same pixel-step frame as the cards, in the clicked
+   card's chapter colour (--hue is set per open from JS); a surface panel
+   sits inside it, inset by 2 pixels, exactly like a card face. The dialog
+   stays position: fixed — that is the UA style that centers it, and the
+   ::before anchors against it. */
+.art-dialog {
+  isolation: isolate;
+  border: 0;
+  border-radius: 0;
+  padding: 20px;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+  box-shadow: none;
+  clip-path: var(--px-2);
+}
+
+.art-dialog::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 2px;
+  background: var(--surface);
+  clip-path: var(--px-2);
+}
+
+/* The close button joins the theme's stat chips: the dark LCD green with
+   the pale green ink in light mode, inverted in dark. */
+.art-close {
+  border: 0;
+  border-radius: 0;
+  background: var(--stat-bg);
+  color: var(--stat-ink);
+  clip-path: var(--px-2);
+}
+
+.art-close:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
 }
 
 /* ---------- Footer: speaker slits ---------- */

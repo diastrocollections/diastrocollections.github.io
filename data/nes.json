@@ -10,64 +10,84 @@
         "year": "1987",
         "developer": "Nintendo R&D4",
         "badge": "PAL-adjusted",
-        "blurb": "Released in Europe in May 1987, but many Europeans had already played it: the arcade <cite>VS. Super Mario Bros.</cite> made its European debut in London in early 1986. Later PAL revisions were sped up for 50Hz and are among the few NES games with real timing fixes."
+        "blurb": "Released in Europe in May 1987, but many Europeans had already played it: the arcade <cite>VS. Super Mario Bros.</cite> made its European debut in London in early 1986. Later PAL revisions were sped up for 50Hz and are among the few NES games with real timing fixes.",
+        "ssGameId": 1245,
+        "art": "img/boxart/nes/1245.png"
       },
       {
         "title": "Super Mario Bros. 2",
         "year": "1989",
         "developer": "Nintendo R&D4",
-        "blurb": "Nintendo of America judged the Japanese sequel too punishing. Instead, they reworked the 1987 Famicom Disk System game <cite>Yume Kōjō: Doki Doki Panic</cite>. Mario, Luigi, Toad and Peach became the heroes, but its vegetable-plucking stayed."
+        "blurb": "Nintendo of America judged the Japanese sequel too punishing. Instead, they reworked the 1987 Famicom Disk System game <cite>Yume Kōjō: Doki Doki Panic</cite>. Mario, Luigi, Toad and Peach became the heroes, but its vegetable-plucking stayed.",
+        "ssGameId": 1248,
+        "art": "img/boxart/nes/1248.png"
       },
       {
         "title": "Super Mario Bros. 3",
         "year": "1991",
         "developer": "Nintendo R&D4",
         "badge": "PAL-optimised",
-        "blurb": "SMB3 was the game that turned Mario from a great arcade-style platformer into a proper adventure with choices, secrets and personality. Europe had to wait nearly three years after Japan’s 1988 original. By the time it arrived in 1991, the SNES was already out in Japan."
+        "blurb": "SMB3 was the game that turned Mario from a great arcade-style platformer into a proper adventure with choices, secrets and personality. Europe had to wait nearly three years after Japan’s 1988 original. By the time it arrived in 1991, the SNES was already out in Japan.",
+        "ssGameId": 1246,
+        "art": "img/boxart/nes/1246.png"
       },
       {
         "title": "Bionic Commando",
         "year": "1990",
         "developer": "Capcom",
-        "blurb": "The Japanese original’s Nazi imagery (swastikas, Hitler as the final boss) was censored worldwide for the West: the faction became the fictional “Badds” and Hitler was renamed “Master-D”, although he is still recognisable. The head-explosion ending survived too!"
+        "blurb": "The Japanese original’s Nazi imagery (swastikas, Hitler as the final boss) was censored worldwide for the West: the faction became the fictional “Badds” and Hitler was renamed “Master-D”, although he is still recognisable. The head-explosion ending survived too!",
+        "ssGameId": 1324,
+        "art": "img/boxart/nes/1324.png"
       },
       {
         "title": "Mega Man 2",
         "year": "1991",
         "developer": "Capcom",
-        "blurb": "Widely considered the series’ high point. It was released in Europe in January 1991, two years after Japan. Western players got a new “Normal” mode (thank goodness), and the original Japanese balance became the “Difficult” setting."
+        "blurb": "Widely considered the series’ high point. It was released in Europe in January 1991, two years after Japan. Western players got a new “Normal” mode (thank goodness), and the original Japanese balance became the “Difficult” setting.",
+        "ssGameId": 1255,
+        "art": "img/boxart/nes/1255.png"
       },
       {
         "title": "Mega Man 3",
         "year": "1992",
         "developer": "Capcom",
-        "blurb": "Introduced the slide and Proto Man, and reached Europe in 1992 under Nintendo’s own label. The music was retuned for 50Hz, which caused a quirky side effect where Proto Man’s whistle plays on a little too long before he attacks."
+        "blurb": "Introduced the slide and Proto Man, and reached Europe in 1992 under Nintendo’s own label. The music was retuned for 50Hz, which caused a quirky side effect where Proto Man’s whistle plays on a little too long before he attacks.",
+        "ssGameId": 1286,
+        "art": "img/boxart/nes/1286.png"
       },
       {
         "title": "Mega Man 4",
         "year": "1993",
         "developer": "Capcom",
-        "blurb": "Introduced the chargeable Mega Buster, now a series staple. European fans played it out of order: Nintendo’s PAL release arrived in August 1993, five months after <cite>Mega Man 5</cite> had already hit European shelves."
+        "blurb": "Introduced the chargeable Mega Buster, now a series staple. European fans played it out of order: Nintendo’s PAL release arrived in August 1993, five months after <cite>Mega Man 5</cite> had already hit European shelves.",
+        "ssGameId": 1317,
+        "art": "img/boxart/nes/1317.png"
       },
       {
         "title": "Shadow Warriors",
         "year": "1991",
         "developer": "Tecmo",
         "badge": "PAL-adjusted",
-        "blurb": "Known everywhere else as <cite>Ninja Gaiden</cite>, it was renamed for Europe at a time when ninjas were considered taboo here (the same reason the <cite>Ninja Turtles</cite> became <cite>Hero Turtles</cite>). Its 20 minutes of anime-style cutscenes were a first for the NES."
+        "blurb": "Known everywhere else as <cite>Ninja Gaiden</cite>, it was renamed for Europe at a time when ninjas were considered taboo here (the same reason the <cite>Ninja Turtles</cite> became <cite>Hero Turtles</cite>). Its 20 minutes of anime-style cutscenes were a first for the NES.",
+        "ssGameId": 18922,
+        "art": "img/boxart/nes/18922.png"
       },
       {
         "title": "Adventure Island",
         "year": "1992",
         "developer": "Hudson Soft",
-        "blurb": "An adaptation of <cite>Wonder Boy</cite> turned into its own franchise. This one had an enormous release gap: Europe didn’t see it until six years after Japan’s 1986 original. Released as <cite>Adventure Island Classic</cite> in some PAL countries and <cite>Adventure Island in the Pacific</cite> in others."
+        "blurb": "An adaptation of <cite>Wonder Boy</cite> turned into its own franchise. This one had an enormous release gap: Europe didn’t see it until six years after Japan’s 1986 original. Released as <cite>Adventure Island Classic</cite> in some PAL countries and <cite>Adventure Island in the Pacific</cite> in others.",
+        "ssGameId": 1342,
+        "art": "img/boxart/nes/1342.png"
       },
       {
         "title": "Kirby’s Adventure",
         "year": "1993",
         "developer": "HAL Laboratory",
         "badge": "PAL-adjusted",
-        "blurb": "Kirby’s first home-console outing after his introduction on the Game Boy. Released in Europe in September 1993 with dedicated French and German versions, which was uncommon for an NES game. The PAL version also got a reworked intro and music re-timed for 50Hz."
+        "blurb": "Kirby’s first home-console outing after his introduction on the Game Boy. Released in Europe in September 1993 with dedicated French and German versions, which was uncommon for an NES game. The PAL version also got a reworked intro and music re-timed for 50Hz.",
+        "ssGameId": 1279,
+        "art": "img/boxart/nes/1279.png"
       }
     ]
   },
@@ -82,70 +102,92 @@
         "year": "1987",
         "developer": "Nintendo R&D4",
         "badge": "PAL-adjusted",
-        "blurb": "Zelda launched alongside the Famicom Disk System in Japan in 1986. Europe got the cartridge version nearly two years later. The PAL version speeds up Link and the scrolling intro text to match the 50Hz timing, but the enemies still run slow."
+        "blurb": "Zelda launched alongside the Famicom Disk System in Japan in 1986. Europe got the cartridge version nearly two years later. The PAL version speeds up Link and the scrolling intro text to match the 50Hz timing, but the enemies still run slow.",
+        "ssGameId": 1250,
+        "art": "img/boxart/nes/1250.png"
       },
       {
         "title": "Zelda II: The Adventure of Link",
         "year": "1988",
         "developer": "Nintendo R&D4",
         "badge": "PAL-adjusted",
-        "blurb": "A side-scrolling detour from the original’s top-down point of view. Europe actually got it about two months <em>before</em> America, a rare reversal. The 1988 ROM chip shortage delayed many Nintendo releases, including this one."
+        "blurb": "A side-scrolling detour from the original’s top-down point of view. Europe actually got it about two months <em>before</em> America, a rare reversal. The 1988 ROM chip shortage delayed many Nintendo releases, including this one.",
+        "ssGameId": 1254,
+        "art": "img/boxart/nes/1254.png"
       },
       {
         "title": "Castlevania",
         "year": "1988",
         "developer": "Konami",
-        "blurb": "Released in Japan as <cite>Akumajō Dracula</cite>. The whip-cracking vampire hunter format would define the series for decades. European MSX2 owners had already played a different take on the game, released as <cite>Vampire Killer</cite>."
+        "blurb": "Released in Japan as <cite>Akumajō Dracula</cite>. The whip-cracking vampire hunter format would define the series for decades. European MSX2 owners had already played a different take on the game, released as <cite>Vampire Killer</cite>.",
+        "ssGameId": 1268,
+        "art": "img/boxart/nes/1268.png"
       },
       {
         "title": "Castlevania II: Simon’s Quest",
         "year": "1990",
         "developer": "Konami",
-        "blurb": "A more open-world follow-up to the linear original, with far more RPG elements. Still divisive today because of its cryptic clues. Europe waited over two years past Japan’s release."
+        "blurb": "A more open-world follow-up to the linear original, with far more RPG elements. Still divisive today because of its cryptic clues. Europe waited over two years past Japan’s release.",
+        "ssGameId": 1281,
+        "art": "img/boxart/nes/1281.png"
       },
       {
         "title": "Castlevania III: Dracula’s Curse",
         "year": "1992",
         "developer": "Konami",
-        "blurb": "The Japanese version included an extra VRC6 sound chip for richer audio that Western carts couldn’t reproduce. It came out in Europe in May 1992 under Palcom, Konami’s second European label. Palcom let Konami publish more games than Nintendo’s licensing rules allowed."
+        "blurb": "The Japanese version included an extra VRC6 sound chip for richer audio that Western carts couldn’t reproduce. It came out in Europe in May 1992 under Palcom, Konami’s second European label. Palcom let Konami publish more games than Nintendo’s licensing rules allowed.",
+        "ssGameId": 1278,
+        "art": "img/boxart/nes/1278.png"
       },
       {
         "title": "Metroid",
         "year": "1988",
         "developer": "Nintendo R&D1 / Intelligent Systems",
-        "blurb": "Samus Aran’s debut, with a famous twist at the end: finish fast enough and Samus is revealed to be a woman. I know, shocking, right? The Japanese disk version had save files, but Western players got a 24-character password system instead."
+        "blurb": "Samus Aran’s debut, with a famous twist at the end: finish fast enough and Samus is revealed to be a woman. I know, shocking, right? The Japanese disk version had save files, but Western players got a 24-character password system instead.",
+        "ssGameId": 1256,
+        "art": "img/boxart/nes/1256.png"
       },
       {
         "title": "Metal Gear",
         "year": "1989",
         "developer": "Konami",
-        "blurb": "Europe actually met Snake on the MSX2 in 1987, two years before this NES version. Series creator Hideo Kojima disowned this port, which a different Konami team made. The European version even reworked its password system after a password exploit was discovered."
+        "blurb": "Europe actually met Snake on the MSX2 in 1987, two years before this NES version. Series creator Hideo Kojima disowned this port, which a different Konami team made. The European version even reworked its password system after a password exploit was discovered.",
+        "ssGameId": 1280,
+        "art": "img/boxart/nes/1280.png"
       },
       {
         "title": "Snake’s Revenge",
         "year": "1992",
         "developer": "Konami",
-        "blurb": "A Metal Gear sequel made for Western players, without Hideo Kojima. It never came out in Japan. Kojima’s response was to make his own true sequel, <cite>Metal Gear 2: Solid Snake</cite>, for the MSX2."
+        "blurb": "A Metal Gear sequel made for Western players, without Hideo Kojima. It never came out in Japan. Kojima’s response was to make his own true sequel, <cite>Metal Gear 2: Solid Snake</cite>, for the MSX2.",
+        "ssGameId": 18864,
+        "art": "img/boxart/nes/18864.png"
       },
       {
         "title": "Faxanadu",
         "year": "1990",
         "developer": "Hudson Soft",
-        "blurb": "Hudson Soft only licensed the name from Falcom’s <cite>Xanadu</cite>. With no source code and just two months, they made a whole new action-RPG! The title is “Famicom” plus “Xanadu”. Nintendo published it in Europe in December 1990."
+        "blurb": "Hudson Soft only licensed the name from Falcom’s <cite>Xanadu</cite>. With no source code and just two months, they made a whole new action-RPG! The title is “Famicom” plus “Xanadu”. Nintendo published it in Europe in December 1990.",
+        "ssGameId": 1303,
+        "art": "img/boxart/nes/1303.png"
       },
       {
         "title": "Blaster Master",
         "year": "1991",
         "developer": "Sunsoft",
         "badge": "PAL-adjusted",
-        "blurb": "Released in Japan as <cite>Chō Wakusei Senki MetaFight</cite>, mixing tank exploration with side-scrolling on-foot sections. Europe waited nearly three years for it. The PAL version has its own bugs, including a zip glitch that speedrunners use to warp through walls."
+        "blurb": "Released in Japan as <cite>Chō Wakusei Senki MetaFight</cite>, mixing tank exploration with side-scrolling on-foot sections. Europe waited nearly three years for it. The PAL version has its own bugs, including a zip glitch that speedrunners use to warp through walls.",
+        "ssGameId": 1474,
+        "art": "img/boxart/nes/1474.png"
       },
       {
         "title": "Little Samson",
         "year": "1993",
         "developer": "Takeru",
         "badge": "PAL-optimised",
-        "blurb": "A late-era action-platformer letting you swap between four characters mid-level. It reached Europe in March 1993, and the PAL version is one of the few NES games fully optimised for 50Hz."
+        "blurb": "A late-era action-platformer letting you swap between four characters mid-level. It reached Europe in March 1993, and the PAL version is one of the few NES games fully optimised for 50Hz.",
+        "ssGameId": 1326,
+        "art": "img/boxart/nes/1326.png"
       }
     ]
   },
@@ -159,52 +201,68 @@
         "title": "The Goonies II",
         "year": "1988",
         "developer": "Konami",
-        "blurb": "The first Goonies game never came out on Western NES consoles, so Europe started with the sequel. It’s a sprawling adventure with the film’s characters to rescue."
+        "blurb": "The first Goonies game never came out on Western NES consoles, so Europe started with the sequel. It’s a sprawling adventure with the film’s characters to rescue.",
+        "ssGameId": 1437,
+        "art": "img/boxart/nes/1437.png"
       },
       {
         "title": "Rygar",
         "year": "1990",
         "developer": "Tecmo",
         "badge": "PAL-adjusted",
-        "blurb": "Far more than just an arcade conversion. The NES version adds experience points, spells and even an open world. It reached Europe in 1990, three years after Japan."
+        "blurb": "Far more than just an arcade conversion. The NES version adds experience points, spells and even an open world. It reached Europe in 1990, three years after Japan.",
+        "ssGameId": 1391,
+        "art": "img/boxart/nes/1391.png"
       },
       {
         "title": "The Battle of Olympus",
         "year": "1991",
         "developer": "Infinity",
-        "blurb": "A Greek-myth take on <cite>Zelda II</cite>, where Orpheus braves the underworld to rescue his love from Hades. It was made by a team of just three people, two of whom later married. Nintendo published it in Europe in 1991, and its Game Boy version only came out here."
+        "blurb": "A Greek-myth take on <cite>Zelda II</cite>, where Orpheus braves the underworld to rescue his love from Hades. It was made by a team of just three people, two of whom later married. Nintendo published it in Europe in 1991, and its Game Boy version only came out here.",
+        "ssGameId": 1310,
+        "art": "img/boxart/nes/1310.png"
       },
       {
         "title": "Solstice",
         "year": "1991",
         "developer": "Software Creations",
         "badge": "PAL-optimised",
-        "blurb": "An isometric puzzle adventure from Manchester’s Software Creations. Made by a British studio, it runs properly at 50Hz. Tim Follin’s title music is one of the most famous tunes on the NES."
+        "blurb": "An isometric puzzle adventure from Manchester’s Software Creations. Made by a British studio, it runs properly at 50Hz. Tim Follin’s title music is one of the most famous tunes on the NES.",
+        "ssGameId": 1301,
+        "art": "img/boxart/nes/1301.png"
       },
       {
         "title": "Swords and Serpents",
         "year": "1991",
         "developer": "Interplay",
-        "blurb": "A first-person dungeon crawler from Interplay. It’s not the best RPG on the NES, but it’s one of the very few that made it to Europe."
+        "blurb": "A first-person dungeon crawler from Interplay. It’s not the best RPG on the NES, but it’s one of the very few that made it to Europe.",
+        "ssGameId": 1323,
+        "art": "img/boxart/nes/1323.png"
       },
       {
         "title": "StarTropics",
         "year": "1992",
         "developer": "Nintendo R&D3 / Locomotive",
         "badge": "PAL-adjusted",
-        "blurb": "An unusual Nintendo-published action-RPG built exclusively for the West. It was never released in Japan at all, and it arrived in Europe nearly two years after North America. You famously had to dip the paper letter from the box in water to reveal the code you need to progress."
+        "blurb": "An unusual Nintendo-published action-RPG built exclusively for the West. It was never released in Japan at all, and it arrived in Europe nearly two years after North America. You famously had to dip the paper letter from the box in water to reveal the code you need to progress.",
+        "ssGameId": 1539,
+        "art": "img/boxart/nes/1539.png"
       },
       {
         "title": "Ufouria: The Saga",
         "year": "1992",
         "developer": "Sunsoft",
-        "blurb": "Released in Japan as <cite>Hebereke</cite>, but never in North America, because Sunsoft of America found the characters too strange. Europe got it with renamed heroes, and birds that drop weights instead of poo. Yeah, it really was weird."
+        "blurb": "Released in Japan as <cite>Hebereke</cite>, but never in North America, because Sunsoft of America found the characters too strange. Europe got it with renamed heroes, and birds that drop weights instead of poo. Yeah, it really was weird.",
+        "ssGameId": 1600,
+        "art": "img/boxart/nes/1600.png"
       },
       {
         "title": "Willow",
         "year": "1993",
         "developer": "Capcom",
-        "blurb": "A tie-in to the Ron Howard film that turned out to be a great action-RPG. Europe waited until April 1993, nearly four years after Japan."
+        "blurb": "A tie-in to the Ron Howard film that turned out to be a great action-RPG. Europe waited until April 1993, nearly four years after Japan.",
+        "ssGameId": 1479,
+        "art": "img/boxart/nes/1479.png"
       }
     ]
   },
@@ -218,50 +276,66 @@
         "title": "Gradius",
         "year": "1988",
         "developer": "Konami",
-        "blurb": "Gradius was known in European arcades as <cite>Nemesis</cite>, its North American title, but the NES version kept its Japanese name instead. The Famicom version also gave us the famous Konami Code: <strong>↑ ↑ ↓ ↓ ← → ← → Ⓑ Ⓐ</strong>"
+        "blurb": "Gradius was known in European arcades as <cite>Nemesis</cite>, its North American title, but the NES version kept its Japanese name instead. The Famicom version also gave us the famous Konami Code: <strong>↑ ↑ ↓ ↓ ← → ← → Ⓑ Ⓐ</strong>",
+        "ssGameId": 1339,
+        "art": "img/boxart/nes/1339.png"
       },
       {
         "title": "Life Force: Salamander",
         "year": "1989",
         "developer": "Konami",
-        "blurb": "Japan and Europe’s arcades called it <cite>Salamander</cite>, and America called it <cite>Life Force</cite>. The European box simply used both names. A rad shooter that switches between horizontal and vertical stages, with two-player co-op."
+        "blurb": "Japan and Europe’s arcades called it <cite>Salamander</cite>, and America called it <cite>Life Force</cite>. The European box simply used both names. A rad shooter that switches between horizontal and vertical stages, with two-player co-op.",
+        "ssGameId": 1446,
+        "art": "img/boxart/nes/1446.png"
       },
       {
         "title": "Probotector",
         "year": "1990",
         "developer": "Konami",
-        "blurb": "Europeans knew the <cite>Contra</cite> arcade game as <cite>Gryzor</cite>. On the NES it became <cite>Probotector</cite>, with the human soldiers redrawn as robots to get past Germany’s strict youth-protection rules. Every <cite>Contra</cite> game on Nintendo consoles in Europe kept the robots for years."
+        "blurb": "Europeans knew the <cite>Contra</cite> arcade game as <cite>Gryzor</cite>. On the NES it became <cite>Probotector</cite>, with the human soldiers redrawn as robots to get past Germany’s strict youth-protection rules. Every <cite>Contra</cite> game on Nintendo consoles in Europe kept the robots for years.",
+        "ssGameId": 189425,
+        "art": "img/boxart/nes/189425.png"
       },
       {
         "title": "Probotector II: Return of the Evil Forces",
         "year": "1992",
         "developer": "Konami",
-        "blurb": "The robots are back for round two in <cite>Super C</cite>’s European release! Konami even reworked the sound driver for PAL machines, so the orchestra-hit samples wouldn’t play out of tune."
+        "blurb": "The robots are back for round two in <cite>Super C</cite>’s European release! Konami even reworked the sound driver for PAL machines, so the orchestra-hit samples wouldn’t play out of tune.",
+        "ssGameId": 1321,
+        "art": "img/boxart/nes/1321.png"
       },
       {
         "title": "Solar Jetman: Hunt for the Golden Warpship",
         "year": "1991",
         "developer": "Zippo Games / Rare",
-        "blurb": "A British-made shooter from the Pickford brothers and Rare, and the third game in the <cite>Jetman</cite> series that started on the ZX Spectrum. Every planet has its own gravity. Ports for European home computers were finished but cancelled. The lost C64 version was rediscovered decades later."
+        "blurb": "A British-made shooter from the Pickford brothers and Rare, and the third game in the <cite>Jetman</cite> series that started on the ZX Spectrum. Every planet has its own gravity. Ports for European home computers were finished but cancelled. The lost C64 version was rediscovered decades later.",
+        "ssGameId": 1459,
+        "art": "img/boxart/nes/1459.png"
       },
       {
         "title": "Over Horizon",
         "year": "1992",
         "developer": "Hot-B",
-        "blurb": "A sharp horizontal shooter that fires both forwards and backwards. Before each run, you can build your own loadout and pod formation in Edit Mode. It only came out in Japan and Europe. Take that, America!"
+        "blurb": "A sharp horizontal shooter that fires both forwards and backwards. Before each run, you can build your own loadout and pod formation in Edit Mode. It only came out in Japan and Europe. Take that, America!",
+        "ssGameId": 1938,
+        "art": "img/boxart/nes/1938.png"
       },
       {
         "title": "Parodius",
         "year": "1992",
         "developer": "Konami",
-        "blurb": "Konami poking fun at its own <cite>Gradius</cite>, with penguins, pigs and a flying octopus. Palcom translated it for Europe, and it never came out on the NES in North America. Funnily enough, the European box shows a character who isn’t even in the game."
+        "blurb": "Konami poking fun at its own <cite>Gradius</cite>, with penguins, pigs and a flying octopus. Palcom translated it for Europe, and it never came out on the NES in North America. Funnily enough, the European box shows a character who isn’t even in the game.",
+        "ssGameId": 1500,
+        "art": "img/boxart/nes/1500.png"
       },
       {
         "title": "Super Turrican",
         "year": "1992",
         "developer": "Rainbow Arts (Manfred Trenz)",
         "badge": "PAL-optimised",
-        "blurb": "Turrican was an absolute superstar on the Amiga and C64, and this is his only NES outing. German series creator Manfred Trenz built it all by himself. It came out only in Europe."
+        "blurb": "Turrican was an absolute superstar on the Amiga and C64, and this is his only NES outing. German series creator Manfred Trenz built it all by himself. It came out only in Europe.",
+        "ssGameId": 18886,
+        "art": "img/boxart/nes/18886.png"
       }
     ]
   },
@@ -275,49 +349,65 @@
         "title": "Bad Dudes vs. Dragon Ninja",
         "year": "1990",
         "developer": "Data East",
-        "blurb": "Are you a bad enough dude to rescue the President? Data East’s arcade brawler, published in Japan by Namco. Europeans mostly knew it as <cite>Dragon Ninja</cite>, thanks to Ocean’s home-computer ports."
+        "blurb": "Are you a bad enough dude to rescue the President? Data East’s arcade brawler, published in Japan by Namco. Europeans mostly knew it as <cite>Dragon Ninja</cite>, thanks to Ocean’s home-computer ports.",
+        "ssGameId": 1344,
+        "art": "img/boxart/nes/1344.png"
       },
       {
         "title": "Double Dragon",
         "year": "1990",
         "developer": "Technōs Japan",
-        "blurb": "Published in Europe by Nintendo itself. The NES version dropped the arcade’s two-player co-op mode, reportedly because the programmers were new to the NES. Instead, Billy earns experience and learns new moves as he goes."
+        "blurb": "Published in Europe by Nintendo itself. The NES version dropped the arcade’s two-player co-op mode, reportedly because the programmers were new to the NES. Instead, Billy earns experience and learns new moves as he goes.",
+        "ssGameId": 1284,
+        "art": "img/boxart/nes/1284.png"
       },
       {
         "title": "Double Dragon II: The Revenge",
         "year": "1990",
         "developer": "Technōs Japan",
-        "blurb": "Not a port but a whole new game, and this time with two-player co-op. Only the hardest difficulty shows the true ending. Fun fact: the villains are called the Shadow Warriors, the same name Europe gave <cite>Ninja Gaiden</cite>."
+        "blurb": "Not a port but a whole new game, and this time with two-player co-op. Only the hardest difficulty shows the true ending. Fun fact: the villains are called the Shadow Warriors, the same name Europe gave <cite>Ninja Gaiden</cite>.",
+        "ssGameId": 1277,
+        "art": "img/boxart/nes/1277.png"
       },
       {
         "title": "Punch-Out!!",
         "year": "1991",
         "developer": "Nintendo R&D3",
-        "blurb": "Nintendo’s licence to use Tyson’s likeness ran out in 1990, so he was swapped for the fictional Mr. Dream. Europe got that version in 1991 as plain <cite>Punch-Out!!</cite>. Glass Joe still goes down in one hit."
+        "blurb": "Nintendo’s licence to use Tyson’s likeness ran out in 1990, so he was swapped for the fictional Mr. Dream. Europe got that version in 1991 as plain <cite>Punch-Out!!</cite>. Glass Joe still goes down in one hit.",
+        "ssGameId": 1259,
+        "art": "img/boxart/nes/1259.png"
       },
       {
         "title": "Street Gangs",
         "year": "1991",
         "developer": "Technōs Japan",
-        "blurb": "Known as <cite>River City Ransom</cite> in America. Infogrames brought it to Europe in 1991, and Germany waited until 1993. It’s a brawler with RPG elements: you buy food and books in shops to power up your fighter."
+        "blurb": "Known as <cite>River City Ransom</cite> in America. Infogrames brought it to Europe in 1991, and Germany waited until 1993. It’s a brawler with RPG elements: you buy food and books in shops to power up your fighter.",
+        "ssGameId": 1329,
+        "art": "img/boxart/nes/1329.png"
       },
       {
         "title": "Teenage Mutant Hero Turtles II: The Arcade Game",
         "year": "1991",
         "developer": "Konami",
-        "blurb": "In the UK, ninjas were too much for kids’ TV, so the Turtles became heroes, and their European games kept that name for years. The NES version isn’t a straight port, though. It adds new levels and two bosses made just for it."
+        "blurb": "In the UK, ninjas were too much for kids’ TV, so the Turtles became heroes, and their European games kept that name for years. The NES version isn’t a straight port, though. It adds new levels and two bosses made just for it.",
+        "ssGameId": 1296,
+        "art": "img/boxart/nes/1296.png"
       },
       {
         "title": "WWF WrestleMania Challenge",
         "year": "1991",
         "developer": "Rare",
-        "blurb": "Developed by British studio Rare, with LJN only publishing. Europe got it in 1991, a year before Japan."
+        "blurb": "Developed by British studio Rare, with LJN only publishing. Europe got it in 1991, a year before Japan.",
+        "ssGameId": 1506,
+        "art": "img/boxart/nes/1506.png"
       },
       {
         "title": "Battletoads",
         "year": "1993",
         "developer": "Rare",
-        "blurb": "Made by British studio Rare and released in Europe in 1993. The PAL version fixes a two-player bug in the Clinger Winger level that breaks the North American version. It’s famous as one of the hardest games ever made."
+        "blurb": "Made by British studio Rare and released in Europe in 1993. The PAL version fixes a two-player bug in the Clinger Winger level that breaks the North American version. It’s famous as one of the hardest games ever made.",
+        "ssGameId": 1247,
+        "art": "img/boxart/nes/1247.png"
       }
     ]
   },
@@ -331,61 +421,79 @@
         "title": "Adventures of Lolo",
         "year": "1990",
         "developer": "HAL Laboratory",
-        "blurb": "A block-pushing puzzler, and not really the start of the series: it compiles puzzles from two Japanese <cite>Eggerland</cite> games. Europe got it in December 1990, almost two years after America."
+        "blurb": "A block-pushing puzzler, and not really the start of the series: it compiles puzzles from two Japanese <cite>Eggerland</cite> games. Europe got it in December 1990, almost two years after America.",
+        "ssGameId": 1311,
+        "art": "img/boxart/nes/1311.png"
       },
       {
         "title": "Bubble Bobble",
         "year": "1990",
         "developer": "Taito",
-        "blurb": "Taito’s co-op arcade classic, brought home almost note for note. It’s best played with a buddy: Bub and Bob need each other to see the true ending."
+        "blurb": "Taito’s co-op arcade classic, brought home almost note for note. It’s best played with a buddy: Bub and Bob need each other to see the true ending.",
+        "ssGameId": 1304,
+        "art": "img/boxart/nes/1304.png"
       },
       {
         "title": "Kickle Cubicle",
         "year": "1990",
         "developer": "Nanao",
-        "blurb": "An icy puzzle game built by Nanao, with Irem only publishing. In Japan you could play each world’s levels in any order, but Europe and America got a fixed route."
+        "blurb": "An icy puzzle game built by Nanao, with Irem only publishing. In Japan you could play each world’s levels in any order, but Europe and America got a fixed route.",
+        "ssGameId": 1368,
+        "art": "img/boxart/nes/1368.png"
       },
       {
         "title": "Tetris",
         "year": "1990",
         "developer": "Nintendo R&D1",
         "badge": "PAL-optimised",
-        "blurb": "Nintendo’s own version, which won the rights battle and forced Tengen’s cartridge off the shelves. From 1991 it was even bundled with some European NES consoles. The PAL version has its own speed curve, so PAL and NTSC scores aren’t comparable."
+        "blurb": "Nintendo’s own version, which won the rights battle and forced Tengen’s cartridge off the shelves. From 1991 it was even bundled with some European NES consoles. The PAL version has its own speed curve, so PAL and NTSC scores aren’t comparable.",
+        "ssGameId": 1291,
+        "art": "img/boxart/nes/1291.png"
       },
       {
         "title": "Dr. Mario",
         "year": "1991",
         "developer": "Nintendo R&D1",
         "badge": "PAL-optimised",
-        "blurb": "Mario swaps his overalls for a lab coat to wipe out red, yellow and blue viruses. Fully optimised for PAL machines, and Henk Rogers of The Tetris Company later called it a blatant attempt to replace <cite>Tetris</cite>."
+        "blurb": "Mario swaps his overalls for a lab coat to wipe out red, yellow and blue viruses. Fully optimised for PAL machines, and Henk Rogers of The Tetris Company later called it a blatant attempt to replace <cite>Tetris</cite>.",
+        "ssGameId": 1340,
+        "art": "img/boxart/nes/1340.png"
       },
       {
         "title": "Mario & Yoshi",
         "year": "1992",
         "developer": "Game Freak",
         "badge": "PAL-optimised",
-        "blurb": "Known as <cite>Yoshi</cite> in America. It was Game Freak’s first game with Nintendo, years before Pokémon. UK magazine <cite>Game Zone</cite> called it, and I quote, “Tetris for under sevens”."
+        "blurb": "Known as <cite>Yoshi</cite> in America. It was Game Freak’s first game with Nintendo, years before Pokémon. UK magazine <cite>Game Zone</cite> called it, and I quote, “Tetris for under sevens”.",
+        "ssGameId": 1388,
+        "art": "img/boxart/nes/1388.png"
       },
       {
         "title": "Lemmings",
         "year": "1993",
         "developer": "DMA Design / Ocean",
         "badge": "PAL-optimised",
-        "blurb": "Designed in Dundee, converted by Manchester’s Ocean, and one of the most famous European games ever made. Guide your lemmings to the exit, before they walk off a cliff."
+        "blurb": "Designed in Dundee, converted by Manchester’s Ocean, and one of the most famous European games ever made. Guide your lemmings to the exit, before they walk off a cliff.",
+        "ssGameId": 1338,
+        "art": "img/boxart/nes/1338.png"
       },
       {
         "title": "Yoshi’s Cookie",
         "year": "1994",
         "developer": "Tose",
         "badge": "PAL-optimised",
-        "blurb": "A Rubik’s Cube-style puzzler where you slide rows of cookies into matching lines, with Yoshi as the wild card. It started life as a flop arcade game called <cite>Hermetica</cite>. Europe got it in April 1994, fully optimised for PAL, and one of its tunes is a 19th-century German gallop."
+        "blurb": "A Rubik’s Cube-style puzzler where you slide rows of cookies into matching lines, with Yoshi as the wild card. It started life as a flop arcade game called <cite>Hermetica</cite>. Europe got it in April 1994, fully optimised for PAL, and one of its tunes is a 19th-century German gallop.",
+        "ssGameId": 1334,
+        "art": "img/boxart/nes/1334.png"
       },
       {
         "title": "Wario’s Woods",
         "year": "1995",
         "developer": "Nintendo R&D1",
         "badge": "PAL-optimised",
-        "blurb": "One of the very last NES games if you don’t count homebrew. In America it was the last licensed release and the only NES game ever rated by the then newly formed ESRB. Europe got it even later, in 1995."
+        "blurb": "One of the very last NES games if you don’t count homebrew. In America it was the last licensed release and the only NES game ever rated by the then newly formed ESRB. Europe got it even later, in 1995.",
+        "ssGameId": 1285,
+        "art": "img/boxart/nes/1285.png"
       }
     ]
   },
@@ -399,57 +507,75 @@
         "title": "Excitebike",
         "year": "1986",
         "developer": "Nintendo R&D4",
-        "blurb": "Miyamoto’s motocross racer, and one of the NES’s first real system-sellers. It has a built-in track editor, but saving needed a tape drive only sold in Japan. European players lost their tracks the moment the console went off."
+        "blurb": "Miyamoto’s motocross racer, and one of the NES’s first real system-sellers. It has a built-in track editor, but saving needed a tape drive only sold in Japan. European players lost their tracks the moment the console went off.",
+        "ssGameId": 1371,
+        "art": "img/boxart/nes/1371.png"
       },
       {
         "title": "Ice Hockey",
         "year": "1988",
         "developer": "Nintendo R&D4 / Pax Softnica",
         "badge": "PAL-optimised",
-        "blurb": "Simple, fast and still super fun. You build your team from three body types: fast skinny players, all-rounders, and heavyweights who are slow but hit like a truck. It came out in Japan, America and Europe within a few months."
+        "blurb": "Simple, fast and still super fun. You build your team from three body types: fast skinny players, all-rounders, and heavyweights who are slow but hit like a truck. It came out in Japan, America and Europe within a few months.",
+        "ssGameId": 1410,
+        "art": "img/boxart/nes/1410.png"
       },
       {
         "title": "R.C. Pro-Am",
         "year": "1988",
         "developer": "Rare",
-        "blurb": "A top-down racer with weapons and pick-ups, from British studio Rare. It never came out in Japan at all. UK magazine <cite>Computer and Video Games</cite> gave it 90%."
+        "blurb": "A top-down racer with weapons and pick-ups, from British studio Rare. It never came out in Japan at all. UK magazine <cite>Computer and Video Games</cite> gave it 90%.",
+        "ssGameId": 1452,
+        "art": "img/boxart/nes/1452.png"
       },
       {
         "title": "Rad Racer",
         "year": "1988",
         "developer": "Square",
-        "blurb": "Known in Japan as <cite>Highway Star</cite>, and made by the team that went on to create <cite>Final Fantasy</cite>. Technically, Square made a separate PAL version, but it wasn’t adjusted for 50Hz. Press Select and put on red-and-blue glasses for 3D, though!"
+        "blurb": "Known in Japan as <cite>Highway Star</cite>, and made by the team that went on to create <cite>Final Fantasy</cite>. Technically, Square made a separate PAL version, but it wasn’t adjusted for 50Hz. Press Select and put on red-and-blue glasses for 3D, though!",
+        "ssGameId": 1441,
+        "art": "img/boxart/nes/1441.png"
       },
       {
         "title": "Blades of Steel",
         "year": "1990",
         "developer": "Konami",
-        "blurb": "Konami’s arcade-style hockey game, released in Europe about two years after America. Bump an opponent often enough and a fight breaks out. The loser goes to the penalty box!"
+        "blurb": "Konami’s arcade-style hockey game, released in Europe about two years after America. Bump an opponent often enough and a fight breaks out. The loser goes to the penalty box!",
+        "ssGameId": 1514,
+        "art": "img/boxart/nes/1514.png"
       },
       {
         "title": "Micro Machines",
         "year": "1991",
         "developer": "Codemasters",
-        "blurb": "A British racer made without Nintendo’s blessing. Codemasters reverse-engineered the console to get around its lockout chip. It was worth the trouble: <cite>Mean Machines</cite> gave it 93%."
+        "blurb": "A British racer made without Nintendo’s blessing. Codemasters reverse-engineered the console to get around its lockout chip. It was worth the trouble: <cite>Mean Machines</cite> gave it 93%.",
+        "ssGameId": 1545,
+        "art": "img/boxart/nes/1545.png"
       },
       {
         "title": "Nintendo World Cup",
         "year": "1991",
         "developer": "Technōs Japan",
-        "blurb": "Football with flying kicks and knockout tackles, from the <cite>Street Gangs</cite> team. By the time it came out in Europe in 1991, Germany had reunified, but the game still has West Germany as a playable team."
+        "blurb": "Football with flying kicks and knockout tackles, from the <cite>Street Gangs</cite> team. By the time it came out in Europe in 1991, Germany had reunified, but the game still has West Germany as a playable team.",
+        "ssGameId": 1299,
+        "art": "img/boxart/nes/1299.png"
       },
       {
         "title": "Track & Field in Barcelona",
         "year": "1992",
         "developer": "Konami",
         "badge": "PAL-optimised",
-        "blurb": "Only released in Europe. Kemco brought back Konami’s button-mashing classic for the Barcelona 1992 Olympics, with the <cite>Chariots of Fire</cite> theme at the start. Expect sore thumbs."
+        "blurb": "Only released in Europe. Kemco brought back Konami’s button-mashing classic for the Barcelona 1992 Olympics, with the <cite>Chariots of Fire</cite> theme at the start. Expect sore thumbs.",
+        "ssGameId": 1573,
+        "art": "img/boxart/nes/1573.png"
       },
       {
         "title": "Formula 1 Sensation",
         "year": "1993",
         "developer": "Konami",
-        "blurb": "An officially licensed F1 game with the drivers and races of the 1992 season. Palcom brought it to Europe, and the North American release was cancelled. Crashing into rivals is encouraged."
+        "blurb": "An officially licensed F1 game with the drivers and races of the 1992 season. Palcom brought it to Europe, and the North American release was cancelled. Crashing into rivals is encouraged.",
+        "ssGameId": 1644,
+        "art": "img/boxart/nes/1644.png"
       }
     ]
   },
@@ -463,27 +589,35 @@
         "title": "Defender of the Crown",
         "year": "1990",
         "developer": "Cinemaware / Beam Software",
-        "blurb": "Cinemaware’s medieval epic was a showpiece on the Commodore Amiga. The NES version can’t match its looks, but it actually has deeper strategy. Australian studio Beam Software worked on the port, but went uncredited. Palcom brought it to Europe."
+        "blurb": "Cinemaware’s medieval epic was a showpiece on the Commodore Amiga. The NES version can’t match its looks, but it actually has deeper strategy. Australian studio Beam Software worked on the port, but went uncredited. Palcom brought it to Europe.",
+        "ssGameId": 1423,
+        "art": "img/boxart/nes/1423.png"
       },
       {
         "title": "North & South",
         "year": "1990",
         "developer": "Infogrames",
         "badge": "PAL-adjusted",
-        "blurb": "A cheeky American Civil War strategy game from French publisher Infogrames, based on the Belgian comic <cite>Les Tuniques Bleues</cite>. Move your armies across the map, then fight the battles yourself. Even the national anthems get parodied."
+        "blurb": "A cheeky American Civil War strategy game from French publisher Infogrames, based on the Belgian comic <cite>Les Tuniques Bleues</cite>. Move your armies across the map, then fight the battles yourself. Even the national anthems get parodied.",
+        "ssGameId": 1476,
+        "art": "img/boxart/nes/1476.png"
       },
       {
         "title": "Elite",
         "year": "1991",
         "developer": "David Braben & Ian Bell",
         "badge": "PAL-optimised",
-        "blurb": "The legendary British space-trading game, converted by its own creators, David Braben and Ian Bell. It only ever came out in Europe. An NTSC version was finished too, but it stayed unreleased until Ian Bell put it on his website years later."
+        "blurb": "The legendary British space-trading game, converted by its own creators, David Braben and Ian Bell. It only ever came out in Europe. An NTSC version was finished too, but it stayed unreleased until Ian Bell put it on his website years later.",
+        "ssGameId": 1309,
+        "art": "img/boxart/nes/1309.png"
       },
       {
         "title": "Sid Meier’s Pirates!",
         "year": "1991",
         "developer": "Rare",
-        "blurb": "Sid Meier’s open-ended pirate life, converted by British studio Rare and published in Europe by Palcom. Trade, plunder, duel and woo the governor’s daughter. Nintendo’s family-friendly rules turned the tobacco trade into “crops”."
+        "blurb": "Sid Meier’s open-ended pirate life, converted by British studio Rare and published in Europe by Palcom. Trade, plunder, duel and woo the governor’s daughter. Nintendo’s family-friendly rules turned the tobacco trade into “crops”.",
+        "ssGameId": 1552,
+        "art": "img/boxart/nes/1552.png"
       }
     ]
   },
@@ -497,68 +631,91 @@
         "title": "Batman: The Video Game",
         "year": "1990",
         "developer": "Sunsoft",
-        "blurb": "Sunsoft’s take on the Tim Burton film, with wall jumps and a soundtrack by Naoki Kodaka. British gamers knew a completely different Batman: Ocean’s computer game, which came bundled with the Amiga 500."
+        "blurb": "Sunsoft’s take on the Tim Burton film, with wall jumps and a soundtrack by Naoki Kodaka. British gamers knew a completely different Batman: Ocean’s computer game, which came bundled with the Amiga 500.",
+        "ssGameId": 1287,
+        "art": "img/boxart/nes/1287.png"
       },
       {
         "title": "DuckTales",
         "year": "1990",
         "developer": "Capcom",
         "badge": "PAL-adjusted",
-        "blurb": "Scrooge’s pogo cane and the legendary Moon theme made this Capcom’s best-selling NES game, with 1.67 million copies sold. <cite>Mean Machines</cite> gave it 90%."
+        "blurb": "Scrooge’s pogo cane and the legendary Moon theme made this Capcom’s best-selling NES game, with 1.67 million copies sold. <cite>Mean Machines</cite> gave it 90%.",
+        "ssGameId": 1263,
+        "art": "img/boxart/nes/1263.png"
       },
       {
         "title": "DuckTales 2",
         "year": "1993",
         "developer": "Capcom",
-        "blurb": "The sequel that arrived right at the end of the NES era. Europe got it in November 1993. A small print run makes it a collector’s item today."
+        "blurb": "The sequel that arrived right at the end of the NES era. Europe got it in November 1993. A small print run makes it a collector’s item today.",
+        "ssGameId": 71346,
+        "ssRegion": "de",
+        "art": "img/boxart/nes/71346.png"
       },
       {
         "title": "Teenage Mutant Hero Turtles",
         "year": "1990",
         "developer": "Konami",
-        "blurb": "The game that rescued the NES in Britain. It came bundled with the console as the “Mutant Machine” for Christmas 1990, at the height of Turtlemania, and helped Nintendo overtake Sega’s Master System in the UK. <cite>Mean Machines</cite> gave it 90%, despite that infamous underwater dam level."
+        "blurb": "The game that rescued the NES in Britain. It came bundled with the console as the “Mutant Machine” for Christmas 1990, at the height of Turtlemania, and helped Nintendo overtake Sega’s Master System in the UK. <cite>Mean Machines</cite> gave it 90%, despite that infamous underwater dam level.",
+        "ssGameId": 1253,
+        "art": "img/boxart/nes/1253.png"
       },
       {
         "title": "Captain America and the Avengers",
         "year": "1991",
         "developer": "Data East",
-        "blurb": "Data East’s superhero action game, developed in Japan but never released there. Europe and America did get it."
+        "blurb": "Data East’s superhero action game, developed in Japan but never released there. Europe and America did get it.",
+        "ssGameId": 1762,
+        "art": "img/boxart/nes/1762.png"
       },
       {
         "title": "Chip ’n Dale Rescue Rangers",
         "year": "1991",
         "developer": "Capcom",
-        "blurb": "Throw crates at enemies (or at each other) in this co-op Capcom favourite. The European version even fixes glitches in the North American intro."
+        "blurb": "Throw crates at enemies (or at each other) in this co-op Capcom favourite. The European version even fixes glitches in the North American intro.",
+        "ssGameId": 1314,
+        "art": "img/boxart/nes/1314.png"
       },
       {
         "title": "Gremlins 2: The New Batch",
         "year": "1991",
         "developer": "Sunsoft",
-        "blurb": "A really well-regarded tie-in to the film sequel. Gizmo takes on the Gremlins in a top-down action game from the creator of <cite>Blaster Master</cite>. It reached Europe just four months after America."
+        "blurb": "A really well-regarded tie-in to the film sequel. Gizmo takes on the Gremlins in a top-down action game from the creator of <cite>Blaster Master</cite>. It reached Europe just four months after America.",
+        "ssGameId": 1300,
+        "art": "img/boxart/nes/1300.png"
       },
       {
         "title": "Tiny Toon Adventures",
         "year": "1992",
         "developer": "Konami",
-        "blurb": "Buster Bunny teams up with Plucky, Dizzy or Furrball, each with their own special ability. European magazines loved it, with scores up to 93%."
+        "blurb": "Buster Bunny teams up with Plucky, Dizzy or Furrball, each with their own special ability. European magazines loved it, with scores up to 93%.",
+        "ssGameId": 107884,
+        "art": "img/boxart/nes/107884.png"
       },
       {
         "title": "Asterix",
         "year": "1993",
         "developer": "Bit Managers",
-        "blurb": "Made in Barcelona for French publisher Infogrames, and only ever released in Europe. Asterix sets off to rescue Obelix from the Romans. It sold over 700,000 copies."
+        "blurb": "Made in Barcelona for French publisher Infogrames, and only ever released in Europe. Asterix sets off to rescue Obelix from the Romans. It sold over 700,000 copies.",
+        "ssGameId": 1331,
+        "art": "img/boxart/nes/1331.png"
       },
       {
         "title": "Darkwing Duck",
         "year": "1993",
         "developer": "Capcom",
-        "blurb": "Capcom’s darker cousin to <cite>DuckTales</cite>, with gas-gun gadgets and a <cite>Mega Man</cite> feel. Europe got it 18 months after America."
+        "blurb": "Capcom’s darker cousin to <cite>DuckTales</cite>, with gas-gun gadgets and a <cite>Mega Man</cite> feel. Europe got it 18 months after America.",
+        "ssGameId": 71344,
+        "art": "img/boxart/nes/71344.png"
       },
       {
         "title": "The Smurfs",
         "year": "1994",
         "developer": "Bit Managers",
-        "blurb": "Another Europe-only treat from Barcelona’s Bit Managers and Infogrames, based on the Belgian comic. One of the very last NES games released."
+        "blurb": "Another Europe-only treat from Barcelona’s Bit Managers and Infogrames, based on the Belgian comic. One of the very last NES games released.",
+        "ssGameId": 1354,
+        "art": "img/boxart/nes/1354.png"
       }
     ]
   },
@@ -573,50 +730,66 @@
         "year": "1987",
         "developer": "Nintendo R&D1",
         "badge": "PAL-adjusted",
-        "blurb": "A rare case of Europe going first: the NES version came out here in February 1987, five months before America! The cartridge swapped the Japanese disk saves for passwords and added a proper ending with staff credits."
+        "blurb": "A rare case of Europe going first: the NES version came out here in February 1987, five months before America! The cartridge swapped the Japanese disk saves for passwords and added a proper ending with staff credits.",
+        "ssGameId": 1276,
+        "art": "img/boxart/nes/1276.png"
       },
       {
         "title": "The Guardian Legend",
         "year": "1990",
         "developer": "Compile",
         "badge": "PAL-adjusted",
-        "blurb": "Part shoot-’em-up, part <cite>Zelda</cite>-style adventure, made by shooter experts Compile. Nintendo itself published it in Europe. German magazine <cite>Power Play</cite> liked it, except for the long passwords. They had a point."
+        "blurb": "Part shoot-’em-up, part <cite>Zelda</cite>-style adventure, made by shooter experts Compile. Nintendo itself published it in Europe. German magazine <cite>Power Play</cite> liked it, except for the long passwords. They had a point.",
+        "ssGameId": 1496,
+        "art": "img/boxart/nes/1496.png"
       },
       {
         "title": "Journey to Silius",
         "year": "1990",
         "developer": "Sunsoft",
-        "blurb": "It started life as a Terminator game, until Sunsoft lost the film licence. The hero was redesigned, and the Japanese and European boxes show him fully armoured. The music is the real star: Naoki Kodaka used a sampled bassline that still sounds amazing."
+        "blurb": "It started life as a Terminator game, until Sunsoft lost the film licence. The hero was redesigned, and the Japanese and European boxes show him fully armoured. The music is the real star: Naoki Kodaka used a sampled bassline that still sounds amazing.",
+        "ssGameId": 1484,
+        "art": "img/boxart/nes/1484.png"
       },
       {
         "title": "Little Nemo: The Dream Master",
         "year": "1991",
         "developer": "Capcom",
-        "blurb": "Feed sweets to frogs, gorillas and moles, then ride them through Slumberland. Nintendo published it in Europe, where France’s <cite>Player One</cite> gave it 92%."
+        "blurb": "Feed sweets to frogs, gorillas and moles, then ride them through Slumberland. Nintendo published it in Europe, where France’s <cite>Player One</cite> gave it 92%.",
+        "ssGameId": 1366,
+        "art": "img/boxart/nes/1366.png"
       },
       {
         "title": "Hammerin’ Harry",
         "year": "1992",
         "developer": "Irem",
-        "blurb": "Irem’s arcade carpenter swings a giant hammer to defend his neighbourhood from a crooked construction company. The NES version never came out in America, making the PAL cartridge a real collector’s item. Europe even got the Game Boy sequel, while America had to wait until a 2023 Retro-Bit reissue."
+        "blurb": "Irem’s arcade carpenter swings a giant hammer to defend his neighbourhood from a crooked construction company. The NES version never came out in America, making the PAL cartridge a real collector’s item. Europe even got the Game Boy sequel, while America had to wait until a 2023 Retro-Bit reissue.",
+        "ssGameId": 1563,
+        "art": "img/boxart/nes/1563.png"
       },
       {
         "title": "Gargoyle’s Quest II: The Demon Darkness",
         "year": "1993",
         "developer": "Capcom",
-        "blurb": "Firebrand, the red gargoyle from <cite>Ghosts ’n Goblins</cite>, gets his own side-scrolling adventure with an RPG-style overworld. It reached Europe in June 1993."
+        "blurb": "Firebrand, the red gargoyle from <cite>Ghosts ’n Goblins</cite>, gets his own side-scrolling adventure with an RPG-style overworld. It reached Europe in June 1993.",
+        "ssGameId": 71396,
+        "art": "img/boxart/nes/71396.png"
       },
       {
         "title": "Mr. Gimmick!",
         "year": "1993",
         "developer": "Sunsoft",
-        "blurb": "Sunsoft of America found its characters too strange and cancelled the release. Swedish distributor Bergsala brought a small batch to Scandinavia instead. Sadly, the PAL version lost the Japanese version’s extra sound chip, but it’s still one of the most wanted NES cartridges in existence."
+        "blurb": "Sunsoft of America found its characters too strange and cancelled the release. Swedish distributor Bergsala brought a small batch to Scandinavia instead. Sadly, the PAL version lost the Japanese version’s extra sound chip, but it’s still one of the most wanted NES cartridges in existence.",
+        "ssGameId": 1712,
+        "art": "img/boxart/nes/1712.png"
       },
       {
         "title": "Panic Restaurant",
         "year": "1994",
         "developer": "Taito",
-        "blurb": "A chef fights killer food with a frying pan. It reached Europe two years after Japan, as one of the last NES releases. Dutch magazine <cite>Power Unlimited</cite> called it “one of the tastiest platform games of all time”."
+        "blurb": "A chef fights killer food with a frying pan. It reached Europe two years after Japan, as one of the last NES releases. Dutch magazine <cite>Power Unlimited</cite> called it “one of the tastiest platform games of all time”.",
+        "ssGameId": 1992,
+        "art": "img/boxart/nes/1992.png"
       }
     ]
   },
@@ -630,51 +803,67 @@
         "title": "Boulder Dash",
         "year": "1990",
         "developer": "Data East",
-        "blurb": "Rockford digs for diamonds while boulders tumble down around him. Peter Liepa’s game was one of the biggest hits on European home computers, and it still turns up on new platforms today."
+        "blurb": "Rockford digs for diamonds while boulders tumble down around him. Peter Liepa’s game was one of the biggest hits on European home computers, and it still turns up on new platforms today.",
+        "ssGameId": 1357,
+        "art": "img/boxart/nes/1357.png"
       },
       {
         "title": "Spy vs. Spy",
         "year": "1990",
         "developer": "Kemco",
-        "blurb": "The <cite>Mad</cite> magazine spies set booby traps for each other in split-screen. It was already a classic on the C64 and Spectrum, and <cite>Your Sinclair</cite> ranked it among the best games of all time. The NES version reached Europe in July 1990."
+        "blurb": "The <cite>Mad</cite> magazine spies set booby traps for each other in split-screen. It was already a classic on the C64 and Spectrum, and <cite>Your Sinclair</cite> ranked it among the best games of all time. The NES version reached Europe in July 1990.",
+        "ssGameId": 1424,
+        "art": "img/boxart/nes/1424.png"
       },
       {
         "title": "Fantastic Dizzy",
         "year": "1991",
         "developer": "Codemasters",
-        "blurb": "Known as <cite>The Fantastic Adventures of Dizzy</cite> in America. Britain’s favourite egg, from the Oliver Twins and Codemasters. Like <cite>Micro Machines</cite>, it was sold without Nintendo’s approval as an unlicensed cartridge. It won awards in America, and <cite>N-Power</cite> gave it 90%."
+        "blurb": "Known as <cite>The Fantastic Adventures of Dizzy</cite> in America. Britain’s favourite egg, from the Oliver Twins and Codemasters. Like <cite>Micro Machines</cite>, it was sold without Nintendo’s approval as an unlicensed cartridge. It won awards in America, and <cite>N-Power</cite> gave it 90%.",
+        "ssGameId": 111293,
+        "art": "img/boxart/nes/111293.png"
       },
       {
         "title": "Rainbow Islands: Bubble Bobble 2",
         "year": "1991",
         "developer": "Ocean",
-        "blurb": "Bub and Bob, now human, climb islands using rainbows. Europe and America got completely different NES versions: Ocean’s European version sticks much closer to the arcade game."
+        "blurb": "Bub and Bob, now human, climb islands using rainbows. Europe and America got completely different NES versions: Ocean’s European version sticks much closer to the arcade game.",
+        "ssGameId": 118883,
+        "art": "img/boxart/nes/118883.png"
       },
       {
         "title": "Shadowgate",
         "year": "1991",
         "developer": "Kemco",
         "badge": "PAL-adjusted",
-        "blurb": "A grim castle adventure from the Macintosh, ported by Kemco. It’s one of the few NES games translated into Swedish, though early copies mixed up the letters å and ä, so a paper slip in the box explained the mistake."
+        "blurb": "A grim castle adventure from the Macintosh, ported by Kemco. It’s one of the few NES games translated into Swedish, though early copies mixed up the letters å and ä, so a paper slip in the box explained the mistake.",
+        "ssGameId": 1292,
+        "art": "img/boxart/nes/1292.png"
       },
       {
         "title": "Déjà Vu: A Nightmare Comes True!!",
         "year": "1992",
         "developer": "Kemco",
-        "blurb": "You wake up with no memory, next to a dead body. A hard-boiled noir mystery from the same team as <cite>Shadowgate</cite>, which reached Europe two years after America and even got a Swedish version."
+        "blurb": "You wake up with no memory, next to a dead body. A hard-boiled noir mystery from the same team as <cite>Shadowgate</cite>, which reached Europe two years after America and even got a Swedish version.",
+        "ssGameId": 1990,
+        "art": "img/boxart/nes/1990.png"
       },
       {
         "title": "Maniac Mansion",
         "year": "1992",
         "developer": "Realtime Associates",
         "badge": "PAL-optimised",
-        "blurb": "Lucasfilm’s C64 classic, ported by Realtime Associates. Nintendo of America censored a lot, but the hamster-in-the-microwave gag slipped through until 250,000 cartridges had shipped. In Europe it was fully optimised for PAL and even got a Swedish version."
+        "blurb": "Lucasfilm’s C64 classic, ported by Realtime Associates. Nintendo of America censored a lot, but the hamster-in-the-microwave gag slipped through until 250,000 cartridges had shipped. In Europe it was fully optimised for PAL and even got a Swedish version.",
+        "ssGameId": 1336,
+        "art": "img/boxart/nes/1336.png"
       },
       {
         "title": "Prince of Persia",
         "year": "1992",
         "developer": "MotiveTime",
-        "blurb": "Jordan Mechner’s rotoscoped classic, converted by British studio MotiveTime for British publisher Virgin. The European version even adds a credit for Mechner that the American version leaves out."
+        "blurb": "Jordan Mechner’s rotoscoped classic, converted by British studio MotiveTime for British publisher Virgin. The European version even adds a credit for Mechner that the American version leaves out.",
+        "ssGameId": 1392,
+        "art": "img/boxart/nes/1392.png"
       }
     ]
   },
@@ -688,37 +877,49 @@
         "title": "Gyromite",
         "year": "1986",
         "developer": "Nintendo R&D1",
-        "blurb": "Made to show off R.O.B., the robot that helped sell the NES as a toy after the 1983 video game crash. R.O.B. presses your buttons while you guide the professor. It came out in Europe in September 1986."
+        "blurb": "Made to show off R.O.B., the robot that helped sell the NES as a toy after the 1983 video game crash. R.O.B. presses your buttons while you guide the professor. It came out in Europe in September 1986.",
+        "ssGameId": 1450,
+        "art": "img/boxart/nes/1450.png"
       },
       {
         "title": "Duck Hunt",
         "year": "1987",
         "developer": "Nintendo R&D1",
-        "blurb": "The Zapper classic that came with countless consoles, and the home of the most hated dog in gaming. It reached Europe in August 1987, more than three years after Japan."
+        "blurb": "The Zapper classic that came with countless consoles, and the home of the most hated dog in gaming. It reached Europe in August 1987, more than three years after Japan.",
+        "ssGameId": 1260,
+        "art": "img/boxart/nes/1260.png"
       },
       {
         "title": "Hogan’s Alley",
         "year": "1987",
         "developer": "Nintendo R&D1",
-        "blurb": "Shoot the gangsters, spare the professor. An early Zapper game where hesitation costs as much as a missed shot. It came out in Europe in December 1987."
+        "blurb": "Shoot the gangsters, spare the professor. An early Zapper game where hesitation costs as much as a missed shot. It came out in Europe in December 1987.",
+        "ssGameId": 1564,
+        "art": "img/boxart/nes/1564.png"
       },
       {
         "title": "The Adventures of Bayou Billy",
         "year": "1991",
         "developer": "Konami",
-        "blurb": "Part brawler, part driving game, part Zapper shooting gallery. The Western version is <strong>much</strong> harder than Japan’s <cite>Mad City</cite>, with tougher enemies, less ammo and just one ending instead of four."
+        "blurb": "Part brawler, part driving game, part Zapper shooting gallery. The Western version is <strong>much</strong> harder than Japan’s <cite>Mad City</cite>, with tougher enemies, less ammo and just one ending instead of four.",
+        "ssGameId": 1355,
+        "art": "img/boxart/nes/1355.png"
       },
       {
         "title": "Dynablaster",
         "year": "1991",
         "developer": "Hudson Soft",
-        "blurb": "Known as <cite>Bomberman II</cite> in America, where it only arrived two years later. Three-player battles needed the Four Score adapter, and they’re still some of the best fun on the NES."
+        "blurb": "Known as <cite>Bomberman II</cite> in America, where it only arrived two years later. Three-player battles needed the Four Score adapter, and they’re still some of the best fun on the NES.",
+        "ssGameId": 1482,
+        "art": "img/boxart/nes/1482.png"
       },
       {
         "title": "Operation Wolf",
         "year": "1992",
         "developer": "Taito",
-        "blurb": "Europeans knew it best from Ocean’s home-computer conversions. On the NES, Taito’s own version lets you grab the Zapper and take on an army single-handedly."
+        "blurb": "Europeans knew it best from Ocean’s home-computer conversions. On the NES, Taito’s own version lets you grab the Zapper and take on an army single-handedly.",
+        "ssGameId": 1551,
+        "art": "img/boxart/nes/1551.png"
       }
     ]
   }

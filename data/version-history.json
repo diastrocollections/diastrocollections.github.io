@@ -1,9 +1,39 @@
 [
-    {
+  {
+    "version": "3.2.0",
+    "type": "minor",
+    "date": "2026-11-27",
+    "current": true,
+    "sections": [
+      {
+        "heading": "Box art comes to the NES and Game Boy!",
+        "bullets": [
+          {
+            "text": "<strong>Every game now has box art:</strong> all 200 games across the <a href=\"/nes/\">NES</a> and <a href=\"/gameboy/\">Game Boy</a> Collections next to the number, title and story. I picked the European boxes wherever they exist, using the ScreenScraper API. More on that below."
+          },
+          {
+            "text": "<strong>Click the art for a larger view:</strong> the box front opens in a viewer at its full size with the game’s name and a link to its ScreenScraper page underneath for attribution as well as an easy way to find out more about the game."
+          }
+        ]
+      },
+      {
+        "heading": "Under the hood",
+        "bullets": [
+          {
+            "text": "<strong>The art was fetched once, locally:</strong> a new build tool (<code>tools/boxart.mjs</code>) talks to the ScreenScraper API, checked every candidate really was the European game on the right console, and saved each scan into the repository. Your browser never contacts any outside service. You can check out the whole pipeline (quirks included) in <code>tools/README.md</code>."
+          },
+          {
+            "text": "<strong>The <a href=\"/how-its-made/\">How it’s made</a> page now shows link icons without leaking you:</strong> I added favicons to external links, but the icons are self-hosted copies instead of a third-party favicon service, so reading that page doesn’t tell any other server you were there."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "version": "3.1.0",
     "type": "minor",
     "date": "2026-11-25",
-    "current": true,
+    "current": false,
     "sections": [
       {
         "heading": "GBC Collection progress update",

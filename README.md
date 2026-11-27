@@ -38,7 +38,7 @@ assets/
   status.js                   "Hand-written" / "Draft in progress" badge and popover
   nav.js                      Site navigation: top bar, Collections switcher, back to top, previous / next
   version-history.js          Renders the changelog
-  how-its-made.js             Shelf progress chart and "On this page" scroll-spy
+  how-its-made.js             Shelf progress chart, "On this page" scroll-spy, and self-hosted favicons on external links
   css/
     base.css                  Shared layout for all collection pages
     theme-<platform>.css      Per-platform colors, fonts and decorative extras
@@ -50,7 +50,13 @@ assets/
     tokens.css                Site-wide design tokens: fonts, text sizes, corner radii, transition speeds
   fonts/                      Self-hosted .woff2 files (see fonts/MANIFEST.md)
   og/                         Open Graph share images, one per page
-  img/                        Logo and author photo
+  img/                        Logo, author photo and box art
+    boxart/<platform>/        One downloaded box-front scan per game (see tools/README.md)
+    favicons/                 Self-hosted favicons of the sites the "How it's made" page links to
+
+tools/
+  boxart.mjs                  Build-time box-art fetcher from the ScreenScraper API
+  README.md                   The box-art system: workflow, data properties, layout knobs
 
 .pages.yml                    Pages CMS schema for the JSON files
 ```
@@ -70,7 +76,7 @@ All collection pages share the same HTML skeleton. The only parts that differ fr
 ...
 <script src="../assets/nav.js"></script>
 <script src="../assets/status.js"></script>
-<script src="../assets/collection.js" data-src="../data/nes.json"></script>
+<script src="../assets/collection.js" data-src="../data/nes.json" data-boxart></script>
 ```
 
 `collection.js` reads its own `data-src` attribute, fetches that file and renders:
@@ -81,7 +87,7 @@ All collection pages share the same HTML skeleton. The only parts that differ fr
 - the collapsible curator's note;
 - the platform's writing status in the hero, which it looks up in `platforms.json`.
 
-The renderer only needs a handful of element IDs on the page, such as `#chapters`, `#chips` and `#searchInput`, and every one except `#chapters` is optional. Platform-specific touches are opt-in through attributes. For example, the PlayStation page passes `data-glyphs` so the renderer cycles the △ ○ ✕ □ button symbols through its cards.
+The renderer only needs a handful of element IDs on the page, such as `#chapters`, `#chips` and `#searchInput`, and every one except `#chapters` is optional. Platform-specific touches are opt-in through attributes. For example, the PlayStation page passes `data-glyphs` so the renderer cycles the △ ○ ✕ □ button symbols through its cards, and the NES page passes `data-boxart` so its cards carry a box-art tile.
 
 ### The data format
 
@@ -102,6 +108,10 @@ Each `data/<platform>.json` file is an array of chapters:
 ```
 
 `hue` (0–360) is fed into a CSS custom property, so each chapter gets its own accent color within the platform's palette.
+
+### Box art
+
+A game can carry three optional box-art properties — `ssGameId`, `ssRegion` and `art` — that drive the art tile on its card. They are filled in and downloaded by a local build tool, never by the visitor's browser; the whole pipeline, including the card layout, the click-to-view modal and its tuning knobs, is documented in `tools/README.md`. A platform opts into the art tile with the `data-boxart` attribute on its `collection.js` script tag; the NES and Game Boy Collections have it.
 
 ## Styling and theming
 
@@ -157,6 +167,7 @@ The JSON files are edited through [Pages CMS](https://pagescms.org), which commi
 
 - **Analytics:** [GoatCounter](https://www.goatcounter.com) counts page views anonymously. There are no cookies and no personal tracking.
 - **Fonts:** self-hosted (see above).
+- **Images:** box art and link icons are downloaded once at build time and served from this repository; the pages never talk to ScreenScraper or any image service.
 - **Browser storage:** none. The dark-mode choice is not saved between visits.
 - There are no ads, accounts or other external scripts.
 
@@ -171,7 +182,7 @@ python3 -m http.server
 
 ## How it's made, and AI
 
-Much of the technical side (the HTML, CSS and JavaScript in this repository) is built with [Claude Code](https://claude.com/claude-code), under my direction and with my review and testing. Version 1.0 of the collections also used research and draft texts created with Claude. From then on, every collection is being rewritten, expanded and edited by hand, and the status badges show how far each one has got. The [How it's made](https://diastrogaming.com/how-its-made/) page covers the process in full.
+Much of the technical side (the HTML, CSS and JavaScript in this repository) is built with AI agents — [Claude Code](https://claude.com/claude-code) at first, and since November 2026 [Mistral's Vibe Code](https://docs.mistral.ai/vibe/code) — under my direction and with my review and testing. Version 1.0 of the collections also used research and draft texts created with Claude. From then on, every collection is being rewritten, expanded and edited by hand, and the status badges show how far each one has got. The [How it's made](https://diastrogaming.com/how-its-made/) page covers the process in full.
 
 ## License and trademarks
 
@@ -182,4 +193,4 @@ Much of the technical side (the HTML, CSS and JavaScript in this repository) is 
 
 My name and photo, the Diastro Gaming and Diastro Gaming Collections names, and the Diastro Gaming logo are my own and are not covered by either license. Fonts in `assets/fonts/` are under the SIL Open Font License. See [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) for exactly what falls under which license.
 
-Platform names, game titles and other trademarks belong to their respective owners and are used only for identification and commentary.
+Platform names, game titles, box art and other trademarks belong to their respective owners and are used only for identification and commentary. Box art is downloaded once from the ScreenScraper API and self-hosted; see [`tools/README.md`](tools/README.md) and [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md) for the details.

@@ -22,6 +22,15 @@ components:
       - name: badge
         type: string
         label: Badge (optional, short, e.g. PAL-optimised)
+      - name: ssGameId
+        type: number
+        label: ScreenScraper id (filled in by tools/boxart.mjs; leave as-is)
+      - name: ssRegion
+        type: string
+        label: Region pin (optional, e.g. de or fr; used by tools/boxart.mjs)
+      - name: art
+        type: string
+        label: Art path (written by tools/boxart.mjs; do not edit by hand)
       - name: blurb
         type: text
         label: Blurb

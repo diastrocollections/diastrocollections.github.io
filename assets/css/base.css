@@ -655,6 +655,255 @@ h1, h2, h3, .display {
   border-radius: var(--chip-radius, var(--radius-pill));
 }
 
+/* Box art (enabled per page with data-boxart on the collection.js script tag):
+   a portrait tile on the card's top-left with the number, title and meta
+   beside it; the tile takes ~30% of the card's width and follows a box
+   front's 5:7 portrait proportions. The blurb is a grid child of .card-top:
+   full width below by default, or in the text column beside the art when the
+   card itself is wide enough for a readable column — which only happens in
+   single-column view, where a wide card would otherwise waste its right
+   half. Narrow cards (phones) keep the blurb below: their text column is
+   too narrow for comfortable line lengths. */
+.card-top {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 14px;
+  container-type: inline-size;
+}
+
+.card-top > .card-blurb {
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin: 0;
+}
+
+@container (min-width: 440px) {
+  .card-art {
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+  .card-top > .card-blurb {
+    grid-column: 2;
+  }
+}
+
+.card-top-main {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+/* The head's title wraps greedily, not balanced. Headings site-wide get
+   text-wrap: balance, which is right for display headings but wrong here:
+   it splits a long title into even-length lines, so every line stops short
+   of the column's right edge and a word that would fit ("...Hero" after
+   "Teenage Mutant") gets pushed to the next line anyway. wrap fills each
+   line; pretty (same idea, with orphan avoidance on the last line) replaces
+   it where the browser knows it. Scoped to .card-top-main so every other
+   platform's card titles keep their balanced look. */
+.card-top-main .card-title {
+  text-wrap: wrap;
+  text-wrap: pretty;
+}
+
+/* Developer above, release year below, instead of the mid-dot inline form the
+   badge-less cards use. */
+.card-top-main .card-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Placeholder until real art is filled in: a low-saturation shade of the
+   chapter colour, with "boxart" set in the chapter ink. When tools/boxart.mjs
+   has saved art, the <img> overlays the placeholder; a failed load removes
+   the image so the placeholder shows instead.
+   The tint is mode-aware, because the label's ink flips with the scheme
+   (--chapter-ink caps its lightness in light mode and floors it in dark
+   mode). A light-only tint put the floored light ink on a light grey in dark
+   mode, at about 1:1. The dark tint's 16% lightness keeps that ink at
+   WCAG AA's 4.5:1 or better over every chapter hue of the themes shipped so
+   far (NES, Game Boy); lighter tints drop the saturated magenta and red
+   chapters below it.
+   The tile's proportions follow a box front: 5:7 portrait, like an NES box.
+   A console with differently shaped boxes (landscape SNES/Mega Drive cases,
+   near-square Game Boy boxes) overrides --card-art-ratio in its theme. */
+.card-art {
+  aspect-ratio: var(--card-art-ratio, 5 / 7);
+  /* Grid items stretch to their row's height by default, so a tall head
+     (a two-line title) would stretch the tile along with it, and the tile
+     would differ from card to card. Top-align it instead: it always keeps
+     its box proportions and the same size on every card. Invisible on
+     themes whose tiles already dominate the row (the NES's 5:7 portrait
+     boxes); visible on near-square boxes (Game Boy). */
+  align-self: start;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background: hsl(var(--hue) 14% 78%);
+}
+
+@supports (color: light-dark(red, red)) {
+  .card-art {
+    background: light-dark(hsl(var(--hue) 14% 78%), hsl(var(--hue) 14% 16%));
+  }
+}
+
+.card-art-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* A tile with real art is a <button> that opens the viewer. Themes may clip
+   the tile (the NES pixel corners do), so the focus ring sits inside it. */
+button.card-art {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+button.card-art:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -3px;
+}
+
+/* Hovering (or focusing) a tile dims the art and reveals a magnifier,
+   signalling "click to enlarge". The ::after scrim sits between the image
+   and the .card-art-zoom icon; together with the brightness cut it brings
+   even a pure-white box down to ~2% luminance, so the icon stays above
+   WCAG 1.4.11's 3:1 non-text minimum. Themes override the icon colour with
+   the chapter colour (the NES theme's --card-zoom carries the arithmetic). */
+button.card-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgb(0 0 0 / 0.72);
+  opacity: 0;
+}
+
+.card-art-zoom {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  /* 37% on the 10-cell grid keeps each pixel the same size as before; the
+     smaller icon just uses fewer of them. */
+  width: 37%;
+  height: auto;
+  translate: -50% -50%;
+  color: var(--accent);
+  opacity: 0;
+}
+
+button.card-art:focus-visible .card-art-img { filter: brightness(0.55); }
+
+button.card-art:focus-visible::after,
+button.card-art:focus-visible .card-art-zoom { opacity: 1; }
+
+@media (hover: hover) {
+  button.card-art:hover .card-art-img { filter: brightness(0.55); }
+
+  button.card-art:hover::after,
+  button.card-art:hover .card-art-zoom { opacity: 1; }
+}
+
+/* ---------- Box-art viewer ---------- */
+
+/* Clicking a card's art tile opens the art in a native <dialog> at its
+   natural size, shrunk to fit the screen — never wider or taller than the
+   viewport, so nothing needs scrolling. Escape, focus trapping and the
+   backdrop come from the dialog element; the theme restyles the frame. */
+.art-dialog {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  max-width: calc(100vw - 32px);
+  box-shadow: var(--shadow);
+}
+
+.art-dialog::backdrop {
+  background: rgb(0 0 0 / 0.72);
+}
+
+/* The figure is sized by the image alone: width fit-content ignores the
+   caption (see the width: 0 trick below), so the dialog never grows wider
+   than the art and the art is never upscaled or stretched. */
+.art-figure {
+  margin: 0;
+  width: fit-content;
+  max-height: calc(100vh - 64px);
+  max-height: calc(100dvh - 64px);
+}
+
+.art-img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 180px);
+  max-height: calc(100dvh - 180px);
+  margin-inline: auto;
+}
+
+.art-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+/* 18px on the 9x9 pixel grid keeps the cross's cells at a crisp 2px. */
+.art-close svg { width: 18px; height: 18px; }
+
+.art-close:hover { border-color: var(--accent); color: var(--accent-text, var(--accent)); }
+
+/* width: 0 keeps the caption out of the figure's fit-content width, and
+   min-width: 100% stretches it back out to whatever the image ended up as,
+   so the caption wraps within the image's width. */
+.art-caption {
+  width: 0;
+  min-width: 100%;
+  margin: 10px 0 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  line-height: 1.5;
+  color: var(--ink-faint);
+}
+
+.art-caption-title { color: var(--ink); }
+
+.art-caption a {
+  color: var(--accent-text, var(--accent));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.card-art-fallback {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: var(--chapter-fill, var(--chapter-ink));
+}
+
 .card-title {
   font-family: var(--font-body);
   font-weight: 700;

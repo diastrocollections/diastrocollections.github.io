@@ -498,7 +498,15 @@
 
 /* Fill behind the chapter number and tag. Its lightness is capped in both light
    and dark mode, so their white text reads at 4.5:1 on every chapter colour. */
-.chapter { --chapter-fill: hsl(var(--hue) var(--sat) var(--lig)); }
+.chapter {
+  --chapter-fill: hsl(var(--hue) var(--sat) var(--lig));
+  /* Colour of the box-art tile's hover magnifier: the chapter hue, with the
+     lightness lifted to 68%. At --lig (45% light mode) the blue and purple
+     chapters only reach 1.5-1.8:1 over the darkened art; at 68% every
+     chapter clears 3.5:1 against even a pure-white box under the tile
+     scrim (brightness 0.55 + rgb(0 0 0 / 0.72) = ~2% luminance). */
+  --card-zoom: hsl(var(--hue) var(--sat) 68%);
+}
 
 @supports (color: oklch(from red l c h)) {
   .chapter {
@@ -557,7 +565,6 @@
   background: hsl(var(--hue) var(--sat) var(--lig));
   clip-path: polygon(0 4px, 4px 4px, 4px 0, calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
   padding: 22px 21px 21px;
-  --card-hover-transform: translateY(-4px);
 }
 
 .card::before {
@@ -574,8 +581,10 @@
   border-radius: 0;
 }
 
+/* No hover effect: the cards carry box art now and are informational, not
+   interactive. Overrides base.css's lift, and no tint change either. */
 .card:hover {
-  background: hsl(var(--hue) var(--sat) calc(var(--lig) + 10%));
+  transform: none;
   box-shadow: none;
 }
 
@@ -614,6 +623,78 @@
   font-weight: 400;
   font-size: 0.74rem;
   line-height: 1.7;
+}
+
+/* Box art: three columns on desktop, two on tablet, one below — with explicit
+   breakpoints so each switch can be tuned on its own. The 3-column view starts
+   around 940px, about 20% lower than the first box-art release (1172px). Note
+   the trade-off at the bottom of that band: below roughly 1120px the cards are
+   too narrow for "No. ###" and the longest badge ("PAL-optimised") to share a
+   line, so the badge wraps under the number there. If that ever bothers you,
+   raise the 940px breakpoint towards 1120. */
+.grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 780px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 940px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* The tile gets the same pixel-cut corners as the card itself. */
+.card-art {
+  border-radius: 0;
+  clip-path: polygon(0 4px, 4px 4px, 4px 0, calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+}
+
+/* The hover magnifier takes the chapter colour (see --card-zoom above for
+   why it is not plain --chapter-fill). */
+.card-art-zoom {
+  color: var(--card-zoom);
+}
+
+/* Box-art viewer: the same pixel-cut cartridge frame as the cards. The frame
+   takes the clicked card's chapter colour (--hue is set per open from JS); a
+   surface panel sits inside it, inset by 4 pixels, exactly like a card. The
+   dialog stays position: fixed — that is the UA style that centers it, and
+   the ::before anchors against it. */
+.art-dialog {
+  isolation: isolate;
+  border: 0;
+  border-radius: 0;
+  padding: 20px;
+  background: hsl(var(--hue) var(--sat) var(--lig));
+  box-shadow: none;
+  clip-path: polygon(0 4px, 4px 4px, 4px 0, calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+}
+
+.art-dialog::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 4px;
+  background: var(--surface);
+  clip-path: polygon(0 4px, 4px 4px, 4px 0, calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
+}
+
+/* The close button joins the site's black pixel chips. */
+.art-close {
+  border-radius: 0;
+  border: 0;
+  background: #000;
+  color: #fff;
+}
+
+.art-close:hover {
+  background: var(--accent);
+  color: #fff;
 }
 
 /* Footer: a row of bricks */

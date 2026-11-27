@@ -704,6 +704,20 @@ img.stamp-dark {
   color: var(--accent-text, var(--accent));
 }
 
+/* ---------- External-link favicons ---------- */
+
+/* Prepended by how-its-made.js to every outbound link on this page. The icons
+   come from the self-hosted set in assets/img/favicons (downloaded once, so
+   no third-party favicon service is contacted). Square icons like X get a
+   soft corner radius; the -3px nudge lines them up with the link text. */
+.ext-favicon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border-radius: 3px;
+  vertical-align: -3px;
+}
+
 @media (max-width: 900px) {
   .aim-layout {
     flex-direction: column;

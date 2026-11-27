@@ -10,7 +10,7 @@ The following is licensed under the [Creative Commons Attribution-NonCommercial-
 
 - **All written text on the site**, wherever it lives: collection introductions, game descriptions and notes, the "How it's made" page, the version history and any other prose, including text written inside the HTML pages.
 - **Everything in `data/`**, including the curated game selections, their order and grouping, descriptions, notes and sources lists.
-- **Original images and graphics**, including everything in `assets/og/` and `assets/icons/`.
+- **Original images and graphics**, including everything in `assets/og/` and `assets/icons/`. (Box art and third-party favicons are not original work and are not covered by this license — see Third-party material below.)
 
 In plain words, you may:
 
@@ -37,5 +37,7 @@ Please don't use them in a way that suggests your work is made by, endorsed by o
 
 ## Third-party material
 
+- **Box art** in `assets/img/boxart/`: box-front scans, downloaded once from the [ScreenScraper](https://screenscraper.fr) API by a local build tool. ScreenScraper shares its media under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); each game's art viewer on the site links back to its ScreenScraper entry as credit. The artwork itself, and all trademarks in it, belong to the games' respective publishers. It is used here for identification and commentary only, and neither license above covers it.
+- **Favicons** in `assets/img/favicons/`: the brand icons of the third-party websites linked from the "How it's made" page, self-hosted so a visitor's browser never contacts a favicon service. They belong to their respective owners and are not covered by either license above.
 - **Fonts** in `assets/fonts/`, while self-hosted in the project repository, are open-source fonts from Google Fonts, © their respective designers, used and redistributed under the SIL Open Font License 1.1 (see [`assets/fonts/OFL.txt`](assets/fonts/OFL.txt)).
 - **Trademarks:** platform names, game titles, box art, screenshots and other trademarks belong to their respective owners and are used only for identification and commentary. Neither license above applies to them.

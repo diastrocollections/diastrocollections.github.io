@@ -4,7 +4,8 @@
  * 
  * The page copy is plain HTML in how-its-made/index.html. This script only
  * draws the shelf progress chart from data/platforms.json (each platform's
- * "handwritten" field and "accent" color), plus the "On this page" scroll-spy.
+ * "handwritten" field and "accent" color), adds the "On this page" scroll-spy,
+ * and puts a self-hosted favicon in front of every external link.
  */
 
 (function () {
@@ -126,4 +127,38 @@
 
     window.addEventListener('scroll', activateLastIfAtBottom, { passive: true });
   }
+
+
+  // External-link favicons: every outbound link on this page gets the site's
+  // own small icon in front of it. The icons were downloaded once into
+  // assets/img/favicons, so a visitor's browser never contacts a third-party
+  // favicon service (which would leak their IP to that service).
+  // Hostnames whose favicon file lives under another name. The lookup runs
+  // after the leading "www." is stripped, so only non-www hosts belong here.
+  var FAVICON_ALIASES = {
+    'docs.github.com': 'github.com'
+  };
+
+  Array.prototype.slice.call(document.querySelectorAll('main a[href]')).forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (!/^https?:\/\//i.test(href)) return;
+    if (a.querySelector('img, svg')) return; // already carries its own icon
+
+    var host;
+    try { host = new URL(href).hostname; } catch (e) { return; }
+    if (/(^|\.)diastrogaming\.com$/.test(host)) return;
+    host = host.replace(/^www\./, '');
+    host = FAVICON_ALIASES[host] || host;
+
+    var img = document.createElement('img');
+    img.className = 'ext-favicon';
+    img.alt = '';
+    img.width = 16;
+    img.height = 16;
+    img.loading = 'lazy';
+    img.src = '../assets/img/favicons/' + host + '.png';
+    // Unknown domain (no file): drop the icon, keep the link as it was.
+    img.addEventListener('error', function () { img.remove(); });
+    a.insertBefore(img, a.firstChild);
+  });
 })();
